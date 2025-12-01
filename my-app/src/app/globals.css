@@ -9,6 +9,8 @@
   --button-red: rgba(151, 43, 40, 1);
   --dark-blue: rgba(13, 59, 102, 1);
   --dark-green: rgba(213, 145, 41, 1);
+  --red:#972B28;
+  --dark-gray:#3B3B3B;
 
 }
 
@@ -17,6 +19,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -38,6 +46,48 @@
 .font-plus-jakarta-sans {
   font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
+
+
+/* Base styles - can be overridden by Tailwind utilities */
+@layer base {
+  .container {
+    @apply mx-auto px-4 max-w-7xl;
+  }
+  
+  h1 {
+    font-family: 'STIX Two Math', serif;
+    @apply md:text-7xl text-3xl;
+  }
+  
+  h2 {
+    font-size: 45px;
+    line-height: 55px;
+    font-family: 'STIX Two Math', serif;
+  }
+  
+  h3 {
+    font-size: 24px;
+   
+    line-height: 45px;
+    font-family: 'STIX Two Math', serif;
+  }
+  
+  p {
+    font-size: 14px;
+   
+    line-height: 25px;
+    font-family: inter, sans-serif;
+  }
+  
+  span {
+    font-family: inter, sans-serif;
+  }
+  
+  a {
+    font-family: inter, sans-serif;
+  }
+}
+
 
 h2{
   font-size: 45px;
@@ -95,4 +145,33 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(151, 43, 40, 0.8);
+}
+
+/* Header Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
 }
