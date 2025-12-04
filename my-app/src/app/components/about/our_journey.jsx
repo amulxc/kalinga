@@ -97,6 +97,17 @@ export default function OurJourney() {
     };
   }, [activeIndex]);
 
+  // Trigger animation on initial load
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const firstSlide = document.querySelector('.journey-card-reveal');
+      if (firstSlide) {
+        firstSlide.classList.add('animate');
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="py-16 lg:py-24 bg-[var(--dark-blue)] relative overflow-x-hidden">
       <style dangerouslySetInnerHTML={{__html: `
@@ -155,6 +166,40 @@ export default function OurJourney() {
           z-index: 1;
           transition: width 0.5s ease-in-out;
         }
+        /* Card reveal animation - applied to full card */
+        .journey-card-reveal {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        .journey-card-reveal.animate {
+          clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          animation: rollFromLeft 2s ease-in-out forwards;
+        }
+        @keyframes rollFromLeft {
+          from {
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          }
+          to {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          }
+        }
+        .journey-card-content {
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+        }
+        .journey-card-content img {
+          animation: scaleDown 2s ease-in-out forwards;
+        }
+        @keyframes scaleDown {
+          from {
+            transform: scale(1.5);
+          }
+          to {
+            transform: scale(1);
+          }
+        }
       `}} />
       <div className="container mx-auto px-4 lg:px-6">
         {/* Title */}
@@ -170,20 +215,29 @@ export default function OurJourney() {
             modules={[Navigation]}
             spaceBetween={16}
             slidesPerView={1}
-            centeredSlides={false}
-            loop={true}
+            centeredSlides={true}
+            loop={false}
+            speed={1000}
+            
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
             breakpoints={{
               640: {
                 slidesPerView: 1,
                 spaceBetween: 20,
+                centeredSlides: true,
               },
               768: {
                 slidesPerView: 1,
                 spaceBetween: 24,
+                centeredSlides: true,
               },
               1024: {
                 slidesPerView: "auto",
                 spaceBetween: 24,
+                centeredSlides: true,
               },
             }}
             navigation={{
@@ -191,13 +245,23 @@ export default function OurJourney() {
               prevEl: ".journey-swiper-button-prev",
             }}
             onSwiper={setSwiperInstance}
-            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+            onSlideChange={(swiper) => {
+              setActiveIndex(swiper.realIndex);
+              // Reset animation by removing and re-adding animate class
+              const slides = document.querySelectorAll('.journey-card-reveal');
+              slides.forEach(slide => slide.classList.remove('animate'));
+              setTimeout(() => {
+                if (slides[swiper.realIndex]) {
+                  slides[swiper.realIndex].classList.add('animate');
+                }
+              }, 10);
+            }}
             className="journey-swiper"
           >
             {journeyData.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="relative rounded-2xl overflow-hidden shadow-lg h-full min-h-[280px] md:overflow-visible md:min-h-[400px]">
-                  <div className="relative flex flex-col md:flex-row items-stretch h-full bg-[var(--lite-sand)] rounded-2xl overflow-hidden md:overflow-visible">
+                <div className={`journey-card-reveal relative rounded-2xl overflow-hidden shadow-lg h-full min-h-[280px] md:overflow-visible md:min-h-[400px] ${activeIndex === index ? 'animate' : ''}`}>
+                  <div className="journey-card-content relative flex flex-col md:flex-row items-stretch h-full bg-[var(--lite-sand)] rounded-2xl overflow-hidden md:overflow-visible">
                     {/* Image - On Top (Mobile) / On Left (Desktop) */}
                     <div className="relative h-[180px] md:h-full min-h-[180px] md:min-h-[400px] w-full md:w-[50%] md:-ml-12 lg:-ml-25 z-20">
                       <Image
@@ -244,7 +308,7 @@ export default function OurJourney() {
           {/* Timeline Markers and Navigation */}
           <div className="relative flex items-center justify-between">
             {/* Previous Button */}
-            <button className="journey-swiper-button-prev bg-[var(--button-red)] hover:bg-[#a2a2a2] w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center relative top-[-6px] sm:top-[-8px] md:top-[-10px]">
+            <button className="cursor-pointer journey-swiper-button-prev bg-[var(--button-red)] hover:bg-[#a2a2a2] w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center relative top-[-6px] sm:top-[-8px] md:top-[-10px]">
               <svg
                 width="16"
                 height="16"
@@ -309,7 +373,7 @@ export default function OurJourney() {
             </div>
 
             {/* Next Button */}
-            <button className="journey-swiper-button-next bg-[var(--button-red)] hover:bg-[#a2a2a2] w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center relative top-[-6px] sm:top-[-8px] md:top-[-10px]">
+            <button className="cursor-pointer journey-swiper-button-next bg-[var(--button-red)] hover:bg-[#a2a2a2] w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center relative top-[-6px] sm:top-[-8px] md:top-[-10px]">
               <svg
                 width="16"
                 height="16"

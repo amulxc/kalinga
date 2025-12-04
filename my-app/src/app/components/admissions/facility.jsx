@@ -53,8 +53,8 @@ export default function Facility() {
         </div>
 
         {/* Slider Section */}
-        <div className="relative py-8">
-          <Swiper
+        <div className="relative py-8 overflow-visible">
+          <Swiper 
             modules={[Navigation]}
             spaceBetween={24}
             slidesPerView={1}
@@ -80,24 +80,27 @@ export default function Facility() {
               nextEl: ".facility-swiper-button-next",
               prevEl: ".facility-swiper-button-prev",
             }}
-            className="facility-swiper !pb-12 [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:items-stretch [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex p-5"
+            className="facility-swiper !pb-12 pt-24 [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:items-stretch [&_.swiper-wrapper]:overflow-visible [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex [&_.swiper-slide]:overflow-visible p-5"
             loop={false}
             autoHeight={false}
           >
             {facilities.map((facility) => (
-              <SwiperSlide key={facility.id}>
+              <SwiperSlide key={facility.id} className="!overflow-visible">
                 <div className="h-full w-full">
-                  <div className="bg-white rounded-xl shadow-md overflow-hidden h-full hover:scale-105 hover:shadow-sm transition-all duration-300 cursor-pointer">
-                    {/* Image */}
-                    <div className="relative w-full h-[200px] md:h-[250px]">
-                      <Image
-                        src={facility.image}
-                        alt={facility.name}
-                        fill
-                        className="object-cover"
-                      />
+                  <div className="bg-white rounded-xl shadow-xl overflow-visible h-full group-hover:shadow-2xl group-hover:z-[50] relative transition-all duration-300 cursor-pointer group">
+                    {/* Image Container - Fixed wrapper with padding for upward growth (250px visible + 50px padding = 300px total) */}
+                    <div className="relative w-full min-h-[300px] pt-[50px] overflow-visible rounded-t-xl">
+                      {/* Image - Positioned at bottom, grows upward on hover */}
+                      <div className="absolute bottom-0 left-0 right-0 h-[250px] group-hover:h-[300px]  transition-all duration-300">
+                        <Image
+                          src={facility.image}
+                          alt={facility.name}
+                          fill
+                          className="object-cover rounded-t-xl"
+                        />
+                      </div>
                       {/* Label - Overlaid on image */}
-                      <div className="absolute bottom-0 left-0 right-0 bg-white px-4 py-3 m-3 rounded-lg">
+                      <div className="absolute bottom-0 left-0 right-0 bg-white px-4 py-3 m-3 rounded-lg z-10">
                         <p className="text-[var(--foreground)] font-semibold text-center">
                           {facility.name}
                         </p>
@@ -110,8 +113,8 @@ export default function Facility() {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-end items-center gap-3 mt-4">
-            <button className="facility-swiper-button-prev w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
+          <div className="flex justify-end items-center gap-3 mt-4 ">
+            <button className="cursor-pointer facility-swiper-button-prev w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
               <svg
                 width="20"
                 height="20"
@@ -129,7 +132,7 @@ export default function Facility() {
                 />
               </svg>
             </button>
-            <button className="facility-swiper-button-next w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
+            <button className="cursor-pointer facility-swiper-button-next w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
               <svg
                 width="20"
                 height="20"
