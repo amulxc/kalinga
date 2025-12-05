@@ -36,7 +36,7 @@ const scholarships = [
 
 export default function ScholarshipsSlider() {
   return (
-    <section className="py-16 lg:py-24 bg-white relative">
+    <section className="py-16 bg-white relative">
       <div className="container mx-auto px-4 lg:px-6">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 md:mb-12 gap-4">

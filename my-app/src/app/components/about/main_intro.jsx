@@ -3,7 +3,7 @@ import GlobalArrowButton from "../general/global-arrow_button";
 
 export default function MainIntro() {
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="container mx-auto pl-4 lg:pl-4 pr-4 lg:pr-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Section - Text Content */}

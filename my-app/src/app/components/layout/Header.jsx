@@ -239,11 +239,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="relative z-10" >
+    <header className="relative z-10 w-full overflow-x-hidden" >
       {/* Top Bar */}
-      <div className="text-xs py-4">
-        <div className="container">
-            <div className="flex justify-between font-medium gap-4 text-[var(--dark-gray)]">
+      <div className="text-xs py-5 w-full">
+        <div className="container mx-auto px-4 lg:px-6">
+            <div className="flex justify-between font-medium gap-4 text-[var(--dark-gray)] flex-wrap">
             <a href={getEmail('admissions').href} className="flex items-center gap-1.5 text-[var(--red)]">
                 <FlatIcon name="email" />
                 <span>{getEmail('admissions').display}</span>
@@ -268,8 +268,8 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <div className={`transition-all z-50 ${isScrolled ? 'fixed top-0 left-0 right-0 bg-white duration-500' : ' duration-500'}`}>
-          <div className="flex items-center justify-between gap-4 container py-4">
+      <div className={`transition-all z-40 w-full ${isScrolled ? 'fixed top-0 left-0 right-0 bg-white duration-500 shadow-md' : ' duration-500'}`}>
+          <div className="flex items-center justify-around container mx-auto px-4 lg:px-8 py-4 w-full max-w-full !z-40">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 relative">
               <div className="w-36 h-12">
@@ -287,7 +287,7 @@ const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-4">
+            <nav className="hidden lg:flex items-center gap-2">
               {navItems.map((item) => (
                 <div
                   key={item.id}
@@ -298,7 +298,7 @@ const Header = () => {
                 
                     <Link
                       href={item.href}
-                      className={`px-3 text-base font-medium ${
+                      className={`px-2 !text-[14px] ${
                         isHomePage 
                           ? (isScrolled ? 'text-[var(--dark-gray)]' : 'text-white')
                           : 'text-black'

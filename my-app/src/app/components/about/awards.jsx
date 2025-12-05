@@ -142,7 +142,7 @@ export default function Awards() {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 bg-white">
       <style dangerouslySetInnerHTML={{__html: `
         .awards-scrollbar-hide::-webkit-scrollbar {
           display: none;

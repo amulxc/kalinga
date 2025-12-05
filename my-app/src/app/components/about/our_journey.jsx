@@ -109,7 +109,7 @@ export default function OurJourney() {
   }, []);
 
   return (
-    <section className="py-16 lg:py-24 bg-[var(--dark-blue)] relative overflow-x-hidden">
+    <section className="py-16 bg-[var(--dark-blue)] relative overflow-x-hidden">
       <style dangerouslySetInnerHTML={{__html: `
         /* Desktop only - custom wide slides */
         @media (min-width: 1024px) {

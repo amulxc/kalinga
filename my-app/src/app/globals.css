@@ -88,6 +88,7 @@ body {
   
   a {
     font-family: inter, sans-serif;
+    font-size: 14px !important;
   }
 }
 
@@ -200,5 +201,5 @@ body {
 }
 
 .transform-3d-slant-mirror {
-  transform: perspective(500px) rotateY(15deg) skew(0deg) !important;
+  transform: perspective(500px) rotateY(10deg) skew(0deg) !important;
 }

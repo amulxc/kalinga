@@ -1,33 +1,45 @@
 import HeroSection from "./components/home/HeroSection";
 import Link from "next/link";
 import Image from "next/image"; 
-import FlatIcon from "./components/general/flat-icon";
-
-// TEMP ICON FALLBACK - Fix for FlatIcon not loading
-const iconSrcMap = {
-  "marketing-plan": "/icons/marketing-plan.svg",
-  "academics": "/icons/academics.svg",
-  // Add more fallback paths as needed
-};
+import AccreditationRanking from "./components/home/AccreditationRanking";
+import AboutKalinga from "./components/home/AboutKalinga";
+import Programs from "./components/home/programs";
+import FeatureCards from "./components/home/featurecard";
+import Facilities from "./components/home/facilities";
+import Placements from "./components/home/placements";
+import GlobalPresence from "./components/home/global_presence";
+import ResearchInnovation from "./components/home/research_innovation";
+import CampusTour from "./components/home/campus_tour";
+import NewsEvents from "./components/home/news_and_events";
+import SocialThumbs from "./components/home/social_thumbnail";
+import AdmissionCareer from "./components/general/admission_cta";
+import Achievements from "./components/home/achievements";
 
 const quickLinks = [
   {
-    title: "About Us",
-    description: "Learn about our vision, mission, and values",
-    href: "/about",
-    icon: "marketing-plan"
+    title: "News & Events",
+    href: "/news-and-events",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/marketing-icon.png"
   },
   {
-    title: "Academics",
-    description: "Learn about our vision, mission, and values",
-    href: "/about",
-    icon: "academics"
+    title: "Campus Life",
+    href: "/students/campus-life",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/school-icon.png"
   },
   {
-    title: "Admissions",
-    description: "Learn about our vision, mission, and values",
-    href: "/about",
-    icon: "email"
+    title: "International",
+    href: "/international",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/worldwide-icon.png"
+  },
+  {
+    title: "Chat with Student",
+    href: "/students",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/student-icon.png"
+  },
+  {
+    title: "Admission",
+    href: "/admissions",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/educational-icon.png"
   },
 ]
 
@@ -38,19 +50,44 @@ export default function Home() {
       <HeroSection />
 
       {/* Quick Links Section */}
-      <section className="container -mt-16 mx-auto px-4 py-16 bg-[var(--dark-blue)]/80 z-2 backdrop-blur-xs relative rounded-4xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <section className="container -mt-16 sm:-mt-20 md:-mt-25 mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 lg:py-6 bg-[var(--dark-blue)]/80 z-2 backdrop-blur-xs relative rounded-xl sm:rounded-2xl lg:rounded-4xl max-w-5xl">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
           {quickLinks.map((link) => (
-            <Link key={link.title} href={link.href} className="p-6 bg-white border border-gray-200 rounded-lg hover:shadow-lg transition flex items-center gap-2">
-              {/* Fallback icon logic */}
-              <span className="w-6 h-6 flex items-center justify-center">
-               <FlatIcon name="call" className="w-6 h-6 text-[var(--dark-blue)]" />
-               <h3 className="text-base font-inter mb-2">{link.title}</h3>
-             </span>
-           </Link>
-         ))}
-       </div>
-     </section>
+            <Link 
+              key={link.title} 
+              href={link.href} 
+              className="p-3 sm:p-4 md:p-5 bg-white rounded-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center gap-2 sm:gap-3 md:gap-4 min-h-[100px] sm:min-h-[120px]"
+            >
+              {/* Icon */}
+              <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex-shrink-0">
+                <Image
+                  src={link.icon}
+                  alt={link.title}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              {/* Label */}
+              <p className="text-gray-600 text-center leading-tight text-xs sm:text-sm md:text-base">
+                {link.title}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+     <Achievements />
+     <AccreditationRanking />
+     <AboutKalinga />
+     {/* <Programs /> */}
+     <FeatureCards />
+     <Facilities />
+     <Placements />
+     <GlobalPresence />
+     <ResearchInnovation />
+     <CampusTour />
+     <NewsEvents />
+     <SocialThumbs />
+     <AdmissionCareer />
    </>
  );
 }

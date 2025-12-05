@@ -39,7 +39,7 @@ const admissionSteps = stepData.map((step, index) => ({
 
 export default function AdmissionSteps() {
   return (
-    <section className="py-16 lg:py-24 bg-[var(--light-gray)]">
+    <section className="py-16 bg-[var(--light-gray)]">
       <style dangerouslySetInnerHTML={{__html: `
         .admission-steps-swiper .swiper-slide-active .step-card-inner {
           background-color: #F5E6D3;

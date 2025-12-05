@@ -10,7 +10,7 @@ export default function GlobalArrowButton({
   return (
     <button
       onClick={onClick}
-      className={`group bg-[var(--button-red)] hover:bg-white hover:text-[var(--button-red)] h-[50px] px-2 rounded-xl shadow-lg text-white font-sans text-base font-semibold transition-all duration-300 hover:opacity-90 hover:shadow-2xl cursor-pointer  flex items-center justify-between ${className}`}
+      className={`group bg-[var(--button-red)] hover:bg-white hover:text-[var(--button-red)] h-[45px] px-2 rounded-xl shadow-lg text-white font-sans text-base font-semibold transition-all duration-300 hover:opacity-90 hover:shadow-2xl cursor-pointer  flex items-center justify-between ${className}`}
     >
       <p className={`whitespace-nowrap w-fit px-3 ${textClassName}`}>{children}</p>
       <span className={`group bg-white group-hover:bg-[var(--button-red)] group-hover:text-white  rounded-lg p-1 px-2 flex items-center justify-center relative ${arrowClassName}`}>
