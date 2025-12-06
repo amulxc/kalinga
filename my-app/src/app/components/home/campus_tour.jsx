@@ -7,7 +7,7 @@ export default function CampusTour() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="relative bg-cover bg-center rounded-2xl overflow-hidden shadow-xl mx-auto w-full max-w-[1243px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[653px]" style={{
+        <div className="relative bg-cover bg-center rounded-2xl overflow-hidden shadow-xl mx-auto w-full max-w-[1243px] h-[500px] sm:h-[500px] md:h-[600px] lg:h-[653px]" style={{
           backgroundImage: `url('https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg')`,
           backgroundPosition: 'center',
           backgroundSize: 'cover'

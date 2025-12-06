@@ -4,26 +4,22 @@ import GlobalArrowButton from './global-arrow_button'
 
 const AdmissionCareer = () => {
   return (
-    <section className="py-6 bg-white max-w-[1246px] mx-auto mt-[-80px] sm:mt-[-120px] md:mt-[-140px] lg:mt-[-160px]">
-      <div className="container mx-auto relative flex flex-col md:flex-row items-center md:items-stretch gap-6 md:gap-0">
+    <section className="pt-16 bg-white px-4 sm:px-5">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0">
 
         {/* Left Panel - Admission */}
-        <div className="w-full  md:w-[48%] lg:w-[622px] bg-[var(--dark-orange-red)] rounded-[10px] p-6 sm:p-8 text-white h-auto md:h-[300px] lg:h-[318px] flex flex-col items-center justify-center pt-8 sm:pt-12 md:pt-16 lg:pt-20 pr-4 sm:pr-8 md:pr-12 lg:pr-[90px]">
+        <div className="w-full bg-[var(--dark-orange-red)] rounded-[10px] p-5 sm:p-6 md:p-10 text-white flex flex-col items-center justify-center">
 
-        <p className="text-base mt-14 sm:text-lg md:text-lg lg:text-xl xl:text-[31px] leading-tight sm:leading-normal font-stix text-center leading-[40px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-          <div className="mt-3 sm:mt-4 w-full sm:w-[211px] self-start sm:self-start md:self-start lg:self-start">
-            <GlobalArrowButton
-              className="!bg-white !text-black !w-full !h-[40px] sm:!h-[44px] !rounded-lg !shadow-lg hover:!bg-gray-50 !text-sm sm:!text-base"
-              textClassName="!text-black !text-[16px] !px-0"
-              arrowClassName="!bg-[var(--button-red)] !w-7 sm:!w-8 !h-7 sm:!h-8 !rounded-lg"
-              arrowIconClassName="!text-white"
-              arrowSize={12}
-            >
-              Admission Open
-            </GlobalArrowButton>
+        <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[31px] mt-6 sm:mt-10 md:mt-14 leading-tight sm:leading-normal font-stix leading-[32px] sm:leading-[40px] pr-4 sm:pr-8 md:pr-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h3>
+          <div className="mt-3 sm:mt-4 w-full sm:w-[211px] self-start">
+          <GlobalArrowButton className="!bg-white !text-black"
+                arrowClassName="!bg-[var(--button-red)]"
+                arrowIconClassName="!text-white"
+                textClassName="!text-black"
+                >Admission Open</GlobalArrowButton>
           </div>
         <h2
-          className="font-stix text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[123px] leading-none whitespace-nowrap pt-2 sm:pt-[10px]"
+          className="font-stix !text-[50px] md:!text-[100px] mt-4 sm:mt-5 leading-none whitespace-nowrap self-start -ml-5 sm:-ml-6 md:-ml-10 -mb-6 sm:-mb-10"
            style={{
                 color: 'transparent',
                 WebkitTextStroke: '0.2px #FFFFFF',
@@ -35,10 +31,10 @@ const AdmissionCareer = () => {
         </div>
 
         {/* Center - Image (visible only on large screens) */}
-        <div className="relative hidden lg:block lg:absolute lg:left-1/2 lg:top-[150px] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 w-48 h-60 sm:w-56 sm:h-72 md:w-[280px] md:h-[360px] lg:w-[372px] lg:h-[482px] z-20 mx-auto lg:mx-0">
+        <div className="hidden lg:block absolute left-1/2 top-[150px] transform -translate-x-1/2 -translate-y-1/2 w-[372px] h-[482px] z-20">
           <div className="relative w-full h-full">
             <Image 
-              src="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg" 
+              src="https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/Rectangle+574056887.png" 
               alt="Student" 
               fill
               className="object-cover rounded-xl shadow-7xl" 
@@ -46,23 +42,19 @@ const AdmissionCareer = () => {
           </div>
         </div>
 
-        {/* Right Panel - Career (on md screens this appears to the right) */}
-        <div className="w-full md:w-[48%] lg:w-[622px] bg-[var(--button-red)] rounded-[10px] p-6 sm:p-8 text-white h-auto md:h-[300px] lg:h-[318px] flex flex-col items-center justify-center pt-8 sm:pt-12 md:pt-16 lg:pt-20 pl-4 sm:pl-8 md:pl-12 lg:pl-[140px]">
+        {/* Right Panel - Career */}
+        <div className="w-full bg-[var(--button-red)] rounded-[10px] p-5 sm:p-6 md:p-10 text-white flex flex-col items-center justify-center">
 
-<p className="text-base mt-14 sm:text-lg md:text-lg lg:text-xl xl:text-[31px] leading-tight sm:leading-normal font-stix text-center leading-[40px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
- <div className="mt-3 sm:mt-4 w-full sm:w-[173px] self-start sm:self-end md:self-end lg:self-end sm:ml-auto">
-            <GlobalArrowButton
-              className="!bg-white !text-black !w-full !h-[40px] sm:!h-[44px] !rounded-lg !shadow-lg hover:!bg-gray-50 !text-sm sm:!text-base"
-              textClassName="!text-black !text-[16px] !px-0"
-              arrowClassName="!bg-[var(--button-red)] !w-7 sm:!w-8 !h-7 sm:!h-8 !rounded-lg"
-              arrowIconClassName="!text-white"
-              arrowSize={12}
-            >
-              Contact Us
-            </GlobalArrowButton>
+<h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[31px] mt-6 sm:mt-10 md:mt-14 leading-tight sm:leading-normal font-stix text-left sm:text-right leading-[32px] sm:leading-[40px] md:pl-4 sm:pl-8 md:pl-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h3>
+ <div className="mt-3 sm:mt-4 w-full flex justify-start sm:justify-end">
+ <GlobalArrowButton className="!bg-white !text-black"
+                arrowClassName="!bg-[var(--button-red)]"
+                arrowIconClassName="!text-white"
+                textClassName="!text-black"
+                >Contact Us</GlobalArrowButton>
           </div>
 <h2
-  className="font-stix text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[123px] leading-none whitespace-nowrap pt-2 sm:pt-[10px] pl-0 md:pl-[30px] lg:pl-[50px] xl:pl-[100px]"
+  className="font-stix leading-none whitespace-nowrap !text-[50px] md:!text-[100px] mt-4 sm:mt-5 self-start sm:self-end -mr-5 sm:-mr-6 md:-mr-8 -mb-6 sm:-mb-10" 
    style={{
         color: 'transparent',
         WebkitTextStroke: '0.2px #FFFFFF',

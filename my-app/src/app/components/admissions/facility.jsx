@@ -44,16 +44,16 @@ export default function Facility() {
       <div className="container mx-auto px-4 lg:px-6">
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="font-stix text-[var(--button-red)] text-3xl md:text-4xl lg:text-5xl mb-4">
+          <h3 className="font-stix text-[var(--button-red)] text-3xl md:text-4xl lg:text-5xl mb-4">
             Kalinga Facilities
-          </h2>
-          <p className="font-stix text-[var(--foreground)] text-lg md:text-xl">
+          </h3>
+          <h2 className="font-stix text-[var(--foreground)] text-lg md:text-xl">
             Lorem ipsum dolor sit amet, consectetur
-          </p>
+          </h2>
         </div>
 
         {/* Slider Section */}
-        <div className="relative py-8 overflow-visible">
+        <div className="relative overflow-visible">
           <Swiper 
             modules={[Navigation]}
             spaceBetween={24}
