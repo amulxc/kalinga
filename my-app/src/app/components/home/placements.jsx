@@ -40,7 +40,7 @@ const Placements = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-3 lg:gap-6 text-gray-800">
+            <div className="flex flex-col sm:flex-row items-start sm:items-start gap-4 sm:gap-3 lg:gap-6 text-gray-800">
               <div className="flex-1 w-full sm:w-auto">
                 <h3 className="!text-3xl sm:!text-[35px] md:!text-[40px] text-[var(--button-red)] mb-1 sm:mb-2">3300 +</h3>
                 <h6 className="text-sm sm:text-base text-[var(--foreground)] font-stix">Students Placed</h6>

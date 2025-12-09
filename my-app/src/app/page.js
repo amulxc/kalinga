@@ -15,6 +15,7 @@ import SocialThumbs from "./components/home/social_thumbnail";
 import AdmissionCareer from "./components/general/admission_cta";
 import Achievements from "./components/home/achievements";
 import Testimonials from "./components/home/Testimonials";
+import Scroll from "./components/home/Scroll";
 
 const quickLinks = [
   {
@@ -83,9 +84,15 @@ export default function Home() {
       <FeatureCards />
       <Facilities />
       <Placements />
-      <GlobalPresence />
-      <ResearchInnovation />
       <Testimonials />
+      <GlobalPresence />
+      <Scroll
+  texts={['Admission Open 2026']} 
+  velocity={100}
+  numCopies={6}
+  className="font-stix"
+/>
+      <ResearchInnovation />
       <CampusTour />
       <NewsEvents />
       <SocialThumbs />

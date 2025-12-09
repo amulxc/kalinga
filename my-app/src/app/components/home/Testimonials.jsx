@@ -129,13 +129,13 @@ export default function Testimonials() {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4 md:p-12 overflow-x-hidden selection:bg-orange-100 selection:text-orange-900">
+        <div className="md:min-h-screen flex flex-col items-center justify-center p-4 md:p-12 overflow-x-hidden selection:bg-orange-100 selection:text-orange-900">
             <style jsx>{`
                 ::-webkit-scrollbar { display: none; }
             `}</style>
 
             {/* Main Container */}
-            <div className="relative w-full max-w-6xl mx-auto flex flex-col items-center justify-center min-h-[700px]">
+            <div className="relative w-full max-w-6xl mx-auto flex flex-col items-center justify-center">
                 {/* Section Heading */}
                 <SectionHeading 
                     subtitle="What Our Students Say"
@@ -166,7 +166,6 @@ export default function Testimonials() {
                                     style={{
                                         backgroundColor: styles.bgColor,
                                         borderColor: isActive ? '#f1f5f9' : 'transparent',
-                                        boxShadow: isActive ? '0 20px 50px -12px rgba(0,0,0,0.1)' : 'none'
                                     }}
                                 >
                                     <div
@@ -175,7 +174,7 @@ export default function Testimonials() {
                                     >
                                         {/* Image */}
                                         <div className="w-full md:w-5/12 flex-shrink-0 relative">
-                                            <div className="aspect-[4/5] w-full bg-slate-200 rounded-2xl border-[6px] border-white shadow-sm relative overflow-hidden">
+                                            <div className="aspect-[4/5] w-full bg-slate-200 rounded-2xl border-[6px] border-white relative overflow-hidden">
                                                 <img 
                                                     src={item.image} 
                                                     className="w-full h-full object-cover" 
@@ -226,11 +225,11 @@ export default function Testimonials() {
         </div>
 
                 {/* Navigation Controls (Bottom) */}
-                <div className="-mt-6 flex items-center justify-center gap-4 z-50">
+                <div className="md:-mt-6 mt-12 flex items-center justify-center gap-4 z-50">
                 <button
                   type="button"
                   onClick={prevSlide}
-                  className="cursor-pointer w-11 h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors shadow-md"
+                  className="cursor-pointer w-11 h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors"
                   aria-label="Previous placement"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -240,7 +239,7 @@ export default function Testimonials() {
                 <button
                   type="button"
                   onClick={nextSlide}
-                  className="cursor-pointer w-11 h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors shadow-md"
+                  className="cursor-pointer w-11 h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors"
                   aria-label="Next placement"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
