@@ -10,7 +10,7 @@ const testimonialsData = [
         name: "David Chen",
         role: "Founder, TechFlow",
         quote: "The mentorship I received was transformative. They didn't just help me refine my pitch; they helped me reshape my entire business model for scalability.",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/students-say-2.webp",
         theme: "orange"
     },
     {
@@ -18,7 +18,7 @@ const testimonialsData = [
         name: "Sarah Jenkins",
         role: "CEO, InnovateDaily",
         quote: "Kalinga Incubation Centre gave me a perfect platform where I turned my business idea into a successful startup. I am extremely grateful for their guidance.",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/diploma.webp",
         theme: "red"
     },
     {
@@ -26,23 +26,15 @@ const testimonialsData = [
         name: "Marcus Ray",
         role: "Director, SwiftStart",
         quote: "The network effects here are real. Being surrounded by other ambitious founders pushed us to iterate faster and aim higher than we thought possible.",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/student-say-3.webp",
         theme: "amber"
-    },
-    {
-        id: 4,
-        name: "Elena Rodriguez",
-        role: "Product Lead, CreativeX",
-        quote: "We went from zero to MVP in three months thanks to the resources available. The incubation ecosystem is world-class.",
-        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop",
-        theme: "orange"
     },
     {
         id: 5,
         name: "Thomas Wright",
         role: "CTO, FutureScale",
         quote: "Finding technical co-founders was my biggest challenge. This community bridged that gap immediately.",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/student-say-1.webp",
         theme: "amber"
     }
 ];

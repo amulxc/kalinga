@@ -4,23 +4,47 @@ import React, { useState, useRef } from 'react'
 import Stack from '../gsap/Stack'
 import LogoLoop from '../gsap/LogoLoop'
 
-const logos = ['Infosys','Citi','Microsoft','Adobe','Cognizant','PayPal','Google','Dell']
+const logos = [
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/infosys.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/byjus.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/airtel.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/amul.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/asahi.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/axis.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/decathlon.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/force.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/hdfc.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/jio.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/justdail.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/lg.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/nestle.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/sail.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/tata-motors.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/tech+mahindra.webp',
+  'https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ultratech.webp'
+]
 
 const Placements = () => {
   const stackRef = useRef(null)
   const placementImages = [
-    'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg',
+    'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/placements-silder-1.webp',
     'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/about-kalinga.webp',
     'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg',
-    'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg',
-    'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/about-kalinga.webp',
+    'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/placements-ibm.webp',
     'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg'
   ]
   
-  // Convert logos to LogoLoop format
-  const logoLoopItems = logos.map(logo => ({
-    node: <span>{logo}</span>,
-    title: logo
+  // Convert logo URLs to image elements for LogoLoop
+  const logoLoopItems = logos.map((logo, index) => ({
+    node: (
+      <img 
+        src={logo} 
+        alt={`Company logo ${index + 1}`}
+        className="w-full h-full object-contain"
+        loading="lazy"
+      />
+    ),
+    title: `Company logo ${index + 1}`
   }))
   
   return (

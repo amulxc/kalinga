@@ -19,34 +19,28 @@ export default function Facilities() {
     },
     { 
       id: 2, 
-      title: 'study room', 
-      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg',
+      title: 'Canteen', 
+      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/canteen.webp',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo'
     },
     { 
       id: 3, 
       title: 'Sports', 
-      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg',
+      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/sports.webp',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     { 
       id: 4, 
       title: 'Classroom', 
-      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg',
+      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/Phd-mba.webp',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     { 
       id: 5, 
       title: 'Laboratories', 
-      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/library.webp',
+      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/msbiotechnology.webp',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-    },
-    { 
-      id: 6, 
-      title: 'Laboratories', 
-      image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/library.webp',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
-    },
+    }
   ]
 
   const nextSlide = () => {

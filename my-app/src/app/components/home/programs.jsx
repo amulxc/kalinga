@@ -15,22 +15,22 @@ const Programs = () => {
   const [query, setQuery] = useState('')
 
   const programs = [
-    { id: 1, title: 'Diploma in Computer Applications', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg', summary: 'Build fundamentals in programming, networking, and databases for entry-level IT roles.' },
-    { id: 2, title: 'Diploma in Hospitality', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg', summary: 'Front office, F&B and operations with hands-on hotel training.' },
-    { id: 3, title: 'Diploma in Graphic Design', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg', summary: 'Visual communication, branding, and digital tools to craft compelling designs.' },
-    { id: 4, title: 'Diploma in Hotel Management', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg', summary: 'Front office, F&B and operations with hands-on hotel training.' },
+    { id: 1, title: 'Diploma in Computer Applications', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/computer.webp', summary: 'Build fundamentals in programming, networking, and databases for entry-level IT roles.' },
+    { id: 2, title: 'Diploma in Hospitality', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/diploma.webp', summary: 'Front office, F&B and operations with hands-on hotel training.' },
+    { id: 3, title: 'Diploma in Graphic Design', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/graphic.webp', summary: 'Visual communication, branding, and digital tools to craft compelling designs.' },
+    { id: 4, title: 'Diploma in Hotel Management', type: 'Diploma', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/hotel.webp', summary: 'Front office, F&B and operations with hands-on hotel training.' },
 
-    { id: 4, title: 'Law', type: 'UG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/law.jpg', summary: 'Explore constitutional, corporate, and criminal law with moot courts and internships.' },
-    { id: 5, title: 'Information Technology', type: 'UG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/it.jpg', summary: 'Software, data, and cloud fundamentals with project-based learning and labs.' },
-    { id: 6, title: 'Business Administration', type: 'UG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/bba.jpg', summary: 'Managerial, marketing, and entrepreneurial skills through cases and projects.' },
+    { id: 4, title: 'Law', type: 'UG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/law.png', summary: 'Explore constitutional, corporate, and criminal law with moot courts and internships.' },
+    { id: 5, title: 'Information Technology', type: 'UG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/information.png', summary: 'Software, data, and cloud fundamentals with project-based learning and labs.' },
+    { id: 6, title: 'Business Administration', type: 'UG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/busniess.png', summary: 'Managerial, marketing, and entrepreneurial skills through cases and projects.' },
 
-    { id: 7, title: 'MBA', type: 'PG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/mba.jpg', summary: 'Leadership, strategy, finance, and analytics with industry mentors.' },
-    { id: 8, title: 'M.Sc Biotechnology', type: 'PG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/biotech.jpg', summary: 'Advanced genetics, molecular biology, and lab techniques for research roles.' },
-    { id: 9, title: 'MCA', type: 'PG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/mca.jpg', summary: 'Advanced programming, data structures, and application architecture.' },
+    { id: 7, title: 'MBA', type: 'PG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/MBA.webp', summary: 'Leadership, strategy, finance, and analytics with industry mentors.' },
+    { id: 8, title: 'M.Sc Biotechnology', type: 'PG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/biotechnology.webp', summary: 'Advanced genetics, molecular biology, and lab techniques for research roles.' },
+    { id: 9, title: 'MCA', type: 'PG', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/mca.webp', summary: 'Advanced programming, data structures, and application architecture.' },
 
-    { id: 10, title: 'Ph.D in Management', type: 'Ph.D', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/phd-management.jpg', summary: 'Research on leadership, strategy, and organizational behavior with faculty guidance.' },
-    { id: 11, title: 'Ph.D in Computer Science', type: 'Ph.D', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/phd-cs.jpg', summary: 'AI, data science, and systems research with publications and lab residencies.' },
-    { id: 12, title: 'Ph.D in Biotechnology', type: 'Ph.D', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/common/programs/phd-biotech.jpg', summary: 'Genomics, proteomics, and bioinformatics research with advanced lab work.' },
+    { id: 10, title: 'Ph.D in Management', type: 'Ph.D', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/Phd-mba.webp', summary: 'Research on leadership, strategy, and organizational behavior with faculty guidance.' },
+    { id: 11, title: 'Ph.D in Computer Science', type: 'Ph.D', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/Phd-cs.webp', summary: 'AI, data science, and systems research with publications and lab residencies.' },
+    { id: 12, title: 'Ph.D in Biotechnology', type: 'Ph.D', img: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/phd-biotechnology-n.webp', summary: 'Genomics, proteomics, and bioinformatics research with advanced lab work.' },
   ]
 
   const visiblePrograms = programs.filter(p => p.type === activeTab)
