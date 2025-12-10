@@ -25,7 +25,7 @@ const GlobalPresence = ({
           <h2 className={`font-stix text-2xl sm:text-3xl md:text-4xl lg:text-[50px] my-3 sm:my-4 leading-tight px-2 text-left md:text-center ${titleColor}`}>
             {title}
           </h2>
-          <p className={`text-xs sm:text-sm md:text-[16px] ${descriptionColor} leading-relaxed px-2 sm:px-4 font-plus-jakarta-sans text-left md:text-center text-center`}>
+          <p className={`text-sm ${descriptionColor} leading-relaxed px-2 sm:px-4 font-plus-jakarta-sans text-left md:text-center text-center`}>
             {description}
           </p>
         </div>
