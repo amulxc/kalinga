@@ -7,7 +7,7 @@ import CenterOfExcellence from "../components/about/center_of_excellence";
 import Leadership from "../components/about/leadership";
 import Facility from "../components/admissions/facility";
 import AccreditationRanking from "../components/home/AccreditationRanking";
-import OrganogramOfKalinga from "../components/about/organogram_of_kalinga";
+import OrganogramOfKalinga from "../components/about/organogram_of_kalinga.jsx";
 import AdmissionCareer from "../components/general/admission_cta";
 import FeatureCards from "../components/home/featurecard";
 import GlobalPresence from "../components/home/global_presence";
