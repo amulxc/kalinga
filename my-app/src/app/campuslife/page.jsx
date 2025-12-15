@@ -9,7 +9,7 @@ import UpcomingConferences from "../components/research/upcoming_conference";
 import AutoBreadcrumb from "../components/layout/BreadcrumbData";
 
 const breadcrumbData = {
-  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/Infrastructure2.webp",
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/campuslife.webp",
   pageTitle: "Campus Life",
   customBreadcrumbs: [
     { label: 'Home', href: '/' },
@@ -25,13 +25,13 @@ export default function Page() {
         title="Life at KU"
         description={["Life at Kalinga University is a vibrant blend of learning, culture, and community. Students from across India and around the world come together to explore ideas, develop skills, and build lifelong connections.From academic clubs and cultural events to sports and leadership activities, every experience at KU fosters growth, confidence, and creativity — all within a modern, green, and inclusive campus."
       ]}
-        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/sstudent.webp"
+        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/lifeofku.webp"
         imageAlt="Life at KU"
       />
       <Facilities/>
       <FeaturesSection />
       <CampusLife/>
-      <GalleryAll/>
+      <GalleryAll className="mt-10 mb-10" />
       <UpcomingConferences/>
       <Gallery/>
       <AdmissionCareer/>
