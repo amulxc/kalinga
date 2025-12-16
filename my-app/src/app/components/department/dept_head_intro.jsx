@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import SectionHeading from "../general/SectionHeading";
 
-const DEFAULT_IMAGE_SRC = "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/omprakash.png";
+const DEFAULT_IMAGE_SRC = "https://kalinga-university.s3.ap-south-1.amazonaws.com/IQAC/chart.webp";
 const DEFAULT_TITLE = "Mr. Omprakash Dewangan";
 const DEFAULT_SUBTITLE = "Head of Department";
 const DEFAULT_DEPARTMENT = "Faculty of Information Technology";
