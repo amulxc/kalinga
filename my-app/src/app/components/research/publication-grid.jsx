@@ -11,32 +11,32 @@ export default function PublicationGrid({
     {
       title: "Research Publications",
       value: "3360 +",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      description: "Kalinga University has produced a strong body of research publications in reputed national and international journals, reflecting academic depth and innovation.",
     },
     {
       title: "Startups",
       value: "6 +",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      description: "Our institution actively supports patent filing and innovation, resulting in numerous granted and filed patents that translate research into real-world solutions.",
     },
     {
       title: "Patents",
       value: "532 +",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      description: "Through a strong incubation ecosystem, the university has nurtured multiple startups that promote entrepreneurship, innovation, and industry impact.",
     },
     {
       title: "H-Index",
       value: "19 +",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      description: "A healthy H-Index highlights the quality, consistency, and global impact of research contributions by our faculty and scholars.",
     },
     {
       title: "Research Labs",
       value: "90 +",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      description: "Equipped with state-of-the-art infrastructure, our research labs provide hands-on exposure and advanced experimentation facilities across disciplines.",
     },
     {
       title: "Citations",
       value: "2136 +",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      description: "High citation counts demonstrate the relevance, credibility, and global recognition of research carried out at Kalinga University.",
     },
   ]
 }) {
