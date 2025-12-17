@@ -5,6 +5,7 @@ import DeptHeadIntro from '../components/department/dept_head_intro'
 import ISOCertificateSection from '../components/iqac/iso_certificate_section'
 import ContactSection from '../components/cif/contact_section'
 import AdmissionCareer from '../components/general/admission_cta'
+
 const IQACPage = () => {
 
   const MentorIntroProps = [
@@ -51,9 +52,9 @@ const IQACPage = () => {
   return (
     <>
     <MainIntro 
-    title="IQAC"
+    title="About IQAC"
     description="In pursuance of the National Action Plan of the National Assessment and Accreditation Council (NAAC) for performance evaluation, assessment and accreditation, and quality upgradation of institutions of higher education, NAAC proposes that every accredited institution should have an Internal Quality Assurance Cell (IQAC) as a post-accreditation quality sustenance measure. With this aim, Kalinga University established its internal quality assurance cell on 5th July 2016."
-    imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/about/about-banner.webp"
+    imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/IQAC/banner.webp"
     imageAlt="IQAC"
     descriptionClassName="text-[var(--foreground)]"
     />

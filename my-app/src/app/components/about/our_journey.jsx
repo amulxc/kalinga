@@ -8,38 +8,52 @@ import { useState, useEffect, useRef } from "react";
 
 const journeyData = [
   {
-    year: "1997",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur",
+    year: "2025",
+    title: "Establishment of Centre of Excellence (JustAuto), NIRF Rank Band 101-150 for 4th Consecutive Year.",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/our-jounary-1.webp",
     cardBg: "bg-white"
   },
   {
-    year: "1998",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    year: "2024",
+    title: "Establishment of 2 Centres of Excellence (EBLU and MSME). MSME HI Recognition, NIRF  Rank Band 101-150 for third consecutive year, Launch of SDG Logo.",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/our-jounary-2.webp",
     cardBg: "bg-[var(--lite-sand)]"
   },
   {
-    year: "1999",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    year: "2023",
+    title: "SIRO Recognition. Establishment of Kalinga Incubation Foundation (KIF), Corporate Training & Consultancy Division, Centre Of Excellence (BDS). NIRF Rank Band 101–150, India Today Ranking (51).",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/library-new.webp",
     cardBg: "bg-white"
   },
   {
-    year: "2003",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    year: "2022",
+    title: "Establishment of Centre of Excellence (Technoviz), UBA, IEEE KU SB, MBSI, CCRC. NIRF Rank Band 101–150, Establishment of SDG Cell.",
+    description: "",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/Phd-mba.webp",
+    cardBg: "bg-[var(--lite-sand)]"
+  },
+  {
+    year: "2021",
+    title: "NIRF Rank Band 151–200, NAAC Accreditation",
+    description: "",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/about-kalinga.webp",
+    cardBg: "bg-white"
+  },
+  {
+    year: "2020",
+    title: "Establishment of Central Instrumentation Facility",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/phd-biotechnology-n.webp",
     cardBg: "bg-[var(--lite-sand)]"
   },
   {
-    year: "2007",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/hostel.webp",
+    year: "2019",
+    title: "Establishment of IIC, Kalinga University",
+    description: "",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/mca.webp",
     cardBg: "bg-white"
   }
 ];
@@ -321,7 +335,6 @@ export default function OurJourney() {
                           {item.description}
                         </p>
                         <p className="text-[var(--light-text-gray)] text-xs md:text-sm lg:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                       </div>
                     </div>

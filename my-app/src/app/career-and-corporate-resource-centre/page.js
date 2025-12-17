@@ -174,134 +174,134 @@ const Items = [
 ]
 const blueItems = [
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+68.svg",
-    imageAlt: "CCRC Logo-1",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/abbott.png",
+    imageAlt: "abbott",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+70.svg",
-    imageAlt: "CCRC Logo-2",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/ag-enterprise.png",
+    imageAlt: "ag-enterprise",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+71.svg",
-    imageAlt: "CCRC Logo-3",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/central+bank+of+india.png",
+    imageAlt: "central bank of india",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+72.svg",
-    imageAlt: "CCRC Logo-4",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/cisco.png",
+    imageAlt: "cisco",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+75.svg",
-    imageAlt: "CCRC Logo-5",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/denso.png",
+    imageAlt: "denso",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+77.svg",
-    imageAlt: "CCRC Logo-6",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/edunet.png",
+    imageAlt: "edunet",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+80.svg",
-    imageAlt: "CCRC Logo-7",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/glenmarl.png",
+    imageAlt: "glenmarl",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+81.svg",
-    imageAlt: "CCRC Logo-8",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/godwari.png",
+    imageAlt: "godwari",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+82.svg",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+75.png",
     imageAlt: "CCRC Logo-9",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+83.svg",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+83.png",
     imageAlt: "CCRC Logo-10",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+84.svg",
-    imageAlt: "CCRC Logo-11",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/paytm.png",
+    imageAlt: "paytm",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+85.svg",
-    imageAlt: "CCRC Logo-12",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/saint-gobin.png",
+    imageAlt: "saint-gobin",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+86.svg",
-    imageAlt: "CCRC Logo-13",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/subros.png",
+    imageAlt: "subros",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+87.svg",
-    imageAlt: "CCRC Logo-14",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/suzuki.png",
+    imageAlt: "suzuki",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+88.svg",
-    imageAlt: "CCRC Logo-15",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/techonviz.png",
+    imageAlt: "techonviz",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+89.svg",
-    imageAlt: "CCRC Logo-16",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/veterans.png",
+    imageAlt: "veterans",
   }
 ]
 const redItems = [
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+68.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/agenterprise.png",
+    imageAlt: "agenterprise",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+70.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/care.png",
+    imageAlt: "care",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+71.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/central+bank+of+india.png",
+    imageAlt: "central bank of india",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+72.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/cisco.png",
+    imageAlt: "cisco",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+75.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/edunet.png",
+    imageAlt: "denso",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+77.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/eduskills.png",
+    imageAlt: "eduskills",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+80.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/godwari.png",
+    imageAlt: "godwari",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+81.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+86.png",
+    imageAlt: "mou",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+82.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/ibm.png",
+    imageAlt: "ibm",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+83.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/incube.png",
+    imageAlt: "incube",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+84.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/just.png",
+    imageAlt: "just",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+85.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/singhania.png",
+    imageAlt: "singhania",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+86.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/subros.png",
+    imageAlt: "subros",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+87.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/techoviz.png",
+    imageAlt: "techoviz",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+88.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/utkarsh.png",
+    imageAlt: "utkarsh",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+89.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/veterans.png",
+    imageAlt: "veterans",
   },
 ]
 const accreditations = [

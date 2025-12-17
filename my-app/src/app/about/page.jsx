@@ -159,17 +159,23 @@ const aboutFeatureCards = [
 ];
 
 const aboutAccreditations = [
-  { id: 3, name: "UGC Grant", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/ugc.webp" },
   { id: 4, name: "Outlook", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/outlook.webp" },
   { id: 5, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002974.png" },
   { id: 6, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002953.png" },
   { id: 7, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002975.png" },
   { id: 8, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002976.png" },
-  { id: 10, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002978.png" },
   { id: 11, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002979.png" },
-  { id: 12, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002980.png" },
   { id: 13, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002981.png" }
 ];
+
+const aboutApproval= [
+   { id: 3, name: "UGC Grant", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/ugc.webp" },
+   { id: 10, name: "NCTE", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002978.png" },
+   { id: 12, name: "PCI", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002980.png" },
+   { id: 12, name: "BCI", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/bci.webp" },
+   { id: 12, name: "ACITE", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/acite.webp" },
+   { id: 12, name: "CGG", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/cg-government.webp" },
+]
 
 export default function About() {                     
   return (
@@ -202,7 +208,7 @@ export default function About() {
       <AccreditationRanking 
         heading="Approvals & Recognitions"
         secondHeading=""
-        accreditations={aboutAccreditations}
+        accreditations={aboutApproval}
       />
       <OurJourney />
     <CenterOfExcellence />
