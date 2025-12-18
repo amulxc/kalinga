@@ -65,12 +65,12 @@ export default function ProgramsOffered({
   );
 
   return (
-    <section className="bg-[var(--dark-blue)] relative md:mx-5 rounded-xl">
-      <div className="container mx-auto px-6">
+    <section className="bg-[var(--dark-blue)] relative mx-2 rounded-xl pt-16">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column */}
           <div className="flex flex-col gap-6 order-2 lg:order-1">
-            <div className="pt-20">
+            <div className="md:pt-20 pt-10">
               <h2 className="text-white mb-4">{title}</h2>
               <p className="text-white leading-relaxed pr-10">
                 {description}
@@ -90,7 +90,7 @@ export default function ProgramsOffered({
           {/* Right Column */}
           <div className="flex flex-col justify-center order-1 lg:order-2">
             {/* Search Bar */}
-            <div className="relative p-4 px-4">
+            <div className="relative p-4 md:px-4">
               <input
                 type="text"
                 placeholder="Search Programs...."
@@ -114,11 +114,11 @@ export default function ProgramsOffered({
             </div>
 
             {/* Program List */}
-            <div className="p-4 max-h-[475px] overflow-y-auto custom-scrollbar">
+            <div className="max-h-[620px] overflow-y-auto custom-scrollbar">
               {filteredPrograms.map((program) => (
                 <div
                   key={program.id}
-                  className="bg-white rounded-lg p-5 mb-4 relative border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-white rounded-lg p-6 mb-4 relative border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
                 >
                   {/* Background Level Text */}
                   <div className="absolute inset-0 flex items-end justify-end pointer-events-none px-3">

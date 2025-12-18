@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import GlobalArrowButton from "../general/global-arrow_button";
 import SectionHeading from "../general/SectionHeading";
@@ -14,7 +13,6 @@ const defaultContent = {
   ],
   imageUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/careers/careers-about.webp",
   imageAlt: "Kalinga University campus",
-  buttonLabel: "Read More",
 };
 
 export default function MainIntro({
@@ -24,12 +22,10 @@ export default function MainIntro({
   points = null,
   imageUrl = defaultContent.imageUrl,
   imageAlt = defaultContent.imageAlt,
-  buttonLabel = defaultContent.buttonLabel,
-  showButton = true,
   initialVisibleParagraphs = 2,
   showImage = true,
   showKnowMore = true,
-  knowMoreLabel = "Know More",
+  knowMoreLabel = "Read More",
   knowMoreHref = null,
   onKnowMore = null,
   reverseLayout = false,
@@ -43,11 +39,11 @@ export default function MainIntro({
     : descriptionArray.slice(0, initialVisibleParagraphs);
 
   return (
-    <section className="md:py-16 bg-white pt-20 pb-16 ">
+    <section className="md:py-16 bg-white pt-20 md:pb-16 pb-10 ">
       <div className="container mx-auto px-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Section - Text Content */}
-          <div className={`flex flex-col gap-6 order-2 ${reverseLayout ? 'lg:order-2' : 'lg:order-1'} lg:pl-0 lg:pr-4`}>
+          <div className={`flex flex-col order-2 ${reverseLayout ? 'lg:order-2' : 'lg:order-1'} lg:pl-0 lg:pr-4`}>
             <SectionHeading 
               title={title}
               subtitle={subtitle}
@@ -56,23 +52,11 @@ export default function MainIntro({
             />
             
             <div className="space-y-4">
-              {visibleParagraphs.map((paragraph, idx) => {
-                const isLastVisible = idx === visibleParagraphs.length - 1;
-                return (
-                  <p key={idx} className={`${descriptionClassName} leading-relaxed break-words overflow-visible`}>
-                    {paragraph}
-                    {isLastVisible && showButton && buttonLabel && descriptionArray.length > initialVisibleParagraphs && (
-                      <button
-                        type="button"
-                        onClick={() => setShowAll(!showAll)}
-                        className="ml-2 text-[var(--foreground)] font-semibold hover:text-[var(--button-red)] transition-colors inline-flex items-center whitespace-nowrap"
-                      >
-                        {showAll ? "Show Less" : buttonLabel}
-                      </button>
-                    )}
-                  </p>
-                );
-              })}
+              {visibleParagraphs.map((paragraph, idx) => (
+                <p key={idx} className={`${descriptionClassName} leading-relaxed break-words overflow-visible`}>
+                  {paragraph}
+                </p>
+              ))}
 
               {/* Points List */}
               {points && Array.isArray(points) && points.length > 0 && (
@@ -95,30 +79,17 @@ export default function MainIntro({
                 </ul>
               )}
 
-              {showKnowMore && (
+              {showKnowMore && descriptionArray.length > initialVisibleParagraphs && (
                 <div className="pt-2">
-                  {knowMoreHref ? (
-                    <Link href={knowMoreHref} className="inline-flex">
-                      <GlobalArrowButton
-                        className="w-fit !bg-white !text-white gap-2 !px-0 !py-0"
-                        textClassName="!text-[var(--button-red)] !font-semibold !px-0"
-                        arrowClassName="p-[3px] !px-1 mr-2 !py-1 !bg-[var(--button-red)]"
-                        arrowIconClassName="!text-white"
-                      >
-                        {knowMoreLabel}
-                      </GlobalArrowButton>
-                    </Link>
-                  ) : (
-                    <GlobalArrowButton
-                      className="w-fit !bg-white !text-white gap-2 !px-0 !py-0"
-                      textClassName="!text-[var(--button-red)] !font-semibold !px-0"
-                      arrowClassName="p-[3px] !px-1 mr-2 !py-1 !bg-[var(--button-red)]"
-                      arrowIconClassName="!text-white"
-                      onClick={onKnowMore || (() => {})}
-                    >
-                      {knowMoreLabel}
-                    </GlobalArrowButton>
-                  )}
+                  <GlobalArrowButton
+                    className="w-fit !bg-white !text-white gap-2 !px-0 !py-0"
+                    textClassName="!text-[var(--button-red)] !font-semibold !px-0"
+                    arrowClassName="p-[3px] !px-1 mr-2 !py-1 !bg-[var(--button-red)]"
+                    arrowIconClassName="!text-white"
+                    onClick={() => setShowAll(!showAll)}
+                  >
+                    {showAll ? "Show Less" : knowMoreLabel}
+                  </GlobalArrowButton>
                 </div>
               )}
             </div>

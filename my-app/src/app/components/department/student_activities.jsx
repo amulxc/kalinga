@@ -58,7 +58,7 @@ export default function StudentActivities({
         subtitleClassName="text-center"
         titleClassName="text-center"
       />
-      <div className="container mx-auto px-6 mt-5">
+      <div className="container mx-auto px-2 mt-5">
         <div className="relative">
           <Swiper
             modules={[Navigation]}

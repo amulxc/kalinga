@@ -173,7 +173,7 @@ function MentorCard({
           onClick={() => setIsPopupOpen(false)}
         >
           <div
-            className="bg-white rounded-xl p-6 md:p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto relative"
+            className="bg-white rounded-xl p-4 md:p-8 max-w-2xl w-full  overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -197,12 +197,18 @@ function MentorCard({
                 />
               </svg>
             </button>
-            <div className="pr-8">
+            <div className="">
               <h3 className="font-stix text-2xl md:text-3xl mb-4 text-[var(--foreground)]">
                 {title}
               </h3>
               <div className="text-gray-700 leading-relaxed font-plus-jakarta-sans">
-                {typeof message === 'string' ? (
+                {Array.isArray(message) ? (
+                  message.map((paragraph, index) => (
+                    <p key={index} className={index > 0 ? "mt-4" : ""}>
+                      {paragraph}
+                    </p>
+                  ))
+                ) : typeof message === 'string' ? (
                   <p>{message}</p>
                 ) : Array.isArray(message) ? (
                   <div className="space-y-4">

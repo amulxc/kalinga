@@ -240,7 +240,7 @@ export default function NewsEvents() {
 
                         <div className="flex flex-col items-end gap-2 sm:gap-3 flex-shrink-0">
                           <span className="text-[10px] sm:text-xs text-whitefont-medium px-1.5 sm:px-2 py-0.5 sm:py-1 whitespace-nowrap">{category.name}</span>
-                          <button className="w-7 h-7 sm:w-8 sm:h-8 rounded bg-white flex items-center justify-center shadow-sm hover:bg-gray-100 transition-colors">
+                          <button className="w-7 h-7 sm:w-8 sm:h-8 rounded bg-white flex items-center justify-center shadow-sm hover:bg-[#a2a2a2] transition-colors">
                             <svg
                               className="w-3 h-3 sm:w-4 sm:h-4 text-[var(--button-red)]"
                               viewBox="0 0 16 16"

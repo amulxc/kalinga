@@ -49,11 +49,11 @@ export default function UpcomingConference({
   showDate = true,
   imageWidth = 420,
   imageHeight = 230,
-  imageContainerClass = "w-full md:w-2/5"
+  imageContainerClass = "w-full md:w-2/5 pl-4"
 }) {
   return (
-    <section className={`${backgroundColor} pt-16 pb-16`}>
-      <div className="container mx-auto px-6">
+    <section className={`${backgroundColor} pt-16 pb-16 mx-2 rounded-xl`}>
+      <div className="container mx-auto">
         <h2 className="text-center mb-10">{title}</h2>
 
         <Swiper
@@ -75,7 +75,7 @@ export default function UpcomingConference({
         >
           {conferences.map((conf) => (
             <SwiperSlide key={conf.id}>
-              <div className={`${backgroundColorcard} rounded-2xl shadow-sm  flex flex-col md:flex-row gap-4 md:gap-8 items-center`}>
+              <div className={`${backgroundColorcard} rounded-2xl shadow-sm  flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center`}>
                 <div className={imageContainerClass}>
                   <Image
                     src={conf.image}
@@ -83,11 +83,11 @@ export default function UpcomingConference({
                     width={imageWidth}
                     height={imageHeight}
                     className="rounded-xl object-cover w-full h-full"
-                    style={{ maxWidth: `${imageWidth}px`, maxHeight: `${imageHeight}px` }}
+                    style={{ Width: `${imageWidth}px`, Height: `${imageHeight}px` }}
                   />
                 </div>
 
-                <div className="w-full md:w-3/5 flex flex-col gap-6 md:px-0 px-5 py-10">
+                <div className="w-full md:w-3/5 flex flex-col gap-6 md:px-0 px-5 ">
                   {/* Badges positioned at top right */}
                   {(showDate || showCategory) && (
                     <div className="flex justify-end gap-5 items-center mr-4">
@@ -105,7 +105,7 @@ export default function UpcomingConference({
                   )}
 
                   <div>
-                    <h3 className="!text-4xl  mb-3">
+                    <h3 className="text-2xl md:text-4xl  mb-3">
                       {conf.title}
                     </h3>
                     <p className="text-[var(--light-text-gray)] text-sm">

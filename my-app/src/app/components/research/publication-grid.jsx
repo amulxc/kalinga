@@ -81,7 +81,7 @@ export default function PublicationGrid({
   const StatCard = ({ stat, index }) => (
     <div
       key={index}
-      className="bg-[var(--light-gray)] h-[320px] hover:bg-[var(--dark-skin)] rounded-lg p-4 text-left transition-colors flex flex-col gap-15 justify-between"
+      className="bg-[var(--light-gray)] h-[320px] hover:bg-[var(--dark-skin)] rounded-lg p-4 text-left transition-colors flex flex-col justify-between"
     >
       <div>
         <h3 className="mb-2">{stat.title}</h3>

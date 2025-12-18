@@ -10,6 +10,22 @@ import Gallery from "@/app/components/general/gallery";
 import DeptHeadIntro from "@/app/components/department/dept_head_intro";
 import AdmissionCareer from "@/app/components/general/admission_cta";
 import MediaCardSlider from "@/app/components/general/media-card-slider";
+
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg",
+  pageTitle: "CCRC",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'CCRC', href: '/ccrc' }
+  ]
+};
+
+// Register it globally (no import needed - this pattern works automatically)
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
+
+
 const newsConferences = [
   {
     id: 1,
@@ -158,134 +174,134 @@ const Items = [
 ]
 const blueItems = [
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+68.svg",
-    imageAlt: "CCRC Logo-1",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/abbott.png",
+    imageAlt: "abbott",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+70.svg",
-    imageAlt: "CCRC Logo-2",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/ag-enterprise.png",
+    imageAlt: "ag-enterprise",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+71.svg",
-    imageAlt: "CCRC Logo-3",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/central+bank+of+india.png",
+    imageAlt: "central bank of india",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+72.svg",
-    imageAlt: "CCRC Logo-4",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/cisco.png",
+    imageAlt: "cisco",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+75.svg",
-    imageAlt: "CCRC Logo-5",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/denso.png",
+    imageAlt: "denso",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+77.svg",
-    imageAlt: "CCRC Logo-6",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/edunet.png",
+    imageAlt: "edunet",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+80.svg",
-    imageAlt: "CCRC Logo-7",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/glenmarl.png",
+    imageAlt: "glenmarl",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+81.svg",
-    imageAlt: "CCRC Logo-8",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/godwari.png",
+    imageAlt: "godwari",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+82.svg",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+75.png",
     imageAlt: "CCRC Logo-9",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+83.svg",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+83.png",
     imageAlt: "CCRC Logo-10",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+84.svg",
-    imageAlt: "CCRC Logo-11",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/paytm.png",
+    imageAlt: "paytm",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+85.svg",
-    imageAlt: "CCRC Logo-12",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/saint-gobin.png",
+    imageAlt: "saint-gobin",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+86.svg",
-    imageAlt: "CCRC Logo-13",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/subros.png",
+    imageAlt: "subros",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+87.svg",
-    imageAlt: "CCRC Logo-14",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/suzuki.png",
+    imageAlt: "suzuki",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+88.svg",
-    imageAlt: "CCRC Logo-15",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/techonviz.png",
+    imageAlt: "techonviz",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/Group+89.svg",
-    imageAlt: "CCRC Logo-16",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/industry/veterans.png",
+    imageAlt: "veterans",
   }
 ]
 const redItems = [
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+68.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/agenterprise.png",
+    imageAlt: "agenterprise",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+70.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/care.png",
+    imageAlt: "care",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+71.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/central+bank+of+india.png",
+    imageAlt: "central bank of india",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+72.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/cisco.png",
+    imageAlt: "cisco",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+75.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/edunet.png",
+    imageAlt: "denso",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+77.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/eduskills.png",
+    imageAlt: "eduskills",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+80.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/godwari.png",
+    imageAlt: "godwari",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+81.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+86.png",
+    imageAlt: "mou",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+82.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/ibm.png",
+    imageAlt: "ibm",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+83.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/incube.png",
+    imageAlt: "incube",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+84.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/just.png",
+    imageAlt: "just",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+85.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/singhania.png",
+    imageAlt: "singhania",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+86.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/subros.png",
+    imageAlt: "subros",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+87.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/techoviz.png",
+    imageAlt: "techoviz",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+88.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/utkarsh.png",
+    imageAlt: "utkarsh",
   },
   {
-    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/Group+89.svg",
-    imageAlt: "CCRC Logo",
+    imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/mou/veterans.png",
+    imageAlt: "veterans",
   },
 ]
 const accreditations = [
@@ -328,15 +344,20 @@ const MentorIntroProps = [
     imageSrc: "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/kif/Mr.+Pankaj+Tiwari.webp",
     title: "Mr. Pankaj Tiwari",
     subtitle: "Career & Corporate Resource Centre",
-    department: "Director, Kalinga University",
-    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    department: "Director, Career & Corporate Resource Centre",
+    message: [
+      "CCRC is a platform where learning meets leadership, the right skillset meets industry requirements, and innovation turns into transformation. As the Head of the Career and Corporate Resource Centre (CCRC) at Kalinga University, it is my privilege to empower our students on their journey into the professional world and support corporates and working professionals in achieving maximum output.",
+      "Beyond providing interview opportunities in our campus placement drives, we also ensure that every candidate is ready to confidently clear different interview rounds and get placed at top companies. Through aptitude training, resume-building sessions, expert-led workshops, industrial visits, live projects, mock interview preparation, and industry-focused curriculum, we make them ready for the global job market.",
+      "Apart from training and placements, we offer customised solutions in multiple dimensions like corporate training, consultancy services, HRIS development, CSR initiatives, and incubation solutions for budding entrepreneurs.",
+      "We approach every project with excellence and commitment. I sincerely thank all our recruitment partners for turning the aspirations of our students into rewarding careers and corporate partners for their continued trust and collaboration. I warmly welcome more companies and organisations to work with us and generate capable future leaders."
+    ],
+    quote: "Where Learning Transforms into Leadership and Skills Drive Corporate Success.",
    }
 ]
 export default function CCRCPage() {
   return <>
    
-    <ImageContent imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/ccrclogo.webp" />
+    <ImageContent imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/ccrclogo.webp"  />
     <ImageListItem items={Items} imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/ccrc.webp" title="Benefits for Organisations"  />
     <DeptHeadIntro items={MentorIntroProps} />
 
@@ -369,7 +390,7 @@ export default function CCRCPage() {
         backgroundColor="bg-[var(--light-gray)]"
         backgroundColorcard="bg-white"
       />
-      <Gallery title=" CCRC  Glimpse" />
+      <Gallery title=" CCRC  Glimpse" paddingClassName="py-20" />
      
       <AdmissionCareer />
 

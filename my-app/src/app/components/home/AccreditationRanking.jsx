@@ -47,12 +47,12 @@ const AccreditationRanking = ({
             <div className="bg-[var(--button-red)] text-white rounded-r-[80px] sm:rounded-r-[100px] md:rounded-r-[120px] flex items-center justify-center shadow-lg w-full md:w-[430px] h-auto min-h-[100px] sm:min-h-[140px] md:h-[172px] px-4 sm:px-6 md:px-0 md:md-0 mb-3">
               <h2 className="text-xl sm:text-2xl md:text-4xl font-stix leading-tight text-left py-2 sm:py-0">
                 {heading.split(' & ').map((part, index, array) => (
-                  <span key={index} className="block">
+                  <span key={index} className="block font-stix">
                     {part}{index < array.length - 1 ? ' &' : ''}
                   </span>
                 ))}
                 {secondHeading && (
-                  <span className="block text-lg sm:text-xl md:text-2xl font-normal">
+                  <span className="block font-stix">
                     {secondHeading}
                   </span>
                 )}

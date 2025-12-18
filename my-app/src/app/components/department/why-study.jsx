@@ -91,7 +91,7 @@ export default function WhyStudy({
   }, [items]);
   return (
     <section className="py-16 pb-16 bg-white">
-      <div className="px-6">
+      <div className="px-2">
         {/* Background Image with Overlay Slider */}
         <div className="relative">
           <Image

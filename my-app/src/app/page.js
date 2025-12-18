@@ -7,6 +7,7 @@ import Programs from "./components/home/programs";
 import FeatureCards from "./components/home/featurecard";
 import Facilities from "./components/home/facilities";
 import Placements from "./components/home/placements";
+import Map from "./components/home/global_presence-new";
 import GlobalPresence from "./components/home/global_presence";
 import ResearchInnovation from "./components/home/research_innovation";
 import CampusTour from "./components/home/campus_tour";
@@ -98,7 +99,7 @@ export default function Home() {
       <Facilities />
       <Placements />
       <Testimonials />
-      <GlobalPresence />
+      <Map backgroundColor="bg-[var(--dark-blue)]" textColor="text-white" />
       <Scroll
         texts={['Admission Open 2026']} 
         velocity={100}

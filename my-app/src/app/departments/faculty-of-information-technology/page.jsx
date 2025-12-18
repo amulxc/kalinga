@@ -48,7 +48,7 @@ import UpcomingConference from "../../components/research/upcoming_conference";
         date: "",
         category: "Student Club",
         description: "We just don't talk about technology, but we believe in creating it. Join the Infinity Club and turn your curiosity into powerful tech. Explore coding, cybersecurity, artificial intelligence, data science, machine learning, Internet of Things (IoT), and Robotics & Automation through practical projects and workshops provided by the club. Take advantage of the resources and expert mentorship, and learn to debug the most complex problems.",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/infinity-club.png",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/infinity-club-1.webp",
       },
     ]
 
@@ -258,8 +258,6 @@ import UpcomingConference from "../../components/research/upcoming_conference";
         backgroundColorcard="bg-white"
         showCategory={false}
         showDate={false}
-        imageWidth={300}
-        imageHeight={300}
         imageContainerClass="w-full md:w-1/3 flex justify-center"
       />
       <StudentActivities />
