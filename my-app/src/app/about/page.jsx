@@ -1,3 +1,5 @@
+"use client";
+
 import AboutHero from "../components/about/AboutHero";
 import MainIntro from "../components/about/main_intro";
 import VisionMission from "../components/about/vision-mission";
@@ -14,6 +16,21 @@ import GlobalPresence from "../components/home/global_presence";
 import AwardsScrollbar from "../components/home/awards-scrollbar";
 import Map from "../components/home/global_presence-new";
 import CoreValues from "../components/about/core_values";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/about-banner.webp",
+  pageTitle: "About Us",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 const aboutFeatureCards = [
   {

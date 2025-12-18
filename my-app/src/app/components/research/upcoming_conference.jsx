@@ -49,7 +49,7 @@ export default function UpcomingConference({
   showDate = true,
   imageWidth = 420,
   imageHeight = 230,
-  imageContainerClass = "w-full md:w-2/5 pl-4"
+  imageContainerClass = "w-full md:w-2/5"
 }) {
   return (
     <section className={`${backgroundColor} pt-16 pb-16 mx-2 rounded-xl`}>

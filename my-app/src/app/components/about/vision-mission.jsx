@@ -145,6 +145,25 @@ export default function VisionMission({
   showImage = true,
   className = "",
 }) {
+  // Track if desktop view (for clipPath)
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    // Check if desktop on mount
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    // Check initially
+    checkDesktop();
+
+    // Add resize listener
+    window.addEventListener('resize', checkDesktop);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', checkDesktop);
+  }, []);
+
   // Support data prop (array of objects) or individual props
   const entries = Array.isArray(data) && data.length > 0 
     ? data 
@@ -234,10 +253,10 @@ export default function VisionMission({
                     {/* The Clipped Card - Inverted */}
                     <div 
                       className="bg-[var(--dark-skin)] relative w-full h-full p-[25px] py-20 flex items-center justify-center"
-                      style={{ 
+                      style={isDesktop ? { 
                         clipPath: 'url(#rounded-polygon-inverted)',
                         WebkitClipPath: 'url(#rounded-polygon-inverted)'
-                      }}
+                      } : {borderRadius: '20px'}}
                     >
                       <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-orange-900/5 pointer-events-none"></div>
                       
@@ -278,7 +297,7 @@ export default function VisionMission({
                     style={{ filter: 'drop-shadow(0 25px 25px rgba(0,0,0,0.08))' }}
                   >
                     {/* The Clipped Card */}
-                    <div className="r-3d bg-[var(--dark-skin)] relative w-full h-full p-[25px] py-20 flex items-center justify-center">
+                    <div className={`${isDesktop ? 'r-3d' : 'rounded-[20px]'} bg-[var(--dark-skin)] relative w-full h-full p-[25px] py-20 flex items-center justify-center`}>
                       <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-orange-900/5 pointer-events-none"></div>
                       
                       {/* Content Container */}

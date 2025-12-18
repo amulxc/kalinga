@@ -148,7 +148,7 @@ const Header = () => {
           {
             title: 'Departments',
             links: [
-              { label: 'Courses', href: '/departments/courses' },
+              { label: 'Courses', href: '/departments/bachelor-of-animation-and-visual-effects' },
               { label: 'Faculty of Information Technology', href: '/departments/faculty-of-information-technology' },
             ]
           }

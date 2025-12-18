@@ -28,7 +28,7 @@ export default function Partner({
             {items.map((item, idx) => (
               <div
                 key={`first-${idx}`}
-                className="flex items-center justify-center bg-white rounded-xl p-3 h-20 w-full shadow-sm hover:shadow-md transition-shadow"
+                className="flex items-center justify-center bg-white rounded-xl h-20 w-full shadow-sm hover:shadow-md transition-shadow"
               >
                 {item.imageSrc && (
                   <Image
@@ -48,7 +48,7 @@ export default function Partner({
             {items.map((item, idx) => (
               <div
                 key={`second-${idx}`}
-                className="flex items-center justify-center bg-white rounded-xl p-3 h-20 w-full shadow-sm hover:shadow-md transition-shadow"
+                className="flex items-center justify-center bg-white rounded-xl h-20 w-full shadow-sm hover:shadow-md transition-shadow"
               >
                 {item.imageSrc && (
                   <Image

@@ -1,3 +1,5 @@
+"use client";
+
 import MainIntro from "../../components/about/main_intro";
 import PublicationGrid from "../../components/research/publication-grid";
 import ProgramsOffered from "../../components/department/programs-offered";
@@ -12,6 +14,23 @@ import FAQ from "../../components/general/faq";
 import MediaCardSlider from "../../components/general/media-card-slider";
 import WeStandOut from "../../components/department/we_stand_out";
 import UpcomingConference from "../../components/research/upcoming_conference";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/student-gathered.webp",
+  pageTitle: "Faculty of Information Technology",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Departments', href: '/departments' },
+    { label: 'Faculty of Information Technology', href: '/departments/faculty-of-information-technology' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
+
   export default function FacultyOfInformationTechnology() {
 
     const videoItems = [
@@ -215,6 +234,7 @@ import UpcomingConference from "../../components/research/upcoming_conference";
     <div>
        <MainIntro 
       title="About the Faculty Of IT"
+      subtitle="About the Faculty Of IT"
       description={["Tech is running the world, and the demand for coders is increasing at lightning speed. Whether it's Artificial Intelligence, Machine Learning, Cybersecurity, Data Science, Gaming, or Cloud Computing, careers in IT are booming.",
       "The Faculty of Computer Science and Information Technology is a department of skilled professionals who combine theoretical and practical knowledge and prepare students with the trending IT skills that will keep them ahead in the digital world.",
       "With our modern computer laboratories and digital classrooms, you can learn, experiment, and innovate, and turn your ideas into a new technology. Apart from offering competitive programs, our faculty of information technology also conducts workshops, seminars, hackathons, and hands-on learning programs, and even provides certificates that will add value to your resumes. Ready to begin a new journey of becoming a tech leader?"

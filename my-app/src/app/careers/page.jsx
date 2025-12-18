@@ -6,6 +6,20 @@ import EmployeeBenefits from "../components/careers/EmployeeBenefits"
 import CareerApplicationForm from "../components/careers/CareerApplicationForm"
 import FaqSection from "../components/general/faq"
 
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/career.webp",
+  pageTitle: "Careers",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Careers', href: '/careers' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 export default function Careers() {
   useEffect(() => {

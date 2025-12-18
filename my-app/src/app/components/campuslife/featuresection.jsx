@@ -26,7 +26,7 @@ export default function Page() {
 
 
   return (
-    <div className="container mx-auto px-6 py-8 flex flex-col md:gap-24 gap-10 items-stretch">
+    <div className="container mx-auto px-6 py-8 flex flex-col md:gap-18 gap-10 items-stretch">
 
       {[
         { type: "sandal", title: "Academic Infrastructure", desc: "Kalinga University offers state-of-the-art academic infrastructure with smart classrooms, digital learning tools, and well-equipped labs that promote innovation and practical learning." },
@@ -131,7 +131,7 @@ export default function Page() {
               <h2 className="text-2xl font-regular mb-3 mt-8 md:pl-[140px]">
                 {sec.title}
               </h2>
-              <p className="text-sm leading-relaxed mb-4 md:pl-[140px] md:w-3/4 w-full">
+              <p className="text-sm leading-relaxed mb-4 md:pl-[140px] w-full">
                 {sec.desc}
               </p>
               <div className={`md:pl-[140px] flex ${index === 1 ? 'gap-4' : ''} flex-wrap`}>

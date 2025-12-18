@@ -1,3 +1,5 @@
+"use client";
+
 import MainIntro from "../../components/about/main_intro";
 import PublicationGrid from "../../components/research/publication-grid";
 import Facility from "../../components/admissions/facility";
@@ -11,6 +13,22 @@ import FAQ from "@/app/components/general/faq";
 import AdmissionCareer from "@/app/components/general/admission_cta";
 import CourseNavigation from "@/app/components/general/course-navigation";
 import QuickLinks from "@/app/components/general/quick_links";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/course/student-computer.webp",
+  pageTitle: "Bachelor of Animation and Visual Effects",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Departments', href: '/departments' },
+    { label: 'Bachelor of Animation and Visual Effects', href: '/departments/bachelor-of-animation-and-visual-effects' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 function Courses() {
   // MainIntro content

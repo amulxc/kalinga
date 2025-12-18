@@ -61,7 +61,7 @@ export default function ImageListItem({
             alt={imageAlt}
             width={imageWidth}
             height={imageHeight}
-            className="col-span-6 "
+            className="col-span-6 rounded-xl"
           />
 
           <div className="col-span-6 md:gap-5 gap-2   items-center items-start min-h-[500px] flex flex-col">

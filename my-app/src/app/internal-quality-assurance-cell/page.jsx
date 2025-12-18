@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import MainIntro from '../components/about/main_intro'
 import PublicationGrid from '../components/research/publication-grid'
@@ -5,6 +7,21 @@ import DeptHeadIntro from '../components/department/dept_head_intro'
 import ISOCertificateSection from '../components/iqac/iso_certificate_section'
 import ContactSection from '../components/cif/contact_section'
 import AdmissionCareer from '../components/general/admission_cta'
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/about-banner.webp",
+  pageTitle: "Internal Quality Assurance Cell",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'IQAC', href: '/internal-quality-assurance-cell' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 const IQACPage = () => {
 

@@ -1,3 +1,5 @@
+"use client";
+
 import OurPrograms from "../components/admissions/our_programs";
 import ScholarshipsSlider from "../components/admissions/scholarships_slider";
 import AdmissionSteps from "../components/admissions/admission-steps";
@@ -7,6 +9,21 @@ import QuickLinks from "../components/general/quick_links";
 import FAQ from "../components/general/faq";
 import AdmissionCareer from "../components/general/admission_cta";
 import OrganogramOfKalinga from "../components/about/organogram_of_kalinga";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/student-gathered.webp",
+  pageTitle: "Admissions",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Admissions', href: '/admissions' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 export default function Admissions() {
   // AdmissionSteps content

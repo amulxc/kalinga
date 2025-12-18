@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import MainIntro from '../components/about/main_intro'
 import VisionMission from '../components/about/vision-mission'
@@ -10,6 +12,21 @@ import CareerApplicationForm from '../components/careers/CareerApplicationForm'
 import Gallery from '../components/general/gallery'
 import AdmissionCareer from '../components/general/admission_cta'
 import Testimonials from '../components/home/Testimonials'
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/about-banner.webp",
+  pageTitle: "Central Instrumentation Facility",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Central Instrumentation Facility', href: '/central-instrumentation-facility' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 const CentralInstrumentationFacilityPage = () => {
   

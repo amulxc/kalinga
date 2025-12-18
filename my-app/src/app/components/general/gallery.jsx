@@ -66,7 +66,7 @@ const Gallery = ({
   titleClassName = ""
 }) => {
   const useSlider = images.length > 4
-  const defaultTitleClass = "font-stix text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 sm:mb-8 md:mb-10 text-[var(--foreground)] text-center"
+  const defaultTitleClass = "font-stix mb-6 sm:mb-8 md:mb-10 text-[var(--foreground)] text-center"
 
   return (
     <section className={`${backgroundColor} ${paddingClassName}`}>

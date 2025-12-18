@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import ImageContent from "@/app/components/ccrc/imagecontent";
 import VisionMission from "@/app/components/about/vision-mission";
@@ -14,7 +16,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 // Model breradcrumb
 
 const breadcrumbData = {
-  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg",
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/kif/kif-banner.webp",
   pageTitle: "Kalinga Incubation Facility",
   customBreadcrumbs: [
     { label: 'Home', href: '/' },
@@ -435,8 +437,9 @@ export default function KIFPage({
         showHeaderButton={false}
         showIcon={false}
         showImage={false}
+        bgColor="bg-white"
       />
-      <ImageListItem textClassName="text-white" listItemTextClassName="text-black" imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/kif/kif.webp" boxItems={boxItems1} title="Join Us on Your Entrepreneurial Journey" subtitle="About KIF" description="We transform young innovators' ideas into scalable and profitable ventures. ." />
+      <ImageListItem textClassName="text-white" listItemTextClassName="text-black" imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/kif/picture-29.png" boxItems={boxItems1} title="Join Us on Your Entrepreneurial Journey" subtitle="About KIF" description="We transform young innovators' ideas into scalable and profitable ventures." />
 
       <Testimonials testimonials={testimonials} />
 

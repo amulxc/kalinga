@@ -5,6 +5,22 @@ import SectionHeading from '../components/general/SectionHeading'
 import { renderProgramCard } from '../components/general/program-cards-slider'
 import AdmissionCareer from '../components/general/admission_cta'
 import QuickLinks from "../components/general/quick_links";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/academics/academics-banner.webp",
+  pageTitle: "Academics",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Academics', href: '/academics' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
+
 export default function Academics() {
   const [searchQuery, setSearchQuery] = useState('')
 
