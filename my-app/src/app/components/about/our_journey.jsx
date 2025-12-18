@@ -8,38 +8,52 @@ import { useState, useEffect, useRef } from "react";
 
 const journeyData = [
   {
-    year: "1997",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur",
+    year: "2025",
+    title: "Establishment of Centre of Excellence (JustAuto), NIRF Rank Band 101-150 for 4th Consecutive Year.",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/our-jounary-1.webp",
     cardBg: "bg-white"
   },
   {
-    year: "1998",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    year: "2024",
+    title: "Establishment of 2 Centres of Excellence (EBLU and MSME). MSME HI Recognition, NIRF  Rank Band 101-150 for third consecutive year, Launch of SDG Logo.",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/our-jounary-2.webp",
     cardBg: "bg-[var(--lite-sand)]"
   },
   {
-    year: "1999",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    year: "2023",
+    title: "SIRO Recognition. Establishment of Kalinga Incubation Foundation (KIF), Corporate Training & Consultancy Division, Centre Of Excellence (BDS). NIRF Rank Band 101–150, India Today Ranking (51).",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/library-new.webp",
     cardBg: "bg-white"
   },
   {
-    year: "2003",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    year: "2022",
+    title: "Establishment of Centre of Excellence (Technoviz), UBA, IEEE KU SB, MBSI, CCRC. NIRF Rank Band 101–150, Establishment of SDG Cell.",
+    description: "",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/Phd-mba.webp",
+    cardBg: "bg-[var(--lite-sand)]"
+  },
+  {
+    year: "2021",
+    title: "NIRF Rank Band 151–200, NAAC Accreditation",
+    description: "",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/about-kalinga.webp",
+    cardBg: "bg-white"
+  },
+  {
+    year: "2020",
+    title: "Establishment of Central Instrumentation Facility",
+    description: "",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/phd-biotechnology-n.webp",
     cardBg: "bg-[var(--lite-sand)]"
   },
   {
-    year: "2007",
-    title: "Lorem ipsum dolor sit amet, consectetur",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/hostel.webp",
+    year: "2019",
+    title: "Establishment of IIC, Kalinga University",
+    description: "",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/program/mca.webp",
     cardBg: "bg-white"
   }
 ];
@@ -115,11 +129,15 @@ export default function OurJourney() {
         @media (min-width: 1024px) {
           .journey-swiper .swiper-slide {
             width: 66.666% !important;
+            overflow: visible !important;
           }
           .journey-swiper .swiper-wrapper {
             align-items: stretch;
             overflow: visible !important;
-            gap: 120px !important;
+            padding-right: 33.333%;
+          }
+          .swiper-slide-next .journey-card-content , .swiper-slide-prev .journey-card-content {
+            background-color: var(--lite-sand) !important;
           }
           .journey-swiper {
             overflow: visible !important;
@@ -140,7 +158,7 @@ export default function OurJourney() {
           transition: background-color 0.3s ease;
         }
         .timeline-segment.active {
-          background-color: #F5A623;
+          background-color: var(--dark-orange-red);
         }
         @media (max-width: 767px) {
           .timeline-segment {
@@ -162,7 +180,7 @@ export default function OurJourney() {
           top: 8px;
           left: 8px;
           height: 2px;
-          background-color: #F5A623;
+          background-color: var(--dark-orange-red);
           z-index: 1;
           transition: width 0.5s ease-in-out;
         }
@@ -171,6 +189,11 @@ export default function OurJourney() {
           margin: 0;
           padding: 0;
           overflow: hidden;
+        }
+        @media (min-width: 768px) {
+          .journey-card-reveal {
+            overflow: visible !important;
+          }
         }
         .journey-card-reveal.animate {
           clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
@@ -184,10 +207,29 @@ export default function OurJourney() {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           }
         }
+        @media (min-width: 768px) {
+          .journey-card-reveal.animate {
+            clip-path: polygon(-20% 0, 0 0, 0 100%, -20% 100%);
+            animation: rollFromLeftDesktop 2s ease-in-out forwards;
+          }
+          @keyframes rollFromLeftDesktop {
+            from {
+              clip-path: polygon(-20% 0, -20% 0, -20% 100%, -20% 100%);
+            }
+            to {
+              clip-path: polygon(-20% 0, 100% 0, 100% 100%, -20% 100%);
+            }
+          }
+        }
         .journey-card-content {
           overflow: hidden;
           width: 100%;
           height: 100%;
+        }
+        @media (min-width: 768px) {
+          .journey-card-content {
+            overflow: visible !important;
+          }
         }
         .journey-card-content img {
           animation: scaleDown 2s ease-in-out forwards;
@@ -201,7 +243,7 @@ export default function OurJourney() {
           }
         }
       `}} />
-      <div className="container mx-auto px-2">
+      <div className="container mx-auto px-2 md:px-4">
         {/* Title */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="font-stix text-white text-4xl md:text-5xl lg:text-6xl">
@@ -210,13 +252,13 @@ export default function OurJourney() {
         </div>
 
         {/* Content Cards Swiper */}
-        <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-16 px-4 md:pl-12 lg:pl-16">
+        <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-16 px-4 md:px-6 overflow-x-visible">
           <Swiper
             modules={[Navigation]}
             spaceBetween={16}
             slidesPerView={1}
             centeredSlides={true}
-            loop={false}
+            loop={true}
             speed={1000}
             
             autoplay={{
@@ -231,13 +273,13 @@ export default function OurJourney() {
               },
               768: {
                 slidesPerView: 1,
-                spaceBetween: 24,
+                spaceBetween: 200,
                 centeredSlides: true,
               },
               1024: {
-                slidesPerView: "auto",
-                spaceBetween: 24,
-                centeredSlides: true,
+                slidesPerView: 1.5,
+                spaceBetween: 200,
+                centeredSlides: false,
               },
             }}
             navigation={{
@@ -259,27 +301,28 @@ export default function OurJourney() {
             className="journey-swiper"
           >
             {journeyData.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className={`journey-card-reveal relative rounded-2xl overflow-hidden shadow-lg h-full min-h-[280px] md:overflow-visible md:min-h-[400px] ${activeIndex === index ? 'animate' : ''}`}>
-                  <div className="journey-card-content relative flex flex-col md:flex-row items-stretch h-full bg-[var(--lite-sand)] rounded-2xl overflow-hidden md:overflow-visible">
+              <SwiperSlide key={index} className="md:overflow-visible">
+                <div className={`journey-card-reveal relative rounded-2xl overflow-hidden shadow-lg h-full min-h-[280px] md:min-h-[400px] md:overflow-visible ${activeIndex === index ? 'animate' : ''}`}>
+                  <div className="journey-card-content relative flex flex-col md:flex-row items-stretch h-full bg-[var(--background)] rounded-2xl overflow-hidden md:overflow-visible">
                     {/* Image - On Top (Mobile) / On Left (Desktop) */}
-                    <div className="relative h-[180px] md:h-full min-h-[180px] md:min-h-[400px] w-full md:w-[50%] md:-ml-12 lg:-ml-25 z-20">
+                    <div className="relative h-[180px] md:h-full min-h-[180px] md:min-h-[400px] w-full md:w-[50%] md:-ml-[20%] md:z-50">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover rounded-t-2xl md:rounded-2xl md:mt-5 md:!h-[360px]"
+                        className="object-cover rounded-t-2xl md:rounded-2xl md:mt-5 md:!h-[360px] md:relative md:z-50"
                       />
                     </div>
 
                     {/* Text Content - Below Image (Mobile) / On Right (Desktop) */}
-                    <div className="rounded-b-2xl md:rounded-r-2xl p-3 md:p-5 lg:p-4 flex flex-col justify-center flex-1">
+                    <div className="rounded-b-2xl md:rounded-r-2xl p-3 md:p-5 lg:p-4 flex flex-col justify-center flex-1 md:z-10">
                       <div 
                         className="text-[var(--button-red)] font-stix text-3xl md:text-6xl font-bold mb-2 md:mb-4"
                         style={{
-                          WebkitTextStroke: '0.0001px var(--button-red)',
+                          WebkitTextStroke: '1px var(--button-red)',
                           WebkitTextFillColor: 'transparent',
                           color: 'transparent',
+                          fontWeight: '500',
                         }}
                       >
                         {item.year}
@@ -292,7 +335,6 @@ export default function OurJourney() {
                           {item.description}
                         </p>
                         <p className="text-[var(--light-text-gray)] text-xs md:text-sm lg:text-base leading-relaxed line-clamp-2 md:line-clamp-none">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                       </div>
                     </div>

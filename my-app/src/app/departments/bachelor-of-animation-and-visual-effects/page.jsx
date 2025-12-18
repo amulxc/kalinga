@@ -1,7 +1,7 @@
+"use client";
+
 import MainIntro from "../../components/about/main_intro";
 import PublicationGrid from "../../components/research/publication-grid";
-import DeptHeadIntro from "../../components/department/dept_head_intro";
-import DeptSyllabus from "../../components/department/dept_syllabus";
 import Facility from "../../components/admissions/facility";
 import StudentActivities from "../../components/department/student_activities";
 import EligibilityCriteria from "../../components/course/eligibility_criteria";
@@ -13,6 +13,22 @@ import FAQ from "@/app/components/general/faq";
 import AdmissionCareer from "@/app/components/general/admission_cta";
 import CourseNavigation from "@/app/components/general/course-navigation";
 import QuickLinks from "@/app/components/general/quick_links";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/course/student-computer.webp",
+  pageTitle: "Bachelor of Animation and Visual Effects",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Departments', href: '/departments' },
+    { label: 'Bachelor of Animation and Visual Effects', href: '/departments/bachelor-of-animation-and-visual-effects' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 function Courses() {
   // MainIntro content
@@ -190,43 +206,38 @@ function Courses() {
 
   // QuickLinks content
   const quickLinksContent = {
-    title: "Quick Links",
-    description: "Explore our comprehensive resources and services designed to support your academic journey and career development.",
+    title: "Beyond The Curriculum ",
+    description: "",
     links: [
       {
         id: 1,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/check-icon.png",
-        title: "Admissions",
-        description: "Learn about our admission process, eligibility criteria, and how to apply to your desired program.",
+        title: "Kalinga Incubation Foundation (KIF)",
+        description: "KIF converts students' bold and unique entrepreneurial ideas into ACTION by providing all-around support.",
       },
       {
         id: 2,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/scholarship.svg",
-        title: "Scholarships",
-        description: "Discover various scholarship opportunities available to help fund your education at Kalinga University.",
+        title: "Corporate Training And Consultancy Division (CTCD)",
+        description: "CTCD offers customised training programs to junior, middle, and senior levels of management of different companies.",
       },
       {
         id: 3,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/elgbility.svg",
-        title: "Placements",
-        description: "Explore our placement opportunities and career services that connect students with top employers.",
+        title: "Career Development Centre",
+        description: "It connects students with different companies and trains them in essential skills, helping them achieve their personal and professional goals.",
       },
     ],
   };
 
   // Course Navigation Tabs
   const navigationTabs = [
-    { id: 'about', label: 'About The Program' },
-    { id: 'specialization', label: 'Specialisations' },
-    { id: 'career', label: 'Career Pathways' },
-    { id: 'eligibility', label: 'Eligibility Criteria' },
-    { id: 'duration', label: 'Duration' },
+    { id: 'about', label: 'Program details' },
+    { id: 'specialization', label: 'Specialization' },
+    { id: 'career', label: 'Career Pathway' },
+    { id: 'eligibility', label: 'Eligibility' },
     { id: 'fees', label: 'Fees' },
     { id: 'syllabus', label: 'Syllabus' },
-    { id: 'learning-outcomes', label: 'Learning Outcomes' },
-    { id: 'hiring-partners', label: 'Hiring Partners' },
-    { id: 'beyond-curriculum', label: 'Beyond The Curriculum' },
-    { id: 'activities', label: 'Activities & Events' },
   ];
 
   return (
@@ -239,23 +250,10 @@ function Courses() {
           description={mainIntroContent.description}
           imageUrl={mainIntroContent.imageUrl}
           imageAlt={mainIntroContent.imageAlt}
+          showKnowMore={false}
         />
       </div>
       <PublicationGrid stats={publicationStats} />
-      <div id="specialization">
-        <WhyStudy 
-          sectionTitle={whyStudyContent.sectionTitle}
-          backgroundImage={whyStudyContent.backgroundImage}
-          items={whyStudyContent.items}
-        />
-      </div>
-      <div id="career">
-        <CareerPath 
-          title={careerPathContent.title}
-          description={careerPathContent.description}
-          careers={careerPathContent.careers}
-        />
-      </div>
       <div id="eligibility">
         <EligibilityCriteria 
           imageUrl={eligibilityContent.imageUrl}
@@ -267,27 +265,23 @@ function Courses() {
           admissionButtonLabel={eligibilityContent.admissionButtonLabel}
         />
       </div>
-      <div id="duration">
-        {/* Duration section - content to be added */}
+      <div id="career">
+        <CareerPath 
+          title={careerPathContent.title}
+          description={careerPathContent.description}
+          careers={careerPathContent.careers}
+        />
       </div>
-      <div id="fees">
-        {/* Fees section - content to be added */}
-      </div>
-      <div id="syllabus">
-        <DeptSyllabus />
-      </div>
-      <div id="learning-outcomes">
-        {/* Learning Outcomes section - content to be added */}
-      </div>
-      <div id="hiring-partners">
-        {/* Hiring Partners section - content to be added */}
-      </div>
-      <div id="beyond-curriculum">
-        {/* Beyond the Curriculum section - content to be added */}
+      <div id="specialization">
+        <WhyStudy 
+          sectionTitle={whyStudyContent.sectionTitle}
+          backgroundImage={whyStudyContent.backgroundImage}
+          items={whyStudyContent.items}
+        />
       </div>
       <OrganogramOfKalinga
-        title="Organogram of Kalinga University"
-        description="Kalinga University follows a well-defined governance structure that ensures smooth administration, transparency, and institutional excellence."
+        title="Scheme & Syllabus 2024-2025"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ."
         buttonLabel="Explore Now"
         href="/about-us"
         buttonClassName="!bg-white !text-black"
@@ -295,6 +289,7 @@ function Courses() {
         arrowIconClassName="!text-white"
         textClassName="!text-black"
         cardBackgroundColor="bg-[var(--button-red)]"
+        useContainer={false}
       />
       <div id="facilities">
         <Facility />

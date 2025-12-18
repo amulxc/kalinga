@@ -4,7 +4,7 @@ import GlobalArrowButton from "../general/global-arrow_button";
 export default function DeptSyllabus() {
   return (
     <section className="py-16 pb-16 bg-white">
-      <div className="px-5">
+      <div className="px-2">
         {/* Students Image with Overlay Cards */}
         <div className="relative">
           <Image

@@ -195,7 +195,7 @@ const FAQ = ({
     
     return (
       <Wrapper className={`${backgroundColor} py-16`}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-2">
           {showHeading && (
             <SectionHeading 
               title={title} 
@@ -330,7 +330,7 @@ const FAQ = ({
     
     return (
       <Wrapper className={`${backgroundColor} py-16`}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-2">
           {showHeading && (
             <SectionHeading 
               title={title} 
@@ -423,7 +423,7 @@ const FAQ = ({
     
     return (
       <Wrapper className={`${backgroundColor} py-16`}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-2">
           {showHeading && (
             <SectionHeading 
               title={title} 
@@ -525,7 +525,7 @@ const FAQ = ({
   // Render Default or Editable Variant
   return (
     <Wrapper className={`${backgroundColor} py-16`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-2">
         {showHeading && (
           <SectionHeading 
             title={title} 
@@ -551,7 +551,7 @@ const FAQ = ({
         )}
 
         {/* FAQ Items */}
-        <div className="max-w-4xl mx-auto space-y-4 mt-5">
+        <div className="container mx-auto space-y-4 mt-5">
           {itemsToRender.map((item) => {
             const isOpen = openItems.has(item.id)
             return (
@@ -574,8 +574,10 @@ const FAQ = ({
                         onClick={() => toggleItem(item.id)}
                         className="flex-shrink-0"
                       >
-                        <div className={`bg-white rounded-lg p-1.5 sm:p-2 transition-transform duration-300 ${
-                          isOpen ? 'rotate-180' : ''
+                        <div className={`rounded-lg p-1.5 sm:p-2 transition-all duration-300 ${
+                          isOpen 
+                            ? 'bg-white' 
+                            : 'bg-[var(--button-red)]'
                         }`}>
                           <svg
                             className="w-4 h-4 sm:w-5 sm:h-5"
@@ -583,9 +585,9 @@ const FAQ = ({
                             fill="none"
                           >
                             <path
-                              d="M12 4L6 12M12 4L18 12M12 4L12 20"
+                              d={isOpen ? "M12 4L6 12M12 4L18 12M12 4L12 20" : "M6 10L12 16L18 10"}
                               fill="none"
-                              stroke="var(--button-red)"
+                              stroke={isOpen ? "var(--button-red)" : "white"}
                               strokeWidth="2"
                               strokeLinecap="round"
                               strokeLinejoin="round"
@@ -617,19 +619,21 @@ const FAQ = ({
                       {item.question}
                     </h3>
                     <div className="flex-shrink-0">
-                      <div className={`bg-white rounded-lg p-1.5 sm:p-2 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180' : ''
+                      <div className={`rounded-lg p-1.5 sm:p-2 transition-all duration-300 ${
+                        isOpen 
+                          ? 'bg-white' 
+                          : 'bg-[var(--button-red)]'
                       }`}>
                         <svg
-                          className="w-4 h-4 sm:w-5 sm:h-5"
+                          className="w-4 h-4 sm:w-6 sm:h-6"
                           viewBox="0 0 24 24"
                           fill="none"
                         >
                           <path
-                            d="M12 4L6 12M12 4L18 12M12 4L12 20"
+                            d={isOpen ? "M12 4L6 12M12 4L18 12M12 4L12 20" : "M6 10L12 16L18 10"}
                             fill="none"
-                            stroke="var(--button-red)"
-                            strokeWidth="2"
+                            stroke={isOpen ? "var(--button-red)" : "white"}
+                            strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                           />
@@ -659,14 +663,14 @@ const FAQ = ({
                           columns={
                             item.answer.headers && item.answer.headers.length === 3
                               ? [
-                                  { key: "id", label: item.answer.headers[0] || "S.No", width: "w-20" },
-                                  { key: "program", label: item.answer.headers[1] || "Program Name", width: "w-48" },
-                                  { key: "description", label: item.answer.headers[2] || "CSR Initiatives", width: "flex-1" }
+                                  { key: "id", label: item.answer.headers[0] || "S.No", widthPx: 80 },
+                                  { key: "program", label: item.answer.headers[1] || "Program Name", widthPx: 300 },
+                                  { key: "description", label: item.answer.headers[2] || "CSR Initiatives", widthPx: 500 }
                                 ]
                               : item.answer.headers
                                 ? [
-                                    { key: "id", label: item.answer.headers[0] || "S.No", width: "w-20" },
-                                    { key: "name", label: item.answer.headers[1] || "Name", width: "flex-1" }
+                                    { key: "id", label: item.answer.headers[0] || "S.No", widthPx: 80 },
+                                    { key: "name", label: item.answer.headers[1] || "Name", widthPx: 400 }
                                   ]
                                 : tableColumns
                           }

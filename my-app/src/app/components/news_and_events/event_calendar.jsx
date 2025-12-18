@@ -216,7 +216,7 @@ export default function EventCalendar() {
     <section className="py-16 pb-0 mx-auto container">
       {/* Header Section */}
       <div className="bg-[var(--dark-blue)] py-4 sm:py-5 md:py-6 rounded-xl">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+        <div className="container mx-auto px-2">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 flex-wrap">
             {/* Event Calendar Title */}
             <h2 className="text-white text-2xl sm:text-3xl md:text-[32px] lg:!text-[35px] w-full md:w-auto text-center md:text-left">Event Calendar</h2>

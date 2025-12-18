@@ -24,13 +24,13 @@ export default function MediaCardSlider({
 
   return (
     <section className={` py-16 bg-white relative ${className}`}>
-      <div className="container mx-auto px-4 lg:px-6">
+      <div className="container mx-auto px-2">
         {/* Header Section */}
         <div className="text-center">
          
           <SectionHeading title={title} subtitle={categoryTitle} titleClassName="!py-3" />
           {description && (
-            <p className={` ${descriptionTextClass}`}>
+            <p className={` ${descriptionTextClass} mb-10`}>
               {description}
             </p>
           )}

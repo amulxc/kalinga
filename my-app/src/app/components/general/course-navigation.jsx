@@ -36,8 +36,8 @@ export default function CourseNavigation({
   };
 
   return (
-    <section className="pt-12 pb-6 md:py-6 bg-white">
-      <div className="container mx-auto px-4 lg:px-6">
+    <section className="pt-16 md:py-6 bg-white">
+      <div className="container mx-auto px-2">
         <div className="bg-[var(--lite-sand)] rounded-full px-4 py-3 md:px-4 md:py-4 flex md:flex-wrap md:items-center md:justify-center overflow-x-auto scrollbar-hide gap-3 md:gap-4">
           {tabs.map((tab) => (
             <button

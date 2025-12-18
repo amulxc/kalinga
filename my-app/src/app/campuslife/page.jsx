@@ -25,7 +25,7 @@ export default function Page() {
         title="Life at KU"
         description={["Life at Kalinga University is a vibrant blend of learning, culture, and community. Students from across India and around the world come together to explore ideas, develop skills, and build lifelong connections.From academic clubs and cultural events to sports and leadership activities, every experience at KU fosters growth, confidence, and creativity — all within a modern, green, and inclusive campus."
       ]}
-        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/lifeofku.webp"
+        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/campus-life-intro-1.webp"
         imageAlt="Life at KU"
         showButton ={false}
         showKnowMore ={false}

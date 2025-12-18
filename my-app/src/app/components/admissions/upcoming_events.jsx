@@ -28,7 +28,7 @@ const UpcomingEvents = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-2">
         {/* Title */}
         <h2 className="font-stix text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 sm:mb-8 md:mb-10 text-[var(--foreground)]">
           Upcoming Events

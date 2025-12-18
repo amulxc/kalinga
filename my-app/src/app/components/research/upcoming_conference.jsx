@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -52,8 +51,8 @@ export default function UpcomingConference({
   imageContainerClass = "w-full md:w-2/5"
 }) {
   return (
-    <section className={`${backgroundColor} pt-16 pb-16`}>
-      <div className="container mx-auto px-6">
+    <section className={`${backgroundColor} pt-16 pb-16 mx-2 rounded-xl`}>
+      <div className="container mx-auto">
         <h2 className="text-center mb-10">{title}</h2>
 
         <Swiper
@@ -75,22 +74,23 @@ export default function UpcomingConference({
         >
           {conferences.map((conf) => (
             <SwiperSlide key={conf.id}>
-              <div className={`${backgroundColorcard} rounded-2xl shadow-sm  flex flex-col md:flex-row gap-4 md:gap-8 items-center`}>
-                <div className={imageContainerClass}>
-                  <Image
-                    src={conf.image}
-                    alt={conf.title}
-                    width={imageWidth}
-                    height={imageHeight}
-                    className="rounded-xl object-cover w-full h-full"
-                    style={{ maxWidth: `${imageWidth}px`, maxHeight: `${imageHeight}px` }}
-                  />
-                </div>
+              <div className={`${backgroundColorcard} rounded-2xl shadow-sm  flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center`}>
+                <div 
+                  className={`${imageContainerClass} rounded-xl h-[350px] md:h-[${imageHeight}px]`}
+                  style={{
+                    backgroundImage: `url(${conf.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                  }}
+                  role="img"
+                  aria-label={conf.title}
+                />
 
-                <div className="w-full md:w-3/5 flex flex-col gap-6 md:px-0 px-5 py-10">
+                <div className="w-full md:w-3/5 flex flex-col gap-6 md:px-0 px-5 h-full justify-around pb-5">
                   {/* Badges positioned at top right */}
                   {(showDate || showCategory) && (
-                    <div className="flex justify-end gap-5 items-center mr-4">
+                    <div className="flex md:justify-end justify-start gap-5 items-center mr-4 flex-wrap">
                       {showDate && (
                         <p className="inline-flex font-light font-plus-jakarta-sans  items-center px-2 md:px-3 py-1 rounded-lg bg-[var(--dark-green)] text-white text-xs whitespace-nowrap">
                           {conf.date}
@@ -105,7 +105,7 @@ export default function UpcomingConference({
                   )}
 
                   <div>
-                    <h3 className="!text-4xl  mb-3">
+                    <h3 className="text-2xl md:text-4xl  mb-3">
                       {conf.title}
                     </h3>
                     <p className="text-[var(--light-text-gray)] text-sm">

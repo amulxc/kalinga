@@ -50,7 +50,7 @@ export default function CareerPath({
         </div>
 
         {/* Slider Section */}
-        <div className="relative px-5">
+        <div className="relative px-2">
           <Swiper
             modules={[Navigation]}
             spaceBetween={24}

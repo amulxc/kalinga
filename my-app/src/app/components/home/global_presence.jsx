@@ -21,7 +21,7 @@ const GlobalPresence = ({
   return (
     <section className={sectionClassName}>
       <div className="px-2">
-        <div className={`mx-auto ${backgroundColor} px-3 rounded-xl text-center text-white relative w-full h-auto min-h-[500px] sm:min-h-[500px] md:h-[500px]`}>
+        <div className={`mx-auto ${backgroundColor} rounded-xl text-center text-white relative w-full h-auto min-h-[500px] sm:min-h-[500px] md:h-[500px]`}>
         <div className="max-w-4xl mx-auto pt-16">
         <SectionHeading
           subtitle={subtitle}
@@ -30,7 +30,7 @@ const GlobalPresence = ({
           titleClassName={titleClassName}
           subtitleTextColor={subtitleTextColor}
         />
-          <p className={`text-sm ${descriptionColor} leading-relaxed px-2 sm:px-4 font-plus-jakarta-sans text-left md:text-center text-center`}>
+          <p className={`text-sm ${descriptionColor} leading-relaxed  font-plus-jakarta-sans text-left md:text-center text-center`}>
             {description}
           </p>
         </div>

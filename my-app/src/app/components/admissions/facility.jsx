@@ -48,7 +48,7 @@ export default function Facility({
 }) {
   return (
     <section className="py-16 bg-white relative">
-      <div className="px-4 lg:px-5">
+      <div className="px-2">
         {/* Header Section */}
         <SectionHeading 
                         subtitleClassName={subtitleClassName}

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'   
 import MainIntro from '../components/about/main_intro'
 import PublicationGrid from '../components/research/publication-grid'
@@ -12,6 +14,22 @@ import MediaCardSlider from '../components/general/media-card-slider';
 import UpcomingConference from '../components/research/upcoming_conference';
 import Gallery from '../components/campuslife/campusgallery';
 import AdmissionCareer from '../components/general/admission_cta';
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/international-students/international-students-banner.webp",
+  pageTitle: "International Students",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'International Students', href: '/international-students' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
+
 export default function InternationalStudents() {
   const newsConferences = [
     {
@@ -343,7 +361,7 @@ export default function InternationalStudents() {
         videoItems={videoItems}
         cardBgClass="bg-white"
         nameTextClass="text-[var(--button-red)]"
-        descriptionTextClass="text-gray-600"
+        descriptionTextClass=""
         swiperClassName="ccrc-video-slider"
       />
       <UpcomingConference 

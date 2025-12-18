@@ -23,19 +23,12 @@ const OrganogramOfKalinga = ({
   arrowClassName = "!bg-[var(--dark-orange-red)]",
   arrowIconClassName = "!text-white",
   textClassName = "!text-black",
-  collapsedParagraphs = 1,
-  readMoreLabel = "Read More",
-  readLessLabel = "Show Less",
   showImage = false,
   imageUrl = "",
   imageAlt = "",
   useContainer = false,
 }) => {
   const descriptionArray = Array.isArray(description) ? description : [description];
-  const [showAll, setShowAll] = React.useState(false);
-  const visibleParagraphs = showAll
-    ? descriptionArray
-    : descriptionArray.slice(0, collapsedParagraphs);
 
   const ButtonContent = (
     <GlobalArrowButton
@@ -51,7 +44,7 @@ const OrganogramOfKalinga = ({
 
   return (
     <section className="py-16 bg-white">
-      <div className={`${useContainer ? 'container mx-auto' : ''} px-4 sm:px-5`}>
+      <div className={`${useContainer ? 'container mx-auto' : ''} px-2`}>
         <div
           className={`${cardBackgroundColor} rounded-[10px] text-white relative ${showImage ? 'overflow-visible' : 'overflow-hidden'}`}
         >
@@ -62,22 +55,15 @@ const OrganogramOfKalinga = ({
               <SectionHeading
                 title={title}
                 titleClassName="text-white"
+                subtitleClassName="!text-left"
+                titleClassName="!text-left text-white"
               />
 
               {/* Description */}
               <div className="text-sm sm:text-base md:text-lg leading-relaxed sm:leading-normal md:leading-relaxed mb-6 font-plus-jakarta-sans space-y-3">
-                {visibleParagraphs.map((para, idx) => (
+                {descriptionArray.map((para, idx) => (
                   <p key={idx}>{para}</p>
                 ))}
-                {descriptionArray.length > collapsedParagraphs && (
-                  <button
-                    type="button"
-                    className="text-white font-semibold underline underline-offset-4"
-                    onClick={() => setShowAll(!showAll)}
-                  >
-                    {showAll ? readLessLabel : readMoreLabel}
-                  </button>
-                )}
               </div>
 
               {/* Explore Now Button */}

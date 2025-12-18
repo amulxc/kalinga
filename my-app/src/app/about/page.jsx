@@ -1,3 +1,5 @@
+"use client";
+
 import AboutHero from "../components/about/AboutHero";
 import MainIntro from "../components/about/main_intro";
 import VisionMission from "../components/about/vision-mission";
@@ -12,6 +14,23 @@ import AdmissionCareer from "../components/general/admission_cta";
 import FeatureCards from "../components/home/featurecard";
 import GlobalPresence from "../components/home/global_presence";
 import AwardsScrollbar from "../components/home/awards-scrollbar";
+import Map from "../components/home/global_presence-new";
+import CoreValues from "../components/about/core_values";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/about-banner.webp",
+  pageTitle: "About Us",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 const aboutFeatureCards = [
   {
@@ -157,17 +176,23 @@ const aboutFeatureCards = [
 ];
 
 const aboutAccreditations = [
-  { id: 3, name: "UGC Grant", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/ugc.webp" },
   { id: 4, name: "Outlook", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/outlook.webp" },
   { id: 5, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002974.png" },
   { id: 6, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002953.png" },
   { id: 7, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002975.png" },
   { id: 8, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002976.png" },
-  { id: 10, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002978.png" },
   { id: 11, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002979.png" },
-  { id: 12, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002980.png" },
   { id: 13, name: "NIRF", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002981.png" }
 ];
+
+const aboutApproval= [
+   { id: 3, name: "UGC Grant", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/ugc.webp" },
+   { id: 10, name: "NCTE", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002978.png" },
+   { id: 12, name: "PCI", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002980.png" },
+   { id: 12, name: "BCI", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/bci.webp" },
+   { id: 12, name: "ACITE", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/acite.webp" },
+   { id: 12, name: "CGG", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/cg-government.webp" },
+]
 
 export default function About() {                     
   return (
@@ -180,29 +205,34 @@ export default function About() {
     ,"Spread across a 50-acre green campus, the University features modern infrastructure, advanced laboratories, digital classrooms, and Centres of Excellence, providing an ecosystem that fosters creativity, research, and innovation."
     ,"Driven by its mission to empower learners with knowledge, leadership, and integrity, Kalinga University continues to shape the next generation of professionals, innovators, and changemakers who contribute meaningfully to society and the world."
     ]}
+    readMoreLabel="Read More"
+    readLessLabel="Read Less"
+    
       imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg"
       imageAlt="Kalinga University campus"
+      showKnowMore={true}
+      initialVisibleParagraphs={1}
       />
       <AccreditationRanking 
         heading="Accreditations & Rankings"
         secondHeading=""
         accreditations={aboutAccreditations}
       />
+      <CoreValues />
       <VisionMission />
       <WhoWeAre />
       <Leadership />
       <AccreditationRanking 
         heading="Approvals & Recognitions"
         secondHeading=""
-        accreditations={aboutAccreditations}
+        accreditations={aboutApproval}
       />
       <OurJourney />
     <CenterOfExcellence />
     <OrganogramOfKalinga 
     title="Organogram of Kalinga University" 
     description={[
-      "Kalinga University follows a well-defined governance structure that ensures smooth administration, transparency, and institutional excellence.",
-      "The framework begins with the Chancellor, followed by the Vice-Chancellor and Director General, who oversee the academic, administrative, and strategic functions of the University.",
+      "Kalinga University follows a well-defined governance structure that ensures smooth administration, transparency, and institutional excellence.The framework begins with the Chancellor, followed by the Vice-Chancellor and Director General, who oversee the academic, administrative, and strategic functions of the University.",
       "Each department operates under clearly defined roles and responsibilities, enabling effective coordination, accountability, and efficient decision-making across all levels of the institution."
     ]}
     buttonLabel="Explore Now"
@@ -212,6 +242,7 @@ export default function About() {
     arrowIconClassName="!text-white"
     textClassName="!text-black"
     cardBackgroundColor="bg-[var(--button-red)]"
+    useContainer={true}
     />
     <AwardsScrollbar />
     <FeatureCards 
@@ -220,9 +251,11 @@ export default function About() {
     description="From building a solid academic foundation to experiencing a diverse campus life, Kalinga University offers the best of both worlds and stands as one of the top private university. With students from all across the world, our campus gives a global vibe through cultural exchange, collaborations, fresh ideas, and lifelong connections."
     cards={aboutFeatureCards}
     imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg"
+    titleClassName="!text-left"
+    subtitleClassName="!text-left"
     />
     <Facility />
-    <GlobalPresence
+    {/* <GlobalPresence
       subtitle="Global Presence"
       title="Expanding Horizons Through Global Partnerships"
       description="Kalinga University is home to students from 29+ countries, fostering a truly international learning environment. Through academic exchange programs, research collaborations, and strategic global alliances, the University prepares students to become globally competent professionals and leaders."
@@ -237,7 +270,8 @@ export default function About() {
       titleClassName="text-center"
       subtitleTextColor="!text-[var(--button-red)]"
       sectionClassName="py-0 pb-16"
-    />
+    /> */}
+    <Map />
     <AdmissionCareer />
     </div>
   );

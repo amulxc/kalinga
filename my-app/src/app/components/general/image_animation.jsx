@@ -43,8 +43,8 @@ export default function GalleryAll() {
     }, [])
 
     return (
-        <section ref={sectionRef} className="relative w-full py-6 sm:py-8 md:py-16 bg-white">
-            <div className="container mx-auto px-4 sm:px-6">
+        <section ref={sectionRef} className="relative w-full py-16 bg-white">
+            <div className="container mx-auto px-2">
                 {/* Mobile: Title above grid */}
                 <div className="md:hidden mb-6 text-center transition-all duration-700"
                     style={{

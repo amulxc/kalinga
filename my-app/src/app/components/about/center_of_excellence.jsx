@@ -9,13 +9,13 @@ const centresOfExcellence = [
   {
     id: 1,
     name: "Electric Vehicles Training Centre",
-    title: "Godawari Electric Motors Pvt. Ltd. (Eblu)",
+    title: "In collaboration with Godawari Electric Motors Pvt. Ltd. (Eblu)",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/godawari.png",
   },
   {
     id: 2,
     name: "IIoT Training Centre",
-    title: "Technoviz Auto",
+    title: "In collaboration with Technoviz Automation",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002977.png",
   },
   {
@@ -26,10 +26,28 @@ const centresOfExcellence = [
   },
   {
     id: 4,
-    name: "Robotics, Coding, & Drone",
-    title: "BDS Education",
+    name: "Robotics, Coding, & Drone Training Centre",
+    title: "In collaboration with BDS Education",
     image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002988.png",
   },
+  {
+    id: 5,
+    name: "MSME Training Centre",
+    title: "In collaboration with IamSMEofIndia",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/smeindia.webp",
+  },
+  {
+    id: 6,
+    name: "AI & ML Courses Training Centre",
+    title: "In collaboration with the IBM Innovation Centre for Education",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/ibm.webp",
+  },
+  {
+    id: 7,
+    name: "Automobile Training Centre",
+    title: "In collaboration with JustAuto Solutions",
+    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/justauto.webp",
+  }
 ];
 
 export default function CenterOfExcellence({
@@ -102,9 +120,7 @@ export default function CenterOfExcellence({
               color: var(--foreground);
               margin-bottom: 16px;
             }
-            .swiper-wrapper{
-            justify-content: center;
-            }
+
           `}} />
           <Swiper
             modules={[Navigation]}
@@ -133,7 +149,7 @@ export default function CenterOfExcellence({
               nextEl: ".centres-swiper-button-next",
               prevEl: ".centres-swiper-button-prev",
             }}
-            className="centres-swiper !pb-12 [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:items-stretch [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex"
+            className={`centres-swiper [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:items-stretch [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex ${centres.length <= 3 ? '[&_.swiper-wrapper]:justify-center' : ''}`}
             loop={false}
             autoHeight={false}
           >

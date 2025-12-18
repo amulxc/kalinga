@@ -46,7 +46,7 @@ const MobileMenu = ({ navItems, onClose }) => {
         className="fixed left-0 right-0 bottom-0 bg-white z-12 lg:hidden overflow-y-auto animate-slideDown shadow-lg"
         style={{ top: `${headerHeight}px` }}
       >
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-2 py-6">
           {/* Navigation Items */}
           <nav className="space-y-1">
             {navItems.map((item) => (

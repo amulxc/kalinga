@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -39,6 +39,8 @@ export default function WhyStudy({
   backgroundImage = 'https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/why-this-course-1.webp',
 }) {
   const [cardExpanded, setCardExpanded] = useState({});
+  const [needsReadMore, setNeedsReadMore] = useState({});
+  const textRefs = useRef({});
   
   const toggleCard = (id) => setCardExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
   
@@ -48,9 +50,48 @@ export default function WhyStudy({
     WebkitBoxOrient: 'vertical',
     overflow: 'hidden',
   };
+
+  useEffect(() => {
+    // Check if text needs truncation by comparing scrollHeight with clientHeight
+    // Use setTimeout to ensure DOM is fully rendered
+    const timer = setTimeout(() => {
+      items.forEach((item) => {
+        const ref = textRefs.current[item.id];
+        if (ref) {
+          // Get the line height (approximate)
+          const lineHeight = parseFloat(getComputedStyle(ref).lineHeight) || 20;
+          const maxClampedHeight = lineHeight * 3; // 3 lines
+          
+          // Temporarily remove clamp to measure full height
+          const wasClamped = ref.style.display === '-webkit-box';
+          if (wasClamped) {
+            ref.style.display = '';
+            ref.style.webkitLineClamp = '';
+            ref.style.webkitBoxOrient = '';
+            ref.style.overflow = '';
+          }
+          
+          const fullHeight = ref.scrollHeight;
+          
+          // Restore clamp if it was there
+          if (wasClamped) {
+            ref.style.display = '-webkit-box';
+            ref.style.webkitLineClamp = '3';
+            ref.style.webkitBoxOrient = 'vertical';
+            ref.style.overflow = 'hidden';
+          }
+          
+          const needsTruncation = fullHeight > maxClampedHeight;
+          setNeedsReadMore((prev) => ({ ...prev, [item.id]: needsTruncation }));
+        }
+      });
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [items]);
   return (
     <section className="py-16 pb-16 bg-white">
-      <div className="px-6">
+      <div className="px-2">
         {/* Background Image with Overlay Slider */}
         <div className="relative">
           <Image
@@ -103,12 +144,13 @@ export default function WhyStudy({
                               {item.title}
                             </h4>
                             <p
+                              ref={(el) => (textRefs.current[item.id] = el)}
                               className="text-sm"
                               style={cardExpanded[item.id] ? undefined : collapsedTextStyle}
                             >
                               {item.body}
                             </p>
-                            {item.body && (
+                            {item.body && needsReadMore[item.id] && (
                               <button
                                 onClick={() => toggleCard(item.id)}
                                 className="mt-2 text-[var(--button-red)] text-sm hover:opacity-80 transition-opacity self-start !text-[13px]"

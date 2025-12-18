@@ -51,12 +51,11 @@ export default function Leadership() {
       <div className="container mx-auto px-2">
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-12">
-          
           <SectionHeading title="Our Leadership" titleClassName="!py-2" />
         </div>
 
         {/* Slider Section */}
-        <div className="relative">
+        <div className="relative overflow-hidden px-0 lg:px-8 xl:px-16">
           <Swiper
             modules={[Navigation]}
             spaceBetween={24}
@@ -83,7 +82,7 @@ export default function Leadership() {
               nextEl: ".leadership-swiper-button-next",
               prevEl: ".leadership-swiper-button-prev",
             }}
-            className="leadership-swiper  [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:items-stretch [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex"
+            className="leadership-swiper [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:!items-stretch [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex"
             loop={false}
             autoHeight={false}
           >
@@ -121,7 +120,7 @@ export default function Leadership() {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-end items-center gap-3">
+          <div className="flex justify-end items-center gap-3 mt-4">
             <button className="leadership-swiper-button-prev w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
               <svg
                 width="20"
@@ -163,5 +162,4 @@ export default function Leadership() {
       </div>
     </section>
   );
-} 
-
+}

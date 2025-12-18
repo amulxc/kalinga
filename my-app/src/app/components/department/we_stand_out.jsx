@@ -26,7 +26,7 @@ export default function WeStandOut({
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 lg:px-6">
+      <div className="px-2">
         {/* Title */}
         <h2 className="font-stix text-[var(--foreground)] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 md:mb-12 text-center">
           {title}

@@ -99,7 +99,7 @@ export default function Research() {
         videoItems={videoItems}
         cardBgClass="bg-white"
         nameTextClass="text-[var(--button-red)]"
-        descriptionTextClass="text-gray-600"
+        descriptionTextClass=""
         swiperClassName="ccrc-video-slider"
       />
       <QuickLinks titleClassName="text-white" links={links2} />

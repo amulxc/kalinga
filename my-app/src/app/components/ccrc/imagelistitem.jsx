@@ -14,10 +14,11 @@ export default function ImageListItem({
   items = [],
   boxItems = [],
   className = "",
-  textClassName = "text-white",
+  textClassName = "text-white ",
   headingClassName = "text-white",
   cardBackgroundColor = "bg-[var(--card-sandal)]",
   cardTitleClassName = "text-[var(--red)]",
+  listItemTextClassName = "",
 }) {
   return (
     <section
@@ -54,21 +55,26 @@ export default function ImageListItem({
         `}
       </style>
       <div className="container mx-auto ">
-        <div className="grid md:grid-cols-12 grid-cols-6 items-center gap-12 justify-between">
+        <div className="grid md:grid-cols-12 grid-cols-6 items-center md:gap-12 gap-6 justify-between">
           <Image
             src={imageSrc}
             alt={imageAlt}
             width={imageWidth}
             height={imageHeight}
-            className="col-span-6 "
+            className="col-span-6 rounded-xl"
           />
 
-          <div className="col-span-6 gap-5 items-center items-start min-h-[500px] flex flex-col">
+          <div className="col-span-6 md:gap-5 gap-2   items-center items-start min-h-[500px] flex flex-col">
             {/* Heading not scrollable */}
             <SectionHeading
               title={title}
-              titleClassName={`!py-2 ${headingClassName}`}
+              titleClassName={`!py-2 text-left  ${headingClassName}`}
             />
+
+            {/* Description */}
+            {description && (
+              <p className={`text-sm pb-4 ${textClassName}`}>{description}</p>
+            )}
 
             {/* Scrollable items only */}
             {items && Array.isArray(items) && items.length > 0 && (
@@ -76,12 +82,12 @@ export default function ImageListItem({
                 {items.map((item, idx) => (
                   <li
                     key={idx}
-                    className="flex items-center space-x-3 space-y-2"
+                    className="flex items-start space-x-3 space-y-2"
                   >
                     <svg
                       fill="none"
                       height="24"
-                      className="md:h-6 md:w-6 h-6 w-9 bg-[var(--card-skin)] fill-black rounded-md p-1"
+                      className="h-6 w-6 bg-[var(--card-skin)] fill-black rounded-md p-1 flex-shrink-0"
                       viewBox="0 0 24 24"
                       width="24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +130,7 @@ export default function ImageListItem({
                           {item.title}
                         </h4>
                       )}
-                      <p className={textClassName}>
+                      <p className={listItemTextClassName}>
                         {item.text || item.description}
                       </p>
                     </div>

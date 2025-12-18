@@ -1,3 +1,5 @@
+"use client";
+
 import MainIntro from "../../components/about/main_intro";
 import PublicationGrid from "../../components/research/publication-grid";
 import ProgramsOffered from "../../components/department/programs-offered";
@@ -12,6 +14,23 @@ import FAQ from "../../components/general/faq";
 import MediaCardSlider from "../../components/general/media-card-slider";
 import WeStandOut from "../../components/department/we_stand_out";
 import UpcomingConference from "../../components/research/upcoming_conference";
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/student-gathered.webp",
+  pageTitle: "Faculty of Information Technology",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Departments', href: '/departments' },
+    { label: 'Faculty of Information Technology', href: '/departments/faculty-of-information-technology' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
+
   export default function FacultyOfInformationTechnology() {
 
     const videoItems = [
@@ -48,7 +67,7 @@ import UpcomingConference from "../../components/research/upcoming_conference";
         date: "",
         category: "Student Club",
         description: "We just don't talk about technology, but we believe in creating it. Join the Infinity Club and turn your curiosity into powerful tech. Explore coding, cybersecurity, artificial intelligence, data science, machine learning, Internet of Things (IoT), and Robotics & Automation through practical projects and workshops provided by the club. Take advantage of the resources and expert mentorship, and learn to debug the most complex problems.",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/infinity-club.png",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/infinity-club-1.webp",
       },
     ]
 
@@ -203,19 +222,29 @@ import UpcomingConference from "../../components/research/upcoming_conference";
         title: "Mr. Omprakash Dewangan",
         subtitle: "Dean of Faculty",
         department: "Faculty of Information Technology",
-        message: "I welcome you to the Faculty of Computer Science and Information Technology of Kalinga University. As a Dean of the faculty, I believe that Kalinga University is leading in technological education and excellence in Chhattisgarh. Our curriculum is designed to provide students with an unmatched practical experience so that they can fulfil the needs of the IT industry and become future tech leaders. We encourage them to explore AI-ML, Cybersecurity, and Data Science and develop a passion for research in trending technologies. Students will get the opportunity to work on practical projects with our industry partnerships. With our Centre of Excellence for technology, you will get hands-on learning opportunities in different tools and technologies. The Faculty of IT not only focuses on academics but also conducts seminars, conferences, workshops, hackathon competitions, and guest lectures so you can get the most out of your program at Kalinga University. Our faculty members and students work together to shape the future of our tech industry. I believe that every student has the potential to make an impactful change not only in the computing field but also in society. Now, it's your turn to make a difference.",
-        quote: "I welcome you to the Faculty of Computer Science and Information Technology of Kalinga University. As a Dean of the faculty, I believe that Kalinga University is leading in technological education and excellence in Chhattisgarh. Our curriculum is designed to provide students with an unmatched practical experience so that they can fulfil the needs of the IT industry and become future tech leaders. We encourage them to explore AI-ML, Cybersecurity, and Data Science and develop a passion for research in trending technologies. Students will get the opportunity to work on practical projects with our industry partnerships. With our Centre of Excellence for technology, you will get hands-on learning opportunities in different tools and technologies. The Faculty of IT not only focuses on academics but also conducts seminars, conferences, workshops, hackathon competitions, and guest lectures so you can get the most out of your program at Kalinga University. Our faculty members and students work together to shape the future of our tech industry. I believe that every student has the potential to make an impactful change not only in the computing field but also in society. Now, it's your turn to make a difference.",
+        message: [
+          "I welcome you to the Faculty of Computer Science and Information Technology of Kalinga University. As a Dean of the faculty, I believe that Kalinga University is leading in technological education and excellence in Chhattisgarh. Our curriculum is designed to provide students with an unmatched practical experience so that they can fulfil the needs of the IT industry and become future tech leaders.",
+          "We encourage them to explore AI-ML, Cybersecurity, and Data Science and develop a passion for research in trending technologies. Students will get the opportunity to work on practical projects with our industry partnerships. With our Centre of Excellence for technology, you will get hands-on learning opportunities in different tools and technologies.",
+          "The Faculty of IT not only focuses on academics but also conducts seminars, conferences, workshops, hackathon competitions, and guest lectures so you can get the most out of your program at Kalinga University. Our faculty members and students work together to shape the future of our tech industry. I believe that every student has the potential to make an impactful change not only in the computing field but also in society. Now, it's your turn to make a difference."
+        ],
+        quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
        }
     ]
   return (
     <div>
        <MainIntro 
       title="About the Faculty Of IT"
-      description={["Tech is running the world, and the demand for coders is increasing at lightning speed. Whether it's Artificial Intelligence, Machine Learning, Cybersecurity, Data Science, Gaming, or Cloud Computing, careers in IT are booming. The Faculty of Computer Science and Information Technology is a department of skilled professionals who combine theoretical and practical knowledge and prepare students with the trending IT skills that will keep them ahead in the digital world.",
+      subtitle="About the Faculty Of IT"
+      description={["Tech is running the world, and the demand for coders is increasing at lightning speed. Whether it's Artificial Intelligence, Machine Learning, Cybersecurity, Data Science, Gaming, or Cloud Computing, careers in IT are booming.",
+      "The Faculty of Computer Science and Information Technology is a department of skilled professionals who combine theoretical and practical knowledge and prepare students with the trending IT skills that will keep them ahead in the digital world.",
       "With our modern computer laboratories and digital classrooms, you can learn, experiment, and innovate, and turn your ideas into a new technology. Apart from offering competitive programs, our faculty of information technology also conducts workshops, seminars, hackathons, and hands-on learning programs, and even provides certificates that will add value to your resumes. Ready to begin a new journey of becoming a tech leader?"
     ]}
       imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg"
       imageAlt="Kalinga University campus"
+      initialVisibleParagraphs={2}
+      showButton={true}
+      buttonLabel="Read More"
+      showKnowMore={false}
       />
       <PublicationGrid />
       <ProgramsOffered 
@@ -233,7 +262,7 @@ import UpcomingConference from "../../components/research/upcoming_conference";
         videoItems={videoItems}
         cardBgClass="bg-white"
         nameTextClass="text-[var(--button-red)]"
-        descriptionTextClass="text-gray-600"
+        descriptionTextClass=""
         swiperClassName="ccrc-video-slider"
       />
       <Facility />
@@ -249,8 +278,6 @@ import UpcomingConference from "../../components/research/upcoming_conference";
         backgroundColorcard="bg-white"
         showCategory={false}
         showDate={false}
-        imageWidth={300}
-        imageHeight={300}
         imageContainerClass="w-full md:w-1/3 flex justify-center"
       />
       <StudentActivities />

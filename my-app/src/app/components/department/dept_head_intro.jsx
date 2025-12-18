@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import SectionHeading from "../general/SectionHeading";
 
@@ -20,6 +20,50 @@ function MentorCard({
 }) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isQuoteExpanded, setIsQuoteExpanded] = useState(false);
+  const [needsReadMore, setNeedsReadMore] = useState(false);
+  const quoteRef = useRef(null);
+
+  useEffect(() => {
+    // Check if quote text needs truncation
+    const checkIfNeedsTruncation = () => {
+      if (quoteRef.current && quote) {
+        const element = quoteRef.current;
+        
+        // Create a temporary element to measure full text height
+        const tempElement = document.createElement('p');
+        tempElement.style.cssText = window.getComputedStyle(element).cssText;
+        tempElement.style.position = 'absolute';
+        tempElement.style.visibility = 'hidden';
+        tempElement.style.display = 'block';
+        tempElement.style.webkitLineClamp = 'none';
+        tempElement.style.webkitBoxOrient = 'unset';
+        tempElement.style.overflow = 'visible';
+        tempElement.style.height = 'auto';
+        tempElement.style.width = element.offsetWidth + 'px';
+        tempElement.textContent = quote;
+        
+        document.body.appendChild(tempElement);
+        const fullHeight = tempElement.offsetHeight;
+        document.body.removeChild(tempElement);
+        
+        // Get line height from original element
+        const lineHeight = parseFloat(getComputedStyle(element).lineHeight) || 24;
+        const maxClampedHeight = lineHeight * 4; // 4 lines (WebkitLineClamp: 4)
+        
+        // Check if content actually exceeds 4 lines (with small buffer)
+        setNeedsReadMore(fullHeight > maxClampedHeight + 2);
+      }
+    };
+
+    // Check after initial render and on resize
+    const timer = setTimeout(checkIfNeedsTruncation, 300);
+    window.addEventListener('resize', checkIfNeedsTruncation);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', checkIfNeedsTruncation);
+    };
+  }, [quote]);
 
   return (
     <>
@@ -63,14 +107,14 @@ function MentorCard({
         </div>
 
       <div className="lg:col-span-8 flex flex-col gap-6 relative lg:left-[-25px] lg:pt-20 lg:pt-0 z-10">
-        <div className="md:pl-12 pl-0">
+        <div className="md:pl-14 pl-0">
           <SectionHeading title={title} subtitle={subtitle} titleClassName="!py-2" />
           <p className="text-gray-700 text-xl">
             {department}
           </p>
         </div>
 
-        <div className="bg-[var(--dark-blue)] rounded-xl p-14 relative overflow-hidden pl-12 z-10">
+        <div className="bg-[var(--dark-blue)] rounded-xl p-14 relative overflow-hidden pl-14 z-10">
           <div className="absolute top-10 left-12">
             <div className="flex gap-1">
               <svg width="26" height="41" viewBox="0 0 26 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,7 +128,8 @@ function MentorCard({
 
           <div className="relative z-10">
             <p 
-              className="text-white text-base leading-relaxed pt-10 pb-4"
+              ref={quoteRef}
+              className="text-white text-base leading-relaxed pt-10 pb-8"
               style={!isQuoteExpanded ? {
                 display: '-webkit-box',
                 WebkitLineClamp: 4,
@@ -95,12 +140,14 @@ function MentorCard({
             >
               {quote}
             </p>
-            <button
-              onClick={() => setIsQuoteExpanded(!isQuoteExpanded)}
-              className="text-white/80 hover:text-white text-sm font-plus-jakarta-sans mt-2 transition-colors underline"
-            >
-              {isQuoteExpanded ? 'Read Less' : 'Read More'}
-            </button>
+            {needsReadMore && (
+              <button
+                onClick={() => setIsQuoteExpanded(!isQuoteExpanded)}
+                className="text-white/80 hover:text-white text-sm font-plus-jakarta-sans mt-2 transition-colors underline"
+              >
+                {isQuoteExpanded ? 'Read Less' : 'Read More'}
+              </button>
+            )}
           </div>
 
           <div className="flex items-end justify-end relative z-10">
@@ -122,11 +169,11 @@ function MentorCard({
       {/* Popup Modal */}
       {isPopupOpen && message && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm bg-opacity-50 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm bg-opacity-50 z-50 flex items-end justify-center p-4"
           onClick={() => setIsPopupOpen(false)}
         >
           <div
-            className="bg-white rounded-xl p-6 md:p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto relative"
+            className="bg-white rounded-xl p-4 md:p-8 max-w-2xl w-full  overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -150,13 +197,25 @@ function MentorCard({
                 />
               </svg>
             </button>
-            <div className="pr-8">
+            <div className="">
               <h3 className="font-stix text-2xl md:text-3xl mb-4 text-[var(--foreground)]">
                 {title}
               </h3>
               <div className="text-gray-700 leading-relaxed font-plus-jakarta-sans">
-                {typeof message === 'string' ? (
+                {Array.isArray(message) ? (
+                  message.map((paragraph, index) => (
+                    <p key={index} className={index > 0 ? "mt-4" : ""}>
+                      {paragraph}
+                    </p>
+                  ))
+                ) : typeof message === 'string' ? (
                   <p>{message}</p>
+                ) : Array.isArray(message) ? (
+                  <div className="space-y-4">
+                    {message.map((paragraph, idx) => (
+                      <p key={idx}>{paragraph}</p>
+                    ))}
+                  </div>
                 ) : (
                   message
                 )}
@@ -173,7 +232,7 @@ export default function MentorIntro({ items, ...restProps }) {
   const entries = Array.isArray(items) && items.length > 0 ? items : [restProps];
   return (
     <section className="py-16 bg-white pt-30">
-      <div className="container mx-auto px-4 space-y-12">
+      <div className="container mx-auto px-2 space-y-12">
         {entries.map((item, idx) => (
           <MentorCard key={idx} {...item} />
         ))}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -44,12 +44,44 @@ export default function PublicationGrid({
   const nextRef = useRef(null);
   const desktopPrevRef = useRef(null);
   const desktopNextRef = useRef(null);
+  const mobileSwiperRef = useRef(null);
+  const desktopSwiperRef = useRef(null);
   const useSwiper = stats.length > 4;
+
+  useEffect(() => {
+    // Update navigation after refs are ready
+    const updateNavigation = () => {
+      if (mobileSwiperRef.current && prevRef.current && nextRef.current) {
+        if (mobileSwiperRef.current.navigation) {
+          mobileSwiperRef.current.params.navigation.prevEl = prevRef.current;
+          mobileSwiperRef.current.params.navigation.nextEl = nextRef.current;
+          mobileSwiperRef.current.navigation.init();
+          mobileSwiperRef.current.navigation.update();
+        }
+      }
+      if (desktopSwiperRef.current && desktopPrevRef.current && desktopNextRef.current) {
+        if (desktopSwiperRef.current.navigation) {
+          desktopSwiperRef.current.params.navigation.prevEl = desktopPrevRef.current;
+          desktopSwiperRef.current.params.navigation.nextEl = desktopNextRef.current;
+          desktopSwiperRef.current.navigation.init();
+          desktopSwiperRef.current.navigation.update();
+        }
+      }
+    };
+
+    const timer = setTimeout(updateNavigation, 400);
+    window.addEventListener('resize', updateNavigation);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', updateNavigation);
+    };
+  }, [stats]);
 
   const StatCard = ({ stat, index }) => (
     <div
       key={index}
-      className="bg-[var(--light-gray)] h-[300px] hover:bg-[var(--dark-skin)] rounded-lg p-4 text-left transition-colors flex flex-col gap-15 justify-between"
+      className="bg-[var(--light-gray)] h-[320px] hover:bg-[var(--dark-skin)] rounded-lg p-4 text-left transition-colors flex flex-col justify-between"
     >
       <div>
         <h3 className="mb-2">{stat.title}</h3>
@@ -67,12 +99,16 @@ export default function PublicationGrid({
       {/* Mobile Swiper */}
       <div className="md:hidden relative">
         <Swiper
+          onSwiper={(swiper) => {
+            mobileSwiperRef.current = swiper;
+          }}
           modules={[Navigation]}
           spaceBetween={15}
           slidesPerView={1.2}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
+            enabled: true,
           }}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
@@ -91,7 +127,7 @@ export default function PublicationGrid({
           ))}
         </Swiper>
 
-        {/* Navigation Buttons - Bottom Right */}
+        {/* Navigation Buttons - Bottom */}
         <div className="flex justify-end items-center gap-3 mt-4">
           <button
             ref={prevRef}
@@ -142,6 +178,9 @@ export default function PublicationGrid({
       {useSwiper ? (
         <div className="hidden md:block relative">
           <Swiper
+            onSwiper={(swiper) => {
+              desktopSwiperRef.current = swiper;
+            }}
             modules={[Navigation]}
             spaceBetween={15}
             slidesPerView={4}
@@ -158,6 +197,7 @@ export default function PublicationGrid({
             navigation={{
               prevEl: desktopPrevRef.current,
               nextEl: desktopNextRef.current,
+              enabled: true,
             }}
             onBeforeInit={(swiper) => {
               swiper.params.navigation.prevEl = desktopPrevRef.current;
@@ -176,7 +216,7 @@ export default function PublicationGrid({
             ))}
           </Swiper>
 
-          {/* Navigation Buttons */}
+          {/* Navigation Buttons - Bottom */}
           <div className="flex justify-end items-center gap-3 mt-4">
             <button
               ref={desktopPrevRef}

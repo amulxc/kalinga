@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import MainIntro from '../components/about/main_intro'
 import VisionMission from '../components/about/vision-mission'
@@ -10,6 +12,21 @@ import CareerApplicationForm from '../components/careers/CareerApplicationForm'
 import Gallery from '../components/general/gallery'
 import AdmissionCareer from '../components/general/admission_cta'
 import Testimonials from '../components/home/Testimonials'
+
+// Breadcrumb configuration
+const breadcrumbData = {
+  heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/about-banner.webp",
+  pageTitle: "Central Instrumentation Facility",
+  customBreadcrumbs: [
+    { label: 'Home', href: '/' },
+    { label: 'Central Instrumentation Facility', href: '/central-instrumentation-facility' }
+  ]
+};
+
+// Register breadcrumb data globally
+if (typeof window !== 'undefined') {
+  window.__breadcrumbData = breadcrumbData;
+}
 
 const CentralInstrumentationFacilityPage = () => {
   
@@ -107,8 +124,9 @@ const CentralInstrumentationFacilityPage = () => {
     <MainIntro 
     title="About the Central Instrumentation Facility"
     description="To fulfil the research needs in science and technology at a higher level, Central Instrumentation Facility labs are established at Kalinga University for students, faculty members, and research scholars. A wide range of advanced instruments, including an X-Ray Diffractometer (XRD), 3D Printer, Bio-Chemistry Analyser, and many more, are available for in-depth experimentation work under one roof. We also welcome researchers from other universities, organisations, and NGOs, promoting collaboration across different departments.Managed by a team of technical experts, KU ensures that researchers are well-supported through hands-on training programs and workshops, which not only teach them how to operate an instrument but also ways to analyse and manage data effectively. We aim to expand our sophisticated list of machines to become a National Leader in research excellence."
-    imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/CIF/Rectangle+574056992.webp"
+    imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg"
     imageAlt="Central Instrumentation Facility"
+    showKnowMore={false}
     />
     <VisionMission
       visionTitle="Vision"
@@ -140,7 +158,7 @@ const CentralInstrumentationFacilityPage = () => {
     />
     <ContactSection />
     <CareerApplicationForm
-          heading="CTCD Application Form"
+          heading="Application Form"
           description="Share your details to stay connected with Kalinga University, receive updates, and participate in alumni activities and events."
           backgroundClass="bg-[var(--button-red)]"
           hideTabs={true}

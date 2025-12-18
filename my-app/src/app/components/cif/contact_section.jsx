@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import SectionHeading from "../general/SectionHeading";
 
-const DEFAULT_IMAGE_SRC = "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/omprakash.png";
+const DEFAULT_IMAGE_SRC = "https://kalinga-university.s3.ap-south-1.amazonaws.com/IQAC/kalinga.webp";
 const DEFAULT_TITLE = "Mr. Omprakash Dewangan";
 const DEFAULT_SUBTITLE = "Head of Department";
 const DEFAULT_DEPARTMENT = "Faculty of Information Technology";
@@ -64,7 +64,7 @@ function MentorCard({
       <div className="lg:col-span-8 flex flex-col gap-6 relative lg:left-[-25px] lg:pt-35 lg:pt-0 z-10">
         
         {/* Contact Details Section */}
-        <div className="bg-[var(--dark-blue)] rounded-xl p-14 relative overflow-hidden pl-12 z-10">
+        <div className="bg-[var(--dark-blue)] rounded-xl md:p-14 p-6 relative overflow-hidden md:pl-16 z-10">
           <div className="relative z-10">
             <h3 className="text-white text-xl sm:text-2xl font-stix mb-6">Contact Details</h3>
             <div className="grid grid-cols-1 gap-4 sm:gap-6 text-white/80">
@@ -106,8 +106,8 @@ function MentorCard({
 export default function MentorIntro({ items, ...restProps }) {
   const entries = Array.isArray(items) && items.length > 0 ? items : [restProps];
   return (
-    <section className="py-16 bg-white pt-30">
-      <div className="container mx-auto px-4 space-y-12">
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-2 space-y-12">
         {entries.map((item, idx) => (
           <MentorCard key={idx} {...item} />
         ))}
