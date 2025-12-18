@@ -23,6 +23,8 @@ export default function MainIntro({
   imageUrl = defaultContent.imageUrl,
   imageAlt = defaultContent.imageAlt,
   initialVisibleParagraphs = 2,
+  subtitleClassName = "text-left",
+  titleClassName = "leading-tight !text-left",
   showImage = true,
   showKnowMore = true,
   knowMoreLabel = "Read More",
@@ -47,8 +49,8 @@ export default function MainIntro({
             <SectionHeading 
               title={title}
               subtitle={subtitle}
-              titleClassName="leading-tight !text-left"
-              subtitleClassName="!text-left"
+              titleClassName={titleClassName}
+              subtitleClassName={subtitleClassName}
             />
             
             <div className="space-y-4">

@@ -48,19 +48,18 @@ const OrganogramOfKalinga = ({
         <div
           className={`${cardBackgroundColor} rounded-[10px] text-white relative ${showImage ? 'overflow-visible' : 'overflow-hidden'}`}
         >
-          <div className={`flex flex-col  ${showImage ? 'lg:flex-row' : ''} items-center gap-6 lg:gap-8`}>
+          <div className={`flex flex-col   ${showImage ? 'lg:flex-row' : ''} items-center gap-6 lg:gap-8`}>
             {/* Left Content */}
             <div className={`flex-1 p-5 md:p-8 ${showImage ? 'lg:w-1/2' : 'w-full'}`}>
               {/* Title */}
               <SectionHeading
                 title={title}
-                titleClassName="text-white"
-                subtitleClassName="!text-left"
                 titleClassName="!text-left text-white"
+                subtitleClassName="!text-left"
               />
 
               {/* Description */}
-              <div className="text-sm sm:text-base md:text-lg leading-relaxed sm:leading-normal md:leading-relaxed mb-6 font-plus-jakarta-sans space-y-3">
+              <div className="text-sm sm:text-base md:text-lg md:w-5/6 w-full leading-relaxed sm:leading-normal md:leading-relaxed mb-6 font-plus-jakarta-sans space-y-3">
                 {descriptionArray.map((para, idx) => (
                   <p key={idx}>{para}</p>
                 ))}

@@ -75,7 +75,7 @@ function MentorCard({
               alt={title}
               width={500}
               height={500}
-              className="w-full h-[320px] md:h-full object-cover rounded-2xl"
+              className="w-full h-[320px] md:h-full object-cover rounded-2xl object-top"
             />
             {message && (
               <div className="absolute right-4 bottom-4 z-30">

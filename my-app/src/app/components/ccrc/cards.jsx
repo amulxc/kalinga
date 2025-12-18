@@ -6,7 +6,7 @@ export default function Cards({ cards = [] }) {
   return (
     <section className="container py-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       {cards.map((card, idx) => (
-        <div key={idx} className="bg-[var(--card-sandal)] rounded-xl p-4 flex flex-col gap-4 w-full mx-auto">
+        <div key={idx} className="bg-[var(--card-sandal)] rounded-xl px-5 py-10 flex flex-col gap-4 w-full mx-auto">
             <div className="flex flex-col justify-between h-full gap-6">
               <div>
           <h3 className="md:text-3xl text-2xl ">{card.title}</h3>

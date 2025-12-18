@@ -78,7 +78,7 @@ export default function ImageListItem({
 
             {/* Scrollable items only */}
             {items && Array.isArray(items) && items.length > 0 && (
-              <ul className="space-y-3 py-2 w-full overflow-y-auto max-h-inherit ccrc-scrollbar pr-2">
+              <ul className="space-y-3 py-2 w-full overflow-y-auto max-h-[250px] ccrc-scrollbar pr-2">
                 {items.map((item, idx) => (
                   <li
                     key={idx}

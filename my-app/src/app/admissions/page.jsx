@@ -96,7 +96,6 @@ export default function Admissions() {
     title: "Admission Process Overview",
     description: [
       "Kalinga University follows a streamlined admission process designed to identify and welcome talented students from diverse backgrounds. Our admission team works diligently to ensure a smooth and transparent process from application to enrollment.",
-      "The process includes online registration, entrance examination, document verification, and final admission confirmation. We provide comprehensive support at every step to help students navigate their journey to becoming part of the Kalinga family.",
     ],
     buttonLabel: "Learn More",
     cardBackgroundColor: "bg-[var(--dark-blue)]",
@@ -267,6 +266,7 @@ export default function Admissions() {
         arrowClassName={admissionOrganogramContent.arrowClassName}
         arrowIconClassName={admissionOrganogramContent.arrowIconClassName}
         textClassName={admissionOrganogramContent.textClassName}
+        useContainer={true}
       />
       <ScholarshipsSlider />
       <Facility
