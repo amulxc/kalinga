@@ -122,11 +122,11 @@ const Gallery = ({
           </div>
         ) : (
           /* Grid Layout - when 4 or fewer images */
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
             {images.map((item) => (
               <div 
                 key={item.id} 
-                className="relative overflow-hidden shadow-lg hover:shadow-2xl transition duration-200 rounded-[10px] aspect-square group cursor-pointer"
+                className="relative overflow-hidden shadow-lg hover:shadow-2xl transition duration-200 rounded-[10px] aspect-square group cursor-pointer w-[calc(50%-6px)] sm:w-[calc(50%-8px)] md:w-[calc(25%-18px)] max-w-[300px]"
               >
                 <Image 
                   src={item.image} 

@@ -42,20 +42,25 @@ export default function Alumini() {
     {
       id: 1,
       title: "Video 1",
-      description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      name: "Ms. Vaishali Baghel",
+      
+      videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Vaishali+Baghel+Reel.mp4",
+      thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/image-test-2.webp",
     },
     {
       id: 2,
       title: "Video 2",
-      description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Mr.+Ayush+Khare+Reel.mp4",
+      name: "Ms. Kajal Pandey",
+      thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/video-test-3.webp",
+      videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/kajal+Pandey+Final.mp4",
     },
     {
       id: 3,
       title: "Video 3",
-      description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/kajal+Pandey+Final.mp4",
+      name: "Mr. Ayush Khare",
+      
+      videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Mr.+Ayush+Khare+Reel.mp4",
+      thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/video-test-1.webp",
     },
    
   
@@ -282,39 +287,14 @@ const columns = [
   const AlumniMeetImages = [
     {
       id: 1,
-      image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/DSC08678.webp",
-      alt: "alumini-meet1",
+      image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Alumni+Talk%2C+MS.+NABODITA+SARMAs.png",
+      alt: "Alumni Talk, Ms. Nabodita Sarma",
     },
     {
       id: 2,
-      image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/DSC08958+(1).webp",
-      alt: "alumini-meet2",
-    },
-    {
-      id: 3,
-      image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/alumni-Glimpse2.webp",
-      alt: "alumini-meet3",
-    },
-    {
-      id: 4,
-      image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/alumini-Glimpse9.webp",
-      alt: "alumini-meet4",
-  },
-  {
-    id: 5,
-    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/DSC02407.webp",
-    alt: "alumini-meet5",
-  },
-  {
-    id: 6,
-    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/DSC03158.webp",
-    alt: "alumini-meet6",
-  },
-  {
-    id: 7,
-    image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/DSC08993.webp",
-    alt: "alumini-meet7",
-  },
+      image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Alumni+Talk%2C+Ms.+Diksha+Bhimte.png",
+      alt: "Alumni Talk, Ms. Diksha Bhimte",
+    }
 ];
   return (
     <div>
@@ -333,9 +313,13 @@ The Kalinga University’s alumni network is an open platform where our students
       />
       <OrganogramOfKalinga 
         title="Download Alumni Handbook"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ."
+        description="Kalinga University, established in 2013, stands out as one of the leading private universities
+strategically located in the Smart City of New Raipur, Chhattisgarh. The University has
+consistently ranked among the top 101–150 universities in India under the NIRF Rankings
+2025 for the fourth time in a row and has also received a NAAC B+ accreditation, continuously
+shining on the horizons of high-quality education."
         buttonLabel="Explore Now"
-        href="#"
+        href="https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Alumni.pdf"
         useContainer={true}
       
       />

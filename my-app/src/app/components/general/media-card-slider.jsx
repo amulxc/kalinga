@@ -1,10 +1,15 @@
 "use client";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
+import dynamic from "next/dynamic";
+
+// Dynamically import ReactPlayer to avoid SSR issues
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function MediaCardSlider({
   title = "Media Gallery",
@@ -15,12 +20,53 @@ export default function MediaCardSlider({
   cardBgClass = "bg-white",
   nameTextClass = "text-[var(--button-red)]",
   descriptionTextClass = "text-gray-600",
+  thumbnail="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   className = "",
   swiperClassName = "media-card-slider",
 }) {
   // Determine which items to use - prioritize video if both provided
   const items = videoItems.length > 0 ? videoItems : imageItems;
   const isVideo = videoItems.length > 0;
+  
+  // Modal state
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState(null);
+
+  const openVideoModal = (videoUrl, videoName) => {
+    setCurrentVideo({ url: videoUrl, name: videoName });
+    setIsModalOpen(true);
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeVideoModal = () => {
+    setIsModalOpen(false);
+    setCurrentVideo(null);
+    // Restore body scroll
+    document.body.style.overflow = 'unset';
+  };
+
+  // Check if URL is a direct video file (AWS S3 or other direct URLs)
+  const isDirectVideoUrl = (url) => {
+    if (!url) return false;
+    const videoExtensions = ['.mp4', '.webm', '.ogg', '.mov', '.avi', '.mkv'];
+    const lowerUrl = url.toLowerCase();
+    return videoExtensions.some(ext => lowerUrl.includes(ext)) || lowerUrl.includes('s3.amazonaws.com');
+  };
+
+  // Handle ESC key to close modal
+  useEffect(() => {
+    const handleEscKey = (e) => {
+      if (e.key === 'Escape' && isModalOpen) {
+        closeVideoModal();
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener('keydown', handleEscKey);
+      return () => document.removeEventListener('keydown', handleEscKey);
+    }
+  }, [isModalOpen]);
 
   return (
     <section className={` py-16 bg-white relative ${className}`}>
@@ -71,9 +117,16 @@ export default function MediaCardSlider({
             {items.map((item) => (
               <SwiperSlide key={item.id || item.name}>
                 <div className="h-full w-full">
-                  <div className={`${cardBgClass} rounded-xl p-4 h-full flex flex-col border border-gray-300 border-2  transition-shadow`}>
+                  <div className={`${cardBgClass} rounded-xl p-4 h-full flex flex-col border border-gray-300 border-2  transition-shadow ${isVideo && item.videoUrl ? 'cursor-pointer hover:shadow-xl' : ''}`}>
                     {/* Media Container */}
-                    <div className="relative w-full h-[250px] md:h-[350px] mb-4 rounded-lg overflow-hidden bg-gray-200">
+                    <div 
+                      className="relative w-full h-[250px] md:h-[350px] mb-4 rounded-lg overflow-hidden bg-gray-200"
+                      onClick={() => {
+                        if (isVideo && item.videoUrl) {
+                          openVideoModal(item.videoUrl, item.name);
+                        }
+                      }}
+                    >
                       {isVideo ? (
                         <>
                           {/* Video Thumbnail */}
@@ -82,14 +135,14 @@ export default function MediaCardSlider({
                               src={item.thumbnail}
                               alt={item.name || "Video thumbnail"}
                               fill
-                              className="object-cover"
+                              className="object-cover object-top"
                             />
                           ) : (
                             <div className="w-full h-full bg-gray-300" />
                           )}
                           {/* Play Button Overlay */}
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/80 flex items-center justify-center">
+                          <div className={`absolute inset-0 flex items-center justify-center ${item.videoUrl ? 'hover:bg-black/10 transition-colors' : ''}`}>
+                            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/80 flex items-center justify-center hover:bg-white/90 transition-all hover:scale-110">
                               <svg
                                 width="24"
                                 height="24"
@@ -177,6 +230,87 @@ export default function MediaCardSlider({
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {isModalOpen && currentVideo && (
+        <div 
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          onClick={closeVideoModal}
+        >
+          <div 
+            className="relative w-full max-w-5xl bg-black rounded-lg overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={closeVideoModal}
+              className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center bg-white/90 hover:bg-white rounded-full transition-colors shadow-lg"
+              aria-label="Close video"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="text-gray-700"
+              >
+                <path
+                  d="M18 6L6 18M6 6L18 18"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+
+            {/* Video Title */}
+            {currentVideo.name && (
+              <div className="absolute top-4 left-4 z-10 bg-black/70 px-4 py-2 rounded-lg">
+                <h3 className="text-white font-semibold text-lg">
+                  {currentVideo.name}
+                </h3>
+              </div>
+            )}
+
+            {/* Video Player */}
+            <div className="relative pt-[56.25%]">
+              {isDirectVideoUrl(currentVideo.url) ? (
+                // Native HTML5 Video Player for AWS/Direct URLs
+                <video
+                  className="absolute top-0 left-0 w-full h-full"
+                  controls
+                  autoPlay
+                  controlsList="nodownload"
+                  onContextMenu={(e) => e.preventDefault()}
+                >
+                  <source src={currentVideo.url} type="video/mp4" />
+                  <source src={currentVideo.url} type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                // ReactPlayer for YouTube, Vimeo, etc.
+                <ReactPlayer
+                  url={currentVideo.url}
+                  width="100%"
+                  height="100%"
+                  controls
+                  playing
+                  className="absolute top-0 left-0"
+                  config={{
+                    youtube: {
+                      playerVars: { showinfo: 1 }
+                    },
+                    vimeo: {
+                      playerOptions: { controls: true }
+                    }
+                  }}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
