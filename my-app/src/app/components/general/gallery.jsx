@@ -67,12 +67,17 @@ const Gallery = ({
   titleClassName = ""
 }) => {
   const useSlider = images.length > 4
+  
+  // Determine title alignment based on titleClassName
+  const titleAlignment = titleClassName.includes('text-left') ? 'text-left' : 
+                        titleClassName.includes('text-right') ? 'text-right' : 
+                        'text-center';
 
   return (
     <section className={`${backgroundColor} ${paddingClassName}`}>
       <div className="px-2">
         {/* Title */}
-        <div className="mb-6 sm:mb-8 md:mb-10 text-center">
+        <div className={`mb-6 sm:mb-8 md:mb-10 ${titleAlignment}`}>
           <SectionHeading title={title} titleClassName={titleClassName} />
         </div>
 

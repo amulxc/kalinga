@@ -16,8 +16,8 @@ const HeroSectionTwo = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent  rounded-4xl"></div>
       </div>
-      <div className="container relative z-1 mx-auto h-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 md:w-10/12 w-full px-4 pt-10">
-        {/* Left Side - Text Content */}-1
+      <div className="container relative z-1 mx-auto h-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 w-full px-4 pt-10">
+        {/* Left Side - Text Content */}
         <div className="flex flex-col items-start justify-center text-left text-white gap-4 md:w-1/2 w-full">
         <Image src="https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/ctcd-1.png" alt="CTCD" width={100} height={100} />
           <h2>Corporate Training And Consultancy Division (CTCD)</h2>

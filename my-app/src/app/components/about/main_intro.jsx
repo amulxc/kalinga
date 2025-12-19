@@ -33,6 +33,7 @@ export default function MainIntro({
   reverseLayout = false,
   applyTransform3dSlant = true,
   descriptionClassName = "text-[var(--light-text-gray)]",
+  hidePointsUntilExpanded = false,
 }) {
   const descriptionArray = Array.isArray(description) ? description : [description];
   const [showAll, setShowAll] = useState(false);
@@ -61,7 +62,7 @@ export default function MainIntro({
               ))}
 
               {/* Points List */}
-              {points && Array.isArray(points) && points.length > 0 && (
+              {points && Array.isArray(points) && points.length > 0 && (!hidePointsUntilExpanded || showAll) && (
                 <ul className="space-y-3 mt-4">
                   {points.map((point, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-[var(--light-text-gray)] leading-relaxed">

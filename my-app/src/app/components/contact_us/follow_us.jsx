@@ -78,7 +78,7 @@ const socialLinks = [
 
 export default function FollowUs() {
   return (
-    <section className="py-12 sm:py-16 bg-white mt-12 sm:mt-16">
+    <section className="py-16 bg-white mt-12 sm:mt-16">
       <div className="container mx-auto px-6 flex flex-col items-center">
         <SectionHeading
           title="Follow us"

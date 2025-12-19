@@ -50,7 +50,7 @@ export default function AdmissionSteps({
   subtitle = "Admission Procedure",
   title = "Steps To Get Admission Into KU",
   showHeaderButton = true,
-  ctaLabel = "Admission Now",
+  ctaLabel = "Enquiry Now",
   onCtaClick,
   showReadMore = true,
   showIcon = true,

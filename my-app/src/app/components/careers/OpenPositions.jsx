@@ -2,9 +2,12 @@
 
 import GlobalArrowButton from "../general/global-arrow_button";
 import SectionHeading from "../general/SectionHeading";
-export default function OpenPositions() {
 
-  const positions = [
+export default function OpenPositions({
+  title = "Discover opportunities that match your passion and expertise.",
+  subtitle = "Open Positions",
+  description = null,
+  positions = [
     {
       title: "Teaching Positions",
       description:
@@ -13,27 +16,33 @@ export default function OpenPositions() {
     {
       title: "Non–Teaching Positions",
       description:
-        "Be a part of Kalinga University’s dynamic administrative and operational teams. We value professionals who bring expertise, efficiency, and integrity to support our academic mission."
+        "Be a part of Kalinga University's dynamic administrative and operational teams. We value professionals who bring expertise, efficiency, and integrity to support our academic mission."
     },
     // {
     //   title: "Internships & Training",
     //   description:
     //     "Kickstart your career with hands-on experience in a vibrant academic environment. Our internship and training programs provide practical exposure, mentorship, and real-world learning opportunities."
     // }
-  ];
+  ]
+}) {
 
   return (
     <section className="w-full px-2">
       <div className="bg-[var(--dark-blue)] rounded-2xl py-16 px-2">
 
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      <div className="container mx-auto text-center mb-12">
         <SectionHeading 
-          subtitle="Open Positions"
-          title="Discover opportunities that match your passion and expertise."
+          subtitle={subtitle}
+          title={title}
           subtitleClassName=""
           titleClassName="text-white"
           subtitleTextColor="!text-[var(--dark-orange-red-light)]"
         />
+        {description && (
+          <p className="text-white mt-4 text-lg leading-relaxed">
+            {description}
+          </p>
+        )}
       </div>
 
       <div className="container mx-auto space-y-6">
