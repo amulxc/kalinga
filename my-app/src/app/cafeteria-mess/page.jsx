@@ -1,22 +1,25 @@
 import React from 'react'
-import MiniMarketFacility from '../components/mini-market/minimarket-facility'
-import AdmissionCareer from '../components/general/admission_cta'
+import AboutCafeteria from '../components/cafeteria-mess/about-cafeteria-mess'
+import AdmissionCareer from '../components/general/admission_cta';
 import AutoBreadcrumb from '../components/layout/BreadcrumbData';
+import Page from '../components/campuslife/featuresection';
+import CanteenMess from '../components/cafeteria-mess/cafeteria-facility-mess';
 
 const page = () => {
    const breadcrumbData = {
         heroImage:
             "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
-        pageTitle: "Mini Market",
+        pageTitle: "Cafeteria & Mess",
         customBreadcrumbs: [
             { label: "Home", href: "/" },
-            { label: "Mini Market", href: "/mini-market" },
+            { label: "Cafeteria & Mess", href: "/cafeteria-mess" },
         ],
     };
   return (
     <>
     <AutoBreadcrumb data={breadcrumbData} />
-    <MiniMarketFacility/>
+    <AboutCafeteria/>
+    <CanteenMess/>
     <AdmissionCareer/>
     </>
   )
