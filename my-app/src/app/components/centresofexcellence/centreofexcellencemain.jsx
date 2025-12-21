@@ -1,4 +1,6 @@
 "use client";
+
+import { useLayoutEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -61,9 +63,25 @@ export default function CenterOfExcellenceMain({
   centres = centresOfExcellence,
   title = "Centres of Excellence",
   description = "At Kalinga, we'll not just build your future with only classroom-based studies, but there's something more to it that will make your learning experience fun and exciting. Presenting to you our Centres of Excellence that will introduce you to the future of technologies.",
-  nameOnly = false, // variant: show only name centered, no image or title
+  nameOnly = false,
   showDescription = true,
+
+  // ✅ NEW: pass breadcrumbData from the page
+  breadcrumbData = null,
 }) {
+  // ✅ NEW: set global breadcrumb data (same pattern you use in other pages)
+  useLayoutEffect(() => {
+    if (!breadcrumbData) return;
+
+    if (typeof window !== "undefined") {
+      window.__breadcrumbData = breadcrumbData;
+    }
+
+    return () => {
+      if (typeof window !== "undefined") delete window.__breadcrumbData;
+    };
+  }, [breadcrumbData]);
+
   return (
     <section className="py-16 bg-white relative">
       <div className="container mx-auto px-2">
@@ -139,22 +157,10 @@ export default function CenterOfExcellenceMain({
           slidesPerView={1}
           grabCursor={true}
           breakpoints={{
-            640: {
-              slidesPerView: 1.5,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 24,
-            },
-            1024: {
-              slidesPerView: 2.5,
-              spaceBetween: 24,
-            },
-            1280: {
-              slidesPerView: 3.5,
-              spaceBetween: 24,
-            },
+            640: { slidesPerView: 1.5, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 24 },
+            1024: { slidesPerView: 2.5, spaceBetween: 24 },
+            1280: { slidesPerView: 3.5, spaceBetween: 24 },
           }}
           navigation={{
             nextEl: ".centres-swiper-button-next",
@@ -165,7 +171,7 @@ export default function CenterOfExcellenceMain({
           autoHeight={false}
           centeredSlides={false}
           slidesOffsetBefore={0}
-          slidesOffsetAfter={60} // ✅ so last cards don't get cut
+          slidesOffsetAfter={60} // ✅ last cards won't get cut
         >
           {centres.map((centre) => (
             <SwiperSlide key={centre.id}>
