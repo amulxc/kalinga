@@ -568,7 +568,7 @@ const FAQ = ({
         )}
 
         {/* FAQ Items */}
-        <div className="container mx-auto space-y-4 mt-10">
+        <div className="space-y-4 mt-10">
           {itemsToRender.map((item) => {
             const isOpen = openItems.has(item.id)
             return (

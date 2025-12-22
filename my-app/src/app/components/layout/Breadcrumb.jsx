@@ -61,6 +61,7 @@ const Breadcrumb = ({ customBreadcrumbs, heroImage, pageTitle }) => {
   const finalHeroImage = contextData?.heroImage ?? heroImage;
   const finalPageTitle = contextData?.pageTitle ?? pageTitle;
   const finalCustomBreadcrumbs = contextData?.customBreadcrumbs ?? customBreadcrumbs;
+  const finalImagePosition = contextData?.imageposition ?? imageposition;
 
   // Generate breadcrumbs from path or use custom ones
   const generateBreadcrumbs = () => {
@@ -103,7 +104,7 @@ const Breadcrumb = ({ customBreadcrumbs, heroImage, pageTitle }) => {
                 src={resolvedHeroImage}
                 alt={currentPageTitle}
                 fill
-                className={`object-cover object-center ${imageposition}`} 
+                className={`object-cover ${finalImagePosition}`} 
                 priority
               />
               {/* Gradient Overlay for image */}

@@ -296,7 +296,7 @@ export default function OurPrograms() {
         </div>
 
         {/* Programs Container */}
-        <div className="bg-[var(--dark-blue)] rounded-2xl p-5 relative overflow-hidden">
+        <div className="bg-[var(--dark-blue)] rounded-2xl md:p-5 p-2 relative overflow-hidden">
           {/* Search and Filter Section - Single White Bar */}
           <div className="bg-[var(--light-gray)] border border-white rounded-lg flex flex-col md:flex-row items-stretch mb-8 relative z-20 overflow-hidden">
             {/* Study Level Dropdown - Left Section */}
