@@ -13,49 +13,49 @@ const centresOfExcellence = [
     name: "AI & ML Courses Training Centre",
     title: "IBM Innovation Centre for Education",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/godawari.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 2,
     name: "Automobile Training Centre",
     title: "JustAuto Solutions",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002977.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 3,
     name: "BRIDGE Courses Training Centre",
     title: "In collaboration with BOSCH",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002989.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 4,
     name: "Robotics, Coding, & Drone",
     title: "BDS Education",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002988.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 5,
     name: "Electric Vehicles Training Centre",
     title: "Godawari Electric Motors Pvt. Ltd. (Eblu)",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002988.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 6,
     name: "IIoT Training Centre",
     title: "Technoviz Automation",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002988.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 7,
     name: "MSME Training Centre",
     title: "IamSMEofIndia",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/Group+1000002988.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
 ];
 
@@ -66,10 +66,14 @@ export default function CenterOfExcellenceMain({
   nameOnly = false,
   showDescription = true,
 
-  // ✅ NEW: pass breadcrumbData from the page
+  // ✅ pass breadcrumbData from the page
   breadcrumbData = null,
+
+  // ✅ QC: only make the TOP TEXT area wider, not cards
+  headerTextMaxWidthClass = "max-w-screen-xl"
+,
 }) {
-  // ✅ NEW: set global breadcrumb data (same pattern you use in other pages)
+  // ✅ Breadcrumb setter (same pattern as other pages)
   useLayoutEffect(() => {
     if (!breadcrumbData) return;
 
@@ -90,15 +94,18 @@ export default function CenterOfExcellenceMain({
           <h2 className="font-stix text-[var(--foreground)] text-3xl md:text-4xl lg:text-5xl mb-4">
             {title}
           </h2>
+
           {showDescription && (
-            <p className="text-[var(--light-text-gray)] max-w-4xl mx-auto">
+            <p
+              className={`text-[var(--light-text-gray)] ${headerTextMaxWidthClass} mx-auto`}
+            >
               {description}
             </p>
           )}
         </div>
       </div>
 
-      {/* Slider Section - Edge to Edge */}
+      {/* Slider Section - keep cards horizontal (do NOT change) */}
       <div className="relative pl-0 md:pl-[50px] overflow-visible">
         <style
           dangerouslySetInnerHTML={{
@@ -171,7 +178,7 @@ export default function CenterOfExcellenceMain({
           autoHeight={false}
           centeredSlides={false}
           slidesOffsetBefore={0}
-          slidesOffsetAfter={60} // ✅ last cards won't get cut
+          slidesOffsetAfter={60} // ✅ so last cards don't get cut
         >
           {centres.map((centre) => (
             <SwiperSlide key={centre.id}>
@@ -194,7 +201,7 @@ export default function CenterOfExcellenceMain({
                     )}
                   </div>
 
-                  {/* Button - Positioned at bottom right */}
+                  {/* Hidden arrow button slot (kept same as your file) */}
                   <div className="absolute bottom-6 right-6 hidden">
                     <button className="w-8 h-8 bg-[var(--button-red)] hover:bg-[#c41e3a] rounded-lg flex items-center justify-center transition-colors shadow-md">
                       <svg
@@ -240,6 +247,7 @@ export default function CenterOfExcellenceMain({
               />
             </svg>
           </button>
+
           <button className="centres-swiper-button-next w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
             <svg
               width="20"

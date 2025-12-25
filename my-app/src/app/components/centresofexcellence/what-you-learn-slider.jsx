@@ -13,37 +13,37 @@ const defaultItems = [
     id: 1,
     title: "Fundamentals of 2 & 3-Wheeler Systems",
     description: "",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 2,
     title: "Diagnostic Skills Using Modern Tools",
     description: "",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 3,
     title: "Engine Service & Maintenance",
     description: "",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 4,
     title: "Repair Procedures for 2 & 3 Wheelers",
     description: "",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 5,
     title: "Preventive & Predictive Maintenance Techniques",
     description: "",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
   {
     id: 6,
     title: "Exposure to Emerging Technologies in Mobility",
     description: "",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   },
 ];
 
@@ -55,13 +55,14 @@ export default function WhatYouLearnSlider({
   return (
     <section className="py-16 bg-white relative">
       <div className="container mx-auto px-2">
-        {/* Header Section (your required heading) */}
+        {/* Header Section */}
         <div className="flex flex-col gap-3 mb-8 md:mb-12">
           <h2 className="font-stix text-[var(--foreground)] text-3xl md:text-4xl lg:text-5xl">
             {title}
           </h2>
+
           {subtitle ? (
-            <p className="text-[var(--light-text-gray)] max-w-4xl">
+            <p className="text-[var(--light-text-gray)] max-w-6xl">
               {subtitle}
             </p>
           ) : null}
