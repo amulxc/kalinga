@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import OurPrograms from "../components/admissions/our_programs";
 import ScholarshipsSlider from "../components/admissions/scholarships_slider";
 import AdmissionSteps from "../components/admissions/admission-steps";
@@ -21,12 +21,12 @@ const breadcrumbData = {
   ]
 };
 
-// Register breadcrumb data globally
-if (typeof window !== 'undefined') {
-  window.__breadcrumbData = breadcrumbData;
-}
-
 export default function Admissions() {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.__breadcrumbData = breadcrumbData;
+    }
+  }, []);
   // AdmissionSteps content
   const admissionStepsContent = {
     steps: [

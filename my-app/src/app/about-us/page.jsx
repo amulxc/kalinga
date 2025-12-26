@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import AboutHero from "../components/about/AboutHero";
 import MainIntro from "../components/about/main_intro";
 import VisionMission from "../components/about/vision-mission";
@@ -27,10 +28,6 @@ const breadcrumbData = {
   ]
 };
 
-// Register breadcrumb data globally
-if (typeof window !== 'undefined') {
-  window.__breadcrumbData = breadcrumbData;
-}
 
 const aboutFeatureCards = [
   {
@@ -194,7 +191,12 @@ const aboutApproval= [
    { id: 12, name: "CGG", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/cg-government.webp" },
 ]
 
-export default function AboutUs() {                     
+export default function AboutUs() {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.__breadcrumbData = breadcrumbData;
+    }
+  }, []);                     
   return (
     <div>
       <MainIntro 
