@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+
+import React, { useEffect } from 'react'
 import SectionHeading from '../components/general/SectionHeading'
 
 const listStyle = { fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: '14px' }
@@ -18,8 +20,12 @@ if (typeof window !== 'undefined') {
   window.__breadcrumbData = breadcrumbData;
 }
 
-
-  export default function RefundPolicyPage() {
+export default function RefundPolicyPage() {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.__breadcrumbData = breadcrumbData;
+    }
+  }, []);
     return (
         <section className='container mx-auto px-6 py-16'>
           <div className='text-center'>

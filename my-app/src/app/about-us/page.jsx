@@ -20,10 +20,10 @@ import CoreValues from "../components/about/core_values";
 // Breadcrumb configuration
 const breadcrumbData = {
   heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/about-banner.webp",
-  pageTitle: "About Us",
+  pageTitle: "About Kalinga",
   customBreadcrumbs: [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/about-us' }
+    { label: 'About Kalinga', href: '/about-us' }
   ]
 };
 
@@ -194,7 +194,7 @@ const aboutApproval= [
    { id: 12, name: "CGG", logo: "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/accerdation/cg-government.webp" },
 ]
 
-export default function About() {                     
+export default function AboutUs() {                     
   return (
     <div>
       <MainIntro 
