@@ -76,9 +76,9 @@ export default function Admissions() {
 
   // OrganogramOfKalinga content (first instance - with image)
   const entranceExamContent = {
-    title: "Entrance exam",
+    title: "Book Your Spot",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi",
+      "Our KALSEE and KAL-MAT entrance tests open doors to unlimited academic programs. With no negative marking, flexible scheduling options, and exclusive scholarships, you can easily take the first step towards your dream career. So why wait?",
     ],
     buttonLabel: "Explore Now",
     cardBackgroundColor: "bg-[var(--dark-blue)]",
@@ -169,20 +169,20 @@ export default function Admissions() {
       {
         id: 3,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/covid.svg",
-        title: "COVID Safety",
-        description: "Your safety is our utmost priority. Discover the health and safety measures implemented on campus to ensure a secure learning environment.",
+        title: "Hostel",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
       {
         id: 4,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/scholarship.svg",
-        title: "Scholarships",
-        description: "Explore a range of merit-based, need-based, and special category scholarships that support and reward academic excellence.",
+        title: "Transports",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
       {
         id: 5,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/elgbility.svg",
-        title: "Eligibility Criteria",
-        description: "Review the eligibility requirements for our undergraduate, postgraduate, and doctoral programs before submitting your application.",
+        title: "Pay fees",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
       {
         id: 6,
