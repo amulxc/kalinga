@@ -23,7 +23,7 @@ export default function LibraryIntro() {
         ]}
         readMoreLabel="Read More"
         readLessLabel="Read Less"
-        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/library/Library-2.webp"
         showKnowMore={true}
         initialVisibleParagraphs={1}
       />

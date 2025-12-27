@@ -6,7 +6,7 @@ export default function NccBenefits() {
   return (
     <div className="py-20 md:py-28">
       <ImageListItem
-        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ncc/Ncc-3.webp"
         imageAlt="NCC Benefits"
         imageWidth={500}
         imageHeight={240}

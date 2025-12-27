@@ -14,7 +14,7 @@ import LibraryHeadIntro from '../components/library/library-head-intro'
 const page = () => {
    const breadcrumbData = {
         heroImage:
-            "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+            "https://kalinga-university.s3.ap-south-1.amazonaws.com/library/Library-1.webp",
         pageTitle: "KU Library",
         customBreadcrumbs: [
             { label: "Home", href: "/" },

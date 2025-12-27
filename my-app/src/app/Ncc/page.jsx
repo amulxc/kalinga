@@ -10,11 +10,11 @@ const page = () => {
 
    const breadcrumbData = {
         heroImage:
-            "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
-        pageTitle: "Ncc",
+            "https://kalinga-university.s3.ap-south-1.amazonaws.com/ncc/Ncc-2.webp",
+        pageTitle: "National Cadet Corps",
         customBreadcrumbs: [
             { label: "Home", href: "/" },
-            { label: "Ncc", href: "/Ncc" },
+            { label: "National Cadet Corps", href: "/Ncc" },
         ],
     };
   return (
