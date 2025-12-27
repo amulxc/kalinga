@@ -381,7 +381,7 @@ function DepartmentCard({ program }) {
               e.stopPropagation();
               if (program.onKnowMore) program.onKnowMore();
             }}
-            className="font-plus-jakarta-sans text-sm sm:text-base text-[#1a1a1a] hover:text-[var(--button-red)] transition-colors flex items-center gap-1"
+            className="cursor-pointer font-plus-jakarta-sans text-sm sm:text-base text-[#1a1a1a] hover:text-[var(--button-red)] transition-colors flex items-center gap-1"
           >
             Know More
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -393,7 +393,7 @@ function DepartmentCard({ program }) {
               e.stopPropagation();
               if (program.onApplyNow) program.onApplyNow();
             }}
-            className="bg-white text-black px-3 py-1.5 rounded-lg hover:bg-gray-100 transition-colors text-sm sm:text-base font-plus-jakarta-sans flex items-center gap-1"
+            className="cursor-pointer bg-white text-black px-3 py-1.5 rounded-lg hover:bg-gray-100 transition-colors text-sm sm:text-base font-plus-jakarta-sans flex items-center gap-1"
           >
             Apply Now
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-[var(--button-red)]">
