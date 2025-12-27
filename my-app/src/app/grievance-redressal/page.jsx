@@ -9,7 +9,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage:
-    "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/grievance/grievance-banner.webp",
   pageTitle: "Grievance Redressal Cell",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
@@ -203,11 +203,10 @@ export default function GrievanceRedressalPage() {
       <MainIntro
         title="Grievance Redressal Cell"
         description={[aboutP1, aboutP2]}
-        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/grievance/grievance-main-intro.webp"
         imageAlt="Grievance Redressal Cell"
-        showReadMore={true}
-        readMoreLabel="Read More"
-        readLessLabel="Show Less"
+        showKnowMore={true}
+        initialVisibleParagraphs={1}
       />
 
       {/* Functions (List layout with image) */}
@@ -215,7 +214,7 @@ export default function GrievanceRedressalPage() {
         title="Functions"
         subtitle=""
         items={functionsList}
-        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/grievance/grievance-functions.webp"
       />
 
     <section className="py-12">

@@ -8,7 +8,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage:
-    "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/aiml-banner.webp",
   pageTitle: "AI & ML Courses Training Centre",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
@@ -27,37 +27,37 @@ const learnCards = [
     id: 1,
     title: "",
     description: "Programming languages & tools for AI & ML",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-1.svg",
   },
   {
     id: 2,
     title: "",
     description: "Deep understanding of Artificial Intelligence & Machine Learning",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-2.svg",
   },
   {
     id: 3,
     title: "",
     description: "Algorithm & model development",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-3.svg",
   },
   {
     id: 4,
     title: "",
     description: "Management of large data sets",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-4.svg",
   },
   {
     id: 5,
     title: "",
     description: "Deep learning & neural networks",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-5.svg",
   },
   {
     id: 6,
     title: "",
     description: "Designing intelligent systems & software",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-1.svg",
   },
 ];
 
@@ -65,7 +65,7 @@ const glimpses = [
   {
     id: 1,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/aiml-glimpse1.webp",
     imageAlt: "AI & ML Glimpse",
     title: "Lab Session Glimpse",
     buttonText: "Read More",
@@ -74,7 +74,7 @@ const glimpses = [
   {
     id: 2,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/aiml-glimpse2.webp",
     imageAlt: "AI & ML Glimpse",
     title: "Project Showcase",
     buttonText: "Read More",
@@ -83,7 +83,7 @@ const glimpses = [
   {
     id: 3,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/aiml-glimpse3.webp",
     imageAlt: "AI & ML Glimpse",
     title: "Expert-led Workshop",
     buttonText: "Read More",
@@ -116,14 +116,14 @@ export default function AIMLCentrePage() {
         title="AI & ML Courses Training Centre"
         subtitle="In collaboration with the IBM Innovation Centre for Education"
         description={aboutCentreDescription}
-        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-ibm.webp"
         imageAlt="Centre Banner"
         readmore={false}
       />
 
       <CareerPath careers={learnCards} title="What You’ll Learn" description="" />
 
-      <StudentActivities title="Glimpses" subtitle="" activities={glimpses} />
+      {/* <StudentActivities title="Glimpses" subtitle="" activities={glimpses} /> */}
 
       <AdmissionCareer />
     </>

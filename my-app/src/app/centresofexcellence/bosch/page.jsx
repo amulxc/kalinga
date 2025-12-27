@@ -8,7 +8,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage:
-    "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-banner.webp",
   pageTitle: "BRIDGE Courses Training Centre",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
@@ -27,37 +27,37 @@ const learnCards = [
     id: 1,
     title: "",
     description: "Automotive & manufacturing fundamentals",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-1.svg",
   },
   {
     id: 2,
     title: "",
     description: "Problem identification & troubleshooting",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-2.svg",
   },
   {
     id: 3,
     title: "",
     description: "Industry-relevant vocational training",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/lbosch/bosch-3.svg",
   },
   {
     id: 4,
     title: "",
     description: "Hands-on technical training",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/abosch/bosch-4.svg",
   },
   {
     id: 5,
     title: "",
     description: "Analytical & problem-solving skills",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-5.svg",
   },
   {
     id: 6,
     title: "",
     description: "Workplace & communication skills",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-6.svg",
   },
 ];
 
@@ -65,7 +65,7 @@ const glimpses = [
   {
     id: 1,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-glimpse1.webp",
     imageAlt: "BRIDGE Training Glimpse",
     title: "Training Session Glimpse",
     buttonText: "Read More",
@@ -74,7 +74,7 @@ const glimpses = [
   {
     id: 2,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-glimpse2.webp",
     imageAlt: "BRIDGE Training Glimpse",
     title: "Skill Development Activity",
     buttonText: "Read More",
@@ -83,7 +83,7 @@ const glimpses = [
   {
     id: 3,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-glimpse3.webp",
     imageAlt: "BRIDGE Training Glimpse",
     title: "Practical Lab Glimpse",
     buttonText: "Read More",
@@ -116,14 +116,14 @@ export default function BridgeCentrePage() {
         title="BRIDGE Courses Training Centre"
         subtitle="In collaboration with BOSCH"
         description={aboutCentreDescription}
-        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-bosch.webp"
         imageAlt="BRIDGE Centre Banner"
         readmore={false}
       />
 
       <CareerPath careers={learnCards} title="What You’ll Learn" description="" />
 
-      <StudentActivities title="Glimpses" subtitle="" activities={glimpses} />
+      {/* <StudentActivities title="Glimpses" subtitle="" activities={glimpses} /> */}
 
       <AdmissionCareer />
     </main>

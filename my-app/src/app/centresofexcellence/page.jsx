@@ -8,7 +8,7 @@ export default function CenterOfExcellence({
     <>
       <CenterOfExcellenceMain
         breadcrumbData={{
-          heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+          heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-banner.webp",
           pageTitle: "Centres of Excellence",
           customBreadcrumbs: [
             { label: "Home", href: "/" },

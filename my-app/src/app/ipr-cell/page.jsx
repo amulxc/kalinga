@@ -10,7 +10,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage:
-    "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ipr/IPR-banner.webp",
   pageTitle: "Intellectual Property Rights Cell",
   breadcrumbs: [
     { label: "Home", href: "/" },
@@ -93,7 +93,7 @@ export default function IPRCellPage() {
         title="Intellectual Property Rights (IPR) Cell"
         subtitle="About IPR Cell"
         description={`${aboutP1} ${aboutP2}`}
-        imageSrc="/images/ipr-cell/logo.png"
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ipr/ipr-cell-logo.webp"
         imageAlt="IPR Cell Logo"
         readmore={false}
       />

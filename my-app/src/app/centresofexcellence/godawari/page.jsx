@@ -126,7 +126,7 @@ export default function ElectricVehiclesTrainingCentrePage() {
 
       <CareerPath careers={learnCards} title="What You’ll Learn" description="" />
 
-      <StudentActivities title="Glimpses" subtitle="" activities={glimpses} />
+      {/* <StudentActivities title="Glimpses" subtitle="" activities={glimpses} /> */}
 
       <AdmissionCareer />
     </main>

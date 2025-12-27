@@ -10,7 +10,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage:
-    "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/nss/nss-banner.webp",
   pageTitle: "National Service Scheme",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
@@ -79,7 +79,7 @@ const activities = [
   {
     id: 1,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/nss/nss-glimpses.webp",
     imageAlt: "NSS Activity",
     title: "NSS Community Awareness Drive",
     buttonText: "Read More",
@@ -102,7 +102,7 @@ export default function NSSPage() {
         <MainIntro
   title="About NSS At KU"
   description={[aboutP1, aboutP2]}
-  imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+  imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/nss/nss-main-intro.webp"
   imageAlt="NSS at Kalinga University"
   showKnowMore={true}
   knowMoreLabel="Read More"
@@ -115,20 +115,18 @@ export default function NSSPage() {
         <ImageListItem
           title="Objectives"
           items={objectiveItems}
-          imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+          imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/nss/nss-objectives.webp"
         />
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-12">
         <VisionMission data={visionMissionData} />
-      </section>
 
       {/* Benefits */}
       <section className="py-12">
         <ImageListItem
           title="Benefits Of Joining Our NSS Team"
-          imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+          imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/nss/nss-benefits.webp"
           boxItems={benefitsBoxItems}
         />
       </section>
@@ -139,11 +137,11 @@ export default function NSSPage() {
       </section>
 
       {/* Activities */}
-        <StudentActivities
+        {/* <StudentActivities
           activities={activities}
           title="Events and Activities"
           subtitle="Student Activities"
-        />
+        /> */}
 
       {/* CTA */}
       <section className="py-16">

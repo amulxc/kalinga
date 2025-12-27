@@ -8,7 +8,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage:
-    "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png", // (Cover Image - 1)
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/laboratories/laboratories-heroimage.webp", // (Cover Image - 1)
   pageTitle: "Laboratories",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
@@ -179,12 +179,30 @@ const glimpses = [
   {
     id: 1,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png", // (Add Multiple Images - 2)
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/laboratories/laboratories-glimpse1.webp", // (Add Multiple Images - 2)
     imageAlt: "Laboratories Glimpse",
     title: "Glimpses",
     buttonText: "Read More",
     date: "",
   },
+  {
+    id: 2,
+    imageSrc:
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/laboratories/laboratories-glimpse2.webp", // (Add Multiple Images - 2)
+    imageAlt: "Laboratories Glimpse",
+    title: "Glimpses",
+    buttonText: "Read More",
+    date: "",
+  },
+  {
+    id: 3,
+    imageSrc:
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/laboratories/laboratories-glimpse3.webp", // (Add Multiple Images - 2)
+    imageAlt: "Laboratories Glimpse",
+    title: "Glimpses",
+    buttonText: "Read More",
+    date: "",
+  }
 ];
 
 export default function LaboratoriesPage() {
@@ -197,13 +215,13 @@ export default function LaboratoriesPage() {
 
   return (
     <main className="bg-white">
-      
+
 
       {/* 1) Main Intro */}
       <MainIntro
         title="About Our Cutting-Edge Laboratories"
         description={[aboutP1, aboutP2]}
-        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/laboratories/laboratories-mainintro.webp"
         imageAlt="Laboratories"
         showKnowMore={true}
         knowMoreLabel="Read More"

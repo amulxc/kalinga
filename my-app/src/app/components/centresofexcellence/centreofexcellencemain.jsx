@@ -13,49 +13,49 @@ const centresOfExcellence = [
     name: "AI & ML Courses Training Centre",
     title: "IBM Innovation Centre for Education",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-ibm.webp",
   },
   {
     id: 2,
     name: "Automobile Training Centre",
     title: "JustAuto Solutions",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-automobile.webp",
   },
   {
     id: 3,
     name: "BRIDGE Courses Training Centre",
     title: "In collaboration with BOSCH",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-bosch.webp",
   },
   {
     id: 4,
     name: "Robotics, Coding, & Drone",
     title: "BDS Education",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-robotics.webp",
   },
   {
     id: 5,
     name: "Electric Vehicles Training Centre",
     title: "Godawari Electric Motors Pvt. Ltd. (Eblu)",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-godawari.webp",
   },
   {
     id: 6,
     name: "IIoT Training Centre",
     title: "Technoviz Automation",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-iiot.webp",
   },
   {
     id: 7,
     name: "MSME Training Centre",
     title: "IamSMEofIndia",
     image:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/about/smeindia.webp",
   },
 ];
 

@@ -8,7 +8,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage:
-    "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/automobile-banner.webp",
   pageTitle: "Automobile Training Centre",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
@@ -30,37 +30,37 @@ const learnCards = [
     id: 1,
     title: "",
     description: "Fundamentals of 2 & 3-Wheeler systems",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-1.svg",
   },
   {
     id: 2,
     title: "",
     description: "Diagnostic skills using modern tools",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-2.svg",
   },
   {
     id: 3,
     title: "",
     description: "Engine service & maintenance",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-3.svg",
   },
   {
     id: 4,
     title: "",
     description: "Repair procedures for 2 & 3 wheelers",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-4.svg",
   },
   {
     id: 5,
     title: "",
     description: "Preventive & predictive maintenance techniques",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-5.svg",
   },
   {
     id: 6,
     title: "",
     description: "Exposure to emerging technologies in mobility",
-    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
+    icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-6.svg",
   },
 ];
 
@@ -68,7 +68,7 @@ const glimpses = [
   {
     id: 1,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/automobile-glimpse1.webp",
     imageAlt: "Automobile Training Glimpse",
     title: "Workshop Session / Training Glimpse",
     buttonText: "Read More",
@@ -77,7 +77,7 @@ const glimpses = [
   {
     id: 2,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/automobile-glimpse2.webp",
     imageAlt: "Automobile Training Glimpse",
     title: "Industry Expert Talk",
     buttonText: "Read More",
@@ -86,7 +86,7 @@ const glimpses = [
   {
     id: 3,
     imageSrc:
-      "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+      "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/automobile-glimpse3.webp",
     imageAlt: "Automobile Training Glimpse",
     title: "Hands-on Diagnostic Practice",
     buttonText: "Read More",
@@ -119,14 +119,14 @@ export default function AutomobileTrainingCentrePage() {
         title="Automobile Training Centre"
         subtitle="In collaboration with JustAuto Solutions"
         description={aboutText}
-        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/coe/coe-automobile.webp"
         imageAlt="Automobile Training Centre"
         readmore={false}
       />
 
       <CareerPath careers={learnCards} title="What You’ll Learn Here" description="" />
 
-      <StudentActivities title="Glimpses" subtitle="" activities={glimpses} />
+      {/* <StudentActivities title="Glimpses" subtitle="" activities={glimpses} /> */}
 
       <AdmissionCareer />
     </>

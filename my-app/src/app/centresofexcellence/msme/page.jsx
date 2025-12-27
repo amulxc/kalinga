@@ -125,7 +125,8 @@ export default function MSMETrainingCentrePage() {
 
       <CareerPath careers={learnCards} title="What You’ll Learn" description="" />
 
-      <StudentActivities title="Glimpses" subtitle="" activities={glimpsesImageItems} />
+      {/* <StudentActivities title="Glimpses" subtitle="" activities={glimpsesImageItems} /> */}
+      <AdmissionCareer />
     </>
   );
 }

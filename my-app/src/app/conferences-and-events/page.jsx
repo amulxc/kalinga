@@ -173,10 +173,6 @@ export default function ConferencesAndEventsPage() {
           </div>
         </div>
       </section>
-
-      <StudentActivities activities={upcomingConferences} title="Upcoming Conferences 2025-26" subtitle="" />
-      <StudentActivities activities={upcomingEvents} title="Upcoming Events 2025-26" subtitle="" />
-
       <AdmissionCareer />
       </>
   );
