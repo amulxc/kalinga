@@ -340,7 +340,7 @@ shining on the horizons of high-quality education."
       <UpcomingConferences 
         conferences={newsConferences}
         title="Alumni Meet"
-    
+        href="/contact-us"
       />
       <CenterOfExcellence
         centres={centres}

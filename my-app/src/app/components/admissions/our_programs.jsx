@@ -66,7 +66,8 @@ export default function OurPrograms({
   customSubtitle = null,
   maxPrograms = null,
   backgroundColor = "bg-white",
-  mobileMaxWidth = null
+  mobileMaxWidth = null,
+  programCardTitleClassName = ""
 }) {
   const searchParams = useSearchParams();
   
@@ -454,6 +455,7 @@ export default function OurPrograms({
                 showSpecializationDropdown={program.showSpecializationDropdown}
                 specializationOptions={program.specializationOptions}
                 specializationPlaceholder={program.specializationPlaceholder}
+                titleClassName={programCardTitleClassName}
               />
             ))}
           </div>

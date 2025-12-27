@@ -164,36 +164,42 @@ export default function Admissions() {
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/check-icon.png",
         title: "How to Apply",
         description: "Learn about the step-by-step admission process and apply easily for your preferred program through our online portal.",
+        href: "/admissions"
       },
       {
         id: 2,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/Value+addition.svg",
         title: "Value Addition",
         description: "Gain a competitive edge with our value-added courses, workshops, and certifications designed to enhance your professional and personal development.",
+        href: "/value-added-course"
       },
       {
         id: 3,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/covid.svg",
         title: "Hostel",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        href: "/hostel"
       },
       {
         id: 4,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/scholarship.svg",
         title: "Transports",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        href: "/transport-facility"
       },
       {
         id: 5,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/elgbility.svg",
         title: "Pay fees",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        href: "/ku-fees"
       },
       {
         id: 6,
         icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/admission+procedure.svg",
         title: "Admission Procedure",
         description: "Understand the complete admission process, document checklist, and important deadlines to ensure a smooth enrollment experience.",
+        href: "/admissions"
       },
     ],
   };
@@ -246,7 +252,7 @@ export default function Admissions() {
           </div>
         </section>
       }>
-        <OurPrograms />
+        <OurPrograms programCardTitleClassName="uppercase !text-base md:!text-lg lg:!text-xl" />
       </Suspense>
       <OrganogramOfKalinga
         title={entranceExamContent.title}

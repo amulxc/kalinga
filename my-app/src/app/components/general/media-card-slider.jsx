@@ -23,6 +23,7 @@ export default function MediaCardSlider({
   descriptionTextClass = "text-gray-600",
   thumbnail="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
   className = "",
+  backgroundColor = "bg-white",
   swiperClassName = "media-card-slider",
 }) {
   // Determine which items to use - prioritize video if both provided
@@ -76,7 +77,7 @@ export default function MediaCardSlider({
   }, [isModalOpen]);
 
   return (
-    <section className={` py-16 bg-white relative ${className}`}>
+    <section className={` py-16 ${backgroundColor} relative ${className}`}>
       <div className="container mx-auto px-2">
         {/* Header Section */}
         <div className="text-center">

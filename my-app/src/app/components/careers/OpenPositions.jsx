@@ -194,12 +194,12 @@ export default function OpenPositions({
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="#careerform">
+                <Link href={position.checkEligibilityLink || "#careerform"}>
                  <GlobalArrowButton className="!bg-[var(--dark-orange-red)] hover:!bg-[var(--background)] hover:!text-[var(--dark-orange-red)]">
                    Check Eligibility
                  </GlobalArrowButton>
                  </Link>
-                 <Link href="#careerform">
+                 <Link href={position.applyNowLink || "#careerform"}>
                 <GlobalArrowButton>Apply Now</GlobalArrowButton>
                 </Link>
                 </div>

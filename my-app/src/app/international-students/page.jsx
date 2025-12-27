@@ -409,15 +409,21 @@ export default function InternationalStudents() {
         positions={[
           {
             title: "Technical BRIDGE Courses",
-            description: "Designed for students enrolling in technical programs, covering essential subjects including Maths, Physics, Chemistry, and Biology. These courses ensure you have a strong foundation before starting your technical degree program."
+            description: "Designed for students enrolling in technical programs, covering essential subjects including Maths, Physics, Chemistry, and Biology. These courses ensure you have a strong foundation before starting your technical degree program.",
+            checkEligibilityLink: "/contact-us",
+            applyNowLink: "/contact-us"
           },
           {
             title: "Non-Technical BRIDGE Courses",
-            description: "Tailored for students in non-technical programs, focusing on Yoga & Meditation, and Indian Arts & Crafts. These courses help you adapt to the academic environment while exploring India's rich cultural heritage."
+            description: "Tailored for students in non-technical programs, focusing on Yoga & Meditation, and Indian Arts & Crafts. These courses help you adapt to the academic environment while exploring India's rich cultural heritage.",
+            checkEligibilityLink: "/contact-us",
+            applyNowLink: "/contact-us"
           },
           {
             title: "Common Topics (Technical & Non-Technical)",
-            description: "All BRIDGE course students benefit from common topics including English & Soft Skills, Language Communications (Hindi), Indian Culture & Lifestyle, IT Skills, Grooming & Personality Development, GD & PI, and Hobby Classes (Music & Dance / Painting & Other Fine Arts / Modelling & Fashion Style / Library Arts / Book Club)."
+            description: "All BRIDGE course students benefit from common topics including English & Soft Skills, Language Communications (Hindi), Indian Culture & Lifestyle, IT Skills, Grooming & Personality Development, GD & PI, and Hobby Classes (Music & Dance / Painting & Other Fine Arts / Modelling & Fashion Style / Library Arts / Book Club).",
+            checkEligibilityLink: "/contact-us",
+            applyNowLink: "/contact-us"
           }
         ]}
       />
@@ -454,6 +460,7 @@ export default function InternationalStudents() {
         backgroundColorcard="bg-white"
         showCategory={false}
         showDate={false}
+        href="/contact-us"
       />
       <Gallery 
         title="Glimpse" 

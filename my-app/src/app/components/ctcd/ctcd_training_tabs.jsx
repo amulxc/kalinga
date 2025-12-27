@@ -46,6 +46,8 @@ const GALLERY_IMAGES = transformToGalleryImages(trainingGlimpse);
 
 // Training Projects Gallery Images
 const trainingProjectsImages = [
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(5).webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(6).webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-projects.webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-projects-2.webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-projects-3.webp",
@@ -55,6 +57,10 @@ const TRAINING_PROJECTS_GALLERY_IMAGES = transformToGalleryImages(trainingProjec
 
 // Training Domain Gallery Images
 const trainingDomainImages = [
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(1).webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(2).webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(3).webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(4).webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-domain-1.webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-domain-2.webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-domain-3.webp",
@@ -64,6 +70,10 @@ const TRAINING_DOMAIN_GALLERY_IMAGES = transformToGalleryImages(trainingDomainIm
 
 // Training Details Gallery Images
 const trainingDetailsImages = [
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(7).webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(8).webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/chart+(9).webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/ccrc-15.webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-domain-5.webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-domain-6.webp",
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/ctcd/training-domain-7.webp",
@@ -73,10 +83,10 @@ const TRAINING_DETAILS_GALLERY_IMAGES = transformToGalleryImages(trainingDetails
 
 // Common classNames
 const CARD_CLASSNAME = "rounded-[16px] bg-[var(--card-sandal)] p-[22px] md:p-[26px]";
-const CARD_TITLE_CLASSNAME = "font-plus-jakarta-sans text-[24px] leading-[30px] text-[var(--button-red)]";
+const CARD_TITLE_CLASSNAME = "font-plus-jakarta-sans text-[24px] leading-[30px] font-medium text-[var(--button-red)]";
 const CARD_TEXT_CLASSNAME = "mt-[10px] text-[var(--foreground)]";
 const SECTION_TITLE_CLASSNAME = "font-stix text-[var(--foreground)]";
-const ACCORDION_TITLE_CLASSNAME = "font-plus-jakarta-sans text-[18px] md:text-[24px] leading-[30px] text-[var(--button-red)]";
+const ACCORDION_TITLE_CLASSNAME = "font-plus-jakarta-sans text-[24px] leading-[30px] font-medium text-[var(--button-red)]";
 
 // Reusable Training Glimpse Gallery component
 function TrainingGlimpseGallery() {
