@@ -2,15 +2,16 @@
 import { useState } from "react";
 import MainIntro from "../components/about/main_intro";
 import MediaCardSlider from "../components/general/media-card-slider";
+import SectionHeading from "../components/general/SectionHeading";
 
 /* ---------------- Breadcrumb ---------------- */
 const breadcrumbData = {
   heroImage:
     "https://kalinga-university.s3.ap-south-1.amazonaws.com/international-students/international-students-banner.webp",
-  pageTitle: "Value-Added",
+  pageTitle: "Value Added Courses",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
-    { label: "Value-Added", href: "/Value-Added" },
+    { label: "Value Added Courses", href: "/value-added-courses" },
   ],
 };
 // Register breadcrumb data globally
@@ -105,19 +106,19 @@ const videoItems = [
 /* ---------------- PDF Data ---------------- */
 const pdfData = {
   "2024-25":
-    "https://drive.google.com/file/d/1hzWus_AFpBqKlt0690QQG6BetaF7YsHy/view",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/vac/2024-25.pdf",
   "2023-24":
-    "https://drive.google.com/file/d/14fS-akX1vEaPDN9H-jye8Diqga2saUtW/view",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/vac/2023-24.pdf",
   "2022-23":
-    "https://drive.google.com/file/d/1DzWDuZjX_fOYAqKxRXntojpontCQ30bi/view",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/vac/2022-23.pdf",
   "2021-22":
-    "https://drive.google.com/file/d/1wlPqGITz3lUEht4kjdST-laCXVFhBnnp/view",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/vac/2021-22.pdf",
   "2020-21":
-    "https://drive.google.com/file/d/1Ro4cpsnCXRELtjt6babs0n0w5Oku5Q0v/view",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/vac/20-21.pdf",
   "2019-20":
-    "https://drive.google.com/file/d/10-HYRf1d5PN3MLF7OVCF_cmoSr0A00k_/view",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/vac/19-20.pdf",
   "2018-19":
-    "https://drive.google.com/file/d/1gtbTx22Bh89psbX21cjqGtDiDvtXDOX0/view",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/vac/18-19.pdf",
 };
 
 export default function ValueAddedPage() {
@@ -136,43 +137,37 @@ export default function ValueAddedPage() {
           ]}
           imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/Value-Added-Courses/banner+(1).webp"
           imageAlt="Value-Added"
-          initialVisibleParagraphs={1}
-          showKnowMore
+          initialVisibleParagraphs={3}
+          showKnowMore={false}
         />
       </section>
 
      {/* ---------- YEAR WISE PDF SECTION ---------- */}
 <section className="py-14">
   <div className="mx-auto max-w-6xl rounded-3xl bg-[#0d4a75] p-6">
-    <h2 className="text-white text-2xl font-bold mb-6">
+    <h3 className="text-white mb-6">
       Our Value Added Courses (PDFs)
-    </h2>
+    </h3>
 
     {/* Tabs */}
     <div className="flex flex-wrap gap-3 mb-6">
-      {years.map((year) => (
-        <button
-          key={year}
-          onClick={() => setActiveYear(year)}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition
-          ${
-            activeYear === year
-              ? "text-white"
-              : "text-black bg-white hover:text-white"
-          }`}
-          style={{
-            backgroundColor: activeYear === year ? "#A61E1E" : "white",
-          }}
-          onMouseEnter={(e) => {
-            if (activeYear !== year) e.target.style.backgroundColor = "#A61E1E";
-          }}
-          onMouseLeave={(e) => {
-            if (activeYear !== year) e.target.style.backgroundColor = "white";
-          }}
-        >
-          {year}
-        </button>
-      ))}
+      {years.map((year) => {
+        const isActive = activeYear === year;
+        return (
+          <button
+            key={year}
+            onClick={() => setActiveYear(year)}
+            className={[
+              "whitespace-nowrap rounded-lg border px-4 py-2 text-sm font-medium transition-colors",
+              isActive
+                ? "bg-[var(--button-red)] text-white border-white/10"
+                : "bg-white text-[var(--foreground)] border-white/30 hover:bg-white/95",
+            ].join(" ")}
+          >
+            {year}
+          </button>
+        );
+      })}
     </div>
 
    

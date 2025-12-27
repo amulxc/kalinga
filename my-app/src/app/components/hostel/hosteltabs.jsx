@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import DataTable from "../general/data-table";
+import Icons from "../general/icons";
 
 export default function HostelFeeTabs() {
     const tabs = useMemo(
@@ -29,9 +31,8 @@ export default function HostelFeeTabs() {
 
     return (
         <section className="py-14">
-            {/* Outer Blue Wrapper */}
             <div className="mx-auto max-w-6xl rounded-3xl bg-[#0d4a75] p-4 md:p-6">
-                {/* ---------------- DESKTOP TABS (md+) ---------------- */}
+                {/* DESKTOP TABS */}
                 <div className="hidden md:flex gap-3 overflow-x-auto pb-2">
                     {tabs.map((t) => {
                         const isActive = t.id === activeTab;
@@ -53,9 +54,9 @@ export default function HostelFeeTabs() {
                     })}
                 </div>
 
-                {/* ---------------- CONTENT CARD ---------------- */}
+                {/* CONTENT CARD */}
                 <div className="mt-4 rounded-2xl bg-white p-4 md:p-10">
-                    {/* ---------------- MOBILE ACCORDION (<md) ---------------- */}
+                    {/* MOBILE ACCORDION */}
                     <div className="md:hidden space-y-3">
                         {tabs.map((t) => {
                             const isOpen = t.id === activeTab;
@@ -76,44 +77,65 @@ export default function HostelFeeTabs() {
                                             {t.label}
                                         </span>
 
-                                        <svg
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            className={[
-                                                "transition-transform",
-                                                isOpen ? "rotate-180" : "rotate-0",
-                                            ].join(" ")}
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M6 9l6 6 6-6"
-                                                stroke="currentColor"
-                                                strokeWidth="2"
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                            />
-                                        </svg>
+                                        <Icons
+                                            name="chevronDown"
+                                            size={20}
+                                            className={isOpen ? "rotate-180" : "rotate-0"}
+                                        />
                                     </button>
 
-                                    {isOpen && (
-                                        <div className="px-4 py-6">
-                                            {renderContent(t.id)}
-                                        </div>
-                                    )}
+                                    {isOpen && <div className="px-4 py-6">{renderContent(t.id)}</div>}
                                 </div>
                             );
                         })}
                     </div>
 
-                    {/* ---------------- DESKTOP CONTENT (md+) ---------------- */}
-                    <div className="hidden md:block">
-                        {renderContent(activeTab)}
-                    </div>
+                    {/* DESKTOP CONTENT */}
+                    <div className="hidden md:block">{renderContent(activeTab)}</div>
                 </div>
             </div>
         </section>
+    );
+}
+
+/* ======================= TABLE via DataTable ======================= */
+
+function HostelFeeTable({ rows }) {
+    const columns = useMemo(
+        () => [
+            { key: "hostelName", label: "Hostel Name", widthPx: 220 },
+            { key: "food", label: "Food", widthPx: 140 },
+            { key: "occupancy", label: "Occupancy", widthPx: 120 },
+            { key: "waterCooled", label: "Water-Cooled Room (₹)", widthPx: 210 },
+            { key: "acRoom", label: "AC Room (₹)", widthPx: 160 },
+        ],
+        []
+    );
+
+    const data = useMemo(
+        () =>
+            (rows || []).map((r) => ({
+                hostelName: r[0],
+                food: r[1],
+                occupancy: r[2],
+                waterCooled: r[3] !== "NA" ? `₹ ${r[3]}` : "NA",
+                acRoom: r[4] !== "NA" ? `₹ ${r[4]}` : "NA",
+            })),
+        [rows]
+    );
+
+    return (
+        <DataTable
+            columns={columns}
+            data={data}
+            overflowX={true}
+            className="!shadow-none"
+            headerBgColor="bg-black/5"
+            headerTextColor="text-[var(--foreground)]"
+            evenRowBg="bg-white"
+            oddRowBg="bg-white"
+            borderColor="border-black/10"
+        />
     );
 }
 
@@ -122,11 +144,11 @@ export default function HostelFeeTabs() {
 function BoysHostel() {
     return (
         <>
-            <h2 className="font-stix text-3xl md:text-4xl text-[var(--foreground)] mb-6">
+            <h2 className="font-stix !text-lg md:!text-2xl text-[var(--foreground)] mb-6">
                 Boys Hostel Fee (2025–26)
             </h2>
 
-            <FeeTable
+            <HostelFeeTable
                 rows={[
                     ["Brahmaputra", "Veg", "5", "98,000", "1,22,000"],
                     ["Brahmaputra", "Non-Veg", "5", "1,34,000", "1,58,000"],
@@ -151,11 +173,11 @@ function BoysHostel() {
 function GirlsHostel() {
     return (
         <>
-            <h2 className="font-stix text-3xl md:text-4xl text-[var(--foreground)] mb-6">
+            <h2 className="font-stix !text-lg md:!text-2xl text-[var(--foreground)] mb-6">
                 Girls Hostel Fee (2025–26)
             </h2>
 
-            <FeeTable
+            <HostelFeeTable
                 rows={[
                     ["Indus", "Veg", "7", "78,000", "96,000"],
                     ["Indus", "Non-Veg", "7", "1,14,000", "1,32,000"],
@@ -175,49 +197,6 @@ function GirlsHostel() {
     );
 }
 
-/* ======================= TABLE ======================= */
-
-function FeeTable({ rows }) {
-    return (
-        <div className="overflow-x-auto rounded-xl border border-black/10">
-            <table className="min-w-[900px] w-full text-left">
-                <thead className="bg-black/5">
-                    <tr>
-                        {[
-                            "Hostel Name",
-                            "Food",
-                            "Occupancy",
-                            "Water-Cooled Room (₹)",
-                            "AC Room (₹)",
-                        ].map((h) => (
-                            <th
-                                key={h}
-                                className="px-4 py-3 text-sm font-semibold text-[var(--foreground)]"
-                            >
-                                {h}
-                            </th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {rows.map((r, idx) => (
-                        <tr key={idx} className="border-t border-black/10">
-                            {r.map((c, i) => (
-                                <td
-                                    key={i}
-                                    className="px-4 py-3 text-sm text-[var(--light-text-gray)]"
-                                >
-                                    {i >= 3 && c !== "NA" ? `₹ ${c}` : c}
-                                </td>
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    );
-}
-
 /* ======================= NOTES ======================= */
 
 function ImportantNotes() {
@@ -231,30 +210,14 @@ function ImportantNotes() {
 
     return (
         <>
-            <h2 className="font-stix text-3xl md:text-4xl text-[var(--foreground)] mb-4">
+            <h2 className="font-stix !text-lg md:!text-2xl text-[var(--foreground)] mb-4">
                 Important Notes
             </h2>
 
             <ul className="space-y-3 text-[var(--light-text-gray)]">
                 {notes.map((note, idx) => (
-                    <li
-                        key={idx}
-                        className="flex items-start gap-3 leading-relaxed"
-                    >
-                        {/* SAME SVG ICON */}
-                        <svg
-                            fill="none"
-                            height="24"
-                            width="24"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6 bg-[var(--card-skin)] fill-black rounded-md p-1 flex-shrink-0 mt-0.5"
-                            aria-hidden
-                        >
-                            <path d="m19 5.50049v10.99951c0 .2761-.2239.5-.5.5s-.5-.2239-.5-.5v-9.79289l-12.14645 12.14649c-.19526.1952-.51184.1952-.7071 0-.19527-.1953-.19527-.5119 0-.7072l12.14645-12.1464h-9.7929c-.27614 0-.5-.22386-.5-.5s.22386-.5.5-.5h11c.1316 0 .2578.05186.3514.14426l.0022.00219c.0879.0879.1397.20518.1458.32876.0004.00824.0006.01699.0006.02528z" />
-                        </svg>
-
-                        {/* Text */}
+                    <li key={idx} className="flex items-start gap-3 leading-relaxed">
+                        <Icons name="arrowBox" className="mt-0.5" />
                         <span>{note}</span>
                     </li>
                 ))}
@@ -286,28 +249,14 @@ function HostelDeliverables() {
 
     return (
         <>
-            <h2 className="font-stix text-3xl md:text-4xl text-[var(--foreground)] mb-4">
+            <h2 className="font-stix !text-lg md:!text-2xl text-[var(--foreground)] mb-4">
                 Hostel Deliverables
             </h2>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[var(--light-text-gray)]">
                 {items.map((item) => (
-                    <li
-                        key={item}
-                        className="flex items-start gap-3"
-                    >
-                        <svg
-                            fill="none"
-                            height="24"
-                            width="24"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6 bg-[var(--card-skin)] fill-black rounded-md p-1 flex-shrink-0"
-                            aria-hidden
-                        >
-                            <path d="m19 5.50049v10.99951c0 .2761-.2239.5-.5.5s-.5-.2239-.5-.5v-9.79289l-12.14645 12.14649c-.19526.1952-.51184.1952-.7071 0-.19527-.1953-.19527-.5119 0-.7072l12.14645-12.1464h-9.7929c-.27614 0-.5-.22386-.5-.5s.22386-.5.5-.5h11c.1316 0 .2578.05186.3514.14426l.0022.00219c.0879.0879.1397.20518.1458.32876.0004.00824.0006.01699.0006.02528z" />
-                        </svg>
-
+                    <li key={item} className="flex items-start gap-3">
+                        <Icons name="arrowBox" />
                         <span className="leading-snug">{item}</span>
                     </li>
                 ))}

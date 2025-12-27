@@ -13,7 +13,7 @@ function Hostelfacilities() {
         {
             id: 1,
             name: "Mess Facility",
-            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/canteen+mess.webp",
         },
         {
             id: 2,
@@ -23,7 +23,7 @@ function Hostelfacilities() {
         {
             id: 3,
             name: "Reading Room",
-            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/hostelreadingroom_campusfacility.webp",
         },
         {
             id: 4,
@@ -33,7 +33,7 @@ function Hostelfacilities() {
         {
             id: 5,
             name: "Wi-Fi Facility",
-            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/wifienabledcampus.webp",
         },
         {
             id: 6,
@@ -58,7 +58,7 @@ function Hostelfacilities() {
         {
             id: 10,
             name: "Gym",
-            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/gym.webp",
         },
         {
             id: 11,

@@ -1,5 +1,5 @@
-import React from 'react'
-import PublicationGrid from '../research/publication-grid'
+import React from "react";
+import PublicationGrid from "../research/publication-grid";
 
 function Hostelgrid() {
     const Stats = [
@@ -9,16 +9,17 @@ function Hostelgrid() {
             description: "",
         },
         {
-            title: "Girls’ Accommodation ",
+            title: "Girls’ Accommodation",
             value: "460 +",
             description: "",
-        }
-    ]
+        },
+    ];
+
     return (
-        <div>
+        <div className="w-full flex justify-center">
             <PublicationGrid stats={Stats} />
         </div>
-    )
+    );
 }
 
-export default Hostelgrid
+export default Hostelgrid;

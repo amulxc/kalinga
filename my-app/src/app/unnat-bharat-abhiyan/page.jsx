@@ -59,28 +59,27 @@ const objectives = [
 export default function UnnatBharatAbhiyanPage() {
   return (
     <div className="bg-white">
-
+      {/* ---------- Our Commitment (ImageContent style like CIF) ---------- */}
+      <ImageContent
+        title="Unnat Bharat Abhiyan"
+        subtitle=""
+        description="Unnat Bharat Abhiyan (UBA) was launched by the Ministry of Education in 2014, which aims to address pressing challenges of rural India and connect them with higher education institutions for their holistic growth and development. Inspired by Gandhiji's vision in Hind Swaraj, UBA supports the growth of self-sustained villages using eco-friendly and community-based technologies."
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/unnat-bharat-abhiyan/news-6047.webp"
+        imageAlt="Rural Transformation"
+        additionalContent={[]}
+        readmore={false}
+      />
       {/* ---------- Main Intro (same as CIF style) ---------- */}
       <MainIntro
-        title="Unnat Bharat Abhiyan"
+        title="Our Commitment Towards Rural Transformation"
         subtitle="About the Programme"
         description={[
-          "Unnat Bharat Abhiyan (UBA) was launched by the Ministry of Education in 2014, which aims to address pressing challenges of rural India and connect them with higher education institutions for their holistic growth and development. Inspired by Gandhiji’s vision in Hind Swaraj, UBA supports the growth of self-sustained villages using eco-friendly and community-based technologies. ",
-          "The conceptualisation of Unnat Bharat Abhiyan started with the initiative of a group of dedicated faculty members of the Indian Institute of Technology (IIT) Delhi, working for a long time in the area of rural development and appropriate technology. India’s 70% of the population lives in rural areas, and this initiative will meet their needs of life, like food, energy, sanitation, education, health, and livelihood, reducing their migration towards their cities and improving growth and job opportunities in their areas. ",
+          "Kalinga University proudly participates in the Unnat Bharat Abhiyan as a voluntary organisation by contributing towards rural progress. It has received approval on 07-10-2022. The university has taken significant measures to promote sustainable solutions and improve its infrastructure and lifestyle. Through fieldwork and surveys, it encourages rural empowerment by bridging academic knowledge with real community needs.",
         ]}
-        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/unnat-bharat-abhiyan/news-6047.webp"
+        imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/students-3.jpg"
         imageAlt="Unnat Bharat Abhiyan"
         showKnowMore={true}
         initialVisibleParagraphs={1}
-      />
-
-      {/* ---------- Our Commitment (ImageContent style like CIF) ---------- */}
-      <ImageContent
-        title="Our Commitment Towards Rural Transformation"
-        subtitle=""
-        description="Kalinga University proudly participates in the Unnat Bharat Abhiyan as a voluntary organisation by contributing towards rural progress. It has received approval on 07-10-2022. The university has taken significant measures to promote sustainable solutions and improve its infrastructure and lifestyle. Through fieldwork and surveys, it encourages rural empowerment by bridging academic knowledge with real community needs."
-        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg"
-        imageAlt="Rural Transformation"
       />
 
       {/* ---------- Vision & Mission (CIF style, no center image) ---------- */}
@@ -89,7 +88,7 @@ export default function UnnatBharatAbhiyanPage() {
       {/* ---------- Objectives ---------- */}
       <ImageListItem
         items={objectives}
-        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/CIF/cif-objectives+(1).webp"
+        imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/kalinga-students-2.jpg"
         title="Goals of Unnat Bharat Abhiyan"
         description="Kalinga University works closely with rural communities to bring sustainable, inclusive, and knowledge-driven development."
         className="!bg-[var(--light-gray)]"

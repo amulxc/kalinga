@@ -56,7 +56,7 @@ export default function Hostelrules() {
     const defaultFAQItems = [
         {
             id: 1,
-            question: "PROHIBITION OF RAGGING",
+            question: "Prohibition of Ragging",
             answer: (
                 <Answer
                     lines={[
@@ -69,7 +69,7 @@ export default function Hostelrules() {
         },
         {
             id: 2,
-            question: "HOSTEL STAY DURATION",
+            question: "Hostel Stay Duration",
             answer: (
                 <Answer
                     lines={[
@@ -82,7 +82,7 @@ export default function Hostelrules() {
         },
         {
             id: 3,
-            question: "HANDLING OF HOSTEL PROPERTY",
+            question: "Handling of Hostel Property",
             answer: (
                 <Answer
                     lines={[
@@ -96,20 +96,19 @@ export default function Hostelrules() {
         },
         {
             id: 4,
-            question: "PERSONAL BELONGINGS",
+            question: "Personal Belongings",
             answer: (
                 <Answer
                     lines={[
                         "Students are personally responsible for the safety of their belongings.",
                         "The university/hostel authority is not liable for any loss or theft.",
                     ]}
-
                 />
             ),
         },
         {
             id: 5,
-            question: "MESS RULES",
+            question: "Mess Rules",
             answer: (
                 <Answer
                     lines={[
@@ -122,7 +121,7 @@ export default function Hostelrules() {
         },
         {
             id: 6,
-            question: "RESOURCE CONSERVATION",
+            question: "Resource Conservation",
             answer: (
                 <Answer
                     lines={["Wastage of food, electricity, or water is strictly prohibited."]}
@@ -132,7 +131,7 @@ export default function Hostelrules() {
         },
         {
             id: 7,
-            question: "PROHIBITED ITEMS AND ACTIVITIES",
+            question: "Prohibited Items and Activities",
             answer: (
                 <Answer
                     lines={[
@@ -148,7 +147,7 @@ export default function Hostelrules() {
         },
         {
             id: 8,
-            question: "CLASS HOURS",
+            question: "Class Hours",
             answer: (
                 <Answer
                     lines={[
@@ -161,22 +160,26 @@ export default function Hostelrules() {
         },
         {
             id: 9,
-            question: "DRESS CODE",
-            answer: <Answer lines={["Students must wear decent attire while on the university campus."]} />,
+            question: "Dress Code",
+            answer: (
+                <Answer lines={["Students must wear decent attire while on the university campus."]} />
+            ),
         },
         {
             id: 10,
-            question: "LEAVE POLICY",
+            question: "Leave Policy",
             answer: (
                 <Answer
-                    lines={["No student is allowed to leave the hostel without prior permission from the hostel warden."]}
+                    lines={[
+                        "No student is allowed to leave the hostel without prior permission from the hostel warden.",
+                    ]}
                     penalty="Unauthorised absence may attract fines or disciplinary action."
                 />
             ),
         },
         {
             id: 11,
-            question: "ROLL CALL ATTENDANCE",
+            question: "Roll Call Attendance",
             answer: (
                 <Answer
                     lines={["Daily Roll Call at prescribed times is mandatory."]}
@@ -186,7 +189,7 @@ export default function Hostelrules() {
         },
         {
             id: 12,
-            question: "CHANGING OF ROOMS",
+            question: "Changing of Rooms",
             answer: (
                 <Answer
                     lines={[
@@ -198,7 +201,7 @@ export default function Hostelrules() {
         },
         {
             id: 13,
-            question: "NIGHT STAY RESTRICTIONS",
+            question: "Night Stay Restrictions",
             answer: (
                 <Answer
                     lines={[
@@ -210,7 +213,7 @@ export default function Hostelrules() {
         },
         {
             id: 14,
-            question: "HEALTH CONDITIONS",
+            question: "Health Conditions",
             answer: (
                 <Answer
                     lines={[
@@ -225,7 +228,7 @@ export default function Hostelrules() {
         },
         {
             id: 15,
-            question: "VISITORS",
+            question: "Visitors",
             answer: (
                 <Answer
                     lines={[
@@ -238,7 +241,7 @@ export default function Hostelrules() {
         },
         {
             id: 16,
-            question: "NOISE AND MUSIC",
+            question: "Noise and Music",
             answer: (
                 <Answer
                     lines={["Playing loud music in rooms or common areas is strictly prohibited."]}
@@ -248,7 +251,7 @@ export default function Hostelrules() {
         },
         {
             id: 17,
-            question: "NOTICE BOARDS",
+            question: "Notice Boards",
             answer: (
                 <Answer
                     lines={["Students are not permitted to post notices on university notice boards."]}
@@ -258,7 +261,7 @@ export default function Hostelrules() {
         },
         {
             id: 18,
-            question: "AGITATIONS AND STRIKES",
+            question: "Agitations and Strikes",
             answer: (
                 <Answer
                     lines={[
@@ -270,7 +273,7 @@ export default function Hostelrules() {
         },
         {
             id: 19,
-            question: "DAY SCHOLAR ENTRY",
+            question: "Day Scholar Entry",
             answer: (
                 <Answer
                     lines={["Day scholars are not allowed to enter the hostel premises under any circumstances."]}
@@ -280,7 +283,7 @@ export default function Hostelrules() {
         },
         {
             id: 20,
-            question: "ELECTRICITY USAGE",
+            question: "Electricity Usage",
             answer: (
                 <Answer
                     lines={[
@@ -292,7 +295,7 @@ export default function Hostelrules() {
         },
         {
             id: 21,
-            question: "LEAVE INTIMATION",
+            question: "Leave Intimation",
             answer: (
                 <Answer
                     lines={[
@@ -304,7 +307,7 @@ export default function Hostelrules() {
         },
         {
             id: 22,
-            question: "ELECTRICITY METER TAMPERING",
+            question: "Electricity Meter Tampering",
             answer: (
                 <Answer
                     lines={["Tampering/damage to electricity meters is strictly prohibited."]}
@@ -313,6 +316,7 @@ export default function Hostelrules() {
             ),
         },
     ];
+
 
     //notes 
     return (

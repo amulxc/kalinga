@@ -11,7 +11,7 @@ import Hostelrules from '../components/hostel/hostelrules';
 function Hostel() {
     const breadcrumbData = {
         heroImage:
-            "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
+            "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/hostel.webp",
         pageTitle: "Hostel",
         customBreadcrumbs: [
             { label: "Home", href: "/" },

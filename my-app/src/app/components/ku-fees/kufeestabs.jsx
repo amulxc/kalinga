@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 /** -----------------------------
  *  TABS
@@ -19,11 +19,6 @@ const IQAC_TABS = [
     { id: "value", label: "Value Additions" },
     { id: "pdfs", label: "Value Added Courses (PDFs)" },
 ];
-
-/** -----------------------------
- *  FACULTY DATA
- *  (Only meaningful footnote stars kept)
- *  ----------------------------*/
 
 const FEES_COMMERCE = {
     title: "Faculty of Commerce & Management",
@@ -1051,10 +1046,9 @@ const FEES_RESEARCH = {
     ],
     notes: [],
 };
+// Paste your existing FEES_COMMERCE, FEES_ENGINEERING, FEES_IT, FEES_S CIENCE, FEES_ARTS,
+// FEES_LAW, FEES_PHARMACY, FEES_EDUCATION, FEES_RESEARCH here exactly as you already have.
 
-/** -----------------------------
- *  OTHER + VALUE
- *  ----------------------------*/
 const OTHER_CHARGES = {
     lateralEntryFee: "One Time - Rs. 3,000/-",
     creditTransfer: "(One time) - Rs. 5,000/-",
@@ -1067,41 +1061,128 @@ const OTHER_CHARGES = {
         { route: "From Mahasamund", fee: "INR 33,000/- Per Year" },
         { route: "From Bhansoj", fee: "INR 25,000/- Per Year" },
         { route: "From Rajim & Beergaon", fee: "INR 30,000/- Per Year" },
-        { route: "From Raipur city", fee: "INR 25,000/- Per Year" },
+        { route: "From Raipur City", fee: "INR 25,000/- Per Year" },
         { route: "From Arang & Abhanpur", fee: "INR 24,000/- Per Year" },
-        { route: "From New Raipur (Sector – 27,29,17, Chicha, CO Hospital, Stadium, Palaud, Kotni)", fee: "INR 18,000/- Per Year" },
+        {
+            route:
+                "From New Raipur (Sector – 27, 29, 17, Chicha, CO Hospital, Stadium, Palaud, Kotni)",
+            fee: "INR 18,000/- Per Year",
+        },
         { route: "From Mandir Hasaud", fee: "INR 18,000/- Per Year" },
     ],
     scholarship:
         "Scholarships (General, Merit & Girl Student) are available on Tuition Fees. The above scholarships are not applicable to Pharmacy, Education, and Research Programs.",
-    scholarshipLink: "https://kalingauniversity.ac.in/scholarship.php",
-    hostelLink: "https://kalingauniversity.ac.in/hostel_fee.php",
     uniformDetails:
         "Uniform Includes - 2 Trousers, 2 Shirts, 1 Blazer, 1 T-Shirt, 1 Lower, 1 Tie, 1 Bag",
 };
 
 const VALUE_ADDITIONS = [
     "Semester Co-Curricular Activities - Spoken English, Grooming, Public Speaking, Research Paper Presentation, Industrial Visit, Presentation Skill, Seminars, Conferences, Student Research Policy Incentives, Innovation Incentive & Credits, Innovation & Start Up Policy Credits.",
+
     "Business Quiz/Competition, Business plan presentation & Ad Mad Show for Commerce & Management Students.",
+
     "Semester Extra Curricular Activities – Indoor & Outdoor Games, Campus Band, NCC, NSS, Gymnasium membership, Inter College Sports Tournament, Cultural Fest.",
-    "Free Coaching (Choose any one): CAT/MAT/Banking, PSC Coaching, UGC NET (PG), GATE (Engineering), CSIR NET (PG), GPAT (B. Pharma Final Year).",
+
+    "Free Coaching (Choose any one): Preparation for CAT, MAT, Banking & other competitive exams; State Public Service Commission (PSC) Competitive Exam Coaching; UGC NET Coaching for PG Students; Graduate Aptitude Test in Engineering (GATE) Coaching for Engineering Students; CSIR NET Coaching for PG Students; GPAT Coaching for B. Pharma Final Year students.",
+
     "Apart from the Scheduled Internship Program (Mandatory), the Short Term Internship Program is based upon Opportunities from Business & Industry (Optional).",
-    "Certification Programs: PCA Course, E-Commerce, 2D & 3D Design Training, Robotics, Web Development, Tally, AIML/Data Science, Photography/Videography/Graphic Design, Financial Planning & Stock Market.",
+
+    "Certification Program on Personal Computer Application Course in association with First Edu India Ltd.",
+
+    "Training & Joint Certification on E-Commerce from First Edu India Ltd.",
+
+    "Design Level 2D & 3D Training for Engineering students in association with First Edu India Ltd.",
+
+    "Robotics Training in association with First Edu India Ltd. for Engineering & IT Students.",
+
+    "Web Development Training in association with First Edu India Ltd. for IT Students.",
+
+    "Training on Tally in association with First Edu India Ltd. for Commerce Students.",
+
     "Foreign Trip for all courses (Optional with charges).",
+
+    "Certification course of AIML/Data Science for IT & Engineering students with First Edu India Ltd.",
+
+    "Certification course on Photography, Videography & Graphic Design with First Edu India Ltd.",
+
+    "Certification courses on Financial Planning, Self Finance Planning & Stock Market with First Edu India Ltd."
 ];
 
-const VALUE_ADDED_PDF_YEARS = ["2024-25", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19"];
+
+const VALUE_ADDED_PDF_YEARS = [
+    "2024-25",
+    "2023-24",
+    "2022-23",
+    "2021-22",
+    "2020-21",
+    "2019-20",
+    "2018-19",
+];
+
+/** ✅ Add your REAL PDF links here (NOT drive links) */
+const VALUE_ADDED_PDFS = {
+    "2024-25": [
+        {
+            label: "Value Added Courses (2024–25)",
+            href: "https://drive.google.com/file/d/1hzWus_AFpBqKlt0690QQG6BetaF7YsHy/view?usp=drive_link",
+        },
+    ],
+
+    "2023-24": [
+        {
+            label: "Value Added Courses (2023–24)",
+            href: "https://drive.google.com/file/d/14fS-akX1vEaPDN9H-jye8Diqga2saUtW/view?usp=drive_link",
+        },
+    ],
+
+    "2022-23": [
+        {
+            label: "Value Added Courses (2022–23)",
+            href: "https://drive.google.com/file/d/1DzWDuZjX_fOYAqKxRXntojpontCQ30bi/view?usp=drive_link",
+        },
+    ],
+
+    "2021-22": [
+        {
+            label: "Value Added Courses (2021–22)",
+            href: "https://drive.google.com/file/d/1wlPqGITz3lUEht4kjdST-laCXVFhBnnp/view?usp=drive_link",
+        },
+    ],
+
+    "2020-21": [
+        {
+            label: "Value Added Courses (2020–21)",
+            href: "https://drive.google.com/file/d/1Ro4cpsnCXRELtjt6babs0n0w5Oku5Q0v/view?usp=drive_link",
+        },
+    ],
+
+    "2019-20": [
+        {
+            label: "Value Added Courses (2019–20)",
+            href: "https://drive.google.com/file/d/10-HYRf1d5PN3MLF7OVCF_cmoSr0A00k_/view?usp=drive_link",
+        },
+    ],
+
+    "2018-19": [
+        {
+            label: "Value Added Courses (2018–19)",
+            href: "https://drive.google.com/file/d/1gtbTx22Bh89psbX21cjqGtDiDvtXDOX0/view?usp=drive_link",
+        },
+    ],
+};
+
 
 /** -----------------------------
- *  REUSABLE TABLE
- *  - ONLY table scrolls
- *  - container never breaks
- *  - page never scrolls horizontally
+ *  Reusable table wrapper
+ *  - only table scrolls
+ *  - wrap long text
+ *  - sticky header
  *  ----------------------------*/
 function ScrollTable({ columns, rows }) {
     return (
         <div className="mt-2 border border-gray-200 rounded-lg overflow-hidden">
-            <div className="w-full max-w-full overflow-x-auto overflow-y-auto max-h-[560px]">
+            {/* ✅ table gets BOTH scrolls, page won't */}
+            <div className="w-full max-w-full overflow-x-auto overflow-y-auto max-h-[520px]">
                 <table className="w-max min-w-full border-collapse">
                     <thead className="sticky top-0 z-10">
                         <tr className="bg-[var(--dark-blue)] text-white">
@@ -1125,7 +1206,12 @@ function ScrollTable({ columns, rows }) {
                                 {columns.map((col) => (
                                     <td
                                         key={col}
-                                        className="px-4 py-3 text-[var(--foreground)] whitespace-nowrap"
+                                        className="
+                        px-4 py-3 text-[var(--foreground)]
+                        whitespace-normal break-words
+                        align-top
+                        min-w-[140px]
+                        "
                                     >
                                         {r[col] ?? "-"}
                                     </td>
@@ -1141,6 +1227,7 @@ function ScrollTable({ columns, rows }) {
 
 function Notes({ items = [] }) {
     if (!items?.length) return null;
+
     return (
         <div className="mt-4 text-left space-y-2">
             <h4 className="font-plus-jakarta-sans font-semibold text-[var(--foreground)]">
@@ -1150,7 +1237,7 @@ function Notes({ items = [] }) {
                 {items.map((t, i) => (
                     <li
                         key={i}
-                        className="text-sm md:text-base text-[var(--foreground)] font-plus-jakarta-sans"
+                        className="text-sm md:text-base text-[var(--foreground)] font-plus-jakarta-sans whitespace-normal break-words"
                     >
                         {t}
                     </li>
@@ -1166,7 +1253,8 @@ function Notes({ items = [] }) {
 export default function FeesTabSection() {
     const [activeTab, setActiveTab] = useState("commerce");
 
-    const getFacultyBlock = () => {
+    const faculty = useMemo(() => {
+        // ✅ Paste your existing mapping exactly (keeping same ids)
         if (activeTab === "commerce") return FEES_COMMERCE;
         if (activeTab === "engineering") return FEES_ENGINEERING;
         if (activeTab === "it") return FEES_IT;
@@ -1177,21 +1265,19 @@ export default function FeesTabSection() {
         if (activeTab === "education") return FEES_EDUCATION;
         if (activeTab === "research") return FEES_RESEARCH;
         return null;
-    };
-
-    const faculty = getFacultyBlock();
+    }, [activeTab]);
 
     return (
         <section className="w-full py-4 px-2 overflow-x-hidden">
             <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
+            .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+            }
+            .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            }
+        `}</style>
 
             <div className="flex flex-col lg:flex-row gap-4 bg-[var(--dark-blue)] py-16 md:px-10 px-4 rounded-xl overflow-x-hidden">
                 {/* Tabs */}
@@ -1205,14 +1291,15 @@ export default function FeesTabSection() {
                                         key={tab.id}
                                         onClick={() => setActiveTab(tab.id)}
                                         className={`
-                      flex-shrink-0 lg:w-full text-left px-4 py-5 rounded-[8px]
-                      font-plus-jakarta-sans text-sm md:text-base whitespace-nowrap
-                      transition-all duration-200
-                      ${isActive
+                                                    flex-shrink-0 lg:w-full text-left px-4 py-5 rounded-[8px]
+                                                    font-plus-jakarta-sans text-sm md:text-base
+                                                    ${tab.id === "other" ? "whitespace-normal break-words" : "whitespace-nowrap"}
+                                                    transition-all duration-200
+                                                    ${isActive
                                                 ? "bg-[var(--button-red)] text-white font-semibold"
                                                 : "bg-[var(--lite-sand)] text-[var(--foreground)] hover:opacity-90"
                                             }
-                    `}
+`}
                                     >
                                         {tab.label}
                                     </button>
@@ -1224,150 +1311,164 @@ export default function FeesTabSection() {
 
                 {/* Content */}
                 <div className="flex-1 w-full overflow-x-hidden">
-                    <div className="rounded-[16px] bg-white p-4 md:p-5 shadow-sm h-full flex flex-col overflow-x-hidden">
-                        {/* Faculty Tables */}
-                        {faculty && (
-                            <div className="flex-1">
-                                <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-3">
-                                    {faculty.title}
-                                </h2>
+                    {/* ✅ Fixed height for right panel + internal scroll + bottom padding */}
+                    <div className="rounded-[16px] bg-white shadow-sm overflow-hidden">
+                        <div className="h-[720px] md:h-[760px] overflow-y-auto px-4 md:px-5 pt-4 md:pt-5 pb-8">
+                            {/* Faculty Tables */}
+                            {faculty && (
+                                <div>
+                                    <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-1">
+                                        {faculty.title}
+                                    </h2>
 
-                                <ScrollTable columns={faculty.columns} rows={faculty.rows} />
+                                    <ScrollTable columns={faculty.columns} rows={faculty.rows} />
+                                    <Notes items={faculty.notes} />
+                                </div>
+                            )}
 
-                                <Notes items={faculty.notes} />
-                            </div>
-                        )}
-
-                        {/* Other Charges */}
-                        {activeTab === "other" && (
-                            <div className="flex-1">
-                                <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-3">
-                                    Other Charges / Transport / Scholarship
-                                </h2>
-
-                                <div className="space-y-4 text-[var(--foreground)] font-plus-jakarta-sans text-sm md:text-base">
-                                    <div className="p-4 rounded-lg border border-gray-200 bg-gray-50">
-                                        <div className="font-semibold mb-2">Other Charges</div>
-                                        <ul className="list-disc pl-5 space-y-1">
-                                            <li>Lateral Entry Fees: {OTHER_CHARGES.lateralEntryFee}</li>
-                                            <li>Credit Transfer: {OTHER_CHARGES.creditTransfer}</li>
-                                        </ul>
+                            {/* Other Charges */}
+                            {activeTab === "other" && (
+                                <div>
+                                    <div className="w-full min-w-0">
+                                        <h2
+                                            className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 mt-1 text-center w-full max-w-full min-w-0 px-2 !whitespace-normal !break-words !overflow-visible"
+                                        >
+                                            Other Charges / Transport / Scholarship
+                                        </h2>
                                     </div>
 
-                                    <div className="p-4 rounded-lg border border-gray-200 bg-white">
-                                        <div className="font-semibold mb-2">Transport Charges (To-and-Fro)</div>
-                                        <div className="border border-gray-200 rounded-lg overflow-hidden">
-                                            <div className="w-full max-w-full overflow-x-auto">
-                                                <table className="w-max min-w-full border-collapse">
-                                                    <thead>
-                                                        <tr className="bg-[var(--dark-blue)] text-white">
-                                                            <th className="px-4 py-3 text-left font-semibold whitespace-nowrap">Route</th>
-                                                            <th className="px-4 py-3 text-left font-semibold whitespace-nowrap">Fee</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        {OTHER_CHARGES.transport.map((t, i) => (
-                                                            <tr key={i} className="border-b border-gray-200 hover:bg-gray-50">
-                                                                <td className="px-4 py-3 whitespace-nowrap">{t.route}</td>
-                                                                <td className="px-4 py-3 whitespace-nowrap">{t.fee}</td>
+                                    <div className="space-y-4 text-[var(--foreground)] font-plus-jakarta-sans text-sm md:text-base">
+                                        <div className="p-4 rounded-lg border border-gray-200 bg-gray-50">
+                                            <div className="font-semibold mb-2">Other Charges</div>
+                                            <ul className="list-disc pl-5 space-y-1">
+                                                <li>Lateral Entry Fees: {OTHER_CHARGES.lateralEntryFee}</li>
+                                                <li>Credit Transfer: {OTHER_CHARGES.creditTransfer}</li>
+                                            </ul>
+                                        </div>
+
+                                        <div className="p-4 rounded-lg border border-gray-200 bg-white">
+                                            <div className="font-semibold mb-2">Transport Charges (To &amp; From)</div>
+
+                                            {/* ✅ scroller inside */}
+                                            <div className="border border-gray-200 rounded-lg overflow-hidden">
+                                                <div className="w-full max-w-full overflow-x-auto overflow-y-auto max-h-[360px]">
+                                                    <table className="w-max min-w-full border-collapse">
+                                                        <thead className="sticky top-0 z-10">
+                                                            <tr className="bg-[var(--dark-blue)] text-white">
+                                                                <th className="px-4 py-3 text-left font-semibold whitespace-nowrap">
+                                                                    Route
+                                                                </th>
+                                                                <th className="px-4 py-3 text-left font-semibold whitespace-nowrap">
+                                                                    Fee
+                                                                </th>
                                                             </tr>
-                                                        ))}
-                                                    </tbody>
-                                                </table>
+                                                        </thead>
+                                                        <tbody>
+                                                            {OTHER_CHARGES.transport.map((t, i) => (
+                                                                <tr key={i} className="border-b border-gray-200 hover:bg-gray-50">
+                                                                    <td className="px-4 py-3 whitespace-normal break-words min-w-[280px]">
+                                                                        {t.route}
+                                                                    </td>
+                                                                    <td className="px-4 py-3 whitespace-nowrap">{t.fee}</td>
+                                                                </tr>
+                                                            ))}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div className="p-4 rounded-lg border border-gray-200 bg-gray-50">
-                                        <div className="font-semibold mb-2">Scholarship Details</div>
-                                        <p className="mb-2">{OTHER_CHARGES.scholarship}</p>
-                                        <a
-                                            href={OTHER_CHARGES.scholarshipLink}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-[var(--button-red)] underline"
-                                        >
-                                            View Scholarship Page
-                                        </a>
-                                    </div>
-
-                                    <div className="p-4 rounded-lg border border-gray-200 bg-white">
-                                        <div className="font-semibold mb-2">Uniform Details</div>
-                                        <p>{OTHER_CHARGES.uniformDetails}</p>
-                                    </div>
-
-                                    <div className="p-4 rounded-lg border border-gray-200 bg-gray-50">
-                                        <div className="font-semibold mb-2">Hostel & Food Charges</div>
-                                        <a
-                                            href={OTHER_CHARGES.hostelLink}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-[var(--button-red)] underline"
-                                        >
-                                            View Hostel Fee Page
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-
-                        {/* Value Additions */}
-                        {activeTab === "value" && (
-                            <div className="flex-1">
-                                <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-3">
-                                    Value Additions
-                                </h2>
-                                <ul className="list-disc pl-5 space-y-2 text-[var(--foreground)] font-plus-jakarta-sans text-sm md:text-base">
-                                    {VALUE_ADDITIONS.map((v, i) => (
-                                        <li key={i}>{v}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
-
-                        {/* PDFs */}
-                        {activeTab === "pdfs" && (
-                            <div className="flex-1">
-                                <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-3">
-                                    Department-wise Free Value-added Courses (PDFs)
-                                </h2>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                    {VALUE_ADDED_PDF_YEARS.map((y) => (
-                                        <div key={y} className="border border-gray-200 rounded-lg p-4 bg-gray-50">
-                                            <div className="font-semibold text-[var(--foreground)]">{y}</div>
-                                            <div className="text-sm text-[var(--foreground)]/70 mt-1">
-                                                Add PDF links here (from your sheet).
-                                            </div>
+                                        {/* ✅ Removed old website links as per QC */}
+                                        <div className="p-4 rounded-lg border border-gray-200 bg-gray-50">
+                                            <div className="font-semibold mb-2">Scholarship Details</div>
+                                            <p className="whitespace-normal break-words">{OTHER_CHARGES.scholarship}</p>
                                         </div>
-                                    ))}
-                                </div>
 
-                                <div className="mt-4 text-center">
-                                    <a
-                                        href="https://docs.google.com/spreadsheets/d/1eRruHXKqUb4udwe3w9VDTtA5b5_J6Jj6pkZF5E1Nufc/edit?usp=sharing"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="px-6 py-3 bg-[var(--button-red)] text-white rounded-lg hover:bg-[var(--button-red)]/90 transition-colors font-plus-jakarta-sans text-sm md:text-base font-semibold inline-block"
-                                    >
-                                        Open Value Added Courses Sheet
-                                    </a>
+                                        <div className="p-4 rounded-lg border border-gray-200 bg-white">
+                                            <div className="font-semibold mb-2">Uniform Details</div>
+                                            <p className="whitespace-normal break-words">{OTHER_CHARGES.uniformDetails}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        )}
+                            )}
 
-                        {/* Placeholder if ever needed */}
-                        {!faculty && !["other", "value", "pdfs"].includes(activeTab) && (
-                            <div className="flex-1">
-                                <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-3">
-                                    {IQAC_TABS.find((t) => t.id === activeTab)?.label}
-                                </h2>
-                                <p className="text-[var(--foreground)] font-plus-jakarta-sans text-center">
-                                    Content will be added here.
-                                </p>
-                            </div>
-                        )}
+                            {/* Value Additions */}
+                            {activeTab === "value" && (
+                                <div>
+                                    <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-1">
+                                        Value Additions
+                                    </h2>
+                                    <ul className="list-disc pl-5 space-y-2 text-[var(--foreground)] font-plus-jakarta-sans text-sm md:text-base">
+                                        {VALUE_ADDITIONS.map((v, i) => (
+                                            <li key={i} className="whitespace-normal break-words">
+                                                {v}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {/* PDFs */}
+                            {activeTab === "pdfs" && (
+                                <div>
+                                    <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-1">
+                                        Department-wise Free Value-added Courses (PDFs)
+                                    </h2>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        {VALUE_ADDED_PDF_YEARS.map((y) => {
+                                            const yearPdfs = VALUE_ADDED_PDFS?.[y] || [];
+                                            return (
+                                                <div
+                                                    key={y}
+                                                    className="border border-gray-200 rounded-lg p-4 bg-gray-50"
+                                                >
+                                                    <div className="font-semibold text-[var(--foreground)]">{y}</div>
+
+                                                    {yearPdfs.length > 0 ? (
+                                                        <ul className="mt-2 space-y-2">
+                                                            {yearPdfs.map((p, idx) => (
+                                                                <li key={idx}>
+                                                                    {/* ✅ No drive links: keep only your official site/static PDFs here */}
+                                                                    <a
+                                                                        href={p.href}
+                                                                        target="_blank"
+                                                                        rel="noreferrer"
+                                                                        className="text-[var(--button-red)] underline break-words"
+                                                                    >
+                                                                        {p.label}
+                                                                    </a>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    ) : (
+                                                        <div className="text-sm text-[var(--foreground)]/70 mt-2">
+                                                            PDFs will be added here.
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+
+                                    {/* ✅ Removed the Google sheet / drive link button as per QC */}
+                                </div>
+                            )}
+
+                            {/* Placeholder if ever needed */}
+                            {!faculty && !["other", "value", "pdfs"].includes(activeTab) && (
+                                <div>
+                                    <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-1">
+                                        {IQAC_TABS.find((t) => t.id === activeTab)?.label}
+                                    </h2>
+                                    <p className="text-[var(--foreground)] font-plus-jakarta-sans text-center">
+                                        Content will be added here.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
                     </div>
+                    {/* end right card */}
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import MainIntro from "@/app/components/about/main_intro";
 import WhyStudy from "@/app/components/department/why-study";
 import ScholarshipsSlider from "../components/admissions/scholarships_slider";
@@ -10,6 +10,39 @@ import AdmissionCareer from "../components/general/admission_cta";
 import AutoBreadcrumb from "../components/layout/BreadcrumbData";
 
 export default function ScholarshipsPage() {
+  // ✅ Loop-behaviour for WhyStudy WITHOUT changing WhyStudy component
+  // Note: true seamless loop needs loop:true inside WhyStudy Swiper.
+  // This wraps instantly at end/beginning (speed 0) so it feels continuous.
+  const whyStudySwiperRef = useRef(null);
+
+  useEffect(() => {
+    const root = document.querySelector(".why-study-swiper");
+    if (!root) return;
+
+    const sw = root.swiper || null;
+    if (!sw) return;
+
+    whyStudySwiperRef.current = sw;
+
+    const onReachEnd = () => {
+      // jump instantly to first
+      sw.slideTo(0, 0);
+    };
+
+    const onReachBeginning = () => {
+      // jump instantly to last
+      sw.slideTo(sw.slides.length - 1, 0);
+    };
+
+    sw.on("reachEnd", onReachEnd);
+    sw.on("reachBeginning", onReachBeginning);
+
+    return () => {
+      sw.off("reachEnd", onReachEnd);
+      sw.off("reachBeginning", onReachBeginning);
+    };
+  }, []);
+
   const breadcrumbData = {
     heroImage:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
@@ -19,6 +52,7 @@ export default function ScholarshipsPage() {
       { label: "Scolarships", href: "/scolarships" },
     ],
   };
+
   const whyStudyItems = [
     { id: 1, title: "Over 5000+ top performers have been rewarded." },
     { id: 2, title: "Scholarships worth 3 Crores+ distributed." },
@@ -62,7 +96,8 @@ export default function ScholarshipsPage() {
     },
     {
       id: 6,
-      question: "Are Kalinga University scholarships available for international students?",
+      question:
+        "Are Kalinga University scholarships available for international students?",
       answer:
         "No, currently Kalinga University does not offer scholarships for international students.",
     },
@@ -99,7 +134,7 @@ export default function ScholarshipsPage() {
       title:
         "Canara Bank provides education loans and financial assistance to needy and meritorious students seeking admission to Kalinga University, subject to the fulfilment of the bank’s terms, conditions, and eligibility norms.",
       image:
-        "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png", // Logo - 1
+        "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
     {
       id: 2,
@@ -107,76 +142,81 @@ export default function ScholarshipsPage() {
       title:
         "Central Bank of India offers education loans and financial assistance to students pursuing studies at Kalinga University, in accordance with the bank’s guidelines and applicable norms.",
       image:
-        "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png", // Logo - 2
+        "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
   ];
 
-
-  // ✅ Slider cards (same as your current usage)
   const scholarships = [
     {
       id: 1,
       title: "Social Scholarships",
-      description: "Scholarships supporting special categories and social causes (as per KU policy).",
+      description:
+        "Scholarships supporting special categories and social causes (as per KU policy).",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
     },
     {
       id: 2,
       title: "Merit Scholarships",
-      description: "Scholarships based on aggregate percentage in qualifying examination.",
+      description:
+        "Scholarships based on aggregate percentage in qualifying examination.",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/merit.svg",
     },
     {
       id: 3,
       title: "Entrance Exam Scholarships",
-      description: "Scholarships based on percentile in national/state entrance & competitive exams.",
+      description:
+        "Scholarships based on percentile in national/state entrance & competitive exams.",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
     {
       id: 4,
       title: "Culture & Achievers Scholarships",
-      description: "Scholarships for cultural excellence and exceptional achievements (case-to-case).",
+      description:
+        "Scholarships for cultural excellence and exceptional achievements (case-to-case).",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
     {
       id: 5,
       title: "Siblings Scholarships",
-      description: "Scholarships for direct blood relations of current KU students (as per policy).",
+      description:
+        "Scholarships for direct blood relations of current KU students (as per policy).",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
     {
       id: 6,
       title: "Sports Scholarships",
-      description: "Scholarships for participation at District/State/National/International levels.",
+      description:
+        "Scholarships for participation at District/State/National/International levels.",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
     {
       id: 7,
       title: "Social Media Scholarships",
-      description: "Scholarships for strong social media presence involved in knowledge dissemination.",
+      description:
+        "Scholarships for strong social media presence involved in knowledge dissemination.",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
     {
       id: 8,
       title: "Innovation & Research Scholarships",
-      description: "Scholarships for research publications, books, startups, and product innovation.",
+      description:
+        "Scholarships for research publications, books, startups, and product innovation.",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
     {
       id: 9,
       title: "Other Scholarships",
-      description: "Additional KU-specific scholarships as per scholarship committee/policy.",
+      description:
+        "Additional KU-specific scholarships as per scholarship committee/policy.",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
     },
   ];
 
-  // ✅ Popup content extracted from your PDF: “Kalinga University Scholarship Policy 2025-26”
   const scholarshipPopupData = useMemo(
     () => ({
       "Social Scholarships": {
         heading: "Social Scholarships",
-        intro:
-          "Applicable on Tuition Fee (as per KU Scholarship Policy 2025–26).",
+        intro: "Applicable on Tuition Fee (as per KU Scholarship Policy 2025–26).",
         points: [
           "Scholarship to the wards and siblings of Martyred Personnel of the Indian Army / Indian Air Force / Indian Navy / Indian Central & State paramilitary forces / Police / NCC — 50%",
           "Scholarship to the wards of serving and retired personnel of the Indian Army / Indian Air Force / Indian Navy / Indian Central & State paramilitary forces / Police / NCC — 20%",
@@ -186,7 +226,6 @@ export default function ScholarshipsPage() {
           "Scholarship for the wards of Bharat Ratna / Padma Vibhushan / Padma Bhushan / Padma Shri / National Award winners — 100%",
         ],
       },
-
       "Merit Scholarships": {
         heading: "Merit Scholarships",
         intro:
@@ -200,7 +239,6 @@ export default function ScholarshipsPage() {
           "Top 10 positions in CBSE / State Boards / IB / ICSE / Cambridge boards (2025) — 100%",
         ],
       },
-
       "Entrance Exam Scholarships": {
         heading: "Entrance Exam Scholarships",
         intro:
@@ -211,7 +249,6 @@ export default function ScholarshipsPage() {
           "70 to 79.99 percentile — 30%",
         ],
       },
-
       "Culture & Achievers Scholarships": {
         heading: "Culture & Achievers Scholarships",
         intro: "Applicable on Tuition Fee (as per policy).",
@@ -220,7 +257,6 @@ export default function ScholarshipsPage() {
           "Applicants listed in Limca Book of Records / Golden Book of Records / Guinness Book of Records may be considered on a case-to-case basis (as per scholarship committee).",
         ],
       },
-
       "Siblings Scholarships": {
         heading: "Siblings Scholarships",
         intro:
@@ -230,10 +266,10 @@ export default function ScholarshipsPage() {
           "Valid only till completion of the course of the elder sibling (previously admitted current student).",
         ],
       },
-
       "Sports Scholarships": {
         heading: "Sports Scholarships",
-        intro: "Applicable on Tuition Fee for sports participation in last 3 years.",
+        intro:
+          "Applicable on Tuition Fee for sports participation in last 3 years.",
         points: [
           "Asiad / International level recognized sports events (team or solo) — 40%",
           "National level recognized sports events (team or solo) — 30%",
@@ -241,7 +277,6 @@ export default function ScholarshipsPage() {
           "District level recognized sports events (team or solo) — 10%",
         ],
       },
-
       "Social Media Scholarships": {
         heading: "Social Media Scholarships",
         intro:
@@ -252,7 +287,6 @@ export default function ScholarshipsPage() {
           "University Scholarship Committee will recommend/reject applications based on eligibility.",
         ],
       },
-
       "Innovation & Research Scholarships": {
         heading: "Innovation & Research Scholarships",
         intro:
@@ -261,13 +295,10 @@ export default function ScholarshipsPage() {
           "Applicants who have published research papers, books, startups and product innovation — 50%",
         ],
       },
-
       "Other Scholarships": {
         heading: "Other Scholarships",
         intro: "Additional KU scholarships (Tuition Fee waiver).",
-        points: [
-          "Wards of Kalinga University Teaching and Non-Teaching Staff — 50%",
-        ],
+        points: ["Wards of Kalinga University Teaching and Non-Teaching Staff — 50%"],
       },
     }),
     []
@@ -278,8 +309,6 @@ export default function ScholarshipsPage() {
 
   const activeData = activeTitle ? scholarshipPopupData[activeTitle] : null;
 
-  // ✅ DO NOT change ScholarshipsSlider component.
-  // We attach a click listener to the rendered swiper slides and open popup by index.
   useEffect(() => {
     const root = document.querySelector(".scholarships-swiper");
     if (!root) return;
@@ -306,16 +335,53 @@ export default function ScholarshipsPage() {
   return (
     <>
       <AutoBreadcrumb data={breadcrumbData} />
+
       <MainIntro
         readmore={false}
         className="items-center justify-center"
-        title="KU Scholarships 2025-26"
-        subtitle="Rewarding the Hard Work and Academic Excellence of Meritorious Students"
+        title="Rewarding the Hard Work and Academic Excellence of Meritorious Students"
+        subtitle="KU Scholarships 2025-26"
         description="We reward the hard work of every student, and Kalinga University’s scholarships encourage them to dream bigger and confidently step forward towards their career goals."
         imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png"
       />
 
-      <WhyStudy items={whyStudyItems} sectionTitle="How KU Scholarships Are a Game-Changer" />
+      {/* ✅ WhyStudy wrapped only to reduce height safely, WITHOUT changing component */}
+      <div className="whyStudyWrapper">
+        <WhyStudy
+          items={whyStudyItems}
+          sectionTitle="How KU Scholarships Are a Game-Changer"
+        />
+      </div>
+
+      <style jsx global>{`
+  /* Keep card size exactly same, just center content block */
+  .why-study-swiper .swiper-slide > div > div {
+  min-height: 180px !important;
+    justify-content: center !important; /* vertical centering only */
+  }
+
+  /* Center the inner content block WITHOUT resizing */
+  .why-study-swiper .swiper-slide > div > div > div {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: flex-start !important; /* left-aligned text */
+    text-align: left !important;
+  }
+
+  /* Ensure text stays left aligned */
+  .why-study-swiper h4,
+  .why-study-swiper p {
+    text-align: left !important;
+  }
+
+  /* Read More stays left aligned */
+  .why-study-swiper button {
+    align-self: flex-start !important;
+  }
+`}</style>
+
+
+
 
       {/* ✅ Slider cards */}
       <ScholarshipsSlider
@@ -323,8 +389,9 @@ export default function ScholarshipsPage() {
         title="Scholarship Details Of Kalinga University"
         description=""
         ctaText="Explore Now"
-        ctaHref="https://drive.google.com/file/d/1CDXKkk4L-2wo6no1uA4LRhC0n7Xbe8kd/view?usp=drive_link"
-        navId="" />
+        ctaHref=""
+        navId=""
+      />
 
       {/* ✅ Popup Modal */}
       {open && activeData && (
@@ -333,18 +400,13 @@ export default function ScholarshipsPage() {
           onClick={() => setOpen(false)}
         >
           <div
-            className="bg-white rounded-2xl w-full max-w-3xl max-h-[85vh] overflow-y-auto
-             p-6 md:p-10 relative mt-16"
+            className="bg-white rounded-2xl w-full max-w-3xl max-h-[85vh] overflow-y-auto p-6 md:p-10 relative mt-16"
             onClick={(e) => e.stopPropagation()}
           >
-
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-6 right-6 z-50
-             bg-white rounded-full p-1 shadow
-             text-gray-600 hover:text-gray-900 transition-colors"
+              className="absolute top-6 right-6 z-50 bg-white rounded-full p-1 shadow text-gray-600 hover:text-gray-900 transition-colors"
             >
-
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M18 6L6 18M6 6L18 18"
@@ -361,9 +423,7 @@ export default function ScholarshipsPage() {
                 {activeData.heading}
               </h3>
 
-              <p className="text-gray-700 leading-relaxed">
-                {activeData.intro}
-              </p>
+              <p className="text-gray-700 leading-relaxed">{activeData.intro}</p>
 
               <div className="bg-[var(--lite-sand)] rounded-xl p-5 md:p-6">
                 <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
@@ -374,12 +434,23 @@ export default function ScholarshipsPage() {
               </div>
 
               <div className="text-sm text-gray-600 leading-relaxed">
-                <p className="font-semibold text-gray-700 mb-2">Terms (highlights)</p>
+                <p className="font-semibold text-gray-700 mb-2">
+                  Terms (highlights)
+                </p>
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Applicable for entire course duration; applicable only on Tuition Fee.</li>
+                  <li>
+                    Applicable for entire course duration; applicable only on
+                    Tuition Fee.
+                  </li>
                   <li>Minimum 75% attendance; appear in CTs as per rules.</li>
-                  <li>Only one scholarship can be availed; category cannot be changed once taken.</li>
-                  <li>First-come-first-serve where seats are limited; withdrawn on failure/misconduct.</li>
+                  <li>
+                    Only one scholarship can be availed; category cannot be
+                    changed once taken.
+                  </li>
+                  <li>
+                    First-come-first-serve where seats are limited; withdrawn on
+                    failure/misconduct.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -387,7 +458,11 @@ export default function ScholarshipsPage() {
         </div>
       )}
 
-      <CenterOfExcellence centres={Banks} title="Bank Loan MoUs" description="Kalinga University has signed an MOU with Canara Bank and the Central Bank of India, which are providing financial assistance to our students during admissions. " />
+      <CenterOfExcellence
+        centres={Banks}
+        title="Bank Loan MoUs"
+        description="Kalinga University has signed an MOU with Canara Bank and the Central Bank of India, which are providing financial assistance to our students during admissions. "
+      />
 
       <FAQ items={defaultFAQItems} title="Clearing All Your Doubts" subtitle="" />
       <AdmissionCareer />
