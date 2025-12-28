@@ -8,6 +8,7 @@ import CareerApplicationForm from "@/app/components/careers/CareerApplicationFor
 import FaqSection from "@/app/components/general/faq";
 import { useBreadcrumbData } from "@/app/components/layout/BreadcrumbContext";
 import AdmissionCareer from "@/app/components/general/admission_cta";
+import EntranceExamUpdated from "@/app/components/entrance-exam/entrance-exam-updated";
 
 // Breadcrumb configuration
 const breadcrumbData = {
@@ -67,7 +68,8 @@ const EntranceExamPage = () => {
         description="Crack the KALSEE/KAL-MAT Exam and Join KU’s Prestigious Programs."
       />  
        <ImageListItem items={Items} imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/ccrc.webp" title="Apply For KU Entrance Exams"  /> 
-       <EntranceExamFormCards />
+       {/* <EntranceExamFormCards /> */}
+       <EntranceExamUpdated />
        <CareerApplicationForm
           heading="Entrance Exam Application Form"
           description="Share your details to stay connected with Kalinga University, receive updates, and participate in alumni activities and events."
@@ -77,6 +79,7 @@ const EntranceExamPage = () => {
           useArrowSubmitButton={true}
           arrowSubmitVariant="white"
         />  
+
         <FaqSection items={careerFAQs} showHeading={false} />
         <AdmissionCareer />
     </>
