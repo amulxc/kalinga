@@ -126,17 +126,47 @@ export default function OurPrograms({
         try {
           const response = await fetchDepartmentsCourses();
           
-          // Extract departments and courses from the response
-          departmentsData = Array.isArray(response.departments) ? response.departments : [];
-          coursesData = Array.isArray(response.courses) ? response.courses : [];
-          
-          // Map courses to include department info from nested department object
-          coursesData = coursesData.map(course => ({
-            ...course,
-            departmentId: course.department?.id,
-            departmentName: course.department?.name || '',
-            departmentSlug: course.department?.slug || '',
-          }));
+          // New format: response is an array of departments, each with nested courses
+          if (Array.isArray(response)) {
+            // Extract departments
+            departmentsData = response.map(dept => ({
+              id: dept.id,
+              name: dept.name,
+              slug: dept.slug,
+              url: dept.url
+            }));
+            
+            // Flatten courses from all departments and add department info
+            coursesData = [];
+            response.forEach(dept => {
+              if (Array.isArray(dept.courses)) {
+                dept.courses.forEach(course => {
+                  coursesData.push({
+                    ...course,
+                    departmentId: dept.id,
+                    departmentName: dept.name,
+                    departmentSlug: dept.slug,
+                    departmentUrl: dept.url,
+                    // Use course URL if available, otherwise generate from slug
+                    courseUrl: course.url || `/courses/${course.slug}`
+                  });
+                });
+              }
+            });
+          } else if (response.departments && response.courses) {
+            // Old format fallback: separate departments and courses
+            departmentsData = Array.isArray(response.departments) ? response.departments : [];
+            coursesData = Array.isArray(response.courses) ? response.courses : [];
+            
+            // Map courses to include department info
+            coursesData = coursesData.map(course => ({
+              ...course,
+              departmentId: course.department?.id,
+              departmentName: course.department?.name || '',
+              departmentSlug: course.department?.slug || '',
+              courseUrl: course.url || `/courses/${course.slug}`
+            }));
+          }
           
         } catch (deptCoursesError) {
           console.warn('departments-courses endpoint failed, trying fallback approach:', deptCoursesError);
@@ -152,6 +182,10 @@ export default function OurPrograms({
           // Fallback: Try to use optimized endpoint (department-courses with department info)
           try {
             coursesData = await fetchAllDepartmentCourses();
+            coursesData = coursesData.map(course => ({
+              ...course,
+              courseUrl: course.url || `/courses/${course.slug}`
+            }));
           } catch (deptCoursesError2) {
             console.warn('department-courses endpoint failed, trying alternative approach:', deptCoursesError2);
             
@@ -180,6 +214,7 @@ export default function OurPrograms({
                 departmentId: course.department,
                 departmentName: deptMap.get(course.department)?.name || '',
                 departmentSlug: deptMap.get(course.department)?.slug || '',
+                courseUrl: course.url || `/courses/${course.slug}`
               }));
             } catch (fallbackError) {
               console.error('Fallback approach also failed:', fallbackError);
@@ -199,7 +234,7 @@ export default function OurPrograms({
             dept.name?.toLowerCase() === initialDepartment.toLowerCase()
           );
           if (matchingDept) {
-            // Use department ID or slug for filtering
+            // Use department slug for filtering
             setSelectedDepartment(matchingDept.slug || matchingDept.id?.toString() || matchingDept.name);
           }
         }
@@ -215,7 +250,7 @@ export default function OurPrograms({
     };
 
     loadData();
-  }, [shouldFetchData]);
+  }, [shouldFetchData, initialDepartment]);
 
   // Get unique study levels from courses
   const studyLevels = useMemo(() => {
@@ -275,10 +310,9 @@ export default function OurPrograms({
     // Format courses for ProgramCard
     return filtered.map(course => {
       const courseName = formatCourseName(course.name || "");
-      // Use course slug if available, otherwise generate from name
+      // Use course URL if available, otherwise generate from slug
+      const courseUrl = course.courseUrl || course.url || `/courses/${course.slug || generateCourseSlug(course.name)}`;
       const courseSlug = course.slug || generateCourseSlug(course.name);
-      // Course pages are at /courses/{course-slug} (dynamic route)
-      const coursePageUrl = `/courses/${courseSlug}`;
 
       return {
         id: course.id,
@@ -287,9 +321,10 @@ export default function OurPrograms({
         duration: formatDuration(course), // Pass entire course object
         type: getStudyLevel(course.program_type),
         courseSlug: courseSlug,
-        coursePageUrl: coursePageUrl,
+        coursePageUrl: courseUrl, // Use the URL from API
         departmentId: course.departmentId,
         departmentName: course.departmentName,
+        departmentSlug: course.departmentSlug,
       };
     });
   }, [allCourses, selectedStudyLevel, selectedDepartment, searchQuery]);
@@ -305,8 +340,8 @@ export default function OurPrograms({
   };
 
   const handleApplyNow = (program) => {
-    // Link to KALSEE page for admissions
-    router.push("/kalsee");
+    // Static link to admissions portal
+    window.open("https://admissions.kalingauniversity.ac.in/", "_blank");
   };
 
   const handleExploreProgram = (program) => {
@@ -319,12 +354,8 @@ export default function OurPrograms({
   };
 
   const handleScholarshipsClick = (program) => {
-    // Link to course page (scholarships section if available) or admissions page
-    if (program.coursePageUrl) {
-      router.push(program.coursePageUrl);
-    } else {
-      router.push("/admissions");
-    }
+    // Static scholarship link - keep as static
+    router.push("/admissions#scholarships");
   };
 
   if (loading) {

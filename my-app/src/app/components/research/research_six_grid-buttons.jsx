@@ -159,19 +159,19 @@ export default function ResearchSixGridButtons() {
                     </GlobalArrowButton>
                   ) : (
                     <a
-                      href={button.href}
-                      className="block"
+                href={button.href}
+                className="block"
                       target={button.href.startsWith("http") ? "_blank" : undefined}
                       rel={button.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    >
-                      <GlobalArrowButton
-                        className="!w-full h-[60px] justify-between"
-                        arrowClassName="p-[3px] !px-2 mr-2 !py-1"
-                        arrowSize={29}
-                      >
-                        {button.text}
-                      </GlobalArrowButton>
-                    </a>
+              >
+                <GlobalArrowButton
+                  className="!w-full h-[60px] justify-between"
+                  arrowClassName="p-[3px] !px-2 mr-2 !py-1"
+                  arrowSize={29}
+                >
+                  {button.text}
+                </GlobalArrowButton>
+              </a>
                   )}
                 </div>
               );
@@ -307,7 +307,7 @@ export default function ResearchSixGridButtons() {
                           renderAnnotationLayer={true}
                           className="max-w-full h-auto"
                           width={Math.min(900, typeof window !== 'undefined' ? window.innerWidth - 80 : 900)}
-                        />
+      />
                       </div>
                     </Document>
                   )}
