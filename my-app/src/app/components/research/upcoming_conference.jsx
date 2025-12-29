@@ -85,7 +85,7 @@ export default function UpcomingConference({
                     src={conf.image}
                     alt={conf.title}
                     fill
-                    className="rounded-xl object-contain"
+                    className="rounded-xl object-cover"
                     unoptimized
                   />
                 </div>
