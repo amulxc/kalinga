@@ -13,53 +13,53 @@ export default function UGCLogo() {
   const logos = [
     {
       src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-1.png",
-      alt: "Survey of India",
-      name: "Survey of India",
+      alt: "Pharmacy Council of India",
+      name: "Pharmacy Council of India",
     },
     {
       src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-2.png",
+      alt: "Association of indian Universities",
+      name: "Association of indian Universities",
+    },
+    {
+      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-3.png",
+      alt: "Chhattisgarh State Council of Science & Technology",
+      name: "Chhattisgarh State Council of Science & Technology",
+    },
+    {
+      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-4.png",
       alt: "NCTE",
       name: "NCTE",
     },
     {
-      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-3.png",
-      alt: "Council of Science & Technology",
-      name: "University Grants Commission",
-    },
-    {
-      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-4.png",
-      alt: "Association of Indian Universities",
-      name: "Association of Indian Universities",
-    },
-    {
       src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-5.png",
-      alt: "Pharmacy Council of India",
-      name: "Pharmacy Council of India",
+      alt: "Bar Council of India",
+      name: "Bar Council of India",
     },
     {
       src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-1.png",
-      alt: "Survey of India",
-      name: "Survey of India",
+      alt: "Pharmacy Council of India",
+      name: "Pharmacy Council of India",
     },
     {
       src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-2.png",
+      alt: "Association of indian Universities",
+      name: "Association of indian Universities",
+    },
+    {
+      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-3.png",
+      alt: "Chhattisgarh State Council of Science & Technology",
+      name: "Chhattisgarh State Council of Science & Technology",
+    },
+    {
+      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-4.png",
       alt: "NCTE",
       name: "NCTE",
     },
     {
-      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-3.png",
-      alt: "Council of Science & Technology",
-      name: "University Grants Commission",
-    },
-    {
-      src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-4.png",
-      alt: "Association of Indian Universities",
-      name: "Association of Indian Universities",
-    },
-    {
       src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/ugc-5.png",
-      alt: "Pharmacy Council of India",
-      name: "Pharmacy Council of India",
+      alt: "Bar Council of India",
+      name: "Bar Council of India",
     },
   ];
 
@@ -162,7 +162,14 @@ export default function UGCLogo() {
           <div className="w-px h-8 border-2 border-dashed border-gray-500"></div>
           <div className="mt-3 w-full max-w-md">
             <GlobalRedPlainButton className="w-full text-sm px-4 py-3">
-              {logos[activeIndex]?.name || "University Grants Commission"}
+              {(() => {
+                // Calculate which logo is in the center
+                // On mobile: center is the activeIndex itself
+                // On desktop: center is 2 positions ahead of activeIndex
+                const centerOffset = isMobile ? 0 : 2;
+                const centerLogoIndex = (activeIndex + centerOffset) % 5;
+                return logos[centerLogoIndex]?.name || "University Grants Commission";
+              })()}
             </GlobalRedPlainButton>
           </div>
         </div>
