@@ -19,6 +19,7 @@ const nextConfig = {
         hostname: 'flagcdn.com',
       },
     ],
+     qualities: [75, 100],
   },
   async redirects() {
     return [
