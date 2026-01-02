@@ -88,26 +88,26 @@ export default function Alumini() {
   const videoItems = [
     {
       id: 1,
-      title: "Video 1",
-      name: "Ms. Vaishali Baghel",
+      name: "Video 1",
+      title: "Ms. Vaishali Baghel",
       
       videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Vaishali+Baghel+Reel.mp4",
       thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/image-test-2.webp",
     },
     {
       id: 2,
-      title: "Video 2",
-      name: "Ms. Kajal Pandey",
-      thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/video-test-3.webp",
+      name: "Video 2",
+      title: "Ms. Kajal Pandey",
+      thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Kajal+Pandey_01.webp",
       videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/kajal+Pandey+Final.mp4",
     },
     {
       id: 3,
-      title: "Video 3",
-      name: "Mr. Ayush Khare",
+      name: "Video 3",
+      title: "Mr. Ayush Khare",
       
       videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Mr.+Ayush+Khare+Reel.mp4",
-      thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/video-test-1.webp",
+      thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/alumini/Ayush+Khare_01.webp",
     },
    
   

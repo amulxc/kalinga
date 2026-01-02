@@ -182,7 +182,7 @@ export default function Studentreportcards() {
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/ccrc.webp",
             logoSrc: "",
             subtitle: "ACADEMIC SUPPORT",
-            link: "/value-added-course"
+            link: "/international-students#bridge-course"
         },
         {
             title: "Competitive Exams Coaching",

@@ -254,7 +254,7 @@ export default function Research() {
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/Value+addition.svg",
       title: "Bridge Courses",
       description: "We provide bridge courses in subjects like Physics, Chemistry, Maths, English, and more to students who come from different academic backgrounds. The well-defined syllabus helps to grasp the essential concepts of different subjects.",
-      href: "/value-added-course",
+      href: "/international-students#bridge-course",
     },
     {
       id: 11,

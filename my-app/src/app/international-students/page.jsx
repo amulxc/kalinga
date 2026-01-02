@@ -399,33 +399,35 @@ export default function InternationalStudents() {
           "The Meditation Room is available for all students (Hostel + Regular) to meditate or offer prayers."
         ]}
       />
-      <OpenPositions 
-        title="BRIDGE Courses for International Students" 
-        subtitle="Pre-Semester Preparation Programs"
-        description="BRIDGE Courses for newly admitted international students are conducted before the commencement of the first semester classes. The main objective of the course is to bridge the gap between subjects studied at the Pre-university level and subjects they would be studying here. We also understand that the students applying to the university come from different backgrounds and countries, and thus, we have included a few topics that will help them understand the local culture and history of India. To make this bridge course interesting for the students, we have included workshops related to art and culture & a hobby class too. We have bridge courses of 2 months, 4 months, and 6 months (5 days a week)."
-        hideCheckEligibility={true}
-        cardTitleClassName="font-plus-jakarta-sans"
-        positions={[
-          {
-            title: "Technical BRIDGE Courses",
-            description: "Maths, Physics, Chemistry, Biology",
-            checkEligibilityLink: "/contact-us",
-            applyNowLink: "/contact-us"
-          },
-          {
-            title: "Non-Technical BRIDGE Courses",
-            description: "Yoga & Meditation, Indian Arts & Crafts",
-            checkEligibilityLink: "/contact-us",
-            applyNowLink: "/contact-us"
-          },
-          {
-            title: "Common Topics (Technical & Non-Technical)",
-            description: "English & Soft Skills, Language Communications (Hindi), Indian Culture & Lifestyle, IT Skills,Grooming & Personality Development, GD & PI, Hobby Class (Music & Dance / Painting & Other Fine Arts / Modelling & Fashion Style / Library Arts / Book Club)",
-            checkEligibilityLink: "/contact-us",
-            applyNowLink: "/contact-us"
-          }
-        ]}
-      />
+      <div id="bridge-course" className="scroll-mt-24 md:scroll-mt-28">
+        <OpenPositions 
+          title="BRIDGE Courses for International Students" 
+          subtitle="Pre-Semester Preparation Programs"
+          description="BRIDGE Courses for newly admitted international students are conducted before the commencement of the first semester classes. The main objective of the course is to bridge the gap between subjects studied at the Pre-university level and subjects they would be studying here. We also understand that the students applying to the university come from different backgrounds and countries, and thus, we have included a few topics that will help them understand the local culture and history of India. To make this bridge course interesting for the students, we have included workshops related to art and culture & a hobby class too. We have bridge courses of 2 months, 4 months, and 6 months (5 days a week)."
+          hideCheckEligibility={true}
+          cardTitleClassName="font-plus-jakarta-sans"
+          positions={[
+            {
+              title: "Technical BRIDGE Courses",
+              description: "Maths, Physics, Chemistry, Biology",
+              checkEligibilityLink: "/contact-us",
+              applyNowLink: "/contact-us"
+            },
+            {
+              title: "Non-Technical BRIDGE Courses",
+              description: "Yoga & Meditation, Indian Arts & Crafts",
+              checkEligibilityLink: "/contact-us",
+              applyNowLink: "/contact-us"
+            },
+            {
+              title: "Common Topics (Technical & Non-Technical)",
+              description: "English & Soft Skills, Language Communications (Hindi), Indian Culture & Lifestyle, IT Skills,Grooming & Personality Development, GD & PI, Hobby Class (Music & Dance / Painting & Other Fine Arts / Modelling & Fashion Style / Library Arts / Book Club)",
+              checkEligibilityLink: "/contact-us",
+              applyNowLink: "/contact-us"
+            }
+          ]}
+        />
+      </div>
       <OrganogramOfKalinga
         title="Download Brochure 2025-26"
         description="Kalinga University follows a well-defined governance structure that ensures smooth administration, transparency, and institutional excellence."

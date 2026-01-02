@@ -125,10 +125,15 @@ export default function MediaCardSlider({
             {items.map((item) => (
               <SwiperSlide key={item.id || item.name}>
                 <div className="h-full w-full">
-                  <div className={`${cardBgClass} rounded-xl p-4 h-full flex flex-col border border-gray-300 border-2 transition-shadow`}>
+                  <div className={`${cardBgClass} rounded-xl p-4 h-full flex flex-col border border-gray-300 border-2 transition-shadow ${isVideo && item.videoUrl ? 'cursor-pointer hover:shadow-xl' : ''}`}>
                     {/* Media Container */}
                     <div 
                       className="relative w-full h-[250px] md:h-[350px] mb-4 rounded-lg overflow-hidden bg-gray-200"
+                      onClick={() => {
+                        if (isVideo && item.videoUrl) {
+                          openVideoModal(item.videoUrl, item.name || item.title);
+                        }
+                      }}
                     >
                       {isVideo ? (
                         <>
@@ -153,6 +158,25 @@ export default function MediaCardSlider({
                             />
                           ) : (
                             <div className="w-full h-full bg-gray-300" />
+                          )}
+                          {/* Play Button Overlay */}
+                          {item.videoUrl && (
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/90 flex items-center justify-center hover:bg-white transition-all hover:scale-110 pointer-events-auto shadow-lg cursor-pointer">
+                                <svg
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  className="text-gray-700 ml-1"
+                                >
+                                  <path
+                                    d="M8 5v14l11-7z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
                           )}
                         </>
                       ) : (
