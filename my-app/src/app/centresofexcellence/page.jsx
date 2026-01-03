@@ -12,7 +12,7 @@ export default function CenterOfExcellence({
           pageTitle: "Centres of Excellence",
           customBreadcrumbs: [
             { label: "Home", href: "/" },
-            { label: "Centres of Excellence", href: "/centres-of-excellence" },
+            { label: "Centres of Excellence", href: "/centresofexcellence" },
           ],
         }}
       />

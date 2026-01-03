@@ -13,7 +13,7 @@ const breadcrumbData = {
   customBreadcrumbs: [
     { label: "Home", href: "/" },
     { label: "Centres of Excellence", href: "/centres-of-excellence" },
-    { label: "AI & ML Courses Training Centre", href: "/centres-of-excellence/ai-ml" },
+    { label: "AI & ML Courses Training Centre", href: "/centresofexcellence/ai-ml" },
   ],
 };
 
@@ -26,37 +26,37 @@ const learnCards = [
   {
     id: 1,
     title: "",
-    description: "Programming languages & tools for AI & ML",
+    description: "Programming Languages & Tools For AI & ML",
     imageUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-1.svg",
   },
   {
     id: 2,
     title: "",
-    description: "Deep understanding of Artificial Intelligence & Machine Learning",
+    description: "Deep Understanding Of Artificial Intelligence & Machine Learning",
     imageUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-2.svg",
   },
   {
     id: 3,
     title: "",
-    description: "Algorithm & model development",
+    description: "Algorithm & Model Development",
     imageUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-3.svg",
   },
   {
     id: 4,
     title: "",
-    description: "Management of large data sets",
+    description: "Management of Large Data Sets",
     imageUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-4.svg",
   },
   {
     id: 5,
     title: "",
-    description: "Deep learning & neural networks",
+    description: "Deep Learning & Neural Networks",
     imageUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-5.svg",
   },
   {
     id: 6,
     title: "",
-    description: "Designing intelligent systems & software",
+    description: "Designing Intelligent Systems & Software",
     imageUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/aiml/ai-6.svg",
   },
 ];

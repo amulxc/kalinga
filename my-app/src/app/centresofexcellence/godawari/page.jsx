@@ -12,10 +12,10 @@ const breadcrumbData = {
   pageTitle: "Electric Vehicles Training Centre",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
-    { label: "Centres of Excellence", href: "/centres-of-excellence" },
+    { label: "Centres of Excellence", href: "/centresofexcellence" },
     {
       label: "Electric Vehicles Training Centre",
-      href: "/centres-of-excellence/electric-vehicles-training-centre",
+      href: "/centresofexcellence/godawari",
     },
   ],
 };
@@ -29,42 +29,42 @@ const learnCards = [
   {
     id: 1,
     title: "",
-    description: "Complete electric vehicle architecture",
+    description: "Complete Electric Vehicle Architecture",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/godawari/godawari-1.svg",
   },
   {
     id: 2,
     title: "",
-    description: "Battery technology & management systems",
+    description: "Battery Technology & Management Systems",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/godawari/godawari-2.svg",
   },
   {
     id: 3,
     title: "",
-    description: "Motor & controller operations",
+    description: "Motor & Controller Operations",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/godawari/godawari-3.svg",
   },
   {
     id: 4,
     title: "",
-    description: "EV diagnostics & troubleshooting",
+    description: "EV Diagnostics & Troubleshooting",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/godawari/godawari-4.svg",
   },
   {
     id: 5,
     title: "",
-    description: "Assembly & disassembly of EV components",
+    description: "Assembly & Disassembly of EV Components",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/godawari/godawari-5.svg",
   },
   {
     id: 6,
     title: "",
-    description: "Safety, maintenance & repair techniques",
+    description: "Safety, Maintenance & Repair Techniques",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/godawari/godawari-6.svg",
   },

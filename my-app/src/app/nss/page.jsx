@@ -41,9 +41,9 @@ const visionMissionData = [
     visionTitle: "Vision",
     missionTitle: "Mission",
     visionText:
-      "To inspire students to become disciplined and socially responsible citizens.",
+      "To inspire students to become disciplined and socially responsible citizens who make a real difference in society with unity.",
     missionText:
-      "To encourage equality, diversity, and active participation in community-based programs.",
+      "To encourage equality, diversity, and active participation in community-based programs and develop values like empathy, transparency, freedom, honesty, and respect. ",
     showImage: true,
   },
 ];
@@ -121,6 +121,7 @@ export default function NSSPage() {
         title="Objectives"
         items={objectiveItems}
         imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ncc/Ncc-img-1.webp"
+        description=""
       />
 
       <VisionMission data={visionMissionData} />
@@ -130,6 +131,7 @@ export default function NSSPage() {
           title="Benefits Of Joining Our NSS Team"
           imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ncc/Ncc-1.webp"
           boxItems={benefitsBoxItems}
+          description=""
         />
       </div>
 

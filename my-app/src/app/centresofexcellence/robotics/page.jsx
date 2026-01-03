@@ -12,10 +12,10 @@ const breadcrumbData = {
   pageTitle: "Robotics, Coding, & Drones Training Centre",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
-    { label: "Centres of Excellence", href: "/centres-of-excellence" },
+    { label: "Centres of Excellence", href: "/centresofexcellence" },
     {
       label: "Robotics, Coding, & Drones Training Centre",
-      href: "/centres-of-excellence/robotics-coding-drones-training-centre",
+      href: "/centresofexcellence/robotics",
     },
   ],
 };
@@ -29,42 +29,42 @@ const learnCards = [
   {
     id: 1,
     title: "",
-    description: "Programming languages used in robotics & automation tasks",
+    description: "Programming Languages used in robotics & automation tasks",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/robotics/robotics-1.svg",
   },
   {
     id: 2,
     title: "",
-    description: "Robotics mechanisms & control systems",
+    description: "Robotics Mechanisms & Control",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/robotics/robotics-2.svg",
   },
   {
     id: 3,
     title: "",
-    description: "Drone mechanisms & safe flying practices",
+    description: "Drone Mechanisms & Safe Flying Practices",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/robotics/robotics-3.svg",
   },
   {
     id: 4,
     title: "",
-    description: "Artificial Intelligence principles used in smart gadgets",
+    description: "AI Principles Used in Smart Gadgets",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/robotics/robotics-4.svg",
   },
   {
     id: 5,
     title: "",
-    description: "Project-based learning & experimentation",
+    description: "Project-Based Learning & Experimentation",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/robotics/robotics-5.svg",
   },
   {
     id: 6,
     title: "",
-    description: "Develop and prototype your own tech-based ideas",
+    description: "Develop Your Own Tech-Based Ideas",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/robotics/robotics-6.svg",
   },
@@ -127,6 +127,17 @@ export default function RoboticsCodingDronesTrainingCentrePage() {
       />
 
       <AdmissionCareer />
+      <style jsx global>{`
+  .absolute.inset-0 > img {
+    object-position: center 70% !important;
+  }
+
+  @media (max-width: 768px) {
+    .absolute.inset-0 > img {
+      object-position: center 5% !important;
+    }
+  }
+`}</style>
     </main>
   );
 }

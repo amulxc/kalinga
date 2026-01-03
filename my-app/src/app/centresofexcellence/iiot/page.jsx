@@ -12,10 +12,10 @@ const breadcrumbData = {
   pageTitle: "IIoT Training Centre",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
-    { label: "Centres of Excellence", href: "/centres-of-excellence" },
+    { label: "Centres of Excellence", href: "/centresofexcellence" },
     {
       label: "IIoT Training Centre",
-      href: "/centres-of-excellence/iiot-training-centre",
+      href: "/centresofexcellence/iiot",
     },
   ],
 };
@@ -29,42 +29,42 @@ const learnCards = [
   {
     id: 1,
     title: "",
-    description: "Understanding of industrial IoT architecture",
+    description: "Understanding of Industrial IoT Architecture",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/iiot/iiot-1.svg",
   },
   {
     id: 2,
     title: "",
-    description: "Working of industrial sensors & devices",
+    description: "Working of Industrial Sensors & Devices",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/iiot/iiot-2.svg",
   },
   {
     id: 3,
     title: "",
-    description: "Real-time data monitoring & analysis",
+    description: "Real-Time Data Monitoring & Analysis",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/iiot/iiot-3.svg",
   },
   {
     id: 4,
     title: "",
-    description: "Cloud connectivity & data integration",
+    description: "Cloud Connectivity & Data Integration",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/iiot/iiot-4.svg",
   },
   {
     id: 5,
     title: "",
-    description: "IIoT communication protocols",
+    description: "IIoT Communication Protocols",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/iiot/iiot-5.svg",
   },
   {
     id: 6,
     title: "",
-    description: "Dashboard & visualization tools",
+    description: "Dashboard & Visualization Tools",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/iiot/iiot-6.svg",
   },
@@ -127,6 +127,17 @@ export default function IIoTTrainingCentrePage() {
       />
 
       <AdmissionCareer />
+      <style jsx global>{`
+  .absolute.inset-0 > img {
+    object-position: center 30% !important;
+  }
+
+  @media (max-width: 768px) {
+    .absolute.inset-0 > img {
+      object-position: center 5% !important;
+    }
+  }
+`}</style>
     </main>
   );
 }

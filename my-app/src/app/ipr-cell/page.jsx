@@ -27,8 +27,8 @@ const aboutP2 =
 const MentorIntroProps = [
   {
     id: 1,
-    title: "A Message From the Dean",
-    subtitle: "Dr R Udaya Kumar",
+    title: "Dr R Udaya Kumar",
+    subtitle: "A Message From the Dean",
     department: "Dean/HoD - IPR Cell",
     imageSrc:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
@@ -38,9 +38,7 @@ const MentorIntroProps = [
       "KU believes that your powerful ideas need to be recognised and protected.",
 
     message: [
-      "We understand that creativity and innovation are part of academic excellence and national progress. Kalinga University believes that your powerful ideas need to be recognised and protected.",
-      "Our IPR Cell works towards protecting the creations of students, researchers, and faculty members. Whether you are working on a research paper, app design, or any other research-related work, we support you in filing patents, trademarks, copyrights, and other intellectual property rights.",
-      "Through workshops, expert sessions, and seminars, we aim to create legal awareness and empower innovators to confidently protect their intellectual contributions and explore new horizons in their respective fields."
+      "We understand that creativity and innovation are part of academic excellence and national progress. Kalinga University believes that your powerful ideas need to be recognised and protected.  Our IPR cell works towards protecting the creations of students, researchers, and faculty members. Whether you’re working on a research paper, app design, or other research-related work, we’re here to protect your work, file patents, trademarks, copyrights, or any other IP. We want every research scholar to feel confident about their rights and valuable work. Through workshops and seminars, we encourage legal empowerment, encouraging all innovators to discover new horizons in their field of study.",
     ],
   },
 ];

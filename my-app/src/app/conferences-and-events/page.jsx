@@ -59,6 +59,7 @@ const conferencesHeldAtKU = [
 ];
 
 
+
 const upcomingConferences = [
   {
     id: 1,
@@ -138,6 +139,7 @@ export default function ConferencesAndEventsPage() {
           items={whyAttendItems}
           imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/conferences/conferences-banner.webp"
           title="Why Attend Our Conferences and Events?"
+          description=""
         />
       </section>
 

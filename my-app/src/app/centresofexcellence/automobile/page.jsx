@@ -15,7 +15,7 @@ const breadcrumbData = {
     { label: "Centres of Excellence", href: "/centres-of-excellence" },
     {
       label: "Automobile Training Centre",
-      href: "/centres-of-excellence/automobile-training-centre",
+      href: "/centresofexcellence/automobile-training-centre",
     },
   ],
 };
@@ -36,35 +36,35 @@ const learnCards = [
   {
     id: 2,
     title: "",
-    description: "Diagnostic skills using modern tools",
+    description: "Diagnostic Skills Using Modern Tools",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-2.svg",
   },
   {
     id: 3,
     title: "",
-    description: "Engine service & maintenance",
+    description: "Engine Service & Maintenance",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-3.svg",
   },
   {
     id: 4,
     title: "",
-    description: "Repair procedures for 2 & 3 wheelers",
+    description: "Repair Procedures For 2 & 3 Wheelers",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-4.svg",
   },
   {
     id: 5,
     title: "",
-    description: "Preventive & predictive maintenance techniques",
+    description: "Preventive & Predictive Maintenance Techniques",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/auto-5.svg",
   },
   {
     id: 6,
     title: "",
-    description: "Exposure to emerging technologies in mobility",
+    description: "Exposure To Emerging Technologies in Mobility",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/automobile/automobile-icon-new.svg",
   },

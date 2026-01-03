@@ -12,10 +12,10 @@ const breadcrumbData = {
   pageTitle: "BRIDGE Courses Training Centre",
   customBreadcrumbs: [
     { label: "Home", href: "/" },
-    { label: "Centres of Excellence", href: "/centres-of-excellence" },
+    { label: "Centres of Excellence", href: "/centresofexcellence" },
     {
       label: "BRIDGE Courses Training Centre",
-      href: "/centres-of-excellence/bridge",
+      href: "/centresofexcellence/bosch",
     },
   ],
 };
@@ -29,42 +29,42 @@ const learnCards = [
   {
     id: 1,
     title: "",
-    description: "Automotive & manufacturing fundamentals",
+    description: "Automotive & Manufacturing Fundamentals",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-1.svg",
   },
   {
     id: 2,
     title: "",
-    description: "Problem identification & troubleshooting",
+    description: "Problem Identification & Troubleshooting",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-2.svg",
   },
   {
     id: 3,
     title: "",
-    description: "Industry-relevant vocational training",
+    description: "Industry-Relevant Vocational Training",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-3.svg",
   },
   {
     id: 4,
     title: "",
-    description: "Hands-on technical training",
+    description: "Hands-On Technical Training",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-4.svg",
   },
   {
     id: 5,
     title: "",
-    description: "Analytical & problem-solving skills",
+    description: "Analytical & Problem-Solving Skills",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-5.svg",
   },
   {
     id: 6,
     title: "",
-    description: "Workplace & communication skills",
+    description: "Workplace & Communication Skills",
     imageUrl:
       "https://kalinga-university.s3.ap-south-1.amazonaws.com/bosch/bosch-6.svg",
   },

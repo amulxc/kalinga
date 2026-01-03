@@ -15,7 +15,7 @@ const breadcrumbData = {
     { label: "Centres of Excellence", href: "/centres-of-excellence" },
     {
       label: "MSME Training Centre",
-      href: "/centres-of-excellence/msme-training-centre",
+      href: "/centresofexcellence/msme",
     },
   ],
 };

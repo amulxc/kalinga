@@ -1,7 +1,7 @@
 "use client";
 
 import { useLayoutEffect } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -76,8 +76,6 @@ export default function CenterOfExcellenceMain({
   breadcrumbData = null,
   headerTextMaxWidthClass = "max-w-screen-xl",
 }) {
-  const router = useRouter();
-
   useLayoutEffect(() => {
     if (!breadcrumbData) return;
 
@@ -93,7 +91,6 @@ export default function CenterOfExcellenceMain({
   return (
     <section className="py-16 bg-white relative">
       <div className="container mx-auto px-2">
-        {/* Header Section */}
         <div className="text-center mb-8 md:mb-12">
           <h2 className="font-stix text-[var(--foreground)] text-3xl md:text-4xl lg:text-5xl mb-4">
             {title}
@@ -172,10 +169,7 @@ export default function CenterOfExcellenceMain({
             1024: { slidesPerView: 2.5, spaceBetween: 24 },
             1280: { slidesPerView: 3.5, spaceBetween: 24 },
           }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
           speed={1000}
           navigation={{
             nextEl: ".centres-swiper-button-next",
@@ -186,18 +180,14 @@ export default function CenterOfExcellenceMain({
           autoHeight={false}
           centeredSlides={false}
           slidesOffsetBefore={0}
-          slidesOffsetAfter={60} // ✅ so last cards don't get cut
+          slidesOffsetAfter={60}
         >
           {centres.map((centre) => (
             <SwiperSlide key={centre.id}>
-              <div
-                className="h-full w-full cursor-pointer transition-transform duration-300 hover:-translate-y-1"
-                role="button"
-                tabIndex={0}
-                onClick={() => centre.href && router.push(centre.href)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && centre.href) router.push(centre.href);
-                }}
+              <Link
+                href={centre.href || "#"}
+                className="block h-full w-full cursor-pointer transition-transform duration-300 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--button-red)] rounded-xl"
+                prefetch={false}
               >
                 <div className="bg-white rounded-xl p-1 h-full relative">
                   <div className="centres-card-wrapper h-full flex flex-col">
@@ -216,27 +206,8 @@ export default function CenterOfExcellenceMain({
                       />
                     )}
                   </div>
-
-                  {/* Hidden arrow button slot (kept same as your file) */}
-                  <div className="absolute bottom-6 right-6 hidden">
-                    <button className="w-8 h-8 bg-[var(--button-red)] hover:bg-[#c41e3a] rounded-lg flex items-center justify-center transition-colors shadow-md">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="white"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M7 17L17 7" />
-                        <path d="M7 7h10v10" />
-                      </svg>
-                    </button>
-                  </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -245,40 +216,14 @@ export default function CenterOfExcellenceMain({
       <div className="container mx-auto px-2">
         <div className="flex justify-end items-center gap-3">
           <button className="centres-swiper-button-prev w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-white hover:text-[var(--button-red)] transition-colors"
-            >
-              <path
-                d="M10 12L6 8L10 4"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white">
+              <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
 
           <button className="centres-swiper-button-next w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-white hover:text-[var(--button-red)] transition-colors"
-            >
-              <path
-                d="M6 4L10 8L6 12"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white">
+              <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>
