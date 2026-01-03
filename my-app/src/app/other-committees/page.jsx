@@ -214,7 +214,7 @@ export default function OtherCommittees() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-10">
       <FAQ
         title="List Of Important Committee Members"
         subtitle="Committees"

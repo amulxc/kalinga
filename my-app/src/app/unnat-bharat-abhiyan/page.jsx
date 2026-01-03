@@ -32,19 +32,19 @@ const visionMissionData = [
     visionText:
       "Unnat Bharat Abhiyan is inspired by the vision of transformational change in rural development processes by leveraging knowledge institutions to help build the architecture of an Inclusive India.",
     missionText:
-      "Enable higher educational institutions to work with rural communities, identify development challenges and create sustainable solutions, strengthen the link between society and academia, and upgrade the capabilities of the public and private sectors for rural development.",
+      "The Mission of Unnat Bharat Abhiyan is to enable higher educational institutions to work with the people of rural India in identifying development challenges and evolving appropriate solutions for accelerating sustainable growth. It also aims to create a virtuous cycle between society and an inclusive academic system by providing knowledge and practices for emerging professions and to upgrade the capabilities of both the public and the private sectors in responding to the development needs of rural India.",
     showImage: false,
   },
 ];
 
 /* ---------------- Goals ---------------- */
 const objectives = [
-  { text: "To build an understanding of the development agenda within institutions of Higher Education and training relevant to national needs, especially those of rural India." },
-  { text: "To re-emphasise the need for field work, stakeholder interactions, and design for societal objectives." },
+  { text: "To build an understanding of the development agenda within institutions of Higher Education and an institutional capacity and training relevant to national needs, especially those of rural India." },
+  { text: "To re-emphasise the need for field work, stakeholder interactions and design for societal objectives as the basis of higher education." },
   { text: "To stress rigorous reporting and useful outputs as central to developing new professions." },
-  { text: "To provide rural India with access to professional resources of institutes of higher education." },
-  { text: "To improve development outcomes through research and innovation." },
-  { text: "To foster dialogue on science, society, and the environment." },
+  { text: "To provide rural India and regional agencies with access to the professional resources of the institutes of higher education, especially those that have acquired academic excellence in the fields of science, engineering, technology, and management." },
+  { text: "To improve development outcomes as a consequence of this research. To develop new professions and new processes to sustain and absorb the outcomes of research." },
+  { text: "To foster a new dialogue within the larger community on science, society, and the environment, and to develop a sense of dignity and collective destiny." },
 ];
 
 

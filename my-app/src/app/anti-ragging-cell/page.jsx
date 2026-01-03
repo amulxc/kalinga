@@ -68,7 +68,7 @@ const objectives = [
    {
     id: 2,
     text: "National Ragging Prevention Programme",
-    href: "https://kalinga-university.s3.ap-south-1.amazonaws.com/anti-ragging-cell/website-homepage-antiragging-information.pdf",
+    href: "https://kalinga-university.s3.ap-south-1.amazonaws.com/anti-ragging-cell/antiragging-information.pdf",
   },
 ];
 const AntiImages = [
@@ -213,7 +213,7 @@ export default function Page() {
 
   const renderTabContent = (tabId) => {
     if (tabId === "y2024")
-      return <EventsTable title="Anti-Ragging Committee (2023-24)" data={events2024} />;
+      return <EventsTable title="Anti-Ragging Committee (2023-24)" description="The Anti-Ragging Committee is the Supervisory and Advisory Committee in preserving a culture of Ragging-Free Environment in Kalinga University Campus. The Anti-Ragging Squad- office bearers work under the Supervision of the Anti-Ragging Committee and engage in the work of checking places like Hostels, Buses, Canteens, Classrooms and other places of student congregation. The Anti-Ragging Committee is involved in designing strategies and an action plan for curbing the Menace of Ragging in the college by adopting an array of activities." data={events2024} />;
 
     if (tabId === "y2023")
       return <EventsTable title="Anti-Ragging Squad (2023-24)
@@ -313,7 +313,7 @@ export default function Page() {
   );
 }
 
-function EventsTable({ title, data }) {
+function EventsTable({ title, description, data }) {
   const columns = [
     {
       key: "sno",
@@ -342,6 +342,12 @@ function EventsTable({ title, data }) {
       <h2 className="text-center mb-[20px]">
         {title}
       </h2>
+      
+      {description && (
+        <p className="text-center mb-[20px] text-gray-700 font-plus-jakarta-sans">
+          {description}
+        </p>
+      )}
 
       <div className="max-h-[450px] overflow-y-auto">
         <DataTable

@@ -110,15 +110,16 @@ const Header = () => {
           {
             title: 'Overview',
             links: [
-              { label: 'About University', href: '/about-us' },
-              { label: 'Vision & Mission', href: '/about-us#vision-mission' },
-              { label: 'Chancellor Message', href: '/chancellor' },
-              { label: 'Vice Chancellor', href: '/vice-chancellor' },
-              { label: 'Leadership', href: '/leadership' },
+              { label: 'Who We Are', href: '/about-us' },
+              { label: 'Why Kalinga', href: '/about-us#vision-mission' },
+              { label: 'Administration & Leadership', href: '/leadership' },
+              { label: 'Awards and accolades', href: '/about-us' },
+              { label: 'Organogram', href: '/organogram' },
+              { label: 'Accreditations & Approvals', href: '#' },
             ]
           },
           {
-            title: 'Infrastructure',
+            title: 'Kalinga Infrastructure',
             links: [
               { label: 'Campus Facilities', href: '/campus-facilities' },
               { label: 'Academic Facilities', href: '/academic-facilities' },
@@ -190,39 +191,50 @@ const Header = () => {
           {
             title: 'Admissions',
             links: [
-              { label: 'Admission Overview', href: '/admissions' },
-              { label: 'Entrance Exams', href: '/entrance-exam' },
-              { label: 'KALSEE', href: '/kalsee' },
-              { label: 'KAL-MAT', href: '/kalmat' },
+              { label: 'Admission Procedure', href: '#' },
+              { label: 'Discover Programs', href: '/admissions' },
+              { label: 'Entrance Exam – KALSEE/KALMAT', href: '/entrance-exam' },
+              { label: 'Scholarships', href: '/scholarships' },
+              
+            ],
+          },
+          {
+            title: 'Admission Process',
+            links: [
+              { label: 'Value Additions', href: '/value-additions' },
+              { label: 'Download Admission Form', href: '#' },
+              { label: 'Pay your Fees', href: '/pay-your-fees' },
             ]
           }
         ]
       }
     },
     {
-      id: 'students',
-      label: 'Students',
+      id: 'Campus life',
+      label: 'Campus life',
       href: '#',
       megaMenu: {
         sections: [
           {
-            title: 'Student Life',
+            title: 'Campus Life',
             links: [
-              { label: 'Campus Life', href: '/campuslife' },
-              { label: 'Student Clubs', href: '/student-clubs' },
-              { label: 'Sports & Wellness', href: '/sports-and-wellness-centre' },
-              { label: 'News & Events', href: '/news-and-events' },
+              { label: 'Life @ KU', href: '/campuslife' },
+              { label: 'Student Support', href: '/student-support' },
+              { label: 'Campus Tour', href: '/campus-facilities' },
+              { label: 'Student Welfare', href: '/student-welfare' },
+              { label: 'Library', href: '/library' },
+              { label: 'Clubs & Societies', href: '/student-clubs' },
             ]
           },
-          {
-            title: 'Resources',
-            links: [
-              { label: 'Student Support', href: '/student-support' },
-              { label: 'Student Welfare', href: '/student-welfare' },
-              { label: 'Student Counselling', href: '/students-counselling-cell' },
-              { label: 'Downloads', href: '/downloads' },
-            ]
-          }
+          // {
+          //   title: 'Resources',
+          //   links: [
+          //     { label: 'Student Support', href: '/student-support' },
+          //     { label: 'Student Welfare', href: '/student-welfare' },
+          //     { label: 'Student Counselling', href: '/students-counselling-cell' },
+          //     { label: 'Downloads', href: '/downloads' },
+          //   ]
+          // }
         ]
       }
     },
@@ -236,20 +248,21 @@ const Header = () => {
             title: 'Research',
             links: [
               { label: 'Research Overview', href: '/research' },
-              { label: 'Research Facilities', href: '/research-facilities' },
+              { label: 'IPR (Intellectual Property Rights Cell)', href: '/ipr-cell' },
+              { label: 'Books / Book Chapters', href: '#' },
+              { label: 'Ph. D', href: '/phd' },
               { label: 'Research Resources', href: '/research-resources' },
-              { label: 'Publications', href: '/research-papers-and-books-published' },
             ]
           },
-          {
-            title: 'Centers',
-            links: [
-              { label: 'Centres of Excellence', href: '/centresofexcellence' },
-              { label: 'Central Instrumentation Facility', href: '/central-instrumentation-facility' },
-              { label: 'IPR Cell', href: '/ipr-cell' },
-              { label: 'Conferences & Events', href: '/conferences-and-events' },
-            ]
-          }
+          // {
+          //   title: 'Centers',
+          //   links: [
+          //     { label: 'Centres of Excellence', href: '/centresofexcellence' },
+          //     { label: 'Central Instrumentation Facility', href: '/central-instrumentation-facility' },
+          //     { label: 'IPR Cell', href: '/ipr-cell' },
+          //     { label: 'Conferences & Events', href: '/conferences-and-events' },
+          //   ]
+          // }
         ]
       }
     },
@@ -263,8 +276,9 @@ const Header = () => {
             title: 'Placements',
             links: [
               { label: 'Placement Overview', href: '/placements' },
-              { label: 'Training & Placement Cell', href: '/training-and-placement-cell' },
-              { label: 'Career & Corporate Resource Centre', href: '/career-and-corporate-resource-centre' },
+              { label: 'Placement Cell', href: '/training-and-placement-cell' },
+              { label: 'Industry Collaborations', href: '/career-and-corporate-resource-centre' },
+              { label: 'Kalinga Achievers', href: '#' },
             ]
           }
         ]

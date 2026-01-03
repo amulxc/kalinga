@@ -141,7 +141,7 @@ const breadcrumbData = {
       />  
         <MainIntro
         title="Public Notice"
-        description="We understand the importance of accurate documentation verification. Whether you're a prospective student, an employer, or an organisation, we ensure that the documents provided to us are thoroughly verified to maintain the integrity and credibility of our academic system."
+        description="The general public is advised that only verifications conducted directly through Kalinga University are valid. Reports from unauthorised third parties will be considered invalid and will not receive official recognition."
         imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/common/kalinga-front-banner02.webp"
         readmore={false}
         knowMoreLabel="IBC Verifications Bangalore 21st September 2024"

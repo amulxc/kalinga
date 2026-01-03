@@ -220,6 +220,12 @@ const FAQ = ({
     id: item.id !== undefined ? item.id : index + 1
   }))
 
+  // Helper function to check if text contains HTML tags
+  const containsHTML = (text) => {
+    if (!text || typeof text !== 'string') return false
+    return /<[a-z][\s\S]*>/i.test(text)
+  }
+
   // Helper function to convert text with phone numbers, emails, and URLs to clickable links
   const renderTextWithLinks = (text) => {
     if (!text || typeof text !== 'string') return text
@@ -509,14 +515,21 @@ const FAQ = ({
                     }`}
                   >
                     <div className="p-4 sm:p-5 md:p-6 bg-[var(--lite-sand)]">
-                      <div className="overflow-x-auto">
-                        <DataTable
-                          columns={section.columns || tableColumns}
-                          data={section.data}
-                          overflowX={true}
-                          className="shadow-none"
+                      {section.data ? (
+                        <div className="overflow-x-auto">
+                          <DataTable
+                            columns={section.columns || tableColumns}
+                            data={section.data}
+                            overflowX={true}
+                            className="shadow-none"
+                          />
+                        </div>
+                      ) : section.answer ? (
+                        <div 
+                          className="text-gray-700 text-sm leading-relaxed font-plus-jakarta-sans"
+                          dangerouslySetInnerHTML={{ __html: section.answer }}
                         />
-                      </div>
+                      ) : null}
                     </div>
                   </div>
                 </div>
@@ -560,9 +573,20 @@ const FAQ = ({
                       {Array.isArray(item.answer) ? (
                         <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm leading-relaxed font-plus-jakarta-sans">
                           {item.answer.map((listItem, idx) => (
-                            <li key={idx}>{renderTextWithLinks(listItem)}</li>
+                            <li key={idx}>
+                              {containsHTML(listItem) ? (
+                                <span dangerouslySetInnerHTML={{ __html: listItem }} />
+                              ) : (
+                                renderTextWithLinks(listItem)
+                              )}
+                            </li>
                           ))}
                         </ul>
+                      ) : containsHTML(item.answer) ? (
+                        <div 
+                          className="text-gray-700 text-sm leading-relaxed font-plus-jakarta-sans"
+                          dangerouslySetInnerHTML={{ __html: item.answer }}
+                        />
                       ) : (
                         <p className="text-gray-700 text-sm leading-relaxed font-plus-jakarta-sans">
                           {renderTextWithLinks(item.answer)}
@@ -938,6 +962,11 @@ const FAQ = ({
                           <li key={idx}>{renderTextWithLinks(listItem)}</li>
                         ))}
                       </ul>
+                    ) : containsHTML(item.answer) ? (
+                      <div 
+                        className="text-gray-700 text-sm leading-relaxed font-plus-jakarta-sans"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
                     ) : (
                       <p className="text-gray-700 text-sm leading-relaxed font-plus-jakarta-sans">
                         {renderTextWithLinks(item.answer)}
