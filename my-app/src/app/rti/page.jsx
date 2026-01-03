@@ -7,7 +7,7 @@ import SectionHeading from "@/app/components/general/SectionHeading";
 // Breadcrumb configuration
 const breadcrumbData = {
   heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/academics/academics-banner.webp",
-  pageTitle: "RTI",
+  pageTitle: "Right To Information",
   customBreadcrumbs: [
     { label: 'Home', href: '/' },
     { label: 'RTI', href: '/RTI' }

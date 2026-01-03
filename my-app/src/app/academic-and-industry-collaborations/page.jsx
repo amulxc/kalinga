@@ -22,7 +22,7 @@ const breadcrumbData = {
 const clubSections = [
   {
     id: 1,
-    title: "Companies Signed an MoU With Kalinga University",
+    title: "MOU Partners",
     clubs: [
      {
         name: "Profsys Softwares Pvt. Ltd.",
@@ -184,7 +184,7 @@ const clubSections = [
   },
   {
     id: 2,
-    title: "Certificate of Participation",
+    title: "Certificates  ",
     clubs: [
       {
         name: "IICCI – Gold",
@@ -210,7 +210,7 @@ const clubSections = [
   },
   {
     id: 3,
-    title: "Indian Institutions Signed an MoU With Kalinga University",
+    title: "Partnership with National Academic Institutes",
     clubs: [
       { name: "Dr. Radhabai Govt. Naveen Girls College, Raipur – Chhattisgarh", image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Academic-and-Industry-Collaborations/Dr.+Radhabai+Govt.+Naveen+Girls+College%2C+Raipur+%E2%80%93+Chhattisgarh.webp" },
       { name: "Rajamahendri Institute of Engineering & Technology – Andhra Pradesh", image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Academic-and-Industry-Collaborations/Rajamahendri+Institute+of+Engineering+%26+Technology+%E2%80%93+Andhra+Pradesh.webp" },

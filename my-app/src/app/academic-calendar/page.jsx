@@ -53,7 +53,7 @@ export default function Page() {
 
             </h2>
             <p className="text-[16px] text-[#555]">
-              The academic calendar for the year 2025-26 covers all the academic and non-academic events scheduled throughout the year at Kalinga University. 
+              The academic calendar for the year 2025-26 covers all the academic events scheduled throughout the year at Kalinga University. 
             </p>
           </div>
 

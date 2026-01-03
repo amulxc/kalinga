@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
 
           {/* Important Links - 2 columns */}
-          <div className="sm:col-span-1 md:col-span-6 mb-6 sm:mb-0">
+          <div className="sm:col-span-1 md:col-span-6 mb-6 sm:mb-0 md:-ml-[45px]">
             <h4 className="text-sm sm:text-base lg:text-lg font-normal mb-4 sm:mb-6 flex items-end gap-2">
               <span className="text-white font-stix">Important Links</span>
               <span className="hidden sm:block flex-1 border-t border-white/70 relative bottom-2"></span>

@@ -68,7 +68,7 @@ export default function Careers() {
   const careerFAQs = [
     {
       id: 1,
-      question: "How can I apply for ajob at Kalinga University?",
+      question: "How can I apply for a job at Kalinga University?",
       answer: "You can apply directly through our official careers page by filling out the Career Application Form and uploading your updated resume. Shortlisted candidates will be contacted by our HR team for further rounds of the selection process."
     },
     {
@@ -86,11 +86,11 @@ export default function Careers() {
       question: "Does Kalinga University offer internships or training opportunities?",
       answer: "Yes, Kalinga University provides internships and professional training for both fresh graduates and students. These programs help participants gain practical exposure and industry-relevant skills."
     },
-    {
-      id: 5,
-      question: "What employee benefits does Kalinga University provide?",
-      answer: "We offer a comprehensive benefits package including competitive salaries, research support, professional development programs, healthcare, and work-life balance initiatives to ensure overall employee well-being."
-    }
+    // {
+    //   id: 5,
+    //   question: "What employee benefits does Kalinga University provide?",
+    //   answer: "We offer a comprehensive benefits package including competitive salaries, research support, professional development programs, healthcare, and work-life balance initiatives to ensure overall employee well-being."
+    // }
    
   ]
 
@@ -106,7 +106,7 @@ export default function Careers() {
       <OpenPositions />
       <EmployeeBenefits />
       <CareerApplicationForm />
-      <FaqSection items={careerFAQs} />
+      <FaqSection items={careerFAQs} title="Frequently Asked Questions" subtitle="" />
 
     </>
   );
