@@ -19,6 +19,7 @@ function Studentreportservices() {
                 items={Items}
                 imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/ccrc.webp"
                 title="Our services can help you:"
+                description=""
             />
         </section>
     );

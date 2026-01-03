@@ -2,6 +2,7 @@
 
 import { useMemo, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import HostelFeeTabs from "../hostel/hosteltabs";
 
 /** -----------------------------
  *  TABS
@@ -16,6 +17,7 @@ const IQAC_TABS = [
     { id: "pharmacy", label: "Faculty of Pharmacy" },
     { id: "education", label: "Faculty of Education" },
     { id: "research", label: "Faculty of Research" },
+    { id: "hostel", label: "Hostel" },
     { id: "other", label: "Other Charges / Transport / Scholarship" },
     { id: "value", label: "Value Additions" },
     { id: "pdfs", label: "Value Added Courses (PDFs)" },
@@ -1274,21 +1276,43 @@ export default function FeesTabSection() {
         if (activeTab === "pharmacy") return FEES_PHARMACY;
         if (activeTab === "education") return FEES_EDUCATION;
         if (activeTab === "research") return FEES_RESEARCH;
+        if (activeTab === "hostel") return { title: "Hostel" };
         return null;
     }, [activeTab]);
 
-    
+
     return (
         <section className="w-full py-4 px-2 overflow-x-hidden">
             <style jsx>{`
-      .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-      }
-      .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    `}</style>
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            /* ✅ Hostel tab compact view (no extra padding) */
+            :global(.fees-hostel-compact section.py-14) {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+
+            :global(.fees-hostel-compact .rounded-3xl) {
+                padding: 12px !important;
+            }
+
+            :global(.fees-hostel-compact .rounded-2xl.bg-white) {
+                padding: 16px !important;
+            }
+
+            @media (min-width: 768px) {
+                :global(.fees-hostel-compact .rounded-2xl.bg-white) {
+                padding: 24px !important;
+                }
+            }
+`}</style>
+
 
             {/* ✅ 1) items-stretch so both columns take same height */}
             <div className="flex flex-col lg:flex-row gap-4 bg-[var(--dark-blue)] py-16 md:px-10 px-4 rounded-xl overflow-x-hidden items-stretch">
@@ -1329,7 +1353,7 @@ export default function FeesTabSection() {
                         {/* ✅ Only THIS part scrolls */}
                         <div className="flex-1 overflow-y-auto px-4 md:px-5 pt-4 md:pt-5 pb-8">
                             {/* Faculty Tables */}
-                            {faculty && (
+                            {faculty && activeTab != "hostel" && (
                                 <div>
                                     <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-1">
                                         {faculty.title}
@@ -1385,13 +1409,35 @@ export default function FeesTabSection() {
 
                                         <div className="p-4 rounded-lg border border-gray-200 bg-gray-50">
                                             <div className="font-semibold mb-2">Scholarship Details</div>
-                                            <p className="whitespace-normal break-words">{OTHER_CHARGES.scholarship}</p>
+                                            <p className="whitespace-normal break-words">
+                                                Scholarships (General, Merit &amp; Girl Student) are available on Tuition Fees.{" "}
+                                                . The above scholarships are not applicable to Pharmacy, Education, and Research Programs.
+                                                <a
+                                                    href="https://kalinga-university.s3.ap-south-1.amazonaws.com/scholarships/SCHOLARSHIP_25-26+(4)+(1).pdf"
+                                                    className="text-[var(--button-red)] underline font-semibold"
+                                                >
+                                                    View scholarship details
+                                                </a>
+                                            </p>
+
                                         </div>
 
                                         <div className="p-4 rounded-lg border border-gray-200 bg-white">
                                             <div className="font-semibold mb-2">Uniform Details</div>
                                             <p className="whitespace-normal break-words">{OTHER_CHARGES.uniformDetails}</p>
                                         </div>
+                                    </div>
+                                </div>
+                            )}
+                            {/* {Hostel Tab} */}
+                            {activeTab === "hostel" && (
+                                <div className="w-full">
+                                    <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-1">
+                                        Hostel
+                                    </h2>
+
+                                    <div className="fees-hostel-compact">
+                                        <HostelFeeTabs />
                                     </div>
                                 </div>
                             )}
@@ -1411,6 +1457,8 @@ export default function FeesTabSection() {
                                     </ul>
                                 </div>
                             )}
+
+
 
                             {/* PDFs */}
                             {activeTab === "pdfs" && (

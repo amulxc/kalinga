@@ -34,25 +34,24 @@ const Answer = ({ lines = [], penalty }) => {
     );
 };
 
-// function NoteBox({ children }) {
-//     return (
-//         <div className="rounded-xl border border-black/10 bg-black/5 px-4 py-3 flex gap-3 my-2">
-//             <TickIcon />
-//             <p className="text-[var(--foreground)] leading-relaxed">{children}</p>
-//         </div>
-//     );
-// }
-
+// ✅ QC Note UI (clean + compact)
+function NoteBox({ children }) {
+    return (
+        <div className="rounded-xl border border-black/10 bg-black/5 px-4 py-3 flex gap-3 my-2">
+            <TickIcon />
+            <div className="text-[var(--foreground)] leading-relaxed">{children}</div>
+        </div>
+    );
+}
 
 export default function Hostelrules() {
-    // ✅ Notes (NOT inside FAQ)
-    const topNote =
-        "Note: Violation of any of the following rules will invite a penalty, disciplinary action, or expulsion from the hostel as deemed appropriate by the university authorities.";
+    // ✅ Notes content (NOTE keyword bold)
+    const topNoteText =
+        "Violation of any of the following rules will invite a penalty, disciplinary action, or expulsion from the hostel as deemed appropriate by the university authorities.";
 
-    const bottomNote =
+    const bottomNoteText =
         "If any student is found violating the above rules and regulations, the university reserves the right to take strict disciplinary action, including warning, fines, suspension, or expulsion from the hostel or university.";
 
-    // ✅ FAQ data (Penalty forced into next line via JSX)
     const defaultFAQItems = [
         {
             id: 1,
@@ -86,11 +85,9 @@ export default function Hostelrules() {
             answer: (
                 <Answer
                     lines={[
-                        "Rough handling or damage to hostel furniture, fittings, or property is strictly forbidden.",
-                        "The cost of the damaged property will be recovered. If identified, the individual/group will pay double the cost.",
-                        "Repeated violations will result in expulsion from the hostel.",
+                        "Rough handling or damage to hostel furniture, fittings, or property is strictly forbidden."
                     ]}
-                    penalty="The cost of the damaged property will be recovered. If identified, the individual/group will pay double the cost."
+                    penalty="The cost of the damaged property will be recovered. If identified, the individual/group will pay double the cost,Repeated violations will result in expulsion from the hostel"
                 />
             ),
         },
@@ -170,9 +167,7 @@ export default function Hostelrules() {
             question: "Leave Policy",
             answer: (
                 <Answer
-                    lines={[
-                        "No student is allowed to leave the hostel without prior permission from the hostel warden.",
-                    ]}
+                    lines={["No student is allowed to leave the hostel without prior permission from the hostel warden."]}
                     penalty="Unauthorised absence may attract fines or disciplinary action."
                 />
             ),
@@ -286,9 +281,7 @@ export default function Hostelrules() {
             question: "Electricity Usage",
             answer: (
                 <Answer
-                    lines={[
-                        "Electrical appliances like fans and lights must be switched off when the room is unoccupied.",
-                    ]}
+                    lines={["Electrical appliances like fans and lights must be switched off when the room is unoccupied."]}
                     penalty="Repeated negligence will attract fines."
                 />
             ),
@@ -317,22 +310,21 @@ export default function Hostelrules() {
         },
     ];
 
-
-    //notes 
     return (
-        <>
-            <FAQ title="Rules & Regulations" subtitle="" items={defaultFAQItems} />
-        </>
-        // <section className="py-16 bg-white">
-        //     <div className="container mx-auto px-2 space-y-1">
-        //         {/* ✅ Top Note (outside FAQ) */}
-        //         {/* <NoteBox>{topNote}</NoteBox> */}
+        <section className="py-16 bg-white">
+            <div className="container mx-auto px-2 space-y-3">
+                {/* ✅ Before 1st rule: NOTE */}
+                <NoteBox>
+                    <span className="font-semibold">NOTE:</span> {topNoteText}
+                </NoteBox>
 
-        //         <FAQ title="Rules & Regulations" subtitle="" items={defaultFAQItems} />
+                <FAQ title="Rules & Regulations" subtitle="" items={defaultFAQItems} />
 
-        //         {/* ✅ Bottom Note (outside FAQ) */}
-        //         {/* <NoteBox>{bottomNote}</NoteBox> */}
-        //     </div>
-        // </section>
+                {/* ✅ After last point: NOTE */}
+                <NoteBox>
+                    <span className="font-semibold">NOTE:</span> {bottomNoteText}
+                </NoteBox>
+            </div>
+        </section>
     );
 }

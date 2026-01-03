@@ -162,7 +162,7 @@ export default function ScholarshipsPage() {
       title: "Social Scholarships",
       description:
         "Scholarships supporting special categories and social causes (as per KU policy).",
-      icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/social.svg",
+      icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/logos/book-logo.png",
     },
     {
       id: 2,
@@ -420,6 +420,74 @@ export default function ScholarshipsPage() {
       }
     `}</style>
 
+      <style jsx global>{`
+  /* ✅ Make each slide/card same height behavior */
+  .hide-scholarship-cta .scholarships-swiper .swiper-slide {
+    height: auto !important;
+  }
+
+  /* Card root inside each slide */
+  .hide-scholarship-cta .scholarships-swiper .swiper-slide > * {
+    height: 100% !important;
+    display: flex !important;
+  }
+
+  /* Card inner layout */
+  .hide-scholarship-cta .scholarships-swiper .swiper-slide > * > * {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* ✅ Title: reserve equal space across cards (2 lines) */
+  .hide-scholarship-cta .scholarships-swiper h3,
+  .hide-scholarship-cta .scholarships-swiper h4 {
+    min-height: 2.8em !important; /* ~2 lines */
+    line-height: 1.4 !important;
+
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden !important;
+  }
+
+  /* ✅ Description: keep consistent spacing */
+  .hide-scholarship-cta .scholarships-swiper p {
+    margin-top: 0.75rem !important;
+  }
+
+  /* ✅ Divider: consistent full width */
+  .hide-scholarship-cta .scholarships-swiper hr,
+  .hide-scholarship-cta .scholarships-swiper [role="separator"],
+  .hide-scholarship-cta .scholarships-swiper .divider,
+  .hide-scholarship-cta .scholarships-swiper [class*="divider"],
+  .hide-scholarship-cta .scholarships-swiper .border-t,
+  .hide-scholarship-cta .scholarships-swiper .border-b {
+    width: 100% !important;
+    align-self: stretch !important;
+  }
+
+  /* ✅ Push the arrow button to bottom consistently */
+  .hide-scholarship-cta .scholarships-swiper a,
+  .hide-scholarship-cta .scholarships-swiper button {
+    margin-top: auto !important;
+    align-self: flex-end !important;
+  }
+
+  /* ✅ Icon: keep consistent size and avoid weird offsets */
+  .hide-scholarship-cta .scholarships-swiper img {
+    width: 180px !important;  
+    height: 180px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    position: relative !important;
+    top: 0 !important;
+    transform: none !important;
+  }
+`}</style>
 
 
       {/* ✅ Popup Modal */}

@@ -1,42 +1,16 @@
 "use client";
 
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import Cards from "../ccrc/cards";
-
-/** ✅ Reusable helper: hides Know More button for cards without link/href */
-function useHideKnowMoreWithoutLink(wrapperRef, cards) {
-    useLayoutEffect(() => {
-        const root = wrapperRef.current;
-        if (!root) return;
-
-        // Each card wrapper in Cards.jsx is a direct child of <section>
-        const cardEls = root.querySelectorAll("section > div");
-
-        cardEls.forEach((cardEl, i) => {
-            const hasLink = !!cards[i]?.link || !!cards[i]?.href;
-
-            // Know More wrapper in Cards.jsx:
-            // <div className="absolute left-5 bottom-4 z-10">
-            const btnWrap = cardEl.querySelector(".absolute.left-5.bottom-4");
-
-            if (btnWrap) {
-                btnWrap.style.display = hasLink ? "" : "none";
-            }
-        });
-    }, [wrapperRef, cards]);
-}
 
 function Campusfacilitiescard() {
     const wrapperRef = useRef(null);
-
-    const [open, setOpen] = useState(false);
-    const [modalData, setModalData] = useState({ title: "", description: "" });
 
     const cards = [
         {
             title: "Hostel",
             description:
-                "We have fully-furnished hostels for girls and boys on campus with all necessary facilities and tight security. We ensure a comfortable and safe living environment so students never face difficulties during their stay.",
+                "We have fully-furnished hostels for girls and boys on our campus, where all necessary facilities are available along with tight security. We always strive to fulfil all the basic requirements of our hostelers, ensuring they never face any difficulty while living here.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/hostel.webp",
             logoSrc: "",
@@ -46,7 +20,7 @@ function Campusfacilitiescard() {
         {
             title: "Mess",
             description:
-                "In partnership with Sodexo Food Solutions India Pvt. Ltd., separate mess facilities for boys and girls serve four nutritious meals daily—breakfast, lunch, high tea, and dinner—prepared hygienically.",
+                "In partnership with Sodexo Food Solutions India Pvt. Ltd., we have a separate mess for boys and girls, serving 4 nutritious meals a day—breakfast, lunch, high tea, and dinner—that are freshly prepared and hygienic.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/mess.webp",
             logoSrc: "",
@@ -56,7 +30,7 @@ function Campusfacilitiescard() {
         {
             title: "Canteen & Cafeteria",
             description:
-                "Operated in partnership with Sodexo, our canteen and cafeterias offer regular meals, fast food, fresh juices, snacks, and ice creams at affordable prices across campus.",
+                "In partnership with Sodexo Food Solutions India Pvt. Ltd., explore our regular food and fast food items at the canteen. For fresh juices, snacks, or ice creams, our campus cafeterias offer delicious options at affordable prices.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/canteenandcafteria.webp",
             logoSrc: "",
@@ -65,17 +39,16 @@ function Campusfacilitiescard() {
         {
             title: "Transportation Options",
             description:
-                "With 30+ buses and four-wheel vehicles, we provide pick-up and drop facilities covering up to 70 km (one way). Transport is offered at minimal rates with faculty proctorial supervision.",
+                "We have 30+ buses and four-wheel vehicles that provide pick-up and drop facilities with a comfortable travelling experience. Transport is offered at minimal rates, with faculty assigned proctorial duties in the morning and evening. Our buses and cars cover distances up to 70 km (one way).",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/transport-1.jpg",
             logoSrc: "",
             subtitle: "CAMPUS CONNECTIVITY",
-            // link: "/campus-facilities/transport",
         },
         {
             title: "Mini Market",
             description:
-                "The on-campus mini market includes an ATM, salon, stationery store, snack shop, juice centre, and chemist—saving students time by meeting daily needs within campus.",
+                "The mini mart on campus includes an ATM facility, salon, stationery store, snack shop, juice centre, and chemist. It saves time for students and hostellers by meeting daily needs without having to step outside the campus.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/mini-market2.webp",
             logoSrc: "",
@@ -85,7 +58,7 @@ function Campusfacilitiescard() {
         {
             title: "Hostel Reading Room",
             description:
-                "A spacious and quiet reading room in the hostel provides a comfortable space for individual or group study without any membership requirements.",
+                "We have a spacious reading room in the hostel that offers a quiet and comfortable environment. Students can study individually or in groups and prepare for exams, projects, or presentations without any membership requirement.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/hostelreadingroom_campusfacility.webp",
             logoSrc: "",
@@ -94,17 +67,17 @@ function Campusfacilitiescard() {
         {
             title: "Health Clinic",
             description:
-                "Our on-campus health clinic is staffed with an experienced doctor and nurse, offering general consultation, counselling, and emergency medical support.",
+                "Our on-campus health clinic has an experienced doctor and nurse who ensure the well-being of students and staff by providing general consultation, counselling, and emergency medical support.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/Health+Clinic1.webp",
             logoSrc: "",
             subtitle: "HEALTH & WELLNESS",
-            link: "/health-clinic"
+            link: "/health-clinic",
         },
         {
             title: "Banking and ATM",
             description:
-                "We have tie-ups with Central Bank of India and Canara Bank for education loans, along with 24-hour ATMs from ICICI and OBC banks. Multiple digital payment options are supported.",
+                "We have tie-ups with Central Bank of India and Canara Bank for education loans. The campus also has two fully operational 24-hour ATMs from ICICI Bank and OBC Bank, along with support for digital payments like net banking, UPI, Paytm, and cards.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/bank-atm1.png",
             logoSrc: "",
@@ -113,17 +86,16 @@ function Campusfacilitiescard() {
         {
             title: "24/7 Wi-Fi Enabled Campus",
             description:
-                "The entire campus is equipped with high-speed 24/7 Wi-Fi with multiple ISPs, offering up to 1 Gbps secure internet connectivity supporting LMS and academic needs.",
+                "Our campus is equipped with a high-speed 24/7 Wi-Fi-enabled network with multiple ISPs, offering up to 1 Gbps secure internet connectivity. The seamless Wi-Fi also supports the Learning Management System (LMS) for academic needs.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/wifienabledcampus.webp",
             logoSrc: "",
             subtitle: "DIGITAL INFRASTRUCTURE",
-            //link: "/campus-facilities/wifi", // ✅ example: button will show
         },
         {
             title: "Safety & Security",
             description:
-                "Our campus is secured by an in-house security team with CCTV surveillance across hostels, parking areas, and academic buildings to ensure a safe environment.",
+                "The entire campus—including hostels, parking areas, and academic buildings—is secured by an in-house security team. CCTV cameras are installed across the campus to continuously monitor university activities.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/security1.jpg",
             logoSrc: "",
@@ -132,7 +104,7 @@ function Campusfacilitiescard() {
         {
             title: "Art Gallery",
             description:
-                "The art gallery showcases souvenirs from different countries, allowing national and international students to explore cultural diversity and global traditions.",
+                "Our art gallery displays souvenirs from different countries brought by international students. It allows both national and international students to explore cultural diversity and global traditions.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/artgallery.webp",
             logoSrc: "",
@@ -141,17 +113,16 @@ function Campusfacilitiescard() {
         {
             title: "Sanitary Napkin Vending Machines",
             description:
-                "Sanitary napkin vending machines are installed in all girls’ washrooms and hostels to ensure hygiene and round-the-clock accessibility for female students.",
+                "Sanitary napkin vending machines are installed in all girls’ washrooms and hostels to ensure hygiene and round-the-clock accessibility, supporting the well-being of female students.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/sanitary-napkin-vending-machines.webp",
             logoSrc: "",
             subtitle: "WOMEN WELLBEING",
-            // link: "/campus-facilities/women-wellbeing",
         },
         {
             title: "Recreation Corners",
             description:
-                "Our peaceful recreational corners offer students a space to relax, unwind, socialize, and take breaks from academic stress in a calm environment.",
+                "Need a break? Our peaceful recreational corners offer students a space to relax, socialize, and unwind from academic stress. These serene spots help students recharge and connect with peers.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/recreation.webp",
             logoSrc: "",
@@ -160,7 +131,7 @@ function Campusfacilitiescard() {
         {
             title: "Selfie Points",
             description:
-                "We have picturesque selfie points across campus where students can capture memorable moments and share their experiences with friends and family.",
+                "For those who love capturing moments, our picturesque selfie points across campus let students click memorable photos and share their experiences with friends and family.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-facilities/selfiepoints.webp",
             logoSrc: "",
@@ -168,149 +139,66 @@ function Campusfacilitiescard() {
         },
     ];
 
-    // ✅ Provide href for Cards.jsx navigation (optional but good)
-    const cardsForCardsComponent = cards.map((c) => ({
-        ...c,
-        href: c.link || null,
-    }));
-
-    // ✅ Hide button for non-link cards (before paint)
-    useHideKnowMoreWithoutLink(wrapperRef, cardsForCardsComponent);
-
-    useEffect(() => {
-        const onKeyDown = (e) => e.key === "Escape" && setOpen(false);
-        if (open) document.body.style.overflow = "hidden";
-        window.addEventListener("keydown", onKeyDown);
-        return () => {
-            window.removeEventListener("keydown", onKeyDown);
-            document.body.style.overflow = "";
-        };
-    }, [open]);
-
-    const handleClickCapture = (e) => {
-        const btn = e.target?.closest?.("button, a");
-        if (!btn) return;
-
-        const label = (btn.textContent || "").trim().toLowerCase();
-        if (!label.includes("know more")) return;
-
-        e.preventDefault();
-
+    // ✅ useLayoutEffect runs earlier than useEffect (prevents flash)
+    useLayoutEffect(() => {
         const root = wrapperRef.current;
         if (!root) return;
 
-        const knowMoreButtons = Array.from(root.querySelectorAll("button, a")).filter(
-            (el) => (el.textContent || "").trim().toLowerCase().includes("know more")
-        );
+        // hide the buttons
+        const btns = root.querySelectorAll(".absolute.left-5.bottom-4");
+        btns.forEach((btn) => (btn.style.display = "none"));
 
-        const idx = knowMoreButtons.indexOf(btn);
-        const picked = cards[idx];
-        if (!picked) return;
-
-        if (picked.link) {
-            window.location.assign(picked.link);
-            return;
-        }
-
-        setModalData({
-            title: picked?.title || "Details",
-            description: picked?.description || "",
-        });
-        setOpen(true);
-    };
+        // unhide the wrapper after hiding buttons
+        root.style.visibility = "visible";
+    }, []);
 
     return (
         <>
             <style jsx global>{`
-  /* Default (Desktop base) */
-  .campus-cards-wrapper img {
-    width: 100% !important;
-    object-fit: cover !important;
-    border-radius: 0.75rem;
-  }
+        /* your existing image css stays same */
+        .campus-cards-wrapper img {
+          width: 100% !important;
+          object-fit: cover !important;
+          border-radius: 0.75rem;
+        }
 
-  /* Desktop */
-  @media (min-width: 1024px) {
-    .campus-cards-wrapper img {
-      height: 340px !important;
-    }
-  }
+        @media (min-width: 1024px) {
+          .campus-cards-wrapper img {
+            height: 340px !important;
+          }
+        }
 
-  /* Tablet */
-  @media (min-width: 641px) and (max-width: 1023px) {
-    .campus-cards-wrapper img {
-      height: 280px !important;
-    }
-  }
+        @media (min-width: 641px) and (max-width: 1023px) {
+          .campus-cards-wrapper img {
+            height: 280px !important;
+          }
+        }
 
-  /* Mobile — prevent cut / squeeze */
-  @media (max-width: 640px) {
-    .campus-cards-wrapper img {
-      height: 220px !important;
-      object-fit: cover !important;   /* show full image */
-      padding: 6px;
-    }
-  }
+        @media (max-width: 640px) {
+          .campus-cards-wrapper img {
+            height: 220px !important;
+            padding: 6px;
+          }
+        }
 
-  .campus-cards-wrapper img[src=""],
-  .campus-cards-wrapper img:not([src]) {
-    display: none !important;
-  }
-`}</style>
+        .campus-cards-wrapper img[src=""],
+        .campus-cards-wrapper img:not([src]) {
+          display: none !important;
+        }
+      `}</style>
 
+            <h2 className="mb-1 text-black text-left md:text-center">
+                A Campus That Feels Just Like Home
+            </h2>
 
+            {/* ✅ hidden on first paint, shown immediately after layout effect */}
             <div
                 ref={wrapperRef}
-                onClickCapture={handleClickCapture}
                 className="campus-cards-wrapper"
+                style={{ visibility: "hidden" }}
             >
-                <Cards cards={cardsForCardsComponent} />
+                <Cards cards={cards} />
             </div>
-
-            {open && (
-                <div
-                    className="fixed inset-0 z-[9999] flex items-center justify-center px-4"
-                    role="dialog"
-                    aria-modal="true"
-                    onMouseDown={() => setOpen(false)}
-                >
-                    <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
-
-                    <div
-                        className="relative w-full max-w-2xl rounded-2xl bg-white p-6 md:p-8 shadow-2xl"
-                        onMouseDown={(e) => e.stopPropagation()}
-                    >
-                        <div className="flex items-start justify-between gap-4">
-                            <h3 className="font-stix text-2xl md:text-3xl text-[var(--foreground)]">
-                                {modalData.title}
-                            </h3>
-
-                            <button
-                                type="button"
-                                onClick={() => setOpen(false)}
-                                className="rounded-full border border-black/10 px-3 py-1 text-sm hover:bg-black/5"
-                                aria-label="Close"
-                            >
-                                ✕
-                            </button>
-                        </div>
-
-                        <p className="mt-4 text-[var(--light-text-gray)] leading-relaxed">
-                            {modalData.description}
-                        </p>
-
-                        <div className="mt-6 flex justify-end">
-                            <button
-                                type="button"
-                                onClick={() => setOpen(false)}
-                                className="rounded-lg bg-[var(--button-red)] px-5 py-2 text-sm font-medium text-white"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )}
         </>
     );
 }

@@ -102,7 +102,7 @@ function Valueadditionsofkalinga() {
                 <FeatureCards
                     title="Value Additions Of Kalinga University"
                     subtitle=""
-                    description="We’ve created a learning environment where you can find your passion..."
+                    description="We’ve created a learning environment where you can find your passion, develop curiosity, and get new experiences. You will not just attend classes but grow academically, personally, and socially. At KU, you will get a space that matches your energy and ambition."
                     imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/campus-life/campuslife.webp"
                     imageAlt="International Students"
                     cards={internationalStudentsFeatureCards}

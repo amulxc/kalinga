@@ -12,13 +12,13 @@ export default function Hostelgrid() {
         {
             id: 1,
             title: "Boys’ Accommodation",
-            number: "930 +",
+            number: "930 ",
             description: "Comfortable hostel facilities for boys.",
         },
         {
             id: 2,
             title: "Girls’ Accommodation",
-            number: "460 +",
+            number: "460 ",
             description: "Safe and secure hostel facilities for girls.",
         },
     ];
