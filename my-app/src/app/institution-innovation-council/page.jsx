@@ -40,8 +40,7 @@ const objectives = [
 
 /* ---------------- Innovation Ecosystem ---------------- */
 const innovationParagraph = `
-The Institution’s Innovation Council at Kalinga University regularly organises innovation-driven activities, programs, and initiatives to develop problem-solving and entrepreneurial skills. These activities help students convert ideas into impactful solutions and promote research-based startups, social innovation, and technology-driven entrepreneurship. Through workshops, hackathons, mentorship, and incubation support, IIC creates a strong innovation ecosystem across the university.
-`;
+Institution’s Innovation Council (IIC) at Kalinga University was established during 2018-19 with a mission of incorporating an innovative mindset among students, researchers, and faculty members across various disciplines. It aims to encourage, nurture, and inspire individuals by supporting their ideas and transforming them into practical solutions. We regularly organise activities and programs that develop problem-solving skills, leading to impactful solutions. `;
 
 const iicCommitteeTable = [
   { memberType: "Director IQAC", role: "IIC President & ARIIA Coordinator" },
@@ -200,11 +199,9 @@ export default function InstitutionInnovationCouncil() {
 
   <ImageContent 
       imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/research/research-main-content.webp"
-      description="The Institution’s Innovation Council (IIC) is an initiative of the Ministry of Education (MoE), Government of India, launched through the MoE’s Innovation Cell (MIC) in collaboration with AICTE to promote a strong culture of innovation and a startup ecosystem in Higher Educational Institutions (HEIs).
-
-At Kalinga University, the Institution’s Innovation Council (IIC) was established in 2018–19 with the mission of fostering an innovative mindset among students, researchers, and faculty members across disciplines."
+      description="In 2018, the Ministry of Education (MoE), through the MoE’s Innovation Cell (MIC), launched the Institution’s Innovation Council (IIC) in collaboration with AICTE for Higher Educational Institutions (HEIs) to promote the culture of innovation and start-up ecosystem in educational institutions. The main objective of IIC is to engage a large number of faculty members and students in various entrepreneurship and innovation-related activities. It includes IPR, Ideathon, Proof of Concept Development, Design Thinking, and project handling and management at the pre-incubation level. The IIC model enables HEIs to address key challenges such as limited people’s involvement, occasional or unplanned Innovation and Entrepreneurship (I&E) activities, limited engagement of top leaders, poor coordination, weak resource planning, and underutilization of students’ creative potential."
       additionalContent={[
-        "The council encourages, nurtures, and inspires individuals by supporting their ideas and transforming them into practical, real-world solutions.IIC engages a large number of students and faculty members in entrepreneurship and innovation-related activities including Intellectual Property Rights (IPR), Ideation, Proof of Concept Development, Design Thinking, and project handling at the pre-incubation level. The IIC model enables institutions to overcome challenges such as limited participation, weak coordination, and underutilization of creative potential."
+        ""
       ]}
       subtitle={false}
       title="Institution Innovation Council"
@@ -224,9 +221,10 @@ At Kalinga University, the Institution’s Innovation Council (IIC) was establis
           </div>
 
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-4">
-              Driving Innovation & Entrepreneurship
-            </h2>
+            <SectionHeading
+              title="Driving Innovation & Entrepreneurship"
+              titleClassName="text-[var(--foreground)] mb-4"
+            />
             <p className="text-[var(--light-text-gray)] leading-relaxed">
               {innovationParagraph}
             </p>
@@ -601,7 +599,7 @@ const events2024 = [
   { date: "14-10-2022", name: "Research Policy Orientation" },
   { date: "20-10-2022", name: "Seminar on Artificial Intelligence, Law and Future" },
   { date: "21-10-2022", name: "How to Write a Research Article" },
-  { date: "04-11-2022 to 05-11-2022", name: "J Hackathon 2022 (Victory & Joint Innovation)" },
+  { date: "04-11-2022 to 05-11-2022", name: "VJ Hackathon 2022 (Victory & Joint Innovation)" },
   { date: "14-11-2022", name: "Ideathon 2.0" },
   { date: "23-11-2022", name: "CII – YI Annual Meet 2022" },
   { date: "12-01-2023", name: "National Youth Day Poster Making Competition" },
@@ -673,7 +671,7 @@ const events2022 = [
   },
   {
     date: "04-01-2024",
-    name: "भाषायी सांस्कृतिक प्रदर्शनी"
+    name: "भ्रमणशील तारामंडल प्रदर्शनी"
   },
   {
     date: "12-01-2024",

@@ -75,7 +75,7 @@ export default function ImageContent({
                 
                 {selectionCriteria && selectionCriteria.length > 0 && (
                   <div className="mt-4">
-                    <p className="font-semibold text-sm mb-2">Our selection criteria include:</p>
+                    <p className="font-semibold text-sm mb-2">The following are the benefits of being a member of the Young Indians:</p>
                     <ul className="list-disc list-inside space-y-1 text-sm">
                       {selectionCriteria.map((item, index) => (
                         <li key={index}>{item}</li>

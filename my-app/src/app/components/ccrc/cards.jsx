@@ -14,6 +14,7 @@ export default function Cards({ cards = [] }) {
           
           </div>
           <div className="w-full rounded-lg overflow-hidden mt-2 relative">
+            {card.imageSrc && (
             <Image
               src={card.imageSrc}
               alt={card.title}
@@ -21,6 +22,7 @@ export default function Cards({ cards = [] }) {
               height={160}
               className="w-full h-auto rounded-lg"
             />
+            )}
             {/* Red Button (bottom left) */}
             <div className="absolute left-5 bottom-4 z-10">
               <GlobalArrowButton 
@@ -36,17 +38,18 @@ export default function Cards({ cards = [] }) {
             </div>
 
             {/* Small white rounded box (bottom right) */}
+            {card.logoSrc && card.logoSrc.trim() !== "" && (
             <div className="absolute right-3 bottom-3  items-center" >
               <Image
                 src={card.logoSrc}
-                alt="CYCD Logo"
+                  alt={`${card.title} Logo`}
                 width={120}
                 height={120}
                 className="rounded-lg"
                 style={{ objectFit: "contain" }}
               />
-             
             </div>
+            )}
           </div>
         </div>
         </div>

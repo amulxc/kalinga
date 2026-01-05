@@ -18,6 +18,8 @@ const defaultButtons = [
     id: 2,
     text: "Ethics Committee Constitution",
     href: "",
+    isTable: true,
+    tableType: "ethics",
   },
   {
     id: 3,
@@ -45,6 +47,7 @@ const defaultButtons = [
     text: "Research Advisory Committee",
     href: "",
     isTable: true,
+    tableType: "research",
   },
   {
     id: 8,
@@ -125,11 +128,33 @@ const researchAdvisoryCommitteeColumns = [
   { key: "department", label: "Department", width: "flex-1" },
 ];
 
+// Ethics Committee Constitution Table Data
+const ethicsCommitteeData = [
+  { slNo: 1, designation: "Vice-Chancellor and Chairperson of the Committee" },
+  { slNo: 2, designation: "Director of Research and Member Secretary of the Committee" },
+  { slNo: 3, designation: "Director IQAC" },
+  { slNo: 4, designation: "Registrar" },
+  { slNo: 5, designation: "Dean, Faculty of Arts & Humanities" },
+  { slNo: 6, designation: "Dean, Faculty of Education" },
+  { slNo: 7, designation: "Dean, Faculty of Law" },
+  { slNo: 8, designation: "Dean, Faculty of IT" },
+  { slNo: 9, designation: "Dean, Faculty of Science" },
+  { slNo: 10, designation: "Dean, Faculty of Engineering" },
+  { slNo: 11, designation: "Dean, Faculty of Pharmacy" },
+  { slNo: 12, designation: "Coordinator, Research Faculty" },
+];
+
+const ethicsCommitteeColumns = [
+  { key: "slNo", label: "S.No.", width: "w-20" },
+  { key: "designation", label: "Designation", width: "flex-1" },
+];
+
 export default function ResearchSixGridButtons({ buttons = defaultButtons }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isTableModalOpen, setIsTableModalOpen] = useState(false);
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [selectedTitle, setSelectedTitle] = useState("");
+  const [selectedTableType, setSelectedTableType] = useState(null);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -150,6 +175,7 @@ export default function ResearchSixGridButtons({ buttons = defaultButtons }) {
     if (button.isTable) {
       e.preventDefault();
       setSelectedTitle(button.text);
+      setSelectedTableType(button.tableType || "research");
       setIsTableModalOpen(true);
       return;
     }
@@ -187,6 +213,7 @@ export default function ResearchSixGridButtons({ buttons = defaultButtons }) {
   const handleCloseTableModal = () => {
     setIsTableModalOpen(false);
     setSelectedTitle("");
+    setSelectedTableType(null);
   };
 
   const onDocumentLoadSuccess = ({ numPages }) => {
@@ -407,12 +434,21 @@ export default function ResearchSixGridButtons({ buttons = defaultButtons }) {
 
             {/* Table Content */}
             <div className="w-full max-h-[calc(90vh-100px)] overflow-y-auto p-4 md:p-6">
-              <DataTable
-                columns={researchAdvisoryCommitteeColumns}
-                data={researchAdvisoryCommitteeData}
-                overflowX={true}
-                className="mt-4"
-              />
+              {selectedTableType === "ethics" ? (
+                <DataTable
+                  columns={ethicsCommitteeColumns}
+                  data={ethicsCommitteeData}
+                  overflowX={true}
+                  className="mt-4"
+                />
+              ) : (
+                <DataTable
+                  columns={researchAdvisoryCommitteeColumns}
+                  data={researchAdvisoryCommitteeData}
+                  overflowX={true}
+                  className="mt-4"
+                />
+              )}
             </div>
           </div>
         </div>

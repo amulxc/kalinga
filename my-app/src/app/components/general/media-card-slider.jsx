@@ -6,6 +6,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
+import dynamic from "next/dynamic";
+
+
+// Dynamically import ReactPlayer to avoid SSR issues
+const ReactPlayer = dynamic(() => import("react-player"), { 
+  ssr: false,
+  loading: () => (
+    <div className="absolute inset-0 flex items-center justify-center bg-black">
+      <div className="text-white">Loading player...</div>
+    </div>
+  )
+});
 
 export default function MediaCardSlider({
   title = "Testimonials",
@@ -47,24 +59,34 @@ export default function MediaCardSlider({
     document.body.style.overflow = 'unset';
   };
 
-  // Extract YouTube video ID from various URL formats
-  const getYouTubeVideoId = (url) => {
-    if (!url) return null;
+  // Check if URL is a YouTube URL
+  const isYouTubeUrl = (url) => {
+    if (!url) return false;
+    return url.includes('youtube.com') || url.includes('youtu.be');
+  };
 
-    // Handle different YouTube URL formats
-    const patterns = [
-      /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
-      /^([a-zA-Z0-9_-]{11})$/ // Direct video ID
-    ];
-
-    for (const pattern of patterns) {
-      const match = url.match(pattern);
-      if (match && match[1]) {
-        return match[1];
-      }
+  // Convert YouTube URL to embed format
+  const getYouTubeEmbedUrl = (url) => {
+    if (!url) return "";
+    
+    // Handle youtu.be format
+    if (url.includes("youtu.be/")) {
+      const videoId = url.split("youtu.be/")[1].split("?")[0];
+      return `https://www.youtube.com/embed/${videoId}`;
     }
-
-    return null;
+    
+    // Handle youtube.com/watch?v= format
+    if (url.includes("youtube.com/watch?v=")) {
+      const videoId = url.split("v=")[1].split("&")[0];
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+    
+    // If already in embed format, return as is
+    if (url.includes("youtube.com/embed/")) {
+      return url;
+    }
+    
+    return url;
   };
 
   // Check if URL is a direct video file (AWS S3 or other direct URLs)
@@ -156,18 +178,27 @@ export default function MediaCardSlider({
                     >
                       {isVideo ? (
                         <>
-                          {/* Video Thumbnail - Always show thumbnail image if available */}
+                          {/* Show thumbnail if available */}
                           {item.thumbnail && !isDirectVideoUrl(item.thumbnail) ? (
-                            // Use Image component for actual image thumbnails
-                            <Image
-                              src={item.thumbnail}
-                              alt={item.name || item.title || "Video thumbnail"}
-                              fill
-                              className="object-cover object-top brightness-100"
-                              priority
-                            />
-                          ) : item.videoUrl ? (
-                            // Fallback: use video element if no thumbnail image but videoUrl exists
+                            // Check if it's a YouTube thumbnail (img.youtube.com) - use regular img tag
+                            isYouTubeUrl(item.thumbnail) || item.thumbnail.includes('img.youtube.com') ? (
+                              <img
+                                src={item.thumbnail}
+                                alt={item.name || item.title || "Video thumbnail"}
+                                className="absolute inset-0 w-full h-full object-cover object-center"
+                              />
+                            ) : (
+                              // Use Next.js Image component for other image thumbnails
+                              <Image
+                                src={item.thumbnail}
+                                alt={item.name || item.title || "Video thumbnail"}
+                                fill
+                                className="object-cover object-top brightness-100"
+                                priority
+                              />
+                            )
+                          ) : !isYouTubeUrl(item.videoUrl) && item.videoUrl && isDirectVideoUrl(item.videoUrl) ? (
+                            // Fallback: use video element if no thumbnail image but videoUrl exists (non-YouTube)
                             <video
                               src={item.videoUrl}
                               className="absolute inset-0 w-full h-full object-cover object-top"
@@ -176,6 +207,7 @@ export default function MediaCardSlider({
                               playsInline
                             />
                           ) : (
+                            // Placeholder for videos without thumbnails
                             <div className="w-full h-full bg-gray-300" />
                           )}
                           {/* Play Button Overlay */}
@@ -323,7 +355,7 @@ export default function MediaCardSlider({
             )}
 
             {/* Video Player */}
-            <div className="relative pt-[56.25%]">
+            <div className="relative pt-[56.25%] bg-black">
               {isDirectVideoUrl(currentVideo.url) ? (
                 // Native HTML5 Video Player for AWS/Direct URLs
                 <video
@@ -337,20 +369,32 @@ export default function MediaCardSlider({
                   <source src={currentVideo.url} type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
-              ) : getYouTubeVideoId(currentVideo.url) ? (
-                // YouTube iframe embed
+              ) : isYouTubeUrl(currentVideo.url) ? (
+                // Use iframe for YouTube videos (more reliable than ReactPlayer)
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src={`https://www.youtube.com/embed/${getYouTubeVideoId(currentVideo.url)}?autoplay=1&rel=0`}
+                  src={`${getYouTubeEmbedUrl(currentVideo.url)}?autoplay=1&rel=0`}
                   title={currentVideo.name || "YouTube video"}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />
               ) : (
-                // Fallback for other video URLs
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900">
-                  <p className="text-white">Unable to load video</p>
+                // ReactPlayer for other video platforms (Vimeo, etc.)
+                <div className="absolute top-0 left-0 w-full h-full">
+                  <ReactPlayer
+                    url={currentVideo.url}
+                    width="100%"
+                    height="100%"
+                    controls={true}
+                    playing={true}
+                    light={false}
+                    config={{
+                      vimeo: {
+                        playerOptions: { controls: true }
+                      }
+                    }}
+                  />
                 </div>
               )}
             </div>

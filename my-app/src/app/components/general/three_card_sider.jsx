@@ -75,7 +75,7 @@ function VideoCardSlider({
             src={image || "https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/image+15.png"}
             alt={title}
             fill
-            className="!object-cover rounded-[20px]"
+            className="rounded-[20px]"
           />
           {/* Play Button Overlay */}
           <div className="absolute inset-0 flex items-center justify-center">

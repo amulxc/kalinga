@@ -69,7 +69,26 @@ export default function GetInTouch() {
                       <a href="mailto:registrar@kalingauniversity.ac.in" className="text-[var(--button-red)] hover:underline">
                         registrar@kalingauniversity.ac.in
                       </a>
-                      {" or call "}
+                    </p>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[var(--button-red)]">
+                      {/* phone icon from footer */}
+                      <svg
+                        className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--icons)] flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        />
+                      </svg>
+                    </span>
+                    <p className="text-[var(--foreground)] text-[13px] sm:text-sm">
                       <a href="tel:+91-9109199711" className="text-[var(--button-red)] hover:underline">
                         +91-9109199711
                       </a>

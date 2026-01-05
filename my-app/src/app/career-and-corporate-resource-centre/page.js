@@ -293,34 +293,20 @@ const accreditations = [
 const videoItems = [
   {
     id: 1,
-    title: "Rajiv Chwala",
-    name: "Rajiv Chwala",
-    description: "Alumni Testimonial",
-    videoUrl: "https://www.youtube.com/watch?v=Fy4fnnqU238",
+    name: "Name",
+    description: "Lorem ipsum",
     thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg",
   },
   {
     id: 2,
-    title: "Sumit Mitra",
-    name: "Sumit Mitra",
-    description: "Alumni Testimonial",
-    videoUrl: "https://www.youtube.com/watch?v=Fy4fnnqU238",
+    name: "Name",
+    description: "Lorem ipsum",
     thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg",
   },
   {
     id: 3,
-    title: "Amar Pathak",
-    name: "Amar Pathak",
-    description: "Alumni Testimonial",
-    videoUrl: "https://www.youtube.com/watch?v=Fy4fnnqU238",
-    thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg",
-  },
-  {
-    id: 4,
-    title: "Prateek Singh",
-    name: "Prateek Singh",
-    description: "Alumni Testimonial",
-    videoUrl: "https://www.youtube.com/watch?v=Fy4fnnqU238",
+    name: "Name",
+    description: "Lorem ipsum",
     thumbnail: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/student.jpg",
   },
 ]
@@ -357,19 +343,19 @@ export default function CCRCPage() {
     <Cards cards={cards} />
     <Hearfrom items={sliderItems} title="Hear From Our Clients" />
     <MediaCardSlider
-      categoryTitle="Video Interviews"
-      title="Alumni Talk"
-      description=""
-      videoItems={videoItems}
-      cardBgClass="bg-white"
-      nameTextClass="text-[var(--button-red)]"
-      descriptionTextClass=""
-      swiperClassName="ccrc-video-slider"
-    />
-    <Partner
-      blueTitle="Industry Partner"
-      redTitle="MoU Partners"
-      blueItems={blueItems}
+        categoryTitle="Video Interviews"
+        title="Alumni Talk"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
+        videoItems={videoItems}
+        cardBgClass="bg-white"
+        nameTextClass="text-[var(--button-red)]"
+        descriptionTextClass=""
+        swiperClassName="ccrc-video-slider"
+      />
+    <Partner 
+      blueTitle="Industry Partner" 
+      redTitle="MoU Partners" 
+      blueItems={blueItems} 
       redItems={redItems}
       ccrcLogo="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/ccrclogo.webp"
     />
