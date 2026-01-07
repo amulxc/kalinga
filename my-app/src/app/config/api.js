@@ -46,3 +46,52 @@ export const API_CONFIG = {
 export const getApiUrl = (endpoint) => {
   return `${API_CONFIG.baseURL}${endpoint}`;
 };
+
+/**
+ * Generic form submission helper
+ * @param {string} endpoint - API endpoint path
+ * @param {Object|FormData} data - Form data
+ * @param {boolean} isMultipart - Whether the request is multipart/form-data
+ * @returns {Promise<Object>} API response
+ */
+export const submitForm = async (endpoint, data, isMultipart = false) => {
+  const baseUrl = API_CONFIG.baseURL;
+  const url = `${baseUrl}${endpoint}`;
+
+  const options = {
+    method: 'POST',
+    body: isMultipart ? data : JSON.stringify(data),
+  };
+
+  if (!isMultipart) {
+    options.headers = {
+      'Content-Type': 'application/json',
+    };
+  }
+
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+
+      // Try to extract a meaningful error message
+      let errorMsg = errorData.message || errorData.detail;
+
+      if (!errorMsg && typeof errorData === 'object') {
+        // If it's a field-specific error (like from Django REST Framework), 
+        // get the first error message found in the object
+        const firstKey = Object.keys(errorData)[0];
+        if (firstKey) {
+          const val = errorData[firstKey];
+          errorMsg = Array.isArray(val) ? `${firstKey}: ${val[0]}` : `${firstKey}: ${val}`;
+        }
+      }
+
+      throw new Error(errorMsg || 'Something went wrong');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(`Error submitting form to ${endpoint}:`, error);
+    throw error;
+  }
+};
