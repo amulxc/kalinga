@@ -1,5 +1,6 @@
 "use client"
 import { useEffect } from "react";
+import { useFlipbook } from "../components/general/FlipbookContext";
 import PublicationGrid from "../components/research/publication-grid";
 import UGCLogo from "../components/research/ugc_logo";
 import UpcomingConference from "../components/research/upcoming_conference";
@@ -15,9 +16,9 @@ import MentorIntro from "../components/department/dept_head_intro";
 import CenterOfExcellence from "../components/about/center_of_excellence";
 import AwardsScrollbar from "../components/home/awards-scrollbar";
 import MediaCardSlider from "@/app/components/general/media-card-slider";
+import Gallery from '../components/campuslife/campusgallery';
 import Placements from "../components/home/placements";
 import Partner from "../components/ccrc/partner";
-import { useFlipbook } from "../components/general/FlipbookContext";
 
 
 // Breadcrumb configuration
@@ -344,6 +345,58 @@ export default function Research() {
       description: "Pharmachy department",
     },
   ];
+
+  const placementColumns = [
+    { key: "slNo", label: "S.No", width: "w-16" },
+    { key: "name", label: "Name of Student", width: "w-64" },
+    { key: "program", label: "Program Name", width: "w-64" },
+    { key: "session", label: "Session", width: "w-32" },
+    { key: "company", label: "Company Name", width: "flex-1" }
+  ];
+
+  const placementData = [
+    { slNo: 1, name: "Ritesh Tiwari", program: "B. Computer Science AI & ML", session: "2023-2026", company: "TTEC" },
+    { slNo: 2, name: "Prachi Sahu", program: "MBA", session: "2023-2025", company: "Bharti Airtel" },
+    { slNo: 3, name: "Kriti Rajput", program: "B.Tech Civil Engineering", session: "2021-2025", company: "Ultratech Cement" },
+    { slNo: 4, name: "Aashutosh Mishra", program: "LLB", session: "2022-2025", company: "Piramal Foundation" },
+    { slNo: 5, name: "Kashish Bawne", program: "BSc Computer Science", session: "2022-2025", company: "Accenture" },
+    { slNo: 6, name: "Aryan Prakash Gupta", program: "MBA", session: "2023-2025", company: "TCS" },
+    { slNo: 7, name: "Ashley Christeena Thomas", program: "B. Pharma", session: "2021-2025", company: "Boston Scientific" },
+    { slNo: 8, name: "Anisha Hussain", program: "MBA", session: "2023-2025", company: "Haleon" },
+    { slNo: 9, name: "Ajay Sharma", program: "BCA", session: "2022-2025", company: "Prodesk IT & Engineering Services" },
+    { slNo: 10, name: "Sayyad Sinwan Awez", program: "B.Tech Computer Science Engineering", session: "2021-2025", company: "Quality Kiosk" },
+    { slNo: 11, name: "Jigyasa Sahu", program: "BA Journalism & Mass Communication", session: "2022-2025", company: "Brandcom PR" },
+    { slNo: 12, name: "Sanskar Dewangan", program: "B Pharma", session: "2021-2025", company: "9M India Limited" },
+    { slNo: 13, name: "Supriya Kadti", program: "MBA", session: "2023-2025", company: "Univesto Capital" },
+    { slNo: 14, name: "Anish Dewangan", program: "MBA", session: "2023-2025", company: "ITSA Hospitals" },
+    { slNo: 15, name: "Nitin Yadav", program: "MBA", session: "2023", company: "Wangfeng Wheels Pvt Ltd" },
+    { slNo: 16, name: "Nupur Mourya", program: "BA Journalism & Mass Communication", session: "2024", company: "HITACHI - CHENNAI & NOIDA" },
+    { slNo: 17, name: "Abhinandan Kumar", program: "B.Tech Mechanical Engineering", session: "2023", company: "Piaggio" },
+    { slNo: 18, name: "Priyata Roy", program: "M Pharma", session: "2024", company: "Genpact" },
+    { slNo: 19, name: "Swati Dewangan", program: "M.Tech Civil Engineering", session: "2023", company: "Cummins India Ltd" },
+    { slNo: 20, name: "Amar Kumar", program: "B.Tech Civil Engineering", session: "2023", company: "Ultratech Cement Pvt Ltd" },
+    { slNo: 21, name: "Anjali Gajghate", program: "MCA", session: "2023", company: "Fiducia Labs Pvt Ltd" },
+    { slNo: 22, name: "Hrishabh Biswas", program: "B.Tech Civil Engineering", session: "2023", company: "Adani Group" },
+    { slNo: 23, name: "Ayush", program: "Diploma Electrical Engineering", session: "2023", company: "SUBROS LTD" },
+    { slNo: 24, name: "Tejas Nahargadkar", program: "B.Tech Computer Science Engineering", session: "2023", company: "Cisco Systems (India) Pvt. Ltd." },
+    { slNo: 25, name: "Ritesh Kumar", program: "B. Sc", session: "2022", company: "Wipro Ltd." },
+    { slNo: 26, name: "DIVESH PANDEY", program: "B.Pharma", session: "2022", company: "ALEMBIC PHARMA" },
+    { slNo: 27, name: "Madhuri Singh", program: "B.ED.", session: "2022", company: "KPS Raipur" },
+    { slNo: 28, name: "Shibani Dey", program: "BA Journalism & Mass Communication", session: "2022", company: "Paharaa TV" },
+    { slNo: 29, name: "Palash Mandal", program: "M.Sc Chemistry", session: "2022", company: "Aurobindo Pharma Ltd." },
+    { slNo: 30, name: "Namita Sharma", program: "B.Sc Biotechnology", session: "2023", company: "BALCO MEDICAL CENTRE" },
+    { slNo: 31, name: "Ankit Yadav", program: "Diploma Mechanical Engineering", session: "2022", company: "DIXON TECHNOLOGIES INDIA LTD" },
+    { slNo: 32, name: "Vaishnav Santosh", program: "B.Tech Computer Science Engineering", session: "2024", company: "TechMahindra" },
+    { slNo: 33, name: "Ankita Shrivastava", program: "LLM", session: "2020", company: "Ernst & Young LLP" },
+    { slNo: 34, name: "Abhishek Namdeo", program: "B.Com", session: "2021", company: "Godrej & Boyce Mfg. Co. Ltd." },
+    { slNo: 35, name: "Dolly Bagal", program: "MBA", session: "2019", company: "LG Electronics India Pvt. Ltd." },
+    { slNo: 36, name: "Harish Jaiswal", program: "B.Pharma", session: "2020", company: "Lex Process Outsourcing Pvt. Ltd." },
+    { slNo: 37, name: "Himanshi Bedi", program: "MBA", session: "2020", company: "Chegg India" },
+    { slNo: 38, name: "NISHA KUMARI", program: "MBA", session: "", company: "Nestle" },
+    { slNo: 39, name: "Aditi Choudhary", program: "MBA", session: "2023", company: "Mahindra Finance" },
+    { slNo: 40, name: "Khushboo Taank", program: "LLB", session: "2022", company: "RBP LAW CHAMBERS" },
+    { slNo: 41, name: "Rahul Agrawal", program: "MBA", session: "2023-2025", company: "VE Commercial Vehicles" },
+  ];
   return (
     <>
       <MainIntro
@@ -397,11 +450,11 @@ export default function Research() {
             buttons: [
               {
                 label: "Annual Report",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annaul+Report_2022-23.pdf", "Placements Annual Report 2022-23")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annaul+Report_2022-23.pdf", "_blank")
               },
               {
                 label: "Placement Details",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2022-23).pdf", "Placements Details 2022-23")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2022-23).pdf", "_blank")
               }
             ]
           },
@@ -412,11 +465,11 @@ export default function Research() {
             buttons: [
               {
                 label: "Annual Report",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2021-22.pdf", "Placements Annual Report 2021-22")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2021-22.pdf", "_blank")
               },
               {
                 label: "Placement Details",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2021-22).pdf", "Placements Details 2021-22")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2021-22).pdf", "_blank")
               }
             ]
           },
@@ -427,11 +480,11 @@ export default function Research() {
             buttons: [
               {
                 label: "Annual Report",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2020-21.pdf", "Placements Annual Report 2020-21")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2020-21.pdf", "_blank")
               },
               {
                 label: "Placement Details",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2020-21).pdf", "Placements Details 2020-21")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2020-21).pdf", "_blank")
               }
             ]
           },
@@ -442,11 +495,11 @@ export default function Research() {
             buttons: [
               {
                 label: "Annual Report",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2019-20.pdf", "Placements Annual Report 2019-20")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2019-20.pdf", "_blank")
               },
               {
                 label: "Placement Details",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2019-20).pdf", "Placements Details 2019-20")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details+(2019-20).pdf", "_blank")
               }
             ]
           },
@@ -457,14 +510,39 @@ export default function Research() {
             buttons: [
               {
                 label: "Annual Report",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2018-19.pdf", "Placements Annual Report 2018-19")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/KALINGA+Placement+Annual+Report_2018-19.pdf", "_blank")
               },
               {
                 label: "Placement Details",
-                onClick: () => openFlipbook("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details(2018-19).pdf", "Placements Details 2018-19")
+                onClick: () => window.open("https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement+Details(2018-19).pdf", "_blank")
               }
             ]
           }
+        ]}
+      />
+      <Gallery
+        title="Industrial Visit"
+        description=""
+        images={[
+          { id: 1, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-1.jpeg", alt: "International Students Introduction" },
+          { id: 2, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-2.jpeg", alt: "Why Choose Kalinga University" },
+          { id: 3, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-3.jpeg", alt: "International Students Group" },
+          { id: 4, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-4.jpg", alt: "Campus Safety and Security" },
+          { id: 5, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-5.jpg", alt: "International Students Banner" },
+          { id: 6, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-6.jpg", alt: "International Students Banner" },
+          { id: 7, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-7.jpg", alt: "International Students Banner" },
+          { id: 8, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-8.jpg", alt: "International Students Banner" },
+          { id: 9, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-9.jpg", alt: "International Students Banner" },
+          { id: 10, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-10.jpg", alt: "International Students Banner" },
+          { id: 11, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-11.jpg", alt: "International Students Banner" },
+          { id: 12, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-12.jpg", alt: "International Students Banner" },
+          { id: 13, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-13.jpg", alt: "International Students Banner" },
+          { id: 14, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-14.jpg", alt: "International Students Banner" },
+          { id: 15, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-15.jpg", alt: "International Students Banner" },
+          { id: 16, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-16.jpg", alt: "International Students Banner" },
+          { id: 17, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-17.jpg", alt: "International Students Banner" },
+          { id: 18, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-18.jpg", alt: "International Students Banner" },
+          { id: 19, src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/ind-19.jpg", alt: "International Students Banner" },
         ]}
       />
       <AdmissionCareer />

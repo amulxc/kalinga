@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-export default function LeadershipCard({ name, title, image, usePTagForName = false }) {
+export default function LeadershipCard({ name, title, image, usePTagForName = false, imageFit = "cover", imageContainerClassName = "h-[350px]" }) {
   const NameTag = usePTagForName ? 'p' : 'h3';
   return (
     <div className="bg-[var(--lite-sand)] rounded-xl p-4 h-full flex flex-col relative overflow-hidden">
       {/* Image */}
-      <div className="relative w-full h-[350px] mb-4 rounded-lg overflow-hidden">
+      <div className={`relative w-full ${imageContainerClassName} mb-4 rounded-lg overflow-hidden`}>
         <Image
           src={image}
           alt={name}
           fill
-          className="object-cover"
+          className={`object-${imageFit}`}
         />
       </div>
 

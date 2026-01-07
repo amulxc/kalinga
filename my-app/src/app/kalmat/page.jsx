@@ -103,7 +103,7 @@ export default function KalseePage() {
       backDescription: "Pay the application fees to complete your registration.",
       icon: "https://kalinga-university.s3.ap-south-1.amazonaws.com/kal-mat/fees.png",
       image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/entrance-exam/entrance-exam-banner.webp"
-    },  
+    },
     {
       id: 4,
       stepNumber: "04",
@@ -208,7 +208,7 @@ export default function KalseePage() {
   ]
   return (
     <>
-      <HeroSectionTwo 
+      <HeroSectionTwo
         id="hero-banner"
         backgroundImage="https://kalinga-university.s3.ap-south-1.amazonaws.com/kal-mat/kalmat-banner-new.png"
         title="Turn Your Business Ambition Into A Thriving Career"
@@ -218,8 +218,8 @@ export default function KalseePage() {
         showForm={false}
         customForm={<KalseeApplicationForm />}
       />
-      <KalseeMilestone 
-        milestones={milestones} 
+      <KalseeMilestone
+        milestones={milestones}
         imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/admission/student-img.png"
       />
       <MainIntro
@@ -228,8 +228,8 @@ export default function KalseePage() {
         imageUrl="https://kalinga-university.s3.ap-south-1.amazonaws.com/kal-mat/kalmat-intro.jpg"
         imageAlt="KALSEE"
       />
-      <ImageListItem textClassName="hidden" listItemTextClassName="text-black"  imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/kif/kif.webp" boxItems={boxItems} title="Details of KAL-MAT" subtitle="KAL-MAT Exam Information" description="Comprehensive details about the Kalinga Management Aptitude Test (KAL-MAT) including eligibility, exam pattern, dates, fees, and more." />
-      <DeptSyllabus 
+      <ImageListItem textClassName="hidden" listItemTextClassName="text-black" imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/kif/kif.webp" boxItems={boxItems} title="Details of KAL-MAT" subtitle="KAL-MAT Exam Information" description="Comprehensive details about the Kalinga Management Aptitude Test (KAL-MAT) including eligibility, exam pattern, dates, fees, and more." />
+      <DeptSyllabus
         title="Personal Interview"
         imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/bg-course.webp"
         imageAlt="KAL-MAT Course Materials"
@@ -247,7 +247,7 @@ export default function KalseePage() {
         rightCardSecondButtonLink="#hero-banner"
         mobileImageHeight={700}
       />
-      <SampleTesting 
+      <SampleTesting
         title="Pattern of KAL-MAT Exam"
         instruction="All questions carry 1 mark each."
         subtitle=""
@@ -299,7 +299,7 @@ export default function KalseePage() {
         ]}
       />
       <Suspense fallback={<div className="min-h-[400px] flex items-center justify-center">Loading programs...</div>}>
-        <OurPrograms 
+        <OurPrograms
           customPrograms={[
             {
               id: 1,
@@ -308,21 +308,9 @@ export default function KalseePage() {
               duration: "4 Year",
               eligibility: "10+12",
               type: "UG",
-              showSpecializationDropdown: true,
-              specializationOptions: [
-                "Airlines & Airport Operations Management",
-                "Digital Marketing & E-Commerce",
-                "Event Management & Public Relations",
-                "Family Business & Startups",
-                "Finance",
-                "Fintech",
-                "Hospital Administration",
-                "Human Resource Management",
-                "Marketing Management",
-                "Aviation"
-              ],
-              specializationPlaceholder: "- Select Single Specialisation -",
-              coursePageUrl: "/admissions"
+              coursePageUrl: "/courses/bachelor-of-business-administration",
+              hideScholarshipLink: true,
+              exploreLinkText: "Know More"
             },
             {
               id: 2,
@@ -331,23 +319,9 @@ export default function KalseePage() {
               duration: "2 Year",
               eligibility: "Graduation",
               type: "PG",
-              showSpecializationDropdown: true,
-              specializationOptions: [
-                "Banking & Insurance",
-                "Business Analytics",
-                "Digital Marketing & E-Commerce",
-                "Finance",
-                "Healthcare & Hospital Management",
-                "Hotel & Hospitality Management",
-                "Human Resource Management",
-                "Information Technology",
-                "NGO Management",
-                "International Business",
-                "Logistics & Supply Chain Management",
-                "Marketing Management"
-              ],
-              specializationPlaceholder: "- Select Dual Specialisation -",
-              coursePageUrl: "/admissions"
+              coursePageUrl: "/courses/master-of-business-administration",
+              hideScholarshipLink: true,
+              exploreLinkText: "Know More"
             }
           ]}
           hideSearchFilter={true}
@@ -362,7 +336,7 @@ export default function KalseePage() {
         subtitleClassName="hidden"
         title="Your Step-By-Step Startup Process"
         ctaLabel="Apply Now"
-        showReadMore={false}
+        showReadMore={true}
         showHeaderButton={false}
         showIcon={true}
         showImage={false}

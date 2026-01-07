@@ -62,7 +62,7 @@ const STATIC_PAGE_DATA = {
     title: 'Admissions',
     image: 'https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/student-gathered.webp'
   },
-  '/leadership': { title: 'Administration & Leadership' },
+  '/leadership': { title: 'Leadership' },
   '/academic-calendar': { title: 'Academic Calendar' },
   '/campuslife': { title: 'Life @ KU' },
   '/student-support': { title: 'Student Support' },
