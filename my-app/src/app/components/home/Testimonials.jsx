@@ -5,14 +5,14 @@ import SectionHeading from '../general/SectionHeading';
 
 // Testimonials data array
 const defaultTestimonialsData = [
-        {
-            id: 1,
-            name: "David Chen",
-            role: "Student- IT",
-            quote: "The mentorship I received was transformative. They didn't just help me refine my pitch; they helped me reshape my entire business model for scalability.",
-            image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/students-say-2.webp",
-            theme: "orange"
-        },
+    {
+        id: 1,
+        name: "David Chen",
+        role: "Student- IT",
+        quote: "The mentorship I received was transformative. They didn't just help me refine my pitch; they helped me reshape my entire business model for scalability.",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/students-say-2.webp",
+        theme: "orange"
+    },
     {
         id: 2,
         name: "Sarah Jenkins",
@@ -39,7 +39,7 @@ const defaultTestimonialsData = [
     }
 ];
 
-export default function     Testimonials({ testimonials = [], className = "", subtitle = "Real Stories. Real Success.", title = "Stories that define our Kalinga spirit.", titleClassName = "", subtitleClassName = "", subtitleTextColor = "" }) {
+export default function Testimonials({ testimonials = [], className = "", subtitle = "Real Stories. Real Success.", title = "Stories that define our Kalinga spirit.", titleClassName = "", subtitleClassName = "", subtitleTextColor = "" }) {
     const testimonialsData = testimonials.length > 0 ? testimonials : defaultTestimonialsData;
     const [activeIndex, setActiveIndex] = useState(1);
     const [isMobile, setIsMobile] = useState(false);
@@ -55,7 +55,7 @@ export default function     Testimonials({ testimonials = [], className = "", su
         const checkMobile = () => {
             setIsMobile(window.innerWidth < 768);
         };
-        
+
         checkMobile();
         window.addEventListener('resize', checkMobile);
         return () => window.removeEventListener('resize', checkMobile);
@@ -64,10 +64,10 @@ export default function     Testimonials({ testimonials = [], className = "", su
     const recalculateHeight = () => {
         const isMobileCheck = window.innerWidth < 768;
         let maxHeight = isMobileCheck ? 400 : 500;
-        
+
         // Force a reflow to ensure DOM is updated
         void document.body.offsetHeight;
-        
+
         Object.values(cardRefs.current).forEach((ref) => {
             if (ref && ref.current) {
                 // Temporarily remove any height constraints to get accurate measurement
@@ -75,13 +75,13 @@ export default function     Testimonials({ testimonials = [], className = "", su
                 const originalMaxHeight = ref.current.style.maxHeight;
                 ref.current.style.height = 'auto';
                 ref.current.style.maxHeight = 'none';
-                
+
                 const cardHeight = ref.current.scrollHeight || ref.current.offsetHeight;
-                
+
                 // Restore original styles
                 ref.current.style.height = originalHeight;
                 ref.current.style.maxHeight = originalMaxHeight;
-                
+
                 if (cardHeight > maxHeight) {
                     maxHeight = cardHeight;
                 }
@@ -94,10 +94,10 @@ export default function     Testimonials({ testimonials = [], className = "", su
     useEffect(() => {
         // Calculate after images load
         const timer = setTimeout(recalculateHeight, 200);
-        
+
         // Recalculate on window resize
         window.addEventListener('resize', recalculateHeight);
-        
+
         // Recalculate when active index changes
         recalculateHeight();
 
@@ -123,12 +123,12 @@ export default function     Testimonials({ testimonials = [], className = "", su
                     const originalClasses = element.className;
                     const originalStyle = element.style.cssText;
                     const originalDisplay = element.style.display;
-                    
+
                     // Get computed styles before making changes
                     const computedStyle = window.getComputedStyle(element);
                     const lineHeight = parseFloat(computedStyle.lineHeight) || parseFloat(computedStyle.fontSize) * 1.5;
                     const width = element.offsetWidth || element.clientWidth;
-                    
+
                     // Create a temporary hidden clone to measure full height
                     const clone = element.cloneNode(true);
                     clone.style.position = 'absolute';
@@ -137,16 +137,16 @@ export default function     Testimonials({ testimonials = [], className = "", su
                     clone.style.width = width + 'px';
                     clone.style.overflow = 'visible';
                     clone.className = originalClasses.replace('line-clamp-4', '').trim();
-                    
+
                     // Temporarily append to parent to measure
                     if (element.parentElement) {
                         element.parentElement.appendChild(clone);
                         const fullHeight = clone.scrollHeight;
                         element.parentElement.removeChild(clone);
-                        
+
                         // Calculate expected height for 4 lines
                         const expectedHeight = lineHeight * 4;
-                        
+
                         // If full height exceeds expected 4-line height, show "Read More"
                         const itemId = key.replace('quote-', '');
                         newNeedsReadMore[itemId] = fullHeight > expectedHeight + 5; // 5px tolerance for spacing
@@ -159,7 +159,7 @@ export default function     Testimonials({ testimonials = [], className = "", su
         // Check after a delay to ensure DOM is rendered and styles are applied
         const timer = setTimeout(checkQuotes, 200);
         window.addEventListener('resize', checkQuotes);
-        
+
         return () => {
             clearTimeout(timer);
             window.removeEventListener('resize', checkQuotes);
@@ -193,7 +193,7 @@ export default function     Testimonials({ testimonials = [], className = "", su
     const getSlideStyles = (index) => {
         const total = testimonialsData.length;
         let diff = (index - activeIndex) % total;
-        
+
         if (diff < -total / 2) diff += total;
         if (diff > total / 2) diff -= total;
 
@@ -220,8 +220,8 @@ export default function     Testimonials({ testimonials = [], className = "", su
             // Prev Slide (Left)
             styles.zIndex = 20;
             styles.opacity = isMobile ? 0 : 1;
-            styles.transform = isMobile 
-                ? 'translate(-50%, -50%) scale(0.85) translateZ(-50px)' 
+            styles.transform = isMobile
+                ? 'translate(-50%, -50%) scale(0.85) translateZ(-50px)'
                 : 'translate(-62%, -50%) scale(0.92)';
             styles.bgColor = '#FBBF58'; // Dark Yellow
             styles.contentOpacity = isMobile ? 0 : 0.4;
@@ -230,8 +230,8 @@ export default function     Testimonials({ testimonials = [], className = "", su
             // Next Slide (Right)
             styles.zIndex = 20;
             styles.opacity = isMobile ? 0 : 1;
-            styles.transform = isMobile 
-                ? 'translate(-50%, -50%) scale(0.85) translateZ(-50px)' 
+            styles.transform = isMobile
+                ? 'translate(-50%, -50%) scale(0.85) translateZ(-50px)'
                 : 'translate(-38%, -50%) scale(0.92)';
             styles.bgColor = '#FEDCB0'; // Light Yellow
             styles.contentOpacity = isMobile ? 0 : 0.6;
@@ -271,7 +271,7 @@ export default function     Testimonials({ testimonials = [], className = "", su
     };
 
     return (
-        <div 
+        <div
             className={`flex flex-col items-center justify-center overflow-x-hidden selection:bg-orange-100 selection:text-orange-900 py-16 rounded-xl mx-2 ${className}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -284,7 +284,7 @@ export default function     Testimonials({ testimonials = [], className = "", su
             <div className="relative w-full max-w-6xl mx-auto flex flex-col items-center justify-center">
                 {/* Section Heading */}
                 <div className="text-gray-600 text-center leading-tight text-xs sm:text-sm md:text-base">
-                    <SectionHeading 
+                    <SectionHeading
                         subtitleClassName={`text-center ${subtitleClassName}`}
                         titleClassName={`text-center ${titleClassName}`}
                         subtitle={subtitle}
@@ -293,9 +293,9 @@ export default function     Testimonials({ testimonials = [], className = "", su
                     />
                 </div>
                 {/* Slider Track */}
-                <div 
-                    className="mt-15 md:mt-5 relative w-full flex items-center justify-center overflow-visible" 
-                    style={{ 
+                <div
+                    className="mt-15 md:mt-5 relative w-full flex items-center justify-center overflow-visible"
+                    style={{
                         perspective: '1000px',
                         minHeight: `${sliderHeight}px`,
                         height: `${Math.max(sliderHeight, 500)}px`
@@ -336,9 +336,9 @@ export default function     Testimonials({ testimonials = [], className = "", su
                                         {/* Image */}
                                         <div className="w-full md:w-5/12 flex-shrink-0 relative">
                                             <div className="aspect-[3/3] sm:aspect-[3/3] w-full bg-white rounded-xl sm:rounded-2xl border-2 sm:border-4 md:border-[6px] border-white relative overflow-hidden">
-                                                <img 
-                                                    src={item.image} 
-                                                    className="w-full h-full object-cover object-top" 
+                                                <img
+                                                    src={item.image}
+                                                    className="w-full h-full object-cover object-top"
                                                     alt={item.name}
                                                     onLoad={() => {
                                                         // Recalculate height when image loads
@@ -347,29 +347,28 @@ export default function     Testimonials({ testimonials = [], className = "", su
                                                 />
                                             </div>
                                         </div>
-                    
+
                                         {/* Text Content */}
                                         <div className="flex-1 flex flex-col relative pt-2">
                                             <div className={`mb-4 sm:mb-6 ${item.theme === 'red' ? 'text-red-500' : 'text-orange-500'}`}>
                                                 <div className="flex gap-1">
                                                     <svg viewBox="0 0 26 41" xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-10 md:h-12" fill="#FEC071">
-                                                        <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#FEC071"/>
+                                                        <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#FEC071" />
                                                     </svg>
                                                     <svg viewBox="0 0 26 41" xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-10 md:h-12" fill="#F58220">
-                                                        <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#F58220"/>
+                                                        <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#F58220" />
                                                     </svg>
                                                 </div>
                                             </div>
                                             <div className="relative">
-                                                <p 
+                                                <p
                                                     ref={(el) => {
                                                         if (el) quoteRefs.current[`quote-${item.id}`] = el;
                                                     }}
-                                                    className={`text-slate-800 leading-relaxed md:leading-loose font-normal ${
-                                                        !expandedQuotes[item.id] && needsReadMore[item.id] 
-                                                            ? 'line-clamp-4' 
-                                                            : ''
-                                                    }`}
+                                                    className={`text-slate-800 leading-relaxed md:leading-loose font-normal ${!expandedQuotes[item.id] && needsReadMore[item.id]
+                                                        ? 'line-clamp-4'
+                                                        : ''
+                                                        }`}
                                                 >
                                                     {item.quote}
                                                 </p>
@@ -386,47 +385,50 @@ export default function     Testimonials({ testimonials = [], className = "", su
                                                 )}
                                             </div>
                                             <div className="mt-6 sm:mt-8 md:mt-auto pt-4 sm:pt-6">
-                                                <h4 className="text-[var(--red)] text-xl sm:text-2xl font-medium">{item.name}</h4>
+                                                <h4 className="text-[var(--red)] text-xl sm:text-2xl font-medium">
+                                                    {item.name}
+                                                </h4>
+                                                {item.year && <p className="text-sm font-normal text-gray-600 mt-1">{item.year}</p>}
                                                 <p className="text-xs sm:text-sm mt-1 max-w-[80%]">{item.role}</p>
                                             </div>
                                             <div className="flex justify-end gap-1 mt-4 sm:mt-0 relative top-[-40px]">
                                                 <svg viewBox="0 0 26 41" xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-10 md:h-12 rotate-0 rotate-y-180" fill="#FEC071">
-                                                    <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#FEC071"/>
+                                                    <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#FEC071" />
                                                 </svg>
                                                 <svg viewBox="0 0 26 41" xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-10 md:h-12 rotate-0 rotate-y-180" fill="#F58220">
-                                                    <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#F58220"/>
+                                                    <path d="M18.2832 40.0727C19.6607 40.0727 20.7877 38.9457 20.7877 37.5682C20.7877 36.6916 20.412 35.9402 19.6607 35.5645C19.5355 35.4393 19.5355 35.4393 19.4102 35.3141C13.1489 31.1816 12.7732 26.2977 13.9002 22.5409H22.5409C23.9184 22.5409 25.0455 21.4139 25.0455 20.0364V2.50455C25.0455 1.12705 23.9184 0 22.5409 0H2.50455C1.12705 0 0 1.12705 0 2.50455V24.795C0 27.9257 1.00182 31.0564 2.88023 33.5609C5.13432 36.5663 9.6425 39.9475 18.2832 40.0727Z" fill="#F58220" />
                                                 </svg>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
                             </div>
-                    </div>                  
-                </div>
                         );
                     })}
-        </div>
+                </div>
 
                 {/* Navigation Controls (Bottom) */}
                 <div className="flex items-center justify-center gap-3 sm:gap-4 z-50 relative lg:top-[-30px] top-[20px]">
-                <button
-                  type="button"
-                  onClick={prevSlide}
-                  className="cursor-pointer w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors"
-                  aria-label="Previous testimonial"
-                >
-                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <button
-                  type="button"
-                  onClick={nextSlide}
-                  className="cursor-pointer w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors"
-                  aria-label="Next testimonial"
-                >
-                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
+                    <button
+                        type="button"
+                        onClick={prevSlide}
+                        className="cursor-pointer w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors"
+                        aria-label="Previous testimonial"
+                    >
+                        <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button
+                        type="button"
+                        onClick={nextSlide}
+                        className="cursor-pointer w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-lg bg-[var(--button-red)] text-white flex items-center justify-center hover:bg-[#A2A2A2] transition-colors"
+                        aria-label="Next testimonial"
+                    >
+                        <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>

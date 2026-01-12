@@ -47,7 +47,7 @@ const IQACPage = () => {
           height: 80
         },
         {
-          src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/Home/nirf.webp",
+          src: "https://kalinga-university.s3.ap-south-1.amazonaws.com/IQAC/nirf-details.png",
           alt: "NIRF",
           name: "NIRF",
           width: 120,

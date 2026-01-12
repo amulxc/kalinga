@@ -24,6 +24,7 @@ export default function ImageContent({
   subtitleclassName = "!mb-0",
   additionalContent = null, // No default - each page should provide its own content
   titleClassName = "",
+  postTitle = null,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -52,6 +53,9 @@ export default function ImageContent({
           className={`col-span-6 gap-2 flex flex-col  ${mainContentColSpan} md:mx-auto`}
         >
           <SectionHeading title={title} subtitle={subtitle} titleClassName="!py-2" subtitleClassName={`${subtitleclassName}`} />
+          {postTitle && (
+            <h3 className="text-xl font-semibold mb-3">{postTitle}</h3>
+          )}
           <div className="text-sm pb-4 space-y-3">
             <p>{description}</p>
             {(isExpanded || readmore === false) && (

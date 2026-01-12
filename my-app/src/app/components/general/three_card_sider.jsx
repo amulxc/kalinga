@@ -24,46 +24,28 @@ const ReactPlayer = dynamic(() => import("react-player"), {
 const defaultVideoInterviews = [
     {
         id: 1,
-        title: "Anant Jha - Pharmachy Department",
-        videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Anant+Jha+CCRC+Placement+Video.mp4",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Anant+Jha.jpg",
+        title: "The Moment Kalinga Utsav Turned Into a Festival of Beats",
+        videoUrl: "https://youtu.be/aR7VkLpeAu4?si=QM8XiVq1Zv9AEWRl",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/news-and-events/kailnga-events-1.png",
     },
     {
         id: 2,
-        title: "Ashley Christina Thomas - Pharmacy Department",
-        videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Ashley+Christina+Thomas+CCRC+Placement+Video.mp4",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Ashley+Christina+Thomas.jpg",
+        title: "Kalinga Utsav’s Showstopper | This Group Dance",
+        videoUrl: "https://youtu.be/2agwhwY3OuY?si=pN2UxmLkRKQFN_D1",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/news-and-events/kailnga-events-2.png",
     },
     {
         id: 3,
-        title: "David Kisku - Pharmacy Department",
-        videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/David+Kisku+CCRC+Placement+Video.mp4",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/David+Kisku.jpg",
+        title: "Kalinga University Science Model Competition 4.0",
+        videoUrl: "https://youtu.be/BrpxFN8iZeQ?si=bnrbf8TTw3onq_Kb",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/news-and-events/kailnga-science.png",
     },
     {
         id: 4,
-        title: "Hrithik Kumar Sharma - MBA Student",
-        videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Hrithik+Kumar+Sharma+CCRC+Placement+Video.mp4",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Hrithik+Kumar+Sharma.jpg",
-    },
-    {
-        id: 5,
-        title: "Laxmi Bharti - MBA Student",
-        videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Laxmi+Bharti+CCRC+Placement+Video.mp4",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Laxmi+Bharti.jpg",
-    },
-    {
-        id: 6,
-        title: "Prachi Sahu - MBA Student",
-        videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Prachi+Sahu+CCRC+Placement+Video.mp4",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Prachi+Sahu.jpg",
-    },
-    {
-        id: 7,
-        title: "Shiwangi Sinha - Pharmacy Student",
-        videoUrl: "https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/Shiwangi+Sinha+CCRC+Placement+Video.mp4",
-        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/common/placeholder-img.png",
-    },
+        title: "98.20% Secured in CGBSE with Grit and Passion! Akhil Sen’s",
+        videoUrl: "https://youtu.be/qAjXv54M99g?si=2rx3yeUq4p_2vWYT",
+        image: "https://kalinga-university.s3.ap-south-1.amazonaws.com/news-and-events/topper.png",
+    }
 ];
 
 // Video Card Component
@@ -130,9 +112,9 @@ function VideoCardSlider({
 
 export default function SustainableSlider({
     videos = defaultVideoInterviews,
-    subtitle = "Video Interviews",
-    title = "Alumni Talk",
-    description = "Discover the inspiring journeys of our students and alumni as they share their experiences, achievements, and how Kalinga University shaped their careers.",
+    subtitle = "",
+    title = "Video",
+    description = "Explore the vibrant life at Kalinga University through our video gallery, showcasing memorable moments from campus events, academic achievements, and sporting excellence.",
     backgroundColor = "bg-[var(--light-gray)]",
     showPagination = true,
     showNavigation = true
