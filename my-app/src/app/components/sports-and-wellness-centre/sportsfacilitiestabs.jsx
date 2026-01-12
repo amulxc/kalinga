@@ -37,8 +37,15 @@ export default function SportsFacilitiesTabs({
   javelinThrowImageSrc = "https://kalinga-university.s3.ap-south-1.amazonaws.com/sports/javelin_throw.webp",
   hammerThrowImageSrc = "https://kalinga-university.s3.ap-south-1.amazonaws.com/sports/hammer_throw.webp",
 
+
   // Multiple images
-  gymImages = [],
+  gymImages = [
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/sports/gym1.webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/sports/gym2.webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/sports/gym3.webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/sports/gym4.webp",
+    "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/gym.webp"
+  ],
   yogaImages = [],
 }) {
   const tabs = useMemo(
@@ -248,12 +255,12 @@ function IndoorGames({
 
       <p className="mt-3 text-[var(--light-text-gray)] leading-relaxed">
         It is a great hangout place for students and a hub for recreational
-        activities. The 1500 sqft. Hall provides opportunities for leisure
+        activities. The 1500 sqft. hall provides opportunities for leisure
         activities where students can connect and play friendly matches.
       </p>
 
       <h5 className="mt-6 font-plus-jakarta-sans font-semibold text-[var(--foreground)]">
-        Indoor Games At KU
+        Indoor Games at KU
       </h5>
 
       <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -422,7 +429,7 @@ function OutdoorGames({
       </p>
 
       <h5 className="mt-7 font-plus-jakarta-sans font-semibold text-[var(--foreground)]">
-        Outdoor Games At KU
+        Outdoor Games at KU
       </h5>
 
       <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">

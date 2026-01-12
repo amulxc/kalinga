@@ -83,7 +83,7 @@ function Academiccards() {
             subtitle: "MEDIA & COMMUNICATION",
         },
         {
-            title: "Central Instrumentation Facility",
+            title: " Central Instrumentation Facility",
             description:
                 "Every year, we provide on-campus and off-campus internship opportunities to our students and conduct hands-on training programs on real-world skills to improve their practical knowledge and technical expertise. We don’t just make our students academically strong but also job-ready with new skills so that they can meet industry demands.",
             imageSrc:
@@ -129,7 +129,7 @@ function Academiccards() {
             // link: "/auditorium-and-halls",
         },
         {
-            title: "E-Learning Rooms (Swayam/MOOCs)",
+            title: "E-Learning Rooms",
             description:
                 "The E-Learning Rooms at Kalinga University come with high-speed internet connection, printing facilities, and modern infrastructure. Our students can have access to digital libraries, online courses, research databases, and e-resources.",
             imageSrc:
@@ -182,6 +182,15 @@ function Academiccards() {
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/academic-facilities/research-and-statistical-database-lab1.webp",
             logoSrc: "",
             subtitle: "DATA & ANALYTICS",
+        },
+        {
+            title: "Language Lab",
+            description:
+                "A dedicated learning space designed for students to improve their language and communication skills in English and Hindi",
+            imageSrc:
+                "https://kalinga-university.s3.ap-south-1.amazonaws.com/academics/arts.webp",
+            logoSrc: "",
+            subtitle: "DIGITAL EDUCATION",
         },
     ];
 
@@ -239,7 +248,7 @@ function Academiccards() {
         }
       `}</style>
 
-            <h2 className="mb-1 text-black text-center">
+            <h2 className="mb-1 text-black text-left md:text-center">
                 Our Dynamic Academic Facilities
             </h2>
 

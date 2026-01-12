@@ -90,7 +90,7 @@ function Valueadditionwhatmakes() {
         <>
             <WhyStudy
                 items={whatMakesKuStandOut}
-                sectionTitle='What Makes KU Stand Out?'
+                sectionTitle='What Makes KU Stand Out'
                 backgroundImage='https://kalinga-university.s3.ap-south-1.amazonaws.com/departments/why-this-course-1.webp' />
         </>
     )

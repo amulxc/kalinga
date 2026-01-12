@@ -69,7 +69,7 @@ function Hostelfacilities() {
 
     return (
         <div>
-            <Facility title='Explore our student-friendly amenities:' subtitle='Benefits of Staying At KU Hostel' facilities={hostFacilities} />
+            <Facility title='Explore Our Student-Friendly Amenities' subtitle='Benefits of Staying At KU Hostel' facilities={hostFacilities} description='Our hostels are thoughtfully designed to ensure the safety and comfort of both boys and girls. We want every student to focus on academics and enjoy college life without stressing about accommodation or daily essentials, as everything they need is available right on our campus.' />
         </div>
     )
 }

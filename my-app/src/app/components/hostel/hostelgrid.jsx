@@ -13,13 +13,13 @@ export default function Hostelgrid() {
       id: 1,
       title: "Boys’ Accommodation",
       number: "930 ",
-      description: "Comfortable hostel facilities for boys.",
+      description: "Comfortable hostel facilities for boys",
     },
     {
       id: 2,
       title: "Girls’ Accommodation",
       number: "460 ",
-      description: "Safe and secure hostel facilities for girls.",
+      description: "Safe and secure hostel facilities for girls",
     },
   ];
 
@@ -87,7 +87,7 @@ export default function Hostelgrid() {
               />
               <p className="text-[var(--light-text-gray)] max-w-xl">
                 Comfortable on-campus accommodation with a student-friendly
-                environment and essential amenities.
+                environment and essential amenities
               </p>
             </div>
 

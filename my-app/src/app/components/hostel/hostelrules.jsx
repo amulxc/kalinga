@@ -25,11 +25,14 @@ const Answer = ({ lines = [], penalty }) => {
             ))}
 
             {penalty ? (
-                <p className="pt-1">
-                    <span className="font-semibold text-[var(--foreground)]">Penalty:</span>{" "}
-                    {penalty}
-                </p>
+                <div className="pt-1 space-y-1">
+                    <span className="font-semibold text-[var(--foreground)]">Penalty:</span>
+                    {penalty.split("\n").map((p, i) => (
+                        <p key={i}>{p}</p>
+                    ))}
+                </div>
             ) : null}
+
         </div>
     );
 };
@@ -47,9 +50,6 @@ function NoteBox({ children }) {
 
 
 export default function Hostelrules() {
-    // ✅ Notes content (NOTE keyword bold)
-    const topNoteText =
-        "Violation of any of the following rules will invite a penalty, disciplinary action, or expulsion from the hostel as deemed appropriate by the university authorities.";
 
     const bottomNoteText =
         "If any student is found violating the above rules and regulations, the university reserves the right to take strict disciplinary action, including warning, fines, suspension, or expulsion from the hostel or university.";
@@ -89,7 +89,8 @@ export default function Hostelrules() {
                     lines={[
                         "Rough handling or damage to hostel furniture, fittings, or property is strictly forbidden."
                     ]}
-                    penalty="The cost of the damaged property will be recovered. If identified, the individual/group will pay double the cost,Repeated violations will result in expulsion from the hostel"
+                    penalty={`The cost of the damaged property will be recovered. If identified, the individual/group will pay double the cost.
+                              Repeated violations will result in expulsion from the hostel.`}
                 />
             ),
         },
@@ -135,10 +136,10 @@ export default function Hostelrules() {
                 <Answer
                     lines={[
                         "The following are strictly prohibited:",
-                        "Smoking.",
-                        "Gambling (including card games).",
-                        "Consumption/possession of alcohol or intoxicants.",
-                        "Possession of weapons.",
+                        "Smoking",
+                        "Gambling (including card games)",
+                        "Consumption/possession of alcohol or intoxicants",
+                        "Possession of weapons",
                     ]}
                     penalty="Severe disciplinary action under university rules. If the offender is not identified, all roommates will be penalised jointly."
                 />
@@ -179,7 +180,7 @@ export default function Hostelrules() {
             question: "Roll Call Attendance",
             answer: (
                 <Answer
-                    lines={["Daily Roll Call at prescribed times is mandatory."]}
+                    lines={["Daily roll call at prescribed times is mandatory."]}
                     penalty="Absenteeism without permission will be penalised."
                 />
             ),
@@ -313,13 +314,8 @@ export default function Hostelrules() {
     ];
 
     return (
-        <section className="py-16 bg-white">
+        <section className="-mt-10 bg-white">
             <div className="container mx-auto px-2 space-y-3">
-                {/* ✅ Before 1st rule: NOTE */}
-                <NoteBox>
-                    <span className="font-semibold">NOTE:</span> {topNoteText}
-                </NoteBox>
-
                 <FAQ title="Rules & Regulations" subtitle="" items={defaultFAQItems} />
 
                 {/* ✅ After last point: NOTE */}

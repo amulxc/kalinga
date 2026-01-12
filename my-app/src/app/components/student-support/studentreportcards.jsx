@@ -56,7 +56,7 @@ export default function Studentreportcards() {
         {
             title: "Academic Programs",
             description:
-                "Students can choose from 130+ academic programs in different streams that meet industry standards and are designed for student success.",
+                "Students can choose from 130 + academic programs from streams like Arts & Humanities, Commerce & Management, Education, Information Technology, Law, Pharmacy, Science, and Technology that are designed to provide industry-relevant knowledge to students and make them employable in their chosen field.",
             imageSrc:
                 "https://kalinga-university.s3.ap-south-1.amazonaws.com/academics/education.webp",
             logoSrc: "",

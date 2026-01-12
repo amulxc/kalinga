@@ -137,6 +137,24 @@ function Campusfacilitiescard() {
             logoSrc: "",
             subtitle: "CAMPUS EXPERIENCE",
         },
+        {
+            title: "Sports & Wellness Centre",
+            description:
+                "We have indoor and outdoor sports facilities where students can play different games like carom, chess, table tennis, cricket, football, badminton, Hockey, Lawn Tennis, and more. We also have a dedicated yoga room that supports students’ emotional and mental well-being.",
+            imageSrc:
+                "https://kalinga-university.s3.ap-south-1.amazonaws.com/sports/sportsmain.webp",
+            logoSrc: "",
+            subtitle: "CAMPUS EXPERIENCE",
+        },
+        {
+            title: "Gymnasium",
+            description:
+                "We have separate boys’ and girls’ gym facilities on our campus for students who are residing in our hostels. ",
+            imageSrc:
+                "https://kalinga-university.s3.ap-south-1.amazonaws.com/facilities/gym.webp",
+            logoSrc: "",
+            subtitle: "CAMPUS EXPERIENCE",
+        },
     ];
 
     // ✅ useLayoutEffect runs earlier than useEffect (prevents flash)
@@ -188,7 +206,7 @@ function Campusfacilitiescard() {
       `}</style>
 
             <h2 className="mb-1 text-black text-center">
-                A Campus That Feels Just Like Home
+                Campus Facilities
             </h2>
 
             {/* ✅ hidden on first paint, shown immediately after layout effect */}

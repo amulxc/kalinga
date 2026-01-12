@@ -18,7 +18,7 @@ function Hostelwarden() {
                 "Get a 24/7 water supply and electricity, purified drinking water, a gym facility, and all other basic amenities. It is our prime responsibility to take proper care of every child staying at our hostels.",
             ],
             quote:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "Hostel life teaches responsibility, respect, and resilience beyond the classroom.",
         },
     ];
 
