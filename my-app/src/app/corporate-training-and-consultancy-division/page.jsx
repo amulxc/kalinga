@@ -302,6 +302,9 @@ export default function CorporateTrainingAndConsultancyDivision() {
         subtitleImage="https://kalinga-university.s3.ap-south-1.amazonaws.com/ccrc/logo-ctcd.svg"
         subtitleImageAlt="CTCD Logo"
         customForm={<CTCDApplicationForm />}
+        buttonText="Know More"
+        buttonLink="/corporate-training-and-consultancy-division"
+
       />
       <MainIntro
         title="Corporate Training And Consultancy Division (CTCD)"
@@ -320,6 +323,7 @@ export default function CorporateTrainingAndConsultancyDivision() {
         imageAlt="CTCD"
         initialVisibleParagraphs={1}
         hidePointsUntilExpanded={true}
+
       />
       <CtcdTrainingTabs />
       <MasterClassTab

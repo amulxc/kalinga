@@ -24,16 +24,17 @@ const HeroSectionTwo = ({
   hideBorder = false,
   subtitleImage = null,
   subtitleImageAlt = '',
+  showButton = true,
 }) => {
   return (
     <section id={id || undefined} className="relative min-h-[500px] md:h-[600px] lg:h-[100vh] md:mx-2 mx-0 mb-8 md:mb-0 pb-8 md:pb-0">
       {/* Background Image */}
-      <div 
+      <div
         className={`absolute inset-0 bg-cover bg-center bg-no-repeat rounded-xl h-full w-full ${hideBorder ? '' : 'border-4 border-[var(--dark-green)]'}`}
         style={{
           backgroundImage: `url('${backgroundImage}')`,
           backgroundColor: '', // fallback color
-        }} 
+        }}
       >
         {/* Background overlay layer with 80% opacity */}
         {showBlackOverlay && (
@@ -54,14 +55,14 @@ const HeroSectionTwo = ({
               <div className="mb-4">
                 <Image src={subtitleImage} alt={subtitleImageAlt} width={120} height={30} className="object-contain" />
               </div>
-              <SectionHeading 
+              <SectionHeading
                 title={title}
                 subtitle=""
                 titleClassName={`${titleTextColor} max-w-md text-[50px]`}
               />
             </>
           ) : (
-            <SectionHeading 
+            <SectionHeading
               title={title}
               subtitle={subtitle}
               titleClassName={`${titleTextColor} max-w-md text-[50px]`}
@@ -70,8 +71,9 @@ const HeroSectionTwo = ({
             />
           )}
           {/* <p className="md:text-base text-xs text-[var(--foreground)] ">{description}</p> */}
-          <Link href={buttonLink} className="inline-flex">
-            <GlobalArrowButton
+          {showButton && (
+            <Link href={buttonLink} className="inline-flex">
+              <GlobalArrowButton
                 className="!bg-white !text-black"
                 arrowClassName="!bg-[var(--button-red)]"
                 arrowIconClassName="!text-white"
@@ -79,9 +81,10 @@ const HeroSectionTwo = ({
               >
                 {buttonText}
               </GlobalArrowButton>
-          </Link>
+            </Link>
+          )}
         </div>
-        
+
         {/* Right Side - Form */}
         {(showForm || customForm) && (
           customForm ? (

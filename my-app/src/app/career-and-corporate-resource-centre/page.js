@@ -11,6 +11,7 @@ import DeptHeadIntro from "@/app/components/department/dept_head_intro";
 import AdmissionCareer from "@/app/components/general/admission_cta";
 import MediaCardSlider from "@/app/components/general/media-card-slider";
 import { title } from "process";
+import SectionHeading from "../components/general/SectionHeading";
 
 const breadcrumbData = {
   heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/kif/kif-banner.webp",
@@ -350,9 +351,12 @@ export default function CCRCPage() {
     />
     <ImageListItem items={Items} description="" imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/placement/placement-intro.jpg" title="Benefits for Organisations" />
     <DeptHeadIntro items={MentorIntroProps} />
-
+    <SectionHeading
+      title="Our Domains"
+      titleClassName="text-center mt-10"
+    />
     <Cards cards={cards} />
-    <Hearfrom items={sliderItems} title="Hear From Our Clients" />
+    <Hearfrom items={sliderItems} title="From Our Clients" />
     <MediaCardSlider
       categoryTitle=""
       title="Video Interviews"

@@ -18,7 +18,7 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 
 const breadcrumbData = {
   heroImage: "https://kalinga-university.s3.ap-south-1.amazonaws.com/kif/kif-banner.webp",
-  pageTitle: "Kalinga Incubation Facility",
+  pageTitle: "Kalinga Incubation Foundation",
   customBreadcrumbs: [
     { label: 'Home', href: '/' },
     { label: 'Kif', href: '/kif' }
@@ -462,6 +462,7 @@ export default function KIFPage({
         certificateLink="https://kalinga-university.s3.ap-south-1.amazonaws.com/kif/KIF+MCA_compressed.pdf"
         certificateLinkText="Ministry of Corporate Affairs Certificate"
         selectionCriteria={selectionCriteria}
+
       />
       <VisionMission data={visionMissionData} showImg={false} />
       <ImageListItem textClassName="hidden" listItemTextClassName="text-black" imageSrc="https://kalinga-university.s3.ap-south-1.amazonaws.com/kif/chart+(17).webp" boxItems={boxItems} title="Our Key Offerings" subtitle="About KIF" description="Kalinga Incubation Foundation (KIF) is a platform for students to incubate their ideas and turn them into reality." />
