@@ -195,7 +195,7 @@ function Courses() {
 
   // CareerPath content - Map from API career_info - Only if data exists
   const careerPathContent = courseData?.career_info && courseData.career_info.length > 0 ? {
-    title: "Career Pathway",
+    title: "Career Pathways",
     description: "Get ready to turn your unique ideas into reality in the world of tech and design with limitless career opportunities.",
     careers: courseData.career_info
       .sort((a, b) => (a.display_order || 0) - (b.display_order || 0))
@@ -300,7 +300,7 @@ function Courses() {
         index === self.findIndex(t => t.id === tab.id)
       )
       .sort((a, b) => {
-        const order = ['about', 'program details', 'specialization', 'career', 'career pathway', 'eligibility', 'fees', 'syllabus'];
+        const order = ['about', 'program details', 'specialization', 'career', 'Career Pathways', 'eligibility', 'fees', 'syllabus'];
         const aIndex = order.findIndex(o => a.id.toLowerCase().includes(o.toLowerCase()));
         const bIndex = order.findIndex(o => b.id.toLowerCase().includes(o.toLowerCase()));
         if (aIndex === -1 && bIndex === -1) return 0;

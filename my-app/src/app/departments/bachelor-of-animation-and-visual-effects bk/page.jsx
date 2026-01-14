@@ -79,7 +79,7 @@ function Courses() {
 
   // CareerPath content
   const careerPathContent = {
-    title: "Career Pathway",
+    title: "Career Pathways",
     description: "Get ready to turn your unique ideas into reality in the world of tech and design with limitless career opportunities.",
     careers: [
       {
@@ -240,7 +240,7 @@ function Courses() {
   const navigationTabs = [
     { id: 'about', label: 'Program details' },
     { id: 'specialization', label: 'Specialization' },
-    { id: 'career', label: 'Career Pathway' },
+    { id: 'career', label: 'Career Pathways' },
     { id: 'eligibility', label: 'Eligibility' },
     { id: 'eligibility', label: 'Fees' },
     { id: 'syllabus', label: 'Syllabus' },

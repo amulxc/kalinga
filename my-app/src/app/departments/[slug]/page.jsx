@@ -449,10 +449,10 @@ export default function DynamicDepartmentPage() {
       )}
 
 
-      {/* Career Pathways */}
+      {/* Career Pathwayss */}
       {departmentData?.career_pathways && departmentData.career_pathways.length > 0 && (
         <CareerPath
-          title="Career Pathways"
+          title="Career Pathwayss"
           description={parseHtmlToText(departmentData.career_pathway_description || "")}
           careers={departmentData.career_pathways.map(career => ({
             id: career.id,

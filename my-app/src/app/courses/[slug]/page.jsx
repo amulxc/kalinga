@@ -495,7 +495,7 @@ export default function DynamicCoursePage() {
   useBreadcrumbData(breadcrumbData);
 
   const careerPathContent = courseData?.career_info && courseData.career_info.length > 0 ? {
-    title: "Career Pathway",
+    title: "Career Pathways",
     description: parseHtmlToText(courseData.career_pathway || ""),
     careers: courseData.career_info
       .sort((a, b) => (a.display_order || 0) - (b.display_order || 0))
@@ -650,9 +650,9 @@ export default function DynamicCoursePage() {
       tabs.push({ id: 'eligibility', label: 'Eligibility Criteria' });
     }
 
-    // Career Pathways section
+    // Career Pathwayss section
     if (careerPathContent && careerPathContent.careers && careerPathContent.careers.length > 0) {
-      tabs.push({ id: 'career', label: 'Career Pathways' });
+      tabs.push({ id: 'career', label: 'Career Pathwayss' });
     }
 
     // Specialization section
