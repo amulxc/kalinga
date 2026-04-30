@@ -765,7 +765,7 @@ export default function PartnershipsForTheGoalsPage() {
 
             <div className="mt-10">
                 <SectionHeading
-                    title="Events and Reports"
+                    title="Event Reports"
                     description=""
                     titleClassName="text-center"
                 />

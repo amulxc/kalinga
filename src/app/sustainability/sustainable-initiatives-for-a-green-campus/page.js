@@ -39,6 +39,16 @@ const mainIntroContent1 = {
     imageAlt: "Our Approach to Sustainability",
 };
 
+const mainIntroContent2 = {
+    title: "Activities to Promote Sustainable Initiatives for Green Campus",
+    description: [
+        "Kalinga University, under its eight schools, has established different clubs to develop a sense of environmental responsibility among students and staff. These clubs conduct hands-on training programs, seminars, workshops, poster making and painting competitions, science model exhibitions, guest lectures, expert talks, and debates on topics related to environmental sustainability and climate action. Students get practical exposure through various educational trips and field visits, and the NSS team organises tree-planting drives and cleanliness campaigns.",
+
+    ],
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-7.webp",
+    imageAlt: "Sustainable Communities & Partnership",
+};
+
 const items = [
     {
         question: "Green Coverage Details",
@@ -84,7 +94,7 @@ const greenCoverageReports = [
 const eventReports = [
     { id: 1, text: "List of Plant Diversity", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Plant+Diversity+at+Kalinga+University.pdf" },
     { id: 2, text: "Plant Diversity of Kalinga University (Audited in August 2023)", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Report+on+Plant+Diversity+of+Kalinga+University.pdf" },
-    { id: 3, text: "Events Reports", url: "#" }
+    // { id: 3, text: "Events Reports", url: "#" }
 ];
 
 const eventsreportsnew = [
@@ -108,13 +118,13 @@ const policyDocuments = [
 
 const cards = [
     {
-        title: "Use of Bicycles/Battery-Powered Vehicles",
+        title: "Centre for Sustainable Mobility & Green Campus Development",
         description:
-            "The University strictly prohibits the entry of conventional automobiles inside the campus, and only eco-friendly vehicles, such as bicycles and battery-powered vehicles, are permitted. Students and staff members are also encouraged to use cycles for daily commuting within the campus. We have a dedicated centre of excellence - Eblu by Godawari Electric Motors Pvt. Ltd., where students learn the A-Z manufacturing and functioning of a wide range of EVs, including E-Auto, E-Cycle, E-Scooter, and E-Cargo vehicles, proving our commitment towards sustainability and innovation.",
+            "The University strictly prohibits the entry of conventional automobiles on campus, and only eco-friendly vehicles, such as bicycles and battery-powered vehicles, are permitted. It has established a dedicated Centre of Excellence (CoE) - Eblu by Godawari Electric Motors Pvt. Ltd. to raise awareness of eco-friendly and energy-efficient transportation systems and promote sustainable and innovative practices. With this CoE, students learn A-Z manufacturing and functioning of a wide range of EVs, including E-Auto, E-Cycle, E-Scooter, and E-Cargo vehicles. The university actively encourages staff members to adopt carpooling practices, helping reduce fuel consumption, traffic congestion, and carbon emissions. Additionally, well-organized bus facilities are provided to ensure safe, reliable, and convenient commuting for staff. These combined efforts demonstrate the institution’s strong commitment to environmental responsibility, energy conservation, and building a greener, more sustainable campus culture.",
         imageSrc:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-1.webp",
+            "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/chart.png",
         logoSrc: "",
-        subtitle: "USE OF BICYCLES/BATTERY-POWERED VEHICLES",
+        subtitle: "SUSTAINABLE MOBILITY & GREEN CAMPUS DEVELOPMENT",
         link: "#",
     },
     {
@@ -155,15 +165,6 @@ const cards = [
             "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-5.webp",
         logoSrc: "",
         subtitle: "PLASTIC FREE CAMPUS",
-        link: "#",
-    },
-    {
-        title: "Activities to Promote Sustainable Initiatives for Green Campus",
-        description: "Kalinga University, under its eight schools, has established different clubs to develop a sense of environmental responsibility among students and staff. These clubs conduct hands-on training programs, seminars, workshops, poster making and painting competitions, science model exhibitions, guest lectures, expert talks, and debates on topics related to environmental sustainability and climate action. Students get practical exposure through various educational trips and field visits, and the NSS team organises tree-planting drives and cleanliness campaigns.",
-        imageSrc:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-6.webp",
-        logoSrc: "",
-        subtitle: "ACTIVITIES TO PROMOTE SUSTAINABLE INITIATIVES",
         link: "#",
     }
 ];
@@ -242,6 +243,16 @@ export default function GreenCampusPage() {
                     titleClassName="hidden"
                 />
             </div>
+            <MainIntro
+                title={mainIntroContent2.title}
+                description={mainIntroContent2.description}
+                points={mainIntroContent2.points}
+                imageUrl={mainIntroContent2.imageUrl}
+                imageAlt={mainIntroContent2.imageAlt}
+                showKnowMore={true}
+                hidePointsUntilExpanded={true}
+                sectionClassName="bg-white pb-16 md:pb-24"
+            />
             <PhdObjectivesPanel
                 title="some of the program include :"
                 subtitle="Kalinga University has established different clubs to develop a sense of environmental responsibility among students and staff. Some of the programs include:"
@@ -288,7 +299,7 @@ export default function GreenCampusPage() {
                 </div>
             </div>
 
-            {/* <div className="mt-10">
+            <div className="mt-10">
                 <SectionHeading
                     title="Plant Diversity at Kalinga University"
                     description=""
@@ -297,7 +308,7 @@ export default function GreenCampusPage() {
             </div>
             <ResearchSixGridButtons
                 buttons={eventReports}
-            /> */}
+            />
             <div className="mt-10">
                 <SectionHeading
                     title="Events Reports"
