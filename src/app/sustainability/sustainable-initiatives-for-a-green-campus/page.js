@@ -85,7 +85,7 @@ const greenCoverageReports = [
     { id: 5, text: "Tree Plantation by NSS Unit", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Green+Initiations+2022-23.pdf" },
     { id: 6, text: "Green Audit Report & Certificate (2020-2021)", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Green+Audit+Report+%26+Certificate+-+2020-21+(1).pdf" },
     { id: 7, text: "Green Audit Report & Certificates (2023)", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Green+Audit+Report+%26+Certificates+-+2023.pdf" },
-    { id: 8, text: "Green Audit/Environmental Audit Manual", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/KU_Environment_Audit_Manual_ISO+14001.pdf" },
+    { id: 8, text: "Green Audit/Environmental Audit Manual", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/KU_Environment_Audit_Manual_ISO 14001.pdf" },
     { id: 9, text: "Members of the Green Audit Committee and Geotagged Photographs", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Green+Campus+Geotag+Photos.pdf" },
     { id: 10, text: "Policy Guidelines for Environmental Sustainability", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Policy+on+Environment+Sustainability.pdf" },
     { id: 11, text: "Best Practice 2 - Harmony in Action: Implementing Sustainable Development Goals for a Better World", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Best+Practice+2_Green+Coverage+(1)+(1).pdf" },
@@ -162,7 +162,7 @@ const cards = [
         description:
             "To maintain a plastic-free environment, the University conducts regular awareness programs and campaigns to educate students and staff about the harmful effects of plastic usage on the environment. Banners, awareness posters, and signboards are displayed across the campus to discourage plastic usage and promote sustainable alternatives.",
         imageSrc:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-5.webp",
+            "https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-green-campus/plastic-free-campus.webp",
         logoSrc: "",
         subtitle: "PLASTIC FREE CAMPUS",
         link: "#",
@@ -246,18 +246,14 @@ export default function GreenCampusPage() {
             <MainIntro
                 title={mainIntroContent2.title}
                 description={mainIntroContent2.description}
-                points={mainIntroContent2.points}
+                description1="Some of the programs include:"
+                points={sustainableActivitiesObjectives.map(obj => obj.item)}
                 imageUrl={mainIntroContent2.imageUrl}
                 imageAlt={mainIntroContent2.imageAlt}
                 showKnowMore={true}
                 hidePointsUntilExpanded={true}
+                reverseLayout={true}
                 sectionClassName="bg-white pb-16 md:pb-24"
-            />
-            <PhdObjectivesPanel
-                title="some of the program include :"
-                subtitle="Kalinga University has established different clubs to develop a sense of environmental responsibility among students and staff. Some of the programs include:"
-                imageSrc="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-6.webp"
-                phdObjectives={sustainableActivitiesObjectives}
             />
 
             <MainIntro
