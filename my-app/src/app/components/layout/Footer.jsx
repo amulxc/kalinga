@@ -85,7 +85,8 @@ export default function Footer() {
                   <ul className="text-white/80 space-y-2 sm:space-y-3">
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/student-welfare">Student Welfare</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://wpengineering.kalingauniversity.ac.in/">Working Professionals</a></li>
-                    <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/sustainability">SDG Cell</a></li>
+                    <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/sustainability">Sustainability</a></li>
+                    <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://kusis.kalingauniversity.edu.in/" target="_blank" rel="noopener noreferrer">ERP Login</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/ieee">IEEE Student Branch</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/executive-development-program">Executive <br />Development Program</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/csr">CSR @ KU</a></li>

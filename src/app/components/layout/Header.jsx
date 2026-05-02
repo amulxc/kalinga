@@ -17,6 +17,9 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
+  const [activeTopBarMenu, setActiveTopBarMenu] = useState(null);
+  const topBarEventsMegaAnchorRef = useRef(null);
+  const topBarMegaLeaveTimerRef = useRef(null);
   const [departments, setDepartments] = useState([]);
   const pathname = usePathname();
   const router = useRouter();
@@ -68,6 +71,11 @@ const Header = () => {
     setIsScrolled(false);
     setIsMobileMenuOpen(false);
     setActiveMenu(null);
+    setActiveTopBarMenu(null);
+    if (topBarMegaLeaveTimerRef.current) {
+      clearTimeout(topBarMegaLeaveTimerRef.current);
+      topBarMegaLeaveTimerRef.current = null;
+    }
     if (typeof window !== 'undefined') {
       const html = document.documentElement;
       // Skip scroll reset if there's a hash (allow deep linking)
@@ -75,6 +83,11 @@ const Header = () => {
         setIsScrolled(false);
         setIsMobileMenuOpen(false);
         setActiveMenu(null);
+        setActiveTopBarMenu(null);
+        if (topBarMegaLeaveTimerRef.current) {
+          clearTimeout(topBarMegaLeaveTimerRef.current);
+          topBarMegaLeaveTimerRef.current = null;
+        }
         return;
       }
 
@@ -102,7 +115,26 @@ const Header = () => {
     }
   }, [pathname]);
 
-
+  const eventsActivitiesMegaMenu = useMemo(
+    () => ({
+      imageHref: '/news-and-events',
+      imageUrl: 'https://cdn.kalingauniversity.ac.in/campus-life/student-grppic.webp',
+      imageAlt: 'News and Events',
+      sections: [
+        {
+          title: 'Events & Activities',
+          links: [
+            { label: 'Events & Activities', href: '/news-and-events#events-activities' },
+            { label: 'Conferences & Events', href: '/conferences-and-events' },
+            { label: 'Upcoming Conferences', href: 'https://kalingaplus.kalingauniversity.ac.in/international-conference-on-sustainable-development-towards-a-greener-future-icsdgf-2026/' },
+            { label: 'Industrial Visits', href: '/news-and-events#industrial-visits' },
+            { label: 'Excursions', href: '/news-and-events/#excursion' },
+          ],
+        },
+      ],
+    }),
+    []
+  );
 
   const navItems = useMemo(() => [
     {
@@ -327,65 +359,49 @@ const Header = () => {
       }
     },
     {
-      id: 'news',
-      label: 'Events & Activities',
-      href: '/news-and-events',
+      id: 'sustainability',
+      label: 'Sustainability',
+      href: '/sustainability',
       megaMenu: {
-        imageUrl: 'https://cdn.kalingauniversity.ac.in/campus-life/student-grppic.webp',
-        imageAlt: 'News and Events',
+        openAbove: true,
+        imageHref: '/sustainability',
+        imageUrl: 'https://cdn.kalingauniversity.ac.in/common/kalinga-front-banner02.webp',
+        imageAlt: 'Sustainability and SDG at Kalinga University',
         sections: [
           {
-            title: 'News & Activities',
+            title: 'Sustainability',
             links: [
-              { label: 'Events & Activities', href: '/news-and-events#events-activities' },
-              { label: 'Conferences & Events', href: '/conferences-and-events' },
-              { label: 'Upcoming Conferences', href: 'https://kalingaplus.kalingauniversity.ac.in/international-conference-on-sustainable-development-towards-a-greener-future-icsdgf-2026/' },
-              { label: 'Industrial Visits', href: '/news-and-events#industrial-visits' },
-              { label: 'Excursions', href: '/news-and-events/#excursion' },
+              { label: 'SDG Cell Overview', href: '/sustainability' },
+              { label: 'Water Conservation', href: '/sustainability/water-conservation' },
+              { label: 'Energy Conservation', href: '/sustainability/energy-conservation' },
+              { label: 'Waste Management', href: '/sustainability/waste-management' },
+              { label: 'Sustainable Green Campus', href: '/sustainability/green-campus' },
             ]
-          }
+          },
         ]
       }
     },
   ], [departments]);
-  const topBarItems = [
 
-    {
-      label: 'International',
-      href: '/international-students',
-    },
-    {
-      label: 'IQAC',
-      href: '/internal-quality-assurance-cell',
-    },
-    {
-      label: 'CCRC',
-      href: '/career-and-corporate-resource-centre',
-    },
-    {
-      label: 'CIF',
-      href: '/central-instrumentation-facility',
-    },
-    {
-      label: 'CSR',
-      href: '/csr',
-    },
-    {
-      label: 'ERP Login',
-      href: 'https://kusis.kalingauniversity.edu.in/',
-    },
-    {
-      label: 'Contact Us',
-      href: '/contact-us',
-    },
-  ];
+  const topBarItems = useMemo(
+    () => [
+      { label: 'International', href: '/international-students' },
+      { label: 'IQAC', href: '/internal-quality-assurance-cell' },
+      { label: 'CCRC', href: '/career-and-corporate-resource-centre' },
+      { label: 'CIF', href: '/central-instrumentation-facility' },
+      { label: 'CSR', href: '/csr' },
+      { label: 'Events & Activities', href: '/news-and-events', megaMenu: eventsActivitiesMegaMenu },
+      { label: 'Contact Us', href: '/contact-us' },
+    ],
+    [eventsActivitiesMegaMenu]
+  );
 
   return (
     <header className="relative z-[10040] w-full overflow-visible">
-      {/* Top Bar */}
-      <div suppressHydrationWarning className="text-xs w-full">
-        <div suppressHydrationWarning className="container mx-auto px-2 pt-3 pb-2 border-b border-gray-200">
-          <div suppressHydrationWarning className="flex justify-end gap-10 font-medium gap-2 text-[var(--dark-gray)] flex-wrap">
+      {/* Top Bar — higher z-index than main nav so mega menus are not hidden behind it */}
+      <div suppressHydrationWarning className="text-xs w-full relative z-[10070] overflow-visible">
+        <div suppressHydrationWarning className="container mx-auto px-2 pt-3 pb-2 border-b border-gray-200 overflow-visible">
+          <div suppressHydrationWarning className="flex justify-center gap-6 font-medium gap-2 text-[var(--dark-gray)] flex-wrap overflow-visible">
             {/* <a href={getEmail('admissions').href} className="flex items-center gap-1.5 text-[var(--red)]">
               <FlatIcon name="email" />
               <span>{getEmail('admissions').display}</span>
@@ -399,11 +415,58 @@ const Header = () => {
               <span>Campus View</span>
             </a>
 
-            {topBarItems.map((item) => (
-              <Link key={item.label} href={item.href} className="lg:flex hidden items-center  gap-1.5 text-[var(--dark-gray)]">
-                <span>{item.label}</span>
-              </Link>
-            ))}
+            {topBarItems.map((item) =>
+              item.megaMenu ? (
+                <div
+                  key={item.label}
+                  ref={item.label === 'Events & Activities' ? topBarEventsMegaAnchorRef : undefined}
+                  className="relative lg:flex hidden items-center gap-1.5 text-[var(--dark-gray)] z-[1]"
+                  onMouseEnter={() => {
+                    if (topBarMegaLeaveTimerRef.current) {
+                      clearTimeout(topBarMegaLeaveTimerRef.current);
+                      topBarMegaLeaveTimerRef.current = null;
+                    }
+                    setActiveMenu(null);
+                    setActiveTopBarMenu(item.label);
+                  }}
+                  onMouseLeave={() => {
+                    topBarMegaLeaveTimerRef.current = setTimeout(() => {
+                      setActiveTopBarMenu(null);
+                      topBarMegaLeaveTimerRef.current = null;
+                    }, 200);
+                  }}
+                >
+                  <Link href={item.href} className="flex items-center gap-1.5">
+                    <span>{item.label}</span>
+                  </Link>
+                  {activeTopBarMenu === item.label && (
+                    <MegaMenu
+                      sections={item.megaMenu.sections}
+                      imageUrl={item.megaMenu.imageUrl}
+                      imageAlt={item.megaMenu.imageAlt}
+                      imageHref={item.megaMenu.imageHref}
+                      openAbove={false}
+                      useFixedAnchor={item.label === 'Events & Activities'}
+                      anchorRef={item.label === 'Events & Activities' ? topBarEventsMegaAnchorRef : undefined}
+                      onMenuPointerEnter={
+                        item.label === 'Events & Activities'
+                          ? () => {
+                              if (topBarMegaLeaveTimerRef.current) {
+                                clearTimeout(topBarMegaLeaveTimerRef.current);
+                                topBarMegaLeaveTimerRef.current = null;
+                              }
+                            }
+                          : undefined
+                      }
+                    />
+                  )}
+                </div>
+              ) : (
+                <Link key={item.label} href={item.href} className="lg:flex hidden items-center gap-1.5 text-[var(--dark-gray)]">
+                  <span>{item.label}</span>
+                </Link>
+              )
+            )}
             <div suppressHydrationWarning className="relative">
               <button
                 type="button"
@@ -442,13 +505,16 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-2 overflow-visible">
+          <nav className="hidden lg:flex items-center gap-2 overflow-visible relative z-[102000]">
             {navItems.map((item) => (
               <div
                 suppressHydrationWarning
                 key={item.id}
                 className="relative group z-[10060]"
-                onMouseEnter={() => item.megaMenu && setActiveMenu(item.id)}
+                onMouseEnter={() => {
+                  setActiveTopBarMenu(null);
+                  if (item.megaMenu) setActiveMenu(item.id);
+                }}
                 onMouseLeave={() => setActiveMenu(null)}
               >
 
@@ -469,14 +535,16 @@ const Header = () => {
                     sections={item.megaMenu.sections}
                     imageUrl={item.megaMenu.imageUrl}
                     imageAlt={item.megaMenu.imageAlt}
+                    imageHref={item.megaMenu.imageHref}
+                    openAbove={item.megaMenu.openAbove}
                   />
                 )}
               </div>
             ))}
           </nav>
 
-          {/* Right Actions */}
-          <div className="flex items-center gap-2">
+          {/* Right Actions — lower stacking than nav so mega menus can cover Admissions */}
+          <div className="relative z-[40] flex items-center gap-2">
 
             <Link href="/admissions">
               <GlobalArrowButton className="lg:flex hidden">

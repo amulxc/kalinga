@@ -87,6 +87,7 @@ export default function Footer() {
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/student-welfare">Student Welfare</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://wpengineering.kalingauniversity.ac.in/">Working Professionals</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/sustainability">Sustainability</a></li>
+                    <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://kusis.kalingauniversity.edu.in/" target="_blank" rel="noopener noreferrer">ERP Login</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/ieee">IEEE Student Branch</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/executive-development-program">Executive <br />Development Program</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/csr">CSR @ KU</a></li>
@@ -144,6 +145,7 @@ export default function Footer() {
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/kalinga-buzz">Kalinga Buzz</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words cursor-pointer" onClick={() => setIsFraudModalOpen(true)}>Fraud Awareness Guidelines</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://www.aicte.gov.in/schemes/students-development-schemes">AICTE Scholarship/Fellowship Schemes</a></li>
+                    <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://kusis.kalingauniversity.edu.in/" target="_blank" rel="noopener noreferrer">ERP Login</a></li>
                   </ul>
 
                 </div>

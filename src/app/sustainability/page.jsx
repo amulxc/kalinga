@@ -1,12 +1,99 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import ImageContent from "../components/ccrc/imagecontent";
 import MainIntro from "../components/about/main_intro";
 import SdgImageGrid from "../components/sdg-cell/sdg-image-grid";
 import GlobalArrowButton from "../components/general/global-arrow_button";
+import FlipbookTrigger from "../components/general/FlipbookTrigger";
 import { useRouter } from "next/navigation";
 import SectionHeading from "../../../my-app/src/app/components/general/SectionHeading";
+
+const SDG_ANNUAL_REPORTS = [
+  {
+    label: "Annual Report 2022–23",
+    pdfUrl:
+      "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2022-2023_compressed.pdf",
+  },
+  {
+    label: "Annual Report 2023–24",
+    pdfUrl:
+      "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2023-2024_compressed.pdf",
+  },
+  {
+    label: "Annual Report 2024–25",
+    pdfUrl:
+      "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2024-2025_compressed.pdf",
+  },
+];
+
+const SDG_POLICY_PDF =
+  "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Sustainability+Policy_compressed.pdf";
+
+function SdgReportsAndPolicyTabs() {
+  const [tab, setTab] = useState("reports");
+
+  const pdfButton = (label, pdfUrl, variant = "default") => {
+    const compact = variant === "compact";
+    return (
+      <FlipbookTrigger pdfUrl={pdfUrl} title={label}>
+        <a
+          href={pdfUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={label}
+          className={compact ? "block w-full min-w-0" : "inline-block w-full max-w-md"}
+        >
+          <GlobalArrowButton
+            className={
+              compact
+                ? "w-full justify-between !py-2 !px-2 sm:!px-2.5 min-h-0 !rounded-lg !text-xs sm:!text-sm"
+                : "w-full justify-between min-h-[52px] !rounded-xl"
+            }
+            textClassName={compact ? "!leading-snug !text-left line-clamp-2 !font-medium" : undefined}
+            arrowClassName={compact ? "p-[2px] !px-1 mr-1 !py-0.5 shrink-0" : "p-[3px] !px-2 mr-2 !py-1"}
+            arrowSize={compact ? 18 : 26}
+          >
+            {label}
+          </GlobalArrowButton>
+        </a>
+      </FlipbookTrigger>
+    );
+  };
+
+  return (
+    <div className="mt-8 pt-6 border-t border-gray-200">
+      <div className="flex flex-wrap gap-8 mb-6 border-b border-gray-200">
+        <button
+          type="button"
+          onClick={() => setTab("reports")}
+          className={`pb-2 px-1 text-sm sm:text-base font-semibold border-b-2 -mb-px transition-colors ${tab === "reports" ? "border-[var(--button-red)] text-[var(--button-red)]" : "border-transparent text-[var(--light-text-gray)] hover:text-[var(--dark-gray)]"}`}
+        >
+          Annual Reports
+        </button>
+        <button
+          type="button"
+          onClick={() => setTab("policy")}
+          className={`pb-2 px-1 text-sm sm:text-base font-semibold border-b-2 -mb-px transition-colors ${tab === "policy" ? "border-[var(--button-red)] text-[var(--button-red)]" : "border-transparent text-[var(--light-text-gray)] hover:text-[var(--dark-gray)]"}`}
+        >
+          SDG Policy
+        </button>
+      </div>
+
+      {tab === "reports" && (
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 w-full max-w-2xl">
+          {SDG_ANNUAL_REPORTS.map((r) => (
+            <div key={r.pdfUrl} className="min-w-0">
+              {pdfButton(r.label, r.pdfUrl, "compact")}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {tab === "policy" && <div className="max-w-xl">{pdfButton("Sustainability Policy", SDG_POLICY_PDF)}</div>}
+    </div>
+  );
+}
 
 export default function SDGCell() {
   const router = useRouter();
@@ -51,6 +138,7 @@ export default function SDGCell() {
         initialVisibleParagraphs={1}
         disableClipPath={false}
         imageObjectFit="contain"
+        extraContent={<SdgReportsAndPolicyTabs />}
       />
 
       <SdgImageGrid />
