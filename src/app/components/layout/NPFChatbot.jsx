@@ -8,7 +8,7 @@ export default function NPFChatbot() {
       <div
         className="npf_chatbots"
         data-w="83d92d42d8cc4c839d761d929fc3211c"
-        style={{ display: "none" }}
+        style={{ display: "block" }}
         suppressHydrationWarning
       />
       <Script

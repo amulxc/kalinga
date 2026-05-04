@@ -130,11 +130,11 @@ const JournalOfLawAndAIPage = () => {
                 <p><strong>File Format:</strong> Please submit your manuscript in a Microsoft Word-compatible format (.doc or .docx is preferred).</p>
                 <p><strong>Font Specifications:</strong></p>
                 <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>Main Text:</strong> Use Times New Roman, 12-point font.</li>
-                    <li><strong>Main Title:</strong> Should be centered, in full capitals, bold, and 14-point font.</li>
-                    <li><strong>Below main title:</strong> mention the name of the author and co-author along with designation and institution, Capitalize each word, bold, and 12-point font.</li>
-                    <li><strong>Sub-Titles:</strong> Should be bold, in sentence case, and 12-point font and aligned left</li>
-                    <li><strong>Footnotes:</strong> Should be in Times New Roman, 10-point font.</li>
+                    <li><strong>Main Text:</strong> Use Times New Roman, 10-point font.</li>
+                    <li><strong>Main Title:</strong> Should be centered, in Capitalize Each Word, bold, and 24-point font.</li>
+                    <li><strong>Below main title:</strong> mention the name of the author and co-author along with designation and institution, and 11-point font.</li>
+                    <li><strong>Sub-Titles:</strong> in sentence case, and 10-point font and aligned left.</li>
+                    <li><strong>Footnotes:</strong> Should be in Times New Roman, 8-point font.</li>
                     <li><strong>Citation Style:</strong> All citations must adhere to the OSCOLA Uniform Style of Citation (4th edition).</li>
                     <li><strong>Plagiarism:</strong> Ensure that the similarity index is below 10%.</li>
                 </ul>
@@ -221,6 +221,23 @@ const JournalOfLawAndAIPage = () => {
             level: "VOL 1",
             slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Front+matter.pdf"
         },
+        // {
+        //     id: 2,
+        //     shortName: "Prof(Dr.) AzimKhan B Pathan",
+        //     title: "Vol. 1, Issue 2 | January 2025",
+        //     duration: "Page range: i-vi",
+        //     level: "VOL 1",
+        //     slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/1-Prof-(Dr.)-AzimKhan-B-Pathan.pdf"
+        // },
+        // {
+        //     id: 3,
+        //     shortName: "Frontmatter",
+        //     title: "Vol. 1, Issue 2 | January 2025",
+        //     duration: "Page range: i-vi",
+        //     level: "VOL 1",
+        //     slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/2-Kritika-Singh-&-Dr-Gagandeep-Kaur.pdf"
+        // },
+
         {
             id: 2,
             shortName: "Comparative Analysis Of Remand Provisions Under The Crpc And The Bnss",

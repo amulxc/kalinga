@@ -7,7 +7,10 @@ import SdgImageGrid from "../components/sdg-cell/sdg-image-grid";
 import GlobalArrowButton from "../components/general/global-arrow_button";
 import FlipbookTrigger from "../components/general/FlipbookTrigger";
 import { useRouter } from "next/navigation";
-import SectionHeading from "../../../my-app/src/app/components/general/SectionHeading";
+import SectionHeading from "../components/general/SectionHeading";
+import VisionMission from "../components/about/vision-mission";
+import ImageListItem from '../components/ccrc/imagelistitem'
+import CenterOfExcellence from "../components/about/center_of_excellence";
 
 const SDG_ANNUAL_REPORTS = [
   {
@@ -106,12 +109,75 @@ export default function SDGCell() {
     { label: "Sustainable Initiatives for a Green Campus", href: "/sustainability/sustainable-initiatives-for-a-green-campus" },
     { label: "Partnerships for the Goals", href: "/sustainability/partnerships-for-the-goals" }
   ];
+  const itemsnew = [
+    {
+      text: "Establish advanced laboratories for emerging technologies",
+    },
+    {
+      text: "Provide experiential learning and skill-based training",
+    },
+    {
+      text: "Develop industry-ready skills through certifications and internships",
+    },
+    {
+      text: "Promote research, innovation, and entrepreneurship",
+    },
+    {
+      text: "Support startups and MSMEs through collaboration and guidance",
+    },
+    {
+      text: "Address real-world industrial and societal challenges",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-white pb-20">
       <SectionHeading title="Centre of Excellence for Sustainable Development Goals"
         subTitle=""
         titleClassName="text-center pb-12 pt-6"
+      />
+      <MainIntro
+        title=""
+        description={[
+          "The Centres of Excellence (CoE) at Kalinga University serve as a hub for advanced learning, innovation, and industry-oriented skill development, aligned with the United Nations Sustainable Development Goals. The University has established seven specialized CoE across key domains to enhance students’ practical knowledge and research capabilities. These include Artificial Intelligence & Machine Learning in collaboration with IBM Innovation Centre for Education, focusing on programming, algorithms, and deep learning; Electric Vehicles (EV) with Godawari Electric Motors Pvt. Ltd., supporting clean energy and sustainable mobility; Industrial Internet of Things (IIoT) with Technoviz Automation, promoting smart industry; Automobile Training Centre with JustAuto Solutions; Robotics, Coding & Drone Technology with BDS Education; MSME Training with IamSMEofIndia to promote entrepreneurship and economic growth, and BRIDGE courses with Bosch. ",
+          "With state-of-the-art infrastructure, expert mentorship, and emerging technologies, the Centres of Excellence focus on providing hands-on learning opportunities to students and professionals and solving global technological and societal challenges."
+        ]}
+        imageUrl="https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-logo.png"
+        imageAlt="SDG Goals"
+        showKnowMore={true}
+        initialVisibleParagraphs={1}
+        disableClipPath={false}
+        imageObjectFit="contain"
+      />
+      <VisionMission
+        visionTitle="Vision"
+        missionTitle="Mission"
+        visionText="To be globally recognized for its Centres of Excellence that promote innovation, industry-oriented learning, and sustainable development through advanced technologies, while empowering students with future-ready skills aligned with the United Nations Sustainable Development Goals. "
+        missionText={[
+          "To deliver industry-relevant education in emerging technologies",
+          "To provide hands-on training and practical exposure",
+          "To encourage innovation, research, and industry collaboration",
+          "To promote sustainable practices aligned with the United Nations Sustainable Development Goals (SDGs)"
+        ]}
+        imageSrc="https://cdn.kalingauniversity.ac.in/common/student.jpg"
+        imageAlt="Central Instrumentation Facility"
+        showImage={false}
+        className="bg-white"
+      />
+      <ImageListItem
+        items={itemsnew}
+        imageSrc="https://cdn.kalingauniversity.ac.in/CIF/cif-objectives+(1).webp"
+        title="Objectives"
+        subtitle=""
+        description=""
+        className="!bg-[var(--dark-blue)]"
+        textClassName="text-white"
+        headingClassName="text-white"
+      />
+      <CenterOfExcellence
+        title="Centres of Excellence Established at Kalinga University"
+        description=""
+        className="!bg-white"
       />
       <ImageContent
         hasImage={false}

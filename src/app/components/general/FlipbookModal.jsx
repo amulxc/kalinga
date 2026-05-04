@@ -28,6 +28,7 @@ const FlipbookModal = ({ isOpen, onClose, pdfUrl, title }) => {
     const [pageInputValue, setPageInputValue] = useState('1');
     const [pagesToRender, setPagesToRender] = useState(4);
     const [containerWidth, setContainerWidth] = useState(0);
+    const [loadError, setLoadError] = useState(false);
     const isAudioUnlocked = useRef(false);
     const containerRef = useRef(null);
     const bookRef = useRef(null);
@@ -46,6 +47,7 @@ const FlipbookModal = ({ isOpen, onClose, pdfUrl, title }) => {
         setCurrentPage(0);
         setPageInputValue('1');
         setPagesToRender(4);
+        setLoadError(false);
 
         const updateWidth = () => {
             if (containerRef.current) {
@@ -131,6 +133,12 @@ const FlipbookModal = ({ isOpen, onClose, pdfUrl, title }) => {
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
+        setLoadError(false);
+    }
+
+    function onDocumentLoadError(error) {
+        console.error("Flipbook PDF load error:", error);
+        setLoadError(true);
     }
 
     const isMobile = containerWidth < 768;
@@ -231,10 +239,26 @@ const FlipbookModal = ({ isOpen, onClose, pdfUrl, title }) => {
                             <Document
                                 file={pdfUrl}
                                 onLoadSuccess={onDocumentLoadSuccess}
+                                onLoadError={onDocumentLoadError}
                                 loading={
                                     <div className="flex flex-col items-center justify-center min-h-[400px] min-w-[300px]">
                                         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
                                         <p className="mt-4 text-white font-medium">Preparing Flipbook...</p>
+                                    </div>
+                                }
+                                error={
+                                    <div className="flex flex-col items-center justify-center min-h-[400px] min-w-[300px] text-center p-6">
+                                        <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mb-4 text-red-500">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                                        </div>
+                                        <p className="text-white font-medium text-lg">Unable to load PDF</p>
+                                        <p className="text-white/60 text-sm mt-2 max-w-xs">The file might be missing or there's a connection issue.</p>
+                                        <button 
+                                            onClick={handleOpenExternal}
+                                            className="mt-6 px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-200 transition-colors"
+                                        >
+                                            Try Opening Directly
+                                        </button>
                                     </div>
                                 }
                             >
