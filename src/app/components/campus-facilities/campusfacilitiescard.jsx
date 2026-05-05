@@ -183,10 +183,17 @@ function Campusfacilitiescard({
         <>
             <style jsx global>{`
         /* your existing image css stays same */
-        .campus-cards-wrapper img {
+        .campus-cards-wrapper img:not(.campus-img-centered) {
           width: 100% !important;
           object-fit: cover !important;
           border-radius: 0.75rem;
+        }
+
+        .campus-cards-wrapper img.campus-img-centered {
+          max-width: 100% !important;
+          height: auto !important;
+          border-radius: 0.75rem;
+          object-fit: contain !important;
         }
 
         @media (min-width: 1024px) {

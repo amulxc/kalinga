@@ -67,7 +67,8 @@ export default function ProgramsOffered({
   backgroundColor = "bg-[var(--dark-blue)]",
   textColor = "text-white",
   titleColor = "text-white",
-  listHeading = null
+  listHeading = null,
+  topRightContent = null
 }) {
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -127,6 +128,13 @@ export default function ProgramsOffered({
               </div>
             )}
 
+            {/* Top Right Content (e.g. Tabs) */}
+            {topRightContent && (
+              <div className="px-3 lg:px-0 mb-4">
+                {topRightContent}
+              </div>
+            )}
+
             {/* List Heading */}
             {listHeading && (
               <div className="px-3 lg:px-0 mb-4">
@@ -139,8 +147,8 @@ export default function ProgramsOffered({
             {/* Program List */}
             <div className="max-h-[620px] overflow-y-auto custom-scrollbar p-3">
               {filteredPrograms.length === 0 && (
-                <div className="text-white/70 text-center py-10 bg-white/5 rounded-lg border border-white/10">
-                  No programs found matching your search.
+                <div className={`${textColor} opacity-70 text-center py-10 bg-gray-50/50 rounded-lg border border-gray-100`}>
+                  No items found.
                 </div>
               )}
               {filteredPrograms.map((program) => (

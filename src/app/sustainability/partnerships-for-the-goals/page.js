@@ -662,6 +662,11 @@ const buttons5 = [
     },
     {
         id: 9,
+        text: "Kalinga Buzz August 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/August_2024.PDF",
+    },
+    {
+        id: 9,
         text: "Kalinga Buzz September 2024",
         href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/September_2024.PDF",
     },

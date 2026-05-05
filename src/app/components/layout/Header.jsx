@@ -363,7 +363,7 @@ const Header = () => {
       label: 'Sustainability',
       href: '/sustainability',
       megaMenu: {
-        openAbove: true,
+        openAbove: false,
         imageHref: '/sustainability',
         imageUrl: 'https://cdn.kalingauniversity.ac.in/common/kalinga-front-banner02.webp',
         imageAlt: 'Sustainability and SDG at Kalinga University',

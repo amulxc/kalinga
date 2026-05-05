@@ -41,7 +41,14 @@ const IQACPage = () => {
           height: 80
         },
         {
-          src: "https://cdn.kalingauniversity.ac.in/accreditation/naac-new.webp",
+          src: "https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp",
+          alt: "NIRF",
+          name: "NIRF",
+          width: 150,
+          height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/iqac-achievements.png",
           alt: "NIRF",
           name: "NIRF",
           width: 150,

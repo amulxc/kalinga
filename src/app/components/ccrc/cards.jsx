@@ -13,14 +13,14 @@ export default function Cards({ cards = [] }) {
           <p className="text-sm text-[var(--dark-gray)] pt-5">{card.description}</p>
           
           </div>
-          <div className="w-full rounded-lg overflow-hidden mt-2 relative">
+          <div className={`w-full rounded-lg overflow-hidden mt-2 relative ${card.imagePosition === 'bottom center' ? 'flex justify-center' : ''}`}>
             {card.imageSrc && (
             <Image
               src={card.imageSrc}
               alt={card.title}
               width={340}
               height={160}
-              className="w-full h-auto rounded-lg"
+              className={`${card.imagePosition === 'bottom center' ? 'w-auto max-w-full h-auto campus-img-centered' : 'w-full h-auto'} rounded-lg`}
             />
             )}
             {/* Red Button (bottom left) */}

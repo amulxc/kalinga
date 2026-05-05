@@ -33,6 +33,19 @@ const SDG_ANNUAL_REPORTS = [
 const SDG_POLICY_PDF =
   "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Sustainability+Policy_compressed.pdf";
 
+const SDG_OFFICE_ORDERS = [
+  {
+    label: "Office Order 2022",
+    pdfUrl:
+      "https://cdn.kalingauniversity.ac.in/sdg-cell/Office-Order-2022-CoE-Committee-Members.pdf",
+  },
+  {
+    label: "Office Order 2025",
+    pdfUrl:
+      "https://cdn.kalingauniversity.ac.in/sdg-cell/Office-Order-2025-Revised-CoE-Committee-Members.pdf",
+  },
+];
+
 function SdgReportsAndPolicyTabs() {
   const [tab, setTab] = useState("reports");
 
@@ -81,6 +94,13 @@ function SdgReportsAndPolicyTabs() {
         >
           SDG Policy
         </button>
+        <button
+          type="button"
+          onClick={() => setTab("orders")}
+          className={`pb-2 px-1 text-sm sm:text-base font-semibold border-b-2 -mb-px transition-colors ${tab === "orders" ? "border-[var(--button-red)] text-[var(--button-red)]" : "border-transparent text-[var(--light-text-gray)] hover:text-[var(--dark-gray)]"}`}
+        >
+          Office Orders
+        </button>
       </div>
 
       {tab === "reports" && (
@@ -94,6 +114,16 @@ function SdgReportsAndPolicyTabs() {
       )}
 
       {tab === "policy" && <div className="max-w-xl">{pdfButton("Sustainability Policy", SDG_POLICY_PDF)}</div>}
+
+      {tab === "orders" && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 w-full max-w-2xl">
+          {SDG_OFFICE_ORDERS.map((o) => (
+            <div key={o.pdfUrl} className="min-w-0">
+              {pdfButton(o.label, o.pdfUrl, "compact")}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -132,7 +162,7 @@ export default function SDGCell() {
 
   return (
     <div className="min-h-screen bg-white pb-20">
-      <SectionHeading title="Centre of Excellence for Sustainable Development Goals"
+      <SectionHeading title="Centre of Excellence for Sustainability"
         subTitle=""
         titleClassName="text-center pb-12 pt-6"
       />

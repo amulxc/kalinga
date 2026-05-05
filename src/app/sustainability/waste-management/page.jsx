@@ -170,7 +170,7 @@ const cards = [
                 Continuous awareness programs are conducted to encourage active participation in recycling activities across the campus to reduce waste generation.
             </>
         ),
-        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/plastic-free-zone.jpeg",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Waste Management/waste-recycle.jpeg",
         logoSrc: "",
         subtitle: "WASTE RECYCLING SYSTEM",
         link: "#",
@@ -179,10 +179,11 @@ const cards = [
         title: "Biomedical Waste Management",
         description:
             "Biomedical waste generated from the University’s animal house and medical room is segregated at the point of origin to ensure safe handling and proper disposal. The waste is placed in colour-coded and labelled containers under different categories, such as infectious waste, sharps, and non-infectious materials. It prevents cross-contamination and ensures compliance with biomedical waste management regulations. The process is monitored every day by trained personnel to maintain strict hygiene standards. The collected waste is transported by authorised agencies for further treatment.",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-4.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Waste Management/biomedical-waste-management.jpeg",
         logoSrc: "",
         subtitle: "BIOMEDICAL WASTE MANAGEMENT",
         link: "#",
+        imagePosition: "bottom center",
     }
 ];
 
