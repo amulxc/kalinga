@@ -5,7 +5,7 @@ import ImageContent from "../components/ccrc/imagecontent";
 import MainIntro from "../components/about/main_intro";
 import SdgImageGrid from "../components/sdg-cell/sdg-image-grid";
 import GlobalArrowButton from "../components/general/global-arrow_button";
-import FlipbookTrigger from "../components/general/FlipbookTrigger";
+
 import { useRouter } from "next/navigation";
 import SectionHeading from "../components/general/SectionHeading";
 import VisionMission from "../components/about/vision-mission";
@@ -52,28 +52,26 @@ function SdgReportsAndPolicyTabs() {
   const pdfButton = (label, pdfUrl, variant = "default") => {
     const compact = variant === "compact";
     return (
-      <FlipbookTrigger pdfUrl={pdfUrl} title={label}>
-        <a
-          href={pdfUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={label}
-          className={compact ? "block w-full min-w-0" : "inline-block w-full max-w-md"}
+      <a
+        href={pdfUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={label}
+        className={compact ? "block w-full min-w-0" : "inline-block w-full max-w-md"}
+      >
+        <GlobalArrowButton
+          className={
+            compact
+              ? "w-full justify-between !py-2 !px-2 sm:!px-2.5 min-h-0 !rounded-lg !text-xs sm:!text-sm"
+              : "w-full justify-between min-h-[52px] !rounded-xl"
+          }
+          textClassName={compact ? "!leading-snug !text-left line-clamp-2 !font-medium" : undefined}
+          arrowClassName={compact ? "p-[2px] !px-1 mr-1 !py-0.5 shrink-0" : "p-[3px] !px-2 mr-2 !py-1"}
+          arrowSize={compact ? 18 : 26}
         >
-          <GlobalArrowButton
-            className={
-              compact
-                ? "w-full justify-between !py-2 !px-2 sm:!px-2.5 min-h-0 !rounded-lg !text-xs sm:!text-sm"
-                : "w-full justify-between min-h-[52px] !rounded-xl"
-            }
-            textClassName={compact ? "!leading-snug !text-left line-clamp-2 !font-medium" : undefined}
-            arrowClassName={compact ? "p-[2px] !px-1 mr-1 !py-0.5 shrink-0" : "p-[3px] !px-2 mr-2 !py-1"}
-            arrowSize={compact ? 18 : 26}
-          >
-            {label}
-          </GlobalArrowButton>
-        </a>
-      </FlipbookTrigger>
+          {label}
+        </GlobalArrowButton>
+      </a>
     );
   };
 

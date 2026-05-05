@@ -1311,6 +1311,57 @@ const IQAC_COMMITTEE = [
 
 // IQAC Initiatives Data
 const IQAC_INITIATIVES = {
+
+  "2024-25": [
+    { sno: 1, initiative: "Lab Performance based audit", year: "2024-25" },
+    { sno: 2, initiative: "Audit of Non-teaching departments - Extended", year: "2024-25" },
+    { sno: 3, initiative: "Conduction of activities and reporting of IIC (Quarter)- Q1, Q2, Q3, Q4", year: "2024-25" },
+    { sno: 4, initiative: "NBA Accreditation - MBA Program", year: "2024-25" },
+    { sno: 5, initiative: "CSR Ranking – Law, Engineering", year: "2024-25" },
+    { sno: 6, initiative: "DST Survey (Form submitted)", year: "2024-25" },
+    { sno: 7, initiative: "MBA Program - Rating Survey 2025", year: "2024-25" },
+    { sno: 8, initiative: "Activity conducted regarding ‘CO-PO Framing, Mapping & Attainment’", year: "2024-25" },
+    { sno: 9, initiative: "Activity conducted regarding ‘Awareness Session on NBA Accreditation’", year: "2024-25" },
+    { sno: 10, initiative: "Feedbacks on ‘Academics & Infrastructure’", year: "2024-25" },
+    { sno: 11, initiative: "Started Student Feedbacks on ‘Internships’", year: "2024-25" },
+    { sno: 12, initiative: "Community Development Survey (For Farmers, SHGs, Youth & Women)", year: "2024-25" },
+    { sno: 13, initiative: "Conducted ‘Summer Camps’ at various Schools", year: "2024-25" },
+    { sno: 14, initiative: "Conducted Seminar on ‘Writing an Effective IEEE Proposal for funding’", year: "2024-25" },
+    { sno: 15, initiative: "Conducted Workshops on ‘Promoting Climate Change & Sustainability’ at adopted villages", year: "2024-25" },
+    { sno: 16, initiative: "Conducted Symposium on ‘Environmental, Social, Governance (ESG) & Sustainability Symposium’", year: "2024-25" },
+    { sno: 17, initiative: "Conducted various Hands on Training on ‘Coding, Robotics & Drone Technology’ for School & UG Level Students", year: "2024-25" },
+    { sno: 18, initiative: "Sessions on Outcome Based Education (OBE) at various institutes", year: "2024-25" },
+    { sno: 19, initiative: "Sessions on ‘Capacity Building Programme’ at various institutes", year: "2024-25" },
+    { sno: 20, initiative: "Hands on Training on ‘Exposing Rural Students To Opportunities in STEM’ for various Government School Students’", year: "2024-25" },
+    { sno: 21, initiative: "Conducted International Conference ‘3rd WCONF-2025’", year: "2024-25" },
+    { sno: 22, initiative: "Review & report on Rain Water harvesting & Drip irrigation", year: "2024-25" },
+    { sno: 23, initiative: "Academic Audit", year: "2024-25" },
+    { sno: 24, initiative: "Initiated Project/ live model exhibition for all departments", year: "2024-25" },
+    { sno: 25, initiative: "Updation of Patents to receive funds under KAPILA Scheme", year: "2024-25" },
+    { sno: 26, initiative: "Initiation towards Kalinga University Journal", year: "2024-25" },
+    { sno: 27, initiative: "Conducted Laboratory Internal Re Audit for checking compliance", year: "2024-25" },
+    { sno: 28, initiative: "Ensuring effective maintenance of department level files", year: "2024-25" },
+    { sno: 29, initiative: "Criteria wise maintenance of data and files for NAAC", year: "2024-25" },
+    { sno: 30, initiative: "Collection and maintenance of monthly data from departments", year: "2024-25" },
+    { sno: 31, initiative: "Updation / revision of various policies", year: "2024-25" },
+    { sno: 32, initiative: "Updation of Environment, Health and Saftey policy at University", year: "2024-25" },
+    { sno: 33, initiative: "Guidance and maintenance of research related data", year: "2024-25" },
+    { sno: 34, initiative: "Collection of department level club activity reports", year: "2024-25" },
+    { sno: 35, initiative: "Maintenance of University level conference proceeding with guidelines with SOP", year: "2024-25" },
+    { sno: 36, initiative: "Collection and analysis of all event feedbacks", year: "2024-25" },
+    { sno: 37, initiative: "Involved in research work and publications", year: "2024-25" },
+    { sno: 38, initiative: "Working regarding green and energy audit for the campus", year: "2024-25" },
+    { sno: 39, initiative: "Audit of e- contents", year: "2024-25" },
+    { sno: 40, initiative: "Update of Innovation related activities in IIC portal", year: "2024-25" },
+    { sno: 41, initiative: "Unnat Bharat Abhiyan", year: "2024-25" },
+    { sno: 42, initiative: "Feedback collection and analysis of conferences", year: "2024-25" },
+    { sno: 43, initiative: "Feedback collection and analysis of Campus Recruitment Training", year: "2024-25" },
+    { sno: 44, initiative: "Standardization of event report format", year: "2024-25" },
+    { sno: 45, initiative: "NEP-2020 implementation", year: "2024-25" },
+    { sno: 46, initiative: "Development of Research Ecosystem", year: "2024-25" },
+    { sno: 47, initiative: "Session on NAAC accreditation", year: "2024-25" },
+    { sno: 48, initiative: "Mentoring other HEIs towards accreditation", year: "2024-25" }
+  ],
   "2023-24": [
     { sno: 1, initiative: "Academic Audit", year: "2023-24" },
     { sno: 2, initiative: "Initiated the installation of a Biogas plant in the University", year: "2023-24" },
@@ -1426,6 +1477,8 @@ const IQAC_INITIATIVES = {
 
 // Minutes of Meeting Data
 const MINUTES_OF_MEETING = {
+  "2024-25": [],
+  "2023-24": [],
   "2022-23": [
     { title: "Minutes of Meeting (18-09-2022)", url: "https://cdn.kalingauniversity.ac.in/IQAC/18-09-2022-mom.pdf" },
   ],
@@ -1471,6 +1524,7 @@ const nba = {
 
 // Feedback Analysis Data
 const FEEDBACK_ANALYSIS = {
+  "2024-25": [],
   "2023-24": [
     { title: "Students Feedback Report 2023-2024", url: "https://cdn.kalingauniversity.ac.in/IQAC/Students+Feedback+Report-2023-2024.pdf" },
     { title: "Faculty Feedback 2023-2024", url: "https://cdn.kalingauniversity.ac.in/IQAC/Faculty+Feedback-2023-2024.pdf" },
@@ -1673,11 +1727,11 @@ export default function IqacTabSection() {
   // Get available years based on active tab
   const getAvailableYears = () => {
     if (activeTab === "initiatives") {
-      return ["2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17"];
+      return ["2024-25", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17"];
     } else if (activeTab === "minutes") {
-      return ["2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17"];
+      return ["2024-25", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17"];
     } else if (activeTab === "feedback") {
-      return ["2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16", "2014-15"];
+      return ["2024-25", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16", "2014-15"];
     } else if (activeTab === "annual-reports") {
       return ["2024-25", "2023-24", "2022-23"];
     }
