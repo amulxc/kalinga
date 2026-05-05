@@ -17,7 +17,7 @@ const mainIntroContent = {
     description: [
         "The University actively promotes the physical and mental health and emotional well-being of students and staff through a supportive campus environment. It has a modern gymnasium and indoor and outdoor sports facilities that encourage physical fitness, discipline, and teamwork. A dedicated yoga and wellness centre conducts yoga and meditation sessions to improve mental and emotional health. The recreation room allows students to maintain a balance between studies and leisure activities. The campus also has a medical room that provides basic healthcare services. Regular health and eye checkup camps are organised along with awareness programs on nutrition, eye checkups, stress management, hygiene, and mental health to encourage overall development. These initiatives contribute towards SDG 3: Good Health and Well-Being."
     ],
-    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-green-campus/sdg-images-1.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/good-health.jpeg",
     imageAlt: "Good Health and Well-Being",
 };
 

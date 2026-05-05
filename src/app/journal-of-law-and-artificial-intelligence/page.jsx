@@ -9,10 +9,12 @@ import OurPrograms from '../components/admissions/our_programs';
 import MentorIntro from '../components/department/dept_head_intro';
 import QuickLinks from '../components/general/quick_links';
 import SectionHeading from '../components/general/SectionHeading';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/general/tab';
 
 const JournalOfLawAndAIPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedMember, setSelectedMember] = useState(null);
+    const [activeTab, setActiveTab] = useState("vol1_issue1");
 
     const EditorialBoardModal = ({ isOpen, onClose, member }) => {
         if (!isOpen || !member) return null;
@@ -130,11 +132,11 @@ const JournalOfLawAndAIPage = () => {
                 <p><strong>File Format:</strong> Please submit your manuscript in a Microsoft Word-compatible format (.doc or .docx is preferred).</p>
                 <p><strong>Font Specifications:</strong></p>
                 <ul class="list-disc pl-5 space-y-1">
-                    <li><strong>Main Text:</strong> Use Times New Roman, 12-point font.</li>
-                    <li><strong>Main Title:</strong> Should be centered, in full capitals, bold, and 14-point font.</li>
-                    <li><strong>Below main title:</strong> mention the name of the author and co-author along with designation and institution, Capitalize each word, bold, and 12-point font.</li>
-                    <li><strong>Sub-Titles:</strong> Should be bold, in sentence case, and 12-point font and aligned left</li>
-                    <li><strong>Footnotes:</strong> Should be in Times New Roman, 10-point font.</li>
+                    <li><strong>Main Text:</strong> Use Times New Roman, 10-point font.</li>
+                    <li><strong>Main Title:</strong> Should be centered, in Capitalize Each Word, bold, and 24-point font.</li>
+                    <li><strong>Below main title:</strong> mention the name of the author and co-author along with designation and institution, and 11-point font.</li>
+                    <li><strong>Sub-Titles:</strong> in sentence case, and 10-point font and aligned left.</li>
+                    <li><strong>Footnotes:</strong> Should be in Times New Roman, 8-point font.</li>
                     <li><strong>Citation Style:</strong> All citations must adhere to the OSCOLA Uniform Style of Citation (4th edition).</li>
                     <li><strong>Plagiarism:</strong> Ensure that the similarity index is below 10%.</li>
                 </ul>
@@ -223,6 +225,62 @@ const JournalOfLawAndAIPage = () => {
         },
         {
             id: 2,
+            shortName: "Prof(Dr.) AzimKhan B Pathan",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-vi",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/1-Prof-(Dr.)-AzimKhan-B-Pathan.pdf"
+        },
+        {
+            id: 3,
+            shortName: "Kritika Singh-&-Dr. Gagandeep Kaur",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-vi",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/2-Kritika-Singh-&-Dr-Gagandeep-Kaur.pdf"
+        },
+        {
+            id: 3,
+            shortName: "Krishna Deo Singh Chauhan",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-vi",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/3-Krishna-Deo-Singh-Chauhan.pdf"
+        },
+        {
+            id: 4,
+            shortName: "Mr Pankaj Chhuttani Dr.Ankit Srivastava",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-vi",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/4-Mr-Pankaj-Chhuttani-Dr.Ankit-Srivastava.pdf"
+        },
+        {
+            id: 5,
+            shortName: "Ms. Himanshu Chauhan",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-vi",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/5-Ms.-Himanshu-Chauhan.pdf"
+        },
+        {
+            id: 6,
+            shortName: "Banveer Kaur Jhinger",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-vi",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/6-Banveer-Kaur-Jhinger.pdf"
+        },
+        {
+            id: 7,
+            shortName: "Dr Shruti M Nadkarni",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-vi",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/7-Dr-Shruti-M-Nadkarni.pdf"
+        },
+        {
+            id: 8,
             shortName: "Comparative Analysis Of Remand Provisions Under The Crpc And The Bnss",
             title: "Dr. Tauheed Alam, Prof. (Dr.) Afkar Ahmad",
             duration: "Page range: 1-27",
@@ -445,18 +503,42 @@ const JournalOfLawAndAIPage = () => {
                     titleClassName="text-white"
                 />
 
-                <ProgramsOffered
-                    title="Archives"
-                    description="Explore past volumes and issues of the Journal of Law and Artificial Intelligence."
-                    programs={archivesData}
-                    exploreLabel="Download PDF"
-                    searchPlaceholder="Search Archives...."
-                    hideSearch={false}
-                    backgroundImage="https://cdn.kalingauniversity.ac.in/international-students/student-cell.webp"
-                    backgroundColor="bg-white"
-                    textColor="text-gray-700"
-                    titleColor="text-[var(--foreground)]"
-                />
+                <div className="py-12">
+                    <ProgramsOffered
+                        title="Archives"
+                        description="Explore past volumes and issues of the Journal of Law and Artificial Intelligence."
+                        programs={
+                            activeTab === "vol1_issue1"
+                                ? archivesData.filter(item => item.title.includes("Issue 1") || item.level === "ARCHIVE")
+                                : archivesData.filter(item => item.title.includes("Issue 2"))
+                        }
+                        exploreLabel="Download PDF"
+                        searchPlaceholder="Search Archives...."
+                        hideSearch={true}
+                        backgroundImage="https://cdn.kalingauniversity.ac.in/international-students/student-cell.webp"
+                        backgroundColor="bg-white"
+                        textColor="text-gray-700"
+                        titleColor="text-[var(--foreground)]"
+                        topRightContent={
+                            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+                                <TabsList className="grid grid-cols-2 gap-4 bg-transparent p-0">
+                                    <TabsTrigger
+                                        value="vol1_issue1"
+                                        className={`!rounded-xl border ${activeTab === "vol1_issue1" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
+                                    >
+                                        Vol. 1, Issue 1
+                                    </TabsTrigger>
+                                    <TabsTrigger
+                                        value="vol1_issue2"
+                                        className={`!rounded-xl border ${activeTab === "vol1_issue2" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
+                                    >
+                                        Vol. 1, Issue 2
+                                    </TabsTrigger>
+                                </TabsList>
+                            </Tabs>
+                        }
+                    />
+                </div>
 
                 <OurPrograms
                     customPrograms={editorialBoardData.map(p => ({ ...p, hideApplyNow: true }))}

@@ -87,7 +87,7 @@ const MegaMenu = ({
       if (!menu) return;
       const rect = menu.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
-      const padding = 24;
+      const padding = 32;
 
       let adjustmentStyle = { left: '50%', transform: 'translateX(-50%)', right: 'auto' };
 

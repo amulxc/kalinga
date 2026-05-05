@@ -599,7 +599,7 @@ const buttons4 = [
     {
         id: 1,
         text: "Kalinga Buzz January 2025",
-        href: "https://cdn.kalingauniversity.ac.in/buzz/Buzz+January+2025.pdf",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/January_2025.PDF",
     },
     {
         id: 2,
@@ -641,6 +641,179 @@ const buttons4 = [
         text: "Kalinga Buzz November 2025",
         href: "https://cdn.kalingauniversity.ac.in/buzz/Buzz+November+2025.pdf",
     }
+];
+
+
+const buttons5 = [
+    {
+        id: 3,
+        text: "Kalinga Buzz March 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/March_2024.PDF",
+    },
+    {
+        id: 4,
+        text: "Kalinga Buzz April 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/April_2024.PDF",
+    },
+    {
+        id: 7,
+        text: "Kalinga Buzz July 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/July_2024.PDF",
+    },
+    {
+        id: 9,
+        text: "Kalinga Buzz August 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/August_2024.PDF",
+    },
+    {
+        id: 9,
+        text: "Kalinga Buzz September 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/September_2024.PDF",
+    },
+    {
+        id: 10,
+        text: "Kalinga Buzz October 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/October_2024.PDF",
+    },
+    {
+        id: 11,
+        text: "Kalinga Buzz November 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/November_2024.PDF",
+    },
+    {
+        id: 12,
+        text: "Kalinga Buzz December 2024",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/December_2024.PDF",
+    },
+
+];
+
+const buttons6 = [
+    {
+        id: 1,
+        text: "Kalinga Buzz January 2023",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/January_2023.PDF",
+    },
+    {
+        id: 2,
+        text: "Kalinga Buzz February 2023",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/February_2023.PDF",
+    },
+    {
+        id: 3,
+        text: "Kalinga Buzz March 2023",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/March_2023.PDF",
+    },
+    {
+        id: 4,
+        text: "Kalinga Buzz April 2023",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/April_2023.PDF",
+    },
+    {
+        id: 5,
+        text: "Kalinga Buzz May 2023",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/May_2023.PDF",
+    },
+    // {
+    //     id: 6,
+    //     text: "Kalinga Buzz June 2023",
+    //     href: "",
+    // },
+    // {
+    //     id: 7,
+    //     text: "Kalinga Buzz July 2023",
+    //     href: "",
+    // },
+    // {
+    //     id: 8,
+    //     text: "Kalinga Buzz August 2023",
+    //     href: "",
+    // },
+    // {
+    //     id: 9,
+    //     text: "Kalinga Buzz September 2023",
+    //     href: "",
+    // },
+    // {
+    //     id: 10,
+    //     text: "Kalinga Buzz October 2023",
+    //     href: "",
+    // },
+    // {
+    //     id: 11,
+    //     text: "Kalinga Buzz November 2023",
+    //     href: "",
+    // },
+    // {
+    //     id: 12,
+    //     text: "Kalinga Buzz December 2023",
+    //     href: "",
+    // },
+
+];
+
+const buttons7 = [
+    {
+        id: 1,
+        text: "Kalinga Buzz January 2022",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/January_2022.PDF",
+    },
+    {
+        id: 2,
+        text: "Kalinga Buzz February 2022",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/February_2022.PDF",
+    },
+    {
+        id: 3,
+        text: "Kalinga Buzz March 2022",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/March_2022.PDF",
+    },
+    {
+        id: 4,
+        text: "Kalinga Buzz April 2022",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/April_2022.PDF",
+    },
+    {
+        id: 5,
+        text: "Kalinga Buzz May 2022",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/MAY_2022.PDF",
+    },
+    {
+        id: 6,
+        text: "Kalinga Buzz June 2022",
+        href: "https://cdn.kalingauniversity.ac.in/buzz/SDG/June_2022.PDF",
+    },
+    // {
+    //     id: 7,
+    //     text: "Kalinga Buzz July 2022",
+    //     href: "",
+    // },
+    // {
+    //     id: 8,
+    //     text: "Kalinga Buzz August 2022",
+    //     href: "",
+    // },
+    // {
+    //     id: 9,
+    //     text: "Kalinga Buzz September 2022",
+    //     href: "",
+    // },
+    // {
+    //     id: 10,
+    //     text: "Kalinga Buzz October 2022",
+    //     href: "",
+    // },
+    // {
+    //     id: 11,
+    //     text: "Kalinga Buzz November 2022",
+    //     href: "",
+    // },
+    // {
+    //     id: 12,
+    //     text: "Kalinga Buzz December 2022",
+    //     href: "",
+    // },
+
 ];
 
 
@@ -756,6 +929,9 @@ export default function PartnershipsForTheGoalsPage() {
                     />
                     <KalingaBuzzTabs
                         year2025={buttons4}
+                        year2024={buttons5}
+                        year2023={buttons6}
+                        year2022={buttons7}
                         year2021={buttons3}
                         year2020={buttons2}
                         year2019={buttons}

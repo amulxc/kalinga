@@ -197,6 +197,12 @@ const jobData = {
         "Counselling students & parents"
       ]
     }
+  ],
+  icssr: [
+    {
+      title: "Hiring Notification",
+      imageUrl: "https://cdn.kalingauniversity.ac.in/careers/We-Are-Hiring.png"
+    }
   ]
 };
 
@@ -218,6 +224,14 @@ export default function OpenPositions({
         "Be a part of Kalinga University's dynamic administrative and operational teams. We value professionals who bring expertise, efficiency, and integrity to support our academic mission.",
       type: 'nonTeaching',
       knowMoreButton: "Know More"
+    },
+    {
+      title: "Recruitment for the Indian Council of Social Science Research (ICSSR) Major Research Project (2025-2026)",
+      description:
+        "",
+      type: 'icssr',
+      knowMoreButton: "Know More",
+      hideApplyNow: true
     },
   ],
   useCourseCardLayout = false,
@@ -382,9 +396,11 @@ export default function OpenPositions({
                         Know More
                       </GlobalArrowButton>
                     )}
-                    <Link href={position.applyNowLink || "#careerform"}>
-                      <GlobalArrowButton>Apply Now</GlobalArrowButton>
-                    </Link>
+                    {!position.hideApplyNow && (
+                      <Link href={position.applyNowLink || "#careerform"}>
+                        <GlobalArrowButton>Apply Now</GlobalArrowButton>
+                      </Link>
+                    )}
                   </div>
 
                 </div>
@@ -440,7 +456,17 @@ export default function OpenPositions({
                 <div className="space-y-8">
                   {jobData[selectedPosition.type].map((job, idx) => (
                     <div key={idx} className="border-b border-gray-200 pb-8 last:border-0 last:pb-0">
-                      <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">{job.title}</h3>
+                      {job.imageUrl && (
+                        <div className="relative w-full h-[400px] md:h-[600px] mb-6 rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                          <Image
+                            src={job.imageUrl}
+                            alt={job.title || "Hiring Notification"}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      )}
+                      {job.title && <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">{job.title}</h3>}
 
                       <div className="grid grid-cols-1 gap-4">
                         {job.post && (
