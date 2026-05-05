@@ -42,7 +42,7 @@ export default function CareerForm() {
 
     const fetchDepartments = async () => {
         try {
-            const response = await fetch('https://kalinga.dupebox.com/api/departments/')
+            const response = await fetch('https://api.kalingauniversity.ac.in/api/departments/')
             const data = await response.json()
             const results = data.results || data
             setDepartments(results.map(d => ({ value: d.id.toString(), label: d.name })))

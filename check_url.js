@@ -1,6 +1,6 @@
 const https = require('https');
 
-const url = "https://kalinga.dupebox.com/api/news-events/legal-aid-cell-commemorates-the-76th-year-of-the-indian-constitution/";
+const url = "https://api.kalingauniversity.ac.in/api/news-events/legal-aid-cell-commemorates-the-76th-year-of-the-indian-constitution/";
 
 https.get(url, (res) => {
     console.log('StatusCode:', res.statusCode);

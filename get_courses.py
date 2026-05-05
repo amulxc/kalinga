@@ -7,7 +7,7 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 try:
-    req = urllib.request.Request("https://kalinga.dupebox.com/api/survey/questions/", headers={'User-Agent': 'Mozilla'})
+    req = urllib.request.Request("https://api.kalingauniversity.ac.in/api/survey/questions/", headers={'User-Agent': 'Mozilla'})
     res = urllib.request.urlopen(req, context=ctx)
     data = json.loads(res.read().decode('utf-8'))
     

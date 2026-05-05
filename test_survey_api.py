@@ -4,7 +4,7 @@ import json
 import ssl
 
 def test_survey_endpoint(course_id, categories):
-    base_url = "https://kalinga.dupebox.com/api/survey/questions/"
+    base_url = "https://api.kalingauniversity.ac.in/api/survey/questions/"
     
     # Ignore SSL context errors if any
     ctx = ssl.create_default_context()

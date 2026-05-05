@@ -21,7 +21,7 @@ export default function EventRegistrationForm() {
 
     const fetchEvents = async () => {
         try {
-            const response = await fetch('https://kalinga.dupebox.com/api/news-events/')
+            const response = await fetch('https://api.kalingauniversity.ac.in/api/news-events/')
             const data = await response.json()
             const results = data.results || data
             setEvents(results.map(e => ({ value: e.id.toString(), label: e.title || e.heading || e.name })))

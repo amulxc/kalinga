@@ -143,7 +143,7 @@ export default function ChatbotPopup() {
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-orange-50/30 animate-pulse pointer-events-none"></div>
 
                             <iframe
-                                src="https://kalinga.dupebox.com/chatbot_v1/"
+                                src="https://api.kalingauniversity.ac.in/chatbot_v1/"
                                 className="w-full h-full border-none relative z-10"
                                 title="Kalinga University Chatbot"
                             />

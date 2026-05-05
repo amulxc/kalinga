@@ -1,6 +1,6 @@
 const https = require('https');
 
-const url = "https://kalinga.dupebox.com/api/news-events/";
+const url = "https://api.kalingauniversity.ac.in/api/news-events/";
 
 https.get(url, (res) => {
     let data = '';

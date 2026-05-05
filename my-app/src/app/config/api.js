@@ -1,6 +1,6 @@
 // Global API Configuration
 export const API_CONFIG = {
-  baseURL: 'https://kalinga.dupebox.com/api',
+  baseURL: 'https://api.kalingauniversity.ac.in/api',
 
   // Course endpoints
   courses: {

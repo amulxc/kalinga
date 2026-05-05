@@ -1,10 +1,10 @@
-export const API = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://kalinga.dupebox.com/api';
+export const API = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://api.kalingauniversity.ac.in/api';
 
 export async function getSurveyQuestions(courseId, category) {
     let url = `${API}/survey/questions/?course_id=${courseId}&category=${category}`;
     let res = await fetch(url, { headers: { 'Content-Type': 'application/json' } });
     let data = await res.json();
-    
+
     // If no course-specific questions are found, fallback to fetching general questions for the category
     if (res.ok && (!data.questions || data.questions.length === 0)) {
         url = `${API}/survey/questions/?category=${category}`;
@@ -18,7 +18,7 @@ export async function getSurveyQuestions(courseId, category) {
             }
         }
     }
-    
+
     if (!res.ok) throw new Error(JSON.stringify(data));
     return data;
 }
