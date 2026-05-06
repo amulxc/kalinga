@@ -60,7 +60,6 @@ import siteMeta from "./config/site-meta.json";
 import { getPageMetadata } from "@/lib/getPageMetadata";
 import Script from "next/script";
 import NPFWidget from "./components/layout/NPFWidget";
-import NPFChatbot from "./components/layout/NPFChatbot";
 import CountdownBanner from "./components/general/CountdownBanner";
 
 const geistSans = Geist({
@@ -168,7 +167,6 @@ export default function RootLayout({ children }) {
             `
           }}
         />
-        <NPFChatbot />
         <ChatbotProvider>
           <FlipbookProvider>
             <ClickSparkWrapper>
@@ -206,6 +204,17 @@ export default function RootLayout({ children }) {
           {/* Outside ClickSparkWrapper so stacking isn’t tied to spark canvas; above sticky countdown (z-[10060]) */}
           {/* <ChatbotPopup /> */}
         </ChatbotProvider>
+        <div
+          className="npf_chatbots"
+          data-w="83d92d42d8cc4c839d761d929fc3211c"
+          style={{ display: "none" }}
+        />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://chatbot.in1.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/6426019081578b6b/83d92d42d8cc4c839d761d929fc3211c"; document.body.appendChild(s);`,
+          }}
+        />
       </body>
     </html>
   );

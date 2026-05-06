@@ -28,33 +28,33 @@ export default function NPFWidget() {
                     display: block !important;
                     visibility: visible !important;
                 }
-                /* Surgical suppression removed to allow NPF chatbot to show */
-                /* Explicitly allow the modal and form content iframe to be visible and correctly sized */
+                /* Aggressive hide for NPF launcher/tracking bubble */
+                iframe[src*="widgets.nopaperforms.com"]:not([id*="modal"]),
+                iframe[src*="track.nopaperforms.com"],
+                iframe#npf-widget-launcher,
+                iframe.npf-widget-launcher,
+                #npf-widget-launcher-bubble,
+                .npf-chat-icon, 
+                .npf-bubble,
+                .npf-tracking-icon,
+                #npf_chat_icon,
+                svg[class*="npf-"] {
+                    display: none !important;
+                    visibility: hidden !important;
+                    opacity: 0 !important;
+                    pointer-events: none !important;
+                    width: 0 !important;
+                    height: 0 !important;
+                }
+                /* Ensure the modal/iframe for the form stays visible */
                 .npfwpopup-wrapper, 
                 .npf-popup-modal, 
-                iframe[id*="npf"],
-                iframe[src*="form"],
+                iframe[id*="modal"], 
                 [id*="npfWidget"] {
                     display: flex !important;
                     visibility: visible !important;
                     opacity: 1 !important;
                     z-index: 2147483647 !important;
-                    width: 100% !important;
-                    height: 520px !important;
-                    min-height: 520px !important;
-                }
-                /* Hide the redundant title/header area */
-                .npfwpopup-title,
-                .npfwpopup-header,
-                .npf-title,
-                .npf-header,
-                .npfwpopup-wrapper h3,
-                .npf-popup-modal h3 {
-                    display: none !important;
-                    visibility: hidden !important;
-                    height: 0 !important;
-                    margin: 0 !important;
-                    padding: 0 !important;
                 }
                 /* Mobile adjustments */
                 @media (max-width: 1024px) {
@@ -82,10 +82,10 @@ export default function NPFWidget() {
                         new NpfWidgetsInit({
                             "widgetId": "91df5911b269a8c3f63541c1f915d331",
                             "baseurl": "widgets.nopaperforms.com",
-                            "formTitle": "",
+                            "formTitle": "Feedback Form",
                             "titleColor": "#FF0033",
                             "backgroundColor": "#ddd",
-                            "iframeHeight": "600px",
+                            "iframeHeight": "500px",
                             "buttonbgColor": "#972B28",
                             "buttonTextColor": "#FFF",
                         });
