@@ -218,7 +218,7 @@ export default function RootLayout({ children }) {
         <div
           className="fixed inset-x-0 bottom-0 text-white"
           style={{
-            zIndex: 2147483647,
+            zIndex: 10000,
             backgroundColor: "#972B28",
             boxShadow: "0 -6px 18px rgba(0,0,0,0.25)",
           }}
@@ -235,6 +235,18 @@ export default function RootLayout({ children }) {
             </a>
           </div>
         </div>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .npf_chatbots,
+              iframe[src*="chatbot.in1.nopaperforms.com"],
+              [id*="npf_chat"],
+              [class*="npf_chat"] {
+                z-index: 10050 !important;
+              }
+            `,
+          }}
+        />
       </body>
     </html>
   );
