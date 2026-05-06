@@ -186,6 +186,7 @@ function Campusfacilitiescard({
         .campus-cards-wrapper img:not(.campus-img-centered) {
           width: 100% !important;
           object-fit: cover !important;
+          object-position: center !important;
           border-radius: 0.75rem;
         }
 
