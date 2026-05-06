@@ -192,7 +192,7 @@ export default function RootLayout({ children }) {
               `
                 }}
               />
-              <main className="min-h-screen">
+              <main className="min-h-screen pb-20">
                 <Breadcrumb />
                 {children}
               </main>
@@ -215,6 +215,26 @@ export default function RootLayout({ children }) {
             __html: `var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://chatbot.in1.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/6426019081578b6b/83d92d42d8cc4c839d761d929fc3211c"; document.body.appendChild(s);`,
           }}
         />
+        <div
+          className="fixed inset-x-0 bottom-0 text-white"
+          style={{
+            zIndex: 2147483647,
+            backgroundColor: "#972B28",
+            boxShadow: "0 -6px 18px rgba(0,0,0,0.25)",
+          }}
+        >
+          <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center gap-2 px-4 py-3 text-center md:flex-row md:gap-4 md:px-6">
+            <p className="text-sm font-semibold md:text-base">Admission Open 2026</p>
+            <a
+              href="https://admissions.kalingauniversity.ac.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-md bg-white px-4 py-2 text-xs font-semibold text-[#972B28] transition-colors hover:bg-[#f8f8f8] md:text-sm"
+            >
+              Apply Now
+            </a>
+          </div>
+        </div>
       </body>
     </html>
   );

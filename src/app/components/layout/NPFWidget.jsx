@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import Script from "next/script";
 
 export default function NPFWidget() {
@@ -28,28 +27,10 @@ export default function NPFWidget() {
                     display: block !important;
                     visibility: visible !important;
                 }
-                /* Aggressive hide for NPF launcher/tracking bubble */
-                iframe[src*="widgets.nopaperforms.com"]:not([id*="modal"]),
-                iframe[src*="track.nopaperforms.com"],
-                iframe#npf-widget-launcher,
-                iframe.npf-widget-launcher,
-                #npf-widget-launcher-bubble,
-                .npf-chat-icon, 
-                .npf-bubble,
-                .npf-tracking-icon,
-                #npf_chat_icon,
-                svg[class*="npf-"] {
-                    display: none !important;
-                    visibility: hidden !important;
-                    opacity: 0 !important;
-                    pointer-events: none !important;
-                    width: 0 !important;
-                    height: 0 !important;
-                }
-                /* Ensure the modal/iframe for the form stays visible */
-                .npfwpopup-wrapper, 
-                .npf-popup-modal, 
-                iframe[id*="modal"], 
+                /* Ensure the form popup stays visible */
+                .npfwpopup-wrapper,
+                .npf-popup-modal,
+                iframe[id*="modal"],
                 [id*="npfWidget"] {
                     display: flex !important;
                     visibility: visible !important;
