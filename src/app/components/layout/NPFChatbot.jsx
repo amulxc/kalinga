@@ -24,6 +24,14 @@ export default function NPFChatbot() {
           `,
         }}
       />
+      <style jsx global>{`
+        .npf_chatbots {
+          position: fixed;
+          right: 20px;
+          bottom: 20px;
+          z-index: 10070;
+        }
+      `}</style>
     </>
   );
 }
