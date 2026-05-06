@@ -61,6 +61,7 @@ import { getPageMetadata } from "@/lib/getPageMetadata";
 import Script from "next/script";
 import NPFWidget from "./components/layout/NPFWidget";
 import CountdownBanner from "./components/general/CountdownBanner";
+import NPFChatbot from "./components/layout/NPFChatbot";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -168,6 +169,7 @@ export default function RootLayout({ children }) {
           }}
         />
         <ChatbotProvider>
+          <NPFChatbot />
           <FlipbookProvider>
             <ClickSparkWrapper>
               <Header />
@@ -205,16 +207,6 @@ export default function RootLayout({ children }) {
           {/* <ChatbotPopup /> */}
         </ChatbotProvider>
         <div
-          className="npf_chatbots"
-          data-w="83d92d42d8cc4c839d761d929fc3211c"
-        />
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://chatbot.in1.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/6426019081578b6b/83d92d42d8cc4c839d761d929fc3211c"; document.body.appendChild(s);`,
-          }}
-        />
-        <div
           className="fixed inset-x-0 bottom-0 text-white"
           style={{
             zIndex: 10000,
@@ -234,18 +226,6 @@ export default function RootLayout({ children }) {
             </a>
           </div>
         </div>
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              .npf_chatbots,
-              iframe[src*="chatbot.in1.nopaperforms.com"],
-              [id*="npf_chat"],
-              [class*="npf_chat"] {
-                z-index: 10050 !important;
-              }
-            `,
-          }}
-        />
       </body>
     </html>
   );
