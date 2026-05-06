@@ -148,7 +148,7 @@ const Header = () => {
           {
             title: 'Overview',
             links: [
-              { label: 'Who We Are', href: '/about-us' },
+              // { label: 'Who We Are', href: '/about-us' },
               // { label: 'Why Kalinga', href: '/about-us#vision-mission' },
               { label: 'About Raipur', href: '/about-raipur' },
               { label: 'Administration & Leadership', href: '/leadership' },
@@ -451,11 +451,11 @@ const Header = () => {
                       onMenuPointerEnter={
                         item.label === 'Events & Activities'
                           ? () => {
-                              if (topBarMegaLeaveTimerRef.current) {
-                                clearTimeout(topBarMegaLeaveTimerRef.current);
-                                topBarMegaLeaveTimerRef.current = null;
-                              }
+                            if (topBarMegaLeaveTimerRef.current) {
+                              clearTimeout(topBarMegaLeaveTimerRef.current);
+                              topBarMegaLeaveTimerRef.current = null;
                             }
+                          }
                           : undefined
                       }
                     />
