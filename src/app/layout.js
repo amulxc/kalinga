@@ -207,7 +207,6 @@ export default function RootLayout({ children }) {
         <div
           className="npf_chatbots"
           data-w="83d92d42d8cc4c839d761d929fc3211c"
-          style={{ display: "none" }}
         />
         <script
           type="text/javascript"
