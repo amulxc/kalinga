@@ -215,7 +215,7 @@ export default function RootLayout({ children }) {
           }}
         >
           <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-center gap-2 px-4 py-3 text-center md:flex-row md:gap-4 md:px-6">
-            <p className="text-sm font-semibold md:text-base">Admission Open 2026</p>
+            <p className="text-sm font-semibold md:text-base">Admission Open 2026-27</p>
             <a
               href="https://admissions.kalingauniversity.ac.in/"
               target="_blank"
