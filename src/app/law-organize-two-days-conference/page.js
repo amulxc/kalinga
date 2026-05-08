@@ -531,14 +531,13 @@ const LawConferencePage = () => {
                             <h3 className="font-plus-jakarta-sans font-bold text-[20px] text-[var(--button-red)] mb-2 text-center">Theme</h3>
                             <p className="font-stix text-[26px] leading-tight text-gray-800 text-center">Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance</p>
                         </div>
-                        <h3 className="font-plus-jakarta-sans font-bold text-[20px] text-[var(--button-red)] mb-4 text-center">Sub Themes</h3>
                     </div>
                     <div className="max-w-6xl mx-auto mb-12">
                         <h3 className="font-plus-jakarta-sans font-bold text-[20px] text-[var(--button-red)] mb-8 text-center">Sub Themes</h3>
                         <div className="flex flex-col md:flex-row gap-6 items-start">
                             {/* Left Column */}
                             <div className="flex-1 flex flex-col gap-4 w-full">
-                                <AccordionItem 
+                                <AccordionItem
                                     title="AI in Commercial Law and Financial Regulation"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -555,7 +554,7 @@ const LawConferencePage = () => {
                                         <li>Comparative regulatory approaches in global trade</li>
                                     </ul>
                                 </AccordionItem>
-                                <AccordionItem 
+                                <AccordionItem
                                     title="AI in Criminal Law"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -569,7 +568,7 @@ const LawConferencePage = () => {
                                         <li>Digital Forensics and Authenticity Verification</li>
                                     </ul>
                                 </AccordionItem>
-                                <AccordionItem 
+                                <AccordionItem
                                     title="Intellectual Property Law and Innovation in AI"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -584,7 +583,7 @@ const LawConferencePage = () => {
                                         <li>Comparative IP reforms in the US, EU, India and Japan</li>
                                     </ul>
                                 </AccordionItem>
-                                <AccordionItem 
+                                <AccordionItem
                                     title="Access to Justice Through AI"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -601,7 +600,7 @@ const LawConferencePage = () => {
                                         <li>Comparative judicial technology models (UK, Estonia, Singapore)</li>
                                     </ul>
                                 </AccordionItem>
-                                <AccordionItem 
+                                <AccordionItem
                                     title="AI, Healthcare, and Legal Governance"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -623,7 +622,7 @@ const LawConferencePage = () => {
 
                             {/* Right Column */}
                             <div className="flex-1 flex flex-col gap-4 w-full">
-                                <AccordionItem 
+                                <AccordionItem
                                     title="Data Protection, Privacy, and Cybersecurity"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -642,7 +641,7 @@ const LawConferencePage = () => {
                                         <li>Transparency and Explainability in AI Decision-making</li>
                                     </ul>
                                 </AccordionItem>
-                                <AccordionItem 
+                                <AccordionItem
                                     title="Legal Policies and Deep Fakes"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -659,7 +658,7 @@ const LawConferencePage = () => {
                                         <li>Technology-Assisted Dispute Resolution for Deep Fakes</li>
                                     </ul>
                                 </AccordionItem>
-                                <AccordionItem 
+                                <AccordionItem
                                     title="AI in Legal Practice and Education"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
@@ -677,7 +676,7 @@ const LawConferencePage = () => {
                                         <li>AI and diversity in the legal profession</li>
                                     </ul>
                                 </AccordionItem>
-                                <AccordionItem 
+                                <AccordionItem
                                     title="Digital Sovereignty and Ethical Challenges"
                                     titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
                                     bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
