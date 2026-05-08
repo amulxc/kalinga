@@ -681,6 +681,11 @@ export const pageDataMap: Record<string, PageData> = {
         title: "Partnerships for the Goals",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     },
+    "/law-organize-two-days-conference": {
+        slug: "/law-organize-two-days-conference",
+        title: "Two Day Global Conference",
+        banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
+    },
 
 };
 
