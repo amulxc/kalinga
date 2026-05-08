@@ -561,8 +561,18 @@ const buttons2 = [
     },
     {
         id: 8,
+        text: "Kalinga Buzz August 2020",
+        href: "s3://cdn.kalingauniversity.ac.in/buzz/SDG/August_2020.PDF",
+    },
+    {
+        id: 8,
         text: "Kalinga Buzz September 2020",
         href: "https://cdn.kalingauniversity.ac.in/buzz/Kalinga+Buzz+September+2020.pdf",
+    },
+    {
+        id: 8,
+        text: "Kalinga Buzz October 2020",
+        href: "s3://cdn.kalingauniversity.ac.in/buzz/SDG/October_2020.PDF",
     },
     {
         id: 10,

@@ -318,6 +318,30 @@ const JournalOfLawAndAIPage = () => {
             duration: "Page range: 78-90",
             level: "ARCHIVE",
             slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/5.+Mr.+Pankaj+Chhuttani.pdf"
+        },
+        {
+            id: 101,
+            shortName: "Shruti navratna & Ekta Chandrakar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 1-6",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/vol-2-issues-1/1.-Shruti-navratna-Ekta-Chandrakar-1-9.pdf"
+        },
+        {
+            id: 102,
+            shortName: "Anshika Vishwakarma,& Dr. Paluck-Sharma",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 1-6",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/vol-2-issues-1/2.-Anshika-Vishwakarma,-Dr.-Paluck-Sharma-10-15.pdf"
+        },
+        {
+            id: 103,
+            shortName: "Shraddha-Sahu, Swarnim-Sahu, Vamini-Dhruw, Aryan-Jain, Ekta-Chandrakar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 1-6",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/vol-2-issues-1/3.-Shraddha-Sahu,-Swarnim-Sahu,-Vamini-Dhruw,-Aryan-Jain,-Ekta-Chandrakar-16-22.pdf"
         }
     ];
 
@@ -509,8 +533,10 @@ const JournalOfLawAndAIPage = () => {
                         description="Explore past volumes and issues of the Journal of Law and Artificial Intelligence."
                         programs={
                             activeTab === "vol1_issue1"
-                                ? archivesData.filter(item => item.title.includes("Issue 1") || item.level === "ARCHIVE")
-                                : archivesData.filter(item => item.title.includes("Issue 2"))
+                                ? archivesData.filter(item => item.title.includes("Vol. 1, Issue 1") || item.level === "ARCHIVE")
+                                : activeTab === "vol1_issue2"
+                                    ? archivesData.filter(item => item.title.includes("Vol. 1, Issue 2"))
+                                    : archivesData.filter(item => item.title.includes("Vol. 2, Issue 1"))
                         }
                         exploreLabel="Download PDF"
                         searchPlaceholder="Search Archives...."
@@ -521,7 +547,7 @@ const JournalOfLawAndAIPage = () => {
                         titleColor="text-[var(--foreground)]"
                         topRightContent={
                             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                                <TabsList className="grid grid-cols-2 gap-4 bg-transparent p-0">
+                                <TabsList className="grid grid-cols-3 gap-4 bg-transparent p-0">
                                     <TabsTrigger
                                         value="vol1_issue1"
                                         className={`!rounded-xl border ${activeTab === "vol1_issue1" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
@@ -533,6 +559,12 @@ const JournalOfLawAndAIPage = () => {
                                         className={`!rounded-xl border ${activeTab === "vol1_issue2" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
                                     >
                                         Vol. 1, Issue 2
+                                    </TabsTrigger>
+                                    <TabsTrigger
+                                        value="vol2_issue1"
+                                        className={`!rounded-xl border ${activeTab === "vol2_issue1" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
+                                    >
+                                        Vol. 2, Issue 1
                                     </TabsTrigger>
                                 </TabsList>
                             </Tabs>
