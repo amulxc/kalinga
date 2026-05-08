@@ -35,12 +35,12 @@ const SDG_POLICY_PDF =
 
 const SDG_OFFICE_ORDERS = [
   {
-    label: "Office Order 2022",
+    label: "CoE Establishment 2022",
     pdfUrl:
       "https://cdn.kalingauniversity.ac.in/sdg-cell/Office-Order-2022-CoE-Committee-Members.pdf",
   },
   {
-    label: "Office Order 2025",
+    label: "CoE Establishment 2025",
     pdfUrl:
       "https://cdn.kalingauniversity.ac.in/sdg-cell/Office-Order-2025-Revised-CoE-Committee-Members.pdf",
   },
@@ -90,14 +90,14 @@ function SdgReportsAndPolicyTabs() {
           onClick={() => setTab("policy")}
           className={`pb-2 px-1 text-sm sm:text-base font-semibold border-b-2 -mb-px transition-colors ${tab === "policy" ? "border-[var(--button-red)] text-[var(--button-red)]" : "border-transparent text-[var(--light-text-gray)] hover:text-[var(--dark-gray)]"}`}
         >
-          SDG Policy
+          About SDG Cell
         </button>
         <button
           type="button"
           onClick={() => setTab("orders")}
           className={`pb-2 px-1 text-sm sm:text-base font-semibold border-b-2 -mb-px transition-colors ${tab === "orders" ? "border-[var(--button-red)] text-[var(--button-red)]" : "border-transparent text-[var(--light-text-gray)] hover:text-[var(--dark-gray)]"}`}
         >
-          Office Orders
+          CoE Establishment
         </button>
       </div>
 

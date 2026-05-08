@@ -170,7 +170,7 @@ const cards = [
                 Continuous awareness programs are conducted to encourage active participation in recycling activities across the campus to reduce waste generation.
             </>
         ),
-        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/recycle-images.png",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-recycle-new.jpeg",
         logoSrc: "",
         subtitle: "WASTE RECYCLING SYSTEM",
         link: "#",
