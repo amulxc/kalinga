@@ -454,20 +454,20 @@ const LawConferencePage = () => {
         <>
             <section className="py-12 md:py-16 text-center bg-white border-b border-gray-100">
                 <div className="container mx-auto px-4">
-                    <h5 className="font-plus-jakarta-sans font-bold text-[var(--button-red)] uppercase tracking-[0.2em] text-sm md:text-base mb-2">
+                    <h5 className="font-plus-jakarta-sans font-bold text-[var(--button-red)] titlecase tracking-[0.2em] text-sm md:text-base mb-2">
                         FACULTY OF LAW
                     </h5>
                     <p className="font-plus-jakarta-sans font-semibold text-gray-400 uppercase tracking-[0.3em] text-[10px] md:text-xs mb-8">
                         ORGANISES
                     </p>
-                    <h1 className="font-stix font-bold text-2xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-4 uppercase">
-                        TWO-DAY GLOBAL CONFERENCE
+                    <h1 className="font-stix font-bold text-2xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-4">
+                        Two Day Global Conference
                     </h1>
                     <p className="font-stix italic text-lg md:text-xl text-gray-500 mb-4 lowercase">
                         on
                     </p>
-                    <h2 className="font-stix font-bold text-xl md:text-2xl lg:text-4xl text-gray-800 leading-tight mb-10 uppercase max-w-4xl mx-auto">
-                        EMERGING TRENDS IN ARTIFICIAL INTELLIGENCE: <br className="hidden md:block" /> COMPARATIVE APPROACHES OF LEGAL GOVERNANCE
+                    <h2 className="font-stix font-bold text-xl md:text-2xl lg:text-4xl text-gray-800 leading-tight mb-10 titlecase max-w-4xl mx-auto">
+                        Emerging Trends In Artificial Intelligence: <br className="hidden md:block" /> Comparative Approaches Of Legal Governance
                     </h2>
                     <p className="font-plus-jakarta-sans font-extrabold text-xl md:text-2xl lg:text-3xl text-gray-900 border-t border-gray-100 pt-8 inline-block">
                         20th & 21st November 2026
@@ -506,14 +506,17 @@ const LawConferencePage = () => {
                 imageUrl="https://cdn.kalingauniversity.ac.in/law-conference/FacultyOfLaw-AboutDept.webp"
                 imageAlt="International Conference on Law and AI"
                 reverseLayout={true}
+                sectionClassName="md:py-16 bg-[var(--lite-sand)] py-16 !pb-20"
             />
             <ImageContent
                 hasImage={true}
                 readmore={false}
-                className="items-center justify-center"
+                className="items-center justify-center mt-12 [&_img]:!w-[100px] [&_img]:!h-auto md:[&>img]:order-last md:[&>div]:order-first"
                 title="Call For Papers"
                 subtitleclassName="hidden"
-                imageSrc="https://cdn.kalingauniversity.ac.in/course/Law-1.webp"
+                imageSrc="https://cdn.kalingauniversity.ac.in/law-conference/document.svg"
+                imageWidth={100}
+                imageHeight={100}
                 description="This Global Conference on 'Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance”, organised by the Faculty of Law, Kalinga University, Naya Raipur, will be held on 20th & 21st November 2026. The Conference invites contributions in the form of full-length scholarly papers documenting original and substantial research work."
             />
 
@@ -530,123 +533,169 @@ const LawConferencePage = () => {
                         </div>
                         <h3 className="font-plus-jakarta-sans font-bold text-[20px] text-[var(--button-red)] mb-4 text-center">Sub Themes</h3>
                     </div>
-                    <div className="max-w-4xl mx-auto space-y-4">
-                        <AccordionItem title="AI in Commercial Law and Financial Regulation">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>AI-driven contracts and smart contracts</li>
-                                <li>Algorithmic decision-making in Banking, Fintech and Digital Transactions</li>
-                                <li>Consumer protection in AI-powered marketplaces</li>
-                                <li>Corporate Social Responsibility in the Tech Industry</li>
-                                <li>Antitrust implications of AI in markets</li>
-                                <li>Data Privacy Regulations and Competition Law</li>
-                                <li>Taxation Challenges in the era of AI</li>
-                                <li>Public-Private partnerships in AI oversight</li>
-                                <li>Comparative regulatory approaches in global trade</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="AI in Criminal Law">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>Criminal liability for AI-assisted offences</li>
-                                <li>Autonomous Systems and Mens Rea</li>
-                                <li>AI in predictive policing</li>
-                                <li>Criminal Liability for Deep Fake Offences</li>
-                                <li>Sentencing algorithms: fairness and bias</li>
-                                <li>Digital Forensics and Authenticity Verification</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="Intellectual Property Law and Innovation in AI">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>Copyright ownership of AI-generated works</li>
-                                <li>Patentability of AI inventions</li>
-                                <li>AI and traditional knowledge protection</li>
-                                <li>Intellectual Property Rights and AI Innovation</li>
-                                <li>Trade Secrets and AI Technology</li>
-                                <li>Trade Law and the Global AI Market</li>
-                                <li>Comparative IP reforms in the US, EU, India and Japan</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="Access to Justice Through AI">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>Online Dispute Resolution and AI</li>
-                                <li>AI-Powered Legal Aid Services</li>
-                                <li>Chatbots and Virtual Assistants in Legal Aid</li>
-                                <li>AI in Pro Bono Legal Services</li>
-                                <li>Justice Tech for Vulnerable Communities</li>
-                                <li>AI tools in Indian courts (case management, translation, research)</li>
-                                <li>AI and judicial decision-making ethics</li>
-                                <li>Digital courts and e-governance</li>
-                                <li>Comparative judicial technology models (UK, Estonia, Singapore)</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="AI, Healthcare, and Legal Governance">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>Regulation of AI in Healthcare: Challenges and Opportunities</li>
-                                <li>Data Protection and Privacy in AI-driven Health Systems</li>
-                                <li>Liability and Accountability in AI-based Medical Decisions</li>
-                                <li>Ethical and Legal Issues in AI-assisted Diagnosis and Treatment</li>
-                                <li>Intellectual Property Rights in AI-generated Medical Innovations</li>
-                                <li>AI and the Right to Health</li>
-                                <li>Informed Consent in AI-based Healthcare Systems</li>
-                                <li>Digital Health Policies and AI Integration in India</li>
-                                <li>AI in Rural and Remote Healthcare Delivery</li>
-                                <li>Global Regulatory Approaches to AI in Healthcare</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="Data Protection, Privacy, and Cybersecurity">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>Data protection and AI systems</li>
-                                <li>Personal data protection in AI-driven systems</li>
-                                <li>Privacy challenges in big data and machine learning</li>
-                                <li>Consent and data ownership in digital ecosystems</li>
-                                <li>Role of encryption and cryptography in data protection</li>
-                                <li>Cybersecurity risks in AI-enabled technologies</li>
-                                <li>Data breaches and liability in AI systems</li>
-                                <li>International Collaboration and Standardisation</li>
-                                <li>Ethical Considerations in AI Governance</li>
-                                <li>Regulatory Challenges in Emerging Technologies</li>
-                                <li>Transparency and Explainability in AI Decision-making</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="Legal Policies and Deep Fakes">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>Legislative Responses to Deep Fakes</li>
-                                <li>Intellectual Property Rights in the Era of Deep Fakes</li>
-                                <li>Privacy Concerns and Deep Fake Regulations</li>
-                                <li>Criminal Liability for Deep Fake Offences</li>
-                                <li>Digital Forensics and Authenticity Verification</li>
-                                <li>Impact on Political Discourse and Election Integrity</li>
-                                <li>Media and Journalism Ethics in the Deep Fake Era</li>
-                                <li>Cross-Border Challenges in Deep Fake Regulation</li>
-                                <li>Technology-Assisted Dispute Resolution for Deep Fakes</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="AI in Legal Practice and Education">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>Education and Awareness in Digital Literacy</li>
-                                <li>Innovative Tools for Legal Research and Analysis</li>
-                                <li>AI-Enhanced Legal Writing and Document Generation</li>
-                                <li>Virtual Legal Assistants and AI in Law Firms</li>
-                                <li>Simulation and Training in Legal Education</li>
-                                <li>Ethical Considerations in AI-Driven Legal Practice</li>
-                                <li>AI in Predictive Legal Analytics</li>
-                                <li>AI and the Future of Legal Practice</li>
-                                <li>Adapting Legal Curricula to AI Advancements</li>
-                                <li>AI and diversity in the legal profession</li>
-                            </ul>
-                        </AccordionItem>
-                        <AccordionItem title="Digital Sovereignty and Ethical Challenges">
-                            <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4">
-                                <li>AI and Human Rights Law</li>
-                                <li>Autonomous Weapons and International Humanitarian Law</li>
-                                <li>Data Governance and Digital Sovereignty: Issues and Challenges</li>
-                                <li>Digital Citizenship and Rights in the Digital Age</li>
-                                <li>Digital Imperialism and Global Technology Influence</li>
-                                <li>Cybersecurity and International Security Implications</li>
-                                <li>Cross-border AI governance</li>
-                                <li>Global AI treaties and regulatory harmonisation</li>
-                                <li>Role of WTO, WIPO and UN bodies in AI regulation</li>
-                            </ul>
-                        </AccordionItem>
+                    <div className="max-w-6xl mx-auto mb-12">
+                        <h3 className="font-plus-jakarta-sans font-bold text-[20px] text-[var(--button-red)] mb-8 text-center">Sub Themes</h3>
+                        <div className="flex flex-col md:flex-row gap-6 items-start">
+                            {/* Left Column */}
+                            <div className="flex-1 flex flex-col gap-4 w-full">
+                                <AccordionItem 
+                                    title="AI in Commercial Law and Financial Regulation"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>AI-driven contracts and smart contracts</li>
+                                        <li>Algorithmic decision-making in Banking, Fintech and Digital Transactions</li>
+                                        <li>Consumer protection in AI-powered marketplaces</li>
+                                        <li>Corporate Social Responsibility in the Tech Industry</li>
+                                        <li>Antitrust implications of AI in markets</li>
+                                        <li>Data Privacy Regulations and Competition Law</li>
+                                        <li>Taxation Challenges in the era of AI</li>
+                                        <li>Public-Private partnerships in AI oversight</li>
+                                        <li>Comparative regulatory approaches in global trade</li>
+                                    </ul>
+                                </AccordionItem>
+                                <AccordionItem 
+                                    title="AI in Criminal Law"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>Criminal liability for AI-assisted offences</li>
+                                        <li>Autonomous Systems and Mens Rea</li>
+                                        <li>AI in predictive policing</li>
+                                        <li>Criminal Liability for Deep Fake Offences</li>
+                                        <li>Sentencing algorithms: fairness and bias</li>
+                                        <li>Digital Forensics and Authenticity Verification</li>
+                                    </ul>
+                                </AccordionItem>
+                                <AccordionItem 
+                                    title="Intellectual Property Law and Innovation in AI"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>Copyright ownership of AI-generated works</li>
+                                        <li>Patentability of AI inventions</li>
+                                        <li>AI and traditional knowledge protection</li>
+                                        <li>Intellectual Property Rights and AI Innovation</li>
+                                        <li>Trade Secrets and AI Technology</li>
+                                        <li>Trade Law and the Global AI Market</li>
+                                        <li>Comparative IP reforms in the US, EU, India and Japan</li>
+                                    </ul>
+                                </AccordionItem>
+                                <AccordionItem 
+                                    title="Access to Justice Through AI"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>Online Dispute Resolution and AI</li>
+                                        <li>AI-Powered Legal Aid Services</li>
+                                        <li>Chatbots and Virtual Assistants in Legal Aid</li>
+                                        <li>AI in Pro Bono Legal Services</li>
+                                        <li>Justice Tech for Vulnerable Communities</li>
+                                        <li>AI tools in Indian courts (case management, translation, research)</li>
+                                        <li>AI and judicial decision-making ethics</li>
+                                        <li>Digital courts and e-governance</li>
+                                        <li>Comparative judicial technology models (UK, Estonia, Singapore)</li>
+                                    </ul>
+                                </AccordionItem>
+                                <AccordionItem 
+                                    title="AI, Healthcare, and Legal Governance"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>Regulation of AI in Healthcare: Challenges and Opportunities</li>
+                                        <li>Data Protection and Privacy in AI-driven Health Systems</li>
+                                        <li>Liability and Accountability in AI-based Medical Decisions</li>
+                                        <li>Ethical and Legal Issues in AI-assisted Diagnosis and Treatment</li>
+                                        <li>Intellectual Property Rights in AI-generated Medical Innovations</li>
+                                        <li>AI and the Right to Health</li>
+                                        <li>Informed Consent in AI-based Healthcare Systems</li>
+                                        <li>Digital Health Policies and AI Integration in India</li>
+                                        <li>AI in Rural and Remote Healthcare Delivery</li>
+                                        <li>Global Regulatory Approaches to AI in Healthcare</li>
+                                    </ul>
+                                </AccordionItem>
+                            </div>
+
+                            {/* Right Column */}
+                            <div className="flex-1 flex flex-col gap-4 w-full">
+                                <AccordionItem 
+                                    title="Data Protection, Privacy, and Cybersecurity"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>Data protection and AI systems</li>
+                                        <li>Personal data protection in AI-driven systems</li>
+                                        <li>Privacy challenges in big data and machine learning</li>
+                                        <li>Consent and data ownership in digital ecosystems</li>
+                                        <li>Role of encryption and cryptography in data protection</li>
+                                        <li>Cybersecurity risks in AI-enabled technologies</li>
+                                        <li>Data breaches and liability in AI systems</li>
+                                        <li>International Collaboration and Standardisation</li>
+                                        <li>Ethical Considerations in AI Governance</li>
+                                        <li>Regulatory Challenges in Emerging Technologies</li>
+                                        <li>Transparency and Explainability in AI Decision-making</li>
+                                    </ul>
+                                </AccordionItem>
+                                <AccordionItem 
+                                    title="Legal Policies and Deep Fakes"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>Legislative Responses to Deep Fakes</li>
+                                        <li>Intellectual Property Rights in the Era of Deep Fakes</li>
+                                        <li>Privacy Concerns and Deep Fake Regulations</li>
+                                        <li>Criminal Liability for Deep Fake Offences</li>
+                                        <li>Digital Forensics and Authenticity Verification</li>
+                                        <li>Impact on Political Discourse and Election Integrity</li>
+                                        <li>Media and Journalism Ethics in the Deep Fake Era</li>
+                                        <li>Cross-Border Challenges in Deep Fake Regulation</li>
+                                        <li>Technology-Assisted Dispute Resolution for Deep Fakes</li>
+                                    </ul>
+                                </AccordionItem>
+                                <AccordionItem 
+                                    title="AI in Legal Practice and Education"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>Education and Awareness in Digital Literacy</li>
+                                        <li>Innovative Tools for Legal Research and Analysis</li>
+                                        <li>AI-Enhanced Legal Writing and Document Generation</li>
+                                        <li>Virtual Legal Assistants and AI in Law Firms</li>
+                                        <li>Simulation and Training in Legal Education</li>
+                                        <li>Ethical Considerations in AI-Driven Legal Practice</li>
+                                        <li>AI in Predictive Legal Analytics</li>
+                                        <li>AI and the Future of Legal Practice</li>
+                                        <li>Adapting Legal Curricula to AI Advancements</li>
+                                        <li>AI and diversity in the legal profession</li>
+                                    </ul>
+                                </AccordionItem>
+                                <AccordionItem 
+                                    title="Digital Sovereignty and Ethical Challenges"
+                                    titleClassName="font-stix text-[18px] md:text-[20px] leading-tight text-[var(--button-red)]"
+                                    bgClassName="bg-[var(--card-sandal)] p-4 md:p-5"
+                                >
+                                    <ul className="list-disc pl-5 space-y-2 text-gray-700 font-plus-jakarta-sans py-4 text-sm">
+                                        <li>AI and Human Rights Law</li>
+                                        <li>Autonomous Weapons and International Humanitarian Law</li>
+                                        <li>Data Governance and Digital Sovereignty: Issues and Challenges</li>
+                                        <li>Digital Citizenship and Rights in the Digital Age</li>
+                                        <li>Digital Imperialism and Global Technology Influence</li>
+                                        <li>Cybersecurity and International Security Implications</li>
+                                        <li>Cross-border AI governance</li>
+                                        <li>Global AI treaties and regulatory harmonisation</li>
+                                        <li>Role of WTO, WIPO and UN bodies in AI regulation</li>
+                                    </ul>
+                                </AccordionItem>
+                            </div>
+                        </div>
                     </div>
                     <div className="max-w-4xl mx-auto mt-8">
                         <p className="text-gray-600 font-plus-jakarta-sans italic">
