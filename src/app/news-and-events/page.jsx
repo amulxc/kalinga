@@ -262,6 +262,27 @@ function NewsAndEvents() {
   }));
 
 
+
+  const upcomingevents = [
+    {
+      id: 'global-conference-law',
+      title: 'Emerging Trends In Artificial Intelligence: Comparative Approaches Of Legal Governance',
+      description: 'The Two-Day Global Conference on “Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance” aims to examine the growing relationship between AI and legal systems globally. Due to the growing influence of AI across commercial laws, criminal justice systems, intellectual property regimes, judicial institutions, healthcare regulations, cyber law frameworks, and international legal mechanisms, it raises concerns regarding privacy, transparency, accountability, liability, bias, and protection of human rights',
+      date: '20.11.2026 - 21.11.2026',
+      buttonText: 'Read More',
+      link: "https://kalingauniversity.ac.in/law-organize-two-days-conference",
+    },
+    {
+      id: 'international-conference-icsdgf-2026',
+      title: 'International Conference On Sustainable Development Towards A Greener Future (ICSDGF-2026)',
+      description: 'International Conference on Sustainable Development towards a Greener Future” aims to provide a Comprehens i’ve platform for professionals, academics, researchers, policymakers, and industry Experts to discuss, share, and explore the latest advancements, applications, and potential Impacts of greener future on sustainable development.',
+      date: '31.03.2026 - 01.04.2026',
+      buttonText: 'Read More',
+      link: "https://kalingaplus.kalingauniversity.ac.in/international-conference-on-sustainable-development-towards-a-greener-future-icsdgf-2026/"
+    }
+  ];
+
+
   return (
     <div>
 
@@ -286,6 +307,13 @@ function NewsAndEvents() {
 
       {/* Static Sections */}
       <ThreeCardSider />
+      <StudentActivities
+        id="upcoming-conferences"
+        title="Upcoming Conferences"
+        subtitle=""
+        activities={upcomingevents}
+        useModal={true}
+      />
       <MediaCardSlider
         title="Industrial Visits"
         imageItems={placementGalleryImages}

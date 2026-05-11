@@ -221,8 +221,8 @@ export default function StudentActivities({
 
         {showReadMore && (activity.buttonText !== "" && activity.buttonText !== false) && (
           <div className="mt-4">
-            {activity.buttonlink ? (
-              <a href={activity.buttonlink} target="_blank" rel="noopener noreferrer" className="inline-block">
+            {(activity.buttonlink || activity.link) ? (
+              <a href={activity.buttonlink || activity.link} target="_blank" rel="noopener noreferrer" className="inline-block">
                 <GlobalArrowButton
                   as="span"
                   className="w-fit !bg-[var(--light-gray)] !shadow-none hover:!shadow-none gap-3 !px-0"
