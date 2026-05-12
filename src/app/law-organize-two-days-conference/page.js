@@ -14,7 +14,7 @@ import PublicationGrid from '../components/research/publication-grid';
 
 const LawConferencePage = () => {
 
-    const Items = [
+    const abstractItems = [
         {
             id: 1,
             text: "The abstract must be in an A4 sheet in Word Document Format, typed in Times New Roman in 12 font size with 1.5-line spacing in not more than 300 words. It should not contain more than eight keywords.",
@@ -29,7 +29,66 @@ const LawConferencePage = () => {
         },
         {
             id: 4,
-            text: "Acceptance of the Abstract will be communicated via e-mail <a href=\"mailto:lawconference@kalingauniversity.ac.in\">lawconference@kalingauniversity.ac.in</a>",
+            text: "Acceptance of the Abstract will be communicated via e-mail <a href=\"mailto:lawconference@kalingauniversity.ac.in\"><b>lawconference@kalingauniversity.ac.in:</b></a>",
+        },
+    ]
+
+    const fullPaperItems = [
+        {
+            id: 1,
+            text: "The word limit of the paper shall be 5000-6000 words (exclusive of footnotes).",
+        },
+        {
+            id: 2,
+            text: "The main text of the full paper should be in Times New Roman with a font size of 12 and a line spacing of 1.5.",
+        },
+        {
+            id: 3,
+            text: "The footnotes should be in Times New Roman, font size 10, with spacing of 1.0 (Endnotes are not permitted).",
+        },
+        {
+            id: 4,
+            text: "One-inch margins should be maintained on all four sides of the pages.",
+        },
+        {
+            id: 5,
+            text: "Citation Style: Bluebook, 20th edition.",
+        },
+        {
+            id: 6,
+            text: "Full papers have to be submitted in (Word) .docx format.",
+        },
+        {
+            id: 7,
+            text: "The submission of the full paper shall be carried out through the form link provided by us after the acceptance of the abstract.",
+        },
+        {
+            id: 8,
+            text: "The participants are also required to submit their full paper in the registration form.",
+        },
+        {
+            id: 9,
+            text: "Registration is mandatory upon acceptance of the abstract. The link to the registration form will be shared via email with the selected participants.",
+        },
+        {
+            id: 10,
+            text: "No abstract or full paper shall be accepted after the last date of submission.",
+        },
+        {
+            id: 11,
+            text: "Only the selected abstracts will be permitted for presentation.",
+        },
+        {
+            id: 12,
+            text: "Co-authorship is permitted to a maximum of two authors, and at least one author must attend the Conference to present the paper.",
+        },
+        {
+            id: 13,
+            text: "All submissions must be the author's original and unpublished work.",
+        },
+        {
+            id: 14,
+            text: "More than 10% similarity will attract immediate disqualification.",
         },
     ]
 
@@ -345,11 +404,19 @@ const LawConferencePage = () => {
                 "Confirmation of Abstract: 31st August 2026",
                 "Last Date for Registration And Payment: 30th September 2026",
                 "Submission of Full Paper: 15th October 2026",
-                "Global Conference: 20th & 21st November 2026",
-                "Mode of the Conference: Hybrid Mode (Online & Offline)"
+                "Global Conference: 20th & 21st November 2026"
             ]
         }
     ];
+
+    const modeofconference = [
+
+        {
+            id: 2,
+            question: "Mode of Conference",
+            answer: "Hybrid Mode (Online & Offline)"
+        }
+    ]
 
     const registrationFeeSections = [
         {
@@ -444,8 +511,10 @@ const LawConferencePage = () => {
             </ul>
             <div class="mt-4 pt-4 border-t border-gray-200">
                 <strong class="text-lg text-gray-900 block mb-2">Note:</strong>
-                <p class="text-gray-700 mb-2">The Author has to pay the publication charges for the publication in the Scopus-indexed journal.</p>
-                <p class="text-gray-700">A soft copy of the book/proceeding shall be provided to the authors. (A hard copy will be provided on request with applicable charges).</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>The Author has to pay the publication charges for the publication in the Scopus-indexed journal.</li>
+                    <li>A soft copy of the book/proceeding shall be provided to the authors. (A hard copy will be provided on request with applicable charges).</li>
+                </ul>
             </div>`
         }
     ];
@@ -705,11 +774,23 @@ const LawConferencePage = () => {
             </section>
 
             <ImageListItem
-                items={Items}
+                items={abstractItems}
                 imageSrc="https://cdn.kalingauniversity.ac.in/course/law-2.webp"
                 title="Submission Guidelines"
                 subtitle=""
                 description="Abstract Submission:"
+            />
+
+            <ImageListItem
+                items={fullPaperItems}
+                imageSrc="https://cdn.kalingauniversity.ac.in/law-conference/BA-LLB-AboutImage.webp"
+                title="Full Paper Submission:"
+                subtitle=""
+                description="The following guidelines should be followed:"
+                reverseLayout={true}
+                className="mt-8 !bg-transparent !mx-0"
+                textClassName="text-black"
+                headingClassName="text-black"
             />
 
             <FAQ
@@ -718,7 +799,7 @@ const LawConferencePage = () => {
                 subtitle="Guidelines & Fees"
                 variant="table-display"
                 tableSections={[]}
-                items={[...importantDatesItems, ...conferenceInfoItems]}
+                items={[...importantDatesItems, ...modeofconference, ...conferenceInfoItems]}
                 pyClassName="py-12"
             />
 
@@ -754,6 +835,44 @@ const LawConferencePage = () => {
                 ]}
                 useContainer={true}
             />
+            <div className="mx-auto max-w-6xl px-4 md:px-6 mt-10 mb-6">
+                <div className="rounded-2xl bg-[var(--lite-sand)] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div>
+                        <h3 className="font-stix text-xl md:text-2xl text-[var(--foreground)]">
+                            Global Law Conference
+                        </h3>
+                        <p className="mt-2 text-gray-700">
+                            Download the Global Law Conference brochure.
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://cdn.kalingauniversity.ac.in/law-conference/GLOBAL-LAW-CONFERENCE-2026-new.pdf"
+                        download
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 rounded-xl bg-[var(--button-red)] px-5 py-3 text-white font-semibold hover:opacity-90 transition"
+                    >
+                        Download Brochure
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                            <path
+                                d="M4 17v3h16v-3"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
 
         </>

@@ -683,7 +683,7 @@ export const pageDataMap: Record<string, PageData> = {
     },
     "/law-organize-two-days-conference": {
         slug: "/law-organize-two-days-conference",
-        title: "Two Day Global Conference",
+        title: "Two-Day Global Conference on Emerging Trends in Artificial Intelligence",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     },
 

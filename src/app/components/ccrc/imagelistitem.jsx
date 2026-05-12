@@ -104,7 +104,7 @@ export default function ImageListItem({
 
             {/* Description */}
             {description && (
-              <p className={`text-sm pb-4 ${textClassName}`}>{description}</p>
+              <p className={`text-sm pb-4 ${textClassName}`} dangerouslySetInnerHTML={{ __html: description }} />
             )}
 
             {/* Scrollable items only */}
