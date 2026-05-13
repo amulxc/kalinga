@@ -897,19 +897,19 @@ const JournalOfLawAndAIPage = () => {
                                         value="vol1_issue1"
                                         className={`!rounded-xl border ${activeTab === "vol1_issue1" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
                                     >
-                                        Vol. 1, Issue 1
+                                        Vol. 1, Issue 1 - June 2025
                                     </TabsTrigger>
                                     <TabsTrigger
                                         value="vol1_issue2"
                                         className={`!rounded-xl border ${activeTab === "vol1_issue2" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
                                     >
-                                        Vol. 1, Issue 2
+                                        Vol. 1, Issue 2 - January 2026
                                     </TabsTrigger>
                                     <TabsTrigger
                                         value="vol2_issue1"
                                         className={`!rounded-xl border ${activeTab === "vol2_issue1" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
                                     >
-                                        Vol. 2, Issue 1
+                                        Vol. 2, Issue 1 - June 2026
                                     </TabsTrigger>
                                 </TabsList>
                             </Tabs>

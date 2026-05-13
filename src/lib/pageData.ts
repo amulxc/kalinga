@@ -686,6 +686,11 @@ export const pageDataMap: Record<string, PageData> = {
         title: "Two-Day Global Conference on Emerging Trends in Artificial Intelligence",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     },
+    "/departments/faculty-of-arts-humanities": {
+        slug: "/departments/faculty-of-arts-humanities",
+        title: "Faculty of Arts & Humanities",
+        banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
+    }
 
 };
 
