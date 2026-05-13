@@ -240,7 +240,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/2-Kritika-Singh-&-Dr-Gagandeep-Kaur.pdf"
         },
         {
-            id: 3,
+            id: 4,
             shortName: "Krishna Deo Singh Chauhan",
             title: "Vol. 1, Issue 2 | January 2025",
             duration: "Page range: i-vi",
@@ -248,7 +248,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/3-Krishna-Deo-Singh-Chauhan.pdf"
         },
         {
-            id: 4,
+            id: 5,
             shortName: "Mr Pankaj Chhuttani Dr.Ankit Srivastava",
             title: "Vol. 1, Issue 2 | January 2025",
             duration: "Page range: i-vi",
@@ -256,7 +256,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/4-Mr-Pankaj-Chhuttani-Dr.Ankit-Srivastava.pdf"
         },
         {
-            id: 5,
+            id: 6,
             shortName: "Ms. Himanshu Chauhan",
             title: "Vol. 1, Issue 2 | January 2025",
             duration: "Page range: i-vi",
@@ -264,7 +264,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/5-Ms.-Himanshu-Chauhan.pdf"
         },
         {
-            id: 6,
+            id: 7,
             shortName: "Banveer Kaur Jhinger",
             title: "Vol. 1, Issue 2 | January 2025",
             duration: "Page range: i-vi",
@@ -272,7 +272,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/6-Banveer-Kaur-Jhinger.pdf"
         },
         {
-            id: 7,
+            id: 8,
             shortName: "Dr Shruti M Nadkarni",
             title: "Vol. 1, Issue 2 | January 2025",
             duration: "Page range: i-vi",
@@ -280,7 +280,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/7-Dr-Shruti-M-Nadkarni.pdf"
         },
         {
-            id: 8,
+            id: 201,
             shortName: "Comparative Analysis Of Remand Provisions Under The Crpc And The Bnss",
             title: "Dr. Tauheed Alam, Prof. (Dr.) Afkar Ahmad",
             duration: "Page range: 1-27",
@@ -288,7 +288,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/1.+Afkar+ahmed.pdf"
         },
         {
-            id: 3,
+            id: 202,
             shortName: "From Vernacular to Spectacular Politics",
             title: "Debasis Poddar",
             duration: "Page range: 28-46",
@@ -296,7 +296,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/2.+Debasis+Poddar.pdf"
         },
         {
-            id: 4,
+            id: 203,
             shortName: "The Admissibility and Authentication of Electronic Evidence",
             title: "Krishnaja Olappamanna, Dr. Aneesh V Pillai, Dr. Sanjith S",
             duration: "Page range: 47-66",
@@ -304,7 +304,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/3.+Dr.+Aneesh+Pillai.pdf"
         },
         {
-            id: 5,
+            id: 204,
             shortName: "Rendezvous of Law and Interdisciplinary Research",
             title: "Dr. Kaumudhi Challa",
             duration: "Page range: 67-77",
@@ -312,7 +312,7 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/4.+Dr.+Kaumudhi+Challa.pdf"
         },
         {
-            id: 6,
+            id: 205,
             shortName: "From Black Box Paradox to Open Ledger",
             title: "Mr. Pankaj Chhuttani",
             duration: "Page range: 78-90",
@@ -406,14 +406,6 @@ const JournalOfLawAndAIPage = () => {
             duration: "Page range: 82-90",
             level: "VOL 2",
             slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/11.Durlabh-Agrawal,-Navanshu-Shrivastava-82-90.pdf"
-        },
-        {
-            id: 112,
-            shortName: "Yatindra-Dandekar, Vishakha-Sakharkar",
-            title: "Vol. 2, Issue 1",
-            duration: "Page range: 91-100",
-            level: "VOL 2",
-            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/12.Yatindra-Dandekar,-Vishakha-Sakharkar-91-100.pdf"
         },
         {
             id: 112,
@@ -886,10 +878,10 @@ const JournalOfLawAndAIPage = () => {
                         description="Explore past volumes and issues of the Journal of Law and Artificial Intelligence."
                         programs={
                             activeTab === "vol1_issue1"
-                                ? archivesData.filter(item => item.title.includes("Vol. 1, Issue 1") || item.level === "ARCHIVE")
+                                ? archivesData.filter(item => item.level === "VOL 1" && item.title.includes("Issue 1") || item.level === "ARCHIVE")
                                 : activeTab === "vol1_issue2"
-                                    ? archivesData.filter(item => item.title.includes("Vol. 1, Issue 2"))
-                                    : archivesData.filter(item => item.title.includes("Vol. 2, Issue 1"))
+                                    ? archivesData.filter(item => item.level === "VOL 1" && item.title.includes("Issue 2"))
+                                    : archivesData.filter(item => item.level === "VOL 2")
                         }
                         exploreLabel="Download PDF"
                         searchPlaceholder="Search Archives...."
