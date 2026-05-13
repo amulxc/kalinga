@@ -319,7 +319,7 @@ const LawConferencePage = () => {
             slNo: 1,
             level: "Platinum Sponsorship",
             amount: "INR 100,000/-",
-            description: "Exclusive Sponsorship Benefits:",
+            description: "",
             listItems: [
                 "5 Complimentary Delegate Passes",
                 "4 Complimentary Standee/Banner",
@@ -336,7 +336,7 @@ const LawConferencePage = () => {
             slNo: 2,
             level: "Diamond Sponsorship",
             amount: "INR 50,000/-",
-            description: "Exclusive Sponsorship Benefits:",
+            description: "",
             listItems: [
                 "3 Complimentary Delegate Passes",
                 "1 Complimentary Standee/Banner",
@@ -351,7 +351,7 @@ const LawConferencePage = () => {
             slNo: 3,
             level: "Gold Sponsorship",
             amount: "INR 25,000/-",
-            description: "Exclusive Sponsorship Benefits:",
+            description: "",
             listItems: [
                 "2 Complimentary Delegate Passes",
                 "Display of Logo on Conference Materials",
@@ -363,7 +363,7 @@ const LawConferencePage = () => {
             slNo: 4,
             level: "Silver Sponsorship",
             amount: "INR 15,000/-",
-            description: "Exclusive Sponsorship Benefits:",
+            description: "",
             listItems: [
                 "1 Complimentary Delegate Pass",
                 "Display of Logo on Conference Materials",
@@ -374,7 +374,7 @@ const LawConferencePage = () => {
             slNo: 5,
             level: "Bronze Sponsorship",
             amount: "INR 10,000/-",
-            description: "Exclusive Sponsorship Benefits:",
+            description: "",
             listItems: [
                 "Display of Logo on Conference Materials"
             ]
@@ -839,10 +839,10 @@ const LawConferencePage = () => {
                 <div className="rounded-2xl bg-[var(--lite-sand)] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div>
                         <h3 className="font-stix text-xl md:text-2xl text-[var(--foreground)]">
-                            Global Law Conference
+                            Two-Day Global Conference on Emerging Trends in Artificial Intelligence
                         </h3>
                         <p className="mt-2 text-gray-700">
-                            Download the Global Law Conference brochure.
+                            Explore the Conference Brochure
                         </p>
                     </div>
 

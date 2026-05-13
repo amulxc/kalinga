@@ -323,26 +323,379 @@ const JournalOfLawAndAIPage = () => {
             id: 101,
             shortName: "Shruti navratna & Ekta Chandrakar",
             title: "Vol. 2, Issue 1",
-            duration: "Page range: 1-6",
+            duration: "Page range: 1-9",
             level: "VOL 2",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/vol-2-issues-1/1.-Shruti-navratna-Ekta-Chandrakar-1-9.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/1.Shruti-Navratna,-Ekta-Chandrakar-1-9.pdf"
         },
         {
             id: 102,
             shortName: "Anshika Vishwakarma,& Dr. Paluck-Sharma",
             title: "Vol. 2, Issue 1",
-            duration: "Page range: 1-6",
+            duration: "Page range: 10-15",
             level: "VOL 2",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/vol-2-issues-1/2.-Anshika-Vishwakarma,-Dr.-Paluck-Sharma-10-15.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/2.Anshika-Vishwakarma,-Dr.Paluck-Sharma-10-15.pdf"
         },
         {
             id: 103,
             shortName: "Shraddha-Sahu, Swarnim-Sahu, Vamini-Dhruw, Aryan-Jain, Ekta-Chandrakar",
             title: "Vol. 2, Issue 1",
-            duration: "Page range: 1-6",
+            duration: "Page range: 16-22",
             level: "VOL 2",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/vol-2-issues-1/3.-Shraddha-Sahu,-Swarnim-Sahu,-Vamini-Dhruw,-Aryan-Jain,-Ekta-Chandrakar-16-22.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/3.Shraddha-Sahu,-Swarnim-Sahu,-Vamini-Dhruw,-Aryan-Jain,-Ekta-Chandrakar-16-22.pdf"
+        },
+        {
+            id: 104,
+            shortName: "Anuj Sharma, Dr. Paluck Sharma",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 23-29",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/4.-Anuj-Sharma,-Dr.Paluck-Sharma-23-29.pdf"
+        },
+        {
+            id: 105,
+            shortName: "Yograj-Dewangan,-Vishakha-Sakharkar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 30-38",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/5.Yograj-Dewangan,-Vishakha-Sakharkar-30-38.pdf"
+        },
+        {
+            id: 106,
+            shortName: "Labhansh-Sahu,-Ritika-Sahu",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 39-51",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/6.Labhansh-Sahu,-Ritika-Sahu-39-51.pdf"
+        },
+        {
+            id: 107,
+            shortName: "Aneeta-Prasad,-Ekta-Chandrakar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 52-57",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/7.Aneeta-Prasad,-Ekta-Chandrakar-52-57.pdf"
+        },
+        {
+            id: 108,
+            shortName: "Harshita-Awasthi, Meenakshi-Agarwal",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 58-65",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/8.Harshita-Awasthi,-Meenakshi-Agarwal-58-65.pdf"
+        },
+        {
+            id: 109,
+            shortName: "Yemika-Chandrakar, Vishakha-Sakharkar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 66-73",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/9.Yemika-Chandrakar,-Vishakha-Sakharkar-66-73.pdf"
+        },
+        {
+            id: 110,
+            shortName: "Palak-Agrawal, Soumyadeep-Chakrabarti",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 74-81",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/10.Palak-Agrawal,-Soumyadeep-Chakrabarti-74-81.pdf"
+        },
+        {
+            id: 111,
+            shortName: "Durlabh-Agrawal, Navanshu-Shrivastava",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 82-90",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/11.Durlabh-Agrawal,-Navanshu-Shrivastava-82-90.pdf"
+        },
+        {
+            id: 112,
+            shortName: "Yatindra-Dandekar, Vishakha-Sakharkar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 91-100",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/12.Yatindra-Dandekar,-Vishakha-Sakharkar-91-100.pdf"
+        },
+        {
+            id: 112,
+            shortName: "Yatindra-Dandekar, Vishakha-Sakharkar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 91-100",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/12.Yatindra-Dandekar,-Vishakha-Sakharkar-91-100.pdf"
+        },
+        {
+            id: 113,
+            shortName: "Ponduru-Lakshmi-Prasanna, Ainam-Fatima",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 101-107",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/13.Ponduru-Lakshmi-Prasanna,-Ainam-Fatima-101-107.pdf"
+        },
+        {
+            id: 114,
+            shortName: "Chandan-Kumar, Rashid-Hasnanin, Rishabh-Kumar-Shrivastava, Samip-Garg, Soumyadeep-Chakrabarti",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 108-111",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/14.Chandan-Kumar,-Rashid-Hasnanin,-Rishabh-Kumar-Shrivastava,-Samip-Garg,-Soumyadeep-Chakrabarti-108-111.pdf"
+        },
+        {
+            id: 115,
+            shortName: "Mahek-Zubeariya, Simran-Sinha, Nishi-Mishra, Vaishnavi, Dr.Paluck-Sharma",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 112-118",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/15.Mahek-Zubeariya,-Simran-Sinha,-Nishi-Mishra,-Vaishnavi,-Dr.Paluck-Sharma-112-118.pdf"
+        },
+        {
+            id: 116,
+            shortName: "Mitali-Thakur, Komal-Pandey, Prerna-Borker, Shlok-Pandey, Navanshu-Shrivastava",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 119-124",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/16.Mitali-Thakur,-Komal-Pandey,-Prerna-Borker,-Shlok-Pandey,-Navanshu-Shrivastava-119-124.pdf"
+        },
+        {
+            id: 117,
+            shortName: "Deepanshu-Tembhre, Manasi-Bakshi, Bhawana-Sahu, Ashmit-Bhargava, Ms. Meenakshi-Rani-Agarwal",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 125-138",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/17.Deepanshu-Tembhre,-Manasi-Bakshi,-Bhawana-Sahu,-Ashmit-Bhargava,-Ms.Meenakshi-Rani-Agarwal-125-138.pdf"
+        },
+        {
+            id: 118,
+            shortName: "Divya-Maheshwari,-Grace-Samson-Arab,-Kanishka-Puri-Dautlani,-Oshika-Goyal,-Chanchal-Jain",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 139-147",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/18.Divya-Maheshwari,-Grace-Samson-Arab,-Kanishka-Puri-Dautlani,-Oshika-Goyal,-Chanchal-Jain-139-147.pdf"
+        },
+        {
+            id: 119,
+            shortName: "Ranpriya-Bose, Mohan-Narayan-Sahu, Kaushi-Chaturvedi, Neelam-Shree-Yadu, Ritika-Sahu",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 148-155",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/19.Ranpriya-Bose,-Mohan-Narayan-Sahu,-Kaushi-Chaturvedi,-Neelam-Shree-Yadu,-Ritika-Sahu-148-155.pdf"
+        },
+        {
+            id: 120,
+            shortName: "Yashaswi-Srivastav, Rahul-Sahu, Mansi-Charde, Parth-Patel, Chanchal-Jain",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 156-163",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/20.Yashaswi-Srivastav,-Rahul-Sahu,-Mansi-Charde,-Parth-Patel,-Chanchal-Jain-156-163.pdf"
+        },
+        {
+            id: 121,
+            shortName: "Asna-Jabi, Mona-Agrawal, Suyash-Gupta, Rajkamal-Baghel, Chikita-Malhotra",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 164-173",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/21.Asna-Jabi,-Mona-Agrawal,-Suyash-Gupta,-Rajkamal-Baghel,-Chikita-Malhotra-164-173.pdf"
+        },
+        {
+            id: 122,
+            shortName: "Shriya Jha, Shruti-Kar, Dr.Savyasanchi-Pandey",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 174-181",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/22.Shriya-Jha,-Shruti-Kar,-Dr.Savyasanchi-Pandey-174-181.pdf"
+        },
+        {
+            id: 123,
+            shortName: "Asna-Jabi, Adv.-Masood-Ahmed",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 182-196",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/23.Asna-Jabi,-Adv.-Masood-Ahmed-182-196.pdf"
+        },
+        {
+            id: 124,
+            shortName: "Asna-Jabi, Adv.-Masood-Ahmed",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 197-207",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/24.Asna-Jabi,-Adv.-Masood-Ahmed-197-207.pdf"
+        },
+        {
+            id: 125,
+            shortName: "Asna-Jabi, Adv.-Masood-Ahmed",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 208-214",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/25.Asna-Jabi,-Adv.-Masood-Ahmed-208-214.pdf"
+        },
+        {
+            id: 126,
+            shortName: "Aakanksha-Sen, Bhargavi-Kumari, Surbhi-Jain, Sangeeta-Rathiya, Vanshika-Kapoor",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 215-223",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/26.Aakanksha-Sen,-Bhargavi-Kumari,-Surbhi-Jain,-Sangeeta-Rathiya,-Vanshika-Kapoor-215-223.pdf"
+        },
+        {
+            id: 127,
+            shortName: "Gunjan-Ukey, Vanshika-Bhanshali, Harsh-Sinha, Divyansh-Patel, Vishakha-Sakharkar",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 224-236",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/27.Gunjan-Ukey,-Vanshika-Bhanshali,-Harsh-Sinha,-Divyansh-Patel,-Vishakha-Sakharkar-224-236.pdf"
+        },
+        {
+            id: 128,
+            shortName: "Ashwani-Kumar, Dr.Harleen-Kaur",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 237-246",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/28.Ashwani-Kumar,Dr.-Harleen-Kaur-237-246.pdf"
+        },
+        {
+            id: 129,
+            shortName: "Bhavya-Bhartee, Dr.Harleen-Kaur",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 247-257",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/29.Bhavya-Bhartee,-Dr.-Harleen-Kaur-247-257.pdf"
+        },
+        {
+            id: 130,
+            shortName: "Aryaditya-Singh-Thakur,-Dr.Paluck-Sharma",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 258-265",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/30.Aryaditya-Singh-Thakur,-Dr.Paluck-Sharma-258-265.pdf"
+        },
+        {
+            id: 131,
+            shortName: "Kaushal-kumar-Singh,-Chikita-Malhotra",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 266-272",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/31.Kaushal-kumar-Singh,-Chikita-Malhotra-266-272.pdf"
+        },
+        {
+            id: 132,
+            shortName: "Pooja-Rani-Sharma, Ainam-Fatima",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 273-281",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/32.Pooja-Rani-Sharma,-Ainam-Fatima-273-281.pdf"
+        },
+        {
+            id: 133,
+            shortName: "Princy-Tiwari, Dr.Paluck-Sharma",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 282-291",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/33.Princy-Tiwari,-Dr.Paluck-Sharma-282-291.pdf"
+        },
+        {
+            id: 134,
+            shortName: "Prerna-Singh, Siddharth-Soni, Ujjwal-Soni, Prakash-Kashyap, Dr. Harleen-Kaur",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 292-302",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/34.Prerna-Singh,-Siddharth-Soni,-Ujjwal-Soni,-Prakash-Kashyap,-Dr.Harleen-Kaur-292-302.pdf"
+        },
+        {
+            id: 135,
+            shortName: "Siddhi-Upadhyay, Simran-Sharma, Alisha-Sharma, Jeeya-Singh, Dr. Payal-Bohria",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 303-315",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/35.Siddhi-Upadhyay,-Simran-Sharma,-Alisha-Sharma,-Jeeya-Singh,-Dr.Payal-Bohria-303-315.pdf"
+        },
+        {
+            id: 136,
+            shortName: "Bhoumik-Swami, Gamendra-Kumar-Sahu, Akash-Sahu, Lokesh-Navrange, Dr.-Payal-Bohria",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 316-327",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/36.Bhoumik-Swami,-Gamendra-Kumar-Sahu,-Akash-Sahu,-Lokesh-Navrange,-Dr.-Payal-Bohria-316-327.pdf"
+        },
+        {
+            id: 137,
+            shortName: "Khushi Tiwari,Chikita Malhotra",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 328-333",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/37.Khushi-Tiwari,-Chikita-Malhotra-328-333.pdf"
+        },
+        {
+            id: 138,
+            shortName: "Manoj Murlidharan Kumar,Chikita Malhotra",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 334-342",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/38.Manoj-Murlidharan-Kumar,-Chikita-Malhotra-334-342.pdf"
+        },
+        {
+            id: 139,
+            shortName: "Monika Verma,Dr. Savyasanchi Pandey",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 343-353",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/39.Monika-Verma,-Dr.Savyasanchi-Pandey-343-353.pdf"
+        },
+        {
+            id: 140,
+            shortName: "Shakainah Rebecca-Arthur, Dr. Payal-Bohria",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 354-362",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/40.Shakainah-Rebecca-Arthur,-Dr.Payal-Bohria-354-362.pdf"
+        },
+        {
+            id: 141,
+            shortName: "Mihika-Dubey,Anshika-Dubey,Dhairy-Yadav,Om-Giri-Goswami,Dr.-Savyasanchi-Pandey",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 363-367",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/41.Mihika-Dubey,-Anshika-Dubey,-Dhairy-Yadav,-Om-Giri-Goswami,-Dr.-Savyasanchi-Pandey-363-367.pdf"
+        },
+        {
+            id: 142,
+            shortName: "Girijanand-Yadav,Sunil-Prakash-Baghel,Navneet-Choudhary,Hemprakash-Jain,Chikita-Malhotra",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 368-380",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/42.Girijanand-Yadav,-Sunil-Prakash-Baghel,-Navneet-Choudhary,-Hemprakash-Jain,-Chikita-Malhotra-368-380.pdf"
+        },
+        {
+            id: 143,
+            shortName: "Tejaswini-Palariya,Yogita-Uplopwar,Mitakshara-Dixit,Zishan-Halim-Firdousi,Soumyadeep-Chakrabarti",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 381-386",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/43.Tejaswini-Palariya,Yogita-Uplopwar,Mitakshara-Dixit,Zishan-Halim-Firdousi,Soumyadeep-Chakrabarti-381-386.pdf"
+        },
+        {
+            id: 144,
+            shortName: "Yash-Rathore,Vanshika-Kapoor",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 387-395",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/44.Yash-Rathore,-Vanshika-Kapoor-387-395.pdf"
+        },
+        {
+            id: 145,
+            shortName: "Roushan-Kumar,Chanchal-Jain",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 396-401",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/45.Roushan-Kumar,-Chanchal-Jain-396-401.pdf"
+        },
+        {
+            id: 146,
+            shortName: "Sanjeeb-Sahu,Payal-Bohria",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 402-410",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/46.Sanjeeb-Sahu,-Payal-Bohria-402-410.pdf"
         }
+
     ];
 
     const editorialBoardData = [
