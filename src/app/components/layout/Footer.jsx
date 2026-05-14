@@ -179,7 +179,7 @@ export default function Footer() {
                           <svg className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 text-[var(--dark-orange-red)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path></svg>
                           <div className="flex-1 min-w-0">
                             <p className="font-medium text-white text-xs sm:text-sm">Kalinga University</p>
-                            <p className="text-[10px] sm:text-xs leading-relaxed break-words">Kotni, Near Mantralaya, Naya Raipur - 492101,<br className="hidden sm:inline" /> Chhattisgarh, India</p>
+                            <p className="text-[10px] sm:text-xs leading-relaxed break-words">Kotni, Near Mantralaya, Naya Raipur - 492101/492001,<br className="hidden sm:inline" /> Chhattisgarh, India</p>
                           </div>
                         </div>
                       </div>

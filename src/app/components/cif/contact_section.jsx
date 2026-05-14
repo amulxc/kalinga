@@ -10,7 +10,7 @@ const DEFAULT_DEPARTMENT = "Faculty of Information Technology";
 const DEFAULT_QUOTE = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 const DEFAULT_EMAIL = "cif@kalingauniversity.ac.in";
 const DEFAULT_PHONE = "+91-9109179430";
-const DEFAULT_ADDRESS = "Central Instrumentation Facility, Kalinga University, Kotni, Near Mantralaya, Naya Raipur, CG - 492101";
+const DEFAULT_ADDRESS = "Central Instrumentation Facility, Kalinga University, Kotni, Near Mantralaya, Naya Raipur, CG - 492101/492001";
 
 function MentorCard({
   cardClassName = "",

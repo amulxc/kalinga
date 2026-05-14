@@ -102,6 +102,13 @@ export default function ProgramsOffered({
 
           {/* Right Column */}
           <div className="flex flex-col justify-center order-2 lg:order-2">
+            {/* Top Right Content (e.g. Tabs) */}
+            {topRightContent && (
+              <div className="px-3 lg:px-0 mb-4">
+                {topRightContent}
+              </div>
+            )}
+
             {/* Search Bar */}
             {!hideSearch && (
               <div className="relative pb-4 px-3 lg:px-0">
@@ -125,13 +132,6 @@ export default function ProgramsOffered({
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
-              </div>
-            )}
-
-            {/* Top Right Content (e.g. Tabs) */}
-            {topRightContent && (
-              <div className="px-3 lg:px-0 mb-4">
-                {topRightContent}
               </div>
             )}
 

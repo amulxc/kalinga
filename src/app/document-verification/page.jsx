@@ -50,7 +50,7 @@ const faqContent = [
   {
     id: 1,
     question: "How can I submit my documents for verification at Kalinga University?",
-    answer: "You can send the duly filled application form along with other required documents through speed post. Applications submitted through other modes will not be entertained.<br />Address - Kalinga University, Kotni, Near Mantralaya, Naya Raipur, 492101, Chhattisgarh, India<br />Email - <a href='mailto:registrar@kalingauniversity.ac.in'>registrar@kalingauniversity.ac.in</a><br />Phone No. - <a href='tel:+91-9109199711'>+91-9109199711</a>",
+    answer: "You can send the duly filled application form along with other required documents through speed post. Applications submitted through other modes will not be entertained.<br />Address - Kalinga University, Kotni, Near Mantralaya, Naya Raipur, 492101/492001, Chhattisgarh, India<br />Email - <a href='mailto:registrar@kalingauniversity.ac.in'>registrar@kalingauniversity.ac.in</a><br />Phone No. - <a href='tel:+91-9109199711'>+91-9109199711</a>",
   },
   {
     id: 2,

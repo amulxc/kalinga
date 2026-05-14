@@ -80,7 +80,7 @@ export default function ContactForm() {
                                             Kalinga University, Kotni,
                                             <br />
                                             Near Mantralaya,
-                                            Naya Raipur - 492101, Chhattisgarh, India
+                                            Naya Raipur - 492101/492001, Chhattisgarh, India
                                         </p>
                                     </li>
                                     <li className="flex items-start gap-2">
