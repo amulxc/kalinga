@@ -267,7 +267,7 @@ export default function EventCalendar({ items = [], departments = [], showNews =
                           <div className="relative w-full md:w-[280px] h-[200px] md:h-[200px] !bg-[var(--light-sand)]">
                             <Image
                               src={item.images?.[0]?.image || "https://cdn.kalingauniversity.ac.in/common/student.jpg"}
-                              alt={item.heading}
+                              alt={parseHtmlToText(item.heading)}
                               fill
                               sizes="(max-width: 768px) 100vw, 280px"
                               className="object-contain rounded-lg !bg-[var(--lite-sand)]"
@@ -281,7 +281,7 @@ export default function EventCalendar({ items = [], departments = [], showNews =
                         </div>
                         <div className="p-4 md:p-6 w-full">
                           <h3 className="text-xl md:text-2xl  mb-3 font-stix leading-tight">
-                            {item.heading}
+                            {parseHtmlToText(item.heading)}
                           </h3>
                           <p className="text-[var(--text-gray)] mb-4 text-sm leading-relaxed">
                             {shortDesc}
@@ -370,7 +370,7 @@ export default function EventCalendar({ items = [], departments = [], showNews =
                           <div className="flex-1 min-w-0">
                             <p className="text-[var(--dark-orange-red-light)] text-xs mb-1 font-semibold">{news.event_date}</p>
                             <h3 className="text-white text-xl leading-snug group-hover:text-gray-200 transition-colors line-clamp-3 font-medium">
-                              {news.event_name}
+                              {parseHtmlToText(news.event_name)}
                             </h3>
                           </div>
                         </div>
