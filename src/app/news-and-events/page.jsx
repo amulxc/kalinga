@@ -173,7 +173,7 @@ function NewsAndEvents() {
     }).map(item => ({
       id: item.id,
       image: item.images?.[0]?.image || 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
-      title: item.heading,
+      title: parseHtmlToText(item.heading),
       badgeText: item.date,
       slug: item.slug
     }));
@@ -193,7 +193,7 @@ function NewsAndEvents() {
     }).slice(0, 3).map(item => {
       return {
         id: item.id,
-        title: item.heading,
+        title: parseHtmlToText(item.heading),
         date: item.date,
         category: item.category_name,
         description: item.short_para ? parseHtmlToText(item.short_para) : getTruncatedContent(item.content),

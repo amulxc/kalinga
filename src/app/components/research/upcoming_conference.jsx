@@ -87,7 +87,7 @@ export default function UpcomingConference({
 
             return {
               id: item.id,
-              title: item.heading,
+              title: parseHtmlToText(item.heading),
               date: item.date,
               category: item.category_name,
               description: descText,
@@ -201,7 +201,7 @@ export default function UpcomingConference({
                     <div className={`${backgroundColorcard} rounded-2xl shadow-sm flex flex-col md:flex-row justify-center items-center`}>
                       <Image
                         src={conf.image}
-                        alt={conf.title}
+                        alt={parseHtmlToText(conf.title)}
                         width={600}
                         height={imageHeight}
                         className={`${imageContainerClass} rounded-xl object-contain conference-img`}
