@@ -4,7 +4,7 @@ import EventDetailContent from '@/app/components/news_and_events/event_detail_co
 import CareerApplicationForm from '@/app/components/careers/CareerApplicationForm';
 import AdmissionCareer from '@/app/components/general/admission_cta';
 import UpcomingEvents from '@/app/components/admissions/upcoming_events';
-import { fetchNewsEvents, fetchNewsEventDetails, fetchNewsEventSEO, parseHtmlToParagraphs, parseHtmlListItems } from '@/app/lib/api';
+import { fetchNewsEvents, fetchNewsEventDetails, fetchNewsEventSEO, parseHtmlToParagraphs, parseHtmlListItems, parseHtmlToText } from '@/app/lib/api';
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
@@ -99,8 +99,9 @@ export default async function NewsEventDetailsPage({ params }) {
         <>
             <EventDetailContent
                 tags={tags}
-                title={newsEvent.heading}
+                title={parseHtmlToText(newsEvent.heading)}
                 description={description}
+                htmlContent={newsEvent.content}
                 mainImage={mainImage}
                 galleryImages={galleryImages}
             />

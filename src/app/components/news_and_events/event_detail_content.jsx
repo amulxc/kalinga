@@ -12,6 +12,7 @@ const EventDetailContent = ({
   tags = [],
   title = '',
   description = [],
+  htmlContent = '',
   mainImage = {
     src: 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
     alt: 'Event Gallery'
@@ -59,16 +60,72 @@ const EventDetailContent = ({
           />
         )}
 
-        {/* Description Paragraphs */}
-        {description.length > 0 && (
-          <div className="mb-8 md:mb-12 space-y-4">
-            {description.map((paragraph, index) => (
-              <p key={index} className="leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        )}
+        {/* HTML Content or Description Paragraphs */}
+        <div className="mb-8 md:mb-12 font-plus-jakarta-sans text-base text-[#333]">
+          {htmlContent ? (
+            <div
+              className="rich-text-content"
+              dangerouslySetInnerHTML={{ __html: htmlContent }}
+            />
+          ) : (
+            description.length > 0 && (
+              <div className="space-y-4">
+                {description.map((paragraph, index) => (
+                  <p key={index} className="leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )
+          )}
+        </div>
+
+        <style jsx>{`
+          .rich-text-content {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.5;
+            color: #333;
+          }
+          .rich-text-content :global(p) {
+            margin-bottom: 0.75rem;
+          }
+          .rich-text-content :global(p:last-child) {
+            margin-bottom: 0;
+          }
+          /* Hide truly empty paragraphs */
+          .rich-text-content :global(p:empty) {
+            display: none;
+          }
+          .rich-text-content :global(ul) {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+          }
+          .rich-text-content :global(ol) {
+            list-style-type: decimal;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+          }
+          .rich-text-content :global(li) {
+            margin-bottom: 0.4rem;
+          }
+          .rich-text-content :global(h1), 
+          .rich-text-content :global(h2), 
+          .rich-text-content :global(h3), 
+          .rich-text-content :global(h4) {
+            font-weight: 700;
+            margin-top: 1.25rem;
+            margin-bottom: 0.6rem;
+            color: #1a1a1a;
+            font-family: 'STIX Two Math', serif;
+          }
+          .rich-text-content :global(h2) { font-size: 1.5rem; }
+          .rich-text-content :global(h3) { font-size: 1.25rem; }
+          .rich-text-content :global(strong) {
+            font-weight: 700;
+            color: #111;
+          }
+        `}</style>
 
         {/* Main Large Image */}
         {selectedImage && selectedImage.src && (
