@@ -1501,7 +1501,7 @@ const MINUTES_OF_MEETING = {
 
 const nba = {
   "SAR": [
-    { id: 1, text: "SAR", href: "https://cdn.kalingauniversity.ac.in/IQAC/nba/final-sar.pdf", disableFlipbook: true },
+    { id: 1, text: "SAR", href: "https://cdn.kalingauniversity.ac.in/IQAC/nba/final-sar.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
   ],
   "Student Details": [
     { id: 2, text: "Student Details - 2025-26", href: "#" },

@@ -12,7 +12,7 @@ const PdfSliderModal = ({ isOpen, onClose, pdfUrl, title, maxVisiblePages = 5, l
     const [numPages, setNumPages] = useState(null);
     const containerRef = useRef(null);
     const [containerWidth, setContainerWidth] = useState(0);
-    const initialPages = limitPages || 3;
+    const initialPages = limitPages ?? 3;
     const [visiblePagesCount, setVisiblePagesCount] = useState(initialPages);
     const [isLoadingMore, setIsLoadingMore] = useState(false);
 
