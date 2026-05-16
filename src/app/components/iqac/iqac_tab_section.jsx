@@ -1504,21 +1504,21 @@ const nba = {
     { id: 1, text: "SAR", href: "https://cdn.kalingauniversity.ac.in/IQAC/nba/final-sar.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
   ],
   "Student Details": [
-    { id: 2, text: "Student Details - 2025-26", href: "#" },
-    { id: 3, text: "Student Details - 2024-25", href: "#" },
-    { id: 4, text: "Student Details - 2023-24", href: "#" },
-    { id: 5, text: "Student Details - 2022-23", href: "#" },
+    { id: 2, text: "Student Details - 2025-26", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 3, text: "Student Details - 2024-25", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 4, text: "Student Details - 2023-24", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 5, text: "Student Details - 2022-23", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
   ],
   "Faculty Details": [
-    { id: 6, text: "Faculty Details - 2022-23", href: "#" },
-    { id: 7, text: "Faculty Details - 2023-24", href: "#" },
-    { id: 8, text: "Faculty Details - 2024-25", href: "#" },
-    { id: 9, text: "Faculty Details - 2025-26", href: "#" },
+    { id: 6, text: "Faculty Details - 2022-23", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 7, text: "Faculty Details - 2023-24", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 8, text: "Faculty Details - 2024-25", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 9, text: "Faculty Details - 2025-26", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
   ],
   "Placement Details": [
-    { id: 10, text: "Placement Details - 2021-22", href: "#" },
-    { id: 11, text: "Placement Details - 2022-23", href: "#" },
-    { id: 12, text: "Placement Details - 2023-24", href: "#" },
+    { id: 10, text: "Placement Details - 2021-22", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 11, text: "Placement Details - 2022-23", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
+    { id: 12, text: "Placement Details - 2023-24", href: "https://cdn.kalingauniversity.ac.in/IQAC/documents.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
   ],
 };
 
