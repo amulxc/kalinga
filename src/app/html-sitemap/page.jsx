@@ -28,6 +28,35 @@ export const metadata = {
 export default async function HtmlSitemapPage() {
   const { departments, courses, news } = await getDynamicLinks();
 
+  const getStaticPageDisplayName = (url) => {
+    if (url === '/') return 'Home';
+    return url.replace(/^\//, '').replace(/-/g, ' ');
+  };
+
+  const sortedStaticPages = [...staticPages].sort((a, b) => {
+    const nameA = getStaticPageDisplayName(a.url).toLowerCase();
+    const nameB = getStaticPageDisplayName(b.url).toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
+  const sortedDepartments = [...departments].sort((a, b) => {
+    const nameA = (a.name || a.slug || '').toLowerCase();
+    const nameB = (b.name || b.slug || '').toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
+  const sortedCourses = [...courses].sort((a, b) => {
+    const nameA = (a.name || a.title || a.slug || '').toLowerCase();
+    const nameB = (b.name || b.title || b.slug || '').toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
+  const sortedNews = [...news].sort((a, b) => {
+    const nameA = (a.title || a.slug || '').toLowerCase();
+    const nameB = (b.title || b.slug || '').toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
   return (
     <main className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
@@ -40,7 +69,7 @@ export default async function HtmlSitemapPage() {
         <section className="mb-10">
           <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">Static pages</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-            {staticPages.map(({ url }) => (
+            {sortedStaticPages.map(({ url }) => (
               <li key={url}>
                 <Link href={url || '/'} className="text-gray-700 hover:text-[var(--dark-orange-red)] hover:underline">
                   {url === '/' ? 'Home' : url.replace(/^\//, '').replace(/-/g, ' ')}
@@ -53,7 +82,7 @@ export default async function HtmlSitemapPage() {
         <section className="mb-10">
           <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">Departments</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-            {departments.map((dept) => (
+            {sortedDepartments.map((dept) => (
               <li key={dept.slug}>
                 <Link href={`/departments/${dept.slug}`} className="text-gray-700 hover:text-[var(--dark-orange-red)] hover:underline">
                   {dept.name || dept.slug}
@@ -66,7 +95,7 @@ export default async function HtmlSitemapPage() {
         <section className="mb-10">
           <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">Courses</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-            {courses.map((course) => (
+            {sortedCourses.map((course) => (
               <li key={course.slug}>
                 <Link href={`/courses/${course.slug}`} className="text-gray-700 hover:text-[var(--dark-orange-red)] hover:underline">
                   {course.name || course.title || course.slug}
@@ -79,7 +108,7 @@ export default async function HtmlSitemapPage() {
         <section className="mb-10">
           <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2">News & events</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-            {news.map((item) => (
+            {sortedNews.map((item) => (
               <li key={item.slug}>
                 <Link href={`/news-and-events/${item.slug}`} className="text-gray-700 hover:text-[var(--dark-orange-red)] hover:underline">
                   {item.title || item.slug}

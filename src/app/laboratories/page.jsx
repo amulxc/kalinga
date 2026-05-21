@@ -39,6 +39,7 @@ const labFaqItems = [
       "Principles of Communication System Lab",
       "Database Management System Lab",
       "Software Technology Lab",
+      "Computer Lab",
       "Computer Networks Lab",
       "Computer Graphics Lab",
       "UNIX and SHELL Programming Lab",

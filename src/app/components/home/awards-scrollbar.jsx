@@ -79,14 +79,14 @@ const defaultAwards = [
     id: 8,
     year: "2020-21",
     title: "Walk-a-cause Award by",
-    subtitle: "Raipur Police, Chhattishgarh",
+    subtitle: "Raipur Police, Chhattisgarh",
     active: true,
   },
   {
     id: 9,
     year: "2020-21",
-    title: "Chhattishgarh Youth by",
-    subtitle: "Chhattishgarh Youth",
+    title: "Chhattisgarh Youth by",
+    subtitle: "Chhattisgarh Youth",
     active: true,
   },
   {

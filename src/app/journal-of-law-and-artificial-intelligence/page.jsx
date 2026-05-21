@@ -686,6 +686,30 @@ const JournalOfLawAndAIPage = () => {
             duration: "Page range: 402-410",
             level: "VOL 2",
             slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/46.Sanjeeb-Sahu,-Payal-Bohria-402-410.pdf"
+        },
+        {
+            id: 147,
+            shortName: "Harsh Vardhan, Meenakshi Agrawal",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 411-419",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/47.Harsh-Vardhan,Meenakshi-Agrawal-411-419.pdf"
+        },
+        {
+            id: 148,
+            shortName: "Mamta Devi, Ritika Sahu",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 420-430",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/48.Mamta-Devi,Ritika-Sahu-420-430.pdf"
+        },
+        {
+            id: 149,
+            shortName: "Divyansh Chauhan, Gourav Nag, Ainam Fatima",
+            title: "Vol. 2, Issue 1",
+            duration: "Page range: 431-437",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/49.Divyansh-Chauhan,Gourav-Nag,Ainam-Fatima-431-437.pdf"
         }
 
     ];
