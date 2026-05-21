@@ -44,7 +44,7 @@ const PublicationCard = ({ data, className = "" }) => {
                 ) : (
                     <div className="flex flex-col h-full justify-between w-full overflow-hidden">
                         <div>
-                            <h3 className="font-stix text-[#a34439] text-base md:text-lg lg:text-xl font-medium leading-tight font-plus-jakarta-sans truncate" title={data.title}>
+                            <h3 className="font-stix text-[#a34439] text-base md:text-lg lg:text-xl font-medium leading-tight font-plus-jakarta-sans" title={data.title}>
                                 {data.title}
                                 <div className="w-16 h-px bg-gray-300 my-3"></div>
                             </h3>

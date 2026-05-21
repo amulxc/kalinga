@@ -117,7 +117,7 @@ export default function OtherCommittees() {
       { key: "area", label: "Area", width: "w-32" },
     ],
     data: [
-      { slNo: "1", name: "Mr. Omprakash Dewangan", designation: "Head of the Committee", area: "Faculty" },
+      { slNo: "1", name: "Dr. Anjaneyulu Bendi", designation: "Head of the Committee", area: "Faculty" },
       { slNo: "2", name: "Dr. D. M. Sahu", designation: "Member", area: "Faculty" },
       { slNo: "3", name: "Dr. Sanjeev Yadav", designation: "Member", area: "Faculty" },
       { slNo: "4", name: "Mr. Gaurav Tamrakar", designation: "Member", area: "Faculty" },

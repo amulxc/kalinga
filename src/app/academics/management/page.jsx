@@ -453,7 +453,7 @@ export default function ManagementDepartmentPage() {
                 />
             )}
 
-            <div id="faculty" className="scroll-mt-24 md:scroll-mt-28">
+            {/* <div id="faculty" className="scroll-mt-24 md:scroll-mt-28">
                 <FacultyList
                     items={facultyMembers}
                     title="Meet our Faculty"
@@ -461,7 +461,7 @@ export default function ManagementDepartmentPage() {
                     departmentName={departmentData?.name}
                     sectionClassName="pt-16 bg-white"
                 />
-            </div>
+            </div> */}
 
             <div id="research" className="scroll-mt-24 md:scroll-mt-28">
                 <ResearchPublicationsTabs />
@@ -605,13 +605,13 @@ export default function ManagementDepartmentPage() {
                 )}
             </Modal>
 
-            <SectionHeading
+            {/* <SectionHeading
                 title="Placement Details"
                 titleClassName="text-center"
-            />
-            <ResearchSixGridButtons
+            /> */}
+            {/* <ResearchSixGridButtons
                 buttons={research_six_grid_buttons1}
-            />
+            /> */}
 
             <div id="placements" className="scroll-mt-24 md:scroll-mt-28">
                 <Placements
