@@ -17,9 +17,9 @@ function Accreditations() {
         { id: 4, name: "BCI", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/bci.webp" },
         { id: 5, name: "PCI", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002980.png" },
         { id: 6, name: "NCTE", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002978.png" },
-        // { id: 6, name: "NAAC Accreditation B+", logo: "https://cdn.kalingauniversity.ac.in/about/Accreditation+and+Ranking+Logo/Naac+niirf+2025.png" },
-        { id: 6, name: "NAAC Accreditation B+", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp" },
-        { id: 6, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg" },
+        { id: 7, name: "NBA", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp" },
+        { id: 8, name: "NAAC Accreditation B+", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp" },
+        { id: 9, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg" },
 
     ]
     const defaultButtons = [

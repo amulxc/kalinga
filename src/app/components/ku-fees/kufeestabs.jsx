@@ -747,7 +747,7 @@ const FEES_ARTS = {
         },
         {
             "S.No.": 4,
-            Course: "MSW with PSC Coaching",
+            Course: "MSW",
             "Tenure (Years)": 2,
             Sem: 4,
             "Proposed Tuition Fee Per Sem (INR)": "17,500/-",
@@ -789,7 +789,7 @@ const FEES_ARTS = {
             "Proposed Tuition Fee Per Sem (INR)": "27,500/-",
             "Prospectus/ KALSEE Fees (One Time) (INR)": "1,400/-",
             "Caution Money (One Time) Refundable (INR)": "3,000/-",
-            "Uniform Fee (One Time) (INR)": "4,950/-",
+            "Uniform Fee (One Time) (INR)": "-",
             "Exam Fees (Per Sem) (INR)": "1,500/-",
             "Total Fees (INR)": "1,78,400/-",
         },

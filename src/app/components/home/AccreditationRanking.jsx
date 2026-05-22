@@ -13,12 +13,14 @@ const AccreditationRanking = ({
   const defaultAccreditations = [
     { id: 1, name: 'NIRF', logo: 'https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg' },
     { id: 2, name: 'NAAC', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp' },
-    { id: 2, name: 'UGC Grant', logo: 'https://cdn.kalingauniversity.ac.in/Home/ugc.webp' },
-    { id: 4, name: 'AICTE', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/acite.webp' },
-    { id: 5, name: 'NCTE', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002978.png' },
-    { id: 6, name: 'BCI', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/bci.webp' },
-    { id: 7, name: 'PCI', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002980.png' },
-    { id: 8, name: 'CG Government', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/cg-government.webp' },
+    { id: 3, name: 'NBA', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp' },
+    { id: 4, name: 'UGC Grant', logo: 'https://cdn.kalingauniversity.ac.in/Home/ugc.webp' },
+    { id: 5, name: 'AICTE', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/acite.webp' },
+    { id: 6, name: 'NCTE', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002978.png' },
+    { id: 7, name: 'BCI', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/bci.webp' },
+    { id: 8, name: 'PCI', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002980.png' },
+    { id: 9, name: 'CG Government', logo: 'https://cdn.kalingauniversity.ac.in/about/accerdation/cg-government.webp' },
+
 
 
 

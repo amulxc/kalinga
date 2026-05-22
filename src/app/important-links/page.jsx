@@ -64,6 +64,12 @@ const clubSections = [
           "https://cdn.kalingauniversity.ac.in/about/accerdation/aishe.webp",
         url: "https://aishe.gov.in/aishe/home",
       },
+      {
+        name: "National Board of Accreditation",
+        image:
+          "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp",
+        url: "https://www.nbaind.org/",
+      },
     ],
   },
 ];

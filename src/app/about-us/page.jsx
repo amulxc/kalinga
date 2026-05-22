@@ -157,8 +157,8 @@ const aboutAccreditations = [
   { id: 5, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002974.png" },
   { id: 6, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002953.png" },
   { id: 7, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg" },
-  { id: 8, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp" },
-  // { id: 11, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002979.png" },
+  { id: 8, name: "NAAC", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp" },
+  { id: 11, name: "NBA", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp" },
   { id: 13, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002981.png" },
   { id: 14, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/logos/ieee.jpeg" },
   { id: 15, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/unnat-bharat-abhiyan/uba-logo.webp" },
@@ -328,7 +328,7 @@ export default function AboutUs() {
         subtitle="Overview of Kalinga"
         subtitleClassName="!text-blue"
         showReadMore={false}
-        description={["Kalinga University, established in 2013, stands out as one of the leading private institutions that has consistently ranked among the top 101–150 universities in India under the NIRF Rankings 2025 for the fourth consecutive year. It has also received a NAAC B+ accreditation, continuously shining on the horizons of high-quality education.",
+        description={["Kalinga University, established in 2013, stands out as one of the leading private universities strategically located in the Smart City of New Raipur, Chhattisgarh. The University has consistently ranked among the top 101–150 universities in India under the NIRF Rankings 2025 for the fourth consecutive year. It has also received a NAAC B+ accreditation and NBA accreditation for the MBA Program, continuously shining on the horizons of high-quality education with equal opportunities to its international students.",
           "Kalinga University has students from across India and 33 + countries. It offers Diploma, Undergraduate, Postgraduate, and Doctoral programs in Arts and Humanities, Commerce and Management, Education, Information Technology, Law, Pharmacy, Science, and Technology. With highly-qualified and experienced faculty members, the University strongly emphasizes research, innovation, and hands-on learning. "
           , "With a vibrant and multicultural environment, the University promotes collaboration and cross-cultural understanding."
           , "Spread across 50 + acres eco-friendly campus, the University offers an indoor and outdoor sports centre, Moot Court, Incubation Centre, Corporate Training and Consultancy Division, Centres of Excellence, a library with a collection of over 80,000 books and digital content, and 100 + labs, including Central Instrumentation Facility, language labs, and computer labs. Moreover, the University has developed strong connections with leading companies through MoUs to offer corporate training, and internship and placement opportunities to students."

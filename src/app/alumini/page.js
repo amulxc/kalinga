@@ -466,10 +466,10 @@ export default function Alumini() {
       <AlumniForm />
       <ContactSection
         title="Contact Us"
-        mail="cif@kalingauniversity.ac.in"
-        phone="+91 7880135440"
-        phone2="+91 7024116966"
-        address="Central Instrumentation Facility, Kalinga University, Kotni, Near Mantralaya, Naya Raipur, CG - 492101"
+        mail=""
+        phone="DSW : +91 7024116966"
+        phone2=""
+        address="Kalinga University, Kotni, Near Mantralaya, Naya Raipur, CG - 492101/492001"
       />
 
 
