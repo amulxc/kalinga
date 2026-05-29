@@ -10,8 +10,8 @@ export default function PatentsPage() {
     
 
     const patentTabs = Array.from({ length: 5 }, (_, i) => {
-        const id = 9 + i; // 9 to 13
         const year = 2025 - i; // 2025 to 2021
+        const id = year === 2025 ? 99 : (9 + i); // 2025 uses 99, others 9 to 13
         const label = `${year}`;
 
         return {

@@ -44,7 +44,9 @@ export default function MainIntro({
   sectionClassName = null,
   imageObjectFit = "cover",
   extraContent = null,
-  description1 = null
+  description1 = null,
+  logoUrl = null,
+  logoAlt = "Accreditation Logo"
 }) {
   const [showAll, setShowAll] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
@@ -133,6 +135,15 @@ export default function MainIntro({
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 ${showAll ? 'items-start' : 'items-center'}`}>
           {/* Left Section - Text Content */}
           <div className={`flex flex-col order-2 ${reverseLayout ? 'lg:order-2' : 'lg:order-1'} lg:pl-0 lg:pr-4`}>
+            {logoUrl && (
+              <div className="mb-4 self-start">
+                <img
+                  src={logoUrl}
+                  alt={logoAlt}
+                  className="h-24 w-auto object-contain"
+                />
+              </div>
+            )}
             <SectionHeading
               title={title}
               subtitle={subtitle}

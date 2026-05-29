@@ -161,6 +161,8 @@ function Accreditations() {
             },
             bci: {
                 years: {
+                    "2026 - 27": [{ title: "BCI Approval - Session 2026-27", url: "https://cdn.kalingauniversity.ac.in/accreditation/Approval PDF/BCI Approval/BCI-Approval-Session-2026-27.pdf" },],
+                    "2025 - 26": [{ title: "BCI Approval - Session 2025-26", url: "https://cdn.kalingauniversity.ac.in/accreditation/Approval+PDF/BCI+Approval/BCI-Approval-Session2025-26.pdf" },],
                     "2024 - 25": [{ title: "BCI Approval - Session 2024-25", url: "https://cdn.kalingauniversity.ac.in/accreditation/Approval+PDF/BCI+Approval/BCI+Approval+-+Session+2024-25.pdf" },],
                     "2023 - 24": [{ title: "BCI Approval - Session 2023-24", url: "https://cdn.kalingauniversity.ac.in/accreditation/Approval+PDF/BCI+Approval/BCI+Approval+-+Session+2023-24.pdf" },],
                     "2022 - 23": [{ title: "BCI Approval - Session 2022-23", url: "https://cdn.kalingauniversity.ac.in/accreditation/Approval+PDF/BCI+Approval/BCI+Approval+-+Session+2022-23.pdf" },],

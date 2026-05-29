@@ -74,7 +74,7 @@ const PublicationCard = ({ data, className = "" }) => {
 
                                     return (
                                         <>
-                                            <p className="font-stix text-lg md:text-xl font-medium text-gray-800 line-clamp-2" title={authorText}>
+                                            <p className="font-stix text-lg md:text-xl font-medium text-gray-800" title={authorText}>
                                                 {authorText ? (authors.length > 0 || data.author ? `By ${authorText}` : authorText) : ""}
                                             </p>
                                             {designationText && (
