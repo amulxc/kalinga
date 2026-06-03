@@ -5,7 +5,7 @@ import ImageContent from "../components/ccrc/imagecontent";
 import MainIntro from "../components/about/main_intro";
 import SdgImageGrid from "../components/sdg-cell/sdg-image-grid";
 import GlobalArrowButton from "../components/general/global-arrow_button";
-
+import Gallery from "@/app/components/general/gallery";
 import { useRouter } from "next/navigation";
 import SectionHeading from "../components/general/SectionHeading";
 import VisionMission from "../components/about/vision-mission";
@@ -137,6 +137,57 @@ export default function SDGCell() {
     { label: "Sustainable Initiatives for a Green Campus", href: "/sustainability/sustainable-initiatives-for-a-green-campus" },
     { label: "Partnerships for the Goals", href: "/sustainability/partnerships-for-the-goals" }
   ];
+
+  const greenclub = [
+    { label: "ICSSA-2026", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/ICSSA-2026-Conference-Report-Green-Club_compressed.pdf" },
+    { label: "World Ozone Day Celebration: Envirothon & Painting Competition", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Report-on-Ozone-Day-Celebration-report-2025-Green-Club.pdf" },
+    { label: "World Wetland Day 2026 Celebration", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Report-on-Wildlife-Week-2023-Green-Club_compressed.pdf" },
+    { label: "Nature Camp, 2024", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Report-on-Nature-Camp-2024-Green-Club.pdf" },
+    { label: "Wildlife Week Celebration", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Report-Wildlife-Week-Celebration-report-2025-Green-Club_compressed.pdf" },
+    { label: "Tree Plantation & Environmental Awareness Drive: Ek Ped Maa K Naam", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Report-Ek-Ped-Maa-K-Naam-Report-Green-Club_compressed.pdf" },
+    { label: "Industrial Visit to Indira Gandhi Krishi Vidyalaya, Raipur", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Zoology-Industrial Visit Report 2025 IGKV_Green Club.pdf" },
+  ];
+
+  const bisclub = [
+    { label: "Exposure Visit (Industrial Visit) at Siddarth Transformers", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Report-on-Exposure-visit-on-Siddarth-Transformer-Siltara-BIS.pdf" },
+    { label: "Standard Carnival", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Report-on-Standard-Carnival-BIS.pdf" },
+    { label: "Manak Carnival", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Report-on-Standard-Manak-Carnival-BIS.pdf" },
+    { label: "Standard Writing Competition", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Report-on-Standard-writing-competition-BIS.pdf" }
+  ];
+
+  const greenclubone = [
+    { label: "Constitution of Green Club Coordinators and Student Members", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Constitution-of-Green-Club-Coordinators-and-Student-Members.pdf" },
+    { label: "Office Order", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Office-Order-Green-Club-2019.pdf" }
+  ];
+
+  const bisclubone = [
+    { label: "Constitution of BIS Club Coordinator and Student Members", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Constitution-of-BIS-Club-Coordinators-and-Student-Members.pdf" },
+    { label: "Office Order", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Office-Order-BIS-Student-Club-2023.pdf" }
+  ];
+
+  const greenClubGalleryImages = [
+    { id: 1, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-1.jpg", alt: "Green Club Image 1" },
+    { id: 2, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-2.jpg", alt: "Green Club Image 2" },
+    { id: 3, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-3.jpg", alt: "Green Club Image 3" },
+    { id: 4, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-4.jpg", alt: "Green Club Image 4" },
+    { id: 5, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-5.jpg", alt: "Green Club Image 5" },
+    { id: 6, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-6.jpg", alt: "Green Club Image 6" },
+    { id: 7, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-7.jpg", alt: "Green Club Image 7" },
+    { id: 8, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-8.png", alt: "Green Club Image 8" }
+  ];
+
+  const bisClubGalleryImages = [
+    { id: 1, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Approval-Document-BISClub.jpeg", alt: "BIS Standard Club Approval Document" },
+    { id: 2, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/At-Venue.jpeg", alt: "BIS Standard Club At Venue" },
+    { id: 3, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/During-Demonstration.jpeg", alt: "BIS Standard Club During Demonstration" },
+    { id: 4, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/During-Demonstration-1.jpeg", alt: "BIS Standard Club During Demonstration 1" },
+    { id: 5, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/During-interaction.jpeg", alt: "BIS Standard Club During Interaction" },
+    { id: 6, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Quiz-Competition-Poster.jpg", alt: "BIS Standard Club Quiz Competition Poster" },
+    { id: 7, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Quiz-Comp-Photo1.jpg", alt: "BIS Standard Club Quiz Competition Photo 1" },
+    { id: 8, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Quiz-Comp-Photo2.jpg", alt: "BIS Standard Club Quiz Competition Photo 2" },
+    { id: 9, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/Quiz-Comp-Photo3.jpg", alt: "BIS Standard Club Quiz Competition Photo 3" }
+  ];
+
   const itemsnew = [
     {
       text: "Establish advanced laboratories for emerging technologies",
@@ -156,6 +207,54 @@ export default function SDGCell() {
     {
       text: "Address real-world industrial and societal challenges",
     },
+  ];
+  const Itemsgreenclub = [
+    {
+      text: `<div class="font-semibold text-white text-base mb-1">1. Environmental Education</div>
+<ul class="list-disc pl-5 space-y-1 text-gray-200">
+  <li>Increase awareness of environmental issues among students and the university community.</li>
+  <li>Conduct workshops, seminars, and awareness campaigns to educate them about environmental protection and conservation practices.</li>
+</ul>`,
+    },
+    {
+      text: `<div class="font-semibold text-white text-base mb-1">2. Promoting Sustainable Practices</div>
+<ul class="list-disc pl-5 space-y-1 text-gray-200">
+  <li>Encourage the adoption of eco-friendly practices in daily life, both on and off campus.</li>
+  <li>Advocate for the reduction of resource consumption, waste generation, and environmentally harmful products.</li>
+</ul>`,
+    },
+    {
+      text: `<div class="font-semibold text-white text-base mb-1">3. Campus Sustainability</div>
+<ul class="list-disc pl-5 space-y-1 text-gray-200">
+  <li>Implement sustainable practices such as waste reduction, energy conservation, and green building initiatives.</li>
+  <li>Make the campus environmentally friendly through tree plantation, green spaces, and sustainable infrastructure projects.</li>
+</ul>`,
+    },
+    {
+      text: `<div class="font-semibold text-white text-base mb-1">4. Community Outreach</div>
+<ul class="list-disc pl-5 space-y-1 text-gray-200">
+  <li>Engage with local communities to address environmental issues and promote sustainable living practices.</li>
+  <li>Conduct outreach programs, tree-plantation drives, and environmental awareness campaigns in nearby villages/communities.</li>
+</ul>`,
+    },
+  ];
+
+  const Itemsbisclub = [
+    {
+      text: "To create awareness among students about the importance of standards, quality, safety, and sustainability",
+    },
+    {
+      text: "To encourage the adoption of sustainable practices such as energy efficiency, waste management, resource conservation, and eco-friendly production systems.",
+    },
+    {
+      text: "To promote innovation and research through workshops, seminars, quizzes, debates, and technical activities related to standardization.",
+    },
+    {
+      text: "To develop quality consciousness, ethical values, and environmental responsibility among students.",
+    },
+    {
+      text: "To strengthen collaboration with the Bureau of Indian Standards and industry experts. ",
+    }
   ];
 
   return (
@@ -255,6 +354,116 @@ export default function SDGCell() {
           ))}
         </div>
       </section>
+
+      <MainIntro
+        title="Green Club"
+        description={[
+          "The Green Club of Kalinga University is a student-led initiative established to promote environmental awareness, ecological responsibility, and sustainable development practices among students, staff, and faculty members. It encourages student participation in environmental protection activities by organizing tree plantation drives, waste management campaigns, plastic-free initiatives, energy conservation programs, water conservation activities, cleanliness drives, biodiversity awareness programs, eco-friendly competitions, and environmental awareness rallies.",
+          "Through seminars, workshops, expert lectures, exhibitions, green audits, and community outreach programs, students learn to adopt eco-friendly practices. They also develop leadership qualities, teamwork spirit, social responsibility, and environmental ethics, inspiring them to become environmentally conscious citizens who are committed to the well-being of our society and environmental protection for future generations."
+        ]}
+        imageUrl="https://cdn.kalingauniversity.ac.in/sdg-cell/green-club.webp"
+        imageAlt="Green Club"
+        showKnowMore={true}
+        initialVisibleParagraphs={1}
+        disableClipPath={false}
+        imageObjectFit="contain"
+      />
+      <ImageListItem
+        items={Itemsgreenclub}
+        imageSrc="https://cdn.kalingauniversity.ac.in/research-resources/research-toolkit.webp"
+        title="Objectives"
+        subtitle=""
+        description="Green Club promotes sustainable living and active participation in conservation practices."
+      />
+      <section className="container mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {greenclubone.map((page, index) => (
+            <GlobalArrowButton
+              key={index}
+              onClick={() => router.push(page.href)}
+              className="!w-full min-h-[60px] h-auto justify-between !rounded-xl"
+              arrowClassName="p-[3px] !px-2 mr-2 !py-1"
+              arrowSize={29}
+            >
+              {page.label}
+            </GlobalArrowButton>
+          ))}
+        </div>
+      </section>
+      <section className="container mx-auto px-6 py-12">
+        <h2 className="text-3xl md:text-4xl text-center mb-12 font-serif">
+          Events and Activities
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {greenclub.map((page, index) => (
+            <GlobalArrowButton
+              key={index}
+              onClick={() => router.push(page.href)}
+              className="!w-full min-h-[60px] h-auto justify-between !rounded-xl"
+              arrowClassName="p-[3px] !px-2 mr-2 !py-1"
+              arrowSize={29}
+            >
+              {page.label}
+            </GlobalArrowButton>
+          ))}
+        </div>
+      </section>
+      <Gallery title="Glimpses" paddingClassName="py-16" images={greenClubGalleryImages} />
+      <MainIntro
+        title="BIS Standard Club"
+        description={[
+          "The “BIS Standard Club” of the Faculty of Technology at Kalinga University is a student-led initiative established on 26.09.2023. The club actively promotes the understanding of the importance of Indian Standards in ensuring product quality, safety, industrial efficiency, technological advancement,  research orientation, ethical innovation, and sustainable development. Various activities are conducted under the club, such as workshops, seminars, quizzes, expert lectures, poster presentations, debates, awareness campaigns, and industrial visits.",
+          "The club emphasises sustainable practices such as energy efficiency, recycling, waste reduction, resource conservation, product reliability, and safe manufacturing processes aligned with national policies and global sustainability goals. Supported by the Bureau of Indian Standards (BIS), the club promotes responsible engineering practices among students and motivates them to develop eco-friendly solutions that balance industrial growth, environmental protection, social responsibility, and long-term societal well-being."
+        ]}
+        imageUrl="https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/bisclub.webp"
+        imageAlt="BIS Standard Club"
+        showKnowMore={true}
+        initialVisibleParagraphs={1}
+        disableClipPath={false}
+        imageObjectFit="contain"
+      />
+      <ImageListItem
+        items={Itemsbisclub}
+        imageSrc="https://cdn.kalingauniversity.ac.in/research-resources/research-toolkit.webp"
+        title="Objectives"
+        subtitle=""
+        description="Objectives of the BIS Club include:"
+      />
+      <section className="container mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {bisclubone.map((page, index) => (
+            <GlobalArrowButton
+              key={index}
+              onClick={() => router.push(page.href)}
+              className="!w-full min-h-[60px] h-auto justify-between !rounded-xl"
+              arrowClassName="p-[3px] !px-2 mr-2 !py-1"
+              arrowSize={29}
+            >
+              {page.label}
+            </GlobalArrowButton>
+          ))}
+        </div>
+      </section>
+      <section className="container mx-auto px-6 py-12">
+        <h2 className="text-3xl md:text-4xl text-center mb-12 font-serif">
+          Events and Activities
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {bisclub.map((page, index) => (
+            <GlobalArrowButton
+              key={index}
+              onClick={() => router.push(page.href)}
+              className="!w-full min-h-[60px] h-auto justify-between !rounded-xl"
+              arrowClassName="p-[3px] !px-2 mr-2 !py-1"
+              arrowSize={29}
+            >
+              {page.label}
+            </GlobalArrowButton>
+          ))}
+        </div>
+      </section>
+      <Gallery title="Glimpses" paddingClassName="py-16" images={bisClubGalleryImages} />
     </div>
+
   );
 }
