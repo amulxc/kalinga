@@ -113,7 +113,7 @@ function TrainingGlimpseGallery() {
     );
 }
 
-export default function CtcdTrainingTabs({ customTabs, heading }) {
+export default function CtcdTrainingTabs({ customTabs, heading, value, onValueChange }) {
     const [open, setOpen] = useState(false);
     const [openTechnical, setOpenTechnical] = useState(false);
 
@@ -139,7 +139,7 @@ export default function CtcdTrainingTabs({ customTabs, heading }) {
                                 <h2 className="!font-stix text-4xl text-white">{heading}</h2>
                             </div>
                         )}
-                        <Tabs defaultValue={customTabs[0]?.value}>
+                        <Tabs defaultValue={customTabs[0]?.value} value={value} onValueChange={onValueChange}>
                             <TabsList className="!flex !gap-4 md:!gap-5 !bg-transparent !rounded-none !p-0 !overflow-x-auto !overflow-y-visible scrollbar-hide !px-2 md:!px-0 !pb-2 md:!pb-0">
                                 {customTabs.map((tab) => (
                                     <TabsTrigger

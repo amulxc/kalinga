@@ -376,6 +376,9 @@ const Header = () => {
               { label: 'Energy Conservation', href: '/sustainability/energy-conservation' },
               { label: 'Waste Management', href: '/sustainability/waste-management' },
               { label: 'Sustainable Green Campus', href: '/sustainability/green-campus' },
+              { label: 'Green Club', href: '/sustainability/#green-club' },
+              { label: 'BIS Club', href: '/sustainability/#bis-club' },
+
             ]
           },
         ]
