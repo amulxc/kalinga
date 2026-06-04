@@ -41,7 +41,7 @@ const HeroSection = () => {
             className="absolute inset-0 w-full h-full object-cover"
             style={{ backgroundColor: '#e6e9f2' }}
           >
-            <source src="/video/reel-1.mp4" type="video/mp4" />
+            <source src="/video/kalinga-reel.mp4" type="video/mp4" />
           </video>
         )}
         <div suppressHydrationWarning={true} className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent"></div>

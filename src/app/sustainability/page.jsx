@@ -315,7 +315,7 @@ export default function SDGCell() {
           />
           <ImageListItem
             items={Itemsgreenclub}
-            imageSrc="https://cdn.kalingauniversity.ac.in/research-resources/research-toolkit.webp"
+            imageSrc="https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/images-3.jpg"
             title="Objectives"
             subtitle=""
             description="Green Club promotes sustainable living and active participation in conservation practices."
@@ -377,7 +377,7 @@ export default function SDGCell() {
           />
           <ImageListItem
             items={Itemsbisclub}
-            imageSrc="https://cdn.kalingauniversity.ac.in/research-resources/research-toolkit.webp"
+            imageSrc="https://cdn.kalingauniversity.ac.in/sdg-cell/bis-club/During-interaction.jpeg"
             title="Objectives"
             subtitle=""
             description="Objectives of the BIS Club include:"
@@ -423,9 +423,38 @@ export default function SDGCell() {
 
   return (
     <div className="min-h-screen bg-white pb-20">
+      <ImageContent
+        hasImage={false}
+        readmore={false}
+        className="items-center justify-center"
+        title="Every Small Action Can Make A Big Difference"
+        subtitle="Every Small Action Can Make A Big Difference"
+        subtitleclassName="hidden"
+        description={
+          <>
+            Our University promotes sustainable and eco-friendly practices by taking initiatives that minimise environmental impact for the betterment of our planet and future generations. The goal is to make our students environmentally conscious and responsible towards society. They are being taught ways to reduce their carbon footprints and conserve natural resources. By practising the 3 R’s (Reduce, Recycle, and Reuse), our students and faculty members work together towards green initiatives and set new benchmarks in the field of sustainable education.
+          </>
+        }
+      />
+      <MainIntro
+        title="KU’s Commitment Towards Sustainable Development Goals (SDGs)"
+        description={[
+          "The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015. The SDGs' 17 goals aim to protect the planet, end poverty, and ensure peace and prosperity by 2030. These goals are well-connected, so if one area progresses or struggles, it will impact others, too.",
+          "The SDG Cell at Kalinga University was established on 12.04.2022 to promote and implement initiatives related to the cell. We adopted all 17 practices to address global challenges and work towards impactful solutions by balancing social, economic, and environmental challenges. We integrate sustainable practices into our University’s academic, social, cultural, research, administrative, and community engagement activities."
+        ]}
+        imageUrl="https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-logo.png"
+        imageAlt="SDG Goals"
+        showKnowMore={true}
+        initialVisibleParagraphs={1}
+        disableClipPath={false}
+        imageObjectFit="contain"
+        extraContent={<SdgReportsAndPolicyTabs />}
+      />
+
+      <SdgImageGrid />
       <SectionHeading title="Centre of Excellence for Sustainability"
         subTitle=""
-        titleClassName="text-center pb-12 pt-6"
+        titleClassName="text-center pt-6"
       />
       <MainIntro
         title=""
@@ -470,36 +499,6 @@ export default function SDGCell() {
         description=""
         className="!bg-white"
       />
-      <ImageContent
-        hasImage={false}
-        readmore={false}
-        className="items-center justify-center"
-        title="Every Small Action Can Make A Big Difference"
-        subtitle="Every Small Action Can Make A Big Difference"
-        subtitleclassName="hidden"
-        description={
-          <>
-            Our University promotes sustainable and eco-friendly practices by taking initiatives that minimise environmental impact for the betterment of our planet and future generations. The goal is to make our students environmentally conscious and responsible towards society. They are being taught ways to reduce their carbon footprints and conserve natural resources. By practising the 3 R’s (Reduce, Recycle, and Reuse), our students and faculty members work together towards green initiatives and set new benchmarks in the field of sustainable education.
-          </>
-        }
-      />
-      <MainIntro
-        title="KU’s Commitment Towards Sustainable Development Goals (SDGs)"
-        description={[
-          "The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015. The SDGs' 17 goals aim to protect the planet, end poverty, and ensure peace and prosperity by 2030. These goals are well-connected, so if one area progresses or struggles, it will impact others, too.",
-          "The SDG Cell at Kalinga University was established on 12.04.2022 to promote and implement initiatives related to the cell. We adopted all 17 practices to address global challenges and work towards impactful solutions by balancing social, economic, and environmental challenges. We integrate sustainable practices into our University’s academic, social, cultural, research, administrative, and community engagement activities."
-        ]}
-        imageUrl="https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-logo.png"
-        imageAlt="SDG Goals"
-        showKnowMore={true}
-        initialVisibleParagraphs={1}
-        disableClipPath={false}
-        imageObjectFit="contain"
-        extraContent={<SdgReportsAndPolicyTabs />}
-      />
-
-      <SdgImageGrid />
-
       <section className="container mx-auto px-6 py-12">
         <h2 className="text-3xl md:text-4xl text-center mb-12 font-serif">
           Our Initiatives
@@ -518,6 +517,7 @@ export default function SDGCell() {
           ))}
         </div>
       </section>
+
       <div id="student-engagement-tabs">
         <SectionHeading
           title="Student Engagement: Clubs and Societies"

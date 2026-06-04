@@ -200,7 +200,7 @@ export default function RootLayout({ children }) {
               </main>
               <Footer />
               {/* <ChatbotPopup /> */}
-              <CountdownBanner targetDate="2026-05-31T23:59:59" />
+              {/* <CountdownBanner targetDate="2026-05-31T23:59:59" /> */}
             </ClickSparkWrapper>
           </FlipbookProvider>
           {/* Outside ClickSparkWrapper so stacking isn’t tied to spark canvas; above sticky countdown (z-[10060]) */}
