@@ -136,6 +136,25 @@ const Header = () => {
     []
   );
 
+  const erpLoginMegaMenu = useMemo(
+    () => ({
+      imageHref: '#',
+      imageUrl: 'https://cdn.kalingauniversity.ac.in/about/about-banner.webp',
+      imageAlt: 'ERP Login',
+      sections: [
+        {
+          title: 'ERP Login',
+          links: [
+            { label: 'Student Login', href: 'https://kusis.kalingauniversity.edu.in' },
+            { label: 'Staff Login', href: 'https://kucmhrm.kalingauniversity.edu.in/KUEIS/Login.aspx' },
+            { label: 'Dean/HoD Login', href: 'https://kucmhrm.kalingauniversity.edu.in/userlogin.aspx?compid=3Pdxy5emanY=' },
+          ],
+        },
+      ],
+    }),
+    []
+  );
+
   const navItems = useMemo(() => [
     {
       id: 'about',
@@ -376,7 +395,7 @@ const Header = () => {
               { label: 'Energy Conservation', href: '/sustainability/energy-conservation' },
               { label: 'Waste Management', href: '/sustainability/waste-management' },
               { label: 'Sustainable Green Campus', href: '/sustainability/green-campus' },
-              { label: 'Club', href: '/sustainability/#green-club' },
+              { label: 'Clubs', href: '/sustainability/#green-club' },
 
             ]
           },
@@ -391,9 +410,9 @@ const Header = () => {
       { label: 'IQAC', href: '/internal-quality-assurance-cell' },
       { label: 'CCRC', href: '/career-and-corporate-resource-centre' },
       { label: 'CIF', href: '/central-instrumentation-facility' },
-      { label: 'CSR', href: '/csr' },
       { label: 'Events & Activities', href: '/news-and-events', megaMenu: eventsActivitiesMegaMenu },
-      { label: 'Contact Us', href: '/contact-us' },
+      { label: 'B.VOc', href: 'https://bvoc.kalingauniversity.ac.in/' },
+      { label: 'ERP Login', href: '', megaMenu: erpLoginMegaMenu },
     ],
     [eventsActivitiesMegaMenu]
   );

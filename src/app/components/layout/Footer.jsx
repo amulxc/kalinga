@@ -64,6 +64,7 @@ export default function Footer() {
                     <li><a className="hover:text-white transition-colors" href="/research">Research</a></li>
                     <li><a className="hover:text-white transition-colors" href="/training-and-placements">Placements</a></li>
                     <li><a className="hover:text-white transition-colors" href="/campuslife">Campus life</a></li>
+                    <li><a className="hover:text-white transition-colors" href="/contact-us">Contact Us</a></li>
                     <li><a className="hover:text-white transition-colors" href="/html-sitemap">Sitemap</a></li>
                   </ul>
                   {/* <ul className="text-white/80 space-y-2 sm:space-y-3">
@@ -145,7 +146,7 @@ export default function Footer() {
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="/kalinga-buzz">Kalinga Buzz</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words cursor-pointer" onClick={() => setIsFraudModalOpen(true)}>Fraud Awareness Guidelines</a></li>
                     <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://www.aicte.gov.in/schemes/students-development-schemes">AICTE Scholarship/Fellowship Schemes</a></li>
-                    <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://kusis.kalingauniversity.edu.in/" target="_blank" rel="noopener noreferrer">ERP Login</a></li>
+                    {/* <li><a className="hover:text-white transition-colors lg:whitespace-nowrap break-words" href="https://kusis.kalingauniversity.edu.in/" target="_blank" rel="noopener noreferrer">ERP Login</a></li> */}
                   </ul>
 
                 </div>

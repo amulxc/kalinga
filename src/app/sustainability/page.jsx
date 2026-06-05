@@ -301,7 +301,14 @@ export default function SDGCell() {
       content: (
         <div className="text-left">
           <MainIntro
-            title="Green Club"
+            title={
+              <>
+                Green Club
+                <span className="block text-sm sm:text-base font-plus-jakarta-sans font-medium text-[var(--button-red)] mt-1.5 normal-case tracking-wide">
+                  [SDG 3, 4, 6, 7, 11, 12, 13, 15]
+                </span>
+              </>
+            }
             description={[
               "The Green Club of Kalinga University is a student-led initiative established to promote environmental awareness, ecological responsibility, and sustainable development practices among students, staff, and faculty members. It encourages student participation in environmental protection activities by organizing tree plantation drives, waste management campaigns, plastic-free initiatives, energy conservation programs, water conservation activities, cleanliness drives, biodiversity awareness programs, eco-friendly competitions, and environmental awareness rallies.",
               "Through seminars, workshops, expert lectures, exhibitions, green audits, and community outreach programs, students learn to adopt eco-friendly practices. They also develop leadership qualities, teamwork spirit, social responsibility, and environmental ethics, inspiring them to become environmentally conscious citizens who are committed to the well-being of our society and environmental protection for future generations."
@@ -363,7 +370,14 @@ export default function SDGCell() {
       content: (
         <div className="text-left">
           <MainIntro
-            title="BIS Standard Club"
+            title={
+              <>
+                BIS Standard Club
+                <span className="block text-sm sm:text-base font-plus-jakarta-sans font-medium text-[var(--button-red)] mt-1.5 normal-case tracking-wide">
+                  [SDG 4, 8, 9, 12, 13, 17]
+                </span>
+              </>
+            }
             description={[
               "The “BIS Standard Club” of the Faculty of Technology at Kalinga University is a student-led initiative established on 26.09.2023. The club actively promotes the understanding of the importance of Indian Standards in ensuring product quality, safety, industrial efficiency, technological advancement,  research orientation, ethical innovation, and sustainable development. Various activities are conducted under the club, such as workshops, seminars, quizzes, expert lectures, poster presentations, debates, awareness campaigns, and industrial visits.",
               "The club emphasises sustainable practices such as energy efficiency, recycling, waste reduction, resource conservation, product reliability, and safe manufacturing processes aligned with national policies and global sustainability goals. Supported by the Bureau of Indian Standards (BIS), the club promotes responsible engineering practices among students and motivates them to develop eco-friendly solutions that balance industrial growth, environmental protection, social responsibility, and long-term societal well-being."
@@ -452,7 +466,7 @@ export default function SDGCell() {
       />
 
       <SdgImageGrid />
-      <SectionHeading title="Centre of Excellence for Sustainability"
+      <SectionHeading title="Centres of Excellence for Sustainability"
         subTitle=""
         titleClassName="text-center pt-6"
       />

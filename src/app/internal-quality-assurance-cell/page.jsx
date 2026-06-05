@@ -60,6 +60,48 @@ const IQACPage = () => {
           name: "NBA",
           width: 150,
           height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/achievement-1.jpeg",
+          alt: "NBA",
+          name: "NBA",
+          width: 150,
+          height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/achievement-2.jpeg",
+          alt: "NBA",
+          name: "NBA",
+          width: 150,
+          height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/achievement-3.jpeg",
+          alt: "NBA",
+          name: "NBA",
+          width: 150,
+          height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/achievement-4.jpeg",
+          alt: "NBA",
+          name: "NBA",
+          width: 150,
+          height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/achievement-5.jpeg",
+          alt: "NBA",
+          name: "NBA",
+          width: 150,
+          height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/achievement-6.jpeg",
+          alt: "NBA",
+          name: "NBA",
+          width: 150,
+          height: 80
         }
       ],
       contentWrapperClassName: "lg:!pt-0",
