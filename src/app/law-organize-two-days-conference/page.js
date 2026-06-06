@@ -17,79 +17,59 @@ const LawConferencePage = () => {
     const abstractItems = [
         {
             id: 1,
-            text: "The abstract must be in an A4 sheet in Word Document Format, typed in Times New Roman in 12 font size with 1.5-line spacing in not more than 300 words. It should not contain more than eight keywords.",
+            text: "Title of the abstract: Times New Roman, font size 14.",
         },
         {
             id: 2,
-            text: "The abstract should contain personal details of the author(s) in the order: Title of the Paper, Name, Designation, Institute/University/College/Organisation, Contact Number, E-mail, and Address of Correspondence of the Author(s).",
+            text: "Author details with affiliation: Name of the first author, corresponding author & co-authors, Designation, Institutional Affiliation, E-Mail ID.",
         },
         {
             id: 3,
-            text: "Kindly indicate the name of the main author for correspondence in case of more than one author.",
+            text: "Main Text- 150- 200 Words, Times New Roman, font size 12, 1.5 spacing, justified, with a margin left 1.5 inch and right 1.0-inch, top 1 inch and bottom 1 inch. The first line of the paragraph is not to be indented.",
         },
         {
             id: 4,
-            text: "Acceptance of the Abstract will be communicated via e-mail <a href=\"mailto:lawconference@kalingauniversity.ac.in\"><b>lawconference@kalingauniversity.ac.in:</b></a>",
+            text: "Keywords: 5 key words.</br></br>Note: Abstracts will be Published as Conference Proceedings with ISBN Number.<br>Springer Publication - Selected good Quality papers will be published in Atlantis Press (Springer Nature) (Publication Charges will be separate).<br>Registration is mandatory upon acceptance of abstract.",
         },
+        {
+            id: 5,
+            text: "The abstract should contain personal details of the author(s) in the order: Title of the Paper, Name, Designation, Institute/University/College/Organisation, Contact Number, E-mail, and Address of Correspondence of the Author(s)",
+        },
+        {
+            id: 6,
+            text: "Kindly indicate the name of the main author for correspondence in case of more than one author.",
+        },
+        {
+            id: 7,
+            text: `Acceptance of the Abstract will be communicated via e-mail <a href="mailto:lawconference@kalingauniversity.ac.in"> lawconference@kalingauniversity.ac.in</a>.`,
+        }
     ]
 
     const fullPaperItems = [
         {
             id: 1,
-            text: "The word limit of the paper shall be 5000-6000 words (exclusive of footnotes).",
+            text: "Author guidelines - Please follow the guidelines for proper format of writing: Authors details, Affiliation, Mail ID, ORCID Margins, line spacing. Id. Maximum Three authors are allowed including main author. One of the authors must have Doctorate / Ph.D.",
         },
         {
             id: 2,
-            text: "The main text of the full paper should be in Times New Roman with a font size of 12 and a line spacing of 1.5.",
+            text: "Abstract (100-150 words and 5 key words), Full paper (2500-3000 words, excluding references).",
         },
         {
             id: 3,
-            text: "The footnotes should be in Times New Roman, font size 10, with spacing of 1.0 (Endnotes are not permitted).",
+            text: "The footnotes should be in Times New Roman, font size 10, with spacing of 1.0 (Endnotes are not permitted).Footnotes and references are mandatory.",
         },
         {
             id: 4,
-            text: "One-inch margins should be maintained on all four sides of the pages.",
+            text: "APA citations: Please ensure that all information in your manuscript that is taken from another source is substantiated with an in-text reference citation. The publisher will return your submission to you for correction if you do not properly format your references. Only papers registered and presented at the conference will be considered for publication.",
         },
         {
             id: 5,
-            text: "Citation Style: Bluebook, 20th edition.",
+            text: "Similarity: Should not exceed 10%",
         },
         {
             id: 6,
-            text: "Full papers have to be submitted in (Word) .docx format.",
-        },
-        {
-            id: 7,
-            text: "The submission of the full paper shall be carried out through the form link provided by us after the acceptance of the abstract.",
-        },
-        {
-            id: 8,
-            text: "The participants are also required to submit their full paper in the registration form.",
-        },
-        {
-            id: 9,
-            text: "Registration is mandatory upon acceptance of the abstract. The link to the registration form will be shared via email with the selected participants.",
-        },
-        {
-            id: 10,
-            text: "No abstract or full paper shall be accepted after the last date of submission.",
-        },
-        {
-            id: 11,
-            text: "Only the selected abstracts will be permitted for presentation.",
-        },
-        {
-            id: 12,
-            text: "Co-authorship is permitted to a maximum of two authors, and at least one author must attend the Conference to present the paper.",
-        },
-        {
-            id: 13,
-            text: "All submissions must be the author's original and unpublished work.",
-        },
-        {
-            id: 14,
-            text: "More than 10% similarity will attract immediate disqualification.",
-        },
+            text: "Al Similarity must be 0%",
+        }
     ]
 
     const tableSections = [
@@ -102,8 +82,8 @@ const LawConferencePage = () => {
                 { key: "institution", label: "Institution" }
             ],
             data: [
-                { name: "Dr. Rajiv Kumar", designation: "Chairman", institution: "Kalinga University, Naya Raipur" },
-                { name: "Dr. Sandeep Arora", designation: "Chancellor", institution: "Kalinga University, Naya Raipur" }
+                { name: "Dr. Rajiv Kumar", designation: "Chairman", institution: "Kalinga University, Naya Raipur, (C.G.), India" },
+                { name: "Dr. Sandeep Arora", designation: "Chancellor", institution: "Kalinga University, Naya Raipur, (C.G.), India" }
             ]
         },
         {
@@ -115,9 +95,10 @@ const LawConferencePage = () => {
                 { key: "institution", label: "Institution" }
             ],
             data: [
-                { name: "Prof. (Dr.) R. Shridhar", designation: "Vice-Chancellor", institution: "Kalinga University, Naya Raipur" },
-                { name: "Dr. Byju John", designation: "Director General", institution: "Kalinga University, Naya Raipur" },
-                { name: "Dr. Sandeep Gandhi", designation: "Registrar", institution: "Kalinga University, Naya Raipur" }
+                { name: "Prof. (Dr.) R. Shridhar", designation: "Vice-Chancellor", institution: "Kalinga University, Naya Raipur, (C.G.), India" },
+                { name: "Dr. Byju John", designation: "Director General", institution: "Kalinga University, Naya Raipur, (C.G.), India" },
+                { name: "Dr. Monika Sethi", designation: "Pro Vice-Chancellor", institution: "Kalinga University, Naya Raipur, (C.G.), India" },
+                { name: "Dr. Sandeep Gandhi", designation: "Registrar", institution: "Kalinga University, Naya Raipur, (C.G.), India" }
             ]
         },
         {
@@ -129,9 +110,9 @@ const LawConferencePage = () => {
                 { key: "institution", label: "Institution" }
             ],
             data: [
-                { name: "Dr. Rahul Mishra", designation: "Dean of Academic Affairs", institution: "Kalinga University, Naya Raipur" },
-                { name: "Dr. Vijayalaxmi Biradar", designation: "Director IQAC", institution: "Kalinga University, Naya Raipur" },
-                { name: "Dr. Azim Khan B. Pathan", designation: "Dean, Faculty of Law", institution: "Kalinga University, Naya Raipur" }
+                { name: "Dr. Rahul Mishra", designation: "Dean of Academic Affairs", institution: "Kalinga University, Naya Raipur, (C.G.), India" },
+                { name: "Dr. Vijayalaxmi Biradar", designation: "Director IQAC", institution: "Kalinga University, Naya Raipur, (C.G.), India" },
+                { name: "Dr. Azim Khan B. Pathan", designation: "Dean, Faculty of Law", institution: "Kalinga University, Naya Raipur, (C.G.), India" }
             ]
         },
         {
@@ -142,14 +123,14 @@ const LawConferencePage = () => {
                 { key: "designation", label: "Designation/Institution" }
             ],
             data: [
-                { name: "Prof. (Dr.) Farhana Helal Mehtab", designation: "Dean, Faculty of Law, Green University of Bangladesh" },
-                { name: "Dr. Sarah Jane Fox", designation: "Staffordshire University, UK" },
-                { name: "Alfredo M. Ronchi", designation: "EC, Medici Framework, Italy" },
-                { name: "Andrii Paziuk", designation: "Kyiv Aviation Institute, Ukraine" },
-                { name: "Ahmad Ghouri", designation: "Associate Professor, University of Sussex" },
-                { name: "Prof. Balamurugan Baluswamy", designation: "Professor and Chairperson, School of Engineering and IT, MAHE, Dubai" },
-                { name: "Dr. Mohammad Ataur Rahman", designation: "Advocate, Supreme Court of Bangladesh" },
-                { name: "Dr. Garry Fehr", designation: "Associate Vice-President Research, Engagement and Graduate Studies, University of the Fraser Valley" }
+                { name: "Prof. (Dr.) Farhana Helal Mehtab", designation: "Dean, Faculty of Law, Green University of Bangladesh, Bangladesh" },
+                { name: "Dr. Sarah Jane Fox", designation: "School of Justice, Staffordshire University, UK" },
+                { name: "Mr. Alfredo M. Ronchi", designation: "EC, Medici Framework, Italy" },
+                { name: "Prof. Andrii Paziuk", designation: "Prof., Kyiv Aviation Institute, Ukraine " },
+                { name: "Dr. Ahmad Ghouri", designation: "Associate Professor, University of Sussex Brighton, England, United Kingdom" },
+                { name: "Prof. Balamurugan Baluswamy", designation: "Professor and Chairperson School of Engineering and IT, MAHE, Dubai" },
+                { name: "Dr. Mohammad Ataur Rahman", designation: "Advocate, Supreme Court of Bangladesh, Bangladesh" },
+                { name: "Dr. Garry Fehr", designation: "Associate Vice-President Research Engagement and Graduate Studies University of the Fraser Valley, Canada" }
             ]
         },
         {
@@ -400,8 +381,8 @@ const LawConferencePage = () => {
             id: 1,
             question: "Important Dates",
             answer: [
-                "Submission of Abstract: 15th August 2026",
-                "Confirmation of Abstract: 31st August 2026",
+                "Submission of Abstract: 10th August 2026",
+                "Confirmation of Abstract: 10th September 2026",
                 "Last Date for Registration And Payment: 30th September 2026",
                 "Submission of Full Paper: 15th October 2026",
                 "Global Conference: 20th & 21st November 2026"
@@ -433,7 +414,7 @@ const LawConferencePage = () => {
                 { category: "Industry Experts", fee: "INR 2500/-" },
                 { category: "International Participants", fee: "USD 50/-" },
                 { category: "Law Firms, Senior Counsel and General Counsel", fee: "INR 5000/-" },
-                { category: "Advocates Below 40 years", fee: "INR 1200/-" }
+                { category: "Advocates", fee: "INR 2000/-" }
             ],
             footerContent: [
                 "After the Registration Dates, each category will have an additional charge of INR 250/-, and International Participants will have an additional charge of USD 20/-.",
@@ -505,16 +486,12 @@ const LawConferencePage = () => {
             answer: `<ul class="list-disc list-inside space-y-2 mb-6">
                 <li>Certificate/E-Certificate will be provided to every Participant.</li>
                 <li>Certificate of Merit will be provided to the 3 Best Paper Presentations.</li>
-                <li>The 10 Best Selected Papers will be published in a reputed Scopus-indexed journal.</li>
-                <li>Other Selected Papers will be published in an edited book with an ISBN.</li>
-                <li>Conference proceedings will be released at the Inauguration of the Conference.</li>
+                <li>Springer Publication - Selected good Quality papers will be published in Atlantis Press (Springer Nature) (Publication Charges will be separate).</li>
+                <li>Conference abstract proceedings will be released at the Inauguration of the Conference. </li>
             </ul>
             <div class="mt-4 pt-4 border-t border-gray-200">
                 <strong class="text-lg text-gray-900 block mb-2">Note:</strong>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>The Author has to pay the publication charges for the publication in the Scopus-indexed journal.</li>
-                    <li>A soft copy of the book/proceeding shall be provided to the authors. (A hard copy will be provided on request with applicable charges).</li>
-                </ul>
+                <p>A soft copy of the book/proceeding shall be provided to the authors. (A hard copy will be provided on request with applicable charges).</p>
             </div>`
         }
     ];
@@ -523,24 +500,83 @@ const LawConferencePage = () => {
         <>
             <section className="py-12 md:py-16 text-center bg-white border-b border-gray-100">
                 <div className="container mx-auto px-4">
-                    <h5 className="font-plus-jakarta-sans font-bold text-[var(--button-red)] titlecase tracking-[0.2em] text-sm md:text-base mb-2">
+                    <h5 className="font-bold text-[var(--button-red)] titlecase tracking-[0.2em] text-sm md:text-base mb-2">
                         FACULTY OF LAW
                     </h5>
-                    <p className="font-plus-jakarta-sans font-semibold text-gray-400 uppercase tracking-[0.3em] text-[10px] md:text-xs mb-8">
+                    <p className="font-bold text-gray-400 uppercase tracking-[0.3em] text-[10px] md:text-xs mb-8">
                         ORGANISES
                     </p>
-                    <h1 className="font-stix font-bold text-2xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-4">
+                    <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-4">
                         Two Day Global Conference
                     </h1>
-                    <p className="font-stix italic text-lg md:text-xl text-gray-500 mb-4 lowercase">
+                    <p className="text-lg md:text-xl text-gray-500 mb-4 lowercase">
                         on
                     </p>
-                    <h2 className="font-stix font-bold text-xl md:text-2xl lg:text-4xl text-gray-800 leading-tight mb-10 titlecase max-w-4xl mx-auto">
+                    <h2 className="font-bold text-xl md:text-2xl lg:text-4xl text-gray-800 leading-tight mb-10 titlecase max-w-4xl mx-auto">
                         Emerging Trends In Artificial Intelligence: <br className="hidden md:block" /> Comparative Approaches Of Legal Governance
                     </h2>
-                    <p className="font-plus-jakarta-sans font-extrabold text-xl md:text-2xl lg:text-3xl text-gray-900 border-t border-gray-100 pt-8 inline-block">
+                    <p className="font-extrabold text-xl md:text-2xl lg:text-3xl text-gray-900 border-t border-gray-100 pt-4 inline-block">
                         20th & 21st November 2026
                     </p>
+                    <h3 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight pt-6 titlecase max-w-4xl mx-auto">
+                        Aligned With UN Sustainable Development Goals (SDGs):
+                    </h3>
+                    <div className="flex flex-wrap justify-center items-center gap-6 mt-8 max-w-2xl mx-auto">
+                        <div className="w-24 h-24 md:w-28 md:h-28 relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white p-1 border border-gray-100">
+                            <img
+                                src="https://cdn.kalingauniversity.ac.in/law-conference/sustainability-4.webp"
+                                alt="SDG 4 - Quality Education"
+                                className="w-full h-full object-contain rounded-lg"
+                            />
+                        </div>
+                        <div className="w-24 h-24 md:w-28 md:h-28 relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white p-1 border border-gray-100">
+                            <img
+                                src="https://cdn.kalingauniversity.ac.in/law-conference/sustainability-9.webp"
+                                alt="SDG 9 - Industry, Innovation and Infrastructure"
+                                className="w-full h-full object-contain rounded-lg"
+                            />
+                        </div>
+                        <div className="w-24 h-24 md:w-28 md:h-28 relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white p-1 border border-gray-100">
+                            <img
+                                src="https://cdn.kalingauniversity.ac.in/law-conference/sustainability-16.webp"
+                                alt="SDG 16 - Peace, Justice and Strong Institutions"
+                                className="w-full h-full object-contain rounded-lg"
+                            />
+                        </div>
+                        <div className="w-24 h-24 md:w-28 md:h-28 relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white p-1 border border-gray-100">
+                            <img
+                                src="https://cdn.kalingauniversity.ac.in/law-conference/sustainability-17.webp"
+                                alt="SDG 17 - Partnerships for the Goals"
+                                className="w-full h-full object-contain rounded-lg"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="mt-12 border-t border-gray-100 pt-8">
+                        <h3 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight titlecase max-w-4xl mx-auto mb-6">
+                            Sponsors
+                        </h3>
+                        <div className="max-w-3xl mx-auto hover:scale-[1.01] transition-transform duration-300">
+                            <img
+                                src="https://cdn.kalingauniversity.ac.in/law-conference/Sponsors.webp"
+                                alt="Sponsors"
+                                className="mx-auto w-full h-auto object-contain rounded-xl shadow-sm border border-gray-50"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="mt-12 border-t border-gray-100 pt-8">
+                        <h3 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight titlecase max-w-4xl mx-auto mb-6">
+                            Collaborators
+                        </h3>
+                        <div className="max-w-3xl mx-auto hover:scale-[1.01] transition-transform duration-300">
+                            <img
+                                src="https://cdn.kalingauniversity.ac.in/law-conference/Collaborators.webp"
+                                alt="Collaborators"
+                                className="mx-auto w-full h-auto object-contain rounded-xl shadow-sm border border-gray-50"
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -550,6 +586,11 @@ const LawConferencePage = () => {
                 subtitle=""
                 description={[
                     "Kalinga University, established in 2013, stands out as one of the leading private universities strategically located in the Smart City of New Raipur, Chhattisgarh. The University has consistently ranked among the top 101–150 universities in India under the NIRF Rankings 2025 for the fourth consecutive year and has also received a NAAC B+ accreditation, continuously shining on the horizons of high-quality education.",
+                    "Global Students - The University has students from across India and other countries, including Afghanistan, Angola, Bangladesh, Burundi, Cameroon, Congo, Gambia, Ghana, Ivory Coast, Lesotho, Liberia, Malawi, Mozambique, Namibia, Nepal, Nigeria, PNG, Rwanda, Somalia, South Korea, South Sudan, Sudan, Swaziland, Syria, Tanzania, Zambia, Zimbabwe, Singapore, South Africa.",
+                    "Departments and Faculties - The faculties include Arts and Humanities, Commerce and Management, Education, Information Technology, Law, Pharmacy, Science, and Technology, offering Diploma, UG, PG, and Doctoral programs. We also offer Doctoral Research Programs in various subjects. The University has senior professors with excellent academic backgrounds and vast experience in teaching, publications, and research. Additionally, we provide hands-on training on New-Age Programs like Cinematography, Stock Market Trading, Advanced IoT Applications, Microsoft Power Business Intelligence (Power BI), and many more",
+                    "Industry Orientation and Leadership - The University has developed excellent connections with the top industries by taking memberships in leading industrial associations like Confederation of Indian Industries, Indian Importers Chamber of Commerce and Industry, and many more. It also has an active chapter of Young Indians in which students can interact extensively with industry leaders and attend various corporate seminars and events. It has also entered into MoUs with leading companies like Subros Limited, IBM, Wanfeng, Godawari Electric Motors Pvt. Ltd., Infosys Limited, Bajaj Finserv, iNurture Education Solution, JustAuto Solutions Pvt. Ltd., Centre for Environment Education and Development, DADB India Private Limited, Ramakrishna CARE Hospitals, and more for trainings, internships, and recruitments.",
+                    "More than Academics - Kalinga offers a diverse platform for the holistic development of its students. Spread across 50+ acres of land, the university offers world-class indoor and outdoor sports facilities, Moot Court, Incubation Centre, Corporate Training and Consultancy Division (CTCD), Internal Quality Assurance Cell (IQAC), Academic Clubs, and Labs, including IT Labs with 1200 computer systems, Research and Development Labs, Central Instrumentation Facility (CIF) Lab, and Language Lab. The library has a collection of over 90,000 books and offers digital content through membership in DELNET, National Digital Library, and NPTEL.",
+                    ""
                 ]}
                 imageUrl="https://cdn.kalingauniversity.ac.in/academic-facilities/mootcourt.webp"
                 imageAlt="Kalinga University Campus"
@@ -559,8 +600,7 @@ const LawConferencePage = () => {
                 title="About The Faculty Of Law"
                 subtitle=""
                 description={[
-                    "The faculty of law at Kalinga University is a time-tested department offering excellence in the field of legal education and fulfilling the demands of young aspirants by making them employable in the legal sector. We are one of the best colleges for law admissions as our different legal education programs are aligned with UGC and NEP guidelines and offer high-quality education through outcome-based learning methods. The courses offered by our faculty of law are carefully designed to ensure that our graduates turn out to be industry-ready professionals.",
-                    "We have digital classrooms and a moot court with all the modern technologies and facilities, preparing students for real-world legal challenges. Our curriculum is designed to satisfy the academic needs of every student and to make them professionally ready. Our law school prepares young legal professionals with a thorough understanding of theoretical and practical legal studies so that they can get familiar with the complex legal systems.",
+                    "The Faculty of Law at Kalinga University, Naya Raipur, stands as a beacon of legal education, fostering academic excellence and professional development. With a commitment to nurturing future legal luminaries, the faculty comprises distinguished scholars and experienced faculty who bring a wealth of expertise to the learning environment. Emphasising a holistic approach to legal studies, the faculty members are dedicated to imparting both theoretical knowledge and practical skills essential for success in the dynamic field of law. At Kalinga University, Faculty of Law, students embark on a transformative educational journey characterised by innovative pedagogy, interactive sessions, and experiential learning opportunities. The curriculum is designed to align with contemporary legal challenges, ensuring that graduates are well-equipped to navigate the complexities of the legal landscape. With state-of-the-art facilities, including modern classrooms, a well-stocked library, and moot courtrooms, students engage in a stimulating academic environment that encourages critical thinking, research, and the development of ethical legal practice. The faculty's commitment to fostering a culture of intellectual curiosity and professional integrity distinguishes the legal education imparted at Kalinga University, making it a premier destination for those aspiring to excel in the legal profession."
                 ]}
                 imageUrl="https://cdn.kalingauniversity.ac.in/law-conference/BA-LLB-AboutImage.webp"
                 imageAlt="International Conference on Law and AI"
@@ -778,7 +818,7 @@ const LawConferencePage = () => {
                 imageSrc="https://cdn.kalingauniversity.ac.in/course/law-2.webp"
                 title="Submission Guidelines"
                 subtitle=""
-                description="Abstract Submission:"
+                description="Guidelines for Abstract:"
             />
 
             <ImageListItem
