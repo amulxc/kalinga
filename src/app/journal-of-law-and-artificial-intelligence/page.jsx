@@ -123,7 +123,7 @@ const JournalOfLawAndAIPage = () => {
         {
             id: 1,
             question: "Standard Format- Research Papers",
-            file: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/Standard-format-research-paper.pdf"
+            file: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Standard-Format-Research-Paper.pdf"
         },
         {
             id: 2,
@@ -221,10 +221,18 @@ const JournalOfLawAndAIPage = () => {
             title: "Vol. 1, Issue 1 | January 2025",
             duration: "Page range: i-iv",
             level: "VOL 1",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Front+matter.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Front-matter-volume-1-Issue-1.pdf"
         },
         {
             id: 2,
+            shortName: "Frontmatter",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: i-v",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/Front-matter-volume-1-Issue-2.pdf"
+        },
+        {
+            id: 3,
             shortName: "Prof(Dr.) AzimKhan B Pathan",
             title: "Vol. 1, Issue 2 | January 2025",
             duration: "Page range: i-vi",
@@ -232,50 +240,50 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/1-Prof-(Dr.)-AzimKhan-B-Pathan.pdf"
         },
         {
-            id: 3,
+            id: 4,
             shortName: "Kritika Singh-&-Dr. Gagandeep Kaur",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: i-vi",
+            duration: "Page range: 1-24",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/2-Kritika-Singh-&-Dr-Gagandeep-Kaur.pdf"
         },
         {
-            id: 4,
+            id: 5,
             shortName: "Krishna Deo Singh Chauhan",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: i-vi",
+            duration: "Page range: 25-36",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/3-Krishna-Deo-Singh-Chauhan.pdf"
         },
         {
-            id: 5,
+            id: 6,
             shortName: "Mr Pankaj Chhuttani Dr.Ankit Srivastava",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: i-vi",
+            duration: "Page range: 37-52",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/4-Mr-Pankaj-Chhuttani-Dr.Ankit-Srivastava.pdf"
         },
         {
-            id: 6,
+            id: 7,
             shortName: "Ms. Himanshu Chauhan",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: i-vi",
+            duration: "Page range: 53-68",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/5-Ms.-Himanshu-Chauhan.pdf"
         },
         {
-            id: 7,
+            id: 8,
             shortName: "Banveer Kaur Jhinger",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: i-vi",
+            duration: "Page range: 69-79",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/6-Banveer-Kaur-Jhinger.pdf"
         },
         {
-            id: 8,
+            id: 9,
             shortName: "Dr Shruti M Nadkarni",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: i-vi",
+            duration: "Page range: 80-94",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/7-Dr-Shruti-M-Nadkarni.pdf"
         },
@@ -722,7 +730,7 @@ const JournalOfLawAndAIPage = () => {
             specialization: "Faculty of Law, Kalinga University",
             education: "LL.B., LLM and PhD",
             institution: "Dean, Faculty of Law, Kalinga University",
-            address: "Near Mantralaya, Kotni, Atal Nagar-Nava Raipur, Chhattisgarh 492101",
+            address: "Near Mantralaya, Kotni, Atal Nagar-Nava Raipur, Chhattisgarh 492101/492001",
             email: "prof.azimkhan@kalingauniversity.ac.in",
             type: "BOARD",
             coursePageUrl: "https://kalingauniversity.ac.in/Faculty-of-Law/Faculty-Profile.php",
