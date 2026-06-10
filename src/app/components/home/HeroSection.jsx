@@ -45,6 +45,7 @@ const HeroSection = () => {
           </video>
         )}
         <div suppressHydrationWarning={true} className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent"></div>
+        <div suppressHydrationWarning={true} className="absolute inset-x-0 top-0 h-[220px] bg-gradient-to-b from-black/80 via-black/40 to-transparent pointer-events-none"></div>
       </div>
       <div suppressHydrationWarning={true} className="container relative z-1 mx-auto h-full flex flex-col items-center justify-center text-center text-white gap-4 md:w-10/12 w-full">
         <h1>India's Leading Private University</h1>

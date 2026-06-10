@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-const MobileMenu = ({ navItems, onClose }) => {
+const MobileMenu = ({ navItems, topBarItems = [], onClose }) => {
   const [expandedMenu, setExpandedMenu] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(108);
   const menuRef = useRef(null);
@@ -41,7 +41,7 @@ const MobileMenu = ({ navItems, onClose }) => {
       /> */}
 
       {/* Menu Panel */}
-      <div 
+      <div
         ref={menuRef}
         className="fixed left-0 right-0 bottom-0 bg-white z-12 lg:hidden overflow-y-auto animate-slideDown shadow-lg"
         style={{ top: `${headerHeight}px` }}
@@ -54,11 +54,10 @@ const MobileMenu = ({ navItems, onClose }) => {
                 <div className="flex items-center justify-between">
                   <Link
                     href={item.href}
-                    className={`flex-1 py-3 font-medium transition ${
-                      item.id === 'admissions' 
-                        ? 'text-[#c92a27] font-semibold' 
-                        : 'text-gray-800 hover:text-[#c92a27]'
-                    }`}
+                    className={`flex-1 py-3 font-medium transition ${item.id === 'admissions'
+                      ? 'text-[#c92a27] font-semibold'
+                      : 'text-gray-800 hover:text-[#c92a27]'
+                      }`}
                     onClick={onClose}
                   >
                     {item.label}
@@ -109,6 +108,72 @@ const MobileMenu = ({ navItems, onClose }) => {
               </div>
             ))}
           </nav>
+
+          {/* Top Bar Quick Links */}
+          {topBarItems && topBarItems.length > 0 && (
+            <div className="">
+              <nav className="space-y-1">
+                {topBarItems.map((item) => {
+                  const itemId = item.id || `topbar-${item.label.toLowerCase().replace(/\s+/g, '-')}`;
+                  return (
+                    <div key={itemId} className="border-b border-gray-200">
+                      <div className="flex items-center justify-between">
+                        <Link
+                          href={item.href || '#'}
+                          className="flex-1 py-3 font-medium transition text-gray-800 hover:text-[#c92a27]"
+                          onClick={onClose}
+                        >
+                          {item.label}
+                        </Link>
+                        {item.megaMenu && (
+                          <button
+                            onClick={() => toggleMenu(itemId)}
+                            className="p-3 hover:bg-[var(--red)] text-var(--dark-gray) hover:text-white rounded transition"
+                            aria-label={`Toggle ${item.label} menu`}
+                          >
+                            <svg
+                              className={`w-5 h-5 transition-transform ${expandedMenu === itemId ? 'rotate-180' : ''}`}
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
+
+                      {/* Submenu */}
+                      {item.megaMenu && expandedMenu === itemId && (
+                        <div className="pl-4 pb-3 space-y-3 animate-slideDown bg-gray-50">
+                          {item.megaMenu.sections.map((section, idx) => (
+                            <div key={idx}>
+                              <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 pt-2">
+                                {section.title}
+                              </h4>
+                              <ul className="space-y-2">
+                                {section.links.map((link, linkIdx) => (
+                                  <li key={linkIdx}>
+                                    <Link
+                                      href={link.href}
+                                      className="block py-1 text-sm text-gray-600 hover:text-[#c92a27] transition"
+                                      onClick={onClose}
+                                    >
+                                      {link.label}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </nav>
+            </div>
+          )}
         </div>
       </div>
     </>
