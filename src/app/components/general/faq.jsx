@@ -975,9 +975,16 @@ const FAQ = ({
                                           <p className="text-xs font-semibold text-gray-500 uppercase mb-1">
                                             {column.label}
                                           </p>
-                                          <p className="text-sm text-[var(--foreground)] leading-relaxed font-plus-jakarta-sans">
-                                            {value}
-                                          </p>
+                                          {containsHTML(value) ? (
+                                            <p
+                                              className="text-sm text-[var(--foreground)] leading-relaxed font-plus-jakarta-sans [&_a]:text-[var(--button-red)] [&_a]:underline [&_a]:font-bold [&_a]:hover:text-[var(--dark-orange-red)] transition-colors"
+                                              dangerouslySetInnerHTML={{ __html: value }}
+                                            />
+                                          ) : (
+                                            <p className="text-sm text-[var(--foreground)] leading-relaxed font-plus-jakarta-sans">
+                                              {value}
+                                            </p>
+                                          )}
                                         </div>
                                       )
                                     })}
@@ -1002,9 +1009,16 @@ const FAQ = ({
                                           <p className="text-xs font-semibold text-gray-500 uppercase mb-1">
                                             {key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1')}
                                           </p>
-                                          <p className="text-sm text-[var(--foreground)] leading-relaxed font-plus-jakarta-sans">
-                                            {value}
-                                          </p>
+                                          {containsHTML(value) ? (
+                                            <p
+                                              className="text-sm text-[var(--foreground)] leading-relaxed font-plus-jakarta-sans [&_a]:text-[var(--button-red)] [&_a]:underline [&_a]:font-bold [&_a]:hover:text-[var(--dark-orange-red)] transition-colors"
+                                              dangerouslySetInnerHTML={{ __html: value }}
+                                            />
+                                          ) : (
+                                            <p className="text-sm text-[var(--foreground)] leading-relaxed font-plus-jakarta-sans">
+                                              {value}
+                                            </p>
+                                          )}
                                         </div>
                                       )
                                     })}

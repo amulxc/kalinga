@@ -348,7 +348,7 @@ export default function Page() {
     {
       img: "https://cdn.kalingauniversity.ac.in/book-publications/images-13.png",
       title: "छत्तीसगढ़ की जनजातियाँ अतीत से आज तक",
-      author_1: "Dr. Jyoti Reddy",
+      author_1: "Dr.L. Jyoti Reddy",
       author_2: "Dr. A. Rajshekhar",
       designation_1: "Assistant Professor",
       designation_2: "Professor",

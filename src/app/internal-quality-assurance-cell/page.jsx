@@ -47,17 +47,18 @@ const IQACPage = () => {
           width: 150,
           height: 80
         },
-        {
-          src: "https://cdn.kalingauniversity.ac.in/IQAC/iqac-achievements.png",
-          alt: "NIRF",
-          name: "NIRF",
-          width: 150,
-          height: 80
-        },
+
         {
           src: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp",
           alt: "NBA",
           name: "NBA",
+          width: 150,
+          height: 80
+        },
+        {
+          src: "https://cdn.kalingauniversity.ac.in/IQAC/iqac-achievements.png",
+          alt: "NIRF",
+          name: "NIRF",
           width: 150,
           height: 80
         },

@@ -218,7 +218,7 @@ const JournalOfLawAndAIPage = () => {
         {
             id: 1,
             shortName: "Frontmatter",
-            title: "Vol. 1, Issue 1 | January 2025",
+            title: "Vol. 1, Issue 1 | June 2025",
             duration: "Page range: i-iv",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Front-matter-volume-1-Issue-1.pdf"
@@ -226,7 +226,7 @@ const JournalOfLawAndAIPage = () => {
         {
             id: 2,
             shortName: "Frontmatter",
-            title: "Vol. 1, Issue 2 | January 2025",
+            title: "Vol. 1, Issue 2 | December 2025",
             duration: "Page range: i-v",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/Front-matter-volume-1-Issue-2.pdf"
@@ -834,7 +834,7 @@ const JournalOfLawAndAIPage = () => {
         title: "Editorial Board Office",
         subtitle: "Contact Us",
         department: "For Any Query and Clarifications, Contact Us At:",
-        quote: "<strong>Address:</strong> Editor-in-chief, Kalinga University, Near Mantralaya, Kotni, Atal Nagar-Naya Raipur, Chhattisgarh 492101",
+        quote: "<strong>Address:</strong> Editor-in-chief, Kalinga University, Near Mantralaya, Kotni, Atal Nagar-Naya Raipur, Chhattisgarh 492101/492001",
         contactInfo: {
             email: "jlai@kalingauniversity.ac.in",
             phone: "+917024116971"
@@ -935,7 +935,7 @@ const JournalOfLawAndAIPage = () => {
                                         value="vol1_issue2"
                                         className={`!rounded-xl border ${activeTab === "vol1_issue2" ? "bg-[var(--button-red)] text-white" : "bg-gray-50 text-gray-600 border-gray-100"}`}
                                     >
-                                        Vol. 1, Issue 2 - January 2026
+                                        Vol. 1, Issue 2 - Dec 2025
                                     </TabsTrigger>
                                     <TabsTrigger
                                         value="vol2_issue1"

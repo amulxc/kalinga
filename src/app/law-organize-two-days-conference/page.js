@@ -29,7 +29,7 @@ const LawConferencePage = () => {
         },
         {
             id: 4,
-            text: "Keywords: 5 key words.</br></br>Note: Abstracts will be Published as Conference Proceedings with ISBN Number.<br>Springer Publication - Selected good Quality papers will be published in Atlantis Press (Springer Nature) (Publication Charges will be separate).",
+            text: "Keywords: 5 key words.<br /><br />Note: Abstracts will be Published as Conference Proceedings with ISBN Number.<br>Springer Publication - Selected good Quality papers will be published in Atlantis Press (Springer Nature) (Publication Charges will be separate).",
         },
         {
             id: 5,
@@ -128,9 +128,9 @@ const LawConferencePage = () => {
                 { name: "Mr. Alfredo M. Ronchi", designation: "EC, Medici Framework, Italy" },
                 { name: "Prof. Andrii Paziuk", designation: "Prof., Kyiv Aviation Institute, Ukraine " },
                 { name: "Dr. Ahmad Ghouri", designation: "Associate Professor, University of Sussex Brighton, England, United Kingdom" },
-                { name: "Prof. Balamurugan Baluswamy", designation: "Professor and Chairperson</br>School of Engineering and IT, MAHE, Dubai" },
+                { name: "Prof. Balamurugan Baluswamy", designation: "Professor and Chairperson<br />School of Engineering and IT, MAHE, Dubai" },
                 { name: "Dr. Mohammad Ataur Rahman", designation: "Advocate, Supreme Court of Bangladesh, Bangladesh" },
-                { name: "Dr. Garry Fehr", designation: "Associate Vice-President Research Engagement and Graduate Studies</br>University of the Fraser Valley, Canada" }
+                { name: "Dr. Garry Fehr", designation: "Associate Vice-President Research Engagement and Graduate Studies<br />University of the Fraser Valley, Canada" }
             ]
         },
         {
@@ -465,7 +465,7 @@ const LawConferencePage = () => {
                         <tr><td class="border border-gray-300 p-2">Industry Experts</td><td class="border border-gray-300 p-2">INR 2500/-</td></tr>
                         <tr><td class="border border-gray-300 p-2">International Participants</td><td class="border border-gray-300 p-2">USD 50/-</td></tr>
                         <tr><td class="border border-gray-300 p-2">Law Firms, Senior Counsel and General Counsel</td><td class="border border-gray-300 p-2">INR 5000/-</td></tr>
-                        <tr><td class="border border-gray-300 p-2">Advocates Below 40 years</td><td class="border border-gray-300 p-2">INR 2000/-</td></tr>
+                        <tr><td class="border border-gray-300 p-2">Advocates</td><td class="border border-gray-300 p-2">INR 2000/-</td></tr>
                     </tbody>
                 </table>
             </div>
