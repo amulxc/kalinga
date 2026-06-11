@@ -10,14 +10,14 @@ const paymentOptions = [
   {
     id: 1,
     title: "Click here to pay online (National)",
-    href: "https://kuerp.in/",
+    href: "#",
     image: "https://cdn.kalingauniversity.ac.in/common/student.jpg",
     name: "National Online Payment"
   },
   {
     id: 2,
     title: "Click here to pay online (International)",
-    href: "https://kuerp.in/",
+    href: "#",
     image: "https://cdn.kalingauniversity.ac.in/international-students/international-students-intro.jpg",
     name: "International Online Payment"
   },
