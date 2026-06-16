@@ -79,19 +79,19 @@ const FEES_COMMERCE = {
                     "Exam Fees (Per Sem) (INR)": "1,500/-",
                     "Total Fees (INR)": "1,30,400/-",
                 },
-                // {
-                //     "S.No.": 3,
-                //     Course: "Master of Commerce (M. Com.) (Banking & Finance)",
-                //     "Tenure (Years)": 2,
-                //     Sem: 4,
-                //     "Proposed Tuition Fee Per Sem (INR)": "35,000/-",
-                //     "Prospectus/ KLSEE Fees (One Time) (INR)": "1,400/-",
-                //     "Personal Interview Fee (INR)": "-",
-                //     "Caution Money (One Time) Refundable (INR)": "3,000/-",
-                //     "Uniform Fee (One Time) (INR)": "-",
-                //     "Exam Fees (Per Sem) (INR)": "1,500/-",
-                //     "Total Fees (INR)": "1,50,400/-",
-                // },
+                {
+                    "S.No.": 3,
+                    Course: "BBA film making",
+                    "Tenure (Years)": 3,
+                    Sem: 6,
+                    "Proposed Tuition Fee Per Sem (INR)": "60,000/-",
+                    "Prospectus/ KLSEE Fees (One Time) (INR)": "1,400/-",
+                    "Personal Interview Fee (INR)": "-",
+                    "Caution Money (One Time) Refundable (INR)": "3,000/-",
+                    "Uniform Fee (One Time) (INR)": "4,950/-",
+                    "Exam Fees (Per Sem) (INR)": "1,500/-",
+                    "Total Fees (INR)": "3,78,350/-",
+                },
                 {
                     "S.No.": 4,
                     Course: "Bachelor of Commerce (B. Com. Pass)",
@@ -1216,6 +1216,10 @@ function OtherChargesSection() {
                     <div className="font-semibold">Course Change Fees (if eligible with other terms and conditions apply)</div>
                     <div>(One time) – Rs. 750/-</div>
                 </div>
+                <div>
+                    <div className="font-semibold">Notes</div>
+                    <div>* Specialisations of MBA: Banking & Insurance, Business Analytics, Digital Marketing & E-Commerce, Finance Management, Healthcare & Hospital Management, Human Resource Management, International Business Management, Logistics and Supply Chain Management, Marketing Management, Pharmaceutical Business Management, Startup and Entrepreneurship, Hotel & Hospitality Management, Information Technology, NGO Management </div>
+                </div>
             </div>
         </div>
     );
@@ -1321,6 +1325,17 @@ export default function FeesTabSection() {
                                                         {table.title}
                                                     </h2>
                                                     <ScrollTable columns={table.columns} rows={table.rows} />
+                                                    {table.title === "Department of Commerce" && (
+                                                        <div className="mt-6 text-left font-plus-jakarta-sans">
+                                                            <div className="font-semibold text-[var(--foreground)] text-sm md:text-base">Notes</div>
+                                                            <div className="text-[var(--foreground)] text-sm md:text-base mt-1">
+                                                                * Specialisations of BBA: Airlines & Airport Operations Management, Digital Marketing & E-Commerce, Event Management & Public Relations, Family Business & Startups, Finance, Fintech, Hospital Administration, Human Resource Management, Marketing Management
+                                                            </div>
+                                                        </div>
+                                                    )}
+                                                    {table.title === "Department of Management" && (
+                                                        <OtherChargesSection />
+                                                    )}
                                                 </div>
                                             ))
                                         ) : (
@@ -1332,7 +1347,7 @@ export default function FeesTabSection() {
                                             </>
                                         )}
                                         <Notes items={faculty.notes} />
-                                        {activeTab !== "research" && <OtherChargesSection />}
+                                        {activeTab !== "research" && activeTab !== "commerce" && <OtherChargesSection />}
 
                                         {faculty.knowMoreHref && (
                                             <div className="mt-8 flex justify-center">
