@@ -175,6 +175,21 @@ export default function SDGCell() {
     { label: "Partnerships for the Goals", href: "/sustainability/partnerships-for-the-goals" }
   ];
 
+  const sdgevents = [
+    { label: "Frontiers in Pharmaceutical and Allied Sciences: Translating Innovation into Impact for Sustainable and Equitable Healthcare", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Two-Day-International-Conference-on-Frontiers-in-Pharmaceutical-and-Allied-Sciences-Translating-Innovation-into-Impact-for-Sustainable-and-Equitable-Healthcare.pdf" },
+    { label: "Report On Mass Drug Administration Related SDG No.", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Report-On-Mass-Drug-Administration.pdf" },
+    { label: "Industrial Visit Aspire Pharmaceutical Pvt Ltd, New Raipur", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Industrial-Visit-Aspire-Pharmaceutical-Pvt-Ltd-New-Raipur.pdf" },
+    { label: "Marathon-Run-for-Mann", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Marathon-Run-for-Mann.pdf" },
+    { label: "Nasha Mukti Abhiyaan Student Ambassador Program", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Nasha-Mukti-Abhiyaan–Student-Ambassador-Program.pdf" },
+    { label: "One Day Free Health Check-up Camp Report", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/One-Day-Free-Health-Check-up-Camp-Report.pdf" },
+    { label: "4th National Pharmacovigilance Awareness on Building ADR and Reporting Culture Patient Safety", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/4th-National-Pharmacovigilance-Awareness-on-Building-ADR-and-Reporting-Culture-Patient-Safety.pdf" },
+    { label: "Breast Cancer Awareness Camp", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Breast-Cancer-Awareness-Camp.pdf" },
+    { label: "Guest Lecture on-Suryanamaskara An Ancient, all inclusive cross fitness paradigm", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-on-Suryanamaskara-An-Ancient-all-inclusive-cross-fitness-paradigm.pdf" },
+    { label: "Guest lecture cum workshop on Andrology Career Pathways Clinical Insights", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-lecture–cum-workshop-on-Andrology-Career-Pathways-Clinical-Insights.pdf" },
+    { label: "Guest Lecture on Herpes Simplex Virus Infection Diagnosis", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-on-Herpes-Simplex-Virus-Infection-Diagnosis.pdf" },
+    { label: "Guest Lecture On Identify Report Target and Conquer Mastering Laboratory Diagnosis of Medically Important Fungi", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-On-Identify-Report-Target-and-Conquer–Mastering-Laboratory-Diagnosis-of-Medically-Important-Fungi.pdf" }
+  ];
+
   const greenclub = [
     { label: "ICSSA-2026", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/ICSSA-2026-Conference-Report-Green-Club_compressed.pdf" },
     { label: "World Ozone Day Celebration: Envirothon & Painting Competition", href: "https://cdn.kalingauniversity.ac.in/sdg-cell/green-club/Report-on-Ozone-Day-Celebration-report-2025-Green-Club.pdf" },
@@ -519,6 +534,25 @@ export default function SDGCell() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {sdgPages.map((page, index) => (
+            <GlobalArrowButton
+              key={index}
+              onClick={() => router.push(page.href)}
+              className="!w-full min-h-[60px] h-auto justify-between !rounded-xl"
+              arrowClassName="p-[3px] !px-2 mr-2 !py-1"
+              arrowSize={29}
+            >
+              {page.label}
+            </GlobalArrowButton>
+          ))}
+        </div>
+      </section>
+
+      <section className="container mx-auto px-6 py-12">
+        <h2 className="text-3xl md:text-4xl text-center mb-12 font-serif">
+          Event Reports
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {sdgevents.map((page, index) => (
             <GlobalArrowButton
               key={index}
               onClick={() => router.push(page.href)}
