@@ -99,6 +99,18 @@ const eventReports = [
     { id: 4, text: "Industrial Visit to AIIMS Raipur", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/Industrial+Visit+at+AIIMS+Raipur.pdf" },
     { id: 5, text: "Emerging Perspectives and Future Trends in Pharmaceuticals and Allied Sciences for Global Health and Well-being", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/International+Conference+-+Global+Health+%26+Wellbeing+-+2025.pdf" },
     { id: 6, text: "International Yoga Day", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/sustainable-initiatives-for-a-green-campus/International+Yoga+Day_2025.pdf" },
+    { id: 7, text: "Frontiers in Pharmaceutical and Allied Sciences: Translating Innovation into Impact for Sustainable and Equitable Healthcare", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Two-Day-International-Conference-on-Frontiers-in-Pharmaceutical-and-Allied-Sciences-Translating-Innovation-into-Impact-for-Sustainable-and-Equitable-Healthcare.pdf" },
+    { id: 8, text: "Report On Mass Drug Administration Related SDG No.", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Report-On-Mass-Drug-Administration.pdf" },
+    { id: 9, text: "Industrial Visit Aspire Pharmaceutical Pvt Ltd, New Raipur", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Industrial-Visit-Aspire-Pharmaceutical-Pvt-Ltd-New-Raipur.pdf" },
+    { id: 10, text: "Marathon-Run-for-Mann", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Marathon-Run-for-Mann.pdf" },
+    { id: 11, text: "Nasha Mukti Abhiyaan Student Ambassador Program", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Nasha-Mukti-Abhiyaan–Student-Ambassador-Program.pdf" },
+    { id: 12, text: "One Day Free Health Check-up Camp Report", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/One-Day-Free-Health-Check-up-Camp-Report.pdf" },
+    { id: 13, text: "4th National Pharmacovigilance Awareness on Building ADR and Reporting Culture Patient Safety", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/4th-National-Pharmacovigilance-Awareness-on-Building-ADR-and-Reporting-Culture-Patient-Safety.pdf" },
+    { id: 14, text: "Breast Cancer Awareness Camp", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Breast-Cancer-Awareness-Camp.pdf" },
+    { id: 15, text: "Guest Lecture on-Suryanamaskara An Ancient, all inclusive cross fitness paradigm", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-on-Suryanamaskara-An-Ancient-all-inclusive-cross-fitness-paradigm.pdf" },
+    { id: 16, text: "Guest lecture cum workshop on Andrology Career Pathways Clinical Insights", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-lecture–cum-workshop-on-Andrology-Career-Pathways-Clinical-Insights.pdf" },
+    { id: 17, text: "Guest Lecture on Herpes Simplex Virus Infection Diagnosis", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-on-Herpes-Simplex-Virus-Infection-Diagnosis.pdf" },
+    { id: 18, text: "Guest Lecture On Identify Report Target and Conquer Mastering Laboratory Diagnosis of Medically Important Fungi", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-On-Identify-Report-Target-and-Conquer-Mastering-Laboratory-Diagnosis-of-Medically-Important-Fungi.pdf" }
 ];
 
 
