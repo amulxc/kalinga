@@ -1347,7 +1347,7 @@ export default function FeesTabSection() {
                                             </>
                                         )}
                                         <Notes items={faculty.notes} />
-                                        {activeTab !== "research" && activeTab !== "commerce" && <OtherChargesSection />}
+
 
                                         {faculty.knowMoreHref && (
                                             <div className="mt-8 flex justify-center">

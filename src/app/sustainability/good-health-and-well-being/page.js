@@ -110,7 +110,7 @@ const eventReports = [
     { id: 15, text: "Guest Lecture on-Suryanamaskara An Ancient, all inclusive cross fitness paradigm", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-on-Suryanamaskara-An-Ancient-all-inclusive-cross-fitness-paradigm.pdf" },
     { id: 16, text: "Guest lecture cum workshop on Andrology Career Pathways Clinical Insights", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-lecture–cum-workshop-on-Andrology-Career-Pathways-Clinical-Insights.pdf" },
     { id: 17, text: "Guest Lecture on Herpes Simplex Virus Infection Diagnosis", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-on-Herpes-Simplex-Virus-Infection-Diagnosis.pdf" },
-    { id: 18, text: "Guest Lecture On Identify Report Target and Conquer Mastering Laboratory Diagnosis of Medically Important Fungi", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-On-Identify-Report-Target-and-Conquer-Mastering-Laboratory-Diagnosis-of-Medically-Important-Fungi.pdf" }
+    { id: 18, text: "Guest Lecture On Identify Report Target and Conquer Mastering Laboratory Diagnosis of Medically Important Fungi", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/events-report/Guest-Lecture-On-Identify-Report-Target-and-Conquer–Mastering-Laboratory-Diagnosis-of-Medically-Important-Fungi.pdf" }
 ];
 
 

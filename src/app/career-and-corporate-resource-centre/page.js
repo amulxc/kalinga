@@ -391,7 +391,7 @@ export default function CCRCPage() {
       Explore our customised solutions designed to strengthen corporate systems and improve student employability.
     </p>
     <Cards cards={cards} />
-    <Hearfrom items={sliderItems} title="From Our Clients" />
+    {/* <Hearfrom items={sliderItems} title="From Our Clients" /> */}
     <MediaCardSlider
       categoryTitle=""
       title="Featured Expert Talks"

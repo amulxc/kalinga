@@ -627,9 +627,15 @@ export default function Page() {
         />
       </section>
 
+
+      <AccreditationRanking
+        heading="Organized By"
+        secondHeading=""
+        accreditations={aboutAccreditations}
+      />
       <ResearchSixGridButtons buttons={defaultButtons} />
 
-      <SectionHeading
+      {/* <SectionHeading
         title={
           <>
             High Impact Zonal Event on ESG & Sustainability Symposium
@@ -639,17 +645,13 @@ export default function Page() {
           </>
         }
         titleClassName="text-center"
-      />
-      <AccreditationRanking
-        heading="Organized By"
-        secondHeading=""
-        accreditations={aboutAccreditations}
-      />
+      /> */}
 
 
-      <section className="w-full h-full container mx-auto  py-6">
+
+      {/* <section className="w-full h-full container mx-auto  py-6">
         <img src="https://cdn.kalingauniversity.ac.in/IEEE/posters.jpeg" alt=" Symposium Poster" className="w-full h-auto object-cover" />
-      </section>
+      </section> */}
       <AccreditationRanking
         heading="Sponsors"
         secondHeading=""
