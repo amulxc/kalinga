@@ -52,18 +52,18 @@ const achievements = [
     number: '549+',
     description: 'Innovations protected',
   },
-  {
-    id: 8,
-    title: 'Sponsored Research Projects',
-    number: '160+',
-    description: 'Industry and government funded',
-  },
-  {
-    id: 9,
-    title: 'Consultancy Projects',
-    number: '130+',
-    description: 'Applied solutions for partners',
-  },
+  // {
+  //   id: 8,
+  //   title: 'Sponsored Research Projects',
+  //   number: '160+',
+  //   description: 'Industry and government funded',
+  // },
+  // {
+  //   id: 9,
+  //   title: 'Consultancy Projects',
+  //   number: '130+',
+  //   description: 'Applied solutions for partners',
+  // },
   {
     id: 10,
     title: 'MoUs Signed',

@@ -277,18 +277,18 @@ export default function InternationalStudents() {
       value: "549 +",
       description: "",
     },
-    {
-      id: 9,
-      title: "Sponsored Research Projects",
-      value: "160 +",
-      description: "",
-    },
-    {
-      id: 10,
-      title: "Consultancy Projects",
-      value: "130 +",
-      description: "",
-    },
+    // {
+    //   id: 9,
+    //   title: "Sponsored Research Projects",
+    //   value: "160 +",
+    //   description: "",
+    // },
+    // {
+    //   id: 10,
+    //   title: "Consultancy Projects",
+    //   value: "130 +",
+    //   description: "",
+    // },
     {
       id: 11,
       title: "MoUs Signed",

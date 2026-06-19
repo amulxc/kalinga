@@ -158,7 +158,7 @@ const aboutAccreditations = [
   { id: 6, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002953.png" },
   { id: 7, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg" },
   { id: 8, name: "NAAC", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp" },
-  { id: 11, name: "NBA", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp" },
+  { id: 11, name: "NBA", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo-mba.webp" },
   { id: 13, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002981.png" },
   { id: 14, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/logos/ieee.jpeg" },
   { id: 15, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/unnat-bharat-abhiyan/uba-logo.webp" },

@@ -4,10 +4,20 @@ import { useState } from "react";
 
 export function AccordionItem({ title, children, defaultOpen = false, titleClassName = "", bgClassName = "", className = "" }) {
   const [open, setOpen] = useState(defaultOpen);
-  
+
   const defaultTitleClassName = "font-stix text-[24px] leading-[30px] text-[var(--button-red)]";
   const finalTitleClassName = titleClassName || defaultTitleClassName;
-  const finalBgClassName = bgClassName || "bg-[var(--card-sandal)] p-[22px] md:p-[26px]";
+
+  let finalBgClassName = "";
+  if (bgClassName) {
+    const hasPadding = bgClassName.split(/\s+/).some(c =>
+      c.startsWith('p-') || c.startsWith('px-') || c.startsWith('py-') ||
+      c.startsWith('pt-') || c.startsWith('pb-') || c.startsWith('pl-') || c.startsWith('pr-')
+    );
+    finalBgClassName = hasPadding ? bgClassName : `${bgClassName} p-[15px] md:p-[17.5px]`;
+  } else {
+    finalBgClassName = "bg-[var(--card-sandal)] p-[15px] md:p-[17.5px]";
+  }
 
   return (
     <div className={`rounded-[16px] ${finalBgClassName} ${className}`}>
@@ -23,9 +33,8 @@ export function AccordionItem({ title, children, defaultOpen = false, titleClass
 
         {/* Arrow */}
         <span
-          className={`ml-4 inline-block transition-transform duration-300 ${
-            open ? "rotate-180" : ""
-          }`}
+          className={`ml-4 inline-block transition-transform duration-300 ${open ? "rotate-180" : ""
+            }`}
         >
           ▼
         </span>
@@ -33,9 +42,8 @@ export function AccordionItem({ title, children, defaultOpen = false, titleClass
 
       {/* Content */}
       <div
-        className={`overflow-hidden transition-all duration-300 ${
-          open ? "mt-4 max-h-[15000px]" : "max-h-0"
-        }`}
+        className={`overflow-hidden transition-all duration-300 ${open ? "mt-4 max-h-[15000px]" : "max-h-0"
+          }`}
       >
         {children}
       </div>

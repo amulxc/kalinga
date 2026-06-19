@@ -67,7 +67,7 @@ const clubSections = [
       {
         name: "National Board of Accreditation",
         image:
-          "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp",
+          "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo-mba.webp",
         url: "https://www.nbaind.org/",
       },
     ],

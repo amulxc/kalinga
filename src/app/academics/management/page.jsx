@@ -388,7 +388,7 @@ export default function ManagementDepartmentPage() {
                     imageAlt={mainIntroContent.imageAlt}
                     showKnowMore={false}
                     sectionClassName="bg-white"
-                    logoUrl="https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp"
+                    logoUrl="https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo-mba.webp"
                     logoAlt="NBA Accreditation Logo"
                 />
                 <VisionMissionUpdated

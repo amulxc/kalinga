@@ -49,7 +49,7 @@ const IQACPage = () => {
         },
 
         {
-          src: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo.webp",
+          src: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo-mba.webp",
           alt: "NBA",
           name: "NBA",
           width: 150,

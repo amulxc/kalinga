@@ -263,18 +263,18 @@ const LawConferencePage = () => {
             value: '549+',
             description: 'Innovations protected',
         },
-        {
-            id: 8,
-            title: 'Sponsored Research Projects',
-            value: '160+',
-            description: 'Industry and government funded',
-        },
-        {
-            id: 9,
-            title: 'Consultancy Projects',
-            value: '130+',
-            description: 'Applied solutions for partners',
-        },
+        // {
+        //     id: 8,
+        //     title: 'Sponsored Research Projects',
+        //     value: '160+',
+        //     description: 'Industry and government funded',
+        // },
+        // {
+        //     id: 9,
+        //     title: 'Consultancy Projects',
+        //     value: '130+',
+        //     description: 'Applied solutions for partners',
+        // },
         {
             id: 10,
             title: 'MoUs Signed',

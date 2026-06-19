@@ -1181,14 +1181,7 @@ export default function Research() {
         swiperClassName="ccrc-video-slider"
       />
 
-      <ContactSection
-        title="Contact Our Placement Cell"
-        description=""
-        mail="tpo@kalingauniversity.ac.in"
-        phone="Pankaj Tiwari: +91-7471126830"
-        phone2="Arup Haldar: +91-9303097009"
-        address=""
-      />
+
       {/* <QuickLinks title="Entrepreneurship & Startup Support" titleClassName="text-white" links={links2} description="We're here to put your entrepreneurial ideas into action. Here, you will not just dream but build something real that solves people's problems." showReadMore={false} /> */}
       <MediaCardSlider
         categoryTitle=""
@@ -1355,6 +1348,14 @@ export default function Research() {
       <CustomGallery
         images={galleryImages}
         title="Glimpses of Our Training and Placement Activities"
+      />
+      <ContactSection
+        title="Contact Our Placement Cell"
+        description=""
+        mail="tpo@kalingauniversity.ac.in"
+        phone="Pankaj Tiwari: +91-7471126830"
+        phone2="Arup Haldar: +91-9303097009"
+        address=""
       />
       <AdmissionCareer />
     </>
