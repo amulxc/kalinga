@@ -11,6 +11,7 @@ import AdmissionCareer from "../components/general/admission_cta";
 import { fetchNewsEvents, fetchAllDepartments, parseHtmlToText } from '../lib/api';
 import MediaCardSlider from "../components/general/media-card-slider";
 import StudentActivities from "../components/department/student_activities";
+import MomentsGallery from "../components/news_and_events/moments_gallery";
 
 const placementGalleryImages = [
   // // Training and Placement Cell
@@ -335,6 +336,8 @@ function NewsAndEvents() {
         activities={mappedEventActivities}
         useModal={true}
       />
+      
+      <MomentsGallery />
       <Gallery images={customImages} />
       <AdmissionCareer />
 

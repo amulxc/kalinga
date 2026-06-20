@@ -159,6 +159,15 @@ const DataTable = ({
                               ))}
                             </ul>
                           </div>
+                        ) : typeof cellValue === 'string' && /^https?:\/\//i.test(cellValue.trim()) ? (
+                          <a
+                            href={cellValue.trim()}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 underline hover:text-blue-800 break-all"
+                          >
+                            {cellValue.trim()}
+                          </a>
                         ) : (
                           cellValue || ""
                         )}

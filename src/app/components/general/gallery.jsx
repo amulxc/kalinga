@@ -83,7 +83,7 @@ const defaultGalleryImages = [
 const Gallery = ({
   images,
   gallery,
-  title = "Gallery",
+  title = "Glimpses",
   subtitle = "",
   backgroundColor = "bg-white",
   paddingClassName = "py-16",
@@ -143,6 +143,7 @@ const Gallery = ({
                       src={item.image}
                       alt={item.alt}
                       fill
+                      unoptimized={item.image?.toLowerCase().endsWith('.gif')}
                       className="object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     {/* Overlay on hover */}
@@ -249,6 +250,7 @@ const Gallery = ({
                       src={item.image}
                       alt={item.alt}
                       fill
+                      unoptimized={item.image?.toLowerCase().endsWith('.gif')}
                       className="object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     {/* Overlay on hover */}

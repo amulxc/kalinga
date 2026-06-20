@@ -233,59 +233,51 @@ const JournalOfLawAndAIPage = () => {
         },
         {
             id: 3,
-            shortName: "Prof(Dr.) AzimKhan B Pathan",
-            title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: i-vi",
-            level: "VOL 1",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/1-Prof-(Dr.)-AzimKhan-B-Pathan.pdf"
-        },
-        {
-            id: 4,
-            shortName: "Kritika Singh-&-Dr. Gagandeep Kaur",
+            shortName: "Dr Gagandeep & Kritika Singh",
             title: "Vol. 1, Issue 2 | January 2025",
             duration: "Page range: 1-24",
             level: "VOL 1",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/2-Kritika-Singh-&-Dr-Gagandeep-Kaur.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/1-Dr-Gagandeep-&-Kritika-Singh.pdf"
+        },
+        {
+            id: 4,
+            shortName: "Krishna Deo Singh",
+            title: "Vol. 1, Issue 2 | January 2025",
+            duration: "Page range: 25-37",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/2-Krishna-deo-Singh.pdf"
         },
         {
             id: 5,
-            shortName: "Krishna Deo Singh Chauhan",
+            shortName: "Mr. Pankaj Chhuttani",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: 25-36",
+            duration: "Page range: 38-53",
             level: "VOL 1",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/3-Krishna-Deo-Singh-Chauhan.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/3-Mr-Pankaj-Chhuttani.pdf"
         },
         {
             id: 6,
-            shortName: "Mr Pankaj Chhuttani Dr.Ankit Srivastava",
+            shortName: "Ms. Himanshu Chauhan",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: 37-52",
+            duration: "Page range: 54-69",
             level: "VOL 1",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/4-Mr-Pankaj-Chhuttani-Dr.Ankit-Srivastava.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/4-Ms-Himanshu-Chauhan.pdf"
         },
         {
             id: 7,
-            shortName: "Ms. Himanshu Chauhan",
+            shortName: "Banveer Jinger",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: 53-68",
+            duration: "Page range: 70-78",
             level: "VOL 1",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/5-Ms.-Himanshu-Chauhan.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/5-Banveer-Jinger.pdf"
         },
         {
             id: 8,
-            shortName: "Banveer Kaur Jhinger",
+            shortName: "Dr.Shruti M Nadkarni",
             title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: 69-79",
+            duration: "Page range: 79-93",
             level: "VOL 1",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/6-Banveer-Kaur-Jhinger.pdf"
-        },
-        {
-            id: 9,
-            shortName: "Dr Shruti M Nadkarni",
-            title: "Vol. 1, Issue 2 | January 2025",
-            duration: "Page range: 80-94",
-            level: "VOL 1",
-            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/7-Dr-Shruti-M-Nadkarni.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/Vol-1-Issue-2/6-Dr-Shruti-M-Nadkarni.pdf"
         },
         {
             id: 201,

@@ -323,6 +323,15 @@ export default function OurPrograms({
           filtered = [...staticPhdPrograms, ...filtered.filter(c => !c.id.toString().startsWith("static-phd"))];
         }
       }
+
+      // Filter by department if one is selected
+      if (selectedDepartment && selectedDepartment !== "All") {
+        filtered = filtered.filter(course =>
+          course.departmentSlug === selectedDepartment ||
+          course.departmentId?.toString() === selectedDepartment ||
+          course.departmentName === selectedDepartment
+        );
+      }
     } else {
       // Global search mode: Search across all programs Irrespective of filters
       filtered = rankAndSortPrograms(filtered, searchQuery, { includeDept: true });
