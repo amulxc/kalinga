@@ -658,7 +658,7 @@ export default function Page() {
         accreditations={aboutsponsors}
       />
       {/* ================== UBA ACTIVITIES TABS ================== */}
-      <VisaFroFrroGuidelines
+      {/* <VisaFroFrroGuidelines
         title={<>ESG & Sustainability Symposium</>}
         showModal={false}
         backgroundClassName="bg-[var(--dark-blue)]"
@@ -959,7 +959,7 @@ export default function Page() {
             )
           },
         ]}
-      />
+      /> */}
 
 
 

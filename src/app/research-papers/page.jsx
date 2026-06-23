@@ -31,7 +31,7 @@ export default function ResearchPapersPage() {
             /> */}
 
             <div className="container mx-auto px-6 py-16">
-                <h2 className="text-2xl font-semibold mb-6">Research Paper Publications</h2>
+                <h1 className="text-center text-5xl mb-12">Research Paper Publications</h1>
                 <Tabs defaultValue="2024-25">
                     <TabsList className="mb-6">
                         {YEAR_TABS.map((tab) => (
