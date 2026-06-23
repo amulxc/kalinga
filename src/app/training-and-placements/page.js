@@ -28,7 +28,7 @@ import APITable from "../components/general/api-table";
 import GlobalArrowButton from "../components/general/global-arrow_button";
 import FlipbookTrigger from "../components/general/FlipbookTrigger";
 import CustomGallery from '../components/general/gallery'
-import Testimonials from "../components/home/Testimonials";
+
 
 export default function Research() {
   const { openFlipbook } = useFlipbook();
@@ -414,6 +414,33 @@ export default function Research() {
       description: "Aditya Birla Group",
       title: "Trupti Ranjan Sahu - MBA",
     },
+  ]
+  const videoItems4 = [
+    {
+      id: 1,
+      name: "Ankita Shrivastava",
+      videoUrl: "",
+      thumbnail: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-1.webp",
+      description: "Cornerstone - INR 33 LPA",
+      title: "Ankita Shrivastava - LLM",
+    },
+    {
+      id: 2,
+      name: "Khushi Rai - B.Sc. Fashion Designing",
+      videoUrl: "",
+      thumbnail: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-2.webp",
+      description: "Air India - INR 12 LPA",
+      title: "Khushi Rai - B.Sc. FD",
+
+    },
+    {
+      id: 3,
+      name: "Bidyasagar Pradhan",
+      videoUrl: "",
+      thumbnail: "https://cdn.kalingauniversity.ac.in/placement/Nayna.jpeg",
+      description: "Ascendion - INR 17.50 LPA",
+      title: "Bidyasagar Pradhan - MCA",
+    }
   ]
   const videoItems2 = [
     {
@@ -898,7 +925,7 @@ export default function Research() {
         initialVisibleParagraphs={1}
         showKnowMore={true}
       />
-      <MentorIntro
+      {/* <MentorIntro
         title="Shubham Sharma"
         subtitle="Outstanding Achiever"
         department={null}
@@ -907,45 +934,18 @@ export default function Research() {
         showQuotes={false}
         quoteContainerClassName="pl-6 md:pl-14"
         className="pb-10 bg-white"
+      /> */}
+      <MediaCardSlider
+        categoryTitle=""
+        title="Outstanding Achievers"
+        description="Students who transformed their potential into achievement"
+        videoItems={videoItems4}
+        backgroundColor="bg-light-gray"
+        cardBgClass="bg-lite-sand"
+        nameTextClass="text-[var(--button-red)]"
+        descriptionTextClass=""
+        swiperClassName="ccrc-video-slider"
       />
-      <Testimonials
-              title="Stories that Define Kalinga's Spirit"
-              subtitle="Journeys that Inspire"
-              testimonials={[
-                {
-                  id: 1,
-                  name: "Priya Sharma",
-                  role: "B.Tech CSE – Placed at TCS",
-                  quote: "The Training and Placement Cell at Kalinga University was instrumental in shaping my career. The mock interviews, aptitude training sessions, and resume-building workshops gave me the confidence to face tough recruitment rounds. I secured a position at TCS with a 7 LPA package, and it wouldn't have been possible without the dedicated support of the T&P team.",
-                  image: "https://cdn.kalingauniversity.ac.in/Home/student-say-1.webp",
-                  theme: "red"
-                },
-                {
-                  id: 2,
-                  name: "Rahul Verma",
-                  role: "MBA – Placed at Infosys BPM",
-                  quote: "Kalinga University's placement cell is truly world-class. They arranged over 50 campus drives in a single year, giving every student a fair shot at their dream job. The soft skills training and group discussion sessions helped me stand out during Infosys BPM's selection process. I am proud to have received a 6.5 LPA offer straight out of campus.",
-                  image: "https://cdn.kalingauniversity.ac.in/Home/students-say-2.webp",
-                  theme: "orange"
-                },
-                {
-                  id: 3,
-                  name: "Anjali Patel",
-                  role: "B.Tech ECE – Placed at Wipro",
-                  quote: "The industry-aligned curriculum and consistent placement training at Kalinga University made all the difference in my career journey. The placement cell organized technical bootcamps and personality development programs that prepared me thoroughly. Landing a role at Wipro Technologies with a competitive package was a dream come true, and I owe it to my university.",
-                  image: "https://cdn.kalingauniversity.ac.in/Home/tanjila.webp",
-                  theme: "amber"
-                },
-                {
-                  id: 4,
-                  name: "Aditya Singh",
-                  role: "B.Tech IT – Placed at Accenture",
-                  quote: "From day one, the placement cell at Kalinga University focused on making us industry-ready. The coding challenges, hackathons, and live project exposure were incredibly valuable. When Accenture visited our campus, I was fully prepared. I cleared all rounds on the very first attempt and received an offer of 8 LPA. The T&P team's mentorship was truly life-changing.",
-                  image: "https://cdn.kalingauniversity.ac.in/Home/student-say-3.webp",
-                  theme: "red"
-                }
-              ]}
-            />
       <Partner
         blueTitle="Best Campus Placement University in Chhattisgarh"
         redTitle="MoU Partners"

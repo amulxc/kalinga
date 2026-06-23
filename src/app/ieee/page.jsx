@@ -15,6 +15,7 @@ import OrganogramOfKalinga from "../components/about/organogram_of_kalinga";
 import VisaFroFrroGuidelines from "../components/international/visa_frofrro_guidelines";
 import DataTable from "../components/general/data-table";
 import ResearchSixGridButtons from "../components/research/research_six_grid-buttons";
+import CustomGallery from '../components/general/gallery'
 
 /* ---------------- DYNAMIC IMPORT ---------------- */
 
@@ -152,6 +153,159 @@ const imageSrc =
 const message =
   "For research collaboration, testing services, and technical support, please contact us.";
 
+
+const galleryImages1 = [
+  {
+    id: 1,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-scanned-Certificates-1.jpg",
+    alt: "Achievement Gallery 1"
+  },
+  {
+    id: 2,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-2.jpg",
+    alt: "Achievement Gallery 2"
+  },
+  {
+    id: 3,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-3.jpg",
+    alt: "Achievement Gallery 3"
+  },
+  {
+    id: 4,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-4.jpg",
+    alt: "Achievement Gallery 4"
+  },
+  {
+    id: 5,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-5.jpg",
+    alt: "Achievement Gallery 5"
+  },
+  {
+    id: 6,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-6.jpg",
+    alt: "Achievement Gallery 6"
+  },
+  {
+    id: 7,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-7.jpg",
+    alt: "Achievement Gallery 7"
+  },
+  {
+    id: 8,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-8.jpg",
+    alt: "Achievement Gallery 8"
+  },
+  {
+    id: 9,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-9.jpg",
+    alt: "Achievement Gallery 9"
+  },
+  {
+    id: 10,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-10.jpg",
+    alt: "Achievement Gallery 10"
+  },
+  {
+    id: 11,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-11.jpg",
+    alt: "Achievement Gallery 11"
+  },
+  {
+    id: 12,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Priyanshu-Singh.webp",
+    alt: "Achievement Gallery 12"
+  },
+  {
+    id: 13,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/SAC-2026.webp",
+    alt: "Achievement Gallery 13"
+  },
+  {
+    id: 14,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Simpi-Kumari-1.jpg",
+    alt: "Achievement Gallery 14"
+  },
+  {
+    id: 15,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Vedant-raj.jpg",
+    alt: "Achievement Gallery 15"
+  },
+  {
+    id: 16,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/aayushi-rao.webp",
+    alt: "Achievement Gallery 16"
+  },
+  {
+    id: 17,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Aiman-Shafi.webp",
+    alt: "Achievement Gallery 17"
+  },
+  {
+    id: 18,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/chilikuri-shivani.webp",
+    alt: "Achievement Gallery 18"
+  },
+  {
+    id: 19,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/goon-shah.webp",
+    alt: "Achievement Gallery 19"
+  },
+  {
+    id: 20,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/IEEE-MP-Section-Students.webp",
+    alt: "Achievement Gallery 20"
+  },
+  {
+    id: 21,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-1.png",
+    alt: "Achievement Gallery 21"
+  },
+  {
+    id: 22,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-2.png",
+    alt: "Achievement Gallery 22"
+  },
+  {
+    id: 23,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-3.png",
+    alt: "Achievement Gallery 23"
+  },
+  {
+    id: 24,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-4.png",
+    alt: "Achievement Gallery 24"
+  },
+  {
+    id: 25,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-5.png",
+    alt: "Achievement Gallery 25"
+  },
+  {
+    id: 26,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-6.png",
+    alt: "Achievement Gallery 26"
+  },
+  {
+    id: 27,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-7.png",
+    alt: "Achievement Gallery 27"
+  },
+  {
+    id: 28,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-8.png",
+    alt: "Achievement Gallery 28"
+  },
+  {
+    id: 29,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Internship-Letter.webp",
+    alt: "Achievement Gallery 29"
+  },
+  {
+    id: 30,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Kalinga-University.webp",
+    alt: "Achievement Gallery 30"
+  }
+]
 
 const defaultButtons = [
   {
@@ -656,6 +810,10 @@ export default function Page() {
         heading="Sponsors"
         secondHeading=""
         accreditations={aboutsponsors}
+      />
+      <CustomGallery
+        images={galleryImages1}
+        title="Achievements"
       />
       {/* ================== UBA ACTIVITIES TABS ================== */}
       {/* <VisaFroFrroGuidelines
