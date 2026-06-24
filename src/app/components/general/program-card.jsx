@@ -15,14 +15,15 @@ export default function ProgramCard({
   titleClassName = ""
 }) {
   return (
-    <div className="bg-white flex items-center justify-between rounded-xl p-4 md:p-6 relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+    <div className="bg-white flex flex-col justify-between rounded-xl p-4 md:p-6 relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full">
       {/* Background UG Text - Top Right */}
       <div className="absolute top-2 right-2 md:top-4 md:right-4 text-6xl md:text-8xl !font-bold text-gray-200 leading-none opacity-50 z-0 font-stix">
         {program.type}
       </div>
 
       {/* Program Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col justify-between h-full w-full flex-grow">
+        <div className="flex-grow">
         {/* Main Red Heading - Short Name */}
         <h3 className={`text-[var(--button-red)] text-xl md:text-2xl lg:text-3xl !font-medium mb-1 font-plus-jakarta-sans normal-case ${titleClassName}`}>
           {program.shortName || program.title}
@@ -118,8 +119,10 @@ export default function ProgramCard({
           </div>
         </div>
 
+        </div>
+
         {/* Action Buttons */}
-        <div className="flex flex-row gap-2 md:gap-3">
+        <div className="flex flex-row gap-2 md:gap-3 mt-auto">
 
           {/* Explore Program Button - Dark Red with white arrow in white square */}
           <a href={href || program.coursePageUrl || "#"} onClick={(e) => {

@@ -24,6 +24,7 @@ import VisionFeedbackForm from "@/app/components/forms/VisionFeedbackForm";
 import StakeholderFeedbackForm from "@/app/components/forms/StakeholderFeedbackForm";
 import ResearchSixGridButtons from "@/app/components/research/research_six_grid-buttons";
 import FlipbookTrigger from "@/app/components/general/FlipbookTrigger";
+import ImageContent from "@/app/components/ccrc/imagecontent";
 
 export default function ManagementDepartmentPage() {
     const [feedbackModalConfig, setFeedbackModalConfig] = useState({ isOpen: false, category: "", title: "" });
@@ -388,8 +389,14 @@ export default function ManagementDepartmentPage() {
                     imageAlt={mainIntroContent.imageAlt}
                     showKnowMore={false}
                     sectionClassName="bg-white"
-                    logoUrl="https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo-mba.webp"
-                    logoAlt="NBA Accreditation Logo"
+                    logoUrl=""
+                    logoAlt=""
+                />
+                <ImageContent
+                    title="NBA Accredited MBA Program"
+                    subtitle=""
+                    imageSrc="https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo-mba.webp"
+                    description="Our MBA program is NBA-accredited, reflecting our commitment to an industry-aligned curriculum, experienced faculty, high-quality infrastructure, and a dynamic learning environment that prepares students for evolving industry and professional standards."
                 />
                 <VisionMissionUpdated
                     visionText={visionMissionContent.visionText}

@@ -83,6 +83,30 @@ function Admissionprocedureexams() {
         .admission-exams-programs .flex.flex-row.gap-2.md\\:gap-3 {
           gap: 0.5rem !important;
         }
+
+        /* Align content to stretch to ensure both cards have the same height and content fills it */
+        .admission-exams-programs .bg-white.flex {
+          align-items: stretch !important;
+        }
+
+        /* Make the inner content container a flex column and grow to fill the card height */
+        .admission-exams-programs .bg-white.flex .relative.z-10 {
+          display: flex !important;
+          flex-direction: column !important;
+          flex-grow: 1 !important;
+        }
+
+        /* Justify the description paragraph text */
+        .admission-exams-programs .bg-white.flex p.leading-relaxed {
+          text-align: justify !important;
+        }
+
+        /* Push the button row to the bottom of the card and adjust spacing */
+        .admission-exams-programs .flex.flex-row.gap-2.md\\:gap-3 {
+          gap: 0.5rem !important;
+          margin-top: auto !important;
+          padding-top: 1rem !important;
+        }
       `}</style>
     </div>
   );
