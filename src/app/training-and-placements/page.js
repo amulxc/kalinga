@@ -426,21 +426,31 @@ export default function Research() {
     },
     {
       id: 2,
+      name: "Shubham Sharma",
+      videoUrl: "",
+      thumbnail: "https://cdn.kalingauniversity.ac.in/placement/out.webp",
+      description: "Oracle - INR 29.98 LPA",
+      title: "Shubham Sharma - B.Tech",
+
+    },
+    {
+      id: 4,
+      name: "Bidyasagar Pradhan",
+      videoUrl: "",
+      thumbnail: "https://cdn.kalingauniversity.ac.in/placement/Nayna.jpeg",
+      description: "Ascendion - INR 17.50 LPA",
+      title: "Bidyasagar Pradhan - MCA",
+    },
+    {
+      id: 3,
       name: "Khushi Rai - B.Sc. Fashion Designing",
       videoUrl: "",
       thumbnail: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-2.webp",
       description: "Air India - INR 12 LPA",
       title: "Khushi Rai - B.Sc. FD",
 
-    },
-    {
-      id: 3,
-      name: "Bidyasagar Pradhan",
-      videoUrl: "",
-      thumbnail: "https://cdn.kalingauniversity.ac.in/placement/Nayna.jpeg",
-      description: "Ascendion - INR 17.50 LPA",
-      title: "Bidyasagar Pradhan - MCA",
     }
+
   ]
   const videoItems2 = [
     {
@@ -930,7 +940,7 @@ export default function Research() {
         subtitle="Outstanding Achiever"
         department={null}
         imageSrc="https://cdn.kalingauniversity.ac.in/placement/out.webp"
-        quote="B.Tech. 2019 <br/> Sr. Software Developer at Oracle India Private Ltd.<br/>Package: <span style='color: var(--background);'>29.98 LPA</span><br/><img src='https://cdn.kalingauniversity.ac.in/placement/oracle.png' alt='Oracle Logo' style='height: 80px; margin-top: 10px; background: white; padding: 5px; border-radius: 4px;' />"
+        quote="B.Tech <br>Package: <span style='color: var(--background);'>29.98 LPA</span><br/><img src='https://cdn.kalingauniversity.ac.in/placement/oracle.png' alt='Oracle Logo' style='height: 80px; margin-top: 10px; background: white; padding: 5px; border-radius: 4px;' />"
         showQuotes={false}
         quoteContainerClassName="pl-6 md:pl-14"
         className="pb-10 bg-white"
