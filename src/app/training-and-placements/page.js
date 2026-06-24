@@ -437,7 +437,7 @@ export default function Research() {
       id: 4,
       name: "Bidyasagar Pradhan",
       videoUrl: "",
-      thumbnail: "https://cdn.kalingauniversity.ac.in/placement/Nayna.jpeg",
+      thumbnail: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-3.webp",
       description: "Ascendion - INR 17.50 LPA",
       title: "Bidyasagar Pradhan - MCA",
     },
