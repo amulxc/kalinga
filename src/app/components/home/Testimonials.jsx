@@ -446,6 +446,12 @@ export default function Testimonials({ testimonials = [], className = "", subtit
                                             <div className="mt-6 sm:mt-8 md:mt-auto pt-4 sm:pt-6">
                                                 <h4 className="text-[var(--red)] text-xl sm:text-2xl font-medium">{item.name}</h4>
                                                 <p className="text-xs sm:text-sm mt-1 max-w-[80%]">{item.role}</p>
+                                                {item.company && (
+                                                    <p className="text-sm sm:text-base mt-2 font-medium text-slate-800">{item.company}</p>
+                                                )}
+                                                {item.package && (
+                                                    <p className="text-sm sm:text-base text-[var(--button-red)] font-semibold">{item.package}</p>
+                                                )}
                                             </div>
                                             <div className="flex justify-end gap-1 mt-4 sm:mt-0 relative top-[-40px]">
                                                 <svg viewBox="0 0 26 41" xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-10 md:h-12 rotate-0 rotate-y-180" fill="#FEC071">

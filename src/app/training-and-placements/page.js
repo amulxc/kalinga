@@ -28,6 +28,7 @@ import APITable from "../components/general/api-table";
 import GlobalArrowButton from "../components/general/global-arrow_button";
 import FlipbookTrigger from "../components/general/FlipbookTrigger";
 import CustomGallery from '../components/general/gallery'
+import Testimonials from "../components/home/Testimonials";
 
 
 export default function Research() {
@@ -448,9 +449,50 @@ export default function Research() {
       thumbnail: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-2.webp",
       description: "Air India - INR 12 LPA",
       title: "Khushi Rai - B.Sc. FD",
-
     }
 
+  ]
+  const placementTestimonials = [
+    {
+      id: 1,
+      name: "Ankita Shrivastava",
+      role: "LLM",
+      quote: "",
+      company: "Cornerstone",
+      package: "INR 33 LPA",
+      image: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-1.webp",
+      theme: "red"
+    },
+    {
+      id: 2,
+      name: "Shubham Sharma",
+      role: "B.Tech",
+      quote: "",
+      company: "Oracle",
+      package: "INR 29.98 LPA",
+      image: "https://cdn.kalingauniversity.ac.in/placement/out.webp",
+      theme: "orange"
+    },
+    {
+      id: 3,
+      name: "Bidyasagar Pradhan",
+      role: "MCA",
+      quote: "",
+      company: "Ascendion",
+      package: "INR 17.50 LPA",
+      image: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-3.webp",
+      theme: "amber"
+    },
+    {
+      id: 4,
+      name: "Khushi Rai",
+      role: "B.Sc. Fashion Designing",
+      quote: "",
+      company: "Air India",
+      package: "INR 12 LPA",
+      image: "https://cdn.kalingauniversity.ac.in/training-and-placement-cell/students/outstanding-placement-2.webp",
+      theme: "red"
+    }
   ]
   const videoItems2 = [
     {
@@ -956,6 +998,11 @@ export default function Research() {
         descriptionTextClass=""
         swiperClassName="ccrc-video-slider"
       />
+      {/*<Testimonials
+              testimonials={placementTestimonials}
+              title="Outstanding Achievers"
+              subtitle="Students who transformed their potential into achievement"
+            />*/}
       <Partner
         blueTitle="Best Campus Placement University in Chhattisgarh"
         redTitle="MoU Partners"

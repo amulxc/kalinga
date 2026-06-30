@@ -548,7 +548,7 @@ export default function CSRPage({
         showImage={true}
       />
       {/* <VisionMission data={visionMissionData} showImg={false} /> */}
-      <ImageListItem items={Items} description="" imageSrc="https://cdn.kalingauniversity.ac.in/csr/chart-3.webp" title="Objectives of the Organisation" />
+      <ImageListItem items={Items} description="" subtitle="" imageSrc="https://cdn.kalingauniversity.ac.in/csr/chart-3.webp" title="Objectives of the Organisation" />
 
       {/* <ImageContent hasImage={true} imageSrc="https://cdn.kalingauniversity.ac.in/ccrc/ccrclogo.webp" className="items-center justify-center" title="Career and Corporate Resource Centre" subtitleclassName="hidden" description="It is a philanthropic organisation that is primarily involved in education and social welfare activities. The society works towards uplifting the underprivileged communities by offering them inclusive educational opportunities, healthcare facilities, and engaging in charitable activities. The society operates educational institutions, healthcare camps, scholarship programs, and other social welfare initiatives." buttonLink="/career-and-corporate-resource-centre" /> */}
       <WhyStudy

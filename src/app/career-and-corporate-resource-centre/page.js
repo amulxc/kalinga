@@ -373,10 +373,8 @@ export default function CCRCPage() {
 
     <ImageContent
       imageSrc="https://cdn.kalingauniversity.ac.in/ccrc/ccrclogo.webp"
-      description="The Career and Corporate Resource Centre (CCRC) of Kalinga University bridges academic learning and industrial knowledge through collaborations and customised solutions. Our services include: Corporate Trainings & Psychometric Analysis, Consultancy Services: 360 Degree PMS & HRIS, Corporate Social Responsibility, Training and Placements, and Incubation support."
-      additionalContent={[
-        "With skill-based training programs, workshops, guest lectures, corporate mentorship, industrial visits, soft skill trainings, personality development workshops, internships, industrial training, campus placement drives, and industry-certified programs, we're able to maximise the output and save the time of students and working professionals, and build a future-ready workforce. The Centre features state-of-the-art infrastructure and resources that meet industry standards and has earned high appreciation from leading organisations across India and abroad. With experiential learning strategies and an updated curriculum, our students are placed at top companies, and corporate professionals have learned to deliver maximum output and maintain consistent performance."
-      ]}
+      description=""
+      additionalContent={[]}
     />
     <div className="container mx-auto px-4 mt-16 mb-16">
       <h2 className="font-stix text-center mb-8">Benefits for Organisations</h2>
