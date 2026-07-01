@@ -157,154 +157,385 @@ const message =
 const galleryImages1 = [
   {
     id: 1,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-scanned-Certificates-1.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-1.jpg",
     alt: "Achievement Gallery 1"
   },
   {
     id: 2,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-2.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-2.jpg",
     alt: "Achievement Gallery 2"
   },
   {
     id: 3,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-3.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-3.jpg",
     alt: "Achievement Gallery 3"
   },
   {
     id: 4,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-4.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-4.jpg",
     alt: "Achievement Gallery 4"
   },
   {
     id: 5,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-5.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-5.jpg",
     alt: "Achievement Gallery 5"
   },
   {
     id: 6,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-6.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-6.jpg",
     alt: "Achievement Gallery 6"
   },
   {
     id: 7,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-7.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-7.jpg",
     alt: "Achievement Gallery 7"
   },
   {
     id: 8,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-8.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-8.jpg",
     alt: "Achievement Gallery 8"
   },
   {
     id: 9,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-9.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-9.jpg",
     alt: "Achievement Gallery 9"
   },
   {
     id: 10,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-10.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-10.jpg",
     alt: "Achievement Gallery 10"
   },
   {
     id: 11,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-Scanned-Certificates-11.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-11.jpg",
     alt: "Achievement Gallery 11"
   },
   {
     id: 12,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Priyanshu-Singh.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-8-12.jpg",
     alt: "Achievement Gallery 12"
   },
   {
     id: 13,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/SAC-2026.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Priyanshu-Singh.jpg",
     alt: "Achievement Gallery 13"
   },
   {
     id: 14,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Simpi-Kumari-1.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Priyanshu-Singh-1.jpg",
     alt: "Achievement Gallery 14"
   },
   {
     id: 15,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Vedant-raj.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/SAC-2026.webp",
     alt: "Achievement Gallery 15"
   },
   {
     id: 16,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/aayushi-rao.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Simpi-Kumari.jpg",
     alt: "Achievement Gallery 16"
   },
-  {
-    id: 17,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Aiman-Shafi.webp",
-    alt: "Achievement Gallery 17"
-  },
+  // {
+  //   id: 17,
+  //   image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Simpi-Kumari-1.jpg",
+  //   alt: "Achievement Gallery 17"
+  // },
   {
     id: 18,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/chilikuri-shivani.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Vedant-raj.jpg",
     alt: "Achievement Gallery 18"
   },
   {
     id: 19,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/goon-shah.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Vedant-Raj-1.jpg",
     alt: "Achievement Gallery 19"
   },
   {
     id: 20,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/IEEE-MP-Section-Students.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/aayushi-rao.webp",
     alt: "Achievement Gallery 20"
   },
   {
     id: 21,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-1.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Aiman-Shafi.jpg",
     alt: "Achievement Gallery 21"
   },
   {
     id: 22,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-2.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/chilikuri-shivani.webp",
     alt: "Achievement Gallery 22"
   },
   {
     id: 23,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-3.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/goon-shah.webp",
     alt: "Achievement Gallery 23"
   },
   {
     id: 24,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-4.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/IEEE-MP-Section-Students.webp",
     alt: "Achievement Gallery 24"
   },
   {
     id: 25,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-5.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-1.png",
     alt: "Achievement Gallery 25"
   },
   {
     id: 26,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-6.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-2.png",
     alt: "Achievement Gallery 26"
   },
   {
     id: 27,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-7.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-3.png",
     alt: "Achievement Gallery 27"
   },
   {
     id: 28,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-8.png",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-4.png",
     alt: "Achievement Gallery 28"
   },
   {
     id: 29,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Internship-Letter.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-5.png",
     alt: "Achievement Gallery 29"
   },
   {
     id: 30,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Kalinga-University.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-6.jpeg",
     alt: "Achievement Gallery 30"
+  },
+  {
+    id: 31,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-7.jpeg",
+    alt: "Achievement Gallery 31"
+  },
+  {
+    id: 32,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-8.jpeg",
+    alt: "Achievement Gallery 32"
+  },
+  {
+    id: 33,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Internship-Letter-1.jpg",
+    alt: "Achievement Gallery 33"
+  },
+  {
+    id: 34,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Kalinga-University-page-1.jpg",
+    alt: "Achievement Gallery 34"
+  },
+  {
+    id: 35,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Appreciation-Certificate-1.jpg",
+    alt: "Achievement Gallery 35"
+  },
+  {
+    id: 36,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Appreciation-Certificate-2.jpg",
+    alt: "Achievement Gallery 36"
+  },
+  {
+    id: 37,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Appreciation-Certificate-3.jpg",
+    alt: "Achievement Gallery 37"
+  },
+  {
+    id: 38,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Appreciation-Certificate-4.jpg",
+    alt: "Achievement Gallery 38"
+  },
+  {
+    id: 39,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Appreciation-Certificate-5.jpg",
+    alt: "Achievement Gallery 39"
+  },
+  {
+    id: 40,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Appreciation-Certificate-6.jpg",
+    alt: "Achievement Gallery 40"
+  },
+  {
+    id: 41,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Appreciation-Certificate-7.jpg",
+    alt: "Achievement Gallery 41"
+  },
+  {
+    id: 42,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-1.jpg",
+    alt: "Achievement Gallery 42"
+  },
+  {
+    id: 43,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-2.jpg",
+    alt: "Achievement Gallery 43"
+  },
+  {
+    id: 44,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-3.jpg",
+    alt: "Achievement Gallery 44"
+  },
+  {
+    id: 45,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-4.jpg",
+    alt: "Achievement Gallery 45"
+  },
+  {
+    id: 46,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-5.jpg",
+    alt: "Achievement Gallery 46"
+  },
+  {
+    id: 47,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-6.jpg",
+    alt: "Achievement Gallery 47"
+  },
+  {
+    id: 48,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-7.jpg",
+    alt: "Achievement Gallery 48"
+  },
+  {
+    id: 49,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-8.jpg",
+    alt: "Achievement Gallery 49"
+  },
+  {
+    id: 50,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-9.jpg",
+    alt: "Achievement Gallery 50"
+  },
+  {
+    id: 51,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-10.jpg",
+    alt: "Achievement Gallery 51"
+  },
+  {
+    id: 52,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-11.jpg",
+    alt: "Achievement Gallery 52"
+  },
+  {
+    id: 53,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-12.jpg",
+    alt: "Achievement Gallery 53"
+  },
+  {
+    id: 54,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-13.jpg",
+    alt: "Achievement Gallery 54"
+  },
+  {
+    id: 55,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-14.jpg",
+    alt: "Achievement Gallery 55"
+  },
+  {
+    id: 56,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-15.jpg",
+    alt: "Achievement Gallery 56"
+  },
+  {
+    id: 57,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-16.jpg",
+    alt: "Achievement Gallery 57"
+  },
+  {
+    id: 58,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-17.jpg",
+    alt: "Achievement Gallery 58"
+  },
+  {
+    id: 59,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-18.jpg",
+    alt: "Achievement Gallery 59"
+  },
+  {
+    id: 60,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-19.jpg",
+    alt: "Achievement Gallery 60"
+  },
+  {
+    id: 61,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-20.jpg",
+    alt: "Achievement Gallery 61"
+  },
+  {
+    id: 62,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-21.jpg",
+    alt: "Achievement Gallery 62"
+  },
+  {
+    id: 63,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-22.jpg",
+    alt: "Achievement Gallery 63"
+  },
+  {
+    id: 64,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-23.jpg",
+    alt: "Achievement Gallery 64"
+  },
+  {
+    id: 65,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-24.jpg",
+    alt: "Achievement Gallery 65"
+  },
+  {
+    id: 66,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-25.jpg",
+    alt: "Achievement Gallery 66"
+  },
+  {
+    id: 67,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-26.jpg",
+    alt: "Achievement Gallery 67"
+  },
+  {
+    id: 68,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-27.jpg",
+    alt: "Achievement Gallery 68"
+  },
+  {
+    id: 69,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-28.jpg",
+    alt: "Achievement Gallery 69"
+  },
+  {
+    id: 70,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-29.jpg",
+    alt: "Achievement Gallery 70"
+  },
+  {
+    id: 71,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-30.jpg",
+    alt: "Achievement Gallery 71"
+  },
+  {
+    id: 72,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Piyush-Shrivastava-1.jpg",
+    alt: "Achievement Gallery 72"
+  },
+  {
+    id: 73,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Piyush Srivastava.jpg",
+    alt: "Achievement Gallery 73"
+  },
+  {
+    id: 74,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/volunteer-Certificate-30.jpg",
+    alt: "Achievement Gallery 74"
+  },
+  {
+    id: 75,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Abhishek-Certificate-1.jpg",
+    alt: "Achievement Gallery 75"
+  },
+  {
+    id: 76,
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Koda-Aayshi Rao-1.jpg",
+    alt: "Achievement Gallery 76"
   }
+
 ]
 
 const defaultButtons = [
