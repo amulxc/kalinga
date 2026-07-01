@@ -218,12 +218,13 @@ function Accreditations() {
 
             <NIRFRankings
                 description="NIRF is a methodology adopted by the Ministry of Education, Government of India, to rank higher education institutions in India. It considers several parameters such as Teaching, Learning and Resources, Research and Professional Practice, Graduation Outcomes, etc."
-                rankings={[
-                    { year: "2021", range: "151-200" },
-                    { year: "2022", range: "101-150" },
-                    { year: "2023", range: "101-150" },
-                    { year: "2024", range: "101-150" },
+                rankings={[  
                     { year: "2025", range: "101-150" },
+                    { year: "2024", range: "101-150" },
+                    { year: "2023", range: "101-150" },
+                    { year: "2022", range: "101-150" },
+                    { year: "2021", range: "151-200" },
+                    
                 ]}
             />
             <AccreditationsApprovalsSection data={accreditationsData} />

@@ -15,7 +15,7 @@ import OrganogramOfKalinga from "../components/about/organogram_of_kalinga";
 import VisaFroFrroGuidelines from "../components/international/visa_frofrro_guidelines";
 import DataTable from "../components/general/data-table";
 import ResearchSixGridButtons from "../components/research/research_six_grid-buttons";
-import CustomGallery from '../components/general/gallery'
+import AchievementsGallery from '../components/ieee/achievements-gallery'
 
 /* ---------------- DYNAMIC IMPORT ---------------- */
 
@@ -227,7 +227,7 @@ const galleryImages1 = [
   },
   {
     id: 15,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/SAC-2026.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/SAC-2026.png",
     alt: "Achievement Gallery 15"
   },
   {
@@ -242,7 +242,7 @@ const galleryImages1 = [
   // },
   {
     id: 18,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Vedant-raj.jpg",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Vedant-Raj.jpg",
     alt: "Achievement Gallery 18"
   },
   {
@@ -262,12 +262,12 @@ const galleryImages1 = [
   },
   {
     id: 22,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/chilikuri-shivani.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Chilikuri-Shivani.jpg",
     alt: "Achievement Gallery 22"
   },
   {
     id: 23,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/goon-shah.webp",
+    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Goon-Shah.jpg",
     alt: "Achievement Gallery 23"
   },
   {
@@ -1042,7 +1042,7 @@ export default function Page() {
         secondHeading=""
         accreditations={aboutsponsors}
       />
-      <CustomGallery
+      <AchievementsGallery
         images={galleryImages1}
         title="Achievements"
       />

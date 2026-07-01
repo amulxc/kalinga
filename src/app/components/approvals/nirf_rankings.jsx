@@ -43,11 +43,11 @@ const NIRFRankings = ({
                     <h2 className="text-white font-stix mb-6 tracking-tight">{title}</h2>
                     <p className="leading-relaxed max-w-3xl text-white">{description}</p>
                 </div>
-                <div className="bg-white p-5 rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300 self-center md:self-start">
+                <div className="bg-white p-2 shadow-2xl transform hover:scale-105 transition-transform duration-300 self-center md:self-start">
                     <img
-                        src="https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg"
+                        src="https://cdn.kalingauniversity.ac.in/accreditation/nirf-ranking-kalinga.jpeg"
                         alt="NIRF Logo"
-                        className="h-24 md:h-24 object-contain"
+                        className="h-34 md:h-34 object-contain"
                     />
                 </div>
             </div>

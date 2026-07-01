@@ -22,8 +22,8 @@ export default function ScholarshipCard({ title, description, icon }) {
       {/* Divider */}
       <div className="w-full h-px bg-gray-300 mb-3"></div>
 
-      {/* Description */}
-      <p className="text-[var(--light-text-gray)] text-sm flex-grow">
+      {/* Description - pr/pb reserve space so text wraps clear of the bottom-right arrow */}
+      <p className="text-[var(--light-text-gray)] text-sm flex-grow break-words pr-10">
         {description}
       </p>
     </div>

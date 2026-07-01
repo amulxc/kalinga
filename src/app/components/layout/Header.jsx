@@ -319,6 +319,7 @@ const Header = () => {
               { label: 'Campus Facilities', href: '/campus-facilities' },
               { label: 'Sports & Wellness Centre', href: '/sports-and-wellness-centre' },
               { label: 'Student Counselling', href: '/students-counselling-cell' },
+              { label: 'Centers of Excellence', href: '/centresofexcellence' },
               { label: 'Downloads', href: '/downloads' },
             ]
           }
