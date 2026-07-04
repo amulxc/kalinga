@@ -336,19 +336,17 @@ export function parseHtmlToText(htmlContent) {
 export function parseHtmlListItems(htmlContent) {
   if (!htmlContent) return [];
 
-  // Match all <li>...</li> tags and extract their inner content
   const liMatches = htmlContent.match(/<li[^>]*>([\s\S]*?)<\/li>/gi);
-
   if (!liMatches) return [];
 
   return liMatches.map(li => {
-    // Extract the inner content of the <li> tag
     const innerMatch = li.match(/<li[^>]*>([\s\S]*?)<\/li>/i);
-    if (innerMatch && innerMatch[1]) {
-      // Clean up whitespace but preserve HTML structure
-      return innerMatch[1].trim();
-    }
-    return '';
+    if (!innerMatch?.[1]) return '';
+    // Strip scripts and inline event handlers before any dangerouslySetInnerHTML use
+    return innerMatch[1].trim()
+      .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+      .replace(/\bon\w+\s*=\s*["'][^"']*["']/gi, '')
+      .replace(/javascript:/gi, '');
   }).filter(item => item.length > 0);
 }
 
@@ -475,8 +473,18 @@ export async function fetchAllCourseAbout() {
       try {
         const controller = new AbortController();
         timeoutId = setTimeout(() => controller.abort(), 5000);
-        // Handle both absolute and relative URLs
-        const fetchUrl = nextUrl.startsWith('http') ? nextUrl : getApiUrl(nextUrl);
+        // Only follow same-origin next URLs to prevent SSRF
+        const fetchUrl = (() => {
+          if (!nextUrl.startsWith('http')) return getApiUrl(nextUrl);
+          try {
+            const base = new URL(API_CONFIG.baseURL);
+            const next = new URL(nextUrl);
+            if (next.origin !== base.origin) throw new Error('Cross-origin next URL blocked');
+            return nextUrl;
+          } catch {
+            throw new Error(`Unsafe pagination URL rejected: ${nextUrl}`);
+          }
+        })();
 
         const response = await fetch(fetchUrl, {
           method: 'GET',

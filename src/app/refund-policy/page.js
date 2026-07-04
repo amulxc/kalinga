@@ -1,13 +1,6 @@
-'use client';
-
-import React, { useEffect } from 'react'
 import SectionHeading from '../components/general/SectionHeading'
 
 const listStyle = { fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: '14px' }
-
-if (typeof window !== 'undefined') {
-
-}
 
 export default function RefundPolicyPage() {
 

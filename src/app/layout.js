@@ -107,12 +107,12 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google Tag Manager - Next.js Script component */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WV53V78');`}
         </Script>
         {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-R5RML7PL3W" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-R5RML7PL3W" strategy="lazyOnload" />
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -154,9 +154,7 @@ export default function RootLayout({ children }) {
           />
         </noscript>
         {/* NoPaperForms Tracking Script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        <Script id="npf-tracker" strategy="lazyOnload">{`
               var npf_d='https://admissions.kalingauniversity.ac.in';
               var npf_c='642';
               var npf_m='1';
@@ -165,14 +163,13 @@ export default function RootLayout({ children }) {
               s.async=true;
               s.src="https://track.nopaperforms.com/js/track.js";
               document.body.appendChild(s);
-            `
-          }}
-        />
+        `}</Script>
         <ChatbotProvider>
           <NPFChatbot />
           <FlipbookProvider>
             <ClickSparkWrapper>
               <Header />
+              {/* Intentional SSR-only inline script: runs once in the HTML, not on client re-renders — correct for scroll and console patching */}
               <script
                 dangerouslySetInnerHTML={{
                   __html: `

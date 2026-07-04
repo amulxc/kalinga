@@ -1,6 +1,6 @@
 // Global API Configuration
 export const API_CONFIG = {
-  baseURL: 'https://api.kalingauniversity.ac.in/api',
+  baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://api.kalingauniversity.ac.in/api',
 
   // Course endpoints
   courses: {
@@ -86,12 +86,25 @@ export const getApiUrl = (endpoint) => {
  * @returns {Promise<Object>} API response
  */
 export const submitForm = async (endpoint, data, isMultipart = false) => {
+  // Honeypot — bots fill every field; real users never see or touch _trap
+  const trap = isMultipart ? data.get?.('_trap') : data._trap;
+  if (trap) return { ok: false, honeypot: true };
+
+  let cleanData;
+  if (isMultipart) {
+    data.delete?.('_trap');
+    cleanData = data;
+  } else {
+    const { _trap, ...rest } = data; // eslint-disable-line no-unused-vars
+    cleanData = rest;
+  }
+
   const baseUrl = API_CONFIG.baseURL;
   const url = `${baseUrl}${endpoint}`;
 
   const options = {
     method: 'POST',
-    body: isMultipart ? data : JSON.stringify(data),
+    body: isMultipart ? cleanData : JSON.stringify(cleanData),
   };
 
   if (!isMultipart) {

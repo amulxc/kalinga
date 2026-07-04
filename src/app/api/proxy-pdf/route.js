@@ -48,8 +48,8 @@ export async function GET(request) {
     headers.set("Content-Type", contentType);
     if (contentLength) headers.set("Content-Length", contentLength);
     headers.set("Cache-Control", "public, max-age=3600");
-    // Allow localhost and production so preview/flipbook work everywhere
     headers.set("Access-Control-Allow-Origin", "*");
+    headers.set("Vary", "Origin");
     if (forceDownload) {
       const downloadFilename = (filename || "document.pdf").replace(/"/g, "");
       headers.set("Content-Disposition", `attachment; filename="${downloadFilename}"`);
