@@ -5,23 +5,29 @@ import Script from "next/script";
 export default function NPFChatbot() {
   return (
     <>
+      {/* Keep the injected AI-agent widget above the sticky bottom bar / other fixed elements */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            .npf_ai_agents,
+            [class*="npf_ai_agent"],
+            [id*="npf_ai_agent"],
+            iframe[src*="agent.nopaperforms.com"],
+            iframe[id*="npf_ai_agent"] {
+              z-index: 2147483647 !important;
+            }
+          `,
+        }}
+      />
       <div
-        className="npf_chatbots"
-        data-w="83d92d42d8cc4c839d761d929fc3211c"
+        className="npf_ai_agents"
+        data-w="4763de4ad8644825a87bf95197289cd6"
         style={{ display: "none" }}
       ></div>
       <Script
-        id="npf-chatbot-script"
+        id="npf-ai-agents-script"
         strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            var s=document.createElement("script"); 
-            s.type="text/javascript"; 
-            s.async=true; 
-            s.src="https://chatbot.in1.nopaperforms.com/en-gb/backend/bots/niaachtbtscpt.js/6426019081578b6b/83d92d42d8cc4c839d761d929fc3211c"; 
-            document.body.appendChild(s);
-          `,
-        }}
+        src="https://952l3jx2nj.in1.agent.nopaperforms.com/en-gb/backend/agents/aiagentscpt.js/6426019081578b6b/4763de4ad8644825a87bf95197289cd6"
       />
     </>
   );

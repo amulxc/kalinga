@@ -270,11 +270,11 @@ const galleryImages1 = [
     image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/Goon-Shah.jpg",
     alt: "Achievement Gallery 23"
   },
-  {
-    id: 24,
-    image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/IEEE-MP-Section-Students.webp",
-    alt: "Achievement Gallery 24"
-  },
+  // {
+  //   id: 24,
+  //   image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/IEEE-MP-Section-Students.webp",
+  //   alt: "Achievement Gallery 24"
+  // },
   {
     id: 25,
     image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/images-1.png",

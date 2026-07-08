@@ -206,7 +206,7 @@ export default function RootLayout({ children }) {
         <div
           className="fixed inset-x-0 bottom-0 text-white"
           style={{
-            zIndex: 10000,
+            zIndex: 40,
             backgroundColor: "#972B28",
             boxShadow: "0 -6px 18px rgba(0,0,0,0.25)",
           }}
