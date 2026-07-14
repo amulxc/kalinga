@@ -43,13 +43,13 @@ const achievements = [
   {
     id: 6,
     title: 'Research Publications',
-    number: '4700+',
+    number: '7200+',
     description: 'Peer-reviewed contributions',
   },
   {
     id: 7,
     title: 'Patents',
-    number: '549+',
+    number: '562+',
     description: 'Innovations protected',
   },
   // {

@@ -7,7 +7,7 @@ export default function PhdGrid() {
   const phdStats = [
     {
       title: "Patents Published",
-      value: "549+",
+      value: "562+",
       description: "",
     },
     {
@@ -17,7 +17,7 @@ export default function PhdGrid() {
     },
     {
       title: "Research Publications",
-      value: "4700+",
+      value: "7200+",
       description: "",
     },
     // {

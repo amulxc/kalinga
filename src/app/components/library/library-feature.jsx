@@ -9,12 +9,12 @@ export default function LibraryGrid() {
       stats={[
         {
           title: "Books",
-          value: "94K+",
+          value: "90,000+",
           description: "Extensive collection of printed books across all disciplines.",
         },
         {
           title: "Research Publications",
-          value: "4700+",
+          value: "7200+",
           description: "Scholarly research publications by faculty and researchers.",
         },
 

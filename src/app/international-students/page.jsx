@@ -268,13 +268,13 @@ export default function InternationalStudents() {
     {
       id: 7,
       title: "Research Publications",
-      value: "4700+",
+      value: "7200+",
       description: "",
     },
     {
       id: 8,
       title: "Patents",
-      value: "549 +",
+      value: "562 +",
       description: "",
     },
     // {

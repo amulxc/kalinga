@@ -254,13 +254,13 @@ const LawConferencePage = () => {
         {
             id: 6,
             title: 'Research Publications',
-            value: '4700+',
+            value: '7200+',
             description: 'Peer-reviewed contributions',
         },
         {
             id: 7,
             title: 'Patents',
-            value: '549+',
+            value: '562+',
             description: 'Innovations protected',
         },
         // {
