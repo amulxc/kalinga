@@ -160,22 +160,24 @@ function BoysHostel() {
                 rows={[
                     ["Brahmaputra", "Veg", "5", "1,02,000", "1,26,000"],
                     ["Brahmaputra", "Non-Veg", "5", "1,38,000", "1,62,000"],
-                    ["Brahmaputra", "Veg", "6 (bunk bed)", "84,000", "108,000"],
-                    ["Brahmaputra", "Non-Veg", "6 (bunk bed)", "1,20,000", "1,44,000"],
-                    ["Brahmaputra", "Veg", "8 (bunk bed)", "72,000", "90,000"],
-                    ["Brahmaputra", "Non-Veg", "8 (bunk bed)", "1,08,000", "1,26,000"],
+                    ["Brahmaputra", "Veg", "6*", "84,000", "108,000"],
+                    ["Brahmaputra", "Non-Veg", "6*", "1,20,000", "1,44,000"],
+                    ["Brahmaputra", "Veg", "8*", "72,000", "90,000"],
+                    ["Brahmaputra", "Non-Veg", "8*", "1,08,000", "1,26,000"],
                     ["Pacific", "Veg", "2", "1,20,000", "1,80,000"],
-                    ["Pacific", "Non-Veg", "2", "1,56,000", "2,16,000"],
+                    ["Pacific", "Non-Veg", "2", "1,56,000", "1,97,000"],
+                    ["Pacific", "Veg", "3(LX)", "1,50,000", "1,95,000"],
+                    ["Pacific", "Non-Veg", "3(LX)", "1,86,000", "2,31,000"],
                     ["Pacific", "Veg", "3", "1,16,000", "1,61,000"],
                     ["Pacific", "Non-Veg", "3", "1,52,000", "1,97,000"],
                     ["Pacific", "Veg", "5", "1,02,000", "1,26,000"],
                     ["Pacific", "Non-Veg", "5", "1,38,000", "1,62,000"],
-                    ["Pacific", "Veg", "6 (bunk bed)", "84,000", "1,08,000"],
-                    ["Pacific", "Non-Veg", "6 (bunk bed)", "1,20,000", "1,44,000"],
+                    ["Pacific", "Veg", "6*", "84,000", "1,08,000"],
+                    ["Pacific", "Non-Veg", "6*", "1,20,000", "1,44,000"],
                     ["Pacific", "Veg", "7", "82,000", "1,00,000"],
                     ["Pacific", "Non-Veg", "7", "1,18,000", "1,36,000"],
-                    ["Pacific", "Veg", "8 (bunk bed)", "72,000", "90,000"],
-                    ["Pacific", "Non-Veg", "8 (bunk bed)", "1,08,000", "1,26,000"],                  
+                    ["Pacific", "Veg", "8 *", "72,000", "90,000"],
+                    ["Pacific", "Non-Veg", "8*", "1,08,000", "1,26,000"],                  
                     ["Everest", "Veg", "4", "94,000", "NA"],
                     ["Everest", "Non-Veg", "4", "1,30,000", "NA"],
                 ]}
@@ -199,18 +201,20 @@ function GirlsHostel() {
                     ["Indus", "Non-Veg", "1", "1,70,000", "2,90,000"],
                     ["Indus", "Veg", "2", "1,20,000", "1,80,000"],
                     ["Indus", "Non-Veg", "2", "1,56,000", "2,16,000"],
+                     ["Indus", "Veg", "3(LX)", "1,50,000", "1,95,000"],
+                    ["Indus", "Non-Veg", "3(LX)", "1,86,000", "2,31,000"],
                     ["Indus", "Veg", "3", "1,16,000", "1,61,000"],
                     ["Indus", "Non-Veg", "3", "1,52,000", "1,97,000"],
                     ["Indus", "Veg", "5", "1,02,000", "1,26,000"],
                     ["Indus", "Non-Veg", "5", "1,38,000", "1,62,000"],
-                    // ["Indus", "Veg", "6", "89,000", "1,13,000"],
-                    // ["Indus", "Non-Veg", "6", "1,25,000", "1,49,000"],
-                    ["Indus", "Veg", "6 (bunk bed)", "84,000", "1,08,000"],
-                    ["Indus", "Non-Veg", "6 (bunk bed)", "1,20,000", "1,44,000"],
+                    ["Indus", "Veg", "6", "89,000", "1,13,000"],
+                    ["Indus", "Non-Veg", "6", "1,25,000", "1,49,000"],
+                    ["Indus", "Veg", "6*", "84,000", "1,08,000"],
+                    ["Indus", "Non-Veg", "6*", "1,20,000", "1,44,000"],
                     ["Indus", "Veg", "7", "82,000", "1,00,000"],
                     ["Indus", "Non-Veg", "7", "1,18,000", "1,36,000"],
-                    ["Indus", "Veg", "8 (bunk bed)", "72,000", "90,000"],
-                    ["Indus", "Non-Veg", "8 (bunk bed)", "1,08,000", "1,26,000"],  
+                    ["Indus", "Veg", "8*", "72,000", "90,000"],
+                    ["Indus", "Non-Veg", "8*", "1,08,000", "1,26,000"],  
                 ]}
             />
         </>
@@ -221,11 +225,12 @@ function GirlsHostel() {
 
 function ImportantNotes() {
     const notes = [
-        "AC maintenance cost borne by students.",
-        "Room type once selected cannot be downgraded.",
-        "Caution Money: ₹5,000 (Refundable).",
-        "AC rooms only if all occupants agree.",
-        "Hostel cancellation fee: ₹2,000.",
+        "Air Conditioner Maintenance Cost will be borne by respective students availing the facilities.",
+        "Once opted, rooms & type cannot be downgraded.",
+        "Caution Money (One Time - Refundable) - INR 5000/- for students enrolling in the 2026-2027 session.",
+        "AC rooms will be available in the hostel only if all the students staying in the room agree to have AC.",
+        "The hostel fees can be increased every year 5% or more depending upon escalation.",
+        "*Cost Effective Bunk Bed Rooms are available in limited rooms."
     ];
 
     return (
