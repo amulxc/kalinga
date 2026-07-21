@@ -210,7 +210,7 @@ const JournalOfLawAndAIPage = () => {
         {
             id: 6,
             question: "Call for Papers Volume II, Issue 1",
-            image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/Call-for-paper.webp"
+            image: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/Call-for-paper.webp"
         },
     ];
 
@@ -285,7 +285,7 @@ const JournalOfLawAndAIPage = () => {
             title: "Dr. Tauheed Alam, Prof. (Dr.) Afkar Ahmad",
             duration: "Page range: 1-27",
             level: "ARCHIVE",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/1.+Afkar+ahmed.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/1.+Afkar+ahmed.pdf"
         },
         {
             id: 202,
@@ -293,7 +293,7 @@ const JournalOfLawAndAIPage = () => {
             title: "Debasis Poddar",
             duration: "Page range: 28-46",
             level: "ARCHIVE",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/2.+Debasis+Poddar.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/2.+Debasis+Poddar.pdf"
         },
         {
             id: 203,
@@ -301,7 +301,7 @@ const JournalOfLawAndAIPage = () => {
             title: "Krishnaja Olappamanna, Dr. Aneesh V Pillai, Dr. Sanjith S",
             duration: "Page range: 47-66",
             level: "ARCHIVE",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/3.+Dr.+Aneesh+Pillai.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/3.+Dr.+Aneesh+Pillai.pdf"
         },
         {
             id: 204,
@@ -309,7 +309,7 @@ const JournalOfLawAndAIPage = () => {
             title: "Dr. Kaumudhi Challa",
             duration: "Page range: 67-77",
             level: "ARCHIVE",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/4.+Dr.+Kaumudhi+Challa.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/4.+Dr.+Kaumudhi+Challa.pdf"
         },
         {
             id: 205,
@@ -317,7 +317,7 @@ const JournalOfLawAndAIPage = () => {
             title: "Mr. Pankaj Chhuttani",
             duration: "Page range: 78-90",
             level: "ARCHIVE",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/5.+Mr.+Pankaj+Chhuttani.pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/5.+Mr.+Pankaj+Chhuttani.pdf"
         },
         {
             id: 101,

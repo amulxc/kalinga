@@ -18,7 +18,7 @@ const mainIntroContent = {
         "In alignment with Sustainable Development Goal (SDG) 6: Clean Water and Sanitation, Kalinga University follows sustainable water management practices to conserve and utilise water resources through a combination of infrastructure-based and awareness-driven initiatives. A Sewage Treatment Plant is installed to treat wastewater that is used for gardening and landscape purposes. Drip irrigation systems are implemented across lawns, gardens, and green belts, reducing water wastage and promoting plant growth.",
         "In addition, rainwater harvesting and bore-well recharge systems restore groundwater and support long-term water availability. The University also conducts various water conservation awareness programs and conducts special activities on World Water Day. These measures not only conserve water resources but also encourage students and staff to become environmentally responsible."
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-g-2.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-g-2.webp",
     imageAlt: "Water Conservation",
 };
 
@@ -35,7 +35,7 @@ const mainIntroContent1 = {
         "Awareness Campaigns World Wetlands Day",
         "Industrial Visit to Gangrel Dam, Dhamtari"
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-g-3.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-g-3.webp",
     imageAlt: "Water Conservation Awareness Programs",
 };
 
@@ -70,19 +70,19 @@ const items = [
 ];
 
 const hospitalMoUs = [
-    { id: 1, text: "City Eye Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
-    { id: 2, text: "NH MMI Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
-    { id: 3, text: "Ramkrishna Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
-    { id: 4, text: "Saptgiri Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
-    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
-    { id: 6, text: "Urmila Memorial Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
-    { id: 7, text: "VY Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
+    { id: 1, text: "City Eye Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
+    { id: 2, text: "NH MMI Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
+    { id: 3, text: "Ramkrishna Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
+    { id: 4, text: "Saptgiri Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
+    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
+    { id: 6, text: "Urmila Memorial Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
+    { id: 7, text: "VY Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
 ];
 
 const conservationReports = [
-    { id: 1, text: "Training Session on Rainwater Harvesting Conducted at Palaud Village", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/Report+on+Rain+Water+Harvesting+on+6th+September+2022.pdf" },
-    { id: 2, text: "World River Day", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/World+River+Day+Celebration+2025.pdf" },
-    { id: 3, text: "Geo-Tagged Photos", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/Geo+Tagged+Photos.pdf" },
+    { id: 1, text: "Training Session on Rainwater Harvesting Conducted at Palaud Village", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/Report+on+Rain+Water+Harvesting+on+6th+September+2022.pdf" },
+    { id: 2, text: "World River Day", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/World+River+Day+Celebration+2025.pdf" },
+    { id: 3, text: "Geo-Tagged Photos", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/Geo+Tagged+Photos.pdf" },
 ];
 
 const eventReports = [
@@ -97,7 +97,7 @@ const cards = [
         title: "Sewage Treatment Plant (STP)",
         description:
             "The University follows various practices to ensure effective water management. A modern Sewage Treatment Plant (STP) is installed that treats wastewater collected from hostels, residential quarters, and academic buildings, which is recycled and reused for irrigation, landscaping, and gardening purposes, minimising the usage of freshwater. The University also encourages everyone to use water responsibly through awareness and monitoring systems. These measures ensure long-term water conservation and the development of an eco-friendly campus.",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/water-1.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/water-1.webp",
         logoSrc: "",
         subtitle: "SEWAGE TREATMENT PLANT",
         link: "#",
@@ -106,7 +106,7 @@ const cards = [
         title: "Drip Irrigation",
         description:
             "To improve the water-use efficiency and contribute towards responsible water management, the University has implemented drip irrigation systems in lawns, gardens, and green belts. This system directly transfers water to the plant roots through a controlled network of pipes and emitters, ensuring proper water distribution while lowering evaporation and run-off losses, and contributing towards plant growth.",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/water-2.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/water-2.webp",
         logoSrc: "",
         subtitle: "DRIP IRRIGATION",
         link: "#",
@@ -115,7 +115,7 @@ const cards = [
         title: "Rainwater Harvesting",
         description:
             "To effectively use rainwater, the University uses a rainwater harvesting system as a key measure toward sustainable water management. This system collects rainwater from rooftops and open areas and channels it into recharge pits and storage systems. It helps in restoring groundwater levels and reducing the dependence on external water sources. By combining this with other measures, the institution carefully uses water throughout the year.",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/water-3.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/water-3.webp",
         logoSrc: "",
         subtitle: "RAINWATER HARVESTING",
         link: "#",
@@ -130,13 +130,13 @@ const phdObjectives = [
 ];
 
 const galleryImages = [
-    { id: 1, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-1.webp", alt: "Water Conservation 1" },
-    { id: 2, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-2.webp", alt: "Water Conservation 2" },
-    { id: 3, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-3.webp", alt: "Water Conservation 3" },
-    { id: 4, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-4.webp", alt: "Water Conservation 4" },
-    { id: 5, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-5.webp", alt: "Water Conservation 5" },
-    { id: 6, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-6.webp", alt: "Water Conservation 6" },
-    { id: 6, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-g-4.webp", alt: "Water Conservation 6" },
+    { id: 1, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-1.webp", alt: "Water Conservation 1" },
+    { id: 2, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-2.webp", alt: "Water Conservation 2" },
+    { id: 3, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-3.webp", alt: "Water Conservation 3" },
+    { id: 4, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-4.webp", alt: "Water Conservation 4" },
+    { id: 5, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-5.webp", alt: "Water Conservation 5" },
+    { id: 6, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-6.webp", alt: "Water Conservation 6" },
+    { id: 6, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Water+Conservation/w-g-4.webp", alt: "Water Conservation 6" },
 ];
 
 

@@ -142,7 +142,7 @@ export const lawFaqs = [
         <p className="text-gray-700">View BCI Approval for Session 2025-26:</p>
         <GlobalArrowButton
           as="a"
-          href="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/Faculty+of+Law/BCI+Approval+-+Session+2025-26.pdf"
+          href="https://cdn.kalingauniversity.ac.in/departments/Faculty+of+Law/BCI+Approval+-+Session+2025-26.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -159,7 +159,7 @@ export const lawFaqs = [
         <p className="text-gray-700">View Faculty of Law Newsletters:</p>
         <GlobalArrowButton
           as="a"
-          href="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/Faculty+of+Law/Law+-+Newsletter_compressed.pdf"
+          href="https://cdn.kalingauniversity.ac.in/departments/Faculty+of+Law/Law+-+Newsletter_compressed.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

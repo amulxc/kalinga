@@ -17,7 +17,7 @@ const mainIntroContent = {
     description: [
         "To ensure a clean, sustainable, and environmentally responsible campus, Kalinga University follows a systematic approach towards waste management. The University manages different types of waste, such as solid, liquid, electronic, and biomedical waste, promoting recycling practices among students and staff members. These efforts align with the United Nations Sustainable Development Goals, specifically SDG 6 (Clean Water and Sanitation), SDG 11 (Sustainable Cities and Communities), SDG 12 (Responsible Consumption and Production), and SDG 13 (Climate Action)."
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-1.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-1.webp",
     imageAlt: "Waste Management",
 };
 
@@ -32,7 +32,7 @@ const mainIntroContent1 = {
         "Workshop on Best out of Waste at Regional Science Centre, Raipur, Chhattisgarh",
         "Industrial Visit on Sewage Treatment Plant, Water Purification Plant & Solid Waste Management Plant, Raipur"
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-3.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-3.webp",
     imageAlt: "Activities to Promote Waste Management",
 };
 
@@ -68,13 +68,13 @@ const items = [
 ];
 
 const hospitalMoUs = [
-    { id: 1, text: "City Eye Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
-    { id: 2, text: "NH MMI Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
-    { id: 3, text: "Ramkrishna Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
-    { id: 4, text: "Saptgiri Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
-    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
-    { id: 6, text: "Urmila Memorial Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
-    { id: 7, text: "VY Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
+    { id: 1, text: "City Eye Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
+    { id: 2, text: "NH MMI Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
+    { id: 3, text: "Ramkrishna Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
+    { id: 4, text: "Saptgiri Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
+    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
+    { id: 6, text: "Urmila Memorial Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
+    { id: 7, text: "VY Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
 ];
 
 const eventReports = [
@@ -124,7 +124,7 @@ const cards = [
                 text2="To manage biodegradable waste, the University has established compost pits and vermicomposting units across the campus. Green waste generated from gardens and landscape areas, such as dry leaves, pruning residues, grass clippings, and other horticulture waste, is collected and processed through vermicomposting. In this process, organic waste is decomposed by earthworms and converted into nutrient-rich vermin-compost. This method speeds up the decomposition process and improves the quality of organic manure. Wet waste collected from the cafeteria and canteen is also combined with suitable horticulture waste and treated in composting and vermicomposting units to produce high-quality organic fertiliser. The compost produced from these processes is used to maintain the campus greenery, plantations, and gardens, supporting an eco-friendly and circular approach towards waste management."
             />
         ),
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-1.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-1.webp",
         logoSrc: "",
         subtitle: "SOLID WASTE MANAGEMENT",
         link: "#",
@@ -156,7 +156,7 @@ const cards = [
                 To ensure the responsible disposal of waste, the University has signed MoUs with certified and authorised e-waste management vendors. The collected e-waste is periodically handed over to these authorised recyclers for scientific dismantling, recycling, and recovery of reusable materials. This prevents environmental and health hazards caused by toxic components such as mercury, lead, cadmium, and other harmful substances present in electronic devices.
             </>
         ),
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-2.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/waste-2.webp",
         logoSrc: "",
         subtitle: "E-WASTE MANAGEMENT",
         link: "#",
@@ -203,11 +203,11 @@ const phdObjectives = [
 ];
 
 const galleryImages = [
-    { id: 1, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-1.webp", alt: "Waste Management Need 1" },
-    { id: 2, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-2.webp", alt: "Waste Management Need 2" },
-    { id: 3, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-3.webp", alt: "Waste Management Need 3" },
-    { id: 4, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-4.webp", alt: "Waste Management Need 4" },
-    { id: 5, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-5.webp", alt: "Waste Management Need 5" },
+    { id: 1, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-1.webp", alt: "Waste Management Need 1" },
+    { id: 2, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-2.webp", alt: "Waste Management Need 2" },
+    { id: 3, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-3.webp", alt: "Waste Management Need 3" },
+    { id: 4, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-4.webp", alt: "Waste Management Need 4" },
+    { id: 5, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/waste-management/need-5.webp", alt: "Waste Management Need 5" },
 ];
 
 

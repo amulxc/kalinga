@@ -19,7 +19,7 @@ const mainIntroContent = {
         "To promote sustainability and environmental responsibility, the University is taking various green initiatives and contributing towards various United Nations Sustainable Development Goals (SDGs), particularly SDG 7 (Affordable and Clean Energy), SDG 11 (Sustainable Cities and Communities), SDG 13 (Climate Action), and SDG 15 (Life on Land).",
         "The campus features a green landscape that supports ecological balance and biodiversity, pedestrian-friendly pathways, and the use of sustainable modes of transportation like bicycles and e-vehicles. Solar panels and LED lights installed in different buildings reduce electricity consumption and promote the usage of renewable sources of energy. Various outreach activities, environmental-focused projects, and research initiatives build awareness among students and staff. ",
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-7.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-7.webp",
     imageAlt: "Sustainable Communities & Partnership",
 };
 const mainIntroContent1 = {
@@ -45,7 +45,7 @@ const mainIntroContent2 = {
         "Kalinga University, under its eight schools, has established different clubs to develop a sense of environmental responsibility among students and staff. These clubs conduct hands-on training programs, seminars, workshops, poster making and painting competitions, science model exhibitions, guest lectures, expert talks, and debates on topics related to environmental sustainability and climate action. Students get practical exposure through various educational trips and field visits, and the NSS team organises tree-planting drives and cleanliness campaigns.",
 
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-7.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-7.webp",
     imageAlt: "Sustainable Communities & Partnership",
 };
 
@@ -132,7 +132,7 @@ const cards = [
         description:
             "To promote sustainability, students, staff, and visitors can walk freely across the campus through well-planned pedestrian pathways. They are regularly maintained and bordered with lush green belts across academic blocks, administrative areas, hostels, and more. These pathways are designed to enhance the beauty of the campus while reducing the need for vehicles, thereby creating a pollution-free environment.",
         imageSrc:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-2.webp",
+            "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-2.webp",
         logoSrc: "",
         subtitle: "PEDESTRIAN FRIENDLY PATHWAYS",
         link: "#",
@@ -142,7 +142,7 @@ const cards = [
         description:
             "The University has lush green areas and a systematic landscaping that includes native trees, shrubs, and ornamental plants. The beautifully designed gardens support biodiversity, creating a serene and peaceful academic environment. A regularly maintained pond supports the local ecosystem and also helps in groundwater recharge. Fountains and mist cooling systems are installed at different locations to create a refreshing atmosphere all around the campus. This proves our commitment to maintaining ecological balance and sustainability.",
         imageSrc:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-3.webp",
+            "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-3.webp",
         logoSrc: "",
         subtitle: "LANDSCAPING WITH TREES AND PLANTS",
         link: "#",
@@ -152,7 +152,7 @@ const cards = [
         description:
             "Rooftop solar power systems are installed in different buildings to use renewable sources of energy and reduce dependence on conventional electricity. Sensor-based LED lights are installed in corridors and common areas to improve energy efficiency, and regular awareness programs are conducted on energy consumption. Further, in collaboration with the Skill Council for Green Jobs, the University is organising a Free Solar PV Installation Helper Training Program under the Green Jobs sector (NSQF Level 4).",
         imageSrc:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-4.webp",
+            "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-4.webp",
         logoSrc: "",
         subtitle: "ENERGY SAVING INITIATIVES",
         link: "#",
@@ -205,14 +205,14 @@ const sustainableActivitiesObjectives = [
 ];
 
 const galleryImages = [
-    { id: 1, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-1.webp", alt: "Sustainable Campus Initiative 1" },
-    { id: 2, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-2.webp", alt: "Sustainable Campus Initiative 2" },
-    { id: 3, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-3.webp", alt: "Sustainable Campus Initiative 3" },
-    { id: 4, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-4.webp", alt: "Sustainable Campus Initiative 4" },
-    { id: 5, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-5.webp", alt: "Sustainable Campus Initiative 5" },
-    // { id: 7, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-7.webp", alt: "Sustainable Campus Initiative 7" },
-    // { id: 8, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-8.webp", alt: "Sustainable Campus Initiative 8" },
-    // { id: 9, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-9.webp", alt: "Sustainable Campus Initiative 9" },
+    { id: 1, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-1.webp", alt: "Sustainable Campus Initiative 1" },
+    { id: 2, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-2.webp", alt: "Sustainable Campus Initiative 2" },
+    { id: 3, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-3.webp", alt: "Sustainable Campus Initiative 3" },
+    { id: 4, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-4.webp", alt: "Sustainable Campus Initiative 4" },
+    { id: 5, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-5.webp", alt: "Sustainable Campus Initiative 5" },
+    // { id: 7, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-7.webp", alt: "Sustainable Campus Initiative 7" },
+    // { id: 8, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-8.webp", alt: "Sustainable Campus Initiative 8" },
+    // { id: 9, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-9.webp", alt: "Sustainable Campus Initiative 9" },
 ];
 
 
@@ -269,7 +269,7 @@ export default function GreenCampusPage() {
             <PhdObjectivesPanel
                 title="Awareness and Capacity Building"
                 subtitle="To promote awareness and active participation among students and staff, the University regularly organises:"
-                imageSrc="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-8.webp"
+                imageSrc="https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/image-g-8.webp"
                 phdObjectives={phdObjectives}
                 subtitle1="Through these initiatives, Kalinga University aims to develop responsible citizens, future leaders, and innovators who support a greener and sustainable future."
             />

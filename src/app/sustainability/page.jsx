@@ -17,22 +17,22 @@ const SDG_ANNUAL_REPORTS = [
   {
     label: "Annual Report 2022–23",
     pdfUrl:
-      "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2022-2023_compressed.pdf",
+      "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2022-2023_compressed.pdf",
   },
   {
     label: "Annual Report 2023–24",
     pdfUrl:
-      "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2023-2024_compressed.pdf",
+      "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2023-2024_compressed.pdf",
   },
   {
     label: "Annual Report 2024–25",
     pdfUrl:
-      "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2024-2025_compressed.pdf",
+      "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2024-2025_compressed.pdf",
   },
 ];
 
 const SDG_POLICY_PDF =
-  "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Sustainability+Policy_compressed.pdf";
+  "https://cdn.kalingauniversity.ac.in/sdg-cell/Sustainability+Policy_compressed.pdf";
 
 const SDG_OFFICE_ORDERS = [
   {

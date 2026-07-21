@@ -11,7 +11,7 @@ export default function ICTL2026() {
             <MainIntro
                 title="About Kalinga University"
                 description={[thirdParagraph]}
-                imageUrl="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/about/KU_new.jpg"
+                imageUrl="https://cdn.kalingauniversity.ac.in/about/KU_new.jpg"
                 imageAlt="Main Building"
             />
         </div>

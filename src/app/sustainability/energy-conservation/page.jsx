@@ -18,7 +18,7 @@ const mainIntroContent = {
         "Kalinga University demonstrates a strong commitment to achieving Sustainable Development Goals (SDGs) through a range of institutional initiatives. In alignment with SDG 7 (Affordable and Clean Energy), the University promotes the use of renewable energy and environmentally responsible practices across the campus to reduce its carbon footprint. It regularly organises skill development and capacity-building programs and encourages interdisciplinary research and innovation to address sustainability and societal challenges. Various awareness campaigns, workshops, seminars, panel discussions, guest lectures, and community outreach activities build environmental consciousness, social responsibility, and inclusive development. ",
         "The campus has installed a 300 kWp Solar Power Plant, which has generated 125,946.60 kWh of electricity. A biogas plant generates renewable energy by converting organic waste into clean fuel. Sensor-based LED lighting systems minimise unnecessary electricity consumption. The University also organises various events, such as National Energy Conservation Day and renewable energy awareness campaigns, along with poster competitions, technical exhibitions, and student projects on green technologies. Faculty and students collaborate on projects related to improving solar panel performance, hybrid energy systems, and smart energy management. Additionally, the university conducts a Free Solar PV Installation Helper Training Program under the Green Jobs sector (NSQF Level 4) to enhance technical skills and create employment opportunities in the renewable energy sector."
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1.webp",
     imageAlt: "Energy Conservation",
 };
 
@@ -27,7 +27,7 @@ const mainIntroContent1 = {
     description: [
         "The University has installed a 300 kWp Solar Power Plant, reducing dependence on conventional electricity sources. So far, it has generated 125,946.60 kWh of electricity, contributing towards lower carbon emissions and clean energy usage on campus. Solar panels are installed on rooftops and open spaces to maximise sunlight exposure and energy efficiency."
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-2.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-2.webp",
     imageAlt: "Energy Generated & Consumed Details",
 };
 
@@ -60,13 +60,13 @@ const items = [
 ];
 
 const hospitalMoUs = [
-    { id: 1, text: "City Eye Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
-    { id: 2, text: "NH MMI Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
-    { id: 3, text: "Ramkrishna Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
-    { id: 4, text: "Saptgiri Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
-    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
-    { id: 6, text: "Urmila Memorial Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
-    { id: 7, text: "VY Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
+    { id: 1, text: "City Eye Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
+    { id: 2, text: "NH MMI Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
+    { id: 3, text: "Ramkrishna Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
+    { id: 4, text: "Saptgiri Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
+    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
+    { id: 6, text: "Urmila Memorial Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
+    { id: 7, text: "VY Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
 ];
 
 const conservationReports = [
@@ -102,7 +102,7 @@ const cards = [
         title: "Solar Power Systems – Rooftop Solar Energy",
         description:
             "The University has installed a 300 kWp Solar Power Plant, reducing dependence on conventional electricity sources. So far, it has generated 125,946.60 kWh of electricity, contributing towards lower carbon emissions and clean energy usage on campus. Solar panels are installed on rooftops and open spaces to maximise sunlight exposure and energy efficiency. The University actively promotes the usage of renewable energy through various skill development programs, research and awareness activities.This initiative not only lowered electricity expenses but also proved our commitment to adopting green technology.",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1.webp",
         logoSrc: "",
         subtitle: "SOLAR POWER SYSTEMS",
         link: "#",
@@ -111,7 +111,7 @@ const cards = [
         title: "Biogas Plant",
         description:
             "For efficient waste management, the University has installed a biogas plant on campus that converts organic and food waste generated from hostels and other campus areas into renewable energy. The biogas produced is used as a clean fuel, reducing the dependence on conventional fuels. The plant also produces nutrient-rich slurry, an organic fertiliser used in gardening and landscaping purposes, promoting sustainable resource usage and a circular approach towards waste management.",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-1.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-1.webp",
         logoSrc: "",
         subtitle: "BIOGAS PLANT",
         link: "#",
@@ -120,7 +120,7 @@ const cards = [
         title: "Sensor-Based LED Lighting Systems",
         description:
             "The university has installed sensor-based LED lighting systems in several campus buildings and common areas. These smart lighting systems automatically switch on or off based on human movement and ambient light conditions, reducing unnecessary lighting consumption while maintaining adequate lighting across the campus.",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-2.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-2.webp",
         logoSrc: "",
         subtitle: "SENSOR-BASED LIGHTING",
         link: "#",
@@ -149,11 +149,11 @@ const phdObjectives = [
 ];
 
 const galleryImages = [
-    { id: 1, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1.webp", alt: "Energy Conservation 1" },
-    { id: 2, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-2.webp", alt: "Energy Conservation 2" },
-    { id: 3, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-3.webp", alt: "Energy Conservation 3" },
-    { id: 4, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-4.webp", alt: "Energy Conservation 4" },
-    { id: 5, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-5.webp", alt: "Energy Conservation 5" },
+    { id: 1, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1.webp", alt: "Energy Conservation 1" },
+    { id: 2, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-2.webp", alt: "Energy Conservation 2" },
+    { id: 3, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-3.webp", alt: "Energy Conservation 3" },
+    { id: 4, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-4.webp", alt: "Energy Conservation 4" },
+    { id: 5, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-5.webp", alt: "Energy Conservation 5" },
 ];
 
 
@@ -193,7 +193,7 @@ export default function GreenCampusPage() {
             {/* <PhdObjectivesPanel
                 title="Energy Conservation Reports"
                 subtitle=""
-                imageSrc="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-1.webp"
+                imageSrc="https://cdn.kalingauniversity.ac.in/sdg-cell/Energy+Conservation/s-1-1.webp"
                 phdObjectives={phdObjectives}
             /> */}
             <div className="container mx-auto mt-16 px-4">

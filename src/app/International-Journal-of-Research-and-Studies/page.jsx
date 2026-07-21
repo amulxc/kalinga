@@ -20,6 +20,9 @@ const UnivistaJournalPage = () => {
     const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
     const [selectedMember, setSelectedMember] = useState(null);
 
+    // Archives tabs: Volume 1 Issue 1 / Issue 2
+    const [activeArchiveTab, setActiveArchiveTab] = useState("issue1");
+
     const handleExploreMember = (member) => {
         setSelectedMember(member);
         setIsProfileModalOpen(true);
@@ -188,7 +191,7 @@ const UnivistaJournalPage = () => {
             title: "Praveen Kumar Yadaw, Mohammad Arsh Khan, Manoj Kumar Nigam",
             duration: "Page range: 1-10 | Jan - March 2026",
             level: "VOL 1",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/1.+Experimental+Analysis+and+Modelling+of+Solar+Panel+-+Naya+Raipur+(1)+(1).pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/1.+Experimental+Analysis+and+Modelling+of+Solar+Panel+-+Naya+Raipur+(1)+(1).pdf"
         },
         {
             id: 2,
@@ -196,7 +199,7 @@ const UnivistaJournalPage = () => {
             title: "Sweta Srivastav and Dr. Deepti Patnaik",
             duration: "Page range: 11-21 | Jan - March 2026",
             level: "VOL 1",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/2.+Green+Finance+and+Its+Impact+on+Business+Models+in+Emerging+Markets_Updated+(1)+(1)+-+sweta+srivastav+(1)+(1).pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/2.+Green+Finance+and+Its+Impact+on+Business+Models+in+Emerging+Markets_Updated+(1)+(1)+-+sweta+srivastav+(1)+(1).pdf"
         },
         {
             id: 3,
@@ -204,7 +207,7 @@ const UnivistaJournalPage = () => {
             title: "Niyitanga gilbert beco",
             duration: "Page range: 22-33 | Jan - March 2026",
             level: "VOL 1",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/3.+Impact+of+Artificial+Intelligence+on+Rwandan+Educational+Sustainability+(1)+(1).pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/3.+Impact+of+Artificial+Intelligence+on+Rwandan+Educational+Sustainability+(1)+(1).pdf"
         },
         {
             id: 4,
@@ -212,7 +215,7 @@ const UnivistaJournalPage = () => {
             title: "Vijayalaxmi Biradar, Sarat Chandra Mohanty",
             duration: "Page range: 34-39 | Jan - March 2026",
             level: "VOL 1",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/4.+Manuscript-Drone+_Modified+(1)+(1).pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/4.+Manuscript-Drone+_Modified+(1)+(1).pdf"
         },
         {
             id: 5,
@@ -220,7 +223,7 @@ const UnivistaJournalPage = () => {
             title: "Vijayalaxmi Biradar, Sarat Chandra Mohanty",
             duration: "Page range: 40-45 | Jan - March 2026",
             level: "VOL 1",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/5.+IEEE+Manuscript-1+Assistive+Technology+(1)+(1).pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/5.+IEEE+Manuscript-1+Assistive+Technology+(1)+(1).pdf"
         },
         {
             id: 6,
@@ -228,9 +231,37 @@ const UnivistaJournalPage = () => {
             title: "Priyanshu Mahanti, Shailesh Singh Thakur",
             duration: "Page range: 46-56 | Jan - March 2026",
             level: "VOL 1",
-            slug: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/6.+Hybrid+Nano+fluid+An+Overview+on+preparation+methods%2C+properties%2C+and+its+application+(1)+(1).pdf"
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/6.+Hybrid+Nano+fluid+An+Overview+on+preparation+methods%2C+properties%2C+and+its+application+(1)+(1).pdf"
         }
     ];
+
+    // Volume 1, Issue 2 — TODO: replace these placeholder entries with the actual Issue 2 papers/PDFs
+    const archivesIssue2Data = [
+        {
+            id: 1,
+            shortName: "Article Title 1 (Issue 2)",
+            title: "Author Name(s)",
+            duration: "Page range: 1-10 | April - June 2026",
+            level: "VOL 1",
+            slug: ""
+        },
+        {
+            id: 2,
+            shortName: "Article Title 2 (Issue 2)",
+            title: "Author Name(s)",
+            duration: "Page range: 11-20 | April - June 2026",
+            level: "VOL 1",
+            slug: ""
+        }
+    ];
+
+    // Derived values based on the selected archives tab
+    const archiveTabs = [
+        { key: "issue1", label: "Volume 1 · Issue 1" },
+        { key: "issue2", label: "Volume 1 · Issue 2" }
+    ];
+    const activeArchivePrograms = activeArchiveTab === "issue1" ? archivesData : archivesIssue2Data;
+    const activeArchiveHeading = activeArchiveTab === "issue1" ? "Volume 1 Issues 1" : "Volume 1 Issues 2";
 
     const callForPapersData = [
         {
@@ -576,7 +607,7 @@ const UnivistaJournalPage = () => {
             <ProgramsOffered
                 title="Archives"
                 description="Explore past volumes and issues of the Univista: International Journal of Research and Studies."
-                programs={archivesData}
+                programs={activeArchivePrograms}
                 exploreLabel="Download PDF"
                 searchPlaceholder="Search Archives...."
                 hideSearch={false}
@@ -584,7 +615,25 @@ const UnivistaJournalPage = () => {
                 backgroundColor="bg-white"
                 textColor="text-gray-700"
                 titleColor="text-[var(--foreground)]"
-                listHeading="Volume 1 Issues 1"
+                listHeading={activeArchiveHeading}
+                topRightContent={
+                    <div className="flex flex-wrap gap-2">
+                        {archiveTabs.map((tab) => (
+                            <button
+                                key={tab.key}
+                                type="button"
+                                onClick={() => setActiveArchiveTab(tab.key)}
+                                className={`px-5 py-2.5 rounded-lg font-plus-jakarta-sans font-semibold transition-colors ${
+                                    activeArchiveTab === tab.key
+                                        ? "bg-[var(--button-red)] text-white"
+                                        : "bg-white text-[var(--button-red)] border border-[var(--button-red)] hover:bg-[var(--button-red)]/10"
+                                }`}
+                            >
+                                {tab.label}
+                            </button>
+                        ))}
+                    </div>
+                }
             />
             {/* Reused Publication Card Section */}
             <section className="bg-gray-50">

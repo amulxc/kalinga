@@ -255,7 +255,7 @@ export default function Page() {
       faculty: "Faculty of Commerce & Management",
     },
     {
-      img: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/book-publications/%E2%80%ABimages-1.png",
+      img: "https://cdn.kalingauniversity.ac.in/book-publications/%E2%80%ABimages-1.png",
       title: "Visualising Green Horizons: Eco-Tourism in Chhattisgarh",
       author_1: "Dr. A. Rajshekhar",
       author_2: "Ms. Moumita Pal",

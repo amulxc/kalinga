@@ -22,7 +22,7 @@ const mainIntroContent = {
         "Flagship initiatives, such as conferences, environmental sustainability drives, skill-development projects, and the adoption of six villages (Kotni, Kotarabhata, Kuhera, Palaud, Parshada, and Tandul), translate partnerships into tangible outcomes, including internships, incubation support, community interventions, and policy-oriented research contributions. Kalinga University's collaborations extend across academic exchanges at national and international levels, industry-linked skilling and innovation hubs, NGO partnerships for community engagement, professional certification programs, and sports and cultural partnerships.",
         "By emphasising transparency, documentation, and outcome-based reporting, the University ensures that all collaborative efforts are auditable and aligned with specific SDG targets. This structured approach enables Kalinga University to systematically map partnerships, measure impact, and report progress within its institutional SDG framework, reinforcing its commitment to sustainable, inclusive, and community-focused development, while contributing to multiple UN Sustainable Development Goals (SDGs), including SDG 17."
     ],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/chart-15.webp",
+    imageUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/chart-15.webp",
     imageAlt: "Sustainable Communities & Partnership",
 };
 
@@ -65,13 +65,13 @@ const items = [
 ];
 
 const hospitalMoUs = [
-    { id: 1, text: "City Eye Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
-    { id: 2, text: "NH MMI Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
-    { id: 3, text: "Ramkrishna Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
-    { id: 4, text: "Saptgiri Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
-    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
-    { id: 6, text: "Urmila Memorial Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
-    { id: 7, text: "VY Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
+    { id: 1, text: "City Eye Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
+    { id: 2, text: "NH MMI Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
+    { id: 3, text: "Ramkrishna Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
+    { id: 4, text: "Saptgiri Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
+    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
+    { id: 6, text: "Urmila Memorial Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
+    { id: 7, text: "VY Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
 ];
 
 const eventReports = [
@@ -87,7 +87,7 @@ const cards = [
     {
         title: "Outreach and Community Survey",
         description: "",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-1.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-1.webp",
         logoSrc: "",
         subtitle: "OUTREACH AND COMMUNITY SURVEY",
         link: "#",
@@ -95,7 +95,7 @@ const cards = [
     {
         title: "Collaborative Online and Offline Faculty Development Programs (FDPs)",
         description: "",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-2.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-2.webp",
         logoSrc: "",
         subtitle: "COLLABORATIVE ONLINE AND OFFLINE FACULTY DEVELOPMENT PROGRAMS (FDPs)",
         link: "#",
@@ -103,7 +103,7 @@ const cards = [
     {
         title: "National and International Conferences",
         description: "",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-3.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-3.webp",
         logoSrc: "",
         subtitle: "NATIONAL AND INTERNATIONAL CONFERENCES",
         link: "#",
@@ -111,7 +111,7 @@ const cards = [
     {
         title: "Industrial Visits",
         description: "",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-4.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-4.webp",
         logoSrc: "",
         subtitle: "INDUSTRIAL VISITS",
         link: "#",
@@ -119,7 +119,7 @@ const cards = [
     {
         title: "Other Collaborative Activities, Guest Lectures, Expert Talks, Competitions, etc.",
         description: "",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-5.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-5.webp",
         logoSrc: "",
         subtitle: "OTHER COLLABORATIVE ACTIVITIES",
         link: "#",
@@ -127,7 +127,7 @@ const cards = [
     {
         title: "Alumni Meets",
         description: "",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-6.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-6.webp",
         logoSrc: "",
         subtitle: "ALUMNI MEETS",
         link: "#",
@@ -135,7 +135,7 @@ const cards = [
     {
         title: "Collaborative Activities Organised through Training Programs, Summer Camps and Capacity Building Programs",
         description: "",
-        imageSrc: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-7.webp",
+        imageSrc: "https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/img-7.webp",
         logoSrc: "",
         subtitle: "COLLABORATIVE ACTIVITIES THROUGH TRAINING PROGRAMS",
         link: "#",
@@ -236,7 +236,7 @@ const galleryImages = Array.from({ length: 14 }, (_, index) => {
     const imageNumber = index + 1;
     return {
         id: imageNumber,
-        image: `https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/chart-${imageNumber}.webp`,
+        image: `https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/chart-${imageNumber}.webp`,
         alt: `Partnerships for the Goals Activity ${imageNumber}`,
     };
 });
@@ -867,7 +867,7 @@ export default function PartnershipsForTheGoalsPage() {
             <PhdObjectivesPanel
                 title="University-Led Initiatives on Sustainable Communities & Partnerships through Collaborative Programs"
                 subtitle=""
-                imageSrc="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/chart-16.webp"
+                imageSrc="https://cdn.kalingauniversity.ac.in/sdg-cell/partnerships-for-the-goals/chart-16.webp"
                 phdObjectives={phdObjectives}
             />
             <div className="container mx-auto mt-16 px-4">

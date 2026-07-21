@@ -83,13 +83,13 @@ const items = [
 ];
 
 const hospitalMoUs = [
-    { id: 1, text: "City Eye Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
-    { id: 2, text: "NH MMI Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
-    { id: 3, text: "Ramkrishna Care Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
-    { id: 4, text: "Saptgiri Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
-    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
-    { id: 6, text: "Urmila Memorial Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
-    { id: 7, text: "VY Hospital", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
+    { id: 1, text: "City Eye Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+City+Eye+Care+Hospital_compressed.pdf" },
+    { id: 2, text: "NH MMI Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+NH+MMI+Hospital_compressed.pdf" },
+    { id: 3, text: "Ramkrishna Care Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Ramkrishna+Care+Hospital+Raipur_compressed.pdf" },
+    { id: 4, text: "Saptgiri Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Saptgiri+Hospital_compressed.pdf" },
+    { id: 5, text: "Shri Ganesh Vinayak Eye Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Shri+Ganesh+Vinayak+Eye+Hospital_compressed.pdf" },
+    { id: 6, text: "Urmila Memorial Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+Urmila+Memorial+Hospital(pdfgear.com).pdf" },
+    { id: 7, text: "VY Hospital", url: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/MoU+-+VY+Hospital+Kamal+Vihar+Raipur(pdfgear.com).pdf" },
 ];
 
 const eventReports = [
@@ -214,21 +214,21 @@ const phdObjectives = [
 ];
 
 const galleryImages = [
-    { id: 1, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-1.webp", alt: "Good Health and Well-Being 1" },
-    { id: 2, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-2.webp", alt: "Good Health and Well-Being 2" },
-    { id: 3, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-3.webp", alt: "Good Health and Well-Being 3" },
-    { id: 4, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-4.webp", alt: "Good Health and Well-Being 4" },
-    { id: 5, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-5.webp", alt: "Good Health and Well-Being 5" },
-    { id: 6, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-6.webp", alt: "Good Health and Well-Being 6" },
-    { id: 7, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-7.webp", alt: "Good Health and Well-Being 7" },
-    { id: 8, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-8.webp", alt: "Good Health and Well-Being 8" },
-    { id: 9, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-9.webp", alt: "Good Health and Well-Being 9" },
-    { id: 10, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-10.webp", alt: "Good Health and Well-Being 10" },
-    { id: 11, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-11.webp", alt: "Good Health and Well-Being 11" },
-    { id: 12, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-12.webp", alt: "Good Health and Well-Being 12" },
-    { id: 13, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-13.webp", alt: "Good Health and Well-Being 13" },
-    { id: 14, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-14.webp", alt: "Good Health and Well-Being 14" },
-    { id: 15, image: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-15.webp", alt: "Good Health and Well-Being 15" },
+    { id: 1, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-1.webp", alt: "Good Health and Well-Being 1" },
+    { id: 2, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-2.webp", alt: "Good Health and Well-Being 2" },
+    { id: 3, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-3.webp", alt: "Good Health and Well-Being 3" },
+    { id: 4, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-4.webp", alt: "Good Health and Well-Being 4" },
+    { id: 5, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-5.webp", alt: "Good Health and Well-Being 5" },
+    { id: 6, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-6.webp", alt: "Good Health and Well-Being 6" },
+    { id: 7, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-7.webp", alt: "Good Health and Well-Being 7" },
+    { id: 8, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-8.webp", alt: "Good Health and Well-Being 8" },
+    { id: 9, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-9.webp", alt: "Good Health and Well-Being 9" },
+    { id: 10, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-10.webp", alt: "Good Health and Well-Being 10" },
+    { id: 11, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-11.webp", alt: "Good Health and Well-Being 11" },
+    { id: 12, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-12.webp", alt: "Good Health and Well-Being 12" },
+    { id: 13, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-13.webp", alt: "Good Health and Well-Being 13" },
+    { id: 14, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-14.webp", alt: "Good Health and Well-Being 14" },
+    { id: 15, image: "https://cdn.kalingauniversity.ac.in/sdg-cell/good-health-well-being/image-new-good-15.webp", alt: "Good Health and Well-Being 15" },
 ];
 
 
