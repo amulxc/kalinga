@@ -179,9 +179,11 @@ export default function ProgramsOffered({
                       )}
 
                       <div className="flex items-center gap-2 flex-wrap">
-                        <p className="text-[var(--light-text-gray)] !font-[500]">
-                          Duration: {program.duration}
-                        </p>
+                        {program.duration && (
+                          <p className="text-[var(--light-text-gray)] !font-[500]">
+                            Duration: {program.duration}
+                          </p>
+                        )}
                         <Link
                           href={program.slug?.startsWith('http') ? program.slug : (program.slug ? `/courses/${program.slug}` : "/admissions")}
                           target={program.slug?.startsWith('http') ? "_blank" : "_self"}

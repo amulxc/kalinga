@@ -690,7 +690,13 @@ export const pageDataMap: Record<string, PageData> = {
         slug: "/departments/faculty-of-arts-humanities",
         title: "Faculty of Arts & Humanities",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
+    },
+    "/scisustain-27": {
+        slug: "/scisustain-27",
+        title: "SciSustain 2027",
+        banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     }
+
 
 };
 

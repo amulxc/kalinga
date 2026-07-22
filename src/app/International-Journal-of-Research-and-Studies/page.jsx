@@ -238,20 +238,186 @@ const UnivistaJournalPage = () => {
     // Volume 1, Issue 2 — TODO: replace these placeholder entries with the actual Issue 2 papers/PDFs
     const archivesIssue2Data = [
         {
-            id: 1,
-            shortName: "Article Title 1 (Issue 2)",
-            title: "Author Name(s)",
-            duration: "Page range: 1-10 | April - June 2026",
+            id: 2,
+            shortName: "Performance Evaluation Of Biodegradable Hydraulic Fluids In Industrial Actuators",
+            title: "Kouakou Marius Kouakoul",
             level: "VOL 1",
-            slug: ""
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/2-marius-KK.pdf"
         },
         {
-            id: 2,
-            shortName: "Article Title 2 (Issue 2)",
-            title: "Author Name(s)",
-            duration: "Page range: 11-20 | April - June 2026",
+            id: 3,
+            shortName: "Experimental Investigation Of Self-Compacting Concrete Using Rice Husk Ash",
+            title: "Angel Lakra",
             level: "VOL 1",
-            slug: ""
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/3-Angel-Lakra.pdf"
+        },
+        {
+            id: 4,
+            shortName: "Causes Of Low Hydraulic Pressure In The Excavator Control Valve And Their Solutions",
+            title: "Mr. Samuel P Zarwolo",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/4-Mr-Samuel-P-Zarwoloo.pdf"
+        },
+        {
+            id: 5,
+            shortName: "Building Construction: Planning, Structural Arrangement, And Execution Of A Healthcare Facility",
+            title: "Ankit Yadav",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/5-Ankit-Yadav.pdf"
+        },
+        {
+            id: 6,
+            shortName: "The Comparison Of Resistance Of V-Groove Weld And Normal Butt Joint Weld In Metal",
+            title: "Toure Natouyoman Julien",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/6-Toure-Natouyoman-Julien.pdf"
+        },
+        {
+            id: 7,
+            shortName: "Experimental Evaluation Of Construction Materials Used In Building Construction",
+            title: "Rahul Raj Yadav",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/7-Rahul-raj.pdf"
+        },
+        {
+            id: 8,
+            shortName: "Analys Of Foundation Design Methods For Long-Life Road Pavements",
+            title: "Evandra Bartolomeu",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/8-Evandra-Bartolomeu.pdf"
+        },
+        {
+            id: 9,
+            shortName: "Analysis Of Ambient Temperature Impact On Ev Battery Degradation",
+            title: "SK Farid",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/9-SK-Farid-Final-Paper.pdf"
+        },
+        {
+            id: 10,
+            shortName: "Comprehensive Analysis Of Planning, Design, Construction, And Quality Control In Nh 748a Highway Project",
+            title: "Rohan Tiwari",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/10-Rohan-Tiwari.pdf"
+        },
+        {
+            id: 11,
+            shortName: "Tracking And Digital Inspection Systems In Automotive Manufacturing",
+            title: "Sahil Kumar Gupta",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/11-Sahil-Kumar-Gupta.pdf"
+        },
+        {
+            id: 12,
+            shortName: "A Comparative Review Of Performance Factors Affecting The Efficiency Of Solar Photovoltaic Systems",
+            title: "Ankit Kumar Tirkey",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/12-Ankit-Kumar-Tirkey-Technology.pdf"
+        },
+        {
+            id: 14,
+            shortName: "The Roles Of Diagnostic Tools In A Honda Maintenance Workshop",
+            title: "Jessian Tanaka Mutsago",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/14-Jessian.pdf"
+        },
+        {
+            id: 15,
+            shortName: "A Comparative Case Study On Photovoltaic Material Used In Solar Power Generation In Industries And The Efficiency Of The Materials",
+            title: "Ayush Parmar",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/15-Ayush-Research-Paper.pdf"
+        },
+        {
+            id: 16,
+            shortName: "Execution Of Residential Building And Test For Quality Assurance",
+            title: "Kwajok Jada Loloku",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/16-Kwajok-Jada-Loloku.pdf"
+        },
+        {
+            id: 17,
+            shortName: "Failure Analysis Of Collector Nozzle In Slide Gate System During Continuous Casting",
+            title: "Shivam Prakash",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/17-Shivam-Prakash.pdf"
+        },
+        {
+            id: 18,
+            shortName: "Matlab-Based Analysis Of Condition Monitoring And Harmonic Mitigation In Industrial Motor Drives",
+            title: "Saurabh Kumar",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/18-Saurabh-Kumar.pdf"
+        },
+        {
+            id: 19,
+            shortName: "Energy Efficiency, Thermodynamics, And Design Optimization In Internal Combution Engines: A Comprehensive Review",
+            title: "Fokou Tchioffo Padoras",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/19-Fokou.pdf"
+        },
+        {
+            id: 20,
+            shortName: "Power Quality Improvement By Mitigation Of Harmonics Using Shunt Active Power Filter And Its Comparative Analysis",
+            title: "Pradeep Kumar",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/20-Pradeep.pdf"
+        },
+        {
+            id: 21,
+            shortName: "Experiment The Effect Of Excessive Superplasticizer Dosage On Concrete Property",
+            title: "Tashvendra dhruw",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/21-Tashvendra-dhruw.pdf"
+        },
+        {
+            id: 23,
+            shortName: "Experimental Study Of Use Of Waste Plastic In Road Construction",
+            title: "Deepa Banerjee",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/23-Deepa.pdf"
+        },
+        {
+            id: 24,
+            shortName: "Fuzzy Logic-Based Prediction Of Weld Quality In Shielded Metal Arc Welding Of Mild Steel Joints",
+            title: "Navin Shrivastava",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/24-Navin-Shrivastava.pdf"
+        },
+        {
+            id: 25,
+            shortName: "Design And Implementation Of Grid Connected To Solar Pv System",
+            title: "Devwrath Telam",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/25-Devwrath-Telam.pdf"
+        },
+        {
+            id: 26,
+            shortName: "An Experimental Investigation On Plain And Reinforced Self - Curing Concrete",
+            title: "Lokesh Verma",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/26-Lokesh.pdf"
+        },
+        {
+            id: 27,
+            shortName: "Impact Of Curing Techniques On Sustainable Concrete",
+            title: "Piyush Kumar Dewangan",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/27-piyush.pdf"
+        },
+        {
+            id: 28,
+            shortName: "An Experimental Study On The Mechanical Properties Of High-Strength Self-Compacting Concrete Mixes",
+            title: "Pankaj Singh Thakur",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/28-Pankaj-Singh.pdf"
+        },
+        {
+            id: 29,
+            shortName: "Experimental Investigation On The Use Of Fiber Reinforced Concrete In Rigid Pavement",
+            title: "Anil Paikara",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/29-Anil.pdf"
         }
     ];
 
