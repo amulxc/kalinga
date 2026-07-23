@@ -30,6 +30,7 @@ export default function BookChaptersPage() {
                     title={`Book / Book Chapters ${label}`}
                     className="py-16"
                     overflowX={true}
+                    maxHeight="max-h-[600px]"
                 />
             ),
         };

@@ -282,6 +282,14 @@ function NewsAndEvents() {
       link: "https://cdn.kalingauniversity.ac.in/Transforming-Libraries-through-AI/International%20Conference.pdf"
     },
     {
+      id: 'icdiacs-26',
+      title: 'ICDIACS 2026',
+      description: 'This conference aims to provide an international multidisciplinary platform for researchers, academicians, industry experts, and innovators to discuss recent advancements in Artificial Intelligence, Cybersecurity, Digital Intelligence, Intelligent Systems, Cloud Computing, IoT, Data Science, and Sustainable Digital Technologies. The conference focuses on promoting research and innovation that contribute toward sustainable technological growth and global development aligned with the United Nations Sustainable Development Goals (SDGs).',
+      date: '27.10.2026 - 28.10.2026',
+      buttonText: 'Read More',
+      link: "/icdiacs-26",
+    },
+    {
       id: 'global-conference-law',
       title: 'Emerging Trends In Artificial Intelligence: Comparative Approaches Of Legal Governance',
       description: 'The Two-Day Global Conference on “Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance” aims to examine the growing relationship between AI and legal systems globally. Due to the growing influence of AI across commercial laws, criminal justice systems, intellectual property regimes, judicial institutions, healthcare regulations, cyber law frameworks, and international legal mechanisms, it raises concerns regarding privacy, transparency, accountability, liability, bias, and protection of human rights',

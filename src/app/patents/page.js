@@ -23,6 +23,7 @@ export default function PatentsPage() {
                     title={`Patents ${label}`}
                     className="py-16"
                     overflowX={true}
+                    maxHeight="max-h-[600px]"
                 />
             ),
         };

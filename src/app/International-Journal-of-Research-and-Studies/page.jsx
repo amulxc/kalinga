@@ -241,6 +241,7 @@ const UnivistaJournalPage = () => {
             id: 2,
             shortName: "Performance Evaluation Of Biodegradable Hydraulic Fluids In Industrial Actuators",
             title: "Kouakou Marius Kouakoul",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/2-marius-KK.pdf"
         },
@@ -248,6 +249,7 @@ const UnivistaJournalPage = () => {
             id: 3,
             shortName: "Experimental Investigation Of Self-Compacting Concrete Using Rice Husk Ash",
             title: "Angel Lakra",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/3-Angel-Lakra.pdf"
         },
@@ -255,6 +257,7 @@ const UnivistaJournalPage = () => {
             id: 4,
             shortName: "Causes Of Low Hydraulic Pressure In The Excavator Control Valve And Their Solutions",
             title: "Mr. Samuel P Zarwolo",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/4-Mr-Samuel-P-Zarwoloo.pdf"
         },
@@ -262,6 +265,7 @@ const UnivistaJournalPage = () => {
             id: 5,
             shortName: "Building Construction: Planning, Structural Arrangement, And Execution Of A Healthcare Facility",
             title: "Ankit Yadav",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/5-Ankit-Yadav.pdf"
         },
@@ -269,6 +273,7 @@ const UnivistaJournalPage = () => {
             id: 6,
             shortName: "The Comparison Of Resistance Of V-Groove Weld And Normal Butt Joint Weld In Metal",
             title: "Toure Natouyoman Julien",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/6-Toure-Natouyoman-Julien.pdf"
         },
@@ -276,6 +281,7 @@ const UnivistaJournalPage = () => {
             id: 7,
             shortName: "Experimental Evaluation Of Construction Materials Used In Building Construction",
             title: "Rahul Raj Yadav",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/7-Rahul-raj.pdf"
         },
@@ -283,6 +289,7 @@ const UnivistaJournalPage = () => {
             id: 8,
             shortName: "Analys Of Foundation Design Methods For Long-Life Road Pavements",
             title: "Evandra Bartolomeu",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/8-Evandra-Bartolomeu.pdf"
         },
@@ -290,6 +297,7 @@ const UnivistaJournalPage = () => {
             id: 9,
             shortName: "Analysis Of Ambient Temperature Impact On Ev Battery Degradation",
             title: "SK Farid",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/9-SK-Farid-Final-Paper.pdf"
         },
@@ -297,6 +305,7 @@ const UnivistaJournalPage = () => {
             id: 10,
             shortName: "Comprehensive Analysis Of Planning, Design, Construction, And Quality Control In Nh 748a Highway Project",
             title: "Rohan Tiwari",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/10-Rohan-Tiwari.pdf"
         },
@@ -304,6 +313,7 @@ const UnivistaJournalPage = () => {
             id: 11,
             shortName: "Tracking And Digital Inspection Systems In Automotive Manufacturing",
             title: "Sahil Kumar Gupta",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/11-Sahil-Kumar-Gupta.pdf"
         },
@@ -311,6 +321,7 @@ const UnivistaJournalPage = () => {
             id: 12,
             shortName: "A Comparative Review Of Performance Factors Affecting The Efficiency Of Solar Photovoltaic Systems",
             title: "Ankit Kumar Tirkey",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/12-Ankit-Kumar-Tirkey-Technology.pdf"
         },
@@ -318,6 +329,7 @@ const UnivistaJournalPage = () => {
             id: 14,
             shortName: "The Roles Of Diagnostic Tools In A Honda Maintenance Workshop",
             title: "Jessian Tanaka Mutsago",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/14-Jessian.pdf"
         },
@@ -325,6 +337,7 @@ const UnivistaJournalPage = () => {
             id: 15,
             shortName: "A Comparative Case Study On Photovoltaic Material Used In Solar Power Generation In Industries And The Efficiency Of The Materials",
             title: "Ayush Parmar",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/15-Ayush-Research-Paper.pdf"
         },
@@ -332,6 +345,7 @@ const UnivistaJournalPage = () => {
             id: 16,
             shortName: "Execution Of Residential Building And Test For Quality Assurance",
             title: "Kwajok Jada Loloku",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/16-Kwajok-Jada-Loloku.pdf"
         },
@@ -339,6 +353,7 @@ const UnivistaJournalPage = () => {
             id: 17,
             shortName: "Failure Analysis Of Collector Nozzle In Slide Gate System During Continuous Casting",
             title: "Shivam Prakash",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/17-Shivam-Prakash.pdf"
         },
@@ -346,6 +361,7 @@ const UnivistaJournalPage = () => {
             id: 18,
             shortName: "Matlab-Based Analysis Of Condition Monitoring And Harmonic Mitigation In Industrial Motor Drives",
             title: "Saurabh Kumar",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/18-Saurabh-Kumar.pdf"
         },
@@ -353,6 +369,7 @@ const UnivistaJournalPage = () => {
             id: 19,
             shortName: "Energy Efficiency, Thermodynamics, And Design Optimization In Internal Combution Engines: A Comprehensive Review",
             title: "Fokou Tchioffo Padoras",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/19-Fokou.pdf"
         },
@@ -360,6 +377,7 @@ const UnivistaJournalPage = () => {
             id: 20,
             shortName: "Power Quality Improvement By Mitigation Of Harmonics Using Shunt Active Power Filter And Its Comparative Analysis",
             title: "Pradeep Kumar",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/20-Pradeep.pdf"
         },
@@ -367,6 +385,7 @@ const UnivistaJournalPage = () => {
             id: 21,
             shortName: "Experiment The Effect Of Excessive Superplasticizer Dosage On Concrete Property",
             title: "Tashvendra dhruw",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/21-Tashvendra-dhruw.pdf"
         },
@@ -374,6 +393,7 @@ const UnivistaJournalPage = () => {
             id: 23,
             shortName: "Experimental Study Of Use Of Waste Plastic In Road Construction",
             title: "Deepa Banerjee",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/23-Deepa.pdf"
         },
@@ -381,6 +401,7 @@ const UnivistaJournalPage = () => {
             id: 24,
             shortName: "Fuzzy Logic-Based Prediction Of Weld Quality In Shielded Metal Arc Welding Of Mild Steel Joints",
             title: "Navin Shrivastava",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/24-Navin-Shrivastava.pdf"
         },
@@ -388,6 +409,7 @@ const UnivistaJournalPage = () => {
             id: 25,
             shortName: "Design And Implementation Of Grid Connected To Solar Pv System",
             title: "Devwrath Telam",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/25-Devwrath-Telam.pdf"
         },
@@ -395,6 +417,7 @@ const UnivistaJournalPage = () => {
             id: 26,
             shortName: "An Experimental Investigation On Plain And Reinforced Self - Curing Concrete",
             title: "Lokesh Verma",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/26-Lokesh.pdf"
         },
@@ -402,6 +425,7 @@ const UnivistaJournalPage = () => {
             id: 27,
             shortName: "Impact Of Curing Techniques On Sustainable Concrete",
             title: "Piyush Kumar Dewangan",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/27-piyush.pdf"
         },
@@ -409,6 +433,7 @@ const UnivistaJournalPage = () => {
             id: 28,
             shortName: "An Experimental Study On The Mechanical Properties Of High-Strength Self-Compacting Concrete Mixes",
             title: "Pankaj Singh Thakur",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/28-Pankaj-Singh.pdf"
         },
@@ -416,6 +441,7 @@ const UnivistaJournalPage = () => {
             id: 29,
             shortName: "Experimental Investigation On The Use Of Fiber Reinforced Concrete In Rigid Pavement",
             title: "Anil Paikara",
+            duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/29-Anil.pdf"
         }
@@ -423,11 +449,10 @@ const UnivistaJournalPage = () => {
 
     // Derived values based on the selected archives tab
     const archiveTabs = [
-        { key: "issue1", label: "Volume 1 · Issue 1" },
-        { key: "issue2", label: "Volume 1 · Issue 2" }
+        { key: "issue1", label: "Vol. 1, Issue 1" },
+        { key: "issue2", label: "Vol. 1, Issue 2" }
     ];
     const activeArchivePrograms = activeArchiveTab === "issue1" ? archivesData : archivesIssue2Data;
-    const activeArchiveHeading = activeArchiveTab === "issue1" ? "Volume 1 Issues 1" : "Volume 1 Issues 2";
 
     const callForPapersData = [
         {
@@ -781,7 +806,6 @@ const UnivistaJournalPage = () => {
                 backgroundColor="bg-white"
                 textColor="text-gray-700"
                 titleColor="text-[var(--foreground)]"
-                listHeading={activeArchiveHeading}
                 topRightContent={
                     <div className="flex flex-wrap gap-2">
                         {archiveTabs.map((tab) => (

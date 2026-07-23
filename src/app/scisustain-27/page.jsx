@@ -13,13 +13,13 @@ const SciSustainConferencePage = () => {
 
     // Why Participate list
     const whyParticipateItems = [
-        { id: 1, text: "Present your latest research before an international audience." },
-        { id: 2, text: "Network with leading researchers, academicians, industries, and policymakers." },
-        { id: 3, text: "Learn emerging AI applications across scientific disciplines." },
-        { id: 4, text: "Explore collaborative research and funded project opportunities." },
-        { id: 5, text: "Publish in ISBN Conference Proceedings." },
-        { id: 6, text: "Selected papers recommended for publication in UGC-CARE Listed and Scopus-indexed Journals (as per journal policies)." },
-        { id: 7, text: "Young Researcher Award." },
+        { id: 1, text: "Present your latest research before an international audience" },
+        { id: 2, text: "Network with leading researchers, academicians, industries, and policymakers" },
+        { id: 3, text: "Learn emerging AI applications across scientific disciplines" },
+        { id: 4, text: "Explore collaborative research and funded project opportunities" },
+        { id: 5, text: "Publish in ISBN Conference Proceedings" },
+        { id: 6, text: "Selected papers recommended for publication in UGC-CARE Listed and Scopus-indexed Journals (as per journal policies)" },
+        { id: 7, text: "Young Researcher Award" },
         { id: 8, text: "Best Oral and Poster Presentation Awards." }
     ];
 
@@ -133,10 +133,7 @@ const SciSustainConferencePage = () => {
                 { category: "Industry Delegates", fee: "INR 3,000/-" },
                 { category: "International Participants", fee: "USD 75/-" }
             ],
-            footerContent: [
-                "50% Registration Fee Concession for Kalinga University and MoU Institutions.",
-                "10% Group Registration Discount (50 or more participants)."
-            ]
+            
         }
     ];
 
@@ -159,11 +156,16 @@ const SciSustainConferencePage = () => {
         {
             id: "publication-opportunities",
             question: "Publication Opportunities",
-            answer: [
-                "ISBN Conference Proceedings",
-                "Selected papers recommended for publication in UGC-CARE Listed Journals",
-                "Selected papers recommended for Scopus-indexed Journals (as per journal policies)"
-            ]
+            answer: `
+                <ul class="list-disc list-inside space-y-2">
+                    <li>ISBN Conference Proceedings</li>
+                    </ul>
+                    <p class="font-semibold mb-3 mt-5">Accepted papers will be published in:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Selected papers recommended for publication in UGC-CARE Listed Journals</li>
+                        <li>Selected papers recommended for Scopus-indexed Journals (as per journal policies)</li>
+                    </ul>
+                </ul>`
         },
         {
             id: "presentation-categories",
@@ -268,7 +270,7 @@ const SciSustainConferencePage = () => {
                 imageSrc="https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-green-campus/sdg-images-1.webp"
                 title="Why Participate?"
                 subtitle=""
-                description="Be a part of a global platform for AI-driven scientific innovation:"
+                description=""
             />
 
             {/* Conference Themes */}
@@ -321,7 +323,7 @@ const SciSustainConferencePage = () => {
             </section>
 
             {/* Call For Papers */}
-            <ImageContent
+            {/* <ImageContent
                 hasImage={true}
                 readmore={false}
                 className="items-center justify-center my-8 md:my-12 [&_img]:!w-[100px] [&_img]:!h-auto md:[&>img]:order-last md:[&>div]:order-first"
@@ -331,7 +333,7 @@ const SciSustainConferencePage = () => {
                 imageWidth={100}
                 imageHeight={100}
                 description="SciSustain 2027, organised by the Faculty of Science, Kalinga University, invites original research contributions across all conference themes. Selected papers will be published in ISBN Conference Proceedings, with recommendations for UGC-CARE Listed and Scopus-indexed Journals (as per journal policies)."
-            />
+            /> */}
 
             {/* Who Should Attend */}
             <ImageListItem
@@ -366,7 +368,7 @@ const SciSustainConferencePage = () => {
             />
 
             {/* Contact CTA */}
-            <OrganogramOfKalinga
+            {/* <OrganogramOfKalinga
                 title="Contact Us"
                 description={`<strong>For more queries, reach out to the conference coordinators.</strong><br/>📩 scisustain2027@kalingauniversity.ac.in`}
                 buttons={[
@@ -377,7 +379,7 @@ const SciSustainConferencePage = () => {
                     }
                 ]}
                 useContainer={true}
-            />
+            /> */}
 
             {/* Download Brochure */}
             <div className="mx-auto max-w-6xl px-4 md:px-6 mt-10 mb-6">

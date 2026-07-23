@@ -62,7 +62,7 @@ const DataTable = ({
       {title && (
         <h3 className="text-2xl pt-6 mb-4">{title}</h3>
       )}
-      <div className={`${overflowX ? "overflow-x-auto" : "overflow-hidden"} ${maxHeight ? `${maxHeight} overflow-y-auto` : ""} rounded-lg`}>
+      <div className={`custom-scrollbar ${overflowX ? "overflow-x-auto" : "overflow-hidden"} ${maxHeight ? `${maxHeight} overflow-y-auto` : ""} rounded-lg`}>
         <table className={`${overflowX ? "min-w-full w-max" : "w-full"}`} style={{ borderSpacing: 0, borderCollapse: 'separate' }}>
           <thead>
             <tr className={headerBgColor}>

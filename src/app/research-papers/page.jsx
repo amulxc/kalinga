@@ -47,6 +47,7 @@ export default function ResearchPapersPage() {
                                 tableId={tab.tableId}
                                 overflowX={true}
                                 nested={true}
+                                maxHeight="max-h-[600px]"
                             />
                         </TabsContent>
                     ))}

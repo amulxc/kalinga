@@ -113,6 +113,11 @@ const defaultButtons = [
     text: "Chairs and their Activities",
     href: "/chairs-and-their-activities",
   },
+  {
+    id: 18,
+    text: "Book Publications",
+    href: "/book-publications",
+  },
   // {
   //   id: 18,
   //   text: "IPR Cell",
