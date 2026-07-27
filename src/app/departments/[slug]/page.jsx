@@ -509,8 +509,7 @@ export default function DynamicDepartmentPage() {
           showKnowMore={mainIntroContent.showKnowMore}
           knowMoreLabel={mainIntroContent.knowMoreLabel}
           extraContent={
-            (departmentData?.name?.toUpperCase().includes("COMMERCE") ||
-              departmentData?.name?.toUpperCase().includes("MANAGEMENT")) && (
+            slug === "faculty-of-commerce-and-management" && (
               <div className="mt-8 flex flex-wrap gap-4">
                 <GlobalArrowButton
                   as={Link}
