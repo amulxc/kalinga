@@ -13,7 +13,8 @@ export default function LeadershipCard({
   showArrowButton = false,
   buttonText = "Know More",
   showReadMore = false,
-  onArrowClick
+  onArrowClick,
+  link = null // optional: renders a "Know More" button linking to this URL
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const NameTag = usePTagForName ? 'p' : 'h3';
@@ -54,6 +55,21 @@ export default function LeadershipCard({
           >
             {isExpanded ? "Read Less" : "Read More"}
           </button>
+        )}
+
+        {link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex items-center gap-2 rounded-lg bg-[var(--button-red)] px-4 py-2 text-white text-sm font-semibold hover:opacity-90 transition mt-2"
+          >
+            {buttonText}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
         )}
       </div>
 

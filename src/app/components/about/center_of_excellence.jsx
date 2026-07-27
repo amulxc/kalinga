@@ -196,6 +196,8 @@ export default function CenterOfExcellence({
                         image={centre.image}
                         usePTagForName={true}
                         showReadMore={showReadMore}
+                        link={centre.link}
+                        buttonText={centre.buttonText}
                       />
                     )}
                   </div>

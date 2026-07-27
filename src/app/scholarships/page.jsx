@@ -137,6 +137,19 @@ export default function ScholarshipsPage() {
     },
   ];
 
+   const Banksicici = [
+    {
+      id: 1,
+      name: "ICICI Bank",
+      title:
+        "ICICI Bank offers education loan assistance to eligible students seeking admission to Kalinga University as per the bank’s terms and conditions. For detailed information, refer to the PDF attached below.",
+      image:
+        "https://cdn.kalingauniversity.ac.in/scholarships/icici-bank.webp",
+      link: "https://cdn.kalingauniversity.ac.in/scholarships/ICICI-Bank-iSMART-Education-Loans.pdf",
+      buttonText: "Know More",
+    },
+  ];
+
   const scholarships = [
     {
       id: 1,
@@ -409,6 +422,33 @@ export default function ScholarshipsPage() {
           },
         }}
       />
+
+      <CenterOfExcellence
+          className="bg-white"
+          centres={Banksicici}
+          title=""
+          description=""
+          slidesPerView={1}
+          isContained={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1.2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 1.5,
+              spaceBetween: 24,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 2,
+              spaceBetween: 0,
+            },
+          }}
+        />
 
       {/* Slider cards */}
       <div className="hide-scholarship-cta">

@@ -137,7 +137,7 @@ const CountdownBanner = ({ targetDate }) => {
                 </div>
                 <div className="text-left">
                   <h4 className="text-sm md:text-[24px] font-medium tracking-normal !leading-tight mb-0.5">
-                    Phase 4 Admission Closes on 30th June 2026
+                    Phase 5 admissions close on 31st July 2026
                   </h4>
                 </div>
               </div>
