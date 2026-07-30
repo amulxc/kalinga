@@ -444,7 +444,336 @@ const UnivistaJournalPage = () => {
             duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/29-Anil.pdf"
+        },
+        {
+           id: 30,
+            shortName: "International Relations, Contemporary Issues, Challenges And Global Power Dynamics",
+            title: "Prachi Pandey",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/1-Prachi-Pandey.pdf" 
+        },
+        {
+           id: 31,
+            shortName: "Indian Loanwords In Digital Culture And Social Media",
+            title: "Saanvi Verma",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/2-Saanvi.pdf" 
+        },
+        {
+           id: 32,
+            shortName: "Meme Culture In Political Issues: An Examination Of Public Opinion, Political Communication, And Its Impact On Audience Perception In The Digital Era",
+            title: "Anjali Sharma",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/3-anjali-sharma-research-paper.pdf" 
+        },
+        {
+           id: 33,
+            shortName: "Role Of Youtube Journalism In Shaping Public Opinion Among Youth",
+            title: "Ank Pandey",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/4-Ank-pandey.pdf" 
+        },
+        {
+           id: 34,
+            shortName: "The Influence Of Environmental Science Journalism On Public Policy Discourse In India- An Analysis Of Media Framing And Agenda Setting",
+            title: "Aadya Anuska Pani",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/5-Aadya.pdf" 
+        },
+        {
+           id: 35,
+            shortName: "Influence Of Short Videos (Reels/Shorts) On Youth’s News Understanding",
+            title: "Nutan Chandrakar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/6-Nutan-Chandrakar.pdf" 
+        },
+        {
+           id: 36,
+            shortName: "Citizen Journalism And Media Ethics: Challenges And Opportunities",
+            title: "Garima Agrawal",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/7-Garima-Agrawal-JMS-A&H.pdf" 
+        },
+        {
+           id: 37,
+            shortName: "The Effect Of Ott Platforms On Television Advertising Revenue",
+            title: "Geetanjali Naik",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/8-GEETANJALI-NAIK.pdf" 
+        },
+        {
+           id: 38,
+            shortName: "PR 2.0: Navigating The Artificial Revolution In Public Relations Practices In The Current Era",
+            title: "Khushbu Shaw",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/9-Khushbu-Shaw.pdf" 
+        },
+        {
+           id: 39,
+            shortName: "Visual Storytelling Techniques In The Films Of Sanjay Leela Bhansali",
+            title: "Sandili Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/10-Sandili-Singh-Research-Paper-BAJMC.pdf" 
+        },
+        {
+           id: 40,
+            shortName: "Impact Of Instagram Usage On Self-Esteem Among University Students",
+            title: "Thabo Donald Maholela",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/11-Thabo-Maholela-Research-Paper-BAJMC.pdf" 
+        },
+        {
+           id: 41,
+            shortName: "Community Radio As A Tool For Development Communication In Raipur",
+            title: "Jiya Saluja",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/12%20JIYA%20SALUJA-RESEARCH%20PAPER.pdf" 
+        },
+        {
+           id: 42,
+            shortName: "A Study On The Exploring Online Media Trends In News Content",
+            title: "Takunda John Dzikadza",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/13%20Takunda%20John%20Dzikadza%20BAJMC.pdf" 
+        },
+        {
+           id: 43,
+            shortName: "The Role Of Parenting Styles In Child Behavioral Development",
+            title: "Barkha Jagat",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/14%20barkha.pdf" 
+        },
+        {
+           id: 44,
+            shortName: "Macro Behavioral Responses To Geopolitical Price Shocks: An Svar Analysis Of Imported Inflation In India",
+            title: "Rahul Sindhu, Dr. Bikash Behera",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/15%20Rahul%20Sindhu%20o.pdf" 
+        },
+        {
+           id: 45,
+            shortName: "The Impact Of Social Media On University Students",
+            title: "Dr Esha Chatterjee",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/16%20Dr%20Esha%20Chatterjee.pdf" 
+        },
+        {
+           id: 46,
+            shortName: "Cultural Harmony And Cross-Cultural Friendship In Rabindranath Tagore’s Kabuliwala",
+            title: "Aakash Barik",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/17%20Aakash%20Barik.pdf" 
+        },
+        {
+           id: 47,
+            shortName: "Digital Social Media And News: A New Age Journalism",
+            title: "Chetan Agrawal",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/18%20CHETAN%20AGRAWAL%20%20%20BAJMC%201.pdf" 
+        },
+        {
+           id: 48,
+            shortName: "Assesment On Political Campaign Among Youth Through Online Media Content",
+            title: "Anjali Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/20%20Anjali%20Singh%20MAJMC%20IV.pdf" 
+        },
+        {
+           id: 49,
+            shortName: "Spatial Patterns Of Urban Heat Island In Raipur City: An Analysis Based On Land Surface Temperature And Land Use Characteristics",
+            title: "Anushka Raj",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/21%20Anushka%20Raj.pdf" 
+        },
+        {
+           id: 50,
+            shortName: "Impact Of Youtube Journalism On Traditional Journalism",
+            title: "Priya Haldar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/22%20RESEARCH%20PAPER%20PRIYA.pdf" 
+        },
+        {
+           id: 51,
+            shortName: "Rise Of Instagram News Pages And Youth Engagement: Patterns, Perceptions, And Implications",
+            title: "Punam Kumari",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/23%20Poonam%20Kumari.pdf" 
+        },
+        {
+           id: 52,
+            shortName: "Impact Of Placebo On Variance Psychological Disorders A Secondary Data Analysis Of Published Research Datasets",
+            title: "Mr. Avinash Khandel",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/25%20Mr.%20Avinash%20Khandel.pdf" 
+        },
+        {
+           id: 53,
+            shortName: "Economic Benefits Of European Integration (European Union)",
+            title: "Ankita Subudhi",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/27%20Ankita%20Subudhi%20o.pdf" 
+        },
+        {
+           id: 54,
+            shortName: "The Effects Of Social Media On Mental Health Among Adolescents",
+            title: "Ankita Rathore",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/28%20Ankita%20Rathore%20o.pdf" 
+        },
+        {
+           id: 55,
+            shortName: "Financial Performance Of The Mahatma Gandhi National Rural Employment Guarantee Act In Chhattisgarh",
+            title: "Bipul Kumar Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/29%20Bipul%20Kumar%20Singh%20o.pdf" 
+        },
+        {
+           id: 56,
+            shortName: "Social Structure And Cultural Interaction In India During The Delhi Sultanate 1206-1526",
+            title: "Mohammad Aun Kamdar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/30%20Mohammad%20Aun%20Kamdar%20o.pdf" 
+        },
+        {
+           id: 57,
+            shortName: "Rural Development In India: Challenges, Policies, And Prospects",
+            title: "Alok Parihari",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/31%20Alok%20Parihari%20o.pdf" 
+        },
+        {
+           id: 58,
+            shortName: "Digital Payment Systems In India: Adoption, Growth, And Challenges",
+            title: "Harsh Kumar Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/32%20Harsh%20Kumar%20o.pdf" 
+        },
+        {
+           id: 59,
+            shortName: "Non-Banking Financial Corporations: Adoption, Growth & Challenges",
+            title: "Abhirup Banerjee",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/33%20Abhirup%20Banerjee%20o.pdf" 
+        },
+        {
+           id: 60,
+            shortName: "Historical Background Of The Indian Constitution: From British Acts To Independence (1773–1947)",
+            title: "Aastha Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/34%20Aastha%20Sahu%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Foundations Of Indian Foreign Policy Under Jawaharlal Nehru (1947-1964)",
+            title: "Veleena Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/35%20Veleena%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Indian Loanwords In Digital Culture And Social Media",
+            title: "Yamini Pal",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/36%20Yamini%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "The India–United Kingdom Comprehensive Economic And Trade Agreement",
+            title: "Devanshi Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/37%20Devanshi%20Singh%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Effect Of Sleep Deprivation On Cognitive Functions & Decision Making",
+            title: "Nidhi Garg",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/38%20Nidhi%20Garg%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Impact Of Inflation On Economic Growth In India",
+            title: "Rewant Mishra",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/39%20Renawat%20Mishra.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Re-Examining The 'Principled Distance': Constitutional Secularism In India And Its Contemporary Challenges",
+            title: "Anuradha Yadav",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/40%20Anuradha%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Mgnrega And Rural Livelihoods In India: A Decade-Long Empirical Assessment Of Employment, Wages, Poverty Reduction, And Social Equity (2014–2024)",
+            title: "Dhanendra Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/41%20Dhanendra%20Sahu%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Epistemic Rupture: Dalit Standpoint Theory And Counter-Historiography In Post-Colonial India",
+            title: "Dipendra Singh Dhruw",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/42%20Dipendra%20Singh%20Dhruw.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "Financial Inclusion In India Through The Pradhan Mantri Jan Dhan Yojana: A Decade Of Evidence (2014–2025)",
+            title: "Diksha Edikar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/43%20Diksha%20Edikar%20o.pdf" 
+        },
+        {
+           id: 61,
+            shortName: "A Comparative Study Of Mental Health Academic Stress Social Support And Well Being Among National And International University Students In Chhattisgarh",
+            title: "Janet Ruben Samuel",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/44%20Janet%20Ruben%20Samuel%20o.pdf" 
         }
+
     ];
 
     // Derived values based on the selected archives tab
