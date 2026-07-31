@@ -47,7 +47,7 @@ export default function PhdPage() {
     { id: 19, text: "UGC Notification Plagiarism 2018", href: "https://cdn.kalingauniversity.ac.in/phd/UGCNotification_Plagiarism_2018.pdf" },
     { id: 20, text: "UGC Regulation 2016", href: "https://cdn.kalingauniversity.ac.in/phd/UGC+Regulations+2016+(1).pdf" },
     // { id: 21, text: "Ph.D. Notification 2026", href: "https://cdn.kalingauniversity.ac.in/phd/Ph.+D.+2026+Notification.pdf" },
-    { id: 23, text: "Ph.d. Scholars", href: "https://cdn.kalingauniversity.ac.in/phd/DETAILS+OF+CURRENTLY+ENROLLED+Ph.D.+SCHOLARS+(1).pdf" },
+    { id: 23, text: "Ph.d. Scholars", href: "#" },
     { id: 24, text: "Ph.d. Supervisors", href: "https://cdn.kalingauniversity.ac.in/phd/DETAILS+OF+SUPERVISOR.pdf" },
     { id: 25, text: "Undertaking", href: "https://cdn.kalingauniversity.ac.in/phd/Undertaking+(1).pdf" },
   ];
