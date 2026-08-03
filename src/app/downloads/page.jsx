@@ -94,12 +94,12 @@ const downloadsreport = [
   {
     id: 17,
     text: "Application form and Affidavit format for the issue of a Duplicate Degree",
-    href: "https://cdn.kalingauniversity.ac.in/downloads/DUPLICATE_DEGREE_FORM.pdf",
+    href: "https://cdn.kalingauniversity.ac.in/forms/Duplicate-degree-form.pdf",
   },
   {
     id: 18,
     text: "Application form and Affidavit format for the issue of a Duplicate Marksheet",
-    href: "https://cdn.kalingauniversity.ac.in/downloads/DUPLICATE_DMC_FORM+(1).pdf",
+    href: "https://cdn.kalingauniversity.ac.in/forms/Duplicate-dmc-form.pdf",
   },
   {
     id: 18,
