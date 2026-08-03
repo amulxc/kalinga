@@ -34,7 +34,7 @@ const downloadsreport = [
   {
     id: 4,
     text: "Application for the Issue of Provisional Degree / Diploma",
-    href: "https://cdn.kalingauniversity.ac.in/downloads/APPLICATION_+FORM_PROVISIONAL+CERTIFICATE.pdf",
+    href: "https://cdn.kalingauniversity.ac.in/forms/Application-Form-provisional-Certificate.pdf",
   },
   {
     id: 5,
@@ -127,19 +127,7 @@ const downloadsreport = [
   },{
     id: 20,
     text: "Application Form For Issue of Attendance Certificate",
-    href: "https://cdn.kalingauniversity.ac.in/forms/Attendance+Certificate.docx",
-  },{
-    id: 20,
-    text: "",
-    href: "#",
-  },{
-    id: 20,
-    text: "",
-    href: "#",
-  },{
-    id: 20,
-    text: "",
-    href: "#",
+    href: "https://cdn.kalingauniversity.ac.in/forms/Attendance+Certificate.pdf",
   },
 
 
