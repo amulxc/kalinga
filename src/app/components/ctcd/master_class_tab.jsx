@@ -187,6 +187,30 @@ const defaultTab2Gallery = [
   },
 ];
 
+// Upcoming Masterclasses 2026-27 (each item carries its own popup `details`)
+const defaultUpcomingActivities = [
+  {
+    id: 'u1',
+    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/master-class.webp",
+    imageAlt: "Operational Excellence With Six Sigma",
+    title: "Operational Excellence With Six Sigma",
+    description: "Resource Person: Mr. Subodh Jain",
+    buttonText: "Read More",
+    date: "August 2026",
+    details: {
+      title: "Operational Excellence With Six Sigma",
+      date: "18.08.2026 to 20.08.2026",
+      time: "09:30 A.M. – 04:30 P.M.",
+      venue: "Vimtara, Shanti Nagar, Raipur, Chhattisgarh",
+      mode: "Offline",
+      resourcePerson: "Mr. Subodh Jain",
+      fee: "INR 7,500/-",
+      whoCanAttend: "Manufacturing, Energy, Mining, Healthcare, and Service Industries",
+      pdfUrl: "https://cdn.kalingauniversity.ac.in/ctcd/Operational-Excellence-with-Six-Sigma.pdf",
+    },
+  },
+];
+
 // Annual Masterclass Calendar Data 2025-26
 const masterclassCalendar = [
   {
@@ -334,6 +358,9 @@ export default function MasterClassTab({
   tab2GalleryclassName = "",
   showTab1Gallery = true,
   showTab2Gallery = true,
+  showUpcomingTab = false,
+  upcomingActivities = defaultUpcomingActivities,
+  upcomingTabLabel = "Upcoming Masterclasses 2026-27",
 }) {
   const [activeTab, setActiveTab] = useState('tab1');
   const [showCalendar, setShowCalendar] = useState(false);
@@ -370,9 +397,12 @@ export default function MasterClassTab({
     }
   }, [activities1]);
 
+  const upcoming = (upcomingActivities && upcomingActivities.length > 0) ? upcomingActivities : defaultUpcomingActivities;
+
   const tabs = [
     { id: 'tab1', label: 'Our Successful Masterclasses 2024-25' },
     { id: 'tab2', label: 'Annual Masterclass Calendar 2025-26' },
+    ...(showUpcomingTab ? [{ id: 'tab3', label: upcomingTabLabel }] : []),
   ];
 
   return (
@@ -661,6 +691,50 @@ export default function MasterClassTab({
               )}
             </>
           )}
+          {activeTab === 'tab3' && (
+            <div className="container mx-auto px-2 mt-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                {upcoming.map((activity) => (
+                  <div key={activity.id} className="w-full max-w-md h-full flex">
+                    <div className="bg-[var(--light-gray)] rounded-lg p-5 flex flex-col h-full w-full">
+                      <div className="relative w-full h-[250px]">
+                        <Image
+                          src={activity.imageSrc}
+                          alt={activity.imageAlt}
+                          fill
+                          className="rounded-lg object-cover"
+                        />
+                        {activity.date && (
+                          <div className="absolute bottom-3 right-3 bg-[var(--dark-orange-red-light)] px-3 py-1.5 rounded text-[#000] text-[11px] font-medium z-10">
+                            {activity.date}
+                          </div>
+                        )}
+                      </div>
+                      <h3 className="text-left text-lg mt-5 mb-2 leading-normal">
+                        {activity.title}
+                      </h3>
+                      <div className="text-left flex-grow text-neutral-800">
+                        <p className="m-0 text-sm">{activity.description}</p>
+                      </div>
+                      {activity.details && (
+                        <div className="mt-4">
+                          <GlobalArrowButton
+                            onClick={() => setSelectedMasterclass(activity.details)}
+                            className="w-fit !bg-[var(--light-gray)] !shadow-none hover:!shadow-none gap-3 !px-0"
+                            textClassName="!text-[var(--button-red)] !px-0"
+                            arrowClassName="p-[3px] !px-1 mr-2 !py-1 !bg-[var(--button-red)]"
+                            arrowIconClassName="!text-white"
+                          >
+                            {activity.buttonText || 'Read More'}
+                          </GlobalArrowButton>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -690,14 +764,42 @@ export default function MasterClassTab({
               </h2>
 
               <div className="space-y-4 mb-6">
-                <div>
-                  <span className="font-semibold text-gray-700">Date: </span>
-                  <span className="text-gray-600">{selectedMasterclass.date}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-gray-700">Resource Person: </span>
-                  <span className="text-gray-600">{selectedMasterclass.resourcePerson}</span>
-                </div>
+                {selectedMasterclass.date && (
+                  <div>
+                    <span className="font-semibold text-gray-700">Date: </span>
+                    <span className="text-gray-600">{selectedMasterclass.date}</span>
+                  </div>
+                )}
+                {selectedMasterclass.time && (
+                  <div>
+                    <span className="font-semibold text-gray-700">Time: </span>
+                    <span className="text-gray-600">{selectedMasterclass.time}</span>
+                  </div>
+                )}
+                {selectedMasterclass.venue && (
+                  <div>
+                    <span className="font-semibold text-gray-700">Venue: </span>
+                    <span className="text-gray-600">{selectedMasterclass.venue}</span>
+                  </div>
+                )}
+                {selectedMasterclass.mode && (
+                  <div>
+                    <span className="font-semibold text-gray-700">Mode: </span>
+                    <span className="text-gray-600">{selectedMasterclass.mode}</span>
+                  </div>
+                )}
+                {selectedMasterclass.resourcePerson && (
+                  <div>
+                    <span className="font-semibold text-gray-700">Resource Person: </span>
+                    <span className="text-gray-600">{selectedMasterclass.resourcePerson}</span>
+                  </div>
+                )}
+                {selectedMasterclass.fee && (
+                  <div>
+                    <span className="font-semibold text-gray-700">Fee: </span>
+                    <span className="text-gray-600">{selectedMasterclass.fee}</span>
+                  </div>
+                )}
                 {selectedMasterclass.pdfUrl && (
                   <div>
                     <a
@@ -712,22 +814,30 @@ export default function MasterClassTab({
                 )}
               </div>
 
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-[var(--foreground)] mb-3">Key Deliverables:</h3>
-                <ul className="space-y-2 text-gray-700 list-none">
-                  {selectedMasterclass.keyDeliverables.map((item, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="mr-2">➤</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {selectedMasterclass.keyDeliverables && selectedMasterclass.keyDeliverables.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-[var(--foreground)] mb-3">Key Deliverables:</h3>
+                  <ul className="space-y-2 text-gray-700 list-none">
+                    {selectedMasterclass.keyDeliverables.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="mr-2">➤</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
-              <div>
-                <h3 className="text-xl font-bold text-[var(--foreground)] mb-3">Who Attended?</h3>
-                <p className="text-gray-700">{selectedMasterclass.whoAttended}</p>
-              </div>
+              {(selectedMasterclass.whoCanAttend || selectedMasterclass.whoAttended) && (
+                <div>
+                  <h3 className="text-xl font-bold text-[var(--foreground)] mb-3">
+                    {selectedMasterclass.whoCanAttend ? "Who Can Attend?" : "Who Attended?"}
+                  </h3>
+                  <p className="text-gray-700">
+                    {selectedMasterclass.whoCanAttend || selectedMasterclass.whoAttended}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

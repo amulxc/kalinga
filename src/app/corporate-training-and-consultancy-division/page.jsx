@@ -365,6 +365,7 @@ export default function CorporateTrainingAndConsultancyDivision() {
         tab2Activities={masterclassActivities2}
         showTab1Gallery={false}
         showTab2Gallery={false}
+        showUpcomingTab={true}
       />
       <AdmissionSteps
         title="Our Training Cycle"

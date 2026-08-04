@@ -594,7 +594,7 @@ export default function OpenPositions({
                   {selectedPosition.skills && selectedPosition.skills.length > 0 && (
                     <div className="mb-6">
                       <h4 className="text-lg font-semibold text-[var(--button-red)] mb-2">
-                        Key Skills And Learning Outcome
+                        {selectedPosition.skillsLabel || "Key Skills And Learning Outcome"}
                       </h4>
                       <ul className="list-disc list-inside text-gray-700 space-y-1">
                         {selectedPosition.skills.map((skill, index) => (
@@ -604,7 +604,21 @@ export default function OpenPositions({
                     </div>
                   )}
 
-                  {/* Date and Price */}
+                  {/* What's Included */}
+                  {selectedPosition.included && selectedPosition.included.length > 0 && (
+                    <div className="mb-6">
+                      <h4 className="text-lg font-semibold text-[var(--button-red)] mb-2">
+                        What's Included?
+                      </h4>
+                      <ul className="list-disc list-inside text-gray-700 space-y-1">
+                        {selectedPosition.included.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Date, Venue and Price */}
                   <div className="flex flex-wrap gap-4 mb-4">
                     {selectedPosition.startDate && (
                       <div>
@@ -613,6 +627,12 @@ export default function OpenPositions({
                           {selectedPosition.startDate}
                           {selectedPosition.endDate ? ` - ${selectedPosition.endDate}` : ''}
                         </span>
+                      </div>
+                    )}
+                    {selectedPosition.venue && (
+                      <div>
+                        <span className="text-sm font-semibold text-gray-600">Venue: </span>
+                        <span className="text-gray-700">{selectedPosition.venue}</span>
                       </div>
                     )}
                     {selectedPosition.eligibility && (

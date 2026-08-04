@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import MainIntro from '../components/about/main_intro'
 import VisionMission from '../components/about/vision-mission'
@@ -21,6 +21,36 @@ import MediaCardSlider from "@/app/components/general/media-card-slider";
 
 const CentralInstrumentationFacilityPage = () => {
   const pathname = usePathname();
+
+  // Hands-On Training Programs tabs: 2025-26 / 2026-27
+  const [handsOnTab, setHandsOnTab] = useState('2025-26');
+
+  // Hands-On Training Programs 2026-27
+  const handsOnPrograms2627 = [
+    {
+      title: "Developing AI and Digital Skills for Effective Research",
+      startDate: "19.09.2026",
+      venue: "Kalinga University",
+      price: "INR 1,000/-",
+      applications: "Research & Data Analysis, Literature Review & Academic Writing, Data Visualization, Research Automation, AI-Assisted Scientific Research",
+      skills: [
+        "AI Tools for Research",
+        "Smart Literature Search Techniques",
+        "Research Data Management",
+        "AI-Assisted Writing & Referencing",
+        "AI-Based Data Analysis & Visualisation"
+      ],
+      skillsLabel: "What You'll Learn",
+      participants: "UG/PG/Ph.D. Students (All Disciplines), Research Scholars, Faculty Members, Industry Professionals",
+      included: ["Participation Certificate", "Lunch"],
+      resourcePerson: "Dr. Deepak Bishla and Dr. Shraddha Verma (In-Charge)",
+      imageUrl: "https://cdn.kalingauniversity.ac.in/cif-2.webp",
+      imageAlt: "Developing AI and Digital Skills for Effective Research",
+      knowMoreButton: "Know More",
+      registrationButton: "Register Now",
+      registrationLink: "https://forms.gle/NiWjy41RJpUSHj4N6"
+    }
+  ];
 
 
   const videoItems2 = [
@@ -266,6 +296,40 @@ const CentralInstrumentationFacilityPage = () => {
         swiperClassName="ccrc-video-slider"
         imageObjectPosition="object-bottom"
       />
+
+      {/* Hands-On Training Programs tabs */}
+      <div className="w-full px-2">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-8">
+          {[
+            { id: '2025-26', label: 'Hands-On Training Programs 2025-26' },
+            { id: '2026-27', label: 'Hands-On Training Programs 2026-27' },
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setHandsOnTab(tab.id)}
+              className={`font-plus-jakarta-sans text-sm md:text-base px-4 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-200 whitespace-normal md:whitespace-nowrap ${handsOnTab === tab.id
+                ? 'bg-[var(--button-red)] text-white font-semibold shadow-md'
+                : 'bg-[var(--lite-sand)] text-gray-800 font-normal hover:opacity-90'
+                }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {handsOnTab === '2026-27' && (
+        <OpenPositions
+          title="Hands-On Training Programs 2026-27"
+          subtitle=""
+          description=""
+          useCourseCardLayout={true}
+          initialVisibleCount={3}
+          positions={handsOnPrograms2627}
+        />
+      )}
+
+      {handsOnTab === '2025-26' && (
       <OpenPositions
         title="Hands-On Training Programs 2025-26"
         subtitle=""
@@ -615,6 +679,7 @@ const CentralInstrumentationFacilityPage = () => {
           return processedPositions;
         })()}
       />
+      )}
 
 
       <SampleTesting />

@@ -303,7 +303,7 @@ function NewsAndEvents() {
       description: 'Artificial Intelligence is rapidly transforming scientific discovery, innovation, and sustainable development across disciplines. SciSustain 2027 provides an international platform where researchers, academicians, scientists, industry experts, innovators, policymakers, and students converge to explore AI-enabled scientific solutions that address global sustainability challenges and align with the United Nations Sustainable Development Goals (SDGs).',
       date: '20.11.2026 - 21.11.2026',
       buttonText: 'Read More',
-      link: "/scisustain-27",
+      link: "/scisustain-2027",
     }
   ];
 
