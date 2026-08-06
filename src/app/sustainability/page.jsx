@@ -31,8 +31,19 @@ const SDG_ANNUAL_REPORTS = [
   },
 ];
 
-const SDG_POLICY_PDF =
-  "https://cdn.kalingauniversity.ac.in/sdg-cell/Sustainability+Policy_compressed.pdf";
+const SDG_POLICY_PDF = [
+  {
+    label: "Sustainability Policy",
+    pdfUrl:
+      "https://cdn.kalingauniversity.ac.in/sdg-cell/Sustainability+Policy_compressed.pdf",
+  },
+  {
+    label: "Composition of SDG Cell",
+    pdfUrl:
+      "https://cdn.kalingauniversity.ac.in/sdg-cell/Composition-of-SDG-Cell.pdf",
+  },
+
+  ]
 
 const SDG_OFFICE_ORDERS = [
   {
@@ -112,7 +123,15 @@ function SdgReportsAndPolicyTabs() {
         </div>
       )}
 
-      {tab === "policy" && <div className="max-w-xl">{pdfButton("Sustainability Policy", SDG_POLICY_PDF)}</div>}
+      {tab === "policy" && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 w-full max-w-2xl">
+          {SDG_POLICY_PDF.map((p) => (
+            <div key={p.pdfUrl} className="min-w-0">
+              {pdfButton(p.label, p.pdfUrl, "compact")}
+            </div>
+          ))}
+        </div>
+      )}
 
       {tab === "orders" && (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 w-full max-w-2xl">
