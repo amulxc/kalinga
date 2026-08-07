@@ -266,22 +266,6 @@ function NewsAndEvents() {
 
   const upcomingevents = [
     {
-      id: 'international-conference-icsdgf-2026',
-      title: 'International Conference On Sustainable Development Towards A Greener Future (ICSDGF-2026)',
-      description: 'International Conference on Sustainable Development towards a Greener Future” aims to provide a Comprehens i’ve platform for professionals, academics, researchers, policymakers, and industry Experts to discuss, share, and explore the latest advancements, applications, and potential Impacts of greener future on sustainable development.',
-      date: '31.03.2026 - 01.04.2026',
-      buttonText: 'Read More',
-      link: "https://kalingaplus.kalingauniversity.ac.in/international-conference-on-sustainable-development-towards-a-greener-future-icsdgf-2026/"
-    },
-    {
-      id: 'international-conference-ictl-2026',
-      title: 'International Conference On Transforming Libraries through AI for a Smarter Knowledge Future (ICTL-2026)',
-      description: 'The conference will serve as a significant platform for reflecting on the evolving role of libraries in an era increasingly shaped by artificial intelligence and digital transformation. The event will emphasise the need for libraries to adapt to emerging technologies in order to remain relevant, responsive, and impactful within academic and knowledge-driven societies. It will highlight how artificial intelligence will redefine traditional library functions and transform libraries into intelligent knowledge ecosystems.',
-      date: '19.06.2026 - 20.06.2026',
-      buttonText: 'Read More',
-      link: "https://cdn.kalingauniversity.ac.in/Transforming-Libraries-through-AI/International%20Conference.pdf"
-    },
-    {
       id: 'icdiacs-26',
       title: 'ICDIACS 2026',
       description: 'This conference aims to provide an international multidisciplinary platform for researchers, academicians, industry experts, and innovators to discuss recent advancements in Artificial Intelligence, Cybersecurity, Digital Intelligence, Intelligent Systems, Cloud Computing, IoT, Data Science, and Sustainable Digital Technologies. The conference focuses on promoting research and innovation that contribute toward sustainable technological growth and global development aligned with the United Nations Sustainable Development Goals (SDGs).',
@@ -304,7 +288,24 @@ function NewsAndEvents() {
       date: '20.11.2026 - 21.11.2026',
       buttonText: 'Read More',
       link: "/scisustain-2027",
+    },
+    {
+      id: 'icbtaisg-27',
+      title: 'ICBTAISG - 2027',
+      description: 'The global business environment is being reshaped by the convergence of Artificial Intelligence (AI), sustainability, and inclusive growth. Organisations must leverage AI-driven innovation while addressing ethical concerns, environmental responsibility, and social equity. As AI transforms industries through automation and intelligent decision-making, businesses also face challenges related to governance, workforce adaptation, and data privacy.',
+      date: '23.02.2027 - 24.02.2027',
+      buttonText: 'Read More',
+      link: "/ICBTAISG-2027",
+    },
+    {
+      id: 'indian-knowledge-systems',
+      title: 'Integration of Indian Knowledge Systems for Sustainable Development and Technological Transformation',
+      description: 'The global landscape is undergoing profound transformations driven by environmental challenges, technological advances, social inequalities, and shifting political dynamics. In this context, the pursuit of a sustainable future requires a multidisciplinary and inclusive approach — one that bridges the spheres of culture, society, and governance.',
+      date: '26.02.2027 - 27.02.2027',
+      buttonText: 'Read More',
+      link: "/indian-knowledge-systems",
     }
+
   ];
 
 
