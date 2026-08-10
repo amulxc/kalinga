@@ -303,7 +303,7 @@ function NewsAndEvents() {
       description: 'The global landscape is undergoing profound transformations driven by environmental challenges, technological advances, social inequalities, and shifting political dynamics. In this context, the pursuit of a sustainable future requires a multidisciplinary and inclusive approach — one that bridges the spheres of culture, society, and governance.',
       date: '26.02.2027 - 27.02.2027',
       buttonText: 'Read More',
-      link: "/indian-knowledge-systems",
+      link: "/Indian-knowledge-systems",
     }
 
   ];
