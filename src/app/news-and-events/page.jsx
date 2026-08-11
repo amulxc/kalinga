@@ -304,6 +304,14 @@ function NewsAndEvents() {
       date: '26.02.2027 - 27.02.2027',
       buttonText: 'Read More',
       link: "/Indian-knowledge-systems",
+    },
+    {
+      id: 'iceasre-2027',
+      title: 'International Conference On Engineering, Agritech & Sustainable Rural Ecosystems - ICEASRE-2027',
+      description: 'The International Conference on Engineering, Agritech and Sustainable Rural Ecosystems (ICEASRE-2027) aims to provide a comprehensive platform for professionals, academics, researchers, policymakers, and industry experts to discuss, share, and explore the latest advancements, applications, and potential impacts of a greener future on sustainable development.',
+      date: '12.03.2027 - 13.03.2027',
+      buttonText: 'Read More',
+      link: "/iceasre-2027",
     }
 
   ];
