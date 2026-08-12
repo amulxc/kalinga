@@ -290,6 +290,14 @@ function NewsAndEvents() {
       link: "/ai-for-humanity-27",
     },
     {
+      id: 'scisustain-27',
+      title: 'SciSustain 2027',
+      description: 'Artificial Intelligence is rapidly transforming scientific discovery, innovation, and sustainable development across disciplines. SciSustain 2027 provides an international platform where researchers, academicians, scientists, industry experts, innovators, policymakers, and students converge to explore AI-enabled scientific solutions that address global sustainability challenges and align with the United Nations Sustainable Development Goals (SDGs).',
+      date: '19.01.2027 - 20.01.2027',
+      buttonText: 'Read More',
+      link: "/scisustain-2027",
+    },
+    {
       id: 'icbtaisg-27',
       title: 'ICBTAISG - 2027',
       description: 'The global business environment is being reshaped by the convergence of Artificial Intelligence (AI), sustainability, and inclusive growth. Organisations must leverage AI-driven innovation while addressing ethical concerns, environmental responsibility, and social equity. As AI transforms industries through automation and intelligent decision-making, businesses also face challenges related to governance, workforce adaptation, and data privacy.',
