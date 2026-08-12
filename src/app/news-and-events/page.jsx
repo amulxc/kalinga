@@ -282,12 +282,12 @@ function NewsAndEvents() {
       link: "https://kalingauniversity.ac.in/law-organize-two-days-conference",
     },
     {
-      id: 'scisustain-27',
-      title: 'SciSustain 2027',
-      description: 'Artificial Intelligence is rapidly transforming scientific discovery, innovation, and sustainable development across disciplines. SciSustain 2027 provides an international platform where researchers, academicians, scientists, industry experts, innovators, policymakers, and students converge to explore AI-enabled scientific solutions that address global sustainability challenges and align with the United Nations Sustainable Development Goals (SDGs).',
-      date: '20.11.2026 - 21.11.2026',
+      id: 'ai-for-humanity-27',
+      title: 'AI For Humanity 2027',
+      description: 'The Faculty of Education at Kalinga University, Naya Raipur, is a beacon of knowledge and innovation. With a team of highly qualified and experienced faculty members, it offers comprehensive and industry-aligned programs for aspiring educators. The Department focuses not just on theoretical knowledge but also on practical application through internships and hands-on experiences. Kalinga University Faculty of Education instils in its students a passion for teaching, equipping them with the skills and expertise needed to excel in their careers and make a meaningful impact in the field of education.',
+      date: '22.01.2027 - 23.01.2027',
       buttonText: 'Read More',
-      link: "/scisustain-2027",
+      link: "/ai-for-humanity-27",
     },
     {
       id: 'icbtaisg-27',
@@ -312,6 +312,14 @@ function NewsAndEvents() {
       date: '12.03.2027 - 13.03.2027',
       buttonText: 'Read More',
       link: "/iceasre-2027",
+    },
+    {
+      id: 'viksit-bharat-2047',
+      title: 'International Conference on AI and Translational Innovations in Pharmaceutical Sciences and Healthcare for Viksit Bharat @2047',
+      description: 'The conference aims to provide a dynamic platform for researchers, academicians, healthcare professionals, industry experts, and students to discuss the transformative role of Artificial Intelligence and translational research in advancing healthcare in India. The conference will focus on emerging areas such as AI-driven drug discovery, precision medicine, digital healthcare, pharmacovigilance, bioinformatics, smart drug delivery, and clinical research.',
+      date: '30.03.2027 - 31.03.2027',
+      buttonText: 'Read More',
+      link: "/viksit-bharat-2047",
     }
 
   ];

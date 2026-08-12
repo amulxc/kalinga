@@ -365,7 +365,7 @@ const ICDIACSConferencePage = () => {
             />
 
             {/* ================= ABOUT KALINGA UNIVERSITY ================= */}
-            <MainIntro
+            {/* <MainIntro
                 title="About Kalinga University"
                 subtitle=""
                 description={[
@@ -373,23 +373,23 @@ const ICDIACSConferencePage = () => {
                 ]}
                 imageUrl="https://cdn.kalingauniversity.ac.in/Home/about-kalinga.webp"
                 imageAlt="Kalinga University Campus"
-            />
+            /> */}
 
-            <PublicationGrid stats={universityStats} />
+            {/* <PublicationGrid stats={universityStats} /> */}
 
             {/* ================= ABOUT RAIPUR ================= */}
-            <MainIntro
-                title="About Raipur"
-                subtitle=""
-                description={[
-                    "Raipur, the capital city of Chhattisgarh, is a blend of culture, heritage, and development. It is one of the fastest-developing cities of India and has become a centre of attraction in education, infrastructure, tourism, business, and Innovation. The city is famous for temples, parks, animal sanctuaries, the Shaheed Veer Narayan Singh International Cricket Stadium, food joints, shopping places, malls, & tribal heritage sites. It is home to some of the largest steel plants, IT industries, and manufacturing units."
-                ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/about-raipur/raipur1.webp"
-                imageAlt="Raipur City"
-            />
+                {/* <MainIntro
+                    title="About Raipur"
+                    subtitle=""
+                    description={[
+                        "Raipur, the capital city of Chhattisgarh, is a blend of culture, heritage, and development. It is one of the fastest-developing cities of India and has become a centre of attraction in education, infrastructure, tourism, business, and Innovation. The city is famous for temples, parks, animal sanctuaries, the Shaheed Veer Narayan Singh International Cricket Stadium, food joints, shopping places, malls, & tribal heritage sites. It is home to some of the largest steel plants, IT industries, and manufacturing units."
+                    ]}
+                    imageUrl="https://cdn.kalingauniversity.ac.in/about-raipur/raipur1.webp"
+                    imageAlt="Raipur City"
+                /> */}
 
             {/* ================= ABOUT NEW RAIPUR ================= */}
-            <MainIntro
+            {/* <MainIntro
                 title="About New Raipur"
                 subtitle=""
                 description={[
@@ -399,16 +399,16 @@ const ICDIACSConferencePage = () => {
                 imageAlt="New Raipur Smart City"
                 reverseLayout={true}
                 sectionClassName="md:py-16 bg-[var(--lite-sand)] py-16 !pb-20"
-            />
+            /> */}
 
             {/* ================= OBJECTIVES OF NEW RAIPUR ================= */}
-            <ImageListItem
+            {/* <ImageListItem
                 items={newRaipurObjectives}
                 imageSrc="https://cdn.kalingauniversity.ac.in/about-raipur/gallery/raipur-images-2.jpg"
                 title="Objectives of New Raipur"
                 subtitle=""
                 description=""
-            />
+            /> */}
 
             {/* ================= CONFERENCE OBJECTIVES & SCOPE ================= */}
             <MainIntro

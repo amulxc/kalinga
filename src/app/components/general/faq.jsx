@@ -66,6 +66,7 @@ const FAQ = ({
   ],
   tableData = [],
   tableSections = [], // Array of { id, title, data } for multiple sections
+  expandAllSections = false, // table-display: start every section open and allow multiple open at once
   overflowX = false,
   pyClassName = "py-16",
   headerBgColor = "bg-[var(--dark-blue)]", // Background color for table header
@@ -524,9 +525,27 @@ const FAQ = ({
       return null
     })
 
+    // expandAllSections: every section starts open and each toggles independently
+    const [multiOpenIds, setMultiOpenIds] = useState(() => {
+      if (!expandAllSections) return new Set()
+      return new Set(tableSectionsList.map((s, idx) => `table-${s.id || idx}`))
+    })
+
+    const isSectionOpen = (fullId) =>
+      expandAllSections ? multiOpenIds.has(fullId) : unifiedOpenId === fullId
+
     // Unified toggle function for both types - only one can be open at a time
     const toggleUnified = (id, type) => {
       const fullId = `${type}-${id}`
+      if (expandAllSections) {
+        setMultiOpenIds(prev => {
+          const next = new Set(prev)
+          if (next.has(fullId)) next.delete(fullId)
+          else next.add(fullId)
+          return next
+        })
+        return
+      }
       setUnifiedOpenId(prev => prev === fullId ? null : fullId)
     }
 
@@ -611,7 +630,7 @@ const FAQ = ({
             {tableSectionsList.map((section, index) => {
               const sectionId = section.id || index
               const fullId = `table-${sectionId}`
-              const isOpen = unifiedOpenId === fullId
+              const isOpen = isSectionOpen(fullId)
 
               return (
                 <div key={section.id || index} id={section.slug || slugify(section.title)} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm">

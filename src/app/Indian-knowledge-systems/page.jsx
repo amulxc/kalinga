@@ -316,7 +316,7 @@ const IndianKnowledgeSystemsConferencePage = () => {
                     </div>
 
                     <a
-                        href="#"
+                        href="https://cdn.kalingauniversity.ac.in/conferences/indian-knowledge/arts-&-humanities-2026-27.pdf"
                         download
                         target="_blank"
                         rel="noreferrer"

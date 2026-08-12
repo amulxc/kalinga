@@ -320,6 +320,14 @@ const JournalOfLawAndAIPage = () => {
             slug: "https://cdn.kalingauniversity.ac.in/departments/journal-of-law-and-artificial-intelligence/5.+Mr.+Pankaj+Chhuttani.pdf"
         },
         {
+            id: 100,
+            shortName: "Frontmatter",
+            title: "Vol. 2, Issue 1",
+            duration: "",
+            level: "VOL 2",
+            slug: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/vol-2-issues-1/Frontmatter.pdf"
+        },
+        {
             id: 101,
             shortName: "Shruti navratna & Ekta Chandrakar",
             title: "Vol. 2, Issue 1",

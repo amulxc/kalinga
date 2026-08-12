@@ -581,7 +581,7 @@ const LawConferencePage = () => {
             </section>
 
 
-            <MainIntro
+           {/* <MainIntro
                 title="About Kalinga University"
                 subtitle=""
                 description={[
@@ -594,8 +594,8 @@ const LawConferencePage = () => {
                 ]}
                 imageUrl="https://cdn.kalingauniversity.ac.in/academic-facilities/mootcourt.webp"
                 imageAlt="Kalinga University Campus"
-            />
-            <PublicationGrid stats={publicationdata} />
+            /> */}
+            {/* <PublicationGrid stats={publicationdata} /> */}
             <MainIntro
                 title="About The Faculty Of Law"
                 subtitle=""

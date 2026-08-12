@@ -28,6 +28,29 @@ const AIForHumanityConferencePage = () => {
         { id: 12, title: 'Laboratories', value: '100+', description: 'State-of-the-art lab facilities.' }
     ];
 
+    /* ---------------- ALIGNED UN SDGs ----------------
+       Official UN icon set on the CDN, zero-padded ids —
+       same source the SDG Cell grid uses (components/sdg-cell/sdg-image-grid.jsx). */
+    const alignedSdgs = [
+        { id: 3, label: "Good Health and Well-being" },
+        { id: 4, label: "Quality Education" },
+        { id: 5, label: "Gender Equality" },
+        { id: 6, label: "Clean Water and Sanitation" },
+        { id: 7, label: "Affordable and Clean Energy" },
+        { id: 8, label: "Decent Work and Economic Growth" },
+        { id: 9, label: "Industry, Innovation and Infrastructure" },
+        { id: 10, label: "Reduced Inequalities" },
+        { id: 11, label: "Sustainable Cities and Communities" },
+        { id: 12, label: "Responsible Consumption and Production" },
+        { id: 13, label: "Climate Action" },
+        { id: 15, label: "Life on Land" },
+        { id: 16, label: "Peace, Justice and Strong Institutions" },
+        { id: 17, label: "Partnerships for the Goals" }
+    ].map(sdg => ({
+        ...sdg,
+        image: `https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-logo/E-WEB-Goal-${String(sdg.id).padStart(2, "0")}.png`
+    }));
+
     /* ---------------- SUB-THEMES ---------------- */
     const subThemesLeft = [
         {
@@ -332,9 +355,18 @@ const AIForHumanityConferencePage = () => {
             {/* ================= HERO ================= */}
             <section className="py-12 md:py-16 text-center bg-white border-b border-gray-100">
                 <div className="container mx-auto px-4">
-                    <h5 className="font-bold text-[var(--button-red)] titlecase tracking-[0.2em] text-sm md:text-base mb-2">
+                    <h5 className="font-bold text-[var(--button-red)] titlecase tracking-[0.2em] text-sm md:text-base mb-4">
                         Faculty of Education
                     </h5>
+                    <div className="flex justify-center mb-4">
+                        <div className="w-28 h-28 md:w-32 md:h-32 rounded-xl overflow-hidden bg-white p-2 border border-gray-100 shadow-sm">
+                            <img
+                                src="https://cdn.kalingauniversity.ac.in/conferences/ai-humanity-27/educraft-club.webp"
+                                alt="EduCraft Club, Faculty of Education"
+                                className="w-full h-full object-contain rounded-lg"
+                            />
+                        </div>
+                    </div>
                     <p className="font-bold text-gray-400 uppercase tracking-[0.3em] text-[10px] md:text-xs mb-8">
                         ORGANISES
                     </p>
@@ -367,21 +399,27 @@ const AIForHumanityConferencePage = () => {
                         <h3 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight titlecase max-w-4xl mx-auto mb-6">
                             Aligned With UN Sustainable Development Goals (SDGs)
                         </h3>
-                        <div className="flex justify-center items-center">
-                            <div className="w-28 h-28 md:w-32 md:h-32 relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white p-1 border border-gray-100">
-                                <img
-                                    src="https://cdn.kalingauniversity.ac.in/law-conference/sustainability-4.webp"
-                                    alt="SDG 4 - Quality Education"
-                                    className="w-full h-full object-contain rounded-lg"
-                                />
-                            </div>
+                        <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 max-w-4xl mx-auto">
+                            {alignedSdgs.map(sdg => (
+                                <div
+                                    key={sdg.id}
+                                    title={`SDG ${sdg.id} - ${sdg.label}`}
+                                    className="w-24 h-24 md:w-28 md:h-28 relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white p-1 border border-gray-100"
+                                >
+                                    <img
+                                        src={sdg.image}
+                                        alt={`SDG ${sdg.id} - ${sdg.label}`}
+                                        className="w-full h-full object-contain rounded-lg"
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ================= ABOUT KALINGA UNIVERSITY ================= */}
-            <MainIntro
+            {/* <MainIntro
                 title="About Kalinga University"
                 subtitle=""
                 description={[
@@ -389,9 +427,9 @@ const AIForHumanityConferencePage = () => {
                 ]}
                 imageUrl="https://cdn.kalingauniversity.ac.in/Home/about-kalinga.webp"
                 imageAlt="Kalinga University Campus"
-            />
+            /> */}
 
-            <PublicationGrid stats={universityStats} />
+            {/* <PublicationGrid stats={universityStats} /> */}
 
             {/* ================= ABOUT THE FACULTY OF EDUCATION ================= */}
             <MainIntro
