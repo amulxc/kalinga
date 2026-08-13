@@ -196,7 +196,7 @@ const IQACPage = () => {
       />
       <TwoLogo logos={MentorIntroProps[0].logos} />
       {/* <PublicationGrid stats={publicationStats} /> */}
-      <DeptHeadIntro items={MentorIntroProps} className="pt-10 pb-20" />
+      {/* <DeptHeadIntro items={MentorIntroProps} className="pt-10 pb-20" />*/}
       <CareerPath
         title={skillsContent.title}
         description={skillsContent.description}
