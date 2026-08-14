@@ -191,7 +191,7 @@ const defaultTab2Gallery = [
 const defaultUpcomingActivities = [
   {
     id: 'u1',
-    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/master-class.webp",
+    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/upcoming-27/images-1.jpg",
     imageAlt: "Operational Excellence With Six Sigma",
     title: "Operational Excellence With Six Sigma",
     description: "Resource Person: Mr. Subodh Jain",
@@ -208,6 +208,48 @@ const defaultUpcomingActivities = [
       whoCanAttend: "Manufacturing, Energy, Mining, Healthcare, and Service Industries",
       pdfUrl: "https://cdn.kalingauniversity.ac.in/ctcd/Operational-Excellence-with-Six-Sigma.pdf",
     },
+  },
+  // No `details` on the entries below - photos and full details to be added later,
+  // so these render without a Read More button / popup.
+  {
+    id: 'u2',
+    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/upcoming-27/images-2.jpg",
+    imageAlt: "AI-Powered HR Professional - The Future of HR in an AI-Enabled Workplace",
+    title: "AI-Powered HR Professional - The Future of HR in an AI-Enabled Workplace",
+    description: "",
+    date: "October 2026",
+  },
+  {
+    id: 'u3',
+    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/upcoming-27/images-3.jpg",
+    imageAlt: "Resilient Leadership in High-Performance Workplaces",
+    title: "Resilient Leadership in High-Performance Workplaces",
+    description: "",
+    date: "December 2026",
+  },
+  {
+    id: 'u4',
+    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/upcoming-27/images-4.jpg",
+    imageAlt: "Future Skills 2030 / Skills for Industry 5.0",
+    title: "Future Skills 2030 / Skills for Industry 5.0",
+    description: "",
+    date: "February 2027",
+  },
+  {
+    id: 'u5',
+    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/upcoming-27/images-5.jpg",
+    imageAlt: "Business Analytics Tools: Making Technology Work For You",
+    title: "Business Analytics Tools: Making Technology Work For You",
+    description: "",
+    date: "April 2027",
+  },
+  {
+    id: 'u6',
+    imageSrc: "https://cdn.kalingauniversity.ac.in/ctcd/upcoming-27/images-6.jpg",
+    imageAlt: "Strategic HR: From Support Function To Business Driver",
+    title: "Strategic HR: From Support Function To Business Driver",
+    description: "",
+    date: "June 2027",
   },
 ];
 
@@ -693,9 +735,25 @@ export default function MasterClassTab({
           )}
           {activeTab === 'tab3' && (
             <div className="container mx-auto px-2 mt-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+              <Swiper
+                modules={[Navigation, Autoplay]}
+                spaceBetween={24}
+                slidesPerView={1.2}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                loop={upcoming.length > 3}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 32,
+                  },
+                }}
+                className="student-activities-swiper [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:items-stretch [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex"
+              >
                 {upcoming.map((activity) => (
-                  <div key={activity.id} className="w-full max-w-md h-full flex">
+                  <SwiperSlide key={activity.id}>
                     <div className="bg-[var(--light-gray)] rounded-lg p-5 flex flex-col h-full w-full">
                       <div className="relative w-full h-[250px]">
                         <Image
@@ -730,9 +788,9 @@ export default function MasterClassTab({
                         </div>
                       )}
                     </div>
-                  </div>
+                  </SwiperSlide>
                 ))}
-              </div>
+              </Swiper>
             </div>
           )}
         </div>

@@ -49,6 +49,151 @@ const CentralInstrumentationFacilityPage = () => {
       knowMoreButton: "Know More",
       registrationButton: "Register Now",
       registrationLink: "https://forms.gle/NiWjy41RJpUSHj4N6"
+    },
+    // Workshops below have no `knowMoreButton` / `registrationButton`, so they render
+    // without a Know More popup. `skillsLabel` falls back to "Key Skills And Learning Outcome".
+    {
+      title: "SEM & Microscopy",
+      startDate: "26.09.2026",
+      skills: [
+        "SEM Principles",
+        "Sample Preparation Methods",
+        "Elemental Composition Analysis",
+        "Microstructural Features Analysis",
+        "Image Capturing"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-1.jpg",
+      imageAlt: "SEM & Microscopy"
+    },
+    {
+      title: "Foreign Exchange & Commodity Market",
+      startDate: "09.10.2026",
+      skills: [
+        "Foreign Exchange Market Fundamentals",
+        "Commodity Market Basics",
+        "Currency & Commodity Trading Strategies",
+        "Market Analysis & Price Trends",
+        "Risk Management Techniques"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-2.jpg",
+      imageAlt: "Foreign Exchange & Commodity Market"
+    },
+    {
+      title: "Legal Drafting",
+      startDate: "10.10.2026",
+      skills: [
+        "Legal Research Methodology",
+        "Case Law & Statutory Research",
+        "Legal Writing Techniques",
+        "Citation & Referencing Methods",
+        "Drafting Legal Documents"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-3.jpg",
+      imageAlt: "Legal Drafting"
+    },
+    {
+      title: "3D Printing",
+      startDate: "23.01.2027",
+      skills: [
+        "Introduction to 3D Printing Technologies",
+        "CAD Modeling",
+        "Material Selection Techniques",
+        "Post-Processing Methods",
+        "Design Optimization Strategies"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-4.jpg",
+      imageAlt: "3D Printing"
+    },
+    {
+      title: "Molecular Techniques (PCR, Electrophoresis, UV Transilluminator)",
+      startDate: "06.02.2027",
+      skills: [
+        "Polymerase Chain Reaction Techniques",
+        "Gel Electrophoresis & DNA Separation",
+        "UV Transilluminator Handling",
+        "Molecular Data Interpretation",
+        "DNA & RNA Extraction and Quantification"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-5.jpg",
+      imageAlt: "Molecular Techniques (PCR, Electrophoresis, UV Transilluminator)"
+    },
+    {
+      title: "Protein Estimation & Biochemistry Analyser",
+      startDate: "13.02.2027",
+      skills: [
+        "Protein Quantification Techniques",
+        "Biochemical Assay Handling",
+        "Enzyme Activity Measurement",
+        "Operating Biochemistry Analysers",
+        "Sample Preparation Techniques"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-6.jpg",
+      imageAlt: "Protein Estimation & Biochemistry Analyser"
+    },
+    {
+      title: "Electrical Vehicle",
+      startDate: "13.02.2027",
+      skills: [
+        "Fundamentals of EVs",
+        "Hands-on Training with EV Components",
+        "Battery Management & Charging Systems",
+        "Power Electronics & Motor Control",
+        "EV Simulation & Modelling Tools",
+        "Safety Guidelines & Industry Standards"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-7.jpg",
+      imageAlt: "Electrical Vehicle"
+    },
+    {
+      title: "Advanced Instrumentation & Water Analysis",
+      startDate: "20.02.2027",
+      skills: [
+        "Water Quality Testing",
+        "Spectroscopy Techniques",
+        "Equipment Calibration",
+        "Data Collection and Interpretation",
+        "Hands-on Training with Advanced Tools"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-8.jpg",
+      imageAlt: "Advanced Instrumentation & Water Analysis"
+    },
+    {
+      title: "High-Performance Liquid Chromatography",
+      startDate: "27.02.2027",
+      skills: [
+        "Principles of HPLC",
+        "Instrument Setup",
+        "Sample Preparation",
+        "Method Development",
+        "Data Interpretation Techniques"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-1.jpg",
+      imageAlt: "High-Performance Liquid Chromatography"
+    },
+    {
+      title: "Microsoft Power Business Intelligence",
+      startDate: "13.03.2027",
+      skills: [
+        "Power BI Tools",
+        "Data Visualisation",
+        "Automate Data Workflows",
+        "Dashboard Designing",
+        "Business Intelligence Integration"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-2.jpg",
+      imageAlt: "Microsoft Power Business Intelligence"
+    },
+    {
+      title: "X-Ray Diffractometer",
+      startDate: "10.04.2027",
+      skills: [
+        "XRD Principles",
+        "Diffraction Pattern Analysis",
+        "Sample Preparation",
+        "Phase Identification Techniques"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-3.jpg",
+      imageAlt: "X-Ray Diffractometer"
     }
   ];
 
