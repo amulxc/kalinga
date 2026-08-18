@@ -145,6 +145,11 @@ const certificates = [
 // ================= IIC TRAINING ACHIEVEMENTS =================
 const iicTrainingAchievements = [
   {
+    id: 5,
+    image: "/images/iic/iic-8.0-achievement.jpeg",
+    alt: "IIC 8.0 Achievement",
+  },
+  {
     id: 1,
     image: "https://cdn.kalingauniversity.ac.in/IIC/chart+(7).png",
     alt: "IIC Training Achievement 1",
@@ -386,6 +391,7 @@ export default function InstitutionInnovationCouncil() {
             paddingClassName="py-0"
             forceSliderOnMobile={true}
             title={false}
+            enableLightbox={true}
           />
         </div>
       </section>
@@ -405,6 +411,7 @@ export default function InstitutionInnovationCouncil() {
             paddingClassName="py-0"
             forceSliderOnMobile={true}
             title={false}
+            enableLightbox={true}
           />
         </div>
       </section>
@@ -424,6 +431,7 @@ export default function InstitutionInnovationCouncil() {
             paddingClassName="py-0"
             forceSliderOnMobile={true}
             title={false}
+            enableLightbox={true}
           />
         </div>
       </section>
@@ -473,7 +481,7 @@ Kalinga University hosted its first session of the Impact Lecture Series on 15th
       </section>
       <Gallery
         title="Glimpses"
-
+        enableLightbox={true}
         images={[
           { id: 1, image: "https://cdn.kalingauniversity.ac.in/IIC/DSC06210.jpg", alt: "Institution Innovation Council" },
           { id: 2, image: "https://cdn.kalingauniversity.ac.in/IIC/Vikshit+Bharat.jpg", alt: "Institution Innovation Council" },

@@ -70,6 +70,7 @@ export default function StudentActivities({
   showReadMore = true,
   fallbackToGlobal = false,
   useModal = false,
+  autoplay = true,
 }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -292,10 +293,7 @@ export default function StudentActivities({
               modules={[Navigation, Autoplay]}
               spaceBetween={24}
               slidesPerView={1.2}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
+              autoplay={autoplay ? { delay: 3000, disableOnInteraction: false } : false}
               loop={true}
               breakpoints={{
                 768: {
@@ -335,10 +333,7 @@ export default function StudentActivities({
                   modules={[Navigation, Autoplay]}
                   spaceBetween={24}
                   slidesPerView={1}
-                  autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                  }}
+                  autoplay={autoplay ? { delay: 3000, disableOnInteraction: false } : false}
                   loop={activities.length > 1}
                   navigation={{
                     prevEl: mobilePrevRef.current,

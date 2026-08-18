@@ -363,6 +363,7 @@ function NewsAndEvents() {
         subtitle=""
         activities={upcomingevents}
         useModal={true}
+        autoplay={false}
       />
       <MediaCardSlider
         title="Industrial Visits"

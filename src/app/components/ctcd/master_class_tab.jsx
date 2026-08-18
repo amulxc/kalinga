@@ -390,6 +390,59 @@ const masterclassDetails = {
   }
 };
 
+// Slider navigation arrows (shared by the masterclass carousels)
+const SliderNavButtons = ({ prevRef, nextRef, className = "" }) => (
+  <div className={`flex justify-center items-center gap-3 mt-8 ${className}`}>
+    <button
+      ref={prevRef}
+      type="button"
+      aria-label="Previous slide"
+      className="student-activities-swiper-button-prev w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md"
+    >
+      <svg
+        width="25"
+        height="25"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="text-white transition-colors"
+      >
+        <path
+          d="M10 12L6 8L10 4"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
+
+    <button
+      ref={nextRef}
+      type="button"
+      aria-label="Next slide"
+      className="student-activities-swiper-button-next w-12 h-12 rounded-lg bg-[var(--button-red)] hover:bg-[#A2A2A2] flex items-center justify-center hover:opacity-90 transition-opacity shadow-md"
+    >
+      <svg
+        width="25"
+        height="25"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="text-white transition-colors"
+      >
+        <path
+          d="M6 4L10 8L6 12"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+);
+
 export default function MasterClassTab({
   tab1Activities = defaultTab1Activities,
   tab1Gallery = defaultTab1Gallery,
@@ -413,6 +466,9 @@ export default function MasterClassTab({
   const mobilePrevRef = useRef(null);
   const mobileNextRef = useRef(null);
   const mobileSwiperRef = useRef(null);
+  const upcomingPrevRef = useRef(null);
+  const upcomingNextRef = useRef(null);
+  const upcomingSwiperRef = useRef(null);
 
   // Ensure we use defaults if null/undefined/empty arrays are passed
   const activities1 = (tab1Activities && tab1Activities.length > 0) ? tab1Activities : defaultTab1Activities;
@@ -422,16 +478,18 @@ export default function MasterClassTab({
 
   const showAsSlider = activities1 && activities1.length > 3;
 
-  const bindNavigation = (swiperInstance) => {
-    if (!swiperInstance || !prevRef.current || !nextRef.current) return;
-    swiperInstance.params.navigation.prevEl = prevRef.current;
-    swiperInstance.params.navigation.nextEl = nextRef.current;
+  const bindNav = (swiperInstance, pRef, nRef) => {
+    if (!swiperInstance || !pRef.current || !nRef.current) return;
+    swiperInstance.params.navigation.prevEl = pRef.current;
+    swiperInstance.params.navigation.nextEl = nRef.current;
     if (swiperInstance.navigation) {
       swiperInstance.navigation.destroy();
       swiperInstance.navigation.init();
       swiperInstance.navigation.update();
     }
   };
+
+  const bindNavigation = (swiperInstance) => bindNav(swiperInstance, prevRef, nextRef);
 
   useEffect(() => {
     if (swiperRef.current) {
@@ -524,10 +582,7 @@ export default function MasterClassTab({
                           modules={[Navigation, Autoplay]}
                           spaceBetween={24}
                           slidesPerView={1.2}
-                          autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                          }}
+                          autoplay={false}
                           loop={true}
                           breakpoints={{
                             768: {
@@ -567,10 +622,7 @@ export default function MasterClassTab({
                               modules={[Navigation, Autoplay]}
                               spaceBetween={24}
                               slidesPerView={1}
-                              autoplay={{
-                                delay: 3000,
-                                disableOnInteraction: false,
-                              }}
+                              autoplay={false}
                               loop={activities1.length > 1}
                               navigation={{
                                 prevEl: mobilePrevRef.current,
@@ -623,6 +675,19 @@ export default function MasterClassTab({
                           </div>
                         </>
                       )}
+
+                      {/* Slider arrows */}
+                      {showAsSlider ? (
+                        <SliderNavButtons prevRef={prevRef} nextRef={nextRef} />
+                      ) : (
+                        activities1.length > 1 && (
+                          <SliderNavButtons
+                            prevRef={mobilePrevRef}
+                            nextRef={mobileNextRef}
+                            className="md:hidden"
+                          />
+                        )
+                      )}
                     </div>
                   );
                 })()}
@@ -657,6 +722,7 @@ export default function MasterClassTab({
                 activities={activities2}
                 paddingClassName="py-0"
                 cardHeightClass="h-max"
+                autoplay={false}
               />
               {showTab2Gallery && (
                 <Gallery
@@ -739,16 +805,29 @@ export default function MasterClassTab({
                 modules={[Navigation, Autoplay]}
                 spaceBetween={24}
                 slidesPerView={1.2}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
+                autoplay={false}
                 loop={upcoming.length > 3}
                 breakpoints={{
                   768: {
                     slidesPerView: 3,
                     spaceBetween: 32,
                   },
+                }}
+                navigation={{
+                  prevEl: upcomingPrevRef.current,
+                  nextEl: upcomingNextRef.current,
+                }}
+                onBeforeInit={(swiper) => {
+                  swiper.params.navigation.prevEl = upcomingPrevRef.current;
+                  swiper.params.navigation.nextEl = upcomingNextRef.current;
+                }}
+                onSwiper={(swiper) => {
+                  upcomingSwiperRef.current = swiper;
+                  setTimeout(() => bindNav(swiper, upcomingPrevRef, upcomingNextRef), 0);
+                }}
+                onInit={(swiper) => {
+                  swiper.navigation.init();
+                  swiper.navigation.update();
                 }}
                 className="student-activities-swiper [&_.swiper-wrapper]:!flex [&_.swiper-wrapper]:items-stretch [&_.swiper-slide]:!h-auto [&_.swiper-slide]:!flex"
               >
@@ -791,6 +870,14 @@ export default function MasterClassTab({
                   </SwiperSlide>
                 ))}
               </Swiper>
+
+              {/* Slider arrows */}
+              {upcoming.length > 1 && (
+                <SliderNavButtons
+                  prevRef={upcomingPrevRef}
+                  nextRef={upcomingNextRef}
+                />
+              )}
             </div>
           )}
         </div>
