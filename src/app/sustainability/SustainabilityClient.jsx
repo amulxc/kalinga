@@ -1,40 +1,73 @@
 "use client";
 
-import React from "react";
-import ImageContent from "../components/ccrc/imagecontent";
-import MainIntro from "../components/about/main_intro";
-import SdgTabSection from "../components/sdg-cell/sdg-tab-section";
+import SustainabilitySideNav from "../components/sustainability/SustainabilitySideNav";
+import SustainabilitySectionPicker from "../components/sustainability/SustainabilitySectionPicker";
+import useScrollSpy from "../components/sustainability/useScrollSpy";
+import { SUSTAINABILITY_SECTIONS } from "../components/sustainability/data/navigation";
 
+import IntroSection from "../components/sustainability/sections/IntroSection";
+import CommitmentSection from "../components/sustainability/sections/CommitmentSection";
+import SustainabilityPolicySection from "../components/sustainability/sections/SustainabilityPolicySection";
+import MissionVisionSection from "../components/sustainability/sections/MissionVisionSection";
+import PolicyStatementSection from "../components/sustainability/sections/PolicyStatementSection";
+import PoliciesTableSection from "../components/sustainability/sections/PoliciesTableSection";
+import CompositionSection from "../components/sustainability/sections/CompositionSection";
+import CentresOfExcellenceSection from "../components/sustainability/sections/CentresOfExcellenceSection";
+import OfficeOrdersSection from "../components/sustainability/sections/OfficeOrdersSection";
+import AnnualReportsSection from "../components/sustainability/sections/AnnualReportsSection";
+import SdgGoalsSection from "../components/sustainability/sections/SdgGoalsSection";
+import InitiativesSection from "../components/sustainability/sections/InitiativesSection";
+import StudentEngagementSection from "../components/sustainability/sections/StudentEngagementSection";
+
+/**
+ * Sustainability page — side panel on the left, content sections on the right.
+ * The section order matches `SUSTAINABILITY_SECTIONS`, which also drives both
+ * navigation surfaces, so the two can never drift apart.
+ */
 const SustainabilityClient = () => {
+    const { activeId, goToSection } = useScrollSpy(SUSTAINABILITY_SECTIONS);
+
     return (
-        <div className="min-h-screen bg-white">
-            <ImageContent
-                hasImage={false}
-                readmore={false}
-                className="items-center justify-center"
-                title="Every Small Action Can Make A Big Difference"
-                subtitle="Every Small Action Can Make A Big Difference"
-                subtitleclassName="hidden"
-                description={
-                    <>
-                        Our University promotes sustainable and eco-friendly practices by taking initiatives that minimise environmental impact for the betterment of our planet and future generations. The goal is to make our students environmentally conscious and responsible towards society. They are being taught ways to reduce their carbon footprints and conserve natural resources. By practising the 3 R’s (Reduce, Recycle, and Reuse), our students and faculty members work together towards green initiatives and set new benchmarks in the field of sustainable education.
-                    </>
-                }
-            />
-            <MainIntro
-                title="KU’s Commitment Towards Sustainable Development Goals (SDGs)"
-                description={[
-                    "The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015. The SDGs' 17 goals aim to protect the planet, end poverty, and ensure peace and prosperity by 2030. These goals are well-connected, so if one area progresses or struggles, it will impact others, too.",
-                    "The SDG Cell at Kalinga University was established on 12.04.2022 to promote and implement initiatives related to the cell. We adopted all 17 practices to address global challenges and work towards impactful solutions by balancing social, economic, and environmental challenges. We integrate sustainable practices into our University’s academic, social, cultural, research, administrative, and community engagement activities."
-                ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-cell.png"
-                imageAlt="SDG Goals"
-                showKnowMore={true}
-                initialVisibleParagraphs={1}
-                disableClipPath={false}
-                imageObjectFit="contain"
-            />
-            <SdgTabSection />
+        <div className="min-h-screen bg-white pb-16">
+            <div className="container mx-auto px-4 py-8 md:py-12">
+                {/* Mobile section picker — sits outside the grid so it can stay
+                    pinned for the whole page, not just the nav column. */}
+                <div className="lg:hidden sticky top-[70px] z-30 mb-6">
+                    <SustainabilitySectionPicker
+                        sections={SUSTAINABILITY_SECTIONS}
+                        activeId={activeId}
+                        onSelect={goToSection}
+                    />
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+                    {/* Side panel — stretches to the row height so it can stay sticky */}
+                    <aside className="hidden lg:block lg:col-span-3">
+                        <SustainabilitySideNav
+                            sections={SUSTAINABILITY_SECTIONS}
+                            activeId={activeId}
+                            onSelect={goToSection}
+                        />
+                    </aside>
+
+                    {/* Content */}
+                    <main className="lg:col-span-9 space-y-12 md:space-y-16">
+                        <IntroSection />
+                        <CommitmentSection />
+                        <SustainabilityPolicySection />
+                        <MissionVisionSection />
+                        <PolicyStatementSection />
+                        <PoliciesTableSection />
+                        <CompositionSection />
+                        <CentresOfExcellenceSection />
+                        <OfficeOrdersSection />
+                        <AnnualReportsSection />
+                        <SdgGoalsSection />
+                        <InitiativesSection />
+                        <StudentEngagementSection />
+                    </main>
+                </div>
+            </div>
         </div>
     );
 };
