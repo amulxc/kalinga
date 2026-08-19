@@ -235,7 +235,7 @@ const UnivistaJournalPage = () => {
         }
     ];
 
-    // Volume 1, Issue 2 — TODO: replace these placeholder entries with the actual Issue 2 papers/PDFs
+    // Volume 1, Issue 2
     const archivesIssue2Data = [
         {
             id: 2,
@@ -772,6 +772,246 @@ const UnivistaJournalPage = () => {
             duration: "April - June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/44%20Janet%20Ruben%20Samuel%20o.pdf" 
+        },
+        {
+            id: 78,
+            shortName: "Customer Satisfaction And Service Quality Of Online Grocery Platforms In India",
+            title: "Sourabh Singh Rajput",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/1+Sourabh+Singh+Rajput+o.pdf"
+        },
+        {
+            id: 79,
+            shortName: "Understanding Customer Perception And Usage Of Online Banking Services: Evidence From National Bank Of Malawi",
+            title: "Faith Lusubilo Msonkho",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/2+FAITH+LUSUBILO+MSONKHO+o.pdf"
+        },
+        {
+            id: 80,
+            shortName: "Impact Of Digital Payment Systems On Consumer Buying Behavior In India",
+            title: "Sajal",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/3+Sajal_Commerce+%26+Management+o.pdf"
+        },
+        {
+            id: 81,
+            shortName: "Management On Business Efficiency And Environmental Protection",
+            title: "James Heah Wheeder",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/4+james_Heah_Wheeder+o.pdf"
+        },
+        {
+            id: 82,
+            shortName: "A Trend Analysis On Savings And Investment Patterns: Evidence From The Indian Economy",
+            title: "Darsh Gandhi",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/5+Darsh_Gandhi+o.pdf"
+        },
+        {
+            id: 83,
+            shortName: "Concert Economy In India: A Conceptual Study",
+            title: "Punya Prayas Mishra",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/6+PunyaPrayasMishra+o.pdf"
+        },
+        {
+            id: 84,
+            shortName: "The Role Of Green Procurement In Achieving Sustainable Supply Chains In Liberia",
+            title: "James K. Davids",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/7+James+K.+Davids%2C+MBA%2C+o.pdf"
+        },
+        {
+            id: 85,
+            shortName: "Workplace Training And Employee Job Satisfaction: Empirical Evidence From Organisations In Chhattisgarh, India",
+            title: "Ngurije Tjiroze",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/8+Ngurije+Tjiroze+o.pdf"
+        },
+        {
+            id: 86,
+            shortName: "Impact Of Equity, Diversity And Inclusion On Employee’s Engagement And Organizational Performance",
+            title: "Alok Singh",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/9+Alok%2C+C%26M+o.pdf"
+        },
+        {
+            id: 87,
+            shortName: "Organizational Culture In The Indian Healthcare Sector",
+            title: "Anushka Sharma",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/10+ANUSHKA+SHARMA-MBA+o.pdf"
+        },
+        {
+            id: 88,
+            shortName: "Does Psychological Safety Encourage Employee Learning: A Study Of Organizational Workplaces In India",
+            title: "Krishna Sahu",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/11+KRISHNA+SHU+MBA+o.pdf"
+        },
+        {
+            id: 89,
+            shortName: "A Study On The Influence Of Leadership Styles On Team Performance",
+            title: "Neha Netam",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/12+Neha+Netam++o.pdf"
+        },
+        {
+            id: 90,
+            shortName: "Evaluating Competency Based Training And Its Impact On Employee Performance",
+            title: "Rupali Thakur",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/13+Rupali+thakur+o.pdf"
+        },
+        {
+            id: 91,
+            shortName: "Performance Management Systems In Marketing: Aligning HRM Practices With Marketing Objectives",
+            title: "Anjali Sharma",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/14+Anjali-o.pdf"
+        },
+        {
+            id: 92,
+            shortName: "Role Of Digital Marketing In Increasing Retail Investors In The Share Market",
+            title: "Kashish Santwani",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/15+KASHISH+SANTWANI+o.pdf"
+        },
+        {
+            id: 93,
+            shortName: "Cashless Payments But Continued Cash Dependency: A Sociocultural Analysis Of Small Retailers’ Reluctance Towards UPI In Raipur City",
+            title: "Krish Agrawal",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/16+Krish+o.pdf"
+        },
+        {
+            id: 94,
+            shortName: "Capital Structure And Profitability Among Select Nifty-Listed Firms: A Five-Year Trend Study",
+            title: "Rani Patel",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/17+Rani+Patel+o.pdf"
+        },
+        {
+            id: 95,
+            shortName: "A Study On Inventory Management Practices Of A Retail Store In Raipur",
+            title: "Rishi Verma",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/18+Rishi+verma%2C+C%26M+o.pdf"
+        },
+        {
+            id: 96,
+            shortName: "Study On Patient Satisfaction And Its Impact On Hospital Performance In Private Hospitals",
+            title: "Shaista Tanveer",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/19+Shaista+Tanveer+o.pdf"
+        },
+        {
+            id: 97,
+            shortName: "Impact Of Organizational Culture On The Job Performance Of Employees Working In Hospital",
+            title: "Tasmiyah Naaz",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/20+Tasmiyah+Naaz+o.pdf"
+        },
+        {
+            id: 98,
+            shortName: "A Study On Young Employees’ Behavior And Mental Well-Being Concerns In The Corporate Environment",
+            title: "Zaheen Fatima",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/21+Zaahen%2C+C%26M+o.pdf"
+        },
+        {
+            id: 99,
+            shortName: "Employee Retention Strategies And Their Impact On Organizational Growth",
+            title: "Anjali Kumari",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/22+Anjali+kumari+MBA+o.pdf"
+        },
+        {
+            id: 100,
+            shortName: "Impact Of Social Media On Impulse Buying",
+            title: "Purushottam Kumar Singh",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/23+Purushottam+Kumar+Singh+o.pdf"
+        },
+        {
+            id: 101,
+            shortName: "HR Innovation As A Catalyst For Sustainable Competitive Advantage In Modern Organizations: A Human-Centric Exploration",
+            title: "Kumari Bharti",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/24+KUMARI+BHARTI_MBA+o.pdf"
+        },
+        {
+            id: 102,
+            shortName: "Impact Of Zomato’s Acquisitions On Financial Performance: A Pre- And Post-Merger Analysis",
+            title: "Adarsh Vardhan Pattanaik",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/25+ADARSH%2C+C+%26+M+o.pdf"
+        },
+        {
+            id: 103,
+            shortName: "Employee Performance And Job Satisfaction In The Context Of India’s New Labour Codes: A Secondary Data Analysis",
+            title: "Ambey Kumari",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/26+Ambey+kumari+o.pdf"
+        },
+        {
+            id: 104,
+            shortName: "Understanding How Brand Image Shapes Consumer Buying Behavior: Exploring Feelings, Perceptions, And Real-World Market Influences",
+            title: "Ankitesh Kumar",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/27+Ankitesh+kumar+o.pdf"
+        },
+        {
+            id: 105,
+            shortName: "Inclusive Recruitment Practices And Hiring Of Persons With Disabilities In India: An Expanded Review Of Literature",
+            title: "Gourav Das",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/28+Gourav+Das+mba+o.pdf"
+        },
+        {
+            id: 106,
+            shortName: "An Evaluation Of The Transformative Effect Of The UPI On The Indian Small Businesses: Financial Inclusion, Operational Efficiency, And Entrepreneurial Development In Digital Economy",
+            title: "Sakshi Tandan",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/29+Sakshi%2C+BCOM+o.pdf"
+        },
+        {
+            id: 107,
+            shortName: "Patient Satisfaction: History, Myths, And Misinterpretations",
+            title: "Mahak Khan",
+            duration: "June 2026",
+            level: "VOL 1",
+            slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/30+Mahak+Khan%2CManagement+o.pdf"
         }
 
     ];

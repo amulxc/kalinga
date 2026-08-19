@@ -91,23 +91,41 @@ const nextConfig = {
           { key: 'Cache-Control', value: 'no-store' },
         ],
       },
-      // Pages: short CDN cache with stale-while-revalidate
-      {
-        source: '/((?!_next/|api/|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=60, s-maxage=60, stale-while-revalidate=86400',
-          },
-        ],
-      },
-      // Static assets: immutable, 1-year cache (fingerprinted by Next.js)
-      {
-        source: '/_next/static/(.*)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
+      // Long-lived caching is production-only: in dev these headers make the browser
+      // hold on to stale HTML and chunks after an edit, so changes appear not to apply.
+      ...(isDev
+        ? [
+            {
+              source: '/(.*)',
+              headers: [
+                { key: 'Cache-Control', value: 'no-store, must-revalidate' },
+                // Turbopack dev chunk URLs are path-derived, so they do NOT change when a
+                // file's contents change. Any chunk a browser cached under the old
+                // 'immutable' header would be served stale forever. This evicts it.
+                // Safe to remove once every dev browser has loaded the page at least once.
+                { key: 'Clear-Site-Data', value: '"cache"' },
+              ],
+            },
+          ]
+        : [
+            // Pages: short CDN cache with stale-while-revalidate
+            {
+              source: '/((?!_next/|api/|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)',
+              headers: [
+                {
+                  key: 'Cache-Control',
+                  value: 'public, max-age=60, s-maxage=60, stale-while-revalidate=86400',
+                },
+              ],
+            },
+            // Static assets: immutable, 1-year cache (fingerprinted by Next.js)
+            {
+              source: '/_next/static/(.*)',
+              headers: [
+                { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+              ],
+            },
+          ]),
       // Preconnect hints so the browser opens TCP/TLS to the API and CDN early
       {
         source: '/(.*)',
