@@ -11,14 +11,19 @@ export default function SectionBlock({
     children,
     className = "",
     contentClassName = "",
+    headingLevel = 2,
 }) {
+    // The opening section carries the page's topic heading, so it renders as an
+    // h1; every other section sits under it as an h2.
+    const Heading = `h${headingLevel}`;
+
     return (
         <section id={id} className={`scroll-mt-[150px] ${className}`}>
             {title && (
                 <header className="mb-5">
-                    <h2 className="font-stix !text-2xl md:!text-[32px] leading-tight text-[var(--foreground)]">
+                    <Heading className="font-stix !text-2xl md:!text-[32px] leading-tight text-[var(--foreground)]">
                         {title}
-                    </h2>
+                    </Heading>
                     {subtitle && (
                         <p className="mt-2 font-plus-jakarta-sans text-[var(--button-red)] font-medium">
                             {subtitle}
