@@ -16,7 +16,7 @@ export default function StudentEngagementSection() {
     const club = STUDENT_CLUBS.find((item) => item.value === activeClub) || STUDENT_CLUBS[0];
 
     return (
-        <SectionBlock id="student-engagement" title="Student Engagement: Clubs and Societies">
+        <SectionBlock id="student-engagement" title="Clubs">
             {/* Club switcher */}
             <div className="flex flex-col sm:flex-row gap-3">
                 {STUDENT_CLUBS.map((item) => {

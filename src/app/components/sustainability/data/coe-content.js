@@ -1,100 +1,7 @@
 /**
- * Centres of Excellence (CoE), office orders and downloadable documents
- * for the Sustainability page.
+ * Office orders and downloadable documents for the Sustainability page.
  * Source: "Sustainability - New Content" document.
  */
-
-/* ------------------------------------------------------------------ */
-/* Centres of Excellence                                                */
-/* ------------------------------------------------------------------ */
-
-export const COE_INTRO = [
-    "The Centres of Excellence (CoE) at Kalinga University serve as a hub for advanced learning, innovation, and industry-oriented skill development, aligned with the United Nations Sustainable Development Goals. The University has established seven specialized CoE across key domains to enhance students’ practical knowledge and research capabilities. These include Artificial Intelligence & Machine Learning in collaboration with IBM Innovation Centre for Education, focusing on programming, algorithms, and deep learning; Electric Vehicles (EV) with Godawari Electric Motors Pvt. Ltd., supporting clean energy and sustainable mobility; Industrial Internet of Things (IIoT) with Technoviz Automation, promoting smart industry; Automobile Training Centre with JustAuto Solutions; Robotics, Coding & Drone Technology with BDS Education; MSME Training with IamSMEofIndia to promote entrepreneurship and economic growth, and BRIDGE courses with Bosch.",
-    "With state-of-the-art infrastructure, expert mentorship, and emerging technologies, the Centres of Excellence focus on providing hands-on learning opportunities to students and professionals and solving global technological and societal challenges.",
-];
-
-export const COE_VISION =
-    "To be globally recognized for its Centres of Excellence that promote innovation, industry-oriented learning, and sustainable development through advanced technologies, while empowering students with future-ready skills aligned with the United Nations Sustainable Development Goals.";
-
-export const COE_MISSION = [
-    "To deliver industry-relevant education in emerging technologies",
-    "To provide hands-on training and practical exposure",
-    "To encourage innovation, research, and industry collaboration",
-    "To promote sustainable practices aligned with the United Nations Sustainable Development Goals (SDGs)",
-];
-
-export const COE_OBJECTIVES = [
-    "Establish advanced laboratories for emerging technologies",
-    "Provide experiential learning and skill-based training",
-    "Develop industry-ready skills through certifications and internships",
-    "Promote research, innovation, and entrepreneurship",
-    "Support startups and MSMEs through collaboration and guidance",
-    "Address real-world industrial and societal challenges",
-];
-
-/**
- * Centres established at Kalinga University. Mirrors the shared
- * `centreofexcellencemain` list plus the Training and Research Centre
- * added by the new content document.
- */
-export const COE_CENTRES = [
-    {
-        id: 1,
-        name: "Electric Vehicles Training Centre",
-        title: "In collaboration with Godawari Electric Motors Pvt. Ltd. (Eblu)",
-        image: "https://cdn.kalingauniversity.ac.in/logos/godawari.png",
-        href: "/centresofexcellence/godawari",
-    },
-    {
-        id: 2,
-        name: "IIoT Training Centre",
-        title: "In collaboration with Technoviz Automation",
-        image: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002977.png",
-        href: "/centresofexcellence/iiot",
-    },
-    {
-        id: 3,
-        name: "BRIDGE Courses Training Centre",
-        title: "In collaboration with BOSCH",
-        image: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002989.png",
-        href: "/centresofexcellence/bosch",
-    },
-    {
-        id: 4,
-        name: "Robotics, Coding, & Drone Training Centre",
-        title: "In collaboration with BDS Education",
-        image: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002988.png",
-        href: "/centresofexcellence/robotics",
-    },
-    {
-        id: 5,
-        name: "MSME Training Centre",
-        title: "In collaboration with IamSMEofIndia",
-        image: "https://cdn.kalingauniversity.ac.in/about/smeindia.webp",
-        href: "/centresofexcellence/msme",
-    },
-    {
-        id: 6,
-        name: "AI & ML Courses Training Centre",
-        title: "In collaboration with the IBM Innovation Centre for Education",
-        image: "https://cdn.kalingauniversity.ac.in/about/ibm.webp",
-        href: "/centresofexcellence/ai-ml",
-    },
-    {
-        id: 7,
-        name: "Automobile Training Centre",
-        title: "In collaboration with JustAuto Solutions",
-        image: "https://cdn.kalingauniversity.ac.in/about/justauto.webp",
-        href: "/centresofexcellence/automobile",
-    },
-    {
-        id: 8,
-        name: "Training and Research Centre",
-        title: "In collaboration with UltraTech Cement",
-        image: "/logos/ultratech-cement.jpg",
-        href: "/centresofexcellence",
-    },
-];
 
 /* ------------------------------------------------------------------ */
 /* Office orders                                                        */
@@ -233,17 +140,5 @@ export const ANNUAL_REPORTS = [
         label: "Annual Report 2024–25",
         pdfUrl:
             "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2024-2025_compressed.pdf",
-    },
-];
-
-export const SDG_CELL_DOCUMENTS = [
-    {
-        label: "Sustainability Policy",
-        pdfUrl:
-            "https://cdn.kalingauniversity.ac.in/sdg-cell/Sustainability+Policy_compressed.pdf",
-    },
-    {
-        label: "Composition of SDG Cell",
-        pdfUrl: "https://cdn.kalingauniversity.ac.in/sdg-cell/Composition-of-SDG-Cell.pdf",
     },
 ];

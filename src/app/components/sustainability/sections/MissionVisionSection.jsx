@@ -8,14 +8,11 @@ import {
 } from "../data/sdg-content";
 
 /**
- * Mission, vision and the five SDGs the SDG Cell aligns its work with.
+ * Vision, mission, and the five SDGs the mission aligns its work with.
  */
 export default function MissionVisionSection() {
     return (
-        <SectionBlock
-            id="mission-vision"
-            title="Mission and Vision of Kalinga University’s SDG Cell"
-        >
+        <SectionBlock id="mission-vision" title="Vision and Mission">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <article className="rounded-xl bg-[var(--dark-blue)] p-6 text-white">
                     <h3 className="font-stix !text-xl !leading-snug mb-3">Vision</h3>

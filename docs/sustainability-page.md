@@ -16,7 +16,11 @@ Both surfaces are driven by the same section list and the same active-section
 state, so they can never drift apart.
 
 The page banner and breadcrumb come from the global `Breadcrumb` component via
-`src/lib/pageData.ts` — the page itself does not render a hero.
+`src/lib/pageData.ts` — the page itself does not render a hero. The banner image
+is `public/banners/sustainability-banner.webp` (SDG Cell team, 2000px wide),
+cropped with `imagePosition: "object-center"` so the team stays in the 400px
+band. Next.js runs with `images.unoptimized`, so banner artwork must be sized
+down before it is committed rather than relying on the image pipeline.
 
 ## File map
 
@@ -36,27 +40,40 @@ src/app/components/sustainability/
   data/
     navigation.js              Section ids + labels (drives nav AND order)
     sdg-content.js             Editorial copy, policy table, cell members, goal tiles
-    coe-content.js             Centres of Excellence, office orders, PDF links
+    coe-content.js             Office orders and downloadable-document links
     clubs-content.js           Green Club and BIS Standard Club
     initiatives-content.js     The six initiative detail-page links
   sections/                    One component per section
+    policy/                    Blocks composed by SustainabilityPoliciesSection
 ```
 
 ## Section order
 
-1. `sdg-cell` — Sustainable Development Goals (SDG) Cell
-2. `commitment` — Commitment towards the SDGs (+ policy and composition PDFs)
-3. `sustainability-policy` — Overview of the 17 UN goals and the role of universities
-4. `mission-vision` — Mission, vision and SDG alignment
-5. `policy-statement` — Policy statement and six principles
-6. `sustainability-policies` — Goal → theme → policies table
-7. `sdg-cell-composition` — SDG Cell members table
-8. `centres-of-excellence` — CoE intro, vision, mission, objectives and centres
-9. `office-orders` — CoE Establishment 2022 and 2025 office orders
-10. `annual-reports` — Annual reports 2022–23, 2023–24, 2024–25
-11. `sustainable-development-goals` — The 17 goal tiles with goal-wise reports
-12. `our-initiatives` — Links to the six initiative detail pages
-13. `student-engagement` — Green Club and BIS Standard Club
+1. `sdg-cell` — Sustainable Development Goals (SDG) Cell, followed by the
+   "Kalinga University's Commitment Towards SDGs" sub-heading
+2. `mission-vision` — Vision, mission and the SDG alignment that sits under it
+3. `sdg-cell-composition` — SDG Cell members table
+4. `sustainability-policies` — a "Sustainability Policy" disclosure (UN goal
+   overview, the role of universities, policy statement) followed by the
+   goal → theme → policies table under its own heading
+5. `centres-of-excellence` — Centre of Excellence (CoE): the 2022 and 2025
+   office orders, each expanding to its full text and signed PDF
+6. `annual-reports` — Annual reports 2022–23, 2023–24, 2024–25
+7. `sustainable-development-goals` — The 17 goal tiles with goal-wise reports
+8. `our-initiatives` — Links to the six initiative detail pages
+9. `student-engagement` — "Clubs": Green Club and BIS Standard Club
+
+## Policy and report PDFs
+
+| Folder | Holds |
+| --- | --- |
+| `public/sdg-reports/` | Goal-wise SDG reports linked from the 17 goal tiles |
+| `public/sdg-policies/` | Policy documents linked from the Sustainability Policies table |
+
+A row in `SUSTAINABILITY_POLICIES` lists each policy as a plain string, or as
+`{ label, pdfUrl }` once its document exists — only the second form renders as a
+link. Drop the PDF into `public/sdg-policies/` using the exact filename in
+`pdfUrl`, or the link will 404.
 
 ## Editing content
 
@@ -77,13 +94,18 @@ only handle presentation.
 - **Our Initiatives**: `SUSTAINABILITY_INITIATIVES` in
   `data/initiatives-content.js` — each entry links to its detail page under
   `src/app/sustainability/<slug>/`.
-- **Centres of Excellence**: `COE_CENTRES` in `data/coe-content.js`. The
-  UltraTech Cement logo is served from `public/logos/ultratech-cement.jpg`; the
-  remaining logos come from the CDN.
 - **Office orders**: `OFFICE_ORDERS` in `data/coe-content.js` holds the full text
-  of each order plus the link to the signed PDF.
+  of each order plus the link to the signed PDF. They render inside the Centre of
+  Excellence (CoE) tab — there is no separate Office Orders tab.
 
 ## Notes
+
+- Tab 4 nests content: `SustainabilityPoliciesSection` renders a
+  "Sustainability Policy" button that discloses `policy/SdgOverview`,
+  `policy/UniversitiesRole` and `policy/PolicyStatement`, then always shows
+  `policy/PoliciesTable`. Those four are content-only — they carry their own
+  headings but no `SectionBlock`, so they can be reordered or moved without
+  touching the side panel.
 
 - Copy in `data/` stays plain text. Where it contains ordinals ("12th April",
   "7th Semester"), the rendering section wraps the string in `<OrdinalText>`,

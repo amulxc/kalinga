@@ -6,19 +6,15 @@
  * "Sustainability - New Content" document.
  */
 export const SUSTAINABILITY_SECTIONS = [
-    { id: "sdg-cell", label: "Sustainability" },
-    { id: "commitment", label: "Our Commitment to SDGs" },
-    { id: "sustainability-policy", label: "Sustainability Policy" },
-    { id: "mission-vision", label: "Mission & Vision of SDG Cell" },
-    { id: "policy-statement", label: "Policy Statement" },
-    { id: "sustainability-policies", label: "Sustainability Policies" },
+    { id: "sdg-cell", label: "Sustainable Development Goals (SDG) Cell" },
+    { id: "mission-vision", label: "Vision and Mission" },
     { id: "sdg-cell-composition", label: "Composition of SDG Cell" },
-    { id: "centres-of-excellence", label: "Our Centres of Excellence" },
-    { id: "office-orders", label: "Office Orders" },
+    { id: "sustainability-policies", label: "Sustainability Policies" },
+    { id: "centres-of-excellence", label: "Centre of Excellence (CoE)" },
     { id: "annual-reports", label: "Annual Reports" },
     { id: "sustainable-development-goals", label: "Sustainable Development Goals" },
     { id: "our-initiatives", label: "Our Initiatives" },
-    { id: "student-engagement", label: "Student Engagement: Clubs & Societies" },
+    { id: "student-engagement", label: "Clubs" },
 ];
 
 export default SUSTAINABILITY_SECTIONS;

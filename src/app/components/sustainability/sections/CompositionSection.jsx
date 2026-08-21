@@ -14,9 +14,11 @@ const COLUMNS = [
  * Members constituting the SDG Cell.
  */
 export default function CompositionSection() {
-    // Semester labels carry ordinals ("7th Semester"), so raise them in place.
-    const rows = SDG_CELL_MEMBERS.map((member) => ({
+    const rows = SDG_CELL_MEMBERS.map((member, index) => ({
         ...member,
+        // Numbering follows the list order, so it can never fall out of step.
+        sno: index + 1,
+        // Semester labels carry ordinals ("7th Semester"), so raise them in place.
         faculty: <OrdinalText>{member.faculty}</OrdinalText>,
     }));
 

@@ -1,17 +1,20 @@
-import SectionBlock from "../SectionBlock";
 import {
     POLICY_PRINCIPLES,
     POLICY_STATEMENT_INTRO,
     POLICY_STATEMENT_OUTRO,
-} from "../data/sdg-content";
+} from "../../data/sdg-content";
 
 /**
- * The University's formal sustainability policy statement and the six
- * principles it commits to.
+ * The formal policy statement and its six principles. Content only — rendered
+ * inside the "Sustainability Policy" disclosure.
  */
-export default function PolicyStatementSection() {
+export default function PolicyStatement() {
     return (
-        <SectionBlock id="policy-statement" title="Policy Statement">
+        <>
+            <h3 className="pt-2 font-stix !text-xl md:!text-[22px] !leading-snug text-[var(--foreground)]">
+                Policy Statement
+            </h3>
+
             {POLICY_STATEMENT_INTRO.map((paragraph) => (
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
@@ -31,6 +34,6 @@ export default function PolicyStatementSection() {
             </ol>
 
             <p>{POLICY_STATEMENT_OUTRO}</p>
-        </SectionBlock>
+        </>
     );
 }

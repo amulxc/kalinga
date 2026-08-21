@@ -1,9 +1,11 @@
 import Image from "next/image";
 import SectionBlock from "../SectionBlock";
-import { SDG_CELL_INTRO } from "../data/sdg-content";
+import OrdinalText from "../OrdinalText";
+import { COMMITMENT_PARAGRAPHS, SDG_CELL_INTRO } from "../data/sdg-content";
 
 /**
- * Opening block: what the SDG Cell is and why the University runs it.
+ * Opening block: what the SDG Cell is, why the University runs it, and the
+ * commitment it has made to the Sustainable Development Goals.
  */
 export default function IntroSection() {
     return (
@@ -25,6 +27,16 @@ export default function IntroSection() {
                     />
                 </div>
             </div>
+
+            <h2 className="pt-2 font-stix !text-xl md:!text-[22px] !leading-snug text-[var(--foreground)]">
+                Kalinga University’s Commitment Towards Sustainable Development Goals (SDGs)
+            </h2>
+
+            {COMMITMENT_PARAGRAPHS.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)}>
+                    <OrdinalText>{paragraph}</OrdinalText>
+                </p>
+            ))}
         </SectionBlock>
     );
 }

@@ -191,6 +191,12 @@ export const POLICY_STATEMENT_OUTRO =
 /* Sustainability Policies (goal → theme → policies)                    */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Goal-wise policy map for the "Sustainability Policies" table.
+ *
+ * A policy is either a plain string or `{ label, pdfUrl }` when the policy has a
+ * published document — the table renders the latter as a link to that PDF.
+ */
 export const SUSTAINABILITY_POLICIES = [
     {
         goal: "SDG 1 – No Poverty",
@@ -200,7 +206,14 @@ export const SUSTAINABILITY_POLICIES = [
     {
         goal: "SDG 3 – Good Health & Well-Being",
         theme: "Health, Safety, Wellbeing",
-        policies: ["Smoke-Free Campus Policy"],
+        policies: [
+            "Smoke-Free Campus Policy",
+            {
+                label: "Policy on Emotional Wellness, Mental Health and Resilience",
+                pdfUrl:
+                    "/sdg-policies/policy-on-emotional-wellness-mental-health-and-resilience.pdf",
+            },
+        ],
     },
     {
         goal: "SDG 4 – Quality Education",
@@ -305,20 +318,23 @@ export const SUSTAINABILITY_POLICIES = [
 /* Composition of the SDG Cell                                          */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Members of the SDG Cell, in the order they appear in the table. The S.No.
+ * column is derived from this order, so rows can be added or removed without
+ * leaving a gap in the numbering.
+ */
 export const SDG_CELL_MEMBERS = [
-    { sno: 1, name: "Dr. R. Shridhar", designation: "Director", faculty: "Vice Chancellor" },
-    { sno: 2, name: "Dr. Sandeep Gandhi", designation: "Member Secretary", faculty: "Registrar" },
-    { sno: 3, name: "Dr. Vijayalaxmi", designation: "Chairperson", faculty: "IQAC" },
-    { sno: 4, name: "Dr. Anita Verma", designation: "Coordinator", faculty: "Faculty of Science" },
-    { sno: 5, name: "Ms. Ankita Nihlani", designation: "Member", faculty: "Faculty of Commerce & Management" },
-    { sno: 6, name: "Dr. Swapnil Jain", designation: "Member", faculty: "Faculty of Technology" },
-    { sno: 7, name: "Dr. Chandra Bhoosan Singh", designation: "Member", faculty: "Faculty of Commerce & Management" },
-    { sno: 8, name: "Dr. Priyanka Gupta", designation: "Member", faculty: "Faculty of Science" },
-    { sno: 9, name: "Dr. Anushree Saha", designation: "Member", faculty: "Faculty of Science" },
-    { sno: 10, name: "Ms. Sonali Kispotta", designation: "Member", faculty: "Faculty of Arts & Humanities" },
-    { sno: 11, name: "Ms. Jesika Minj", designation: "Member", faculty: "Faculty of Arts & Humanities" },
-    { sno: 12, name: "Ms. Moumita Pal", designation: "Member", faculty: "Faculty of Arts & Humanities" },
-    { sno: 13, name: "Mr. Ashutosh Kumar", designation: "Student Member", faculty: "B.Tech. (CSE) – 7th Semester" },
+    { name: "Dr. Vijayalaxmi", designation: "Chairperson", faculty: "IQAC" },
+    { name: "Dr. Anita Verma", designation: "Coordinator", faculty: "Faculty of Science" },
+    { name: "Ms. Ankita Nihlani", designation: "Member", faculty: "Faculty of Commerce & Management" },
+    { name: "Dr. Swapnil Jain", designation: "Member", faculty: "Faculty of Technology" },
+    { name: "Dr. Chandra Bhoosan Singh", designation: "Member", faculty: "Faculty of Commerce & Management" },
+    { name: "Dr. Priyanka Gupta", designation: "Member", faculty: "Faculty of Science" },
+    { name: "Dr. Anushree Saha", designation: "Member", faculty: "Faculty of Science" },
+    { name: "Ms. Sonali Kispotta", designation: "Member", faculty: "Faculty of Arts & Humanities" },
+    { name: "Ms. Jesika Minj", designation: "Member", faculty: "Faculty of Arts & Humanities" },
+    { name: "Ms. Moumita Pal", designation: "Member", faculty: "Faculty of Arts & Humanities" },
+    { name: "Mr. Ashutosh Kumar", designation: "Student Member", faculty: "B.Tech. (CSE) – 7th Semester" },
 ];
 
 /* ------------------------------------------------------------------ */

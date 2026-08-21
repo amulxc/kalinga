@@ -21,7 +21,10 @@ export default function SustainabilitySideNav({
         >
             <div className="sticky top-28">
                 <div className="overflow-hidden rounded-xl bg-[var(--dark-blue)] shadow-sm">
-                    <div className="max-h-[calc(100vh-9rem)] overflow-y-auto">
+                    {/* Height budget: 7rem sticky offset + the fixed "Admission
+                        Open" bar at the bottom of every page (60px) + breathing
+                        room, so the last item never hides behind that bar. */}
+                    <div className="max-h-[calc(100vh-12rem)] overflow-y-auto">
                         {sections.map((section) => (
                             <SectionNavLink
                                 key={section.id}

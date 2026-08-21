@@ -1,84 +1,124 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+
+import { useState } from "react";
 import SectionBlock from "../SectionBlock";
-import {
-    COE_CENTRES,
-    COE_INTRO,
-    COE_MISSION,
-    COE_OBJECTIVES,
-    COE_VISION,
-} from "../data/coe-content";
+import DocumentLinks from "../DocumentLinks";
+import OrdinalText from "../OrdinalText";
+import { OFFICE_ORDERS } from "../data/coe-content";
 
 /**
- * Centres of Excellence that carry the University's sustainability agenda into
- * industry-facing training and research.
+ * Centre of Excellence (CoE) — the two office orders that constitute the
+ * Centres of Excellence and the Sustainable Standing Committee. Each order
+ * expands to its full text and links to the signed PDF.
  */
 export default function CentresOfExcellenceSection() {
+    const [openId, setOpenId] = useState(OFFICE_ORDERS[0]?.id || null);
+
     return (
-        <SectionBlock id="centres-of-excellence" title="Our Centres of Excellence (CoE)">
-            {COE_INTRO.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-            ))}
+        <SectionBlock id="centres-of-excellence" title="Centre of Excellence (CoE)">
+            <div className="space-y-4">
+                {OFFICE_ORDERS.map((order) => {
+                    const isOpen = openId === order.id;
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
-                <article className="rounded-xl bg-[var(--dark-blue)] p-6 text-white">
-                    <h3 className="font-stix !text-xl !leading-snug mb-3">Vision</h3>
-                    <p className="text-white/90">{COE_VISION}</p>
-                </article>
+                    return (
+                        <div
+                            key={order.id}
+                            className="overflow-hidden rounded-xl border border-gray-200"
+                        >
+                            <button
+                                type="button"
+                                onClick={() => setOpenId(isOpen ? null : order.id)}
+                                aria-expanded={isOpen}
+                                className={`flex w-full items-center justify-between gap-4 px-5 py-4 text-left cursor-pointer transition-colors ${isOpen
+                                        ? "bg-[var(--button-red)] text-white"
+                                        : "bg-[var(--card-sandal)] text-[var(--foreground)]"
+                                    }`}
+                            >
+                                <span className="font-plus-jakarta-sans text-sm md:text-base font-semibold">
+                                    {order.label}
+                                </span>
+                                <span
+                                    className={`text-xs transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                                >
+                                    ▼
+                                </span>
+                            </button>
 
-                <article className="rounded-xl bg-[var(--card-sandal)] p-6">
-                    <h3 className="font-stix !text-xl !leading-snug mb-3 text-[var(--button-red)]">
-                        Mission
-                    </h3>
-                    <ul className="list-disc space-y-2 pl-5 text-[var(--text-gray-card)]">
-                        {COE_MISSION.map((item) => (
-                            <li key={item}>{item}</li>
-                        ))}
-                    </ul>
-                </article>
-            </div>
+                            {isOpen && (
+                                <div className="space-y-4 bg-white px-5 py-6">
+                                    <p className="font-semibold text-[var(--foreground)]">
+                                        Subject: {order.subject}
+                                    </p>
 
-            <h3 className="pt-2 font-stix !text-xl md:!text-[22px] !leading-snug text-[var(--foreground)]">
-                Objectives
-            </h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {COE_OBJECTIVES.map((objective) => (
-                    <li
-                        key={objective}
-                        className="rounded-xl border border-gray-200 px-4 py-3"
-                    >
-                        {objective}
-                    </li>
-                ))}
-            </ul>
+                                    {order.intro.map((paragraph) => (
+                                        <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+                                    ))}
 
-            <h3 className="pt-2 font-stix !text-xl md:!text-[22px] !leading-snug text-[var(--foreground)]">
-                Centres of Excellence Established at Kalinga University
-            </h3>
+                                    <p className="font-semibold text-[var(--foreground)]">
+                                        {order.centresHeading}
+                                    </p>
+                                    <ol className="list-decimal space-y-2 pl-5">
+                                        {order.centres.map((centre) => (
+                                            <li key={centre.slice(0, 40)}>{centre}</li>
+                                        ))}
+                                    </ol>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {COE_CENTRES.map((centre) => (
-                    <Link
-                        key={centre.id}
-                        href={centre.href}
-                        prefetch={false}
-                        className="flex h-full flex-col rounded-xl bg-[var(--lite-sand)] p-4 transition-transform duration-300 hover:-translate-y-1"
-                    >
-                        <div className="flex h-[140px] items-center justify-center rounded-lg bg-white p-4">
-                            <Image
-                                src={centre.image}
-                                alt={centre.name}
-                                width={220}
-                                height={120}
-                                className="max-h-[100px] w-auto object-contain"
-                            />
+                                    {order.note && <p>{order.note}</p>}
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="rounded-xl bg-[var(--dark-blue)] p-5 text-white">
+                                            <h4 className="font-stix !text-lg mb-2">Vision</h4>
+                                            <p className="text-white/90">{order.vision}</p>
+                                        </div>
+                                        <div className="rounded-xl bg-[var(--card-sandal)] p-5">
+                                            <h4 className="font-stix !text-lg mb-2 text-[var(--button-red)]">
+                                                Mission
+                                            </h4>
+                                            <ul className="list-disc space-y-1 pl-5 text-[var(--text-gray-card)]">
+                                                {order.mission.map((item) => (
+                                                    <li key={item}>{item}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <h4 className="font-stix !text-lg text-[var(--foreground)]">
+                                        Objectives
+                                    </h4>
+                                    <ul className="list-disc space-y-1 pl-5">
+                                        {order.objectives.map((objective) => (
+                                            <li key={objective}>{objective}</li>
+                                        ))}
+                                    </ul>
+
+                                    <h4 className="font-stix !text-lg text-[var(--foreground)]">
+                                        {order.committeeHeading}
+                                    </h4>
+                                    <p>{order.committeeIntro}</p>
+                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                        {order.committee.map((member) => (
+                                            <li
+                                                key={member}
+                                                className="rounded-lg bg-gray-50 px-4 py-2"
+                                            >
+                                                <OrdinalText>{member}</OrdinalText>
+                                            </li>
+                                        ))}
+                                    </ul>
+
+                                    <p className="italic">{order.footer}</p>
+
+                                    <DocumentLinks
+                                        documents={[
+                                            { label: `${order.label} (PDF)`, href: order.pdfUrl },
+                                        ]}
+                                        columns={1}
+                                    />
+                                </div>
+                            )}
                         </div>
-                        <p className="mt-4 font-plus-jakarta-sans font-semibold text-[var(--foreground)]">
-                            {centre.name}
-                        </p>
-                        <p className="mt-1 text-[var(--text-gray-card)]">{centre.title}</p>
-                    </Link>
-                ))}
+                    );
+                })}
             </div>
         </SectionBlock>
     );

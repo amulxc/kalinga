@@ -473,7 +473,9 @@ export const pageDataMap: Record<string, PageData> = {
     "/sustainability": {
         slug: "/sustainability",
         title: "Sustainability",
-        banner: "https://cdn.kalingauniversity.ac.in/common/kalinga-front-banner02.webp",
+        banner: "/banners/sustainability-banner.webp",
+        // Centre the crop so the SDG Cell team stays in frame in the 400px band.
+        imagePosition: "object-center",
     },
     "/sports-and-wellness-centre": {
         slug: "/sports-and-wellness-centre",

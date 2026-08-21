@@ -6,14 +6,10 @@ import useScrollSpy from "../components/sustainability/useScrollSpy";
 import { SUSTAINABILITY_SECTIONS } from "../components/sustainability/data/navigation";
 
 import IntroSection from "../components/sustainability/sections/IntroSection";
-import CommitmentSection from "../components/sustainability/sections/CommitmentSection";
-import SustainabilityPolicySection from "../components/sustainability/sections/SustainabilityPolicySection";
 import MissionVisionSection from "../components/sustainability/sections/MissionVisionSection";
-import PolicyStatementSection from "../components/sustainability/sections/PolicyStatementSection";
-import PoliciesTableSection from "../components/sustainability/sections/PoliciesTableSection";
 import CompositionSection from "../components/sustainability/sections/CompositionSection";
+import SustainabilityPoliciesSection from "../components/sustainability/sections/SustainabilityPoliciesSection";
 import CentresOfExcellenceSection from "../components/sustainability/sections/CentresOfExcellenceSection";
-import OfficeOrdersSection from "../components/sustainability/sections/OfficeOrdersSection";
 import AnnualReportsSection from "../components/sustainability/sections/AnnualReportsSection";
 import SdgGoalsSection from "../components/sustainability/sections/SdgGoalsSection";
 import InitiativesSection from "../components/sustainability/sections/InitiativesSection";
@@ -53,14 +49,10 @@ const SustainabilityClient = () => {
                     {/* Content */}
                     <main className="lg:col-span-9 space-y-12 md:space-y-16">
                         <IntroSection />
-                        <CommitmentSection />
-                        <SustainabilityPolicySection />
                         <MissionVisionSection />
-                        <PolicyStatementSection />
-                        <PoliciesTableSection />
                         <CompositionSection />
+                        <SustainabilityPoliciesSection />
                         <CentresOfExcellenceSection />
-                        <OfficeOrdersSection />
                         <AnnualReportsSection />
                         <SdgGoalsSection />
                         <InitiativesSection />
