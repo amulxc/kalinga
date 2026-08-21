@@ -1,5 +1,6 @@
 import SectionBlock from "../SectionBlock";
 import DocumentLinks from "../DocumentLinks";
+import OrdinalText from "../OrdinalText";
 import { COMMITMENT_PARAGRAPHS } from "../data/sdg-content";
 import { SDG_CELL_DOCUMENTS } from "../data/coe-content";
 
@@ -14,7 +15,9 @@ export default function CommitmentSection() {
             title="Kalinga University’s Commitment Towards Sustainable Development Goals (SDGs)"
         >
             {COMMITMENT_PARAGRAPHS.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+                <p key={paragraph.slice(0, 40)}>
+                    <OrdinalText>{paragraph}</OrdinalText>
+                </p>
             ))}
 
             <DocumentLinks documents={SDG_CELL_DOCUMENTS} columns={2} className="pt-2" />

@@ -32,6 +32,7 @@ src/app/components/sustainability/
   SectionNavLink.jsx           Shared nav item
   SectionBlock.jsx             Section shell (anchor id, heading, scroll offset)
   DocumentLinks.jsx            Shared grid of "open the PDF" buttons
+  OrdinalText.jsx              Raises ordinal suffixes (12th → 12ᵗʰ) in plain copy
   data/
     navigation.js              Section ids + labels (drives nav AND order)
     sdg-content.js             Editorial copy, policy table, cell members, goal tiles
@@ -83,6 +84,11 @@ only handle presentation.
   of each order plus the link to the signed PDF.
 
 ## Notes
+
+- Copy in `data/` stays plain text. Where it contains ordinals ("12th April",
+  "7th Semester"), the rendering section wraps the string in `<OrdinalText>`,
+  which raises the suffix. If you add copy with a date or semester to a section
+  that does not use it yet, wrap it there too.
 
 - Section anchors carry `scroll-mt-[150px]` so headings clear the sticky header
   and, on mobile, the section picker. The scroll-spy reading line in

@@ -1,5 +1,6 @@
 import SectionBlock from "../SectionBlock";
 import DataTable from "../../general/data-table";
+import OrdinalText from "../OrdinalText";
 import { SDG_CELL_MEMBERS } from "../data/sdg-content";
 
 const COLUMNS = [
@@ -13,13 +14,19 @@ const COLUMNS = [
  * Members constituting the SDG Cell.
  */
 export default function CompositionSection() {
+    // Semester labels carry ordinals ("7th Semester"), so raise them in place.
+    const rows = SDG_CELL_MEMBERS.map((member) => ({
+        ...member,
+        faculty: <OrdinalText>{member.faculty}</OrdinalText>,
+    }));
+
     return (
         <SectionBlock id="sdg-cell-composition" title="Composition of SDG Cell">
             <p>The SDG Cell at Kalinga University comprises the following members:</p>
 
             <DataTable
                 columns={COLUMNS}
-                data={SDG_CELL_MEMBERS}
+                data={rows}
                 overflowX={false}
                 disableContainer
                 className="!px-0"
