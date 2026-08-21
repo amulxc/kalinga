@@ -7,11 +7,7 @@ import { SDG_CELL_INTRO } from "../data/sdg-content";
  */
 export default function IntroSection() {
     return (
-        <SectionBlock
-            id="sdg-cell"
-            title="Sustainable Development Goals (SDG) Cell"
-            subtitle="Every Small Action Can Make A Big Difference"
-        >
+        <SectionBlock id="sdg-cell" title="Sustainable Development Goals (SDG) Cell">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
                 <p className="md:col-span-8 order-2 md:order-1">{SDG_CELL_INTRO}</p>
 
