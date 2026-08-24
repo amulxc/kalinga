@@ -103,6 +103,20 @@ const IQACPage = () => {
           name: "NBA",
           width: 150,
           height: 80
+        },
+        {
+          src: "/iqac/nabet-qci-rating-b-pharmacy.webp",
+          alt: "NABET-QCI Certificate of Rating and Ranking - B.Pharmacy",
+          name: "NABET-QCI B.Pharmacy Rating",
+          width: 1200,
+          height: 849
+        },
+        {
+          src: "/iqac/nabet-qci-rating-d-pharmacy.webp",
+          alt: "NABET-QCI Certificate of Rating and Ranking - D.Pharmacy",
+          name: "NABET-QCI D.Pharmacy Rating",
+          width: 1200,
+          height: 849
         }
       ],
       contentWrapperClassName: "lg:!pt-0",
