@@ -131,7 +131,7 @@ const CentralInstrumentationFacilityPage = () => {
       imageAlt: "Protein Estimation & Biochemistry Analyser"
     },
     {
-      title: "Electrical Vehicle",
+      title: "Electric Vehicles",
       startDate: "13.02.2027",
       skills: [
         "Fundamentals of EVs",
@@ -142,7 +142,7 @@ const CentralInstrumentationFacilityPage = () => {
         "Safety Guidelines & Industry Standards"
       ],
       imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-7.jpg",
-      imageAlt: "Electrical Vehicle"
+      imageAlt: "Electric Vehicles"
     },
     {
       title: "Advanced Instrumentation & Water Analysis",
