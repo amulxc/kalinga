@@ -7,29 +7,27 @@ import {
     SDG_CELL_VISION,
 } from "../data/sdg-content";
 
+const SUB_HEADING =
+    "font-stix !text-xl md:!text-[22px] !leading-snug text-[var(--foreground)]";
+
 /**
- * Vision, mission, and the five SDGs the mission aligns its work with.
+ * Vision and mission, read as two stacked rows rather than side-by-side cards.
+ * The SDG alignment belongs to the mission, so it sits inside that second row.
  */
 export default function MissionVisionSection() {
     return (
         <SectionBlock id="mission-vision" title="Vision and Mission">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <article className="rounded-xl bg-[var(--dark-blue)] p-6 text-white">
-                    <h3 className="font-stix !text-xl !leading-snug mb-3">Vision</h3>
-                    <p className="text-white/90">{SDG_CELL_VISION}</p>
-                </article>
+            {/* Row 1 — Vision */}
+            <h3 className={SUB_HEADING}>Vision</h3>
+            <p>{SDG_CELL_VISION}</p>
 
-                <article className="rounded-xl bg-[var(--card-sandal)] p-6">
-                    <h3 className="font-stix !text-xl !leading-snug mb-3 text-[var(--button-red)]">
-                        Mission
-                    </h3>
-                    <p className="text-[var(--text-gray-card)]">{SDG_CELL_MISSION}</p>
-                </article>
-            </div>
+            {/* Row 2 — Mission, including the goals it aligns its work with */}
+            <h3 className={`pt-4 ${SUB_HEADING}`}>Mission</h3>
+            <p>{SDG_CELL_MISSION}</p>
 
-            <h3 className="pt-2 font-stix !text-xl md:!text-[22px] !leading-snug text-[var(--foreground)]">
+            <h4 className="pt-2 font-stix !text-lg text-[var(--foreground)]">
                 Alignment with the Sustainable Development Goals (SDGs)
-            </h3>
+            </h4>
 
             <p>{SDG_ALIGNMENT_INTRO}</p>
 
