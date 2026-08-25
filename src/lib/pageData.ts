@@ -717,8 +717,21 @@ function normalizePath(path: string): string {
  * Formats a slug segment into a human-readable title with smart capitalization.
  */
 export function formatSlugToTitle(slug: string, applyLowercaseRestrictions: boolean = true): string {
-    const words = slug.split('-').filter(Boolean);
-    if (words.length === 0) return '';
+    const rawWords = slug.split('-').filter(Boolean);
+    if (rawWords.length === 0) return '';
+
+    // A version number splits across a slug ("ideathon-6-0"), so stitch the
+    // pieces back together as "6.0". Requiring a single trailing digit keeps
+    // academic years such as "2026-27" from being merged the same way.
+    const words: string[] = [];
+    for (const word of rawWords) {
+        const previous = words[words.length - 1];
+        if (previous !== undefined && /^\d+$/.test(previous) && /^\d$/.test(word)) {
+            words[words.length - 1] = `${previous}.${word}`;
+        } else {
+            words.push(word);
+        }
+    }
 
     const lowercaseWords = ['of', 'and', 'the', 'a', 'an', 'in', 'on', 'at', 'to', 'for', 'with', 'by'];
 
