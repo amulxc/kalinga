@@ -56,7 +56,27 @@ const useImageLoader = (seqRef, onLoad, dependencies) => {
   }, [onLoad, seqRef, dependencies]);
 };
 
-const useAnimationLoop = (trackRef, targetVelocity, seqWidth, seqHeight, isHovered, hoverSpeed, isVertical) => {
+/**
+ * Tracks `prefers-reduced-motion`, but only when the caller opts in. Returns
+ * false otherwise, so a marquee that deliberately always animates never pays
+ * for the listener.
+ */
+const usePrefersReducedMotion = enabled => {
+  const [prefersReduced, setPrefersReduced] = useState(false);
+
+  useEffect(() => {
+    if (!enabled || typeof window === 'undefined' || !window.matchMedia) return;
+    const query = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const update = () => setPrefersReduced(query.matches);
+    update();
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+  }, [enabled]);
+
+  return enabled && prefersReduced;
+};
+
+const useAnimationLoop = (trackRef, targetVelocity, seqWidth, seqHeight, isHovered, hoverSpeed, isVertical, paused) => {
   const rafRef = useRef(null);
   const lastTimestampRef = useRef(null);
   const offsetRef = useRef(0);
@@ -103,6 +123,8 @@ const useAnimationLoop = (trackRef, targetVelocity, seqWidth, seqHeight, isHover
       rafRef.current = requestAnimationFrame(animate);
     };
 
+    if (paused) return;
+
     rafRef.current = requestAnimationFrame(animate);
 
     return () => {
@@ -112,7 +134,7 @@ const useAnimationLoop = (trackRef, targetVelocity, seqWidth, seqHeight, isHover
       }
       lastTimestampRef.current = null;
     };
-  }, [targetVelocity, seqWidth, seqHeight, isHovered, hoverSpeed, isVertical, trackRef]);
+  }, [targetVelocity, seqWidth, seqHeight, isHovered, hoverSpeed, isVertical, trackRef, paused]);
 };
 
 export const LogoLoop = memo(
@@ -130,6 +152,7 @@ export const LogoLoop = memo(
     scaleOnHover = false,
     renderItem,
     ariaLabel = 'Partner logos',
+    respectReducedMotion = false,
     className,
     style
   }) => {
@@ -214,7 +237,18 @@ export const LogoLoop = memo(
 
     useImageLoader(seqRef, updateDimensions, [logos, gap, logoHeight, isVertical]);
 
-    useAnimationLoop(trackRef, targetVelocity, seqWidth, seqHeight, isHovered, effectiveHoverSpeed, isVertical);
+    const reduceMotion = usePrefersReducedMotion(respectReducedMotion);
+
+    useAnimationLoop(
+      trackRef,
+      targetVelocity,
+      seqWidth,
+      seqHeight,
+      isHovered,
+      effectiveHoverSpeed,
+      isVertical,
+      reduceMotion
+    );
 
     const cssVariables = useMemo(
       () => ({

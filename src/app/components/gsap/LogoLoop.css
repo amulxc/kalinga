@@ -171,11 +171,11 @@
     );
   }
   
+  /* Whether the marquee honours a reduced-motion preference is decided in
+     LogoLoop.jsx via `respectReducedMotion`, so the loop can stop instead of
+     spinning behind a CSS override it cannot see. Only hover transitions are
+     suppressed here. */
   @media (prefers-reduced-motion: reduce) {
-    .logoloop__track {
-      transform: translate3d(0, 0, 0) !important;
-    }
-  
     .logoloop__item img,
     .logoloop__node {
       transition: none !important;
