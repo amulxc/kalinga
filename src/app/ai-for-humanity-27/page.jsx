@@ -585,7 +585,7 @@ const AIForHumanityConferencePage = () => {
                     </div>
 
                     <a
-                        href="#"
+                        href="/brochure/ai-for-humanity-2027.pdf"
                         download
                         target="_blank"
                         rel="noreferrer"

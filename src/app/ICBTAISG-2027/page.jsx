@@ -383,7 +383,7 @@ const ICBTAISGConferencePage = () => {
                     </div>
 
                     <a
-                        href="#"
+                        href="/brochure/icbtaisg-2027.pdf"
                         download
                         target="_blank"
                         rel="noreferrer"
