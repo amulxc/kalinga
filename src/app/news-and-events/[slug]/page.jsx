@@ -5,6 +5,7 @@ import CareerApplicationForm from '@/app/components/careers/CareerApplicationFor
 import AdmissionCareer from '@/app/components/general/admission_cta';
 import UpcomingEvents from '@/app/components/admissions/upcoming_events';
 import { fetchNewsEvents, fetchNewsEventDetails, fetchNewsEventSEO, parseHtmlToParagraphs, parseHtmlListItems, parseHtmlToText } from '@/app/lib/api';
+import { getEventDisplayDate } from './eventDateOverrides';
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
@@ -73,7 +74,10 @@ export default async function NewsEventDetailsPage({ params }) {
 
     // Transform API data for the UI component
     const tags = [];
-    if (newsEvent.date) tags.push({ label: newsEvent.date, color: 'orange' });
+    // Multi-day events carry their range in eventDateOverrides, since the CMS
+    // date field only holds the opening day.
+    const displayDate = getEventDisplayDate(decodedSlug, newsEvent.date);
+    if (displayDate) tags.push({ label: displayDate, color: 'orange' });
     if (newsEvent.category_name) tags.push({ label: newsEvent.category_name, color: 'blue' });
     if (newsEvent.department_name) tags.push({ label: newsEvent.department_name, color: 'red' });
 
