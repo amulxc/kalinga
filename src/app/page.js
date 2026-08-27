@@ -21,7 +21,9 @@ import { ScrollScene } from "./components/gsap/Scrollscene";
 import QuickLinks from "./components/home/QuickLinks";
 import ValueAdditionVideoInterview from "./components/value-additions/valueadditionvideointerview";
 import MediaCardSlider from "./components/general/media-card-slider";
-import HomePopup from "./components/home/HomePopup";
+// Promotional popup — disabled on request. Restore this import and the
+// <HomePopup /> below to bring it back.
+// import HomePopup from "./components/home/HomePopup";
 
 
 
@@ -65,8 +67,8 @@ export default function Home() {
   ];
   return (
     <>
-      {/* Home page promotional popup (desktop + mobile) */}
-      <HomePopup />
+      {/* Home page promotional popup (desktop + mobile) — disabled on request */}
+      {/* <HomePopup /> */}
       {/* Hero Section */}
       <HeroSection />
 
