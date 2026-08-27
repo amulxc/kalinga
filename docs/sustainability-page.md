@@ -70,10 +70,28 @@ src/app/components/sustainability/
 | `public/sdg-reports/` | Goal-wise SDG reports linked from the 17 goal tiles |
 | `public/sdg-policies/` | Policy documents linked from the Sustainability Policies table |
 
-A row in `SUSTAINABILITY_POLICIES` lists each policy as a plain string, or as
-`{ label, pdfUrl }` once its document exists — only the second form renders as a
-link. Drop the PDF into `public/sdg-policies/` using the exact filename in
-`pdfUrl`, or the link will 404.
+A row in `SUSTAINABILITY_POLICIES` lists each policy as a plain string, or as a
+link once the policy has somewhere to go:
+
+- `{ label, href }` — a page on this site, opened in the same tab
+- `{ label, pdfUrl }` — a document, opened in a new tab
+
+For the PDF form, drop the file into `public/sdg-policies/` using the exact
+filename in `pdfUrl`, or the link will 404.
+
+## Policy pages
+
+SDG 3's "Policy on Emotional Wellness, Mental Health and Resilience" is a page
+rather than a download:
+
+| Path | Source |
+| --- | --- |
+| `src/app/sustainability/emotional-wellness-and-mental-health-policy/` | the page |
+| `components/sustainability/data/wellness-policy-content.js` | its text |
+
+The page also links the signed PDF, so both forms of the policy stay reachable.
+Add new policy pages the same way, and register the route in `src/lib/pageData.ts`
+so it gets a banner and title.
 
 ## Editing content
 

@@ -194,8 +194,9 @@ export const POLICY_STATEMENT_OUTRO =
 /**
  * Goal-wise policy map for the "Sustainability Policies" table.
  *
- * A policy is either a plain string or `{ label, pdfUrl }` when the policy has a
- * published document — the table renders the latter as a link to that PDF.
+ * A policy is a plain string, or a link when the policy has somewhere to go:
+ * `{ label, href }` for a page on this site, `{ label, pdfUrl }` for a document
+ * that should open in a new tab.
  */
 export const SUSTAINABILITY_POLICIES = [
     {
@@ -210,8 +211,7 @@ export const SUSTAINABILITY_POLICIES = [
             "Smoke-Free Campus Policy",
             {
                 label: "Policy on Emotional Wellness, Mental Health and Resilience",
-                pdfUrl:
-                    "/sdg-policies/policy-on-emotional-wellness-mental-health-and-resilience.pdf",
+                href: "/sustainability/emotional-wellness-and-mental-health-policy",
             },
         ],
     },

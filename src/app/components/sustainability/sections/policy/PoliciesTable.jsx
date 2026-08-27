@@ -1,5 +1,9 @@
+import Link from "next/link";
 import DataTable from "../../../general/data-table";
 import { SUSTAINABILITY_POLICIES } from "../../data/sdg-content";
+
+const LINK_CLASSES =
+    "font-medium text-[var(--button-red)] underline underline-offset-2 transition-opacity hover:opacity-75";
 
 const COLUMNS = [
     { key: "goal", label: "SDG", widthPx: 220 },
@@ -19,23 +23,29 @@ export default function PoliciesTable() {
         policies: (
             <ul className="list-disc space-y-1 pl-4">
                 {entry.policies.map((policy) => {
-                    // A policy is a plain string, or { label, pdfUrl } once its
-                    // document is published — the latter links out to the PDF.
+                    // A policy is a plain string, or a link: `href` for a page on
+                    // this site, `pdfUrl` for a document that opens in a new tab.
                     if (typeof policy === "string") {
                         return <li key={policy}>{policy}</li>;
                     }
 
                     return (
                         <li key={policy.label}>
-                            <a
-                                href={policy.pdfUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                title={`${policy.label} (PDF)`}
-                                className="font-medium text-[var(--button-red)] underline underline-offset-2 transition-opacity hover:opacity-75"
-                            >
-                                {policy.label}
-                            </a>
+                            {policy.href ? (
+                                <Link href={policy.href} className={LINK_CLASSES}>
+                                    {policy.label}
+                                </Link>
+                            ) : (
+                                <a
+                                    href={policy.pdfUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title={`${policy.label} (PDF)`}
+                                    className={LINK_CLASSES}
+                                >
+                                    {policy.label}
+                                </a>
+                            )}
                         </li>
                     );
                 })}
