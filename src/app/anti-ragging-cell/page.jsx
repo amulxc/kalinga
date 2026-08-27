@@ -350,7 +350,7 @@ function EventsTable({ title, description, data }) {
 }
 
 const events2024 = [
-  { sno: 1, name: "Dr. A. Vijayanand", designation: "Head of the Committee", area: "Chief Proctor" },
+  { sno: 1, name: "Dr. Swapnil Jain", designation: "Head of the Committee", area: "Chief Proctor" },
   { sno: 2, name: "Mr. Badrinath Kesharwani", designation: "Member", area: "Civil Representative" },
   { sno: 3, name: "Mr. Gopal Krishna Agrawal", designation: "Member", area: "NGO Representative" },
   { sno: 4, name: "Mr. Lallan Singh", designation: "Member", area: "Police Representative" },
@@ -365,7 +365,7 @@ const events2024 = [
 ];
 const events2023 = [
   { sno: 1, name: "Dr. Sandeep Gandhi", designation: "Head of the Committee", area: "Registrar" },
-  { sno: 2, name: "Dr. A. Vijayanand", designation: "Member", area: "Chief Proctor" },
+  { sno: 2, name: "Dr. Swapnil Jain", designation: "Member", area: "Chief Proctor" },
   { sno: 3, name: "Mr. Manish Singh", designation: "Member", area: "Faculty" },
   { sno: 4, name: "Dr. C. P. Jawahar", designation: "Member", area: "Faculty" },
   { sno: 5, name: "Dr. Manoj Singh", designation: "Member", area: "Faculty" },
