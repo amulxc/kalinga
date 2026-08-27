@@ -1012,8 +1012,248 @@ const UnivistaJournalPage = () => {
             duration: "June 2026",
             level: "VOL 1",
             slug: "https://cdn.kalingauniversity.ac.in/departments/international-journal-of-research-and-studies/Vol-1-Issue-2/Univista-Archives-2/30+Mahak+Khan%2CManagement+o.pdf"
-        }
+        },
 
+        {
+            id: 108,
+            shortName: "Study On Training Of Workforce, And Its Impact On Hospital Performance & Patient Satisfaction",
+            title: "Priyanshi Lohchab",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/31-Priyanshi-Lohchab.pdf"
+        },
+        {
+            id: 109,
+            shortName: "Performance Evaluation Of Sector-Specific Mutual Fund Schemes In The Indian Capital Market",
+            title: "Rahul Chaurasiya",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/32-Rahul-Chaurasiya.pdf"
+        },
+        {
+            id: 110,
+            shortName: "Analyzing Relationship Between HR Policies And Work Culture In Organization",
+            title: "Ankita Kumari Shah",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/33-Ankita-Kumari-Shah.pdf"
+        },
+        {
+            id: 111,
+            shortName: "Role Of Leadership In Enhancing Employee Engagement In The Education Sector",
+            title: "Rudrani Acharya",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/34-Rudrani-Acharya.pdf"
+        },
+        {
+            id: 112,
+            shortName: "The Impact Of Human Resource Planning On Organizational Performance",
+            title: "Khushboo Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/35-Khushboo-sahu.pdf"
+        },
+        {
+            id: 113,
+            shortName: "Lean Manufacturing, Green Value Co-Creation, And Green Product Innovation: Establishing Conceptual Linkages",
+            title: "Mayank Shukla",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/36-Mayank-Shukla.pdf"
+        },
+        {
+            id: 114,
+            shortName: "An Assessment Of Mental Health Among Hospital Employees: A Study Of Healthcare Workers In Raipur, Chhattisgarh",
+            title: "Latika Dembani",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/37-Latika-Dembani.pdf"
+        },
+        {
+            id: 115,
+            shortName: "The Rise Of \"Career Cushioning\" And Its Impact On Employee Loyalty",
+            title: "Shrutika Sharma",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/38-Shrutika-Sharma.pdf"
+        },
+        {
+            id: 116,
+            shortName: "Understanding How Work–Life Balance Shapes Employee Productivity In Indian Workplaces: Insights Into Well-Being, Stress, And Supportive HR Practices",
+            title: "Rajashree Panda",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/39-Rajashree-Panda.pdf"
+        },
+        {
+            id: 117,
+            shortName: "Implications Of AI In Early Disease Detection: Opportunities And Challenges",
+            title: "Rusali Mohanty",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/40-Rusali-Mohanty.pdf"
+        },
+        {
+            id: 118,
+            shortName: "Role Of HR Analytics In Decision Making: A Bibliometric Review",
+            title: "Saurabh Kumar Tiwari",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/41-Saurabh-Kumar-Tiwari.pdf"
+        },
+        {
+            id: 119,
+            shortName: "Central Bank Digital Currency And The Future Of Banking In India: A Conceptual Perspective",
+            title: "Shubham Kumar Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/42-Shubham-Kumar-Singh.pdf"
+        },
+        {
+            id: 120,
+            shortName: "Customer Trust In The Wake Of Digital Banking Errors: A Study Of SBI Users In Ranchi",
+            title: "Suhana Parasar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/43-Suhana-Parasar.pdf"
+        },
+        {
+            id: 121,
+            shortName: "A Comprehensive Financial Performance Analysis Of Amul (GCMMF): A Study Of Profitability, Liquidity, And Solvency Trends",
+            title: "Sujata Kumari",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/44-Sujata-Kumari.pdf"
+        },
+        {
+            id: 122,
+            shortName: "Last-Mile Delivery Challenges In Indian E-Commerce: A Consumer Perspective",
+            title: "Tukeshwer Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/45-Tukeshwer-Sahu.pdf"
+        },
+        {
+            id: 123,
+            shortName: "A Study Of Consumer Adoption And Usage Behaviour Of UPI In Raipur, Chhattisgarh",
+            title: "Vedant Chandrakar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/46-Vedant-Chandrakar.pdf"
+        },
+        {
+            id: 124,
+            shortName: "How Corporate Governance Shapes A Petroleum Company In Juba City",
+            title: "David Wani Sebit Ladu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/47-David-Wani-Sebit-Ladu.pdf"
+        },
+        {
+            id: 125,
+            shortName: "Role Of HR Policies In Promoting Employee Wellbeing And Mental Health",
+            title: "Jeenal Gautam",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/48-Jeenal-Gautam.pdf"
+        },
+        {
+            id: 126,
+            shortName: "Working Capital Management In Small Business",
+            title: "Sujal Sarraf",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/49-Sujal-Sarraf.pdf"
+        },
+        {
+            id: 127,
+            shortName: "Effect Of Discounts And Offers On Customer Purchase Intention",
+            title: "Bhoovan Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/50-Bhoovan-Sahu.pdf"
+        },
+        {
+            id: 128,
+            shortName: "The Role Of Automation In Modern Warehousing",
+            title: "Harsh Kumar Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/51-Harsh-Kumar-Sahu.pdf"
+        },
+        {
+            id: 129,
+            shortName: "The Mediating Role Of Customer Experience Between Digital Marketing Strategies And Supply Chain Performance In E-Commerce Firms",
+            title: "Gaurinandan Kashyap",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/52-Gaurinandan-Kashyap.pdf"
+        },
+        {
+            id: 130,
+            shortName: "Impact Of Foriegn Institutional Investment Inflow And Outflow On Indian Stock Market Returns",
+            title: "Pawan Rai",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/53-Pawan-Rai.pdf"
+        },
+        {
+            id: 131,
+            shortName: "Impact Of Work Life Balance Practices On Employee Retention In Indian Organisations",
+            title: "Harshita Pitroda",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/54-Harshita-Pitroda.pdf"
+        },
+        {
+            id: 132,
+            shortName: "Bibliometric Analysis Of Diversity, Equity, And Inclusion Practices In Higher Education Institutions",
+            title: "Shruti Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/55-Shruti-Singh.pdf"
+        },
+        {
+            id: 133,
+            shortName: "Role Of Corporate Green Financing In Achieving Sustainability Goals",
+            title: "Silvia Dwoki Ladu Laku",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/56-Silvia-Dwoki-Ladu-Laku.pdf"
+        },
+        {
+            id: 134,
+            shortName: "Influence Of Direct Marketing Strategies On Customer Perception And Purchase Intention: An Empirical Study Of Consumers In Raipur City",
+            title: "Soumyadeep Sarkar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/57-Soumyadeep-Sarkar.pdf"
+        },
+        {
+            id: 135,
+            shortName: "Evaluating The Role Of Digital Financial Services In Strengthening Trust, Accessibility, And Growth Across The Banking, Insurance, And Business Sectors In India",
+            title: "Suraj Kumar Pandey",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/58-Suraj-Kumar-Pandey.pdf"
+        },
+        {
+            id: 136,
+            shortName: "Application Of Clustering Techniques For Customer Segmentation And Targeted Marketing Strategy",
+            title: "Shubham Pradhan",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/59-Shubham-Pradhan.pdf"
+        },
+        {
+            id: 137,
+            shortName: "Liberia's Government Policies And Their Impact On The Startup Ecosystem",
+            title: "Joseph K.M Benson",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/60-Joseph-KM-Benson.pdf"
+        },
     ];
 
     // Derived values based on the selected archives tab

@@ -55,6 +55,21 @@ const defaultPrograms = [
   },
 ];
 
+/**
+ * A slug is normally a course slug and resolves under /courses/. An absolute
+ * URL or a site-root path (a PDF in /public, say) is already a full
+ * destination and is used as given.
+ */
+const resolveProgramHref = slug => {
+  if (!slug) return "/admissions";
+  if (slug.startsWith("http") || slug.startsWith("/")) return slug;
+  return `/courses/${slug}`;
+};
+
+/** Links that leave the course catalogue open in a new tab. */
+const isExternalProgramLink = slug =>
+  Boolean(slug) && (slug.startsWith("http") || /\.pdf$/i.test(slug));
+
 export default function ProgramsOffered({
   programs = defaultPrograms,
   title = "Programs Offered",
@@ -185,8 +200,8 @@ export default function ProgramsOffered({
                           </p>
                         )}
                         <Link
-                          href={program.slug?.startsWith('http') ? program.slug : (program.slug ? `/courses/${program.slug}` : "/admissions")}
-                          target={program.slug?.startsWith('http') ? "_blank" : "_self"}
+                          href={resolveProgramHref(program.slug)}
+                          target={isExternalProgramLink(program.slug) ? "_blank" : "_self"}
                           className="font-[500] flex items-center gap-1 hover:gap-2 transition-all md:ml-4 text-[var(--foreground)] hover:text-[var(--button-red)]/80"
                         >
                           {program.exploreLabel || exploreLabel}
