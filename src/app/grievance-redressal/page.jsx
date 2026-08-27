@@ -33,7 +33,7 @@ const committeeMembers = [
   { sno: 3, name: "Dr. Lincy Roy", position: "Deputy Registrar" },
   { sno: 4, name: "Dr. C. P. Jawahar", position: "Dean, Faculty of Technology" },
   { sno: 5, name: "Dr. Shilpi Bhattacharya", position: "Dean, Faculty of Arts & Humanities" },
-  { sno: 6, name: "Dr. A. Vijayanand", position: "Chief Proctor" },
+  { sno: 6, name: "Dr. Swapnil Jain", position: "Chief Proctor" },
   { sno: 7, name: "Dr. Shilpi Shrivastava", position: "HoD, Dept. of Chemistry" },
   { sno: 8, name: "Ms. Mariyan Ahmed", position: "Student Representative" },
   { sno: 9, name: "Mrs. Shilpi Nishant Tanwani", position: "Academic Officer" },
