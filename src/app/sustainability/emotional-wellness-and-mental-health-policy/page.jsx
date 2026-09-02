@@ -1,21 +1,19 @@
 import Link from "next/link";
 import SectionBlock from "@/app/components/sustainability/SectionBlock";
-import GlobalArrowButton from "@/app/components/general/global-arrow_button";
 import {
     ACCOUNTABILITY,
     APPROVAL,
     GUIDELINES,
-    INTRO,
     MENTOR_MENTEE_INTRO,
     MENTOR_MENTEE_POINTS,
     MONITORING_AND_REVIEW,
     OBJECTIVES,
-    PDF_URL,
     PREAMBLE,
     PRINCIPLES,
     SUPPORT_FACILITIES,
 } from "@/app/components/sustainability/data/wellness-policy-content";
 
+const GOAL = "SDG 3 – Good Health & Well-Being";
 const TITLE = "Policy on Emotional Wellness, Mental Health and Resilience";
 const URL =
     "https://kalingauniversity.ac.in/sustainability/emotional-wellness-and-mental-health-policy";
@@ -69,27 +67,14 @@ export default function EmotionalWellnessPolicyPage() {
 
             <div className="min-h-screen bg-white pb-16">
                 <div className="container mx-auto px-4 py-8 md:py-12 max-w-4xl space-y-12 md:space-y-14">
-                    {/* The page banner already carries the title as the h1, so this
-                        opens straight into the summary and the signed document. */}
-                    <header className="space-y-4">
+                    <header className="space-y-3">
                         <span className="block h-[3px] w-16 rounded-full bg-[var(--button-red)]" />
-                        <p className="font-plus-jakarta-sans text-sm md:text-[15px] leading-relaxed text-[var(--light-text-gray)]">
-                            {INTRO}
-                        </p>
-
-                        <div className="flex flex-wrap gap-3 pt-1">
-                            <a href={PDF_URL} target="_blank" rel="noopener noreferrer">
-                                <GlobalArrowButton
-                                    as="span"
-                                    className="min-h-[52px] h-auto !rounded-xl"
-                                    textClassName="!text-left !leading-snug !font-medium"
-                                    arrowClassName="p-[3px] !px-2 mr-2 !py-1 shrink-0"
-                                    arrowSize={24}
-                                >
-                                    Download the signed policy (PDF)
-                                </GlobalArrowButton>
-                            </a>
-                        </div>
+                        <h1 className="font-stix !text-2xl md:!text-[34px] leading-tight text-[var(--foreground)]">
+                            {GOAL}
+                        </h1>
+                        <h2 className="font-stix !text-xl md:!text-[26px] !leading-snug text-[var(--button-red)]">
+                            {TITLE}
+                        </h2>
                     </header>
 
                     <SectionBlock id="preamble" title="Preamble">
