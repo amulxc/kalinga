@@ -153,7 +153,7 @@ export default function Page() {
       <div className="flex justify-center py-8">
         <GlobalArrowButton
           as="a"
-          href={`/api/proxy-pdf?url=${encodeURIComponent("https://cdn.kalingauniversity.ac.in/common/Verification+Form.pdf")}&download=1&filename=${encodeURIComponent("Verification Form.pdf")}`}
+          href="/forms/verification-application-form.pdf"
           download="Verification Form.pdf"
           className="px-8 py-3 text-base"
           arrowClassName="!px-2 !py-1"
