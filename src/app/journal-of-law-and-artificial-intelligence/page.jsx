@@ -168,49 +168,13 @@ const JournalOfLawAndAIPage = () => {
         },
         {
             id: 5,
-            question: "Call for Papers- Volume I, Issue 2",
-            answer: `
-                <p>The Journal of Law and Artificial Intelligence invites submissions for Volume I, Issue 2 on the themes:</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                    <div>
-                        <p class="font-bold underline mb-2">LAW AND SOCIETY: NAVIGATING INTERDISCIPLINARY PERSPECTIVES</p>
-                        <p class="font-semibold mb-1 italic">Sub-themes:</p>
-                        <ul class="list-disc pl-5 space-y-1 text-sm">
-                            <li>Law and Technology</li>
-                            <li>Human Rights and Social Justice</li>
-                            <li>Environmental Law and Sustainability</li>
-                            <li>Economic and Corporate Law</li>
-                            <li>Health Law and Bioethics</li>
-                            <li>International Relations and Global Governance</li>
-                            <li>Criminal Justice and Penal Reform</li>
-                            <li>Protection of Cultural Heritage and Intellectual Property rights in the Digital age</li>
-                            <li>Family Law and Social Change</li>
-                            <li>Legal Education and Professional Ethics</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="font-bold underline mb-2">AI AND THE FUTURE OF RIGHTS, REGULATION, AND RESPONSIBILITY</p>
-                        <p class="font-semibold mb-1 italic">Sub-themes:</p>
-                        <ul class="list-disc pl-5 space-y-1 text-sm">
-                            <li>Data Privacy and Protection in the Age of AI</li>
-                            <li>Algorithmic Bias and Discrimination</li>
-                            <li>Accountability and Liability for AI-Driven Decisions</li>
-                            <li>AI in Criminal Justice</li>
-                            <li>Regulating Autonomous Systems: Vehicles, Weapons, and Beyond</li>
-                            <li>Ethical Design and Human Oversight in AI Development</li>
-                            <li>AI Computing & Data Infrastructure</li>
-                            <li>Corporate Responsibility and AI Governance in the Private Sector</li>
-                            <li>Global Approaches to AI Regulation</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="mt-4">Note: The above sub-themes are only illustrative. The Journal of Law and Artificial Intelligence would welcome papers on other topics related to the main theme.</p>
-            `
+            question: "Call for Papers - Volume 2, Issue 2",
+            image: "/journal-of-law-and-artificial-intelligence/call-for-papers-vol-2-issue-2.webp"
         },
         {
             id: 6,
-            question: "Call for Papers Volume II, Issue 1",
-            image: "https://cdn.kalingauniversity.ac.in/journal-of-law-and-artificial-intelligence/Call-for-paper.webp"
+            question: "Call for Papers - Volume 3, Issue 1",
+            image: "/journal-of-law-and-artificial-intelligence/call-for-papers-vol-3-issue-1.webp"
         },
     ];
 
