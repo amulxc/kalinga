@@ -540,6 +540,12 @@ const galleryImages1 = [
 
 const defaultButtons = [
   {
+    id: 9,
+    text: "Edition 9 - Volume 5, Issue - 1 January 2026 - June 2026",
+    onClick: null,
+    href: "/ieee/mindroid-vol-5-issue-1.pdf",
+  },
+  {
     id: 1,
     text: "Edition 8 - Volume 4, Issue -2 July 2025 - December 2025",
     onClick: null,
