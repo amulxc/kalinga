@@ -1208,7 +1208,7 @@ const UnivistaJournalPage = () => {
         },
         {
             id: 132,
-            shortName: "Bibliometric Analysis Of Diversity, Equity, And Inclusion Practices In Higher Education Institutions",
+            shortName: "A Bibliometric Analysis Of Diversity, Equity, And Inclusion Practices In Higher Education Institutions",
             title: "Shruti Singh",
             duration: "April - June 2026",
             level: "VOL 1",
