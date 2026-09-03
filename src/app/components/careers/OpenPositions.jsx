@@ -239,6 +239,7 @@ export default function OpenPositions({
   hideCheckEligibility = false,
   titleClassName = "text-white",
   cardTitleClassName = "font-semibold",
+  priceClassName = "text-2xl sm:text-3xl lg:text-2xl text-black",
   skillsLabel = "Key Skills And Learning Outcome"
 }) {
   const itemsPerPage = initialVisibleCount || positions.length;
@@ -317,11 +318,11 @@ export default function OpenPositions({
                     {/* Price - Registration Fee */}
                     {position.price && (
                       <div className="mb-4">
-                        <p className="text-2xl sm:text-3xl lg:text-2xl text-black">
+                        <p className={priceClassName}>
                           {position.price.includes('(Per Semester)') ? (
                             <>
                               {position.price.replace(' (Per Semester)', '')}
-                              <span className="text-base sm:text-lg lg:text-base"> (Per Semester)</span>
+                              <span className="text-[0.7em]"> (Per Semester)</span>
                             </>
                           ) : (
                             position.price

@@ -45,6 +45,7 @@ const Specialization = ({
         hideCheckEligibility={true}
         titleClassName="text-white max-w-4xl mx-auto  "
         cardTitleClassName="font-plus-jakarta-sans text-[var(--button-red)]"
+        priceClassName="text-[15px] text-gray-700 font-plus-jakarta-sans"
         skillsLabel="Career Opportunities"
       />
     </section>
