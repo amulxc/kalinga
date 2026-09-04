@@ -403,30 +403,6 @@ export async function fetchAllDepartmentsCourses(programType = null, department 
 }
 
 /**
- * Fetches departments and courses from the combined endpoint
- * @returns {Promise<Object>} Object with departments, courses, and metadata
- */
-export async function fetchDepartmentsCourses() {
-  try {
-    const url = getApiUrl(API_CONFIG.departmentCourses.departmentsCourses());
-    const response = await fetch(url, {
-      method: 'GET',
-      next: { revalidate: 3600 },
-    });
-
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status} ${response.statusText}`);
-    }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching departments and courses:', error);
-    throw error;
-  }
-}
-
-/**
  * Updates the course count for a department
  * @param {number} departmentId - The department ID
  * @param {number} courseCount - The course count to update

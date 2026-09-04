@@ -29,7 +29,6 @@ export const API_CONFIG = {
   // Optimized endpoints
   departmentCourses: {
     list: () => `/department-courses/`,
-    departmentsCourses: () => `/departments-courses/`,
   },
 
   // News & Events endpoints
