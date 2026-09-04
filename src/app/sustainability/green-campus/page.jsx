@@ -7,7 +7,7 @@ import Campusfacilitiescard from "@/app/components/campus-facilities/campusfacil
 import FAQ from "@/app/components/general/faq";
 import DataTable from "@/app/components/general/data-table";
 import ResearchSixGridButtons from "@/app/components/research/research_six_grid-buttons";
-import SectionHeading from "../../../../my-app/src/app/components/general/SectionHeading";
+import SectionHeading from "@/app/components/general/SectionHeading";
 
 const mainIntroContent = {
     title: "Sustainable Initiatives for a Green Campus",
