@@ -631,10 +631,22 @@ export default function OpenPositions({
                         </span>
                       </div>
                     )}
+                    {selectedPosition.time && (
+                      <div>
+                        <span className="text-sm font-semibold text-gray-600">Time: </span>
+                        <span className="text-gray-700">{selectedPosition.time}</span>
+                      </div>
+                    )}
                     {selectedPosition.venue && (
                       <div>
                         <span className="text-sm font-semibold text-gray-600">Venue: </span>
                         <span className="text-gray-700">{selectedPosition.venue}</span>
+                      </div>
+                    )}
+                    {selectedPosition.mode && (
+                      <div>
+                        <span className="text-sm font-semibold text-gray-600">Mode: </span>
+                        <span className="text-gray-700">{selectedPosition.mode}</span>
                       </div>
                     )}
                     {selectedPosition.eligibility && (
@@ -648,7 +660,7 @@ export default function OpenPositions({
                     )}
                     {selectedPosition.price && (
                       <div>
-                        <span className="text-sm font-semibold text-gray-600">Price: </span>
+                        <span className="text-sm font-semibold text-gray-600">{selectedPosition.priceLabel || "Price"}: </span>
                         <span className="text-gray-700">{selectedPosition.price}</span>
                       </div>
                     )}

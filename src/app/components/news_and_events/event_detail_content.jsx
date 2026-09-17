@@ -17,7 +17,9 @@ const EventDetailContent = ({
     src: 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
     alt: 'Event Gallery'
   },
-  galleryImages = []
+  galleryImages = [],
+  link = '',
+  linkLabel = 'Know More'
 }) => {
   // State to track the currently selected image
   const [selectedImage, setSelectedImage] = useState(mainImage);
@@ -79,6 +81,36 @@ const EventDetailContent = ({
             )
           )}
         </div>
+
+        {/* Brochure / external link supplied by the CMS `link` field */}
+        {link && (
+          <div className="mb-8 md:mb-12">
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-[var(--button-red)] px-5 py-3 text-white font-semibold font-plus-jakarta-sans hover:opacity-90 transition"
+            >
+              {linkLabel}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 17v3h16v-3"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        )}
 
         <style jsx>{`
           .rich-text-content {

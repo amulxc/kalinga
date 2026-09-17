@@ -6,6 +6,9 @@ import AdmissionCareer from '@/app/components/general/admission_cta';
 import UpcomingEvents from '@/app/components/admissions/upcoming_events';
 import { fetchNewsEvents, fetchNewsEventDetails, fetchNewsEventSEO, parseHtmlToParagraphs, parseHtmlListItems, parseHtmlToText } from '@/app/lib/api';
 import { getEventDisplayDate } from './eventDateOverrides';
+import { getEventContent } from './eventContentOverrides';
+import { getEventGlimpses } from './eventGlimpses';
+import Gallery from '@/app/components/general/gallery';
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
@@ -81,8 +84,15 @@ export default async function NewsEventDetailsPage({ params }) {
     if (newsEvent.category_name) tags.push({ label: newsEvent.category_name, color: 'blue' });
     if (newsEvent.department_name) tags.push({ label: newsEvent.department_name, color: 'red' });
 
+    // Events whose CMS copy is still just the launch teaser carry their full
+    // write-up in eventContentOverrides.
+    const content = getEventContent(decodedSlug, newsEvent.content);
+
+    // Photos of the previous edition, where the CMS gallery holds only the poster.
+    const glimpses = getEventGlimpses(decodedSlug);
+
     // Parse description/content
-    const description = parseHtmlToParagraphs(newsEvent.content);
+    const description = parseHtmlToParagraphs(content);
 
     // Images
     const mainImage = {
@@ -105,10 +115,17 @@ export default async function NewsEventDetailsPage({ params }) {
                 tags={tags}
                 title={parseHtmlToText(newsEvent.heading)}
                 description={description}
-                htmlContent={newsEvent.content}
+                htmlContent={content}
                 mainImage={mainImage}
                 galleryImages={galleryImages}
+                link={newsEvent.link}
             />
+            {glimpses && (
+                <Gallery
+                    title={glimpses.title}
+                    images={glimpses.images}
+                />
+            )}
             <UpcomingEvents />
             <AdmissionCareer />
         </>

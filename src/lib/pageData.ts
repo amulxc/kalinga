@@ -193,6 +193,12 @@ export const pageDataMap: Record<string, PageData> = {
         title: "Conferences & Events",
         banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
     },
+    "/icdiacs-26": {
+        slug: "/icdiacs-26",
+        title: "ICDIACS 2026",
+        breadcrumbLabel: "ICDIACS 2026",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
     "/contact-us": {
         slug: "/contact-us",
         title: "Contact Us",

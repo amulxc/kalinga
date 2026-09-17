@@ -8,8 +8,40 @@ import SectionHeading from '../components/general/SectionHeading';
 import ImageListItem from '../components/ccrc/imagelistitem';
 import FAQ from '../components/general/faq';
 import QuickLinks from '../components/general/quick_links';
-import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
 import PublicationGrid from '../components/research/publication-grid';
+import Gallery from '../components/general/gallery';
+
+/* Superscripts the ordinal suffix in a date, e.g. "15th September 2026" -> 15ᵗʰ September 2026. */
+const supOrdinals = (text) =>
+    String(text)
+        .split(/(\d+(?:st|nd|rd|th))/g)
+        .map((part, i) => {
+            const match = /^(\d+)(st|nd|rd|th)$/.exec(part);
+            return match ? (
+                <React.Fragment key={i}>
+                    {match[1]}<sup className="align-super text-[0.7em]">{match[2]}</sup>
+                </React.Fragment>
+            ) : (
+                <React.Fragment key={i}>{part}</React.Fragment>
+            );
+        });
+
+/* Table cells that should read as a stacked bullet list rather than a "•"-separated run-on. */
+const bulletList = (items) => (
+    <ul className="list-disc pl-4 space-y-1">
+        {items.map((item, i) => (
+            <li key={i}>{item}</li>
+        ))}
+    </ul>
+);
+
+const PersonCard = ({ name, role, org }) => (
+    <div className="h-full rounded-xl bg-white border border-gray-100 shadow-sm p-5">
+        <p className="font-semibold text-[var(--foreground)] font-plus-jakarta-sans">{name}</p>
+        {role && <p className="text-sm text-gray-600 mt-1 font-plus-jakarta-sans">{role}</p>}
+        {org && <p className="text-sm text-[var(--button-red)] mt-1 font-plus-jakarta-sans">{org}</p>}
+    </div>
+);
 
 const ICDIACSConferencePage = () => {
 
@@ -175,7 +207,12 @@ const ICDIACSConferencePage = () => {
         }
     ];
 
-    /* ---------------- DATES / REGISTRATION / SPONSORSHIP TABLES ---------------- */
+    /* ---------------- DATES / REGISTRATION / PUBLICATION / SPONSORSHIP ---------------- */
+    /* Accordion order requested by the department:
+       Important Dates -> Registration Details -> Registration Benefits & Concessions
+       -> Publication Details -> Sponsorship Opportunities.
+       The FAQ "table-display" variant renders tableSections in order, so the two
+       text-only panels live here as `answer` HTML rather than as separate items. */
     const conferenceTableSections = [
         {
             id: "important-dates",
@@ -185,11 +222,11 @@ const ICDIACSConferencePage = () => {
                 { key: "date", label: "Date", width: "w-64" }
             ],
             data: [
-                { milestone: "Abstract Submission Deadline", date: "15th August 2026" },
-                { milestone: "Full Paper Submission Deadline", date: "31st August 2026" },
-                { milestone: "Notification of Acceptance", date: "10th September 2026" },
-                { milestone: "Conference Dates", date: "27th & 28th October 2026" },
-                { milestone: "Email ID for Paper Submission", date: "icstdtsd@kalingauniversity.ac.in" }
+                { milestone: "Abstract Submission Deadline", date: supOrdinals("15th September 2026") },
+                { milestone: "Full Paper Submission Deadline", date: supOrdinals("30th September 2026") },
+                { milestone: "Notification of Acceptance", date: supOrdinals("10th September 2026") },
+                { milestone: "Conference Dates", date: supOrdinals("27th & 28th October 2026") },
+                { milestone: "Email ID for Paper Submission", date: <strong>icstdtsd@kalingauniversity.ac.in</strong> }
             ]
         },
         {
@@ -209,67 +246,91 @@ const ICDIACSConferencePage = () => {
             ]
         },
         {
+            id: "registration-benefits",
+            title: "Registration Benefits & Concessions",
+            answer: `<ul class="list-disc pl-5 space-y-2">
+                <li><strong>Institutional Concession:</strong> A 50% concession in the registration fee will be provided to participants from Kalinga University and institutions having an MoU with Kalinga University, Naya Raipur.</li>
+                <li><strong>Group Registration:</strong> A 10% concession on the applicable registration fee for group registrations of 50 or more participants from the same institution.</li>
+                <li><strong>The registration fee includes:</strong> Conference Kit, Participation Certificate, Access to all Technical Sessions, High Tea, Lunch and Snacks for both Conference Days, and E-Proceedings of the Conference.</li>
+                <li><strong>Accommodation:</strong> Accommodation will be arranged for participants upon prior request (charges applicable as per availability).</li>
+            </ul>`
+        },
+        {
+            id: "publication-details",
+            title: "Publication Details",
+            answer: `<ul class="list-disc pl-5 space-y-2">
+                <li>All accepted papers will appear in Conference Proceedings (ISBN &ndash; E-book).</li>
+                <li>Selected papers will be published in Scopus-indexed journals (with applicable APCs).</li>
+            </ul>`
+        },
+        {
             id: "sponsorship-opportunities",
             title: "Sponsorship Opportunities",
             columns: [
                 { key: "slNo", label: "S.No.", width: "w-16" },
                 { key: "category", label: "Category", width: "w-48" },
                 { key: "amount", label: "Amount (INR)", width: "w-40" },
-                { key: "benefits", label: "Benefits", width: "flex-1" }
+                { key: "benefits", label: "Benefits", widthPx: 380 }
             ],
             data: [
                 {
                     slNo: 1,
                     category: "Platinum Sponsorship",
                     amount: "1,00,000/-",
-                    benefits: "5 Delegate Passes • 4 Standee Displays • 5-min Address • Product Display Space • Logo on All Materials • 4 Full-Page Ads in Proceedings • Promotional Video • Conference Kit & Memento"
+                    benefits: bulletList([
+                        "5 Delegate Passes",
+                        "4 Standee Displays",
+                        "5-min Address",
+                        "Product Display Space",
+                        "Logo on All Materials",
+                        "4 Full-Page Ads in Proceedings",
+                        "Promotional Video",
+                        "Conference Kit & Memento"
+                    ])
                 },
                 {
                     slNo: 2,
                     category: "Gold Sponsorship",
                     amount: "50,000/-",
-                    benefits: "3 Delegate Passes • 1 Standee Display • Logo on Materials • Inserts in Conference Kits • 2 Full-Page Ads in Proceedings • Promotional Video • Conference Kit & Memento"
+                    benefits: bulletList([
+                        "3 Delegate Passes",
+                        "1 Standee Display",
+                        "Logo on Materials",
+                        "Inserts in Conference Kits",
+                        "2 Full-Page Ads in Proceedings",
+                        "Promotional Video",
+                        "Conference Kit & Memento"
+                    ])
                 },
                 {
                     slNo: 3,
                     category: "Silver Sponsorship",
                     amount: "25,000/-",
-                    benefits: "2 Delegate Passes • Logo on Materials • 1 Full-Page Ad in Proceedings • Conference Kit & Memento"
+                    benefits: bulletList([
+                        "2 Delegate Passes",
+                        "Logo on Materials",
+                        "1 Full-Page Ad in Proceedings",
+                        "Conference Kit & Memento"
+                    ])
                 },
                 {
                     slNo: 4,
                     category: "Bronze Sponsorship",
                     amount: "15,000/-",
-                    benefits: "1 Delegate Pass • Logo on Conference Materials • Conference Kit & Memento"
+                    benefits: bulletList([
+                        "1 Delegate Pass",
+                        "Logo on Conference Materials",
+                        "Conference Kit & Memento"
+                    ])
                 },
                 {
                     slNo: 5,
                     category: "Supporter Sponsorship",
                     amount: "10,000/-",
-                    benefits: "Logo Display on Conference Materials"
+                    benefits: bulletList([
+                        "Logo Display on Conference Materials"
+                    ])
                 }
-            ]
-        }
-    ];
-
-    /* ---------------- REGISTRATION / PUBLICATION INFO ---------------- */
-    const conferenceInfoItems = [
-        {
-            id: "registration-benefits",
-            question: "Registration Benefits & Concessions",
-            answer: [
-                "<strong>Institutional Concession:</strong> A 50% concession in the registration fee will be provided to participants from Kalinga University and institutions having an MoU with Kalinga University, Naya Raipur.",
-                "<strong>Group Registration:</strong> A 10% concession on the applicable registration fee for group registrations of 50 or more participants from the same institution.",
-                "<strong>The registration fee includes:</strong> Conference Kit, Participation Certificate, Access to all Technical Sessions, High Tea, Lunch and Snacks for both Conference Days, and E-Proceedings of the Conference.",
-                "<strong>Accommodation:</strong> Accommodation will be arranged for participants upon prior request (charges applicable as per availability)."
-            ]
-        },
-        {
-            id: "publication-details",
-            question: "Publication Details",
-            answer: [
-                "All accepted papers will appear in Conference Proceedings (ISBN – E-book).",
-                "Selected papers will be published in Scopus-indexed journals (with applicable APCs)."
             ]
         }
     ];
@@ -289,6 +350,165 @@ const ICDIACSConferencePage = () => {
         { id: 4, text: "Conference Report Compilation & Submission." }
     ];
 
+    /* ---------------- ORGANISING STRUCTURE ---------------- */
+    const KU = "Kalinga University, Naya Raipur";
+    const CS_IT_AP = "Assistant Professor, Department of CS & Faculty of IT";
+    const CS_IT_TA = "Teaching Assistant, Department of CS & Faculty of IT";
+
+    const organisingStructure = [
+        {
+            title: "Chief Patrons",
+            people: [
+                { name: "Dr. Rajiv Kumar", role: "Chairman", org: KU },
+                { name: "Dr. Sandeep Arora", role: "Chancellor", org: KU }
+            ]
+        },
+        {
+            title: "Patrons",
+            people: [
+                { name: "Prof. Dr. R. Shridhar", role: "Vice-Chancellor", org: KU },
+                { name: "Dr. Byju John", role: "Director General", org: KU },
+                { name: "Dr. Monika Sethi", role: "Pro-Vice-Chancellor", org: KU },
+                { name: "Dr. Sandeep Gandhi", role: "Registrar", org: KU },
+                { name: "Dr. Rahul Mishra", role: "Dean, Academic Affairs", org: KU }
+            ]
+        },
+        {
+            title: "Convenor & Co-Convenor",
+            people: [
+                { name: "Dr. Anupa Sinha", role: `HoD, ${CS_IT_AP}`, org: KU },
+                { name: "Dr. Ayaz Ahmed Faridi", role: CS_IT_AP, org: KU },
+                { name: "Dr. Sayed Athar Ali Hashmi", role: CS_IT_AP, org: KU },
+                { name: "Dr. Rakesh Yashwant Gedam", role: CS_IT_AP, org: KU }
+            ]
+        },
+        {
+            title: "Organising Secretaries",
+            people: [
+                { name: "Ms. Anjali Goswami", role: CS_IT_AP, org: KU },
+                { name: "Mr. Sanjay Behera", role: CS_IT_AP, org: KU },
+                { name: "Mrs. Minakshi Soni", role: CS_IT_AP, org: KU },
+                { name: "Mr. Digvijay Singh Thakur", role: CS_IT_AP, org: KU },
+                { name: "Ms. Sejal Singh Kashyap", role: CS_IT_TA, org: KU }
+            ]
+        },
+        {
+            title: "Organising Committee Members",
+            people: [
+                { name: "Ms. Anjali Kadao", role: CS_IT_AP, org: KU },
+                { name: "Ms. Roohee Khan", role: CS_IT_AP, org: KU },
+                { name: "Ms. Archana Mishra", role: CS_IT_AP, org: KU },
+                { name: "Mrs. Neha Shukla", role: CS_IT_AP, org: KU },
+                { name: "Mr. Pravin Singh", role: CS_IT_AP, org: KU },
+                { name: "Mr. Abdul Sallam", role: CS_IT_TA, org: KU },
+                { name: "Mr. Tuluraj Sahu", role: CS_IT_AP, org: KU },
+                { name: "Mrs. Madhavi Kshatri", role: CS_IT_AP, org: KU }
+            ]
+        }
+    ];
+
+    /* ---------------- CONFERENCE SESSIONS ---------------- */
+    const conferenceSessions = [
+        {
+            day: "Day 1",
+            sessions: [
+                { session: "Session 1", role: "Chairperson", name: "Dr. Omprakash Vyas", org: "IIT Director, IIT New Raipur" },
+                { session: "Session 2", role: "Keynote Speaker", name: "Mr. Mohammad Adil", org: "Solution Architect, Mphasis, Atlanta, Georgia, USA" }
+            ]
+        },
+        {
+            day: "Day 2",
+            sessions: [
+                { session: "Session 3", role: "Keynote Speaker", name: "Dr. Sarvesh Soni", org: "Scientist, Washington University" },
+                { session: "Session 4", role: "Guest of Honour", name: "Dr. Sanjay Kumar", org: "Principal, CS & IT Department, PTRSU, Raipur, C.G." }
+            ]
+        }
+    ];
+
+    /* ---------------- ADVISORY & TECHNICAL COMMITTEES ---------------- */
+    const advisoryCommittee = [
+        { name: "Dr. N. K. Nagwani", role: "Professor, Department of CSE", org: "NIT Raipur" },
+        { name: "Dr. Sreejit Panicker", role: "Industry Expert, Learning & Development Head", org: "Bhilai" },
+        { name: "Dr. Rishi Ranjan Singh", role: "Associate Professor, CSE", org: "IIT Bhilai" },
+        { name: "Dr. Sanjay Sharma", role: "Professor", org: "NIT Bhopal" },
+        { name: "Dr. Rohit Miri", role: "Associate Professor, CSE", org: "CSVTU Bhilai" },
+        { name: "Dr. Anuradha Tiwari", role: "Professor, CSE", org: "IIT Indore" }
+    ];
+
+    const technicalCommittee = [
+        { name: "Dr. Pradeep Kumar Singh", role: "Professor, CSE", org: "NIT Raipur" },
+        { name: "Dr. Tryambak Hiwarkar", role: "Professor, Director", org: "ASM Group of Institutions, Pune" },
+        { name: "Mrs. Minakshi Soni", role: "Assistant Professor", org: KU },
+        { name: "Mr. Digvijay Singh", role: "Assistant Professor", org: KU },
+        { name: "Ms. Anjali Goswami", role: "Assistant Professor", org: KU }
+    ];
+
+    /* ---------------- CONTACT INFORMATION ---------------- */
+    const contactPeople = [
+        { name: "Dr. Ayaz Ahmed Faridi", role: "Assistant Professor", dept: "Department of CS & Faculty of IT", phone: "+91-9755742726", email: "ayazahmed.faridi@kalingauniversity.ac.in" },
+        { name: "Dr. Sayed Athar Ali Hashmi", role: "Assistant Professor", dept: "Department of CS & Faculty of IT", phone: "+91-7000273879", email: "sayedathar.alihashmi@kalingauniversity.ac.in" },
+        { name: "Dr. Rakesh Yashwant Gedam", role: "Assistant Professor", dept: "Department of CS & Faculty of IT", phone: "+91-7498664876", email: "rakesh.yashwant@kalingauniversity.ac.in" }
+    ];
+
+    /* ---------------- COLLABORATORS ---------------- */
+    const collaborators = [
+        { name: "Infinity Club", logo: "/icdiacs-26/collaborators/infinity-club.png" },
+        { name: "Resilience Soft", logo: "/icdiacs-26/collaborators/resilience-soft.png" },
+        { name: "Cyber Security Awareness Club, Kalinga University", logo: "/icdiacs-26/collaborators/cyber-security-awareness-club.png" },
+        { name: "Alvitarix Services India Private Limited", logo: "/icdiacs-26/collaborators/alvitarix.png" }
+    ];
+
+    /* ---------------- GLIMPSES ---------------- */
+    const glimpsesImages = [
+        { id: 1, image: "/icdiacs-26/glimpses/glimpse-01.webp", alt: "ICDIACS conference glimpse 1" },
+        { id: 2, image: "/icdiacs-26/glimpses/glimpse-02.webp", alt: "ICDIACS conference glimpse 2" },
+        { id: 3, image: "/icdiacs-26/glimpses/glimpse-03.webp", alt: "ICDIACS conference glimpse 3" },
+        { id: 4, image: "/icdiacs-26/glimpses/glimpse-04.webp", alt: "ICDIACS conference glimpse 4" },
+        { id: 5, image: "/icdiacs-26/glimpses/glimpse-05.webp", alt: "ICDIACS conference glimpse 5" },
+        { id: 6, image: "/icdiacs-26/glimpses/glimpse-06.webp", alt: "ICDIACS conference glimpse 6" },
+        { id: 7, image: "/icdiacs-26/glimpses/glimpse-07.webp", alt: "ICDIACS conference glimpse 7" },
+        { id: 8, image: "/icdiacs-26/glimpses/glimpse-08.webp", alt: "ICDIACS conference glimpse 8" },
+        { id: 9, image: "/icdiacs-26/glimpses/glimpse-09.webp", alt: "ICDIACS conference glimpse 9" },
+        { id: 10, image: "/icdiacs-26/glimpses/glimpse-10.webp", alt: "ICDIACS conference glimpse 10" },
+        { id: 11, image: "/icdiacs-26/glimpses/glimpse-11.webp", alt: "ICDIACS conference glimpse 11" },
+        { id: 12, image: "/icdiacs-26/glimpses/glimpse-12.webp", alt: "ICDIACS conference glimpse 12" },
+        { id: 13, image: "/icdiacs-26/glimpses/glimpse-13.webp", alt: "ICDIACS conference glimpse 13" },
+        { id: 14, image: "/icdiacs-26/glimpses/glimpse-14.webp", alt: "ICDIACS conference glimpse 14" },
+        { id: 15, image: "/icdiacs-26/glimpses/glimpse-15.webp", alt: "ICDIACS conference glimpse 15" },
+        { id: 16, image: "/icdiacs-26/glimpses/glimpse-16.webp", alt: "ICDIACS conference glimpse 16" },
+        { id: 17, image: "/icdiacs-26/glimpses/glimpse-17.webp", alt: "ICDIACS conference glimpse 17" },
+        { id: 18, image: "/icdiacs-26/glimpses/glimpse-18.webp", alt: "ICDIACS conference glimpse 18" },
+        { id: 19, image: "/icdiacs-26/glimpses/glimpse-19.webp", alt: "ICDIACS conference glimpse 19" },
+        { id: 20, image: "/icdiacs-26/glimpses/glimpse-20.webp", alt: "ICDIACS conference glimpse 20" },
+        { id: 21, image: "/icdiacs-26/glimpses/glimpse-21.webp", alt: "ICDIACS conference glimpse 21" },
+        { id: 22, image: "/icdiacs-26/glimpses/glimpse-22.webp", alt: "ICDIACS conference glimpse 22" },
+        { id: 23, image: "/icdiacs-26/glimpses/glimpse-23.webp", alt: "ICDIACS conference glimpse 23" },
+        { id: 24, image: "/icdiacs-26/glimpses/glimpse-24.webp", alt: "ICDIACS conference glimpse 24" },
+        { id: 25, image: "/icdiacs-26/glimpses/glimpse-25.webp", alt: "ICDIACS conference glimpse 25" },
+        { id: 26, image: "/icdiacs-26/glimpses/glimpse-26.webp", alt: "ICDIACS conference glimpse 26" },
+        { id: 27, image: "/icdiacs-26/glimpses/glimpse-27.webp", alt: "ICDIACS conference glimpse 27" },
+        { id: 28, image: "/icdiacs-26/glimpses/glimpse-28.webp", alt: "ICDIACS conference glimpse 28" },
+        { id: 29, image: "/icdiacs-26/glimpses/glimpse-29.webp", alt: "ICDIACS conference glimpse 29" },
+        { id: 30, image: "/icdiacs-26/glimpses/glimpse-30.webp", alt: "ICDIACS conference glimpse 30" },
+        { id: 31, image: "/icdiacs-26/glimpses/glimpse-31.webp", alt: "ICDIACS conference glimpse 31" },
+        { id: 32, image: "/icdiacs-26/glimpses/glimpse-32.webp", alt: "ICDIACS conference glimpse 32" },
+        { id: 33, image: "/icdiacs-26/glimpses/glimpse-33.webp", alt: "ICDIACS conference glimpse 33" },
+        { id: 34, image: "/icdiacs-26/glimpses/glimpse-34.webp", alt: "ICDIACS conference glimpse 34" },
+        { id: 35, image: "/icdiacs-26/glimpses/glimpse-35.webp", alt: "ICDIACS conference glimpse 35" },
+        { id: 36, image: "/icdiacs-26/glimpses/glimpse-36.webp", alt: "ICDIACS conference glimpse 36" },
+        { id: 37, image: "/icdiacs-26/glimpses/glimpse-37.webp", alt: "ICDIACS conference glimpse 37" },
+        { id: 38, image: "/icdiacs-26/glimpses/glimpse-38.webp", alt: "ICDIACS conference glimpse 38" },
+        { id: 39, image: "/icdiacs-26/glimpses/glimpse-39.webp", alt: "ICDIACS conference glimpse 39" },
+        { id: 40, image: "/icdiacs-26/glimpses/glimpse-40.webp", alt: "ICDIACS conference glimpse 40" },
+        { id: 41, image: "/icdiacs-26/glimpses/glimpse-41.webp", alt: "ICDIACS conference glimpse 41" }
+    ];
+
+    /* ---------------- REGISTRATION QR CODES ---------------- */
+    const registrationQrCodes = [
+        { label: "Scan to Pay", src: "/icdiacs-26/scan-to-pay.png" },
+        { label: "Scan to Register", src: "/icdiacs-26/scan-to-register.png" }
+    ];
+
     return (
         <>
             {/* ================= HERO ================= */}
@@ -301,7 +521,7 @@ const ICDIACSConferencePage = () => {
                         ORGANISES
                     </p>
                     <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-4">
-                        3rd International Conference On Digital Intelligence
+                        3<sup className="align-super text-[0.55em]">rd</sup> International Conference On Digital Intelligence
                     </h1>
                     <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight mb-6 titlecase max-w-4xl mx-auto">
                         AI, Cybersecurity and Computing for a Sustainable Future
@@ -314,7 +534,7 @@ const ICDIACSConferencePage = () => {
                     <div className="flex flex-wrap justify-center items-stretch gap-4 md:gap-5 max-w-4xl mx-auto">
                         <div className="flex-1 min-w-[180px] rounded-xl bg-[var(--lite-sand)] p-5 shadow-sm">
                             <p className="text-2xl mb-1">🗓️</p>
-                            <p className="font-semibold text-[var(--foreground)]">27th &amp; 28th October 2026</p>
+                            <p className="font-semibold text-[var(--foreground)]">{supOrdinals("27th & 28th October 2026")}</p>
                         </div>
                         <div className="flex-1 min-w-[180px] rounded-xl bg-[var(--lite-sand)] p-5 shadow-sm">
                             <p className="text-2xl mb-1">📍</p>
@@ -350,7 +570,7 @@ const ICDIACSConferencePage = () => {
                 imageSrc="https://cdn.kalingauniversity.ac.in/course/student-computer.webp"
                 title="Why UN SDG 9?"
                 subtitle=""
-                description="Industry, Innovation and Infrastructure — the primary goal this conference advances:"
+                description=""
             />
 
             {/* ================= RELATED SDGs ================= */}
@@ -443,7 +663,7 @@ const ICDIACSConferencePage = () => {
                 imageHeight={100}
                 description="The Organising Committee invites original and unpublished research papers, review articles, and case studies from academicians, scientists, industry professionals, policymakers, and research scholars. All submissions will undergo a rigorous double-blind peer review process. Accepted papers will be published in the Conference Proceedings with an ISBN, and selected papers will be recommended for publication in UGC-CARE-listed and Scopus-indexed journals."
                 additionalContent={[
-                    "Submit to: icstdtsd@kalingauniversity.ac.in"
+                    <strong key="submit-to">Submit to: icstdtsd@kalingauniversity.ac.in</strong>
                 ]}
             />
 
@@ -503,7 +723,7 @@ const ICDIACSConferencePage = () => {
                 subtitle="Participate"
                 variant="table-display"
                 tableSections={conferenceTableSections}
-                items={conferenceInfoItems}
+                items={[]}
                 pyClassName="py-12"
             />
 
@@ -529,19 +749,207 @@ const ICDIACSConferencePage = () => {
                 headingClassName="text-[var(--foreground)]"
             />
 
-            {/* ================= CONTACT ================= */}
-            <OrganogramOfKalinga
-                title="Contact Us"
-                description={`<strong>For paper submission and queries,</strong><br/>📩 icstdtsd@kalingauniversity.ac.in`}
-                buttons={[
-                    {
-                        text: "Send Email",
-                        link: "mailto:icstdtsd@kalingauniversity.ac.in",
-                        id: 2
-                    }
-                ]}
-                useContainer={true}
+            {/* ================= ORGANISING STRUCTURE ================= */}
+            <section className="py-16 bg-[var(--lite-sand)]">
+                <div className="container mx-auto px-4">
+                    <SectionHeading
+                        title="Organising Structure"
+                        titleClassName="text-center mb-12"
+                    />
+                    <div className="max-w-6xl mx-auto space-y-10">
+                        {organisingStructure.map((group) => (
+                            <div key={group.title}>
+                                <h3 className="font-stix text-xl md:text-2xl text-[var(--button-red)] mb-4">
+                                    {group.title}
+                                </h3>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    {group.people.map((person) => (
+                                        <PersonCard key={person.name} {...person} />
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ================= CONFERENCE SESSIONS ================= */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4">
+                    <SectionHeading
+                        title="Conference Sessions"
+                        titleClassName="text-center mb-12"
+                    />
+                    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {conferenceSessions.map((day) => (
+                            <div key={day.day} className="rounded-2xl bg-[var(--lite-sand)] p-6 md:p-8">
+                                <h3 className="font-stix text-xl md:text-2xl text-[var(--button-red)] mb-5">
+                                    {day.day}
+                                </h3>
+                                <div className="space-y-4">
+                                    {day.sessions.map((item) => (
+                                        <div key={item.session} className="rounded-xl bg-white border border-gray-100 p-5">
+                                            <p className="text-[11px] uppercase tracking-[0.15em] text-gray-500 font-plus-jakarta-sans">
+                                                {item.session} &middot; {item.role}
+                                            </p>
+                                            <p className="font-semibold text-[var(--foreground)] mt-2 font-plus-jakarta-sans">
+                                                {item.name}
+                                            </p>
+                                            <p className="text-sm text-gray-600 mt-1 font-plus-jakarta-sans">
+                                                {item.org}
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ================= ADVISORY, TECHNICAL & ORGANISING COMMITTEES ================= */}
+            <section className="py-16 bg-[var(--lite-sand)]">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-6xl mx-auto space-y-14">
+                        <div>
+                            <SectionHeading
+                                title="Advisory Committee"
+                                titleClassName="text-center mb-8"
+                            />
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {advisoryCommittee.map((person) => (
+                                    <PersonCard key={person.name} {...person} />
+                                ))}
+                            </div>
+                        </div>
+
+                        <div>
+                            <SectionHeading
+                                title="Technical Committee"
+                                titleClassName="text-center mb-8"
+                            />
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {technicalCommittee.map((person) => (
+                                    <PersonCard key={person.name} {...person} />
+                                ))}
+                            </div>
+                        </div>
+
+                        <div>
+                            <SectionHeading
+                                title="Organising Committee"
+                                titleClassName="text-center mb-8"
+                            />
+                            <p className="text-center text-gray-700 font-plus-jakarta-sans">
+                                All CS &amp; IT Faculty Members
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ================= CONTACT INFORMATION ================= */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4">
+                    <SectionHeading
+                        title="Contact Information"
+                        titleClassName="text-center mb-12"
+                    />
+                    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {contactPeople.map((person) => (
+                            <div key={person.email} className="rounded-2xl bg-[var(--lite-sand)] p-6">
+                                <p className="font-semibold text-[var(--foreground)] font-plus-jakarta-sans">
+                                    {person.name}
+                                </p>
+                                <p className="text-sm text-gray-600 mt-1 font-plus-jakarta-sans">{person.role}</p>
+                                <p className="text-sm text-gray-600 font-plus-jakarta-sans">{person.dept}</p>
+                                <p className="mt-4 text-sm font-plus-jakarta-sans">
+                                    <a
+                                        href={`tel:${person.phone.replace(/[^+\d]/g, '')}`}
+                                        className="text-[var(--button-red)] hover:underline"
+                                    >
+                                        📲 {person.phone}
+                                    </a>
+                                </p>
+                                <p className="text-sm font-plus-jakarta-sans break-all">
+                                    <a
+                                        href={`mailto:${person.email}`}
+                                        className="text-[var(--button-red)] hover:underline"
+                                    >
+                                        📩 {person.email}
+                                    </a>
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                    <p className="text-center text-gray-700 mt-10 font-plus-jakarta-sans">
+                        <strong>For paper submission and queries,</strong>
+                        <br />
+                        <a
+                            href="mailto:icstdtsd@kalingauniversity.ac.in"
+                            className="text-[var(--button-red)] hover:underline"
+                        >
+                            📩 icstdtsd@kalingauniversity.ac.in
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            {/* ================= COLLABORATORS ================= */}
+            <section className="py-16 bg-[var(--lite-sand)]">
+                <div className="container mx-auto px-4">
+                    <SectionHeading
+                        title="Collaborators"
+                        titleClassName="text-center mb-12"
+                    />
+                    <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+                        {collaborators.map((collaborator) => (
+                            <div
+                                key={collaborator.name}
+                                className="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 flex flex-col items-center justify-between gap-4"
+                            >
+                                <img
+                                    src={collaborator.logo}
+                                    alt={collaborator.name}
+                                    className="h-24 w-full object-contain"
+                                />
+                                <p className="text-center text-sm text-gray-700 font-plus-jakarta-sans">
+                                    {collaborator.name}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ================= GLIMPSES ================= */}
+            <Gallery
+                title="Glimpses"
+                images={glimpsesImages}
             />
+
+            {/* ================= SCAN TO PAY / SCAN TO REGISTER ================= */}
+            <section className="py-12 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        {registrationQrCodes.map((qr) => (
+                            <div
+                                key={qr.label}
+                                className="rounded-2xl bg-[var(--lite-sand)] p-6 flex flex-col items-center gap-4"
+                            >
+                                <h3 className="font-stix text-xl md:text-2xl text-[var(--foreground)]">
+                                    {qr.label}
+                                </h3>
+                                <img
+                                    src={qr.src}
+                                    alt={qr.label}
+                                    className="w-44 h-44 object-contain bg-white rounded-xl p-2"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* ================= DOWNLOAD BROCHURE ================= */}
             <div className="mx-auto max-w-6xl px-4 md:px-6 mt-10 mb-6">
@@ -549,7 +957,7 @@ const ICDIACSConferencePage = () => {
                     <div>
                         <h3 className="font-stix text-xl md:text-2xl text-[var(--foreground)]">
                             ICDIACS 2026 <br />
-                            3rd International Conference On Digital Intelligence
+                            3<sup className="align-super text-[0.55em]">rd</sup> International Conference On Digital Intelligence
                         </h3>
                         <p className="mt-2 text-gray-700">
                             Explore the Conference Brochure
