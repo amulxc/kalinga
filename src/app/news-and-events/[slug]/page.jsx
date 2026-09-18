@@ -8,6 +8,7 @@ import { fetchNewsEvents, fetchNewsEventDetails, fetchNewsEventSEO, parseHtmlToP
 import { getEventDisplayDate } from './eventDateOverrides';
 import { getEventContent } from './eventContentOverrides';
 import { getEventGlimpses } from './eventGlimpses';
+import { getEventImage } from './eventImageOverrides';
 import Gallery from '@/app/components/general/gallery';
 
 // Generate metadata for SEO
@@ -95,18 +96,28 @@ export default async function NewsEventDetailsPage({ params }) {
     const description = parseHtmlToParagraphs(content);
 
     // Images
-    const mainImage = {
-        src: newsEvent.images && newsEvent.images.length > 0
-            ? newsEvent.images.find(img => img.is_featured)?.image || newsEvent.images[0].image
-            : 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
-        alt: newsEvent.heading
-    };
+    // A repo photo stands in where the CMS entry still carries the generic
+    // "upcoming events" placeholder.
+    const imageOverride = getEventImage(decodedSlug);
+    const cmsImages = newsEvent.images || [];
+    const cmsBanner = cmsImages.find(img => img.is_featured) || cmsImages[0];
 
-    const galleryImages = newsEvent.images ? newsEvent.images.map(img => ({
-        id: img.id,
-        src: img.image,
-        alt: img.alt || newsEvent.heading
-    })) : [];
+    const mainImage = imageOverride
+        ? { src: imageOverride.image, alt: imageOverride.alt }
+        : {
+            src: cmsBanner?.image || 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
+            alt: newsEvent.heading
+        };
+
+    // The thumbnail strip sets the large image on click, so the banner an
+    // override replaces must not stay in it.
+    const galleryImages = cmsImages
+        .filter(img => !(imageOverride && img === cmsBanner))
+        .map(img => ({
+            id: img.id,
+            src: img.image,
+            alt: img.alt || newsEvent.heading
+        }));
 
 
     return (
@@ -124,6 +135,7 @@ export default async function NewsEventDetailsPage({ params }) {
                 <Gallery
                     title={glimpses.title}
                     images={glimpses.images}
+                    enableLightbox={true}
                 />
             )}
             <UpcomingEvents />
