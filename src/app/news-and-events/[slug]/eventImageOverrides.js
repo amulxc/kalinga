@@ -3,15 +3,15 @@
  *
  * Some entries are published with a generic "upcoming events" placeholder
  * because the department had no artwork ready at launch. Where a better photo
- * already lives in the repo, it is listed here by event slug and used in place
- * of the CMS image - both for the hero on the event page and for the card in
- * the Upcoming Events section.
+ * exists - in the repo or on the CDN - it is listed here by event slug and used
+ * in place of the CMS image, both for the hero on the event page and for the
+ * card in the Upcoming Events section.
  *
  * Remove an entry once the CMS holds the same image.
  */
 export const EVENT_IMAGE_OVERRIDES = {
     "ideathon-6-0": {
-        image: "/news-and-events/ideathon-6-0/glimpses/glimpse-09.webp",
+        image: "https://cdn.kalingauniversity.ac.in/ideathon_cover.jpg",
         alt: "IDEATHON 6.0",
     },
 };
