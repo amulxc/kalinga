@@ -62,7 +62,7 @@ export default function NewsEvents({ categoryId, categoryIds, title, fallback = 
           if (featured) {
             setFeaturedNews({
               id: featured.id,
-              title: featured.heading,
+              title: parseHtmlToText(featured.heading),
               image: featured.images && featured.images.length > 0 ? featured.images[0].image : 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
               date: featured.date,
               badgeText: featured.category_name,
@@ -77,7 +77,7 @@ export default function NewsEvents({ categoryId, categoryIds, title, fallback = 
             .map(item => ({
               id: item.id,
               date: item.date,
-              title: item.heading,
+              title: parseHtmlToText(item.heading),
               image: item.images && item.images.length > 0 ? item.images[0].image : 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
               slug: item.slug
             }))
@@ -98,7 +98,7 @@ export default function NewsEvents({ categoryId, categoryIds, title, fallback = 
             eventsData = results.map(item => ({
               id: item.id,
               date: item.date,
-              title: item.heading,
+              title: parseHtmlToText(item.heading),
               image: item.images && item.images.length > 0 ? item.images[0].image : 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
               slug: item.slug
             }));
@@ -109,7 +109,7 @@ export default function NewsEvents({ categoryId, categoryIds, title, fallback = 
               .map(item => ({
                 id: item.id,
                 date: item.date, // YYYY-MM-DD
-                title: item.heading,
+                title: parseHtmlToText(item.heading),
                 image: item.images && item.images.length > 0 ? item.images[0].image : 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
                 slug: item.slug
               }));

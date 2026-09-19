@@ -44,8 +44,8 @@ export async function generateMetadata({ params }) {
         const item = await fetchNewsEventDetails(slug);
         if (item) {
             return {
-                title: item.heading,
-                description: item.heading, // We could parse content if needed
+                title: parseHtmlToText(item.heading),
+                description: parseHtmlToText(item.heading), // We could parse content if needed
             }
         }
     } catch (e) {
@@ -106,7 +106,7 @@ export default async function NewsEventDetailsPage({ params }) {
         ? { src: imageOverride.image, alt: imageOverride.alt }
         : {
             src: cmsBanner?.image || 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
-            alt: newsEvent.heading
+            alt: parseHtmlToText(newsEvent.heading)
         };
 
     // The thumbnail strip sets the large image on click, so the banner an
@@ -116,7 +116,7 @@ export default async function NewsEventDetailsPage({ params }) {
         .map(img => ({
             id: img.id,
             src: img.image,
-            alt: img.alt || newsEvent.heading
+            alt: img.alt || parseHtmlToText(newsEvent.heading)
         }));
 
 

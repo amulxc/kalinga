@@ -129,11 +129,11 @@ export default function StudentActivities({
         if (results.length > 0) {
           let mappedActivities = results.map(item => ({
             id: item.id,
-            title: item.heading,
+            title: parseHtmlToText(item.heading),
             description: item.short_para ? parseHtmlToText(item.short_para) : getPreviewText(parseHtmlToText(item.content)),
             fullDescription: parseHtmlToText(item.content),
             imageSrc: item.primary_image?.image || item.images?.[0]?.image || "https://cdn.kalingauniversity.ac.in/departments/image+15.png",
-            imageAlt: item.primary_image?.alt || item.images?.[0]?.alt || item.heading || "Events & Activities",
+            imageAlt: item.primary_image?.alt || item.images?.[0]?.alt || parseHtmlToText(item.heading) || "Events & Activities",
             date: item.date,
             buttonText: "Read More",
             slug: item.slug

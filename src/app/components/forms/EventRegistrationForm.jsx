@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { FormWrapper, InputField, FormGrid } from './FormComponents'
 import GlobalArrowButton from '../general/global-arrow_button'
 import { submitForm } from '../../config/api'
+import { parseHtmlToText } from '../../lib/api'
 
 export default function EventRegistrationForm() {
     const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ export default function EventRegistrationForm() {
             const response = await fetch('https://api.kalingauniversity.ac.in/api/news-events/')
             const data = await response.json()
             const results = data.results || data
-            setEvents(results.map(e => ({ value: e.id.toString(), label: e.title || e.heading || e.name })))
+            setEvents(results.map(e => ({ value: e.id.toString(), label: parseHtmlToText(e.title || e.heading || e.name) })))
         } catch (err) {
             console.error("Failed to fetch events", err)
         }
