@@ -15,7 +15,7 @@ export const EVENT_CONTENT_OVERRIDES = {
     "ideathon-6-0": `
 <p>Do you have a business idea in technology, sustainability, healthcare, finance, education, or any other field? Here&rsquo;s your chance to turn it into reality!</p>
 
-<p>The Faculty of Commerce and Management is organizing <strong>IDEATHON 6.0 &ndash; A Business Plan Competition 2026</strong> for school and college students, offering the opportunity to present business plans and win amazing cash prizes worth <strong>INR 1,20,000/-</strong> and certifications.</p>
+<p>The Faculty of Commerce and Management is organizing <strong>IDEATHON 6.0 &ndash; A Business Plan Competition 2026</strong> on 23<sup>rd</sup> and 24<sup>th</sup> November 2026 for school and college students, offering the opportunity to present business plans and win amazing cash prizes worth <strong>INR 1,20,000/-</strong> and certifications.</p>
 
 <p>We invite aspiring young entrepreneurs to pitch their ideas, compete, and take their first step towards building successful business ventures.</p>
 

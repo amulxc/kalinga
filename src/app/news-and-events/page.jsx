@@ -11,6 +11,7 @@ import { fetchNewsEvents, fetchAllDepartments, parseHtmlToText } from '../lib/ap
 import MediaCardSlider from "../components/general/media-card-slider";
 import StudentActivities from "../components/department/student_activities";
 import MomentsGallery from "../components/news_and_events/moments_gallery";
+import { getEventImage } from './[slug]/eventImageOverrides';
 
 const placementGalleryImages = [
   // // Training and Placement Cell
@@ -192,8 +193,8 @@ function NewsAndEvents() {
       title: parseHtmlToText(item.heading),
       description: item.short_para ? parseHtmlToText(item.short_para) : getTruncatedContent(item.content),
       fullDescription: parseHtmlToText(item.content),
-      imageSrc: item.primary_image?.image || item.images?.[0]?.image || 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
-      imageAlt: item.primary_image?.alt || parseHtmlToText(item.heading),
+      imageSrc: getEventImage(item.slug)?.image || item.primary_image?.image || item.images?.[0]?.image || 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
+      imageAlt: getEventImage(item.slug)?.alt || item.primary_image?.alt || parseHtmlToText(item.heading),
       date: item.date,
       buttonText: 'Read More',
       slug: item.slug
