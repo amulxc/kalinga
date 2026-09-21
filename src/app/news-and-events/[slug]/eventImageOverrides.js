@@ -26,3 +26,18 @@ export const EVENT_IMAGE_OVERRIDES = {
 export function getEventImage(slug) {
     return EVENT_IMAGE_OVERRIDES[slug];
 }
+
+/**
+ * Events whose banner should stay a cover image only - i.e. shown on the
+ * Upcoming Events card - and not repeated as the large image inside the
+ * event detail page body.
+ */
+const HIDE_INLINE_IMAGE_SLUGS = ["ideathon-6-0"];
+
+/**
+ * @param {string} slug - the event's slug
+ * @returns {boolean} true when the banner should be hidden from the detail page body
+ */
+export function shouldHideInlineImage(slug) {
+    return HIDE_INLINE_IMAGE_SLUGS.includes(slug);
+}

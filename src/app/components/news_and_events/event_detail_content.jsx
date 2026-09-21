@@ -19,7 +19,8 @@ const EventDetailContent = ({
   },
   galleryImages = [],
   link = '',
-  linkLabel = 'Know More'
+  linkLabel = 'Know More',
+  showMainImage = true
 }) => {
   // State to track the currently selected image
   const [selectedImage, setSelectedImage] = useState(mainImage);
@@ -160,7 +161,7 @@ const EventDetailContent = ({
         `}</style>
 
         {/* Main Large Image */}
-        {selectedImage && selectedImage.src && (
+        {showMainImage && selectedImage && selectedImage.src && (
           <div className="mb-5">
             <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
               <Image

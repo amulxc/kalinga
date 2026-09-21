@@ -8,7 +8,7 @@ import { fetchNewsEvents, fetchNewsEventDetails, fetchNewsEventSEO, parseHtmlToP
 import { getEventDisplayDate } from './eventDateOverrides';
 import { getEventContent } from './eventContentOverrides';
 import { getEventGlimpses } from './eventGlimpses';
-import { getEventImage } from './eventImageOverrides';
+import { getEventImage, shouldHideInlineImage } from './eventImageOverrides';
 import Gallery from '@/app/components/general/gallery';
 
 // Generate metadata for SEO
@@ -130,6 +130,7 @@ export default async function NewsEventDetailsPage({ params }) {
                 mainImage={mainImage}
                 galleryImages={galleryImages}
                 link={newsEvent.link}
+                showMainImage={!shouldHideInlineImage(decodedSlug)}
             />
             {glimpses && (
                 <Gallery
