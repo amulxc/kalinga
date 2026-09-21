@@ -399,8 +399,7 @@ const ICEASREConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://cdn.kalingauniversity.ac.in/ICEASRE-2027/FOT-ICEASRE-2026-27.pdf"
-                        download
+                        href="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/Brochure+/FOT_Confrence_Brochure.pdf"
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 rounded-xl bg-[var(--button-red)] px-5 py-3 text-white font-semibold hover:opacity-90 transition"

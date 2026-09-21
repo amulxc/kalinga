@@ -666,6 +666,22 @@ export default function OpenPositions({
                     )}
                   </div>
 
+                  {/* Scan To Register QR */}
+                  {selectedPosition.qrCode && (
+                    <div className="pt-4 border-t border-gray-200">
+                      <h4 className="text-lg font-semibold text-[var(--button-red)] mb-3">
+                        {selectedPosition.qrLabel || "Scan To Register"}
+                      </h4>
+                      <Image
+                        src={selectedPosition.qrCode}
+                        alt={`${selectedPosition.qrLabel || "Scan To Register"} - ${selectedPosition.title}`}
+                        width={176}
+                        height={176}
+                        className="w-40 h-40 sm:w-44 sm:h-44 object-contain bg-white p-2 rounded-xl border border-gray-200"
+                      />
+                    </div>
+                  )}
+
                   {/* Registration Link Button */}
                   {selectedPosition.registrationLink && (
                     <div className="pt-4 border-t border-gray-200">

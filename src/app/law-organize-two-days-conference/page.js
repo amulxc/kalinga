@@ -9,6 +9,7 @@ import ImageListItem from '../components/ccrc/imagelistitem';
 import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
 import PublicationGrid from '../components/research/publication-grid';
+import Gallery from '../components/general/gallery';
 
 
 
@@ -98,6 +99,36 @@ const LawConferencePage = () => {
             text: "<strong>Edited Book with ISBN:</strong> Select papers may also be published in an Edited Book with ISBN without any publication charges.",
         }
     ]
+
+    const collaborators = [
+        {
+            id: 1,
+            image: "/law-conference/collaborators/law-teachers-india.webp",
+            alt: "Law Teachers India - Raising the Bar & Bench"
+        },
+        {
+            id: 2,
+            image: "/law-conference/collaborators/cyberlaw-university.webp",
+            alt: "Cyberlaw University - Education in Cyberlaw"
+        },
+        {
+            id: 3,
+            image: "https://cdn.kalingauniversity.ac.in/conferences/knowledge+steelz.png",
+            alt: "Knowledge Steez"
+        }
+    ];
+
+    // Conference glimpses - opens full screen on click via the Gallery lightbox.
+    const glimpsesImages = [
+        "dsc00024", "dsc00029", "dsc00056", "dsc00081", "dsc00083", "dsc00918",
+        "dsc00923", "dsc00958", "dsc00965", "dsc00972", "dsc00981", "dsc00989",
+        "dsc00997", "dsc01000", "dsc01025", "dsc01043", "dsc01079", "dsc01082",
+        "dsc01101", "dsc01108", "dsc01113", "dsc01118", "dsc01122", "dsc01124"
+    ].map((name, index) => ({
+        id: index + 1,
+        image: `/law-conference/glimpses/${name}.webp`,
+        alt: `Two-Day Global Conference glimpse ${index + 1}`
+    }));
 
     const tableSections = [
         {
@@ -636,12 +667,19 @@ const LawConferencePage = () => {
                         <h3 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight titlecase max-w-4xl mx-auto mb-6">
                             Collaborators
                         </h3>
-                        <div className="max-w-3xl mx-auto hover:scale-[1.01] transition-transform duration-300">
-                            <img
-                                src="https://cdn.kalingauniversity.ac.in/law-conference/Collaborators.webp"
-                                alt="Collaborators"
-                                className="mx-auto w-full h-auto object-contain rounded-xl shadow-sm border border-gray-50"
-                            />
+                        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {collaborators.map((collaborator) => (
+                                <div
+                                    key={collaborator.id}
+                                    className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex items-center justify-center h-32 md:h-36 hover:scale-[1.03] hover:shadow-md transition-all duration-300"
+                                >
+                                    <img
+                                        src={collaborator.image}
+                                        alt={collaborator.alt}
+                                        className="max-w-full max-h-full object-contain"
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -939,6 +977,13 @@ const LawConferencePage = () => {
                 tableSections={sponsorshipTableSections}
                 items={[]}
                 pyClassName="py-8 md:py-12"
+            />
+
+            <Gallery
+                title="Glimpses"
+                images={glimpsesImages}
+                enableLightbox={true}
+                backgroundColor="bg-[var(--lite-sand)]"
             />
 
             <OrganogramOfKalinga
