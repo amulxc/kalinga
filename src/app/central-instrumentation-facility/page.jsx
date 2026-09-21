@@ -24,19 +24,14 @@ const CentralInstrumentationFacilityPage = () => {
 
 
   // Hands-On Training Programs 2026-27
-  // Source: "CIF Hands on Training - New Content - 2026-27" (Google Doc).
-  // Every program carries the full detail set (Applications, What You'll Learn,
-  // Who Can Participate, What's Included, Resource Person, Date/Time/Venue/Mode,
-  // Registration Fees) so the "Know More" popup renders the complete brochure.
   const handsOnPrograms2627 = [
     {
       title: "Developing AI and Digital Skills for Effective Research",
       startDate: "19.09.2026",
       time: "10:00 A.M. to 4:00 P.M.",
       venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Research & Data Analysis, Literature Review & Academic Writing, Data Visualisation, Research Automation, AI-Assisted Scientific Research",
+      price: "INR 1,000/-",
+      applications: "Research & Data Analysis, Literature Review & Academic Writing, Data Visualization, Research Automation, AI-Assisted Scientific Research",
       skills: [
         "AI Tools for Research",
         "Smart Literature Search Techniques",
@@ -47,7 +42,7 @@ const CentralInstrumentationFacilityPage = () => {
       skillsLabel: "What You'll Learn",
       participants: "UG/PG/Ph.D. Students (All Disciplines), Research Scholars, Faculty Members, Industry Professionals",
       included: ["Participation Certificate", "Lunch"],
-      resourcePerson: "Dr. Deepak Bishla - Head, IT Department, Dr. B.R. Ambedkar University, Delhi",
+      resourcePerson: "Dr. Deepak Bishla and Dr. Shraddha Verma (In-Charge)",
       imageUrl: "https://cdn.kalingauniversity.ac.in/cif-2.webp",
       imageAlt: "Developing AI and Digital Skills for Effective Research",
       knowMoreButton: "Know More",
@@ -57,11 +52,6 @@ const CentralInstrumentationFacilityPage = () => {
     {
       title: "Scanning Electron Microscope & Microscopy",
       startDate: "26.09.2026",
-      time: "10:00 A.M. to 5:00 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Nanotechnology Research, Material Science & Engineering, Biomedical & Life Sciences, Electronics Manufacturing, Forensic Science",
       skills: [
         "SEM Principles",
         "Sample Preparation Methods",
@@ -69,23 +59,12 @@ const CentralInstrumentationFacilityPage = () => {
         "Microstructural Features Analysis",
         "Image Capturing"
       ],
-      skillsLabel: "What You'll Learn",
-      participants: "Engineering and Technology Students, Science Students and Professionals, Research Scholars, Industry Professionals, Biotech and Biomedical Students",
-      included: ["Participation Certificate", "Handouts & Lunch"],
-      resourcePerson: "Dr. Abhishek Kumar Pandey - Assistant Professor, Department of Botany, Kalinga University",
       imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-1.jpg",
-      imageAlt: "Scanning Electron Microscope & Microscopy",
-      knowMoreButton: "Know More"
+      imageAlt: "SEM & Microscopy"
     },
     {
       title: "Foreign Exchange & Commodity Market",
       startDate: "09.10.2026",
-      time: "09:00 A.M. to 04:00 P.M.",
-      venue: "Kalinga University",
-      mode: "Hybrid (Online and Offline)",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Global Currency Trading, Commodity Trading, Risk Management & Hedging, International Business & Finance, Investment & Portfolio Diversification",
       skills: [
         "Foreign Exchange Market Fundamentals",
         "Commodity Market Basics",
@@ -103,25 +82,13 @@ const CentralInstrumentationFacilityPage = () => {
     {
       title: "Legal Drafting",
       startDate: "10.10.2026",
-      time: "09:30 A.M. to 04:30 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Business & Corporate Matters, Property & Rental Matters, Banking & Financial Disputes, Civil & Recovery Matters, Criminal Proceedings, Family & Matrimonial Matters, Court & Legal Proceedings",
       skills: [
-        "Non-Disclosure Agreement (NDA)",
-        "Employment Agreement",
-        "Rent/Lease Agreement",
-        "Legal Notice (Sec. 138 NI Act)",
-        "Civil Suit (Recovery)",
-        "Bail Application",
-        "Divorce Petition",
-        "FIR and Criminal Complaints"
+        "Legal Research Methodology",
+        "Case Law & Statutory Research",
+        "Legal Writing Techniques",
+        "Citation & Referencing Methods",
+        "Drafting Legal Documents"
       ],
-      skillsLabel: "What You'll Learn",
-      participants: "Law Students (UG/PG/Ph.D), Research Scholars, Faculty Members, Legal Professionals, Academicians",
-      included: ["Participation Certificate", "Lunch"],
-      resourcePerson: "Adv. Harshmander Rastogi - Advocate, High Court of Chhattisgarh",
       imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-3.jpg",
       imageAlt: "Legal Drafting",
       knowMoreButton: "Know More"
@@ -129,11 +96,6 @@ const CentralInstrumentationFacilityPage = () => {
     {
       title: "3D Printing",
       startDate: "23.01.2027",
-      time: "09:00 A.M. to 04:00 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Rapid Prototyping, Medical Implants, Automotive Design, Industrial Manufacturing Solutions",
       skills: [
         "Introduction to 3D Printing Technologies",
         "CAD Modeling",
@@ -151,10 +113,6 @@ const CentralInstrumentationFacilityPage = () => {
     {
       title: "Molecular Techniques (PCR, Electrophoresis, UV Transilluminator)",
       startDate: "06.02.2027",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Genetic Research, Clinical Diagnostics, Forensic Analysis, Drug Discovery Studies, Industrial Research",
       skills: [
         "Polymerase Chain Reaction Techniques",
         "Gel Electrophoresis & DNA Separation",
@@ -167,40 +125,11 @@ const CentralInstrumentationFacilityPage = () => {
       included: ["Participation Certificate", "Handouts & Lunch"],
       resourcePerson: "Dr. Sushma Dubey",
       imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-5.jpg",
-      imageAlt: "Molecular Techniques (PCR, Electrophoresis, UV Transilluminator)",
-      knowMoreButton: "Know More"
-    },
-    {
-      title: "Electric Vehicle",
-      startDate: "13.02.2027",
-      time: "09:00 A.M. to 4:00 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "EV Design and Development, Charging Infrastructure, Battery Technology, EV Maintenance, Industry Applications",
-      skills: [
-        "Fundamentals of EVs",
-        "Practical Training with EV Components",
-        "Battery Management & Charging Systems",
-        "Power Electronics & Motor Control",
-        "EV Simulation & Modelling Tools",
-        "Safety Guidelines & Industry Standards"
-      ],
-      skillsLabel: "What You'll Learn",
-      participants: "Engineering Students, Research Scholars, Industry Professionals",
-      included: ["Participation Certificate", "Lunch"],
-      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-7.jpg",
-      imageAlt: "Electric Vehicle",
-      knowMoreButton: "Know More"
+      imageAlt: "Molecular Techniques (PCR, Electrophoresis, UV Transilluminator)"
     },
     {
       title: "Protein Estimation & Biochemistry Analyser",
       startDate: "13.02.2027",
-      time: "09:00 A.M. to 4:00 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Clinical Diagnostics, Pharmaceutical Research, Food and Beverage Industry, Biotechnology, Agricultural and Veterinary Sciences",
       skills: [
         "Protein Quantification Techniques",
         "Biochemical Assay Handling",
@@ -212,16 +141,25 @@ const CentralInstrumentationFacilityPage = () => {
       participants: "UG/PG/Ph.D. Students (Biotechnology, Pharmacy, Life Sciences, and other relevant fields), Researchers, Industry Professionals, Healthcare Professionals",
       included: ["Participation Certificate", "Lunch"],
       imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-6.jpg",
-      imageAlt: "Protein Estimation & Biochemistry Analyser",
-      knowMoreButton: "Know More"
+      imageAlt: "Protein Estimation & Biochemistry Analyser"
+    },
+    {
+      title: "Electric Vehicles",
+      startDate: "13.02.2027",
+      skills: [
+        "Fundamentals of EVs",
+        "Hands-on Training with EV Components",
+        "Battery Management & Charging Systems",
+        "Power Electronics & Motor Control",
+        "EV Simulation & Modelling Tools",
+        "Safety Guidelines & Industry Standards"
+      ],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-7.jpg",
+      imageAlt: "Electric Vehicles"
     },
     {
       title: "Advanced Instrumentation & Water Analysis",
       startDate: "20.02.2027",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Environmental Monitoring, Industrial Labs, Chemical Industries, Water Resource Management, R&D",
       skills: [
         "Water Quality Testing",
         "Spectroscopy Techniques",
@@ -239,11 +177,6 @@ const CentralInstrumentationFacilityPage = () => {
     {
       title: "High-Performance Liquid Chromatography",
       startDate: "27.02.2027",
-      time: "09:00 A.M. to 4:00 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Pharmaceutical Quality Control, Forensic Science, Food Safety, Biotechnology, R&D",
       skills: [
         "Principles of HPLC",
         "Instrument Setup",
@@ -261,11 +194,6 @@ const CentralInstrumentationFacilityPage = () => {
     {
       title: "Microsoft Power Business Intelligence",
       startDate: "13.03.2027",
-      time: "09:00 A.M. to 4:00 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Business Analytics Performance Tracking, Data-Driven Decision Making, KPI Monitoring",
       skills: [
         "Power BI Tools",
         "Data Visualisation",
@@ -283,23 +211,14 @@ const CentralInstrumentationFacilityPage = () => {
     {
       title: "X-Ray Diffractometer",
       startDate: "10.04.2027",
-      time: "09:00 A.M. to 4:00 P.M.",
-      venue: "Kalinga University",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Crystal Structure Analysis, Nanotechnology, Material Testing, Geological Research",
       skills: [
         "XRD Principles",
         "Diffraction Pattern Analysis",
         "Sample Preparation",
         "Phase Identification Techniques"
       ],
-      skillsLabel: "What You'll Learn",
-      participants: "UG/PG/Ph.D. Students (Physics, Chemistry, Materials Science, and Geology), Research Scholars, Industry Professionals",
-      included: ["Participation Certificate", "Lunch"],
-      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/xrd.webp",
-      imageAlt: "X-Ray Diffractometer",
-      knowMoreButton: "Know More"
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-3.jpg",
+      imageAlt: "X-Ray Diffractometer"
     }
   ];
 

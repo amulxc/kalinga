@@ -1,6 +1,8 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
+import Gallery from '../components/general/gallery';
 import MainIntro from '../components/about/main_intro';
 import ImageContent from '../components/ccrc/imagecontent';
 import { AccordionItem } from '../components/general/accordion';
@@ -207,12 +209,188 @@ const ICDIACSConferencePage = () => {
         }
     ];
 
+<<<<<<< Updated upstream
     /* ---------------- DATES / REGISTRATION / PUBLICATION / SPONSORSHIP ---------------- */
     /* Accordion order requested by the department:
        Important Dates -> Registration Details -> Registration Benefits & Concessions
        -> Publication Details -> Sponsorship Opportunities.
        The FAQ "table-display" variant renders tableSections in order, so the two
        text-only panels live here as `answer` HTML rather than as separate items. */
+=======
+    /* ---------------- SCAN TO PAY / REGISTER ---------------- */
+    const qrCodes = [
+        { title: "Scan to Pay", src: "/events/icdiacs-26/qr-scan-to-pay.png" },
+        { title: "Scan to Register", src: "/events/icdiacs-26/qr-scan-to-register.png" }
+    ];
+
+    /* ---------------- ORGANISING STRUCTURE ---------------- */
+    const organisingStructure = [
+        {
+            heading: "Chief Patrons",
+            people: [
+                { name: "Dr. Rajiv Kumar, Chairman", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Sandeep Arora, Chancellor", affiliation: "Kalinga University, Naya Raipur" }
+            ]
+        },
+        {
+            heading: "Patrons",
+            people: [
+                { name: "Prof. Dr. R. Shridhar", role: "Vice-Chancellor", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Byju John", role: "Director General", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Monika Sethi", role: "Pro-Vice-Chancellor", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Sandeep Gandhi", role: "Registrar", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Rahul Mishra", role: "Dean, Academic Affairs", affiliation: "Kalinga University, Naya Raipur" }
+            ]
+        },
+        {
+            heading: "Convenor & Co-Convenor",
+            people: [
+                { name: "Dr. Anupa Sinha, HoD", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Ayaz Ahmed Faridi", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Sayed Athar Ali Hashmi", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Dr. Rakesh Yashwant Gedam", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" }
+            ]
+        },
+        {
+            heading: "Organising Secretaries",
+            people: [
+                { name: "Ms. Anjali Goswami", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mr. Sanjay Behera", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mrs. Minakshi Soni", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mr. Digvijay Singh Thakur", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Ms. Sejal Singh Kashyap", role: "Teaching Assistant, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" }
+            ]
+        },
+        {
+            heading: "Organising Committee Members",
+            people: [
+                { name: "Ms. Anjali Kadao", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Ms. Roohee Khan", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Ms. Archana Mishra", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mrs. Neha Shukla", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mr. Pravin Singh", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mr. Abdul Sallam", role: "Teaching Assistant, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mr. Tuluraj Sahu", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" },
+                { name: "Mrs. Madhavi Kshatri", role: "Assistant Professor, Department of CS & Faculty of IT", affiliation: "Kalinga University, Naya Raipur" }
+            ]
+        }
+    ];
+
+    /* ---------------- SESSIONS ---------------- */
+    const conferenceSessions = [
+        {
+            day: "Day - 1",
+            sessions: [
+                {
+                    session: "Session - 1",
+                    role: "Chairperson",
+                    name: "Dr. Omprakash Vyas",
+                    designation: "IIT Director",
+                    affiliation: "IIT New Raipur"
+                },
+                {
+                    session: "Session - 2",
+                    role: "Keynote Speaker",
+                    name: "Mr. Mohammad Adil",
+                    designation: "Solution Architect",
+                    affiliation: "Mphasis, Atlanta, Georgia, USA"
+                }
+            ]
+        },
+        {
+            day: "Day - 2",
+            sessions: [
+                {
+                    session: "Session 3",
+                    role: "Keynote Speaker",
+                    name: "Dr. Sarvesh Soni",
+                    designation: "Scientist",
+                    affiliation: "Washington University"
+                },
+                {
+                    session: "Session 4",
+                    role: "Guest of Honour",
+                    name: "Dr. Sanjay Kumar",
+                    designation: "Principal, CS & IT Department",
+                    affiliation: "PTRSU, Raipur, C.G."
+                }
+            ]
+        }
+    ];
+
+    /* ---------------- COMMITTEES ---------------- */
+    const advisoryCommittee = [
+        { name: "Dr. N. K. Nagwani", role: "Professor, Department of CSE", affiliation: "NIT Raipur" },
+        { name: "Dr. Sreejit Panicker", role: "Industry Expert, Learning & Development Head", affiliation: "Bhilai" },
+        { name: "Dr. Rishi Ranjan Singh", role: "Associate Professor, CSE", affiliation: "IIT Bhilai" },
+        { name: "Dr. Sanjay Sharma", role: "Professor", affiliation: "NIT Bhopal" },
+        { name: "Dr. Rohit Miri", role: "Associate Professor, CSE", affiliation: "CSVTU Bhilai" },
+        { name: "Dr. Anuradha Tiwari", role: "Professor, CSE", affiliation: "IIT Indore" }
+    ];
+
+    const technicalCommittee = [
+        { name: "Dr. Pradeep Kumar Singh", role: "Professor, CSE", affiliation: "NIT Raipur" },
+        { name: "Dr. Tryambak Hiwarkar", role: "Professor, Director", affiliation: "ASM Group of Institutions, Pune" },
+        { name: "Mrs. Minakshi Soni", role: "Assistant Professor", affiliation: "Kalinga University, Naya Raipur" },
+        { name: "Mr. Digvijay Singh", role: "Assistant Professor", affiliation: "Kalinga University, Naya Raipur" },
+        { name: "Ms. Anjali Goswami", role: "Assistant Professor", affiliation: "Kalinga University, Naya Raipur" }
+    ];
+
+    /* ---------------- CONTACT INFORMATION ---------------- */
+    const conferenceContacts = [
+        {
+            name: "Dr. Ayaz Ahmed Faridi",
+            role: "Assistant Professor",
+            department: "Department of CS & Faculty of IT",
+            phone: "+91-9755742726",
+            email: "ayazahmed.faridi@kalingauniversity.ac.in"
+        },
+        {
+            name: "Dr. Sayed Athar Ali Hashmi",
+            role: "Assistant Professor",
+            department: "Department of CS & Faculty of IT",
+            phone: "+91-7000273879",
+            email: "sayedathar.alihashmi@kalingauniversity.ac.in"
+        },
+        {
+            name: "Dr. Rakesh Yashwant Gedam",
+            role: "Assistant Professor",
+            department: "Department of CS & Faculty of IT",
+            phone: "+91-7498664876",
+            email: "rakesh.yashwant@kalingauniversity.ac.in"
+        }
+    ];
+
+    /* ---------------- COLLABORATORS ---------------- */
+    const collaborators = [
+        { name: "Infinity Club", logo: "/events/icdiacs-26/collaborator-infinity-club.webp" },
+        { name: "Resilience Soft", logo: "/events/icdiacs-26/collaborator-resilience-soft.webp" },
+        { name: "Cyber Security Awareness Club, Kalinga University", logo: "/events/icdiacs-26/collaborator-cyber-security-awareness-club.webp" },
+        { name: "Alvitarix Services India Private Limited", logo: "/events/icdiacs-26/collaborator-alvitarix.webp" }
+    ];
+
+    /* ---------------- GLIMPSES ---------------- */
+    const glimpses = Array.from({ length: 41 }, (_, index) => {
+        const number = String(index + 1).padStart(2, '0');
+        return {
+            id: index + 1,
+            image: `/events/icdiacs-26/icdiacs-2026-${number}.webp`,
+            alt: `ICDIACS at Kalinga University - photo ${index + 1}`
+        };
+    });
+
+    /* ---------------- DATES / REGISTRATION / SPONSORSHIP TABLES ---------------- */
+    // Sponsorship benefits read as one long line in a table cell, so each benefit
+    // is listed on its own row inside the cell.
+    const benefitList = (benefits) => (
+        <ul className="list-disc pl-4 space-y-1">
+            {benefits.map((benefit, index) => (
+                <li key={index}>{benefit}</li>
+            ))}
+        </ul>
+    );
+
+>>>>>>> Stashed changes
     const conferenceTableSections = [
         {
             id: "important-dates",
@@ -222,10 +400,17 @@ const ICDIACSConferencePage = () => {
                 { key: "date", label: "Date", width: "w-64" }
             ],
             data: [
+<<<<<<< Updated upstream
                 { milestone: "Abstract Submission Deadline", date: supOrdinals("15th September 2026") },
                 { milestone: "Full Paper Submission Deadline", date: supOrdinals("30th September 2026") },
                 { milestone: "Notification of Acceptance", date: supOrdinals("10th September 2026") },
                 { milestone: "Conference Dates", date: supOrdinals("27th & 28th October 2026") },
+=======
+                { milestone: "Abstract Submission Deadline", date: <>15<sup>th</sup> September 2026</> },
+                { milestone: "Full Paper Submission Deadline", date: <>30<sup>th</sup> September 2026</> },
+                { milestone: "Notification of Acceptance", date: <>10<sup>th</sup> September 2026</> },
+                { milestone: "Conference Dates", date: <>27<sup>th</sup> &amp; 28<sup>th</sup> October 2026</> },
+>>>>>>> Stashed changes
                 { milestone: "Email ID for Paper Submission", date: <strong>icstdtsd@kalingauniversity.ac.in</strong> }
             ]
         },
@@ -248,20 +433,36 @@ const ICDIACSConferencePage = () => {
         {
             id: "registration-benefits",
             title: "Registration Benefits & Concessions",
+<<<<<<< Updated upstream
             answer: `<ul class="list-disc pl-5 space-y-2">
                 <li><strong>Institutional Concession:</strong> A 50% concession in the registration fee will be provided to participants from Kalinga University and institutions having an MoU with Kalinga University, Naya Raipur.</li>
                 <li><strong>Group Registration:</strong> A 10% concession on the applicable registration fee for group registrations of 50 or more participants from the same institution.</li>
                 <li><strong>The registration fee includes:</strong> Conference Kit, Participation Certificate, Access to all Technical Sessions, High Tea, Lunch and Snacks for both Conference Days, and E-Proceedings of the Conference.</li>
                 <li><strong>Accommodation:</strong> Accommodation will be arranged for participants upon prior request (charges applicable as per availability).</li>
             </ul>`
+=======
+            footerContent: [
+                "<strong>Institutional Concession:</strong> A 50% concession in the registration fee will be provided to participants from Kalinga University and institutions having an MoU with Kalinga University, Naya Raipur.",
+                "<strong>Group Registration:</strong> A 10% concession on the applicable registration fee for group registrations of 50 or more participants from the same institution.",
+                "<strong>The registration fee includes:</strong> Conference Kit, Participation Certificate, Access to all Technical Sessions, High Tea, Lunch and Snacks for both Conference Days, and E-Proceedings of the Conference.",
+                "<strong>Accommodation:</strong> Accommodation will be arranged for participants upon prior request (charges applicable as per availability)."
+            ]
+>>>>>>> Stashed changes
         },
         {
             id: "publication-details",
             title: "Publication Details",
+<<<<<<< Updated upstream
             answer: `<ul class="list-disc pl-5 space-y-2">
                 <li>All accepted papers will appear in Conference Proceedings (ISBN &ndash; E-book).</li>
                 <li>Selected papers will be published in Scopus-indexed journals (with applicable APCs).</li>
             </ul>`
+=======
+            footerContent: [
+                "All accepted papers will appear in Conference Proceedings (ISBN – E-book).",
+                "Selected papers will be published in Scopus-indexed journals (with applicable APCs)."
+            ]
+>>>>>>> Stashed changes
         },
         {
             id: "sponsorship-opportunities",
@@ -277,7 +478,11 @@ const ICDIACSConferencePage = () => {
                     slNo: 1,
                     category: "Platinum Sponsorship",
                     amount: "1,00,000/-",
+<<<<<<< Updated upstream
                     benefits: bulletList([
+=======
+                    benefits: benefitList([
+>>>>>>> Stashed changes
                         "5 Delegate Passes",
                         "4 Standee Displays",
                         "5-min Address",
@@ -292,7 +497,11 @@ const ICDIACSConferencePage = () => {
                     slNo: 2,
                     category: "Gold Sponsorship",
                     amount: "50,000/-",
+<<<<<<< Updated upstream
                     benefits: bulletList([
+=======
+                    benefits: benefitList([
+>>>>>>> Stashed changes
                         "3 Delegate Passes",
                         "1 Standee Display",
                         "Logo on Materials",
@@ -306,7 +515,11 @@ const ICDIACSConferencePage = () => {
                     slNo: 3,
                     category: "Silver Sponsorship",
                     amount: "25,000/-",
+<<<<<<< Updated upstream
                     benefits: bulletList([
+=======
+                    benefits: benefitList([
+>>>>>>> Stashed changes
                         "2 Delegate Passes",
                         "Logo on Materials",
                         "1 Full-Page Ad in Proceedings",
@@ -317,7 +530,11 @@ const ICDIACSConferencePage = () => {
                     slNo: 4,
                     category: "Bronze Sponsorship",
                     amount: "15,000/-",
+<<<<<<< Updated upstream
                     benefits: bulletList([
+=======
+                    benefits: benefitList([
+>>>>>>> Stashed changes
                         "1 Delegate Pass",
                         "Logo on Conference Materials",
                         "Conference Kit & Memento"
@@ -327,9 +544,13 @@ const ICDIACSConferencePage = () => {
                     slNo: 5,
                     category: "Supporter Sponsorship",
                     amount: "10,000/-",
+<<<<<<< Updated upstream
                     benefits: bulletList([
                         "Logo Display on Conference Materials"
                     ])
+=======
+                    benefits: benefitList(["Logo Display on Conference Materials"])
+>>>>>>> Stashed changes
                 }
             ]
         }
@@ -521,7 +742,11 @@ const ICDIACSConferencePage = () => {
                         ORGANISES
                     </p>
                     <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-4">
+<<<<<<< Updated upstream
                         3<sup className="align-super text-[0.55em]">rd</sup> International Conference On Digital Intelligence
+=======
+                        3<sup>rd</sup> International Conference On Digital Intelligence
+>>>>>>> Stashed changes
                     </h1>
                     <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight mb-6 titlecase max-w-4xl mx-auto">
                         AI, Cybersecurity and Computing for a Sustainable Future
@@ -534,7 +759,11 @@ const ICDIACSConferencePage = () => {
                     <div className="flex flex-wrap justify-center items-stretch gap-4 md:gap-5 max-w-4xl mx-auto">
                         <div className="flex-1 min-w-[180px] rounded-xl bg-[var(--lite-sand)] p-5 shadow-sm">
                             <p className="text-2xl mb-1">🗓️</p>
+<<<<<<< Updated upstream
                             <p className="font-semibold text-[var(--foreground)]">{supOrdinals("27th & 28th October 2026")}</p>
+=======
+                            <p className="font-semibold text-[var(--foreground)]">27<sup>th</sup> &amp; 28<sup>th</sup> October 2026</p>
+>>>>>>> Stashed changes
                         </div>
                         <div className="flex-1 min-w-[180px] rounded-xl bg-[var(--lite-sand)] p-5 shadow-sm">
                             <p className="text-2xl mb-1">📍</p>
@@ -750,7 +979,11 @@ const ICDIACSConferencePage = () => {
             />
 
             {/* ================= ORGANISING STRUCTURE ================= */}
+<<<<<<< Updated upstream
             <section className="py-16 bg-[var(--lite-sand)]">
+=======
+            <section className="py-16 bg-white">
+>>>>>>> Stashed changes
                 <div className="container mx-auto px-4">
                     <SectionHeading
                         title="Organising Structure"
@@ -758,6 +991,7 @@ const ICDIACSConferencePage = () => {
                     />
                     <div className="max-w-6xl mx-auto space-y-10">
                         {organisingStructure.map((group) => (
+<<<<<<< Updated upstream
                             <div key={group.title}>
                                 <h3 className="font-stix text-xl md:text-2xl text-[var(--button-red)] mb-4">
                                     {group.title}
@@ -798,6 +1032,20 @@ const ICDIACSConferencePage = () => {
                                             <p className="text-sm text-gray-600 mt-1 font-plus-jakarta-sans">
                                                 {item.org}
                                             </p>
+=======
+                            <div key={group.heading}>
+                                <h3 className="font-stix text-xl md:text-2xl text-[var(--button-red)] mb-5">
+                                    {group.heading}
+                                </h3>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    {group.people.map((person) => (
+                                        <div key={person.name} className="rounded-xl bg-[var(--lite-sand)] p-5 h-full">
+                                            <p className="font-semibold text-[var(--foreground)]">{person.name}</p>
+                                            {person.role && (
+                                                <p className="text-sm text-gray-700 mt-1">{person.role}</p>
+                                            )}
+                                            <p className="text-sm text-gray-600 mt-1">{person.affiliation}</p>
+>>>>>>> Stashed changes
                                         </div>
                                     ))}
                                 </div>
@@ -807,18 +1055,64 @@ const ICDIACSConferencePage = () => {
                 </div>
             </section>
 
+<<<<<<< Updated upstream
             {/* ================= ADVISORY, TECHNICAL & ORGANISING COMMITTEES ================= */}
             <section className="py-16 bg-[var(--lite-sand)]">
                 <div className="container mx-auto px-4">
                     <div className="max-w-6xl mx-auto space-y-14">
+=======
+            {/* ================= SESSIONS ================= */}
+            <section className="py-16 bg-[var(--light-gray)]">
+                <div className="container mx-auto px-4">
+                    <SectionHeading
+                        title="Sessions"
+                        titleClassName="text-center mb-12"
+                    />
+                    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {conferenceSessions.map((day) => (
+                            <div key={day.day} className="rounded-2xl bg-white p-6 md:p-8 shadow-sm">
+                                <h3 className="font-stix text-xl md:text-2xl text-[var(--button-red)] mb-5">
+                                    {day.day}
+                                </h3>
+                                <div className="space-y-5">
+                                    {day.sessions.map((session) => (
+                                        <div key={session.session} className="border-l-4 border-[var(--dark-orange-red-light)] pl-4">
+                                            <p className="text-sm font-semibold text-gray-500">{session.session}</p>
+                                            <p className="text-sm text-[var(--button-red)] font-semibold">{session.role}</p>
+                                            <p className="font-semibold text-[var(--foreground)] mt-1">{session.name}</p>
+                                            <p className="text-sm text-gray-700">{session.designation}</p>
+                                            <p className="text-sm text-gray-600">{session.affiliation}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ================= COMMITTEES ================= */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-6xl mx-auto space-y-12">
+>>>>>>> Stashed changes
                         <div>
                             <SectionHeading
                                 title="Advisory Committee"
                                 titleClassName="text-center mb-8"
                             />
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<<<<<<< Updated upstream
                                 {advisoryCommittee.map((person) => (
                                     <PersonCard key={person.name} {...person} />
+=======
+                                {advisoryCommittee.map((member) => (
+                                    <div key={member.name} className="rounded-xl bg-[var(--lite-sand)] p-5 h-full">
+                                        <p className="font-semibold text-[var(--foreground)]">{member.name}</p>
+                                        <p className="text-sm text-gray-700 mt-1">{member.role}</p>
+                                        <p className="text-sm text-gray-600 mt-1">{member.affiliation}</p>
+                                    </div>
+>>>>>>> Stashed changes
                                 ))}
                             </div>
                         </div>
@@ -829,8 +1123,17 @@ const ICDIACSConferencePage = () => {
                                 titleClassName="text-center mb-8"
                             />
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<<<<<<< Updated upstream
                                 {technicalCommittee.map((person) => (
                                     <PersonCard key={person.name} {...person} />
+=======
+                                {technicalCommittee.map((member) => (
+                                    <div key={member.name} className="rounded-xl bg-[var(--lite-sand)] p-5 h-full">
+                                        <p className="font-semibold text-[var(--foreground)]">{member.name}</p>
+                                        <p className="text-sm text-gray-700 mt-1">{member.role}</p>
+                                        <p className="text-sm text-gray-600 mt-1">{member.affiliation}</p>
+                                    </div>
+>>>>>>> Stashed changes
                                 ))}
                             </div>
                         </div>
@@ -840,22 +1143,31 @@ const ICDIACSConferencePage = () => {
                                 title="Organising Committee"
                                 titleClassName="text-center mb-8"
                             />
+<<<<<<< Updated upstream
                             <p className="text-center text-gray-700 font-plus-jakarta-sans">
                                 All CS &amp; IT Faculty Members
                             </p>
+=======
+                            <p className="text-center text-gray-700">All CS &amp; IT Faculty Members</p>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ================= CONTACT INFORMATION ================= */}
+<<<<<<< Updated upstream
             <section className="py-16 bg-white">
+=======
+            <section className="py-16 bg-[var(--light-gray)]">
+>>>>>>> Stashed changes
                 <div className="container mx-auto px-4">
                     <SectionHeading
                         title="Contact Information"
                         titleClassName="text-center mb-12"
                     />
                     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+<<<<<<< Updated upstream
                         {contactPeople.map((person) => (
                             <div key={person.email} className="rounded-2xl bg-[var(--lite-sand)] p-6">
                                 <p className="font-semibold text-[var(--foreground)] font-plus-jakarta-sans">
@@ -877,11 +1189,29 @@ const ICDIACSConferencePage = () => {
                                         className="text-[var(--button-red)] hover:underline"
                                     >
                                         📩 {person.email}
+=======
+                        {conferenceContacts.map((contact) => (
+                            <div key={contact.email} className="rounded-2xl bg-white p-6 shadow-sm h-full">
+                                <p className="font-semibold text-[var(--foreground)]">{contact.name}</p>
+                                <p className="text-sm text-gray-700 mt-1">{contact.role}</p>
+                                <p className="text-sm text-gray-600 mt-1">{contact.department}</p>
+                                <p className="text-sm mt-3">
+                                    <span aria-hidden="true">📲</span>{' '}
+                                    <a href={`tel:${contact.phone.replace(/[^+0-9]/g, '')}`} className="text-[var(--button-red)] hover:underline">
+                                        {contact.phone}
+                                    </a>
+                                </p>
+                                <p className="text-sm mt-1 break-words">
+                                    <span aria-hidden="true">📩</span>{' '}
+                                    <a href={`mailto:${contact.email}`} className="text-[var(--button-red)] hover:underline">
+                                        {contact.email}
+>>>>>>> Stashed changes
                                     </a>
                                 </p>
                             </div>
                         ))}
                     </div>
+<<<<<<< Updated upstream
                     <p className="text-center text-gray-700 mt-10 font-plus-jakarta-sans">
                         <strong>For paper submission and queries,</strong>
                         <br />
@@ -892,16 +1222,23 @@ const ICDIACSConferencePage = () => {
                             📩 icstdtsd@kalingauniversity.ac.in
                         </a>
                     </p>
+=======
+>>>>>>> Stashed changes
                 </div>
             </section>
 
             {/* ================= COLLABORATORS ================= */}
+<<<<<<< Updated upstream
             <section className="py-16 bg-[var(--lite-sand)]">
+=======
+            <section className="py-16 bg-white">
+>>>>>>> Stashed changes
                 <div className="container mx-auto px-4">
                     <SectionHeading
                         title="Collaborators"
                         titleClassName="text-center mb-12"
                     />
+<<<<<<< Updated upstream
                     <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
                         {collaborators.map((collaborator) => (
                             <div
@@ -916,6 +1253,21 @@ const ICDIACSConferencePage = () => {
                                 <p className="text-center text-sm text-gray-700 font-plus-jakarta-sans">
                                     {collaborator.name}
                                 </p>
+=======
+                    <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+                        {collaborators.map((collaborator) => (
+                            <div key={collaborator.name} className="rounded-xl bg-[var(--lite-sand)] p-5 flex flex-col items-center gap-3 h-full">
+                                <div className="relative w-full h-24">
+                                    <Image
+                                        src={collaborator.logo}
+                                        alt={collaborator.name}
+                                        fill
+                                        sizes="(max-width: 768px) 50vw, 25vw"
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <p className="text-sm text-center text-gray-700">{collaborator.name}</p>
+>>>>>>> Stashed changes
                             </div>
                         ))}
                     </div>
@@ -923,10 +1275,34 @@ const ICDIACSConferencePage = () => {
             </section>
 
             {/* ================= GLIMPSES ================= */}
+<<<<<<< Updated upstream
             <Gallery
                 title="Glimpses"
                 images={glimpsesImages}
             />
+=======
+            <Gallery images={glimpses} title="Glimpses" backgroundColor="bg-[var(--light-gray)]" />
+
+            {/* ================= SCAN TO PAY / SCAN TO REGISTER ================= */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        {qrCodes.map((qr) => (
+                            <div key={qr.title} className="rounded-2xl bg-[var(--lite-sand)] p-6 flex flex-col items-center gap-4">
+                                <h3 className="font-stix text-xl md:text-2xl text-[var(--foreground)]">{qr.title}</h3>
+                                <Image
+                                    src={qr.src}
+                                    alt={qr.title}
+                                    width={240}
+                                    height={240}
+                                    className="w-48 h-48 md:w-56 md:h-56 object-contain bg-white p-2 rounded-lg"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+>>>>>>> Stashed changes
 
             {/* ================= SCAN TO PAY / SCAN TO REGISTER ================= */}
             <section className="py-12 bg-white">
@@ -957,7 +1333,11 @@ const ICDIACSConferencePage = () => {
                     <div>
                         <h3 className="font-stix text-xl md:text-2xl text-[var(--foreground)]">
                             ICDIACS 2026 <br />
+<<<<<<< Updated upstream
                             3<sup className="align-super text-[0.55em]">rd</sup> International Conference On Digital Intelligence
+=======
+                            3<sup>rd</sup> International Conference On Digital Intelligence
+>>>>>>> Stashed changes
                         </h3>
                         <p className="mt-2 text-gray-700">
                             Explore the Conference Brochure
@@ -965,7 +1345,7 @@ const ICDIACSConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://cdn.kalingauniversity.ac.in/conferences/icdiacs/ICDIACS-2026-27.pdf"
+                        href="/brochure/icdiacs-2026.pdf"
                         download
                         target="_blank"
                         rel="noreferrer"
