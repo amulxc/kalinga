@@ -11,7 +11,7 @@
  */
 export const EVENT_IMAGE_OVERRIDES = {
     "ideathon-6-0": {
-        image: "https://cdn.kalingauniversity.ac.in/ideathon_cover.jpg",
+        image: "/news-and-events/ideathon-6-0/banner.webp",
         alt: "IDEATHON 6.0",
     },
 };
