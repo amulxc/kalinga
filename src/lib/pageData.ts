@@ -372,7 +372,7 @@ export const pageDataMap: Record<string, PageData> = {
     "/news-and-events/ideathon-6-0": {
         slug: "/news-and-events/ideathon-6-0",
         title: "IDEATHON 6.0",
-        banner: "https://cdn.kalingauniversity.ac.in/ideathon_cover.jpg",
+        banner: "/news-and-events/ideathon-6-0/banner.webp",
         imagePosition: "object-center",
     },
     "/nss": {
