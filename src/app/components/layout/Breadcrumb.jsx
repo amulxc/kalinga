@@ -18,7 +18,11 @@ const Breadcrumb = () => {
   const pageData = pageDataMap[pathname];
 
   // Detect pages that use HeroSectionTwo (don't show the duplicate blue banner)
-  const isCustomHeroPage = ['/corporate-training-and-consultancy-division', '/kalsee', '/kalmat'].includes(pathname);
+  // Sustainability policy pages render their own plain title header (no photo
+  // banner, per the SDG Cell's request), so they get the breadcrumb-only strip too.
+  const isCustomHeroPage =
+    ['/corporate-training-and-consultancy-division', '/kalsee', '/kalmat'].includes(pathname) ||
+    pathname.startsWith('/sustainability/policies/');
 
   // Default fallbacks if data is missing
   const title = pageData?.title || formatSlugToTitle(pathname.split('/').pop() || '');
