@@ -147,11 +147,13 @@ export default async function SustainabilityPolicyPage({ params }) {
             <div className="bg-white pb-16">
                 <div className="container mx-auto px-4 py-8 md:py-12 max-w-4xl space-y-10 md:space-y-12">
                     <header className="space-y-3 text-center">
-                        <p className="font-plus-jakarta-sans text-sm font-semibold uppercase tracking-wide text-[var(--button-red)]">
-                            {policy.goals.join(" · ")}
-                        </p>
-                        <h1 className="font-stix !text-2xl md:!text-4xl leading-tight text-[var(--foreground)]">
+                        <h1 className="font-stix !text-3xl md:!text-5xl font-bold leading-tight text-[var(--foreground)]">
                             {policy.name}
+                            {content?.fullName ? (
+                                <span className="mt-2 block font-plus-jakarta-sans !text-base md:!text-lg font-semibold text-[var(--text-gray-card)]">
+                                    {content.fullName}
+                                </span>
+                            ) : null}
                         </h1>
                         <span className="mx-auto block h-[3px] w-16 rounded-full bg-[var(--button-red)]" />
                     </header>
@@ -159,12 +161,50 @@ export default async function SustainabilityPolicyPage({ params }) {
                     {content ? (
                         <div className="space-y-6">
                             {content.meta ? (
-                                <div className="flex flex-wrap gap-x-6 gap-y-1 border-b border-gray-200 pb-4 text-sm text-[var(--text-gray-card)]">
-                                    {content.meta.approved ? <span>Approved: {content.meta.approved}</span> : null}
-                                    {content.meta.notification ? (
-                                        <span>Notification: {content.meta.notification}</span>
-                                    ) : null}
-                                    {content.meta.nextReview ? <span>Next review: {content.meta.nextReview}</span> : null}
+                                <div className="overflow-x-auto">
+                                    <table className="w-full border-collapse text-sm">
+                                        <tbody>
+                                            {content.meta.approved ? (
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        className="w-40 border border-gray-200 bg-gray-50 p-3 text-left font-semibold text-[var(--foreground)] md:w-56"
+                                                    >
+                                                        Approved
+                                                    </th>
+                                                    <td className="border border-gray-200 p-3 text-[var(--text-gray-card)]">
+                                                        {content.meta.approved}
+                                                    </td>
+                                                </tr>
+                                            ) : null}
+                                            {content.meta.notification ? (
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        className="w-40 border border-gray-200 bg-gray-50 p-3 text-left font-semibold text-[var(--foreground)] md:w-56"
+                                                    >
+                                                        Notification
+                                                    </th>
+                                                    <td className="border border-gray-200 p-3 text-[var(--text-gray-card)]">
+                                                        {content.meta.notification}
+                                                    </td>
+                                                </tr>
+                                            ) : null}
+                                            {content.meta.nextReview ? (
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        className="w-40 border border-gray-200 bg-gray-50 p-3 text-left font-semibold text-[var(--foreground)] md:w-56"
+                                                    >
+                                                        Next Review
+                                                    </th>
+                                                    <td className="border border-gray-200 p-3 text-[var(--text-gray-card)]">
+                                                        {content.meta.nextReview}
+                                                    </td>
+                                                </tr>
+                                            ) : null}
+                                        </tbody>
+                                    </table>
                                 </div>
                             ) : null}
                             <PolicyBlocks blocks={content.blocks} />
@@ -181,10 +221,10 @@ export default async function SustainabilityPolicyPage({ params }) {
 
                     <div className="border-t border-gray-200 pt-6">
                         <Link
-                            href="/sustainability"
+                            href="/sustainability#sustainability-policies"
                             className="font-plus-jakarta-sans text-sm font-medium text-[var(--button-red)] underline underline-offset-2 hover:opacity-75"
                         >
-                            ← Back to Sustainability
+                            ← Back to Sustainability Policies
                         </Link>
                     </div>
                 </div>

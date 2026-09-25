@@ -1,5 +1,4 @@
 import Link from "next/link";
-import SectionBlock from "@/app/components/sustainability/SectionBlock";
 import {
     ACCOUNTABILITY,
     APPROVAL,
@@ -13,7 +12,6 @@ import {
     SUPPORT_FACILITIES,
 } from "@/app/components/sustainability/data/wellness-policy-content";
 
-const GOAL = "SDG 3 – Good Health & Well-Being";
 const TITLE = "Policy on Emotional Wellness, Mental Health and Resilience";
 const URL =
     "https://kalingauniversity.ac.in/sustainability/emotional-wellness-and-mental-health-policy";
@@ -27,7 +25,18 @@ export const metadata = {
     alternates: { canonical: URL },
 };
 
-/** A bulleted list styled the same way wherever it appears on this page. */
+const HEADING_CLASSES = {
+    1: "font-stix !text-xl md:!text-2xl font-semibold text-[var(--foreground)] pt-2",
+    2: "font-plus-jakarta-sans text-base md:text-lg font-semibold text-[var(--foreground)] pt-1",
+};
+
+/** A section heading styled the same way wherever it appears on this page. */
+function SectionHeading({ level = 1, children }) {
+    const Tag = level <= 1 ? "h3" : "h4";
+    return <Tag className={HEADING_CLASSES[level] || HEADING_CLASSES[2]}>{children}</Tag>;
+}
+
+/** A bulleted or numbered list styled the same way wherever it appears on this page. */
 function PolicyList({ items, ordered = false }) {
     const List = ordered ? "ol" : "ul";
     return (
@@ -65,53 +74,49 @@ export default function EmotionalWellnessPolicyPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
 
-            <div className="min-h-screen bg-white pb-16">
-                <div className="container mx-auto px-4 py-8 md:py-12 max-w-4xl space-y-12 md:space-y-14">
-                    <header className="space-y-3">
-                        <span className="block h-[3px] w-16 rounded-full bg-[var(--button-red)]" />
-                        <h1 className="font-stix !text-2xl md:!text-[34px] leading-tight text-[var(--foreground)]">
-                            {GOAL}
-                        </h1>
-                        <h2 className="font-stix !text-xl md:!text-[26px] !leading-snug text-[var(--button-red)]">
+            <div className="bg-white pb-16">
+                <div className="container mx-auto px-4 py-8 md:py-12 max-w-4xl space-y-10 md:space-y-12">
+                    <header className="space-y-3 text-center">
+                        <h1 className="font-stix !text-3xl md:!text-5xl font-bold leading-tight text-[var(--foreground)]">
                             {TITLE}
-                        </h2>
+                        </h1>
+                        <span className="mx-auto block h-[3px] w-16 rounded-full bg-[var(--button-red)]" />
                     </header>
 
-                    <SectionBlock id="preamble" title="Preamble">
+                    <div className="space-y-4">
+                        <SectionHeading>1. Preamble</SectionHeading>
                         {PREAMBLE.map((paragraph) => (
                             <p key={paragraph.slice(0, 40)}>{paragraph}</p>
                         ))}
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock id="principles" title="Principles">
+                    <div className="space-y-4">
+                        <SectionHeading>2. Principles</SectionHeading>
                         <p>The University shall be guided by the following principles:</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="space-y-4">
                             {PRINCIPLES.map((principle) => (
-                                <article
-                                    key={principle.title}
-                                    className="rounded-xl border-l-4 border-[var(--button-red)] bg-gray-50 p-5"
-                                >
-                                    <h3 className="font-plus-jakarta-sans font-semibold text-[var(--foreground)]">
-                                        {principle.title}
-                                    </h3>
+                                <div key={principle.title}>
+                                    <SectionHeading level={2}>{principle.title}</SectionHeading>
                                     <p className="mt-1">{principle.description}</p>
-                                </article>
+                                </div>
                             ))}
                         </div>
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock id="objectives" title="Objectives">
+                    <div className="space-y-4">
+                        <SectionHeading>3. Objectives</SectionHeading>
                         <p>The Policy aims to:</p>
                         <PolicyList items={OBJECTIVES} ordered />
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock id="guidelines" title="Guidelines">
-                        <div className="space-y-6">
+                    <div className="space-y-4">
+                        <SectionHeading>4. Guidelines</SectionHeading>
+                        <div className="space-y-4">
                             {GUIDELINES.map((section, index) => (
                                 <div key={section.title}>
-                                    <h3 className="font-stix !text-lg md:!text-xl !leading-snug text-[var(--foreground)]">
-                                        {index + 1}. {section.title}
-                                    </h3>
+                                    <SectionHeading level={2}>
+                                        4.{index + 1} {section.title}
+                                    </SectionHeading>
                                     {section.lead && <p className="mt-2">{section.lead}</p>}
                                     <div className="mt-2">
                                         <PolicyList items={section.points} />
@@ -119,54 +124,49 @@ export default function EmotionalWellnessPolicyPage() {
                                 </div>
                             ))}
                         </div>
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock id="mentor-mentee" title="Mentor–Mentee Relationship">
+                    <div className="space-y-4">
+                        <SectionHeading>5. Mentor–Mentee Relationship</SectionHeading>
                         {MENTOR_MENTEE_INTRO.map((paragraph) => (
                             <p key={paragraph.slice(0, 40)}>{paragraph}</p>
                         ))}
                         <PolicyList items={MENTOR_MENTEE_POINTS} />
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock
-                        id="support-infrastructure"
-                        title="Health, Wellness and Support Infrastructure"
-                    >
-                        <div className="space-y-5">
+                    <div className="space-y-4">
+                        <SectionHeading>6. Health, Wellness and Support Infrastructure</SectionHeading>
+                        <div className="space-y-4">
                             {SUPPORT_FACILITIES.map((facility) => (
-                                <article
-                                    key={facility.title}
-                                    className="rounded-xl bg-[var(--card-sandal)] p-5 md:p-6"
-                                >
-                                    <h3 className="font-stix !text-lg md:!text-xl !leading-snug text-[var(--button-red)]">
-                                        {facility.title}
-                                    </h3>
-                                    <p className="mt-2 text-[var(--text-gray-card)]">
-                                        {facility.description}
-                                    </p>
-                                </article>
+                                <div key={facility.title}>
+                                    <SectionHeading level={2}>{facility.title}</SectionHeading>
+                                    <p className="mt-1">{facility.description}</p>
+                                </div>
                             ))}
                         </div>
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock id="monitoring-and-review" title="Monitoring and Review">
+                    <div className="space-y-4">
+                        <SectionHeading>7. Monitoring and Review</SectionHeading>
                         <PolicyList items={MONITORING_AND_REVIEW} />
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock id="accountability" title="Accountability and Transparency">
+                    <div className="space-y-4">
+                        <SectionHeading>8. Accountability and Transparency</SectionHeading>
                         <PolicyList items={ACCOUNTABILITY} />
-                    </SectionBlock>
+                    </div>
 
-                    <SectionBlock id="approval" title="Approval and Implementation">
+                    <div className="space-y-4">
+                        <SectionHeading>9. Approval and Implementation</SectionHeading>
                         <p>{APPROVAL}</p>
-                    </SectionBlock>
+                    </div>
 
                     <div className="border-t border-gray-200 pt-6">
                         <Link
-                            href="/sustainability"
+                            href="/sustainability#sustainability-policies"
                             className="font-plus-jakarta-sans text-sm font-medium text-[var(--button-red)] underline underline-offset-2 hover:opacity-75"
                         >
-                            ← Back to Sustainability
+                            ← Back to Sustainability Policies
                         </Link>
                     </div>
                 </div>

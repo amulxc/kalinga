@@ -30,13 +30,13 @@
 export const POLICY_CONTENT = {
     "poverty-alleviation-policy": {
         summary: "Kalinga University is strongly committed to fostering a healthy, inclusive, equitable, and highly supportive campus environment that ensures that…",
+        fullName: "POLICY ON POVERTY ALLEVIATION AND SOCIO-ECONOMIC SUPPORT",
         meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/116, Dated 19.08.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "POLICY ON POVERTY ALLEVIATION AND SOCIO-ECONOMIC SUPPORT" },
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is strongly committed to fostering a healthy, inclusive, equitable, and highly supportive campus environment that ensures that financial hardship or socio-economic disadvantages do not act as barriers to academic pursuit, professional productivity, or personal development. In alignment with the United Nations Sustainable Development Goal 1 (SDG 1: No Poverty) and national educational mandates, the University recognizes that access to quality higher education is one of the most powerful instruments for breaking the cycle of poverty and achieving social mobility." },
             { type: "paragraph", text: "Higher education frequently presents socio-economic challenges that can create significant barriers for deserving students from economically weaker sections (EWS) and marginalized backgrounds. These challenges encompass not only tuition fees but also living expenses, access to nutritious food, technical resources, study materials, and healthcare. Kalinga University strives to build a campus culture that actively identifies these vulnerabilities, ensures dignified and confidential support systems, and creates a nurturing ecosystem. Through this comprehensive policy, the University aims to support economically marginalized individuals and ensure equal opportunity, enabling every student to thrive academically and socially." },
-            { type: "heading", level: 1, text: "Principles" },
+            { type: "heading", level: 1, text: "2. Principles" },
             { type: "paragraph", text: "The University's poverty alleviation and socio-economic support initiatives shall be guided by the following core principles:" },
             {
                 type: "list",
@@ -54,7 +54,7 @@ export const POLICY_CONTENT = {
                     "Shared Responsibility and Collaborative Care: Supporting economically vulnerable individuals is a shared responsibility involving university administrators, faculty student bodies, alumni, corporate partners, and local community leaders.",
                 ],
             },
-            { type: "heading", level: 1, text: "Objectives" },
+            { type: "heading", level: 1, text: "3. Objectives" },
             { type: "paragraph", text: "This Policy aims to achieve the following specific objectives:" },
             {
                 type: "list",
@@ -70,9 +70,9 @@ export const POLICY_CONTENT = {
                     "Maintain the highest levels of confidentiality, respect, and anti-discrimination to build a psychologically safe and dignified environment for all students.",
                 ],
             },
-            { type: "heading", level: 1, text: "Guidelines" },
+            { type: "heading", level: 1, text: "4. Guidelines" },
             { type: "paragraph", text: "The following operational guidelines outline the core implementation areas of the Poverty Alleviation and Socio-Economic Support Policy:" },
-            { type: "heading", level: 2, text: "Financial Assistance & Scholarship Schemes" },
+            { type: "heading", level: 2, text: "4.1 Financial Assistance & Scholarship Schemes" },
             { type: "paragraph", text: "The University shall maintain a robust and multi-tiered financial aid framework to cater to varying levels of socio-economic vulnerability. Applications for financial aid shall be systematically evaluated by the Scholarship & Financial Aid Cell. The primary categories of institutional financial assistance are outlined in the table below:" },
             {
                 type: "table",
@@ -84,7 +84,7 @@ export const POLICY_CONTENT = {
                     ["Specially-Abled & Vulnerable Groups Aid", "Students with physical disabilities, single-parent households, or orphan status facing financial hardship.", "100% Tuition Fee Waiver, subsidized hostel facilities, and customized learning materials."],
                 ],
             },
-            { type: "heading", level: 2, text: "Subsidized Accommodation and Dining Support" },
+            { type: "heading", level: 2, text: "4.2 Subsidized Accommodation and Dining Support" },
             { type: "paragraph", text: "Recognizing that housing and food insecurity drastically affect students' physical health and academic output, Kalinga University shall implement structural dining and residential subsidies:" },
             {
                 type: "list",
@@ -93,7 +93,7 @@ export const POLICY_CONTENT = {
                     "Nutritious Dining Support & Meal Vouchers: The University shall establish an active Student Meal Voucher Program. Under this program, eligible students will receive discrete, subsidized, or fully-sponsored daily dining hall cards to guarantee access to three highly nutritious meals per day. This dining support is integrated within the main university dining facilities to prevent separation or loss of dignity.",
                 ],
             },
-            { type: "heading", level: 2, text: "Work-Study and Student On-Campus Employment" },
+            { type: "heading", level: 2, text: "4.3 Work-Study and Student On-Campus Employment" },
             { type: "paragraph", text: "To promote financial self-reliance and build operational skill sets, Kalinga University shall institutionalize an on-campus Student Work-Study Program. This program enables students from lower income categories to work part-time in designated university departments, ensuring their working hours do not conflict with their academic schedules:" },
             {
                 type: "list",
@@ -103,9 +103,9 @@ export const POLICY_CONTENT = {
                     "Dignified Remuneration: Compensation is set at standard hourly rates, paid monthly into the student's bank account, or adjusted directly against their outstanding educational or residential fees, according to the student's preference.",
                 ],
             },
-            { type: "heading", level: 2, text: "Socio-Economic Well-being and Mental Health Linkage" },
+            { type: "heading", level: 2, text: "4.4 Socio-Economic Well-being and Mental Health Linkage" },
             { type: "paragraph", text: "Financial distress is heavily correlated with severe emotional distress, anxiety, depression, and social isolation. This policy directly integrates with the Kalinga University Policy on 'Emotional Wellness, Mental Health and Resilience' (SDG 3). The Student Counselling and Wellness Cell shall provide specialized, confidential counseling services and psychological support to address the unique mental health stressors associated with socio-economic disadvantages, ensuring   that all students have access to comprehensive, empathetic care." },
-            { type: "heading", level: 2, text: "Capacity Building, Financial Literacy & Skill Development" },
+            { type: "heading", level: 2, text: "4.5 Capacity Building, Financial Literacy & Skill Development" },
             { type: "paragraph", text: "To ensure long-term poverty alleviation and foster financial self-reliance, the University shall organize regular capability-building programs:" },
             {
                 type: "list",
@@ -113,13 +113,19 @@ export const POLICY_CONTENT = {
                     "Financial Literacy Seminars: Workshops on personal budgeting, saving, debt management, understanding student loans, and navigating banking systems.",
                     "Skill Development & Vocational Training: Providing free access to professional certification programs, technical coding bootcamps, and soft-skills training to bridge the digital and employability divide.",
                     "Career Counseling & Job Placement Assistance: The Training & Placement Cell shall provide dedicated, prioritized counseling and grooming sessions to economically weaker students to boost their corporate placement rates.",
-                    "Community Outreach, Village Adoption & Local Development Kalinga University recognizes its social obligation to alleviate poverty in its surrounding communities. Under this policy, the University shall actively run outreach initiatives:",
+                ],
+            },
+            { type: "heading", level: 2, text: "4.6 Community Outreach, Village Adoption & Local Development" },
+            { type: "paragraph", text: "Kalinga University recognizes its social obligation to alleviate poverty in its surrounding communities. Under this policy, the University shall actively run outreach initiatives:" },
+            {
+                type: "list",
+                items: [
                     "Village Adoption Program: Adopting surrounding villages in the Naya Raipur region to implement developmental projects, improve sanitation, provide legal aid, and run literacy drives.",
                     "Free Vocational Training for Local Youth: Hosting free, short-term vocational, electrical, and computer training programs on weekends within the university's laboratories, specifically targeting rural, unemployed youth.",
                     "Rural Health & Awareness Camps: Organizing routine free health checkups, nutritional counseling, and basic medical support in rural clusters, supported by the Kalinga University Medical Room staff and volunteer students.",
                 ],
             },
-            { type: "heading", level: 2, text: "Dignified Access, Anti-Discrimination and Non-Stigmatization" },
+            { type: "heading", level: 2, text: "4.7 Dignified Access, Anti-Discrimination and Non-Stigmatization" },
             { type: "paragraph", text: "The University shall strictly enforce a zero-tolerance policy against any form of bullying, ragging, profiling, harassment, or verbal discrimination based on a student’s socio-economic status. To guarantee dignified access and a psychologically safe learning environment:" },
             {
                 type: "list",
@@ -129,9 +135,9 @@ export const POLICY_CONTENT = {
                     "Empathy and sensitivity training shall be regularly conducted for administrative and support staff to ensure polite, non-judgmental interactions with students seeking financial concessions.",
                 ],
             },
-            { type: "heading", level: 2, text: "Corporate Social Responsibility (CSR) & Alumni Partnerships" },
+            { type: "heading", level: 2, text: "4.8 Corporate Social Responsibility (CSR) & Alumni Partnerships" },
             { type: "paragraph", text: "To sustain and scale up financial assistance, the University shall actively collaborate with external partners. The Scholarship & Financial Aid Cell shall work alongside corporate entities to secure Corporate Social Responsibility (CSR) funding, philanthropic grants, and designated scholarship programs. Furthermore, the Kalinga University Alumni Association shall be engaged to establish an 'Alumni Scholarship Endowment Fund' specifically curated to sponsor tuition fees, study materials, and technical equipment for vulnerable students." },
-            { type: "heading", level: 1, text: "Mentor-Mentee Framework for Socio-Economic Identification" },
+            { type: "heading", level: 1, text: "5. Mentor-Mentee Framework for Socio-Economic Identification" },
             { type: "paragraph", text: "The established Mentor-Mentee Framework of Kalinga University serves as the primary, highly effective channel for the early identification of students experiencing financial hardship or socioeconomic distress. Assigned faculty mentors, acting as supportive guides, shall cultivate deep trust and empathy with their assigned mentees throughout their academic journey:" },
             {
                 type: "list",
@@ -142,7 +148,7 @@ export const POLICY_CONTENT = {
                     "Proactive Encouragement and Guidance: Mentors shall encourage vulnerable mentees to participate in the on-campus Work-Study program, apply for fee installment options, and life balance.",
                 ],
             },
-            { type: "heading", level: 1, text: "Institutional Infrastructure and Welfare Bodies" },
+            { type: "heading", level: 1, text: "6. Institutional Infrastructure and Welfare Bodies" },
             { type: "paragraph", text: "To ensure the structured delivery of the guidelines outlined in this Policy, Kalinga University shall maintain the following specialized support infrastructure:" },
             {
                 type: "list",
@@ -153,7 +159,7 @@ export const POLICY_CONTENT = {
                     "University Medical Room: Serves as the primary, free-of-cost healthcare contact for students, faculty, and staff, offering essential medical first-aid, free primary health consultations, and direct referrals to specialized healthcare facilities for vulnerable individuals.",
                 ],
             },
-            { type: "heading", level: 1, text: "Monitoring and Impact Assessment" },
+            { type: "heading", level: 1, text: "7. Monitoring and Impact Assessment" },
             { type: "paragraph", text: "The Socio-Economic Welfare Committee, the IQAC, and relevant university authorities shall routinely oversee policy implementation and track the effectiveness of socio-economic support initiatives:" },
             {
                 type: "list",
@@ -164,7 +170,7 @@ export const POLICY_CONTENT = {
                     "This Policy shall be reviewed at least once every three years, or earlier if required, to incorporate national best practices, economic shifts, and emerging campus welfare needs.",
                 ],
             },
-            { type: "heading", level: 1, text: "Accountability, Grievance Redressal and Transparency" },
+            { type: "heading", level: 1, text: "8. Accountability, Grievance Redressal and Transparency" },
             { type: "paragraph", text: "Kalinga University is committed to the highest standards of professional ethics, operational accountability, and transparency in delivering socio-economic welfare services:" },
             {
                 type: "list",
@@ -174,7 +180,7 @@ export const POLICY_CONTENT = {
                     "Broad information on scholarship eligibility, application deadlines, and support resources shall be made widely available across the university website, student portals, and handbook to ensure equal opportunity and dignified accessibility.",
                 ],
             },
-            { type: "heading", level: 1, text: "Approval and Implementation" },
+            { type: "heading", level: 1, text: "9. Approval and Implementation" },
             { type: "paragraph", text: "This Policy on Poverty Alleviation and Socio-Economic Support shall come into effect immediately from the date of approval by the competent authority of Kalinga University and shall apply universally to all students, researchers, faculty members, non-teaching staff, and associated stakeholders." },
         ],
     },
@@ -183,26 +189,26 @@ export const POLICY_CONTENT = {
         summary: "Kalinga University is committed to fostering a supportive, inclusive, equitable, safe, and family-friendly working environment for its employees.",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/78, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a supportive, inclusive, equitable, safe, and family-friendly working environment for its employees. The University recognizes that pregnancy, childbirth, and motherhood are important stages in the personal and family life of an employee and that women may require adequate leave, healthcare support, workplace flexibility, and institutional assistance during pregnancy, childbirth, recovery, breastfeeding, and the early care of a child. The University recognizes the importance of protecting the health, dignity, employment, and professional interests of women employees during maternity. It further recognizes that pregnancy and maternity should not become a basis for discrimination, unfair treatment, exclusion, or disadvantage in matters relating to employment, professional growth, workplace participation, or institutional opportunities." },
             { type: "paragraph", text: "Through this Policy, Kalinga University seeks to establish a transparent framework for maternity leave and related institutional support, promote the well-being of women employees, facilitate work-life balance, support responsible parenting, and ensure a smooth transition before, during, and after maternity leave. The Policy shall be implemented in accordance with applicable laws, government regulations, statutory requirements, and University rules." },
-            { type: "heading", level: 1, text: "Principles" },
+            { type: "heading", level: 1, text: "2. Principles" },
             { type: "paragraph", text: "The University shall be guided by the following principles:" },
-            { type: "heading", level: 1, text: "Equality and Non-Discrimination" },
+            { type: "heading", level: 2, text: "Equality and Non-Discrimination" },
             { type: "paragraph", text: "Eligible women employees shall be treated fairly and without discrimination in matters relating to pregnancy, maternity leave, childbirth, breastfeeding, childcare responsibilities, or maternity-related circumstances." },
-            { type: "heading", level: 1, text: "Health and Well-Being" },
+            { type: "heading", level: 2, text: "Health and Well-Being" },
             { type: "paragraph", text: "The University recognizes the importance of protecting the physical and emotional well-being of women during pregnancy, childbirth, and the postnatal period and shall promote a supportive environment for eligible employees." },
-            { type: "heading", level: 1, text: "Dignity and Respect" },
+            { type: "heading", level: 2, text: "Dignity and Respect" },
             { type: "paragraph", text: "Employees shall be treated with dignity, sensitivity, empathy, privacy, and respect when requesting or availing maternity leave or related institutional support." },
-            { type: "heading", level: 1, text: "Work-Life Balance" },
+            { type: "heading", level: 2, text: "Work-Life Balance" },
             { type: "paragraph", text: "The University shall encourage appropriate measures that enable employees to balance professional responsibilities with pregnancy, maternity, breastfeeding, and childcare responsibilities." },
-            { type: "heading", level: 1, text: "Job Security" },
+            { type: "heading", level: 2, text: "Job Security" },
             { type: "paragraph", text: "Availing approved maternity leave shall not, by itself, result in termination, victimization, retaliation, or unfair disadvantage, subject to applicable law and University regulations." },
-            { type: "heading", level: 1, text: "Privacy and Confidentiality" },
+            { type: "heading", level: 2, text: "Privacy and Confidentiality" },
             { type: "paragraph", text: "Personal, medical, pregnancy-related, childbirth-related, and supporting information submitted in connection with maternity leave shall be handled with appropriate confidentiality." },
-            { type: "heading", level: 1, text: "Institutional Support" },
+            { type: "heading", level: 2, text: "Institutional Support" },
             { type: "paragraph", text: "The University shall provide appropriate administrative, health, welfare, and workplace support to facilitate the legitimate maternity-related needs and responsibilities of eligible employees." },
-            { type: "heading", level: 1, text: "Objectives" },
+            { type: "heading", level: 1, text: "3. Objectives" },
             { type: "paragraph", text: "The Policy aims to:" },
             {
                 type: "list",
@@ -221,7 +227,7 @@ export const POLICY_CONTENT = {
                     "Promote gender equality and equal opportunity in employment and professional development.",
                 ],
             },
-            { type: "heading", level: 1, text: "Guidelines" },
+            { type: "heading", level: 1, text: "4. Guidelines" },
             { type: "heading", level: 2, text: "4.1 Eligibility" },
             {
                 type: "list",
@@ -338,7 +344,7 @@ export const POLICY_CONTENT = {
                     "Available health, welfare, breastfeeding, and childcare support resources.",
                 ],
             },
-            { type: "heading", level: 1, text: "Roles and Responsibilities" },
+            { type: "heading", level: 1, text: "5. Roles and Responsibilities" },
             { type: "heading", level: 2, text: "5.1 University Authorities" },
             { type: "paragraph", text: "The University authorities shall:" },
             {
@@ -391,7 +397,7 @@ export const POLICY_CONTENT = {
                     "Inform the appropriate authority of relevant changes, wherever reasonably possible and required for administrative purposes.",
                 ],
             },
-            { type: "heading", level: 1, text: "Health, Wellness and Support Infrastructure" },
+            { type: "heading", level: 1, text: "6. Health, Wellness and Support Infrastructure" },
             { type: "paragraph", text: "The University shall utilize and, where necessary, strengthen appropriate institutional infrastructure to support women employees during pregnancy and maternity, including:" },
             {
                 type: "list",
@@ -408,7 +414,7 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "The University’s existing policy framework recognizes the importance of medical support, counselling, wellness, referrals, gender equality, and a safe, dignified, and supportive institutional environment." },
-            { type: "heading", level: 1, text: "Monitoring and Review" },
+            { type: "heading", level: 1, text: "7. Monitoring and Review" },
             {
                 type: "list",
                 items: [
@@ -420,7 +426,7 @@ export const POLICY_CONTENT = {
                     "The Policy shall be reviewed at least once every three years or earlier, if required.",
                 ],
             },
-            { type: "heading", level: 1, text: "Accountability and Transparency" },
+            { type: "heading", level: 1, text: "8. Accountability and Transparency" },
             {
                 type: "list",
                 items: [
@@ -432,18 +438,18 @@ export const POLICY_CONTENT = {
                     "University authorities shall ensure adequate institutional support for the effective implementation of this Policy.",
                 ],
             },
-            { type: "heading", level: 1, text: "Policy Compliance" },
+            { type: "heading", level: 1, text: "9. Policy Compliance" },
             { type: "paragraph", text: "This Policy shall be read together with applicable Central and State Government laws, statutory regulations, University service rules, leave regulations, and other applicable institutional policies. Where any provision of this Policy is inconsistent with a mandatory statutory requirement, the applicable law or statutory requirement shall prevail." },
-            { type: "heading", level: 1, text: "Approval and Implementation" },
+            { type: "heading", level: 1, text: "10. Approval and Implementation" },
             { type: "paragraph", text: "This Policy on Maternity Leave and Support shall come into effect from the date of approval by the competent authority of Kalinga University and shall apply to eligible employees of the University in accordance with applicable laws, regulations, and University rules. The University shall communicate the Policy through appropriate institutional channels and shall take reasonable measures to ensure its effective implementation. The concerned authorities shall facilitate maternity leave and related support in a fair, respectful, confidential, and non-discriminatory manner." },
         ],
     },
 
     "policy-for-the-protection-of-individuals-reporting-discrimination": {
         summary: "Kalinga University is committed to fostering a safe, inclusive, equitable, respectful, and discrimination-free environment for all members of the…",
+        fullName: "Policy on ‘Protection of Individuals Reporting Discrimination’",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/79, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Policy on ‘Protection of Individuals Reporting Discrimination’" },
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a safe, inclusive, equitable, respectful, and discrimination-free environment for all members of the University community. The University recognizes that effective prevention and redressal of discrimination depend upon individuals being able to raise concerns and report incidents without fear of retaliation, intimidation, victimization, harassment, or adverse consequences. The University therefore recognizes the importance of protecting individuals who, in good faith, report discrimination, harassment, exclusion, victimization, or other conduct contrary to the principles of equality, dignity, and non-discrimination." },
             { type: "paragraph", text: "Through this Policy, the University seeks to establish appropriate safeguards for complainants, witnesses, supporters, and other individuals who participate in or seek assistance through a discrimination-related grievance process. The Policy aims to promote confidence in institutional grievance mechanisms, protect confidentiality and privacy, and ensure that complaints are handled fairly, sensitively, and in accordance with applicable University rules and law. The Policy shall be implemented in accordance with applicable constitutional provisions, laws, regulations, statutory requirements, and University policies governing equality, dignity, non-discrimination, grievance redressal, and protection from harassment." },
@@ -671,7 +677,7 @@ export const POLICY_CONTENT = {
                     "Support a safe and respectful campus environment.",
                 ],
             },
-            { type: "heading", level: 1, text: "Institutional Support Infrastructure" },
+            { type: "heading", level: 1, text: "6. Institutional Support Infrastructure" },
             { type: "paragraph", text: "The University shall utilize and, where necessary, strengthen existing institutional mechanisms to support individuals reporting discrimination, including:" },
             {
                 type: "list",
@@ -959,10 +965,10 @@ export const POLICY_CONTENT = {
 
     "water-reuse-and-recycling-policy": {
         summary: "Kalinga University recognizes water as a critical natural resource and is committed to its responsible use, conservation, treatment, recycling and reuse.",
+        fullName: "Policy on ‘Water Reuse and Recycling’",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/82, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Policy on ‘Water Reuse and Recycling’" },
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes water as a critical natural resource and is committed to its responsible use, conservation, treatment, recycling and reuse. In alignment with SDG 6: Clean Water and Sanitation, the University seeks to reduce avoidable freshwater consumption and strengthen circular water-management practices across its academic, residential, administrative and landscaped areas." },
             { type: "paragraph", text: "The University operates sewage treatment infrastructure and promotes beneficial reuse of treated wastewater for appropriate non-potable applications. This policy establishes a formal institutional framework for wastewater treatment, reuse, water-quality monitoring, rainwater harvesting, groundwater recharge, efficient irrigation, record maintenance and continual improvement." },
             { type: "paragraph", text: "The policy is intended to ensure that water reuse is undertaken in a safe, measurable and environmentally responsible manner and that the University maintains documentary evidence of its water-management performance." },
@@ -1083,9 +1089,9 @@ export const POLICY_CONTENT = {
 
     "energy-efficient-building-renovation-policy": {
         summary: "Kalinga University recognizes that improving the energy performance of existing buildings is an important component of responsible campus management and…",
+        fullName: "Policy on ‘Energy-Efficient Building Renovation’",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/83, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Policy on ‘Energy-Efficient Building Renovation’" },
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes that improving the energy performance of existing buildings is an important component of responsible campus management and its contribution to Sustainable Development Goal 7 (Affordable and Clean Energy). Renovation and refurbishment provide opportunities to reduce avoidable energy demand, improve thermal and visual comfort, integrate renewable energy, and lower the environmental impact of campus operations." },
             { type: "paragraph", text: "The University has already adopted clean-energy and energy-conservation measures including a 300 kWp solar power installation, sensor-based LED lighting, renewable-energy awareness initiatives and a biogas facility. This policy establishes a structured framework so that future major renovations and building upgrades systematically consider energy efficiency from planning and design through procurement, execution, operation and post-renovation monitoring." },
@@ -1569,13 +1575,13 @@ export const POLICY_CONTENT = {
 
     "policy-on-subsidized-staff-meals": {
         summary: "Kalinga University is committed to promoting employee welfare, a healthy workplace environment",
+        fullName: "POLICY ON SUBSIDIZED MEALS FOR STAFF",
         meta: { approved: "Board of Management on 29.03.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/056, Dated 11.04.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 3, text: "POLICY ON SUBSIDIZED MEALS FOR STAFF" },
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to promoting employee welfare, a healthy workplace environment, and decent working conditions for its teaching and non-teaching staff. In accordance with this commitment, the University provides subsidized meals through its designated campus cafeteria/mess facility." },
             { type: "paragraph", text: "The policy aims to ensure that employees have access to affordable, hygienic, nutritious, and wholesome meals during working hours, thereby supporting their well-being and reducing their daily food expenditure. The initiative contributes to Sustainable Development Goal 2 (Zero Hunger), SDG 3 (Good Health and Well-being), and SDG 8 (Decent Work and Economic Growth)." },
-            { type: "heading", level: 3, text: "Purpose" },
+            { type: "heading", level: 3, text: "2. Purpose" },
             { type: "paragraph", text: "The purpose of this policy is to:" },
             {
                 type: "list",
@@ -1588,7 +1594,7 @@ export const POLICY_CONTENT = {
                     "Establish a systematic mechanism for implementation, monitoring, and periodic review of the subsidized meal facility.",
                 ],
             },
-            { type: "heading", level: 3, text: "Scope" },
+            { type: "heading", level: 3, text: "3. Scope" },
             { type: "paragraph", text: "This policy shall apply to:" },
             {
                 type: "list",
@@ -1599,7 +1605,7 @@ export const POLICY_CONTENT = {
                     "Administrative departments/personnel responsible for implementation and monitoring.",
                 ],
             },
-            { type: "heading", level: 3, text: "Eligibility" },
+            { type: "heading", level: 3, text: "4. Eligibility" },
             {
                 type: "list",
                 items: [
@@ -1608,7 +1614,7 @@ export const POLICY_CONTENT = {
                     "Staff members shall avail the facility in accordance with the prescribed University cafeteria/mess rules.",
                 ],
             },
-            { type: "heading", level: 3, text: "Subsidized Meal Facility" },
+            { type: "heading", level: 3, text: "5. Subsidized Meal Facility" },
             {
                 type: "list",
                 items: [
@@ -1619,7 +1625,7 @@ export const POLICY_CONTENT = {
                     "Staff members shall make payment through the prescribed mechanism notified by the University.",
                 ],
             },
-            { type: "heading", level: 3, text: "Food Quality, Nutrition and Hygiene" },
+            { type: "heading", level: 3, text: "6. Food Quality, Nutrition and Hygiene" },
             { type: "paragraph", text: "The cafeteria/mess management shall ensure:" },
             {
                 type: "list",
@@ -1635,7 +1641,7 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "The Office Order also requires the cafeteria/mess to maintain appropriate standards of food quality, hygiene, nutrition, and cleanliness." },
-            { type: "heading", level: 3, text: "Menu Planning" },
+            { type: "heading", level: 3, text: "7. Menu Planning" },
             { type: "paragraph", text: "7.1 The menu shall be planned to provide wholesome and balanced meals at affordable prices." },
             { type: "paragraph", text: "7.2 Wherever feasible, the menu should include a suitable balance of cereals, pulses, vegetables, and other nutritious food items." },
             { type: "paragraph", text: "7.3 The menu may be reviewed periodically based on:" },
@@ -1650,8 +1656,8 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "7.4 The approved menu and applicable meal rates shall be displayed prominently at the cafeteria/mess." },
-            { type: "heading", level: 3, text: "Roles and Responsibilities" },
-            { type: "heading", level: 4, text: "University Management" },
+            { type: "heading", level: 3, text: "8. Roles and Responsibilities" },
+            { type: "heading", level: 4, text: "8.1 University Management" },
             { type: "paragraph", text: "The University Management shall:" },
             {
                 type: "list",
@@ -1661,7 +1667,7 @@ export const POLICY_CONTENT = {
                     "Review the effectiveness of the initiative periodically.",
                 ],
             },
-            { type: "heading", level: 4, text: "Administration / Authorized Personnel" },
+            { type: "heading", level: 4, text: "8.2 Administration / Authorized Personnel" },
             { type: "paragraph", text: "The concerned department or authorized personnel shall:" },
             {
                 type: "list",
@@ -1675,7 +1681,7 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "The Office Order assigns responsibility to the concerned department/authorized personnel for monitoring food quality, hygiene standards, and implementation." },
-            { type: "heading", level: 4, text: "Canteen/Mess Management" },
+            { type: "heading", level: 4, text: "8.3 Canteen/Mess Management" },
             { type: "paragraph", text: "The Canteen/Mess In-charge shall:" },
             {
                 type: "list",
@@ -1689,7 +1695,7 @@ export const POLICY_CONTENT = {
                     "Promptly report operational issues to the authorized University personnel.",
                 ],
             },
-            { type: "heading", level: 4, text: "Staff Members" },
+            { type: "heading", level: 4, text: "8.4 Staff Members" },
             { type: "paragraph", text: "Staff members availing the facility shall:" },
             {
                 type: "list",
@@ -1701,7 +1707,7 @@ export const POLICY_CONTENT = {
                     "Provide constructive feedback regarding food quality and services.",
                 ],
             },
-            { type: "heading", level: 3, text: "Monitoring and Quality Assurance" },
+            { type: "heading", level: 3, text: "9. Monitoring and Quality Assurance" },
             { type: "paragraph", text: "A designated University authority/committee shall periodically monitor:" },
             {
                 type: "list",
@@ -1717,7 +1723,7 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "Periodic review is specifically provided for in the Office Order to ensure the effectiveness and continued benefit of the initiative." },
-            { type: "heading", level: 3, text: "Staff Feedback and Grievance Redressal" },
+            { type: "heading", level: 3, text: "10. Staff Feedback and Grievance Redressal" },
             {
                 type: "list",
                 items: [
@@ -1727,7 +1733,7 @@ export const POLICY_CONTENT = {
                     "Recurring issues shall be documented and monitored until resolution.",
                 ],
             },
-            { type: "heading", level: 3, text: "Financial and Administrative Provisions" },
+            { type: "heading", level: 3, text: "11. Financial and Administrative Provisions" },
             {
                 type: "list",
                 items: [
@@ -1737,7 +1743,7 @@ export const POLICY_CONTENT = {
                     "Necessary records relating to meal services and subsidy implementation shall be maintained by the concerned authority.",
                 ],
             },
-            { type: "heading", level: 3, text: "Sustainability and SDG Alignment" },
+            { type: "heading", level: 3, text: "12. Sustainability and SDG Alignment" },
             { type: "paragraph", text: "The policy contributes to the following Sustainable Development Goals:" },
             {
                 type: "table",
@@ -1749,7 +1755,7 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "These alignments are consistent with the University's Office Order, which identifies subsidized meals as contributing particularly to SDG 2, SDG 3 and SDG 8." },
-            { type: "heading", level: 3, text: "Records and Documentation" },
+            { type: "heading", level: 3, text: "13. Records and Documentation" },
             { type: "paragraph", text: "The following records may be maintained by the concerned department/cafeteria:" },
             {
                 type: "list",
@@ -1764,7 +1770,7 @@ export const POLICY_CONTENT = {
                     "Periodic monitoring/review reports.",
                 ],
             },
-            { type: "heading", level: 3, text: "Review of the Policy" },
+            { type: "heading", level: 3, text: "14. Review of the Policy" },
             { type: "paragraph", text: "This policy shall be reviewed periodically by the competent authority to assess:" },
             {
                 type: "list",
@@ -1778,7 +1784,7 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "Necessary amendments may be made with the approval of the competent authority." },
-            { type: "heading", level: 3, text: "Compliance" },
+            { type: "heading", level: 3, text: "15. Compliance" },
             { type: "paragraph", text: "All concerned departments, administrative personnel, and the cafeteria/mess management shall ensure effective, transparent, and timely implementation of this policy and maintain appropriate standards of food quality, hygiene, affordability, and service." },
         ],
     },
@@ -2127,13 +2133,13 @@ export const POLICY_CONTENT = {
 
     "smoke-free-campus-policy": {
         summary: "Kalinga University is committed to fostering a healthy, safe, and conducive learning and working environment for all students, faculty, staff, visitors",
+        fullName: "Policy on ‘Maintaining a Tobacco-Free and Smoke-Free Campus Environment’",
         blocks: [
-            { type: "heading", level: 1, text: "Policy on ‘Maintaining a Tobacco-Free and Smoke-Free Campus Environment’" },
-            { type: "heading", level: 2, text: "Preamble" },
+            { type: "heading", level: 2, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a healthy, safe, and conducive learning and working environment for all students, faculty, staff, visitors, and stakeholders. Tobacco consumption and exposure to tobacco smoke pose significant health risks and adversely affect the well-being of individuals and the campus community. In alignment with national laws, public health guidelines, and the University's commitment to sustainable development and wellness, this Policy on Maintaining a Tobacco-Free and Smoke-Free Campus Environment is established to promote healthy lifestyles, prevent tobacco use, and ensure a clean and pollution-free campus." },
-            { type: "heading", level: 2, text: "Purpose" },
+            { type: "heading", level: 2, text: "2. Purpose" },
             { type: "paragraph", text: "The purpose of this policy is to create and maintain a tobacco-free and smoke-free campus environment that protects the health and well-being of all members of the University community, discourages tobacco use, and promotes awareness regarding the harmful effects of tobacco consumption and passive smoking." },
-            { type: "heading", level: 2, text: "Objectives" },
+            { type: "heading", level: 2, text: "3. Objectives" },
             {
                 type: "list",
                 items: [
@@ -2146,7 +2152,7 @@ export const POLICY_CONTENT = {
                     "To promote a culture of wellness, responsibility, and healthy living within the campus community.",
                 ],
             },
-            { type: "heading", level: 2, text: "Scope" },
+            { type: "heading", level: 2, text: "4. Scope" },
             { type: "paragraph", text: "This policy applies to:" },
             {
                 type: "list",
@@ -2157,7 +2163,7 @@ export const POLICY_CONTENT = {
                     "All University-sponsored events, programs, activities, and functions conducted within or outside the campus.",
                 ],
             },
-            { type: "heading", level: 2, text: "Policy Statements" },
+            { type: "heading", level: 2, text: "5. Policy Statements" },
             {
                 type: "list",
                 items: [
@@ -2170,7 +2176,7 @@ export const POLICY_CONTENT = {
                     "The University shall support cessation efforts by providing information, counseling referrals, and wellness programs whenever feasible.",
                 ],
             },
-            { type: "heading", level: 2, text: "Responsibilities" },
+            { type: "heading", level: 2, text: "6. Responsibilities" },
             { type: "heading", level: 3, text: "6.1 University Administration" },
             {
                 type: "list",
@@ -2217,7 +2223,7 @@ export const POLICY_CONTENT = {
                     "Collaborate with healthcare professionals, government agencies, NGOs, and public health organizations to strengthen tobacco prevention and cessation initiatives.",
                 ],
             },
-            { type: "heading", level: 2, text: "Implementation Measures" },
+            { type: "heading", level: 2, text: "7. Implementation Measures" },
             {
                 type: "list",
                 items: [
@@ -2230,7 +2236,7 @@ export const POLICY_CONTENT = {
                     "Compliance with applicable tobacco control laws and regulations shall be ensured at all times.",
                 ],
             },
-            { type: "heading", level: 2, text: "Disciplinary and Corrective Measures" },
+            { type: "heading", level: 2, text: "8. Disciplinary and Corrective Measures" },
             {
                 type: "list",
                 items: [
@@ -2241,7 +2247,7 @@ export const POLICY_CONTENT = {
                     "Educational and corrective approaches, including counseling and awareness sessions, shall be encouraged alongside disciplinary measures.",
                 ],
             },
-            { type: "heading", level: 2, text: "Monitoring and Evaluation" },
+            { type: "heading", level: 2, text: "9. Monitoring and Evaluation" },
             {
                 type: "list",
                 items: [
@@ -2252,7 +2258,7 @@ export const POLICY_CONTENT = {
                     "Annual reviews of compliance status and awareness initiatives shall be undertaken by the relevant committee or authority.",
                 ],
             },
-            { type: "heading", level: 2, text: "Policy Review" },
+            { type: "heading", level: 2, text: "10. Policy Review" },
             { type: "paragraph", text: "This policy shall be reviewed every three years or earlier if required due to changes in legislation, public health guidelines, institutional requirements, or emerging best practices. Amendments and revisions shall be approved by the competent authority of the University to ensure continued relevance and effectiveness in promoting a healthy, tobacco-free, and smoke-free campus environment." },
         ],
     },
@@ -2261,7 +2267,7 @@ export const POLICY_CONTENT = {
         summary: "Kalinga University is committed to responsible consumption, environmental stewardship, biodiversity conservation",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/87, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to responsible consumption, environmental stewardship, biodiversity conservation, and sustainable resource management in alignment with Sustainable Development Goal 14 (Life Below Water). The University recognizes that food obtained from aquatic ecosystems—including fish, shellfish, crustaceans, molluscs, aquatic plants, algae, and other aquatic food resources—can contribute to food and nutritional security, while unsustainable harvesting and production can cause overexploitation, habitat degradation, biodiversity loss, pollution, and ecosystem decline." },
             { type: "paragraph", text: "The University therefore seeks to ensure that aquatic food served, sold, procured, or used in campus food services is obtained through legal, traceable, environmentally responsible, and socially responsible supply chains. Preference shall be given to aquatic food sourced from responsibly managed fisheries and aquaculture systems that minimize impacts on aquatic ecosystems and support long-term resource sustainability." },
             { type: "paragraph", text: "This Policy establishes a systematic framework for sustainable procurement, verification, responsible consumption, vendor compliance, awareness, research, monitoring, and periodic review of food obtained from aquatic ecosystems on the University campus. The Policy is intended to support the University's commitment to SDG 14 and the responsible use of marine and freshwater resources." },
@@ -2440,7 +2446,7 @@ export const POLICY_CONTENT = {
         summary: "Kalinga University recognizes that the way food is produced, procured and consumed has important implications for biodiversity, soil health",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/88, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes that the way food is produced, procured and consumed has important implications for biodiversity, soil health, water resources, climate resilience, rural livelihoods and sustainable development. The University is committed to promoting environmentally responsible food systems as part of its broader commitment to sustainable development and responsible consumption." },
             { type: "paragraph", text: "The University has an established campus food system comprising mess, canteen and cafeteria services, including food services provided through an external service partner. The University therefore recognizes the importance of incorporating sustainability requirements into food procurement and food-service operations. This Policy provides a framework for ensuring that food supplied on campus is sourced, as far as practicable, from farming and production systems that protect natural resources, support responsible agricultural practices and contribute to sustainable local livelihoods." },
             { type: "heading", level: 1, text: "2. Principles" },
@@ -2632,10 +2638,10 @@ export const POLICY_CONTENT = {
 
     "sustainable-land-use-conservation-and-restoration-policy": {
         summary: "Kalinga University is committed to protecting terrestrial ecosystems and promoting the sustainable use",
+        fullName: "‘Sustainable Land Use, Conservation & Restoration Policy’",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/89, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "‘Sustainable Land Use, Conservation & Restoration Policy’" },
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to protecting terrestrial ecosystems and promoting the sustainable use, conservation and restoration of land associated with the University. Healthy land and soil support biodiversity, vegetation, carbon storage, water regulation, climate resilience and essential ecosystem services." },
             { type: "paragraph", text: "The University recognizes that campus planning, construction, landscaping, plantation, drainage, maintenance and infrastructure development can influence soil quality, vegetation cover, habitat connectivity, water infiltration and biodiversity. Sustainable land management is therefore an integral part of responsible campus development." },
             { type: "paragraph", text: "This Policy establishes a framework for conserving existing natural and semi-natural areas, minimizing land degradation, restoring degraded or disturbed areas, protecting soil and vegetation, promoting native and climate-resilient species, and integrating ecological considerations into campus planning and management." },
@@ -2833,7 +2839,7 @@ export const POLICY_CONTENT = {
         summary: "Kalinga University is committed to conserving biodiversity and promoting sustainable management of terrestrial ecosystems in alignment with Sustainable…",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/90, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to conserving biodiversity and promoting sustainable management of terrestrial ecosystems in alignment with Sustainable Development Goal 15 (Life on Land). The University recognizes that the conservation of native flora, threatened species, and ecologically significant plant diversity is essential for maintaining ecological balance, enhancing ecosystem services, and fostering environmental sustainability." },
             { type: "paragraph", text: "The University campus currently supports a rich diversity of plant species comprising trees, shrubs, herbs, climbers, gymnosperms, medicinal plants, ornamental species, and palms. Several native species such as Azadirachta indica (Neem), Aegle marmelos (Bael), Ficus religiosa (Peepal), Saraca asoca (Ashoka), Syzygium cumini (Jamun), Tinospora cordifolia (Giloy), Mangifera indica (Mango), Butea monosperma (Palash), Centella asiatica (Gotu Kola), Gymnema sylvestre, and many others contribute significantly to campus biodiversity and ecological resilience." },
             { type: "paragraph", text: "This policy establishes a systematic framework for identifying, monitoring, documenting, protecting, and periodically reviewing plant species that fall under the IUCN Red List, national conservation priorities, endemic flora, medicinally important species, and other ecologically significant plant resources present on the campus." },
@@ -3226,13 +3232,13 @@ export const POLICY_CONTENT = {
 
     "gender-sensitization": {
         summary: "Kalinga University is committed to fostering an inclusive, equitable, safe, and respectful academic environment that promotes gender justice and equal…",
+        fullName: "POLICY ON GENDER EQUITY AND GENDER SENSITIZATION",
         meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/073, Dated 20.06.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 3, text: "POLICY ON GENDER EQUITY AND GENDER SENSITIZATION" },
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering an inclusive, equitable, safe, and respectful academic environment that promotes gender justice and equal opportunities for all members of the University community. The University recognizes that gender equity is fundamental to human dignity, social justice, academic excellence, and sustainable development. This policy aims to eliminate all forms of gender-based discrimination, bias, harassment, and violence while promoting mutual respect, sensitivity, and equal participation in academic, administrative, research, cultural, and leadership activities." },
             { type: "paragraph", text: "The University shall ensure compliance with applicable laws, regulations, and guidelines relating to gender equality and women's empowerment, including the provisions of the Constitution of India, the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013, UGC Regulations, and other relevant statutory provisions." },
-            { type: "heading", level: 3, text: "Principles" },
+            { type: "heading", level: 3, text: "2. Principles" },
             { type: "paragraph", text: "The Policy is guided by the following principles:" },
             {
                 type: "list",
@@ -3245,7 +3251,7 @@ export const POLICY_CONTENT = {
                     "Confidentiality and Fairness: Complaints and grievances related to gender issues shall be addressed confidentially, impartially, and promptly.",
                 ],
             },
-            { type: "heading", level: 3, text: "Objectives" },
+            { type: "heading", level: 3, text: "3. Objectives" },
             { type: "paragraph", text: "The objectives of this Policy are to:" },
             {
                 type: "list",
@@ -3262,7 +3268,7 @@ export const POLICY_CONTENT = {
                     "Ensure compliance with statutory provisions and best practices relating to gender equity.",
                 ],
             },
-            { type: "heading", level: 3, text: "Guidelines" },
+            { type: "heading", level: 3, text: "4. Guidelines" },
             { type: "paragraph", text: "To achieve the objectives of this Policy, the University shall:" },
             { type: "heading", level: 4, text: "4.1 Awareness and Sensitization" },
             {
@@ -3367,7 +3373,7 @@ export const POLICY_CONTENT = {
                 ],
             },
             { type: "paragraph", text: "The University shall organize leadership development programs, mentoring initiatives, capacity-building workshops, networking opportunities, and specialized training for women. These initiatives shall enhance confidence, leadership competencies, and representation of women in academic, administrative, and governance positions across the institution." },
-            { type: "heading", level: 3, text: "Teacher–Student Relationship" },
+            { type: "heading", level: 3, text: "5. Teacher–Student Relationship" },
             { type: "paragraph", text: "The relationship between teachers and students shall be founded on mutual respect, professionalism, trust, and academic integrity." },
             {
                 type: "list",
@@ -3380,7 +3386,7 @@ export const POLICY_CONTENT = {
                     "Teachers shall act as role models in promoting gender-sensitive attitudes and inclusive practices within the University.",
                 ],
             },
-            { type: "heading", level: 3, text: "Monitoring and Review" },
+            { type: "heading", level: 3, text: "6. Monitoring and Review" },
             {
                 type: "list",
                 items: [
@@ -3391,7 +3397,7 @@ export const POLICY_CONTENT = {
                     "Recommendations emerging from audits, surveys, and assessments shall be incorporated into future revisions.",
                 ],
             },
-            { type: "heading", level: 3, text: "Accountability and Transparency" },
+            { type: "heading", level: 3, text: "7. Accountability and Transparency" },
             {
                 type: "list",
                 items: [
@@ -3403,7 +3409,7 @@ export const POLICY_CONTENT = {
                     "The University shall maintain confidentiality of complainants and respondents while ensuring due process and natural justice.",
                 ],
             },
-            { type: "heading", level: 3, text: "Approval and Implementation" },
+            { type: "heading", level: 3, text: "8. Approval and Implementation" },
             { type: "paragraph", text: "This Policy on Gender Equity and Gender Sensitization shall come into effect from the date of its approval by the competent authority of Kalinga University and shall be applicable to all students, faculty members, staff, researchers, contractual personnel, visitors, and other stakeholders associated with the University." },
         ],
     },
@@ -3412,11 +3418,11 @@ export const POLICY_CONTENT = {
         summary: "The purpose of this policy is to affirm Kalinga University's commitment to fostering a culture of continuous, self-directed",
         meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/104, Dated 17.08.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Purpose" },
+            { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "The purpose of this policy is to affirm Kalinga University's commitment to fostering a culture of continuous, self-directed, and lifelong learning among students, faculty, staff, alumni, and the wider community. It aims to ensure equitable access to learning resources, programmes, and opportunities beyond formal degree requirements, enabling individuals to continually update their knowledge, skills, and competencies in response to evolving personal, professional, and societal needs." },
-            { type: "heading", level: 1, text: "Scope" },
+            { type: "heading", level: 1, text: "2. Scope" },
             { type: "paragraph", text: "This policy applies to all students (current and alumni), faculty, staff, and eligible external learners of Kalinga University who seek access to the University's lifelong learning avenues. This includes, but is not limited to, continuing education courses, certificate and diploma programmes, Massive Open Online Courses (MOOCs), skill-development workshops, library and digital learning resources, seminars, extension lectures, and professional development programmes offered by the University." },
-            { type: "heading", level: 1, text: "Policy Objectives" },
+            { type: "heading", level: 1, text: "3. Policy Objectives" },
             {
                 type: "list",
                 items: [
@@ -3427,7 +3433,7 @@ export const POLICY_CONTENT = {
                     "Promote inclusivity by removing financial, geographical, and physical barriers to learning wherever feasible.",
                 ],
             },
-            { type: "heading", level: 1, text: "Guidelines" },
+            { type: "heading", level: 1, text: "4. Guidelines" },
             {
                 type: "list",
                 items: [
@@ -3440,7 +3446,7 @@ export const POLICY_CONTENT = {
                     "Quality Assurance: All lifelong learning programmes shall adhere to the University's academic quality standards and be periodically reviewed for relevance and effectiveness.",
                 ],
             },
-            { type: "heading", level: 1, text: "Responsibilities" },
+            { type: "heading", level: 1, text: "5. Responsibilities" },
             {
                 type: "list",
                 items: [
@@ -3451,11 +3457,11 @@ export const POLICY_CONTENT = {
                     "Learners (Students, Alumni, Staff, and Community Members): Engage responsibly with learning opportunities, adhere to programme requirements, and provide constructive feedback for continuous improvement.",
                 ],
             },
-            { type: "heading", level: 1, text: "Awareness and Engagement" },
+            { type: "heading", level: 1, text: "6. Awareness and Engagement" },
             { type: "paragraph", text: "The University shall actively promote awareness of lifelong learning opportunities through its website, notice boards, alumni networks, social media, and orientation programmes. Periodic surveys and feedback mechanisms will be used to identify emerging learning needs and to enhance the reach and relevance of programmes offered." },
-            { type: "heading", level: 1, text: "Compliance" },
+            { type: "heading", level: 1, text: "7. Compliance" },
             { type: "paragraph", text: "All lifelong learning programmes and participants must comply with the University's academic, financial, and code-of-conduct policies. Any misuse of access privileges, misrepresentation of credentials, or violation of programme terms may result in suspension of access or other appropriate administrative action as per University regulations." },
-            { type: "heading", level: 1, text: "Policy Review" },
+            { type: "heading", level: 1, text: "8. Policy Review" },
             { type: "paragraph", text: "This policy shall be reviewed every three years, or as required by changes in regulatory guidelines, emerging educational technologies, or evolving learner needs, to ensure continued relevance and effectiveness of the University's lifelong learning initiatives." },
         ],
     },
@@ -3464,7 +3470,7 @@ export const POLICY_CONTENT = {
         summary: "Kalinga University is committed to promoting equal educational opportunity and ensuring that women and girls have fair, transparent, accessible",
         meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/120, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
-            { type: "heading", level: 1, text: "Preamble" },
+            { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to promoting equal educational opportunity and ensuring that women and girls have fair, transparent, accessible, and supportive opportunities to apply for and pursue higher education. The University recognizes that women’s participation in higher education contributes to individual empowerment, economic independence, social development, leadership, and inclusive institutional growth." },
             { type: "paragraph", text: "Through this Policy, the University seeks to ensure that admission processes are free from gender-based barriers and that women applicants receive equitable access to information, application support, academic programmes, scholarships, financial assistance, campus facilities, and student support services. The University shall encourage the participation of women across disciplines, including fields where their representation may be comparatively lower." },
             { type: "heading", level: 1, text: "2. Principles" },
