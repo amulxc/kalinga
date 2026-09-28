@@ -148,8 +148,8 @@ export default async function SustainabilityPolicyPage({ params }) {
                 <div className="container mx-auto px-4 py-8 md:py-12 max-w-4xl space-y-10 md:space-y-12">
                     <header className="space-y-3 text-center">
                         <h1 className="font-stix !text-3xl md:!text-5xl font-bold leading-tight text-[var(--foreground)]">
-                            {policy.name}
-                            {content?.fullName ? (
+                            {content?.title || policy.name}
+                            {!content?.title && content?.fullName ? (
                                 <span className="mt-2 block font-plus-jakarta-sans !text-base md:!text-lg font-semibold text-[var(--text-gray-card)]">
                                     {content.fullName}
                                 </span>

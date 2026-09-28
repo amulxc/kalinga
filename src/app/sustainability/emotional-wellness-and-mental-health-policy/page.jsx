@@ -94,10 +94,14 @@ export default function EmotionalWellnessPolicyPage() {
                         <SectionHeading>2. Principles</SectionHeading>
                         <p>The University shall be guided by the following principles:</p>
                         <div className="space-y-4">
-                            {PRINCIPLES.map((principle) => (
+                            {PRINCIPLES.map((principle, index) => (
                                 <div key={principle.title}>
-                                    <SectionHeading level={2}>{principle.title}</SectionHeading>
-                                    <p className="mt-1">{principle.description}</p>
+                                    <SectionHeading level={2}>
+                                        2.{index + 1} {principle.title}
+                                    </SectionHeading>
+                                    <div className="mt-2">
+                                        <PolicyList items={principle.points} />
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -106,7 +110,7 @@ export default function EmotionalWellnessPolicyPage() {
                     <div className="space-y-4">
                         <SectionHeading>3. Objectives</SectionHeading>
                         <p>The Policy aims to:</p>
-                        <PolicyList items={OBJECTIVES} ordered />
+                        <PolicyList items={OBJECTIVES} />
                     </div>
 
                     <div className="space-y-4">
@@ -137,10 +141,14 @@ export default function EmotionalWellnessPolicyPage() {
                     <div className="space-y-4">
                         <SectionHeading>6. Health, Wellness and Support Infrastructure</SectionHeading>
                         <div className="space-y-4">
-                            {SUPPORT_FACILITIES.map((facility) => (
+                            {SUPPORT_FACILITIES.map((facility, index) => (
                                 <div key={facility.title}>
-                                    <SectionHeading level={2}>{facility.title}</SectionHeading>
-                                    <p className="mt-1">{facility.description}</p>
+                                    <SectionHeading level={2}>
+                                        6.{index + 1} {facility.title}
+                                    </SectionHeading>
+                                    <div className="mt-2">
+                                        <PolicyList items={facility.points} />
+                                    </div>
                                 </div>
                             ))}
                         </div>

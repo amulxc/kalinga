@@ -20,33 +20,39 @@ export const PREAMBLE = [
 export const PRINCIPLES = [
     {
         title: "Respect and Dignity",
-        description:
+        points: [
             "Every individual shall be treated with empathy, respect, compassion, and dignity regardless of their emotional or mental health status.",
+        ],
     },
     {
         title: "Inclusiveness and Equity",
-        description:
+        points: [
             "Mental health and wellness services shall be accessible and inclusive for all members of the University community without discrimination.",
+        ],
     },
     {
         title: "Prevention and Early Intervention",
-        description:
+        points: [
             "The University shall prioritize awareness, prevention, early identification, and timely intervention for mental health concerns.",
+        ],
     },
     {
         title: "Confidentiality and Privacy",
-        description:
+        points: [
             "Personal information related to mental health and counselling shall be handled with the highest standards of confidentiality and professional ethics.",
+        ],
     },
     {
         title: "Resilience and Positive Development",
-        description:
+        points: [
             "The University shall promote coping skills, emotional intelligence, adaptability, and resilience to help individuals manage stress and adversity effectively.",
+        ],
     },
     {
         title: "Shared Responsibility",
-        description:
+        points: [
             "Mental health promotion is a collective responsibility involving students, faculty, staff, administrators, parents, and support services.",
+        ],
     },
 ];
 
@@ -156,13 +162,19 @@ export const MENTOR_MENTEE_POINTS = [
 export const SUPPORT_FACILITIES = [
     {
         title: "Medical Room",
-        description:
-            "The University Medical Room serves as the first point of contact for addressing the immediate health and wellness needs of students, faculty, and staff. Equipped with basic medical facilities and first-aid provisions, it provides timely healthcare support and emergency assistance. The Medical Room plays an important role in promoting physical and mental well-being by facilitating early intervention, health consultations, referrals to specialized healthcare providers, and guidance on maintaining a healthy lifestyle, thereby contributing to a safe and supportive campus environment.",
+        points: [
+            "The University Medical Room serves as the first point of contact for addressing the immediate health and wellness needs of students, faculty, and staff.",
+            "Equipped with basic medical facilities and first-aid provisions, it provides timely healthcare support and emergency assistance.",
+            "The Medical Room plays an important role in promoting physical and mental well-being by facilitating early intervention, health consultations, referrals to specialized healthcare providers, and guidance on maintaining a healthy lifestyle, thereby contributing to a safe and supportive campus environment.",
+        ],
     },
     {
         title: "Sports and Wellness Center",
-        description:
-            "The Sports and Wellness Center promotes holistic health by encouraging physical fitness, emotional well-being, and stress management among students and employees. Through sports activities, fitness programs, yoga, meditation, recreational events, and wellness initiatives, the Center helps individuals develop resilience, self-confidence, teamwork, and healthy coping mechanisms. Regular participation in sports and wellness activities contributes significantly to reducing stress, enhancing mental health, improving overall quality of life, and fostering a positive and vibrant campus culture.",
+        points: [
+            "The Sports and Wellness Center promotes holistic health by encouraging physical fitness, emotional well-being, and stress management among students and employees.",
+            "Through sports activities, fitness programs, yoga, meditation, recreational events, and wellness initiatives, the Center helps individuals develop resilience, self-confidence, teamwork, and healthy coping mechanisms.",
+            "Regular participation in sports and wellness activities contributes significantly to reducing stress, enhancing mental health, improving overall quality of life, and fostering a positive and vibrant campus culture.",
+        ],
     },
 ];
 
