@@ -291,7 +291,7 @@ export const SUSTAINABILITY_POLICIES = [
             "Ethical and Sustainable Sourcing Policy",
             "Hazardous Waste Disposal and Management Policy",
             "Landfill Waste Management and Reduction Policy",
-            "Minimisation Policy extended",
+            "Minimisation Policy Extended",
             "Plastic Use Minimization Policy",
             "Policy on Extending the Useful Life of Disposable Items and Services",
             "Single-Use and Disposable Items Minimization Policy",
