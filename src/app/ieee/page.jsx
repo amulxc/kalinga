@@ -541,6 +541,13 @@ const galleryImages1 = [
 
 ]
 
+// Branch Awards images (shown after Achievements, click opens the popup).
+// Add entries as { id, image: "<cdn url>", alt } - the section appears once filled.
+const branchAwardsImages = [
+  { id: 1, image: "/ieee/branch-awards/outstanding-student-branch-award-2025.jpg", alt: "IEEE India Council Outstanding Student Branch Award 2025" },
+  { id: 2, image: "/ieee/branch-awards/regional-exemplary-student-branch-award-2025.jpg", alt: "IEEE Regional Exemplary Student Branch Award 2025" },
+];
+
 const defaultButtons = [
   {
     id: 9,
@@ -1093,6 +1100,12 @@ export default function Page() {
         images={galleryImages1}
         title="Achievements"
       />
+      {branchAwardsImages.length > 0 && (
+        <AchievementsGallery
+          images={branchAwardsImages}
+          title="Branch Awards"
+        />
+      )}
       {/* ================== UBA ACTIVITIES TABS ================== */}
       {/* <VisaFroFrroGuidelines
         title={<>ESG & Sustainability Symposium</>}
@@ -1474,7 +1487,7 @@ export default function Page() {
 
 
 
-      <Gallery title="Glimpses" images={galleryImages} />
+      <Gallery title="Glimpses" images={galleryImages} enableLightbox />
     </>
   );
 }

@@ -1,10 +1,11 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import SectionHeading from '../general/SectionHeading'
+import ImageLightbox, { useImageLightbox } from '../general/ImageLightbox'
 
 /**
  * Achievements gallery with a click-to-zoom popup (lightbox).
@@ -22,32 +23,17 @@ const AchievementsGallery = ({
   const displayImages = images;
   const useSlider = displayImages.length > 4;
 
-  // Lightbox state - holds the currently opened image, or null when closed
-  const [lightboxImage, setLightboxImage] = useState(null);
-
-  // Close on Escape and lock body scroll while the popup is open
-  useEffect(() => {
-    if (!lightboxImage) return;
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') setLightboxImage(null);
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = previousOverflow;
-    };
-  }, [lightboxImage]);
+  // Shared full-screen viewer (portalled to <body>, arrows + Escape)
+  const lightbox = useImageLightbox(displayImages.length);
 
   const titleAlignment = titleClassName.includes('text-left') ? 'text-left' :
     titleClassName.includes('text-right') ? 'text-right' :
       'text-center';
 
-  const renderImage = (item) => (
+  const renderImage = (item, index) => (
     <button
       type="button"
-      onClick={() => setLightboxImage(item)}
+      onClick={() => lightbox.open(index)}
       aria-label={`View ${item.alt || 'image'}`}
       className="block w-full text-left"
     >
@@ -87,68 +73,32 @@ const AchievementsGallery = ({
               }}
               className="gallery-swiper"
             >
-              {displayImages.map((item) => (
-                <SwiperSlide key={item.id}>{renderImage(item)}</SwiperSlide>
+              {displayImages.map((item, index) => (
+                <SwiperSlide key={item.id}>{renderImage(item, index)}</SwiperSlide>
               ))}
             </Swiper>
           </div>
         ) : (
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">
-            {displayImages.map((item) => (
+            {displayImages.map((item, index) => (
               <div
                 key={item.id}
                 className="w-[calc(50%-6px)] sm:w-[calc(50%-8px)] md:w-[calc(25%-18px)] max-w-[300px]"
               >
-                {renderImage(item)}
+                {renderImage(item, index)}
               </div>
             ))}
           </div>
         )}
       </div>
 
-      {/* Lightbox popup */}
-      {lightboxImage && (
-        <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4"
-          onClick={() => setLightboxImage(null)}
-          role="dialog"
-          aria-modal="true"
-        >
-          <div
-            className="relative max-h-[75vh] max-w-[90vw] sm:max-w-[600px]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Close button - anchored to the image's top-right corner */}
-            <button
-              type="button"
-              onClick={() => setLightboxImage(null)}
-              aria-label="Close"
-              className="absolute -top-2.5 -right-2.5 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-lg text-[var(--dark-blue)] transition-transform hover:scale-110"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
-
-            <img
-              src={lightboxImage.image}
-              alt={lightboxImage.alt}
-              className="max-h-[75vh] w-full object-contain rounded-lg"
-            />
-          </div>
-        </div>
-      )}
+      <ImageLightbox
+        images={displayImages}
+        index={lightbox.index}
+        onClose={lightbox.close}
+        onPrev={lightbox.showPrev}
+        onNext={lightbox.showNext}
+      />
     </section>
   );
 };
