@@ -19,6 +19,18 @@ export const EVENT_CONTENT_OVERRIDES = {
 
 <p>We invite aspiring young entrepreneurs to pitch their ideas, compete, and take their first step towards building successful business ventures.</p>
 
+<h2>In Collaboration With</h2>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/young-indians.png" alt="Young Indians" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/sr-university.png" alt="SR University, Warangal" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/asma-pune.png" alt="ASMA Institute of Management, Pune" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/campus-on.png" alt="Campus On" style="height:70px;width:auto;margin:0" /></div>
+<p><strong>Powered By:</strong></p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/unstop.png" alt="Unstop" style="height:70px;width:auto;margin:0" /></div>
+<p><strong>Trophy Partner:</strong></p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/gift-kya-de.png" alt="Gift Kya De? (GKD)" style="height:70px;width:auto;margin:0" /></div>
+<p><strong>Gifting Partner:</strong></p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/orgalife.png" alt="Orgalife" style="height:70px;width:auto;margin:0" /></div>
+<p><strong>Sponsored By:</strong></p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/7-overground.png" alt="7 Overground" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/kms-seeds.png" alt="KMS Seeds Private Limited" style="height:70px;width:auto;margin:0" /></div>
+<p><strong>Aligned With UN Sustainable Development Goals (SDGs):</strong> SDG 4 &ndash; Quality Education, SDG 8 &ndash; Decent Work and Economic Growth, SDG 9 &ndash; Industry, Innovation and Infrastructure</p>
+
 <h2>Who Can Participate?</h2>
 <ul>
   <li><strong>Category A</strong> &ndash; School Students (IX&ndash;XII)</li>
@@ -43,7 +55,7 @@ export const EVENT_CONTENT_OVERRIDES = {
   <li>Water Conservation, Sanitation and Sustainable Living</li>
   <li>Women Safety, Accessibility and Inclusive Design</li>
   <li>Tourism, Hospitality, Culture and Creative Economy</li>
-  <li>Advanced Manufacturing, Production and Industry 4.0</li>
+  <li>Advanced Manufacturing, Production and Industry 5.0</li>
   <li>Fitness, SportsTech and Active Lifestyle</li>
   <li>Blockchain, IoT and Smart Infrastructure</li>
   <li>Vision India@2047: Innovations for a Developed India</li>
@@ -70,21 +82,69 @@ export const EVENT_CONTENT_OVERRIDES = {
   <tbody>
     <tr>
       <td>Registration Start Date: 1<sup>st</sup> August 2026</td>
-      <td>Registration: 21<sup>st</sup> September 2026</td>
+      <td>Registration Start Date: 11<sup>th</sup> October 2026</td>
     </tr>
     <tr>
-      <td>Closing Date: 12<sup>th</sup> September 2026</td>
+      <td>Closing Date: 3<sup>rd</sup> October 2026</td>
       <td>Closing Date: 7<sup>th</sup> November 2026</td>
     </tr>
     <tr>
-      <td>Announcement of Shortlisted Teams: 19<sup>th</sup> September 2026</td>
+      <td>Announcement of Shortlisted Teams: 11<sup>th</sup> October 2026</td>
       <td>Presentation of Business Plan (Online/Offline): 23<sup>rd</sup> and 24<sup>th</sup> November 2026</td>
     </tr>
   </tbody>
 </table>
-<p><em>*Note &ndash; The teams should get a minimum score of 50% to be eligible for the reward.</em></p>
+
+<h2>Registration Fees</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Teams</th>
+      <th>Round 1 (Entry Fee)</th>
+      <th>Round 2 (For Shortlisted Teams)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Indian Teams</td>
+      <td>INR 200/-</td>
+      <td>INR 1500/-</td>
+    </tr>
+    <tr>
+      <td>International Teams</td>
+      <td>USD 5</td>
+      <td>USD 15</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Important Information</h2>
+<ul>
+  <li>The teams should get a minimum score of 50% to be eligible for the reward.</li>
+  <li>Maximum presentation time: 15 minutes per team.</li>
+  <li>Maximum number of members in a team: 5.</li>
+  <li>Accommodation facility is available on a chargeable basis as per the University norms.</li>
+  <li>Business plans are to be submitted to <a href="mailto:ideathon@kalingauniversity.ac.in">ideathon@kalingauniversity.ac.in</a>.</li>
+</ul>
+
+<h2>Contact Persons</h2>
+<ul>
+  <li><strong>Dr. Divya Nandini Sharma:</strong> +91-6261763882, +91-7024116975</li>
+  <li><strong>Dr. Satvik Jain:</strong> +91-8800328488</li>
+  <li><strong>Mr. Abhishek Jaiswar:</strong> +91-8303561035</li>
+  <li><strong>Email:</strong> <a href="mailto:ideathon@kalingauniversity.ac.in">ideathon@kalingauniversity.ac.in</a></li>
+</ul>
 `,
 };
+
+/** Brochure downloads that replace the CMS `link` for an event. */
+export const EVENT_LINK_OVERRIDES = {
+    "ideathon-6-0": "/news-and-events/ideathon-6-0/IDEATHON-6.0-Brochure.pdf",
+};
+
+export function getEventLink(slug, apiLink) {
+    return EVENT_LINK_OVERRIDES[slug] ?? apiLink;
+}
 
 /**
  * Returns the write-up to render for an event: the override when one exists for

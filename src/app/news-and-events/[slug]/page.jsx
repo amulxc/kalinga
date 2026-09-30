@@ -6,7 +6,7 @@ import AdmissionCareer from '@/app/components/general/admission_cta';
 import UpcomingEvents from '@/app/components/admissions/upcoming_events';
 import { fetchNewsEvents, fetchNewsEventDetails, fetchNewsEventSEO, parseHtmlToParagraphs, parseHtmlListItems, parseHtmlToText } from '@/app/lib/api';
 import { getEventDisplayDate } from './eventDateOverrides';
-import { getEventContent } from './eventContentOverrides';
+import { getEventContent, getEventLink } from './eventContentOverrides';
 import { getEventGlimpses } from './eventGlimpses';
 import { getEventImage, shouldHideInlineImage } from './eventImageOverrides';
 import Gallery from '@/app/components/general/gallery';
@@ -129,7 +129,7 @@ export default async function NewsEventDetailsPage({ params }) {
                 htmlContent={content}
                 mainImage={mainImage}
                 galleryImages={galleryImages}
-                link={newsEvent.link}
+                link={getEventLink(decodedSlug, newsEvent.link)}
                 showMainImage={!shouldHideInlineImage(decodedSlug)}
             />
             {glimpses && (
