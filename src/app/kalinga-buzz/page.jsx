@@ -165,6 +165,39 @@ export default function KalingaBuzz() {
     }
   ];
 
+  const buttons5 = [
+    {
+      id: 1,
+      text: "Kalinga Buzz January 2026",
+      href: "https://cdn.kalingauniversity.ac.in/buzz/Kalinga+Buzz+January_2026.pdf",
+    },
+    {
+      id: 2,
+      text: "Kalinga Buzz February 2026",
+      href: "https://cdn.kalingauniversity.ac.in/buzz/Kalinga+Buzz+February_2026.pdf",
+    },
+    {
+      id: 3,
+      text: "Kalinga Buzz March 2026",
+      href: "https://cdn.kalingauniversity.ac.in/buzz/Kalinga+Buzz+March_2026.pdf",
+    },
+    {
+      id: 4,
+      text: "Kalinga Buzz April 2026",
+      href: "https://cdn.kalingauniversity.ac.in/buzz/Kalinga+Buzz+April_2026.pdf",
+    },
+    {
+      id: 5,
+      text: "Kalinga Buzz May 2026",
+      href: "https://cdn.kalingauniversity.ac.in/buzz/Kalinga+Buzz+May_2026.pdf",
+    },
+    {
+      id: 6,
+      text: "Kalinga Buzz June 2026",
+      href: "https://cdn.kalingauniversity.ac.in/buzz/Kalinga+Buzz+June_2026.pdf",
+    },
+  ];
+
   return (
     <>
       <MainIntro
@@ -177,6 +210,7 @@ export default function KalingaBuzz() {
         imageAlt="Kalinga University Buzz"
       />
       <KalingaBuzzTabs
+        year2026={buttons5}
         year2025={buttons4}
       // year2021={buttons3}
       // year2020={buttons2}

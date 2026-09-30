@@ -85,7 +85,7 @@ function NewsletterCard({ title, href }) {
     );
 }
 
-export default function KalingaBuzzTabs({ year2025, year2024, year2023, year2022, year2021, year2020, year2019 }) {
+export default function KalingaBuzzTabs({ year2026, year2025, year2024, year2023, year2022, year2021, year2020, year2019 }) {
     return (
         <section className="w-full">
             <style jsx>{`
@@ -110,10 +110,16 @@ export default function KalingaBuzzTabs({ year2025, year2024, year2023, year2022
             {/* Outer dark-blue container */}
             <div className="rounded-xl bg-[var(--dark-blue)] py-16 mx-2 sm:mx-4">
                 <div className="container mx-auto px-4">
-                    <Tabs defaultValue="2025" className="w-full">
+                    <Tabs defaultValue="2026" className="w-full">
                         {/* CTCD-style Tabs List */}
                         <div className="flex justify-center mb-8">
                             <TabsList className="!bg-transparent w-full max-w-5xl !flex !overflow-x-auto md:!overflow-visible justify-start md:justify-center scrollbar-hide !px-4 md:!px-0 gap-2">
+                                <TabsTrigger
+                                    value="2026"
+                                    className="flex-shrink-0 min-w-[140px] md:flex-1 break-words whitespace-nowrap shadow-sm"
+                                >
+                                    Kalinga Buzz 2026
+                                </TabsTrigger>
                                 <TabsTrigger
                                     value="2025"
                                     className="flex-shrink-0 min-w-[140px] md:flex-1 break-words whitespace-nowrap shadow-sm"
@@ -161,6 +167,14 @@ export default function KalingaBuzzTabs({ year2025, year2024, year2023, year2022
 
                         {/* Content Container - White Card */}
                         <div className="rounded-xl bg-white p-8">
+                            <TabsContent value="2026" className="mt-0">
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                                    {year2026?.map((item) => (
+                                        <NewsletterCard key={item.id} title={item.text} href={item.href} />
+                                    ))}
+                                </div>
+                            </TabsContent>
+
                             <TabsContent value="2025" className="mt-0">
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                                     {year2025?.map((item) => (
