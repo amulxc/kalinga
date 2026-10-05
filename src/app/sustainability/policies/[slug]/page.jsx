@@ -5,6 +5,8 @@ import {
     getPolicyBySlug,
 } from "@/app/components/sustainability/data/policy-registry";
 import { POLICY_CONTENT } from "@/app/components/sustainability/data/policy-content";
+import { POLICY_META } from "@/app/components/sustainability/data/policy-meta";
+import PolicyMetaTable from "@/app/components/sustainability/policy-meta-table";
 
 const SITE = "https://kalingauniversity.ac.in";
 
@@ -117,6 +119,7 @@ export default async function SustainabilityPolicyPage({ params }) {
     if (!policy) notFound();
 
     const content = POLICY_CONTENT[policy.slug];
+    const meta = POLICY_META[policy.slug];
     const url = `${SITE}${policy.href}`;
 
     const jsonLd = {
@@ -158,55 +161,10 @@ export default async function SustainabilityPolicyPage({ params }) {
                         <span className="mx-auto block h-[3px] w-16 rounded-full bg-[var(--button-red)]" />
                     </header>
 
+                    {meta ? <PolicyMetaTable meta={meta} /> : null}
+
                     {content ? (
                         <div className="space-y-6">
-                            {content.meta ? (
-                                <div className="overflow-x-auto">
-                                    <table className="w-full border-collapse text-sm">
-                                        <tbody>
-                                            {content.meta.approved ? (
-                                                <tr>
-                                                    <th
-                                                        scope="row"
-                                                        className="w-40 border border-gray-200 bg-gray-50 p-3 text-left font-semibold text-[var(--foreground)] md:w-56"
-                                                    >
-                                                        Approved
-                                                    </th>
-                                                    <td className="border border-gray-200 p-3 text-[var(--text-gray-card)]">
-                                                        {content.meta.approved}
-                                                    </td>
-                                                </tr>
-                                            ) : null}
-                                            {content.meta.notification ? (
-                                                <tr>
-                                                    <th
-                                                        scope="row"
-                                                        className="w-40 border border-gray-200 bg-gray-50 p-3 text-left font-semibold text-[var(--foreground)] md:w-56"
-                                                    >
-                                                        Notification
-                                                    </th>
-                                                    <td className="border border-gray-200 p-3 text-[var(--text-gray-card)]">
-                                                        {content.meta.notification}
-                                                    </td>
-                                                </tr>
-                                            ) : null}
-                                            {content.meta.nextReview ? (
-                                                <tr>
-                                                    <th
-                                                        scope="row"
-                                                        className="w-40 border border-gray-200 bg-gray-50 p-3 text-left font-semibold text-[var(--foreground)] md:w-56"
-                                                    >
-                                                        Next Review
-                                                    </th>
-                                                    <td className="border border-gray-200 p-3 text-[var(--text-gray-card)]">
-                                                        {content.meta.nextReview}
-                                                    </td>
-                                                </tr>
-                                            ) : null}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            ) : null}
                             <PolicyBlocks blocks={content.blocks} />
                         </div>
                     ) : (

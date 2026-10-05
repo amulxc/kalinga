@@ -153,7 +153,6 @@ const aboutFeatureCards = [
 ];
 
 const aboutAccreditations = [
-  { id: 4, name: "Outlook", logo: "https://cdn.kalingauniversity.ac.in/Home/outlook.webp" },
   { id: 5, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002974.png" },
   { id: 6, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/Group+1000002953.png" },
   { id: 7, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg" },

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { POLICY_META } from "@/app/components/sustainability/data/policy-meta";
+import PolicyMetaTable from "@/app/components/sustainability/policy-meta-table";
 import {
     ACCOUNTABILITY,
     APPROVAL,
@@ -82,6 +84,8 @@ export default function EmotionalWellnessPolicyPage() {
                         </h1>
                         <span className="mx-auto block h-[3px] w-16 rounded-full bg-[var(--button-red)]" />
                     </header>
+
+                    <PolicyMetaTable meta={POLICY_META["emotional-wellness-and-mental-health-policy"]} />
 
                     <div className="space-y-4">
                         <SectionHeading>1. Preamble</SectionHeading>

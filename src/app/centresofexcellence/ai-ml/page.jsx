@@ -100,7 +100,7 @@ export default function AIMLCentrePage() {
 
       <CareerPath careers={learnCards} title="What You’ll Learn" description="" />
 
-      <Gallery images={galleryImages} title="Glimpses of AI & ML Centre Activities" />
+      <Gallery images={galleryImages} title="Glimpses" enableLightbox />
 
       <AdmissionCareer />
     </>

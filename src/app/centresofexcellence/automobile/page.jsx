@@ -105,7 +105,7 @@ export default function AutomobileTrainingCentrePage() {
 
       <CareerPath careers={learnCards} title="What You’ll Learn Here" description="" />
 
-      <Gallery images={galleryImages} title="Glimpses of Automobile Centre Activities" />
+      <Gallery images={galleryImages} title="Glimpses" enableLightbox />
 
       <AdmissionCareer />
     </>

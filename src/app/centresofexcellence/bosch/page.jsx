@@ -106,7 +106,8 @@ export default function BridgeCentrePage() {
 
       <Gallery
         images={galleryImages}
-        title="Glimpses of BRIDGE Courses Training Centre"
+        title="Glimpses"
+        enableLightbox
       />
 
       <AdmissionCareer />

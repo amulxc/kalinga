@@ -61,6 +61,13 @@ const centresOfExcellence = [
       "https://cdn.kalingauniversity.ac.in/about/smeindia.webp",
     href: "/centresofexcellence/msme",
   },
+  {
+    id: 8,
+    name: "Training and Research Centre",
+    title: "UltraTech Cement",
+    image: "/centresofexcellence/ultratech/logo.webp",
+    href: "/centresofexcellence/ultratech",
+  },
 ];
 
 export default function CenterOfExcellenceMain({

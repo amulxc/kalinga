@@ -9,7 +9,6 @@
  *
  *     "smoke-free-campus-policy": {
  *         summary: "One sentence, used for the meta description.",
- *         meta: { approved, notification, nextReview },   // optional
  *         blocks: [
  *             { type: "heading", level: 1 | 2, text },
  *             { type: "paragraph", text },
@@ -31,7 +30,6 @@ export const POLICY_CONTENT = {
     "poverty-alleviation-policy": {
         summary: "Kalinga University is strongly committed to fostering a healthy, inclusive, equitable, and highly supportive campus environment that ensures that…",
         title: "Policy On Poverty Alleviation And Socio-Economic Support",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/116, Dated 19.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is strongly committed to fostering a healthy, inclusive, equitable, and highly supportive campus environment that ensures that financial hardship or socio-economic disadvantages do not act as barriers to academic pursuit, professional productivity, or personal development. In alignment with the United Nations Sustainable Development Goal 1 (SDG 1: No Poverty) and national educational mandates, the University recognizes that access to quality higher education is one of the most powerful instruments for breaking the cycle of poverty and achieving social mobility." },
@@ -187,7 +185,6 @@ export const POLICY_CONTENT = {
 
     "maternity-leave-and-support-policy": {
         summary: "Kalinga University is committed to fostering a supportive, inclusive, equitable, safe, and family-friendly working environment for its employees.",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/78, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a supportive, inclusive, equitable, safe, and family-friendly working environment for its employees. The University recognizes that pregnancy, childbirth, and motherhood are important stages in the personal and family life of an employee and that women may require adequate leave, healthcare support, workplace flexibility, and institutional assistance during pregnancy, childbirth, recovery, breastfeeding, and the early care of a child. The University recognizes the importance of protecting the health, dignity, employment, and professional interests of women employees during maternity. It further recognizes that pregnancy and maternity should not become a basis for discrimination, unfair treatment, exclusion, or disadvantage in matters relating to employment, professional growth, workplace participation, or institutional opportunities." },
@@ -448,7 +445,6 @@ export const POLICY_CONTENT = {
     "policy-for-the-protection-of-individuals-reporting-discrimination": {
         summary: "Kalinga University is committed to fostering a safe, inclusive, equitable, respectful, and discrimination-free environment for all members of the…",
         title: "Policy On Protection Of Individuals Reporting Discrimination",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/79, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a safe, inclusive, equitable, respectful, and discrimination-free environment for all members of the University community. The University recognizes that effective prevention and redressal of discrimination depend upon individuals being able to raise concerns and report incidents without fear of retaliation, intimidation, victimization, harassment, or adverse consequences. The University therefore recognizes the importance of protecting individuals who, in good faith, report discrimination, harassment, exclusion, victimization, or other conduct contrary to the principles of equality, dignity, and non-discrimination." },
@@ -729,7 +725,6 @@ export const POLICY_CONTENT = {
 
     "paternity-leave-and-support-policy": {
         summary: "Kalinga University is committed to fostering a supportive, inclusive, equitable, and family-friendly working environment for its employees.",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/80, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a supportive, inclusive, equitable, and family-friendly working environment for its employees. The University recognizes that the birth or adoption of a child is an important stage in the personal and family life of an employee and that both parents may require time, flexibility, and institutional support to participate in childcare and family responsibilities. The University recognizes the importance of enabling eligible employees to provide care and support to their spouse/partner and newborn or newly adopted child while maintaining continuity of employment and professional responsibilities." },
@@ -966,7 +961,6 @@ export const POLICY_CONTENT = {
     "water-reuse-and-recycling-policy": {
         summary: "Kalinga University recognizes water as a critical natural resource and is committed to its responsible use, conservation, treatment, recycling and reuse.",
         title: "Policy On Water Reuse And Recycling",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/82, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes water as a critical natural resource and is committed to its responsible use, conservation, treatment, recycling and reuse. In alignment with SDG 6: Clean Water and Sanitation, the University seeks to reduce avoidable freshwater consumption and strengthen circular water-management practices across its academic, residential, administrative and landscaped areas." },
@@ -1090,7 +1084,6 @@ export const POLICY_CONTENT = {
     "energy-efficient-building-renovation-policy": {
         summary: "Kalinga University recognizes that improving the energy performance of existing buildings is an important component of responsible campus management and…",
         title: "Policy On Energy-Efficient Building Renovation",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/83, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes that improving the energy performance of existing buildings is an important component of responsible campus management and its contribution to Sustainable Development Goal 7 (Affordable and Clean Energy). Renovation and refurbishment provide opportunities to reduce avoidable energy demand, improve thermal and visual comfort, integrate renewable energy, and lower the environmental impact of campus operations." },
@@ -1247,7 +1240,6 @@ export const POLICY_CONTENT = {
 
     "responsible-investment-and-divestment-policy": {
         summary: "Kalinga University recognizes that institutional financial decisions can contribute to environmental sustainability and the transition towards affordable",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/84, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes that institutional financial decisions can contribute to environmental sustainability and the transition towards affordable, reliable and clean energy. The University therefore seeks to integrate responsible investment considerations into investment decisions over which it has direct discretion, while safeguarding financial stability, liquidity, statutory compliance and its fiduciary responsibilities." },
@@ -1397,7 +1389,6 @@ export const POLICY_CONTENT = {
 
     "clean-energy-technology-development-policy": {
         summary: "Kalinga University recognizes that universities have an important role in developing knowledge",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/85, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes that universities have an important role in developing knowledge, technologies and human capabilities required for the transition towards affordable, reliable, sustainable and modern energy. Research and innovation in clean energy can contribute to improved energy access, reduced environmental impact, energy security, economic development and climate resilience." },
@@ -1576,7 +1567,6 @@ export const POLICY_CONTENT = {
     "policy-on-subsidized-staff-meals": {
         summary: "Kalinga University is committed to promoting employee welfare, a healthy workplace environment",
         title: "Policy On Subsidized Meals For Staff",
-        meta: { approved: "Board of Management on 29.03.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/056, Dated 11.04.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to promoting employee welfare, a healthy workplace environment, and decent working conditions for its teaching and non-teaching staff. In accordance with this commitment, the University provides subsidized meals through its designated campus cafeteria/mess facility." },
@@ -1791,7 +1781,6 @@ export const POLICY_CONTENT = {
 
     "non-discriminatory-admissions-policy": {
         summary: "Kalinga University is committed to providing a fair, transparent, inclusive, and equitable admissions environment in which all eligible applicants are…",
-        meta: { approved: "Board of Management on 29.03.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/59, Dated 16.04.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to providing a fair, transparent, inclusive, and equitable admissions environment in which all eligible applicants are treated with dignity and provided equal opportunity to seek admission to the University’s academic programmes." },
@@ -2265,7 +2254,6 @@ export const POLICY_CONTENT = {
 
     "sustainable-use-of-aquatic-food-resources-policy": {
         summary: "Kalinga University is committed to responsible consumption, environmental stewardship, biodiversity conservation",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/87, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to responsible consumption, environmental stewardship, biodiversity conservation, and sustainable resource management in alignment with Sustainable Development Goal 14 (Life Below Water). The University recognizes that food obtained from aquatic ecosystems—including fish, shellfish, crustaceans, molluscs, aquatic plants, algae, and other aquatic food resources—can contribute to food and nutritional security, while unsustainable harvesting and production can cause overexploitation, habitat degradation, biodiversity loss, pollution, and ecosystem decline." },
@@ -2444,7 +2432,6 @@ export const POLICY_CONTENT = {
 
     "sustainably-farmed-food-procurement-policy": {
         summary: "Kalinga University recognizes that the way food is produced, procured and consumed has important implications for biodiversity, soil health",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/88, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes that the way food is produced, procured and consumed has important implications for biodiversity, soil health, water resources, climate resilience, rural livelihoods and sustainable development. The University is committed to promoting environmentally responsible food systems as part of its broader commitment to sustainable development and responsible consumption." },
@@ -2639,7 +2626,6 @@ export const POLICY_CONTENT = {
     "sustainable-land-use-conservation-and-restoration-policy": {
         summary: "Kalinga University is committed to protecting terrestrial ecosystems and promoting the sustainable use",
         title: "Sustainable Land Use, Conservation & Restoration Policy",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/89, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to protecting terrestrial ecosystems and promoting the sustainable use, conservation and restoration of land associated with the University. Healthy land and soil support biodiversity, vegetation, carbon storage, water regulation, climate resilience and essential ecosystem services." },
@@ -2837,7 +2823,6 @@ export const POLICY_CONTENT = {
 
     "policy-on-conservation-of-iucn-listed-and-other-threatened-species": {
         summary: "Kalinga University is committed to conserving biodiversity and promoting sustainable management of terrestrial ecosystems in alignment with Sustainable…",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/90, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to conserving biodiversity and promoting sustainable management of terrestrial ecosystems in alignment with Sustainable Development Goal 15 (Life on Land). The University recognizes that the conservation of native flora, threatened species, and ecologically significant plant diversity is essential for maintaining ecological balance, enhancing ecosystem services, and fostering environmental sustainability." },
@@ -3031,7 +3016,6 @@ export const POLICY_CONTENT = {
 
     "invasive-and-alien-species-impact-reduction-policy": {
         summary: "Kalinga University is committed to conserving biodiversity and promoting sustainable ecosystem management in accordance with Sustainable Development Goal…",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/91, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to conserving biodiversity and promoting sustainable ecosystem management in accordance with Sustainable Development Goal (SDG) 15 – Life on Land. The University recognizes that while several exotic plant species contribute to campus aesthetics and landscaping, the uncontrolled introduction, spread, or dominance of alien (non-native) species may adversely affect native biodiversity, ecosystem stability, soil quality, and ecological functions." },
@@ -3233,7 +3217,6 @@ export const POLICY_CONTENT = {
     "gender-sensitization": {
         summary: "Kalinga University is committed to fostering an inclusive, equitable, safe, and respectful academic environment that promotes gender justice and equal…",
         title: "Policy On Gender Equity And Gender Sensitization",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/073, Dated 20.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering an inclusive, equitable, safe, and respectful academic environment that promotes gender justice and equal opportunities for all members of the University community. The University recognizes that gender equity is fundamental to human dignity, social justice, academic excellence, and sustainable development. This policy aims to eliminate all forms of gender-based discrimination, bias, harassment, and violence while promoting mutual respect, sensitivity, and equal participation in academic, administrative, research, cultural, and leadership activities." },
@@ -3416,7 +3399,6 @@ export const POLICY_CONTENT = {
 
     "lifelong-learning-access-policy": {
         summary: "The purpose of this policy is to affirm Kalinga University's commitment to fostering a culture of continuous, self-directed",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/104, Dated 17.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "The purpose of this policy is to affirm Kalinga University's commitment to fostering a culture of continuous, self-directed, and lifelong learning among students, faculty, staff, alumni, and the wider community. It aims to ensure equitable access to learning resources, programmes, and opportunities beyond formal degree requirements, enabling individuals to continually update their knowledge, skills, and competencies in response to evolving personal, professional, and societal needs." },
@@ -3468,7 +3450,6 @@ export const POLICY_CONTENT = {
 
     "policy-on-womens-applications-and-admission": {
         summary: "Kalinga University is committed to promoting equal educational opportunity and ensuring that women and girls have fair, transparent, accessible",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/120, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to promoting equal educational opportunity and ensuring that women and girls have fair, transparent, accessible, and supportive opportunities to apply for and pursue higher education. The University recognizes that women’s participation in higher education contributes to individual empowerment, economic independence, social development, leadership, and inclusive institutional growth." },
@@ -3572,7 +3553,6 @@ export const POLICY_CONTENT = {
 
     "policy-on-non-discrimination-against-women": {
         summary: "Kalinga University is committed to providing an inclusive, equitable, respectful, and discrimination-free environment in which women can study, work",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/121, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to providing an inclusive, equitable, respectful, and discrimination-free environment in which women can study, work, conduct research, participate in institutional activities, and develop their academic and professional potential with dignity and equal opportunity. The University recognizes that gender-based discrimination can affect access to education, employment, academic progression, leadership opportunities, participation, safety, and overall well-being. Accordingly, the University shall promote equality of opportunity and prohibit unfair discrimination against women in academic, administrative, employment, student, research, co-curricular, extracurricular, and institutional activities, subject to applicable law and legitimate institutional requirements. This Policy complements the University’s other policies and mechanisms relating to gender equality, prevention of sexual harassment, grievance redressal, student welfare, workplace conduct, safety, and inclusion." },
@@ -3688,7 +3668,6 @@ export const POLICY_CONTENT = {
 
     "policy-on-non-discrimination-against-transgender-persons": {
         summary: "Kalinga University is committed to fostering a safe, inclusive, equitable, and respectful educational and working environment for all members of the…",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/122, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a safe, inclusive, equitable, and respectful educational and working environment for all members of the University community. The University recognizes the dignity, equality, identity, and rights of every individual and is committed to ensuring that no person is subjected to discrimination, harassment, exclusion, victimization, or unfair treatment on the basis of gender identity or gender expression. The University recognizes transgender persons as an integral part of the University community and respects their right to live, study, work, and participate in University activities with dignity, equality, privacy, and freedom from discrimination." },
@@ -3919,7 +3898,6 @@ export const POLICY_CONTENT = {
 
     "employment-non-discrimination-policy": {
         summary: "Kalinga University is committed to creating a fair, inclusive, and respectful workplace environment for all employees.",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/123, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to creating a fair, inclusive, and respectful workplace environment for all employees." },
@@ -4038,7 +4016,6 @@ export const POLICY_CONTENT = {
     
     "employment-pay-equity-policy": {
         summary: "Kalinga University is committed to ensuring fair, transparent, and equitable compensation practices for all employees.",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/125, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to ensuring fair, transparent, and equitable compensation practices for all employees. The University recognizes that an effective pay equity framework contributes to employee motivation, workplace fairness, institutional trust, and inclusive organizational development." },
@@ -4153,7 +4130,6 @@ export const POLICY_CONTENT = {
     
     "employment-policy-on-equal-rights-and-fair-practices-for-outsourced-workers": {
         summary: "Kalinga University is committed to promoting a workplace environment based on equality, fairness, dignity, inclusion, professional ethics, and respect for employee rights.",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/124, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to promoting a workplace environment based on equality, fairness, dignity, inclusion, professional ethics, and respect for employee rights. The University recognizes that fair employment practices and equal opportunities are essential for creating a productive, supportive, and inclusive institutional environment." },
@@ -4296,7 +4272,6 @@ export const POLICY_CONTENT = {
     
     "anti-discrimination-and-equal-opportunity-policy": {
         summary: "Kalinga University is committed to fostering an inclusive, equitable, respectful, and supportive educational and working environment in which every individual is treated with dignity…",
-        meta: { approved: "Board of Management on 29.03.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/62, Dated 16.04.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering an inclusive, equitable, respectful, and supportive educational and working environment in which every individual is treated with dignity and provided fair and equal opportunities." },
@@ -4643,7 +4618,6 @@ export const POLICY_CONTENT = {
     
     "anti-harassment-policy": {
         summary: "Kalinga University is committed to fostering a safe, respectful, inclusive, equitable, and supportive environment for all members of the University community…",
-        meta: { approved: "Board of Management on 29.03.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/61, Dated 16.04.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering a safe, respectful, inclusive, equitable, and supportive environment for all members of the University community. The University recognizes that every individual has the right to study, work, participate, and develop in an environment free from harassment, intimidation, humiliation, bullying, victimization, and other forms of inappropriate conduct." },
@@ -4984,7 +4958,6 @@ export const POLICY_CONTENT = {
     
     "disability-accommodation-and-accessibility-policy": {
         summary: "Kalinga University is committed to fostering an inclusive, equitable, accessible, and supportive educational and working environment in which persons with disabilities can participate fully and with dignity…",
-        meta: { approved: "Board of Management on 29.03.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/60, Dated 16.04.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to fostering an inclusive, equitable, accessible, and supportive educational and working environment in which persons with disabilities can participate fully and with dignity." },
@@ -5422,7 +5395,6 @@ export const POLICY_CONTENT = {
     
     "remote-working-policy": {
         summary: "Kalinga University recognizes that modern higher education institutions increasingly rely on digital technologies, online communication, cloud-based systems, virtual collaboration…",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/126, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University recognizes that modern higher education institutions increasingly rely on digital technologies, online communication, cloud-based systems, virtual collaboration, Learning Management Systems, Enterprise Resource Planning systems, digital research platforms, and electronic administrative processes." },
@@ -5900,7 +5872,6 @@ export const POLICY_CONTENT = {
     
     "ethical-and-sustainable-sourcing-policy": {
         summary: "The purpose of this policy is to ensure that all goods, services, and materials procured by Kalinga University are sourced in a manner that upholds fairness, transparency, human rights…",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/95, Dated 28.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "The purpose of this policy is to ensure that all goods, services, and materials procured by Kalinga University are sourced in a manner that upholds fairness, transparency, human rights, and environmental responsibility. The policy aims to prevent exploitation across the supply chain, encourage responsible business conduct among vendors and suppliers, and embed ethical decision-making into every stage of the procurement process. Through consistent and principled sourcing practices, the University seeks to build a supply chain that reflects its values of integrity, sustainability, and social responsibility." },
@@ -5963,7 +5934,6 @@ export const POLICY_CONTENT = {
     
     "hazardous-waste-disposal-and-management-policy": {
             summary: "Kalinga University recognizes that laboratories, workshops, maintenance activities, healthcare facilities, information-technology operations, construction and other campus activities may generate materials…",
-            meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/107, Dated 10.07.2024", nextReview: "2027-28" },
             blocks: [
                 { type: "heading", level: 1, text: "1. Preamble" },
                 { type: "paragraph", text: "Kalinga University recognizes that laboratories, workshops, maintenance activities, healthcare facilities, information-technology operations, construction and other campus activities may generate materials requiring special handling because of their hazardous, toxic, corrosive, flammable, reactive or otherwise harmful characteristics. Improper handling, storage, transport or disposal of such waste can pose risks to human health, soil, water, air quality and campus ecosystems." },
@@ -6198,7 +6168,6 @@ export const POLICY_CONTENT = {
     
     "landfill-waste-management-and-reduction-policy": {
         summary: "Kalinga University is committed to promoting sustainable waste management and reducing the quantity of waste sent to landfills in accordance with the United Nations Sustainable Development Goal…",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/98, Dated 08.07.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "Kalinga University is committed to promoting sustainable waste management and reducing the quantity of waste sent to landfills in accordance with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production. The purpose of this policy is to minimize landfill-bound waste across the University campus through waste prevention, source segregation, reuse, recycling, composting, responsible procurement, and environmentally sound disposal practices." },
@@ -6404,7 +6373,6 @@ export const POLICY_CONTENT = {
     
     "minimisation-policy-extended": {
         summary: "Kalinga University is committed to promoting sustainable consumption and production in accordance with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production.",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/105, Dated 10.07.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "Kalinga University is committed to promoting sustainable consumption and production in accordance with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production. The purpose of this policy is to extend the University's waste minimisation, resource efficiency, and sustainability practices to its suppliers, vendors, contractors, and service providers." },
@@ -6592,7 +6560,6 @@ export const POLICY_CONTENT = {
     
     "plastic-use-minimization-policy": {
         summary: "Kalinga University is committed to promoting sustainable consumption and reducing plastic pollution in accordance with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production.",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/99, Dated 08.07.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "Kalinga University is committed to promoting sustainable consumption and reducing plastic pollution in accordance with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production. The purpose of this policy is to minimize the use and generation of plastic waste across the University campus by encouraging reusable, recyclable, biodegradable, and environmentally friendly alternatives." },
@@ -6780,7 +6747,6 @@ export const POLICY_CONTENT = {
     
     "policy-on-extending-the-useful-life-of-disposable-items-and-services": {
         summary: "Kalinga University is committed to promoting sustainable consumption and resource efficiency in alignment with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production.",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/104, Dated 10.07.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "Kalinga University is committed to promoting sustainable consumption and resource efficiency in alignment with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production. The purpose of this policy is to extend the useful life of products, equipment, infrastructure, and services through preventive maintenance, repair, refurbishment, reuse, and responsible asset management. By maximizing the utilization of existing resources, the University aims to minimize waste generation, reduce unnecessary procurement, conserve natural resources, and promote environmentally responsible practices across the campus." },
@@ -6907,7 +6873,6 @@ export const POLICY_CONTENT = {
     
     "single-use-and-disposable-items-minimization-policy": {
         summary: "Kalinga University is committed to promoting sustainable consumption and reducing waste generation in accordance with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production.",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/100, Dated 08.07.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Purpose" },
             { type: "paragraph", text: "Kalinga University is committed to promoting sustainable consumption and reducing waste generation in accordance with the United Nations Sustainable Development Goal (SDG) 12: Responsible Consumption and Production. The purpose of this policy is to minimize the use of disposable and single-use items across the University campus by encouraging the adoption of reusable, recyclable, and environmentally friendly alternatives. This policy aims to reduce the University's environmental footprint while fostering a culture of responsible resource utilization among students, faculty, staff, and visitors." },
@@ -7038,7 +7003,6 @@ export const POLICY_CONTENT = {
     
     "marine-pollution-prevention-and-reduction-policy": {
         summary: "Kalinga University is committed to environmental sustainability and to supporting Sustainable Development Goal 14 (Life Below Water), particularly Target 14.1, which calls for the prevention and…",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/86, Dated 27.06.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to environmental sustainability and to supporting Sustainable Development Goal 14 (Life Below Water), particularly Target 14.1, which calls for the prevention and significant reduction of marine pollution of all kinds, especially pollution originating from land-based activities. Marine pollution is influenced not only by activities at sea and along coastlines but also by the movement of plastics, solid waste, untreated wastewater, chemicals, nutrients and other pollutants through drainage systems, rivers and other pathways from inland areas to aquatic and marine ecosystems." },
@@ -7222,7 +7186,6 @@ export const POLICY_CONTENT = {
     
     "plastic-waste-reduction-and-management-policy": {
         summary: "Kalinga University is committed to reducing plastic consumption and plastic waste generation as part of its commitment to environmental sustainability and responsible consumption and production.",
-        meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/106, Dated 10.07.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to reducing plastic consumption and plastic waste generation as part of its commitment to environmental sustainability and responsible consumption and production. The University recognizes that plastic pollution can persist in the environment, contribute to land and water pollution, and place pressure on waste-management systems. Plastic waste reduction therefore requires action across procurement, consumption, reuse, segregation, collection, recycling and environmentally sound disposal." },
@@ -7418,7 +7381,6 @@ export const POLICY_CONTENT = {
     
     "academic-freedom-policy": {
             summary: "Kalinga University recognizes academic freedom as an essential component of higher education, teaching, learning, research, innovation, and intellectual development.",
-            meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/93, Dated 28.06.2024", nextReview: "2027-28" },
             blocks: [
                 { type: "heading", level: 1, text: "1. Preamble" },
                 { type: "paragraph", text: "Kalinga University recognizes academic freedom as an essential component of higher education, teaching, learning, research, innovation, and intellectual development. The University is committed to providing an academic environment in which faculty members, researchers, and students can pursue teaching, learning, research, scholarly inquiry, discussion, and dissemination of knowledge in accordance with academic standards and applicable laws and regulations." },
@@ -7558,7 +7520,6 @@ export const POLICY_CONTENT = {
     
     "policy-for-identification-and-engagement-with-local-stakeholders": {
             summary: "Kalinga University is committed to promoting inclusive, sustainable, and meaningful engagement with local stakeholders for strengthening education, employability, entrepreneurship, skill development…",
-            meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/92, Dated 28.06.2024", nextReview: "2027-28" },
             blocks: [
                 { type: "heading", level: 1, text: "1. Preamble" },
                 { type: "paragraph", text: "Kalinga University is committed to promoting inclusive, sustainable, and meaningful engagement with local stakeholders for strengthening education, employability, entrepreneurship, skill development, community development, and economic opportunities. The University recognizes that effective collaboration with local communities, government bodies, industries, employers, NGOs, civil society organizations, alumni, entrepreneurs, farmers, and other stakeholders can contribute to sustainable institutional and regional development." },
@@ -7726,7 +7687,6 @@ export const POLICY_CONTENT = {
     
     "policy-on-engagement-outreach-and-education-for-policymakers-and-legislators": {
             summary: "Kalinga University recognizes the importance of meaningful engagement between higher education institutions, policymakers, legislators, and public institutions for promoting evidence-based decision-making…",
-            meta: { approved: "Board of Management on 10.06.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/94, Dated 28.06.2024", nextReview: "2027-28" },
             blocks: [
                 { type: "heading", level: 1, text: "1. Preamble" },
                 { type: "paragraph", text: "Kalinga University recognizes the importance of meaningful engagement between higher education institutions, policymakers, legislators, and public institutions for promoting evidence-based decision-making, knowledge sharing, and societal development. The University acknowledges that academic institutions play an important role in generating research, expertise, and innovative ideas that can contribute to effective governance and public policy development." },
@@ -7889,7 +7849,6 @@ export const POLICY_CONTENT = {
         },
     "policy-against-modern-slavery-in-employment": {
         summary: "Kalinga University is committed to maintaining a safe, respectful, ethical and inclusive environment for all persons engaged in or associated with the University, free from forced labour, bonded labour, trafficking and other forms of modern slavery.",
-        meta: { approved: "Board of Management on 09.08.2024", notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/127, Dated 25.08.2024", nextReview: "2027-28" },
         blocks: [
             { type: "heading", level: 1, text: "1. Preamble" },
             { type: "paragraph", text: "Kalinga University is committed to maintaining a safe, respectful, ethical and inclusive environment for all persons engaged in or associated with the University. The University recognizes that every individual has the right to work freely, with dignity, without coercion, exploitation, intimidation or any form of forced labour." },
@@ -8090,4 +8049,2438 @@ export const POLICY_CONTENT = {
         ],
     },
     
+    "policy-for-adoption-and-integration-of-sustainable-development-goals-sdgs": {
+        summary: "Kalinga University recognizes the important role of higher education institutions in achieving sustainable and inclusive development. The University is committed to contributing to the…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University recognizes the important role of higher education institutions in achieving sustainable and inclusive development. The University is committed to contributing to the United Nations Sustainable Development Goals (SDGs) through quality education, research, innovation, environmental sustainability, social responsibility, community engagement and responsible institutional practices."
+            },
+            {
+                type: "paragraph",
+                text: "This policy provides an institutional framework for adopting and integrating the 17 SDGs into the University's academic, research, administrative, infrastructural and outreach activities. It aims to ensure that sustainability is incorporated into institutional planning and development rather than being limited to individual programmes or activities."
+            },
+            {
+                type: "paragraph",
+                text: "The University shall promote a culture of sustainability involving students, faculty, researchers, administrative staff and external stakeholders."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Vision, Mission and Policy Statement"
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "2.1 Vision"
+            },
+            {
+                type: "paragraph",
+                text: "To develop Kalinga University as a responsible, inclusive, innovative and environmentally sustainable institution contributing to sustainable development through education, research, innovation and community engagement."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "2.2 Mission"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Promote awareness and understanding of the SDGs.",
+                    "Integrate sustainability into teaching-learning and academic activities.",
+                    "Encourage SDG-oriented research, innovation and entrepreneurship.",
+                    "Promote sustainable use of energy, water and other resources.",
+                    "Support health, gender equality, inclusion and community development.",
+                    "Develop partnerships with government, industry, NGOs and academic institutions.",
+                    "Monitor and document institutional contributions towards the SDGs."
+                ]
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "2.3 Policy Statement"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University shall progressively integrate the SDGs into institutional planning, academic programmes, research, innovation, infrastructure, campus operations, student activities, community engagement and governance."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Objectives"
+            },
+            {
+                type: "paragraph",
+                text: "The objectives of this policy are to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Mainstream sustainability into institutional planning and decision-making.",
+                    "Create awareness of the 17 SDGs among students, faculty and staff.",
+                    "Promote sustainability-oriented teaching, projects, internships and experiential learning.",
+                    "Encourage interdisciplinary research and innovation addressing societal and environmental challenges.",
+                    "Develop a resource-efficient and environmentally responsible campus.",
+                    "Promote health, well-being, gender equality and social inclusion.",
+                    "Encourage student participation in sustainability and community initiatives.",
+                    "Promote entrepreneurship, skill development and employability.",
+                    "Develop partnerships for sustainable development.",
+                    "Establish measurable indicators for monitoring and reporting SDG performance.",
+                    "Promote continuous improvement in institutional sustainability practices."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Scope and Applicability"
+            },
+            {
+                type: "paragraph",
+                text: "This policy shall apply to all Schools, Departments, Centres, Cells, Clubs, administrative units and support services of Kalinga University."
+            },
+            {
+                type: "paragraph",
+                text: "The policy covers:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Teaching and curriculum enrichment.",
+                    "Research and publications.",
+                    "Innovation and entrepreneurship.",
+                    "Centres of Excellence.",
+                    "Campus infrastructure and operations.",
+                    "Energy and water management.",
+                    "Waste management and resource efficiency.",
+                    "Student activities and clubs.",
+                    "Community outreach and extension activities.",
+                    "Health and wellness initiatives.",
+                    "Gender equality and inclusion.",
+                    "Industry, government and institutional partnerships."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Departments and institutional units shall identify relevant SDGs according to the objectives and outcomes of their activities. SDG mapping shall be based on a genuine relationship between the activity and the selected SDG."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Institutional SDG Framework"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University adopts all 17 Sustainable Development Goals as the broad institutional framework:"
+            },
+            {
+                type: "table",
+                rows: [
+                    [
+                        "SDGs",
+                        "Focus Area",
+                        "Institutional Commitment"
+                    ],
+                    [
+                        "SDG 1",
+                        "No Poverty",
+                        "Inclusive education, scholarships, financial support and livelihood-oriented skill development."
+                    ],
+                    [
+                        "SDG 2",
+                        "Zero Hunger",
+                        "Nutrition, food security, sustainable agriculture and food-waste reduction."
+                    ],
+                    [
+                        "SDG 3",
+                        "Good Health and Well-being",
+                        "Physical, mental and preventive healthcare, wellness and healthy lifestyle initiatives."
+                    ],
+                    [
+                        "SDG 4",
+                        "Quality Education",
+                        "Inclusive, innovative, accessible and skill-oriented quality education."
+                    ],
+                    [
+                        "SDG 5",
+                        "Gender Equality",
+                        "Equal opportunities, women's empowerment and a safe, inclusive environment."
+                    ],
+                    [
+                        "SDG 6",
+                        "Clean Water and Sanitation",
+                        "Water conservation, rainwater harvesting, wastewater treatment and sanitation."
+                    ],
+                    [
+                        "SDG 7",
+                        "Affordable and Clean Energy",
+                        "Renewable energy, solar power, energy efficiency and clean mobility."
+                    ],
+                    [
+                        "SDG 8",
+                        "Decent Work and Economic Growth",
+                        "Employability, entrepreneurship, internships, skill development and decent work practices."
+                    ],
+                    [
+                        "SDG 9",
+                        "Industry, Innovation and Infrastructure",
+                        "Innovation, research, technology, incubation, infrastructure and industry collaboration."
+                    ],
+                    [
+                        "SDG 10",
+                        "Reduced Inequalities",
+                        "Equity, accessibility, inclusion and support for disadvantaged groups."
+                    ],
+                    [
+                        "SDG 11",
+                        "Sustainable Cities and Communities",
+                        "Sustainable campus, green infrastructure, mobility, resilience and community engagement."
+                    ],
+                    [
+                        "SDG 12",
+                        "Responsible Consumption and Production",
+                        "Resource efficiency, waste reduction, recycling and sustainable procurement."
+                    ],
+                    [
+                        "SDG 13",
+                        "Climate Action",
+                        "Climate awareness, carbon reduction, renewable energy and environmental conservation."
+                    ],
+                    [
+                        "SDG 14",
+                        "Life Below Water",
+                        "Protection of aquatic ecosystems and prevention of water pollution."
+                    ],
+                    [
+                        "SDG 15",
+                        "Life on Land",
+                        "Biodiversity, afforestation, green spaces, wildlife and ecosystem conservation."
+                    ],
+                    [
+                        "SDG 16",
+                        "Peace, Justice and Strong Institutions",
+                        "Good governance, transparency, ethics, compliance and institutional accountability."
+                    ],
+                    [
+                        "SDG 17",
+                        "Partnerships for the Goals",
+                        "Government, industry, NGO, academic and community partnerships for SDG implementation."
+                    ]
+                ]
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "Institutional Priority Areas"
+            },
+            {
+                type: "paragraph",
+                text: "Particular emphasis may be given to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Quality and inclusive education.",
+                    "Health and well-being.",
+                    "Gender equality and social inclusion.",
+                    "Water conservation and sanitation.",
+                    "Renewable and clean energy.",
+                    "Sustainable infrastructure.",
+                    "Innovation and entrepreneurship.",
+                    "Responsible consumption and waste management.",
+                    "Climate action and biodiversity conservation.",
+                    "Community development and partnerships."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Implementation Strategy"
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "6.1 Academic Integration"
+            },
+            {
+                type: "paragraph",
+                text: "Sustainability shall be promoted through curriculum enrichment, projects, dissertations, field visits, internships, seminars, workshops, guest lectures, competitions and experiential learning."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "6.2 Research and Innovation"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall encourage research and innovation in areas including renewable energy, sustainable agriculture, health, water management, waste management, climate change, biodiversity, green technologies, sustainable infrastructure and social innovation."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "6.3 Sustainable Campus"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall promote:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Renewable energy and energy efficiency.",
+                    "Water conservation and rainwater harvesting.",
+                    "Wastewater treatment and reuse.",
+                    "Solid and e-waste management.",
+                    "Plastic reduction.",
+                    "Sustainable landscaping and plantation.",
+                    "Green transportation and electric mobility.",
+                    "Sustainable procurement and responsible resource use."
+                ]
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "6.4 Community Engagement"
+            },
+            {
+                type: "paragraph",
+                text: "SDG-oriented outreach may include health awareness, education, skill development, sanitation, environmental awareness, water conservation, women's empowerment, digital literacy, financial literacy, disaster preparedness and livelihood development."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "6.5 Student Engagement"
+            },
+            {
+                type: "paragraph",
+                text: "Students shall be encouraged to participate in SDG clubs, innovation activities, hackathons, competitions, projects, awareness programmes, field activities and community-service initiatives."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Roles and Responsibilities"
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "7.1 University Leadership"
+            },
+            {
+                type: "paragraph",
+                text: "The University leadership shall provide strategic direction, facilitate resources and promote SDG integration into institutional planning."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "7.2 IQAC"
+            },
+            {
+                type: "paragraph",
+                text: "IQAC shall coordinate SDG-related quality initiatives, facilitate activity mapping, support documentation, monitor progress and contribute to institutional reporting and continuous improvement."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "7.3 SDG Cell/Committee"
+            },
+            {
+                type: "paragraph",
+                text: "The designated SDG Cell/Committee shall prepare action plans, coordinate activities, promote awareness, maintain records and prepare periodic progress reports."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "7.4 Schools and Departments"
+            },
+            {
+                type: "paragraph",
+                text: "Departments shall identify relevant SDGs, conduct SDG-oriented activities, encourage participation and maintain supporting evidence."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "7.5 Faculty and Researchers"
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall integrate sustainability into teaching, research and student projects and encourage interdisciplinary collaboration."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "7.6 Students"
+            },
+            {
+                type: "paragraph",
+                text: "Students shall participate in sustainability activities, innovation projects, outreach programmes and community initiatives."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "7.7 Administration"
+            },
+            {
+                type: "paragraph",
+                text: "Administrative and support units shall promote sustainable procurement, energy and water conservation, waste reduction and environmentally responsible campus operations."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Monitoring, Evaluation and Documentation"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall establish appropriate mechanisms for monitoring SDG implementation."
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "8.1 Key Performance Indicators"
+            },
+            {
+                type: "paragraph",
+                text: "Where applicable, the following indicators may be monitored:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Number of SDG-related activities.",
+                    "Number of participating students and faculty.",
+                    "SDG-related research publications and patents.",
+                    "Number of innovation and entrepreneurship projects.",
+                    "Community beneficiaries.",
+                    "Renewable energy generation.",
+                    "Energy and water savings.",
+                    "Waste generated, recycled and managed.",
+                    "Plantation and biodiversity initiatives.",
+                    "Number of sustainability partnerships.",
+                    "Number of SDG-related courses, projects and outreach programmes."
+                ]
+            },
+            {
+                type: "heading",
+                level: 2,
+                text: "8.2 Documentation"
+            },
+            {
+                type: "paragraph",
+                text: "Evidence may include activity reports, attendance sheets, photographs, certificates, posters, notices, minutes, research publications, patents, project reports, MoUs, utility records, audit reports and website documentation."
+            },
+            {
+                type: "paragraph",
+                text: "An annual SDG review may be undertaken to identify achievements, gaps and areas requiring improvement."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Resource Mobilization, Partnerships and Capacity Building"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall endeavour to mobilize institutional and external resources for SDG-related initiatives, subject to applicable rules and procedures."
+            },
+            {
+                type: "paragraph",
+                text: "Partnerships may be developed with:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Government departments and local authorities.",
+                    "Industries and corporate organizations.",
+                    "NGOs and community organizations.",
+                    "Academic and research institutions.",
+                    "Professional bodies.",
+                    "Start-ups and technology organizations.",
+                    "Alumni and other stakeholders."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Capacity-building programmes such as workshops, seminars, FDPs, training programmes, awareness campaigns and expert lectures shall be encouraged to strengthen sustainability knowledge and skills."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. Review, Compliance and Continuous Improvement"
+            },
+            {
+                type: "paragraph",
+                text: "The policy shall ordinarily be reviewed every three years or earlier when required due to changes in institutional priorities, regulatory requirements, emerging sustainability challenges or developments in higher education. All concerned institutional units shall endeavour to implement the provisions of this policy within their respective areas of responsibility. SDG-related achievements may be communicated through institutional reports, annual reports, sustainability reports, website updates, accreditation documentation and other appropriate platforms."
+            }
+        ],
+    },
+    "sustainable-investment-policy": {
+        summary: "Kalinga University recognizes that responsible financial and investment decisions can contribute to environmental sustainability, social well-being, ethical governance, and long-term…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University recognizes that responsible financial and investment decisions can contribute to environmental sustainability, social well-being, ethical governance, and long-term institutional resilience. The University is committed to integrating sustainability considerations into its investment and financial decision-making while maintaining financial prudence, transparency, accountability, and compliance with applicable laws and regulations."
+            },
+            {
+                type: "paragraph",
+                text: "This Sustainable Investment Policy provides a framework for directing eligible institutional investments and financial resources towards activities that support sustainable development and the United Nations Sustainable Development Goals (SDGs)."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Purpose"
+            },
+            {
+                type: "paragraph",
+                text: "The purpose of this Policy is to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Promote responsible and sustainable investment practices across the University.",
+                    "Encourage consideration of Environmental, Social and Governance (ESG) factors in investment decisions, wherever applicable.",
+                    "Support investments and financial initiatives contributing to renewable energy, resource efficiency, education, innovation, social development, and other sustainability priorities.",
+                    "Minimize exposure to activities that may cause significant environmental or social harm.",
+                    "Ensure that investment decisions remain consistent with the University's academic, social, ethical, and sustainability objectives.",
+                    "Strengthen the University's contribution towards the SDGs through responsible financial management."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Scope"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall apply to institutional funds and investments managed or controlled by Kalinga University, subject to applicable statutory requirements, financial regulations, donor restrictions, and approvals of the competent authority."
+            },
+            {
+                type: "paragraph",
+                text: "The Policy may cover, as applicable:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Bank deposits and fixed-income instruments;",
+                    "Government and regulated financial instruments;",
+                    "Sustainability-linked financial products;",
+                    "Investments supporting renewable energy and energy efficiency;",
+                    "Sustainable infrastructure and resource-conservation projects;",
+                    "Socially responsible and ESG-oriented investment opportunities; and",
+                    "Other permissible financial instruments approved by the competent authority."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Personal investments of students, faculty, staff, or other individuals are outside the scope of this Policy."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Sustainable Investment Principles"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall consider the following principles while evaluating eligible investment opportunities:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Environmental Responsibility: Preference may be given, where financially and legally appropriate, to activities supporting renewable energy, energy efficiency, water conservation, waste management, biodiversity, sustainable infrastructure, and climate resilience.",
+                    "Social Responsibility: Investments may support activities contributing to education, skill development, health and well-being, inclusion, community development, employment, and social welfare.",
+                    "Good Governance: The University shall consider transparency, regulatory compliance, ethical conduct, accountability, risk management, and responsible corporate governance.",
+                    "Financial Prudence: Sustainability considerations shall not replace appropriate assessment of financial risk, liquidity, security, return, and institutional requirements.",
+                    "Transparency: Investment decisions and relevant records shall be appropriately documented and maintained for institutional review and audit."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Sustainable Investment Areas"
+            },
+            {
+                type: "paragraph",
+                text: "Subject to financial feasibility and applicable regulations, the University may prioritize or support investments and institutional expenditures associated with:"
+            },
+            {
+                type: "table",
+                rows: [
+                    [
+                        "Area",
+                        "Examples of Sustainable Focus"
+                    ],
+                    [
+                        "Renewable Energy",
+                        "Solar power, clean energy infrastructure"
+                    ],
+                    [
+                        "Energy Efficiency",
+                        "Energy-efficient equipment, LED systems, efficient buildings"
+                    ],
+                    [
+                        "Water Management",
+                        "Rainwater harvesting, water recycling and conservation"
+                    ],
+                    [
+                        "Waste Management",
+                        "Recycling, segregation, composting and circular-economy initiatives"
+                    ],
+                    [
+                        "Sustainable Mobility",
+                        "EV infrastructure and low-emission transportation"
+                    ],
+                    [
+                        "Green Infrastructure",
+                        "Sustainable buildings, landscaping and biodiversity"
+                    ],
+                    [
+                        "Education & Innovation",
+                        "Research, technology, entrepreneurship and sustainability innovation"
+                    ],
+                    [
+                        "Social Development",
+                        "Community development, inclusion and capacity building"
+                    ],
+                    [
+                        "Climate Action",
+                        "Climate resilience, carbon reduction and environmental initiatives"
+                    ]
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Exclusion and Risk Considerations"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall seek to avoid, to the extent reasonably practicable and legally permissible, investments that are directly associated with activities presenting significant environmental, social, ethical, or governance risks."
+            },
+            {
+                type: "paragraph",
+                text: "Investment decisions shall consider:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Regulatory and compliance risks;",
+                    "Financial and credit risks;",
+                    "Environmental and social risks;",
+                    "Reputational risks;",
+                    "Liquidity requirements;",
+                    "Long-term institutional objectives; and",
+                    "Reliability and transparency of available information."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The University shall comply with applicable laws, financial regulations, tax requirements, and institutional financial policies while implementing this Policy."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Governance and Responsibility"
+            },
+            {
+                type: "list",
+                items: [
+                    "The University Management/Competent Authority shall provide overall direction and approve major investment decisions.",
+                    "The Finance/Accounts Department shall be responsible for financial assessment, documentation, accounting, monitoring, and reporting of investments.",
+                    "The IQAC, where considered appropriate, may support the identification and documentation of sustainability-linked initiatives and their contribution to institutional sustainability objectives and SDGs.",
+                    "Relevant committees or authorized officers may provide technical, financial, legal, or sustainability inputs before an investment decision is finalized."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Monitoring and Reporting"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall maintain appropriate records of investments and sustainability-related financial initiatives. Wherever feasible, the University may periodically assess:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Allocation towards sustainability-related initiatives;",
+                    "Financial performance and risk;",
+                    "Environmental and social relevance;",
+                    "Compliance with approved investment conditions;",
+                    "Contribution to relevant SDGs; and",
+                    "Opportunities for improving sustainable financial practices."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "A summary of relevant sustainable investment activities may be included in the University's annual reports, sustainability reports, SDG reports, or other institutional disclosures, as appropriate."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Review and Continuous Improvement"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall be reviewed periodically by the competent authority to ensure continued relevance, regulatory compliance, financial prudence, and alignment with the University's sustainability objectives."
+            },
+            {
+                type: "paragraph",
+                text: "The University may revise the Policy in response to changes in legislation, financial regulations, institutional priorities, sustainability standards, or emerging best practices."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. Effective Date and Approval"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall come into effect from the date of approval by the competent authority of Kalinga University and shall remain applicable until amended or superseded."
+            }
+        ],
+    },
+    "policy-for-climate-action-for-sustainability": {
+        summary: "Kalinga University recognizes climate change as a significant environmental, social, and developmental challenge requiring coordinated institutional action. The University is committed to…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University recognizes climate change as a significant environmental, social, and developmental challenge requiring coordinated institutional action. The University is committed to reducing its environmental footprint, improving climate resilience, promoting sustainable resource management, and developing awareness, knowledge, research, and innovation related to climate action."
+            },
+            {
+                type: "paragraph",
+                text: "This Policy establishes an institutional framework for integrating climate action into campus operations, teaching and learning, research, community engagement, infrastructure development, and institutional planning."
+            },
+            {
+                type: "paragraph",
+                text: "The Policy is aligned with the United Nations Sustainable Development Goal 13 – Climate Action, while also contributing to SDGs related to affordable and clean energy, sustainable cities and communities, responsible consumption and production, life below water, and life on land."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Vision"
+            },
+            {
+                type: "paragraph",
+                text: "To develop a climate-resilient, resource-efficient and environmentally responsible university campus that contributes to climate mitigation, adaptation, awareness, research, innovation, and sustainable development."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Objectives"
+            },
+            {
+                type: "paragraph",
+                text: "The objectives of this Policy are to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Reduce greenhouse-gas emissions and the University's overall carbon footprint.",
+                    "Promote renewable and clean energy across the campus.",
+                    "Improve energy and resource efficiency.",
+                    "Promote sustainable transportation and low-carbon mobility.",
+                    "Conserve water and strengthen climate-resilient water management.",
+                    "Promote waste reduction, segregation, recycling, reuse and circular practices.",
+                    "Increase green cover, biodiversity and ecosystem conservation.",
+                    "Integrate climate-related topics into education, research and innovation.",
+                    "Promote climate awareness among students, faculty, staff and surrounding communities.",
+                    "Strengthen institutional preparedness for climate-related risks and extreme weather events."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Scope"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall apply to all academic, administrative, residential, research, infrastructure, and support activities of Kalinga University."
+            },
+            {
+                type: "paragraph",
+                text: "It shall cover:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Campus energy consumption and generation;",
+                    "Buildings and infrastructure;",
+                    "Transportation and mobility;",
+                    "Water resources;",
+                    "Waste management;",
+                    "Green areas and biodiversity;",
+                    "Procurement and resource utilization;",
+                    "Academic and research activities;",
+                    "Community outreach and extension activities; and",
+                    "Climate-related emergency preparedness."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Climate Mitigation Measures"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall progressively adopt measures to reduce greenhouse-gas emissions and energy consumption, including:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Renewable Energy - The University shall promote solar and other appropriate renewable-energy systems for campus electricity generation and energy requirements.",
+                    "Energy Efficiency - The University shall encourage energy-efficient lighting, electrical equipment, appliances, buildings, laboratories, and other infrastructure. Energy audits may be undertaken periodically to identify opportunities for reducing consumption.",
+                    "Sustainable Buildings - New construction and renovation activities may incorporate principles of energy efficiency, natural lighting and ventilation, water conservation, sustainable materials, and environmentally responsible design.",
+                    "Sustainable Transportation - The University shall promote public transport, shared mobility, walking, cycling, electric vehicles, charging infrastructure, and other low-emission transportation options wherever feasible.",
+                    "Carbon Footprint Management - The University may periodically assess its carbon footprint and identify opportunities for emission reduction. Relevant data may include electricity consumption, fuel consumption, transportation, waste, and other significant emission sources."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Climate Adaptation and Resilience"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall strengthen its capacity to respond to climate-related risks through:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Rainwater harvesting and groundwater recharge;",
+                    "Water conservation and efficient irrigation;",
+                    "Sustainable landscaping and plantation;",
+                    "Heat-resilient campus planning;",
+                    "Adequate drainage and storm-water management;",
+                    "Emergency preparedness for extreme weather events;",
+                    "Protection of campus biodiversity and green spaces; and",
+                    "Periodic assessment of climate-related institutional risks."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The University may develop appropriate contingency and disaster-management measures for heat waves, heavy rainfall, storms, water stress, and other relevant climate-related risks."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Sustainable Resource Management"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall promote responsible consumption and resource efficiency through:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Waste segregation at source.",
+                    "Reduction of single-use and unnecessary materials.",
+                    "Recycling and reuse of paper, plastic, metal, electronic waste and other recoverable materials.",
+                    "Composting or appropriate management of biodegradable waste.",
+                    "Responsible management of e-waste and hazardous laboratory waste.",
+                    "Water-efficient fixtures and conservation practices.",
+                    "Sustainable procurement wherever technically and financially feasible."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Green Campus and Biodiversity"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall promote the development and maintenance of green spaces, trees, native vegetation, gardens, and biodiversity-supporting areas."
+            },
+            {
+                type: "paragraph",
+                text: "Plantation and landscaping initiatives shall, wherever feasible, prioritize locally appropriate and climate-resilient species. The University may conduct biodiversity assessments and develop conservation initiatives to strengthen campus ecological resilience."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Climate Education, Research and Innovation"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall encourage:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Climate-change-related courses and learning activities;",
+                    "Student projects and dissertations on climate and sustainability;",
+                    "Faculty research in climate science, renewable energy, environmental technologies and sustainable development;",
+                    "Innovation and entrepreneurship addressing climate challenges;",
+                    "Workshops, seminars, FDPs, awareness programmes and competitions; and",
+                    "Collaboration with industries, government bodies, research organizations and communities."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The University shall encourage interdisciplinary approaches to climate action involving science, engineering, management, social sciences, law, health, agriculture, technology and other relevant disciplines."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. Awareness and Community Engagement"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall promote climate awareness among students, faculty, staff and communities through campaigns and outreach programmes such as:"
+            },
+            {
+                type: "list",
+                items: [
+                    "World Environment Day activities;",
+                    "Earth Day programmes;",
+                    "Plantation drives;",
+                    "Energy and water conservation campaigns;",
+                    "Climate-awareness lectures and workshops;",
+                    "Clean and green campus initiatives;",
+                    "Sustainable transportation awareness;",
+                    "Waste-management campaigns; and",
+                    "Community-based environmental programmes."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "11. Governance and Responsibilities"
+            },
+            {
+                type: "list",
+                items: [
+                    "The University Management/Competent Authority shall provide overall direction for implementation of this Policy.",
+                    "The IQAC/SDG Cell may facilitate monitoring, documentation, coordination and reporting of climate-action initiatives.",
+                    "The Estate/Administration and relevant operational departments shall support implementation of energy, water, waste, infrastructure, mobility and campus sustainability measures.",
+                    "Academic Departments and Research Centres shall promote climate-related teaching, research, innovation and student engagement.",
+                    "Students, faculty and staff shall contribute to responsible resource use and environmentally sustainable practices."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "12. Monitoring and Performance Indicators"
+            },
+            {
+                type: "paragraph",
+                text: "The University may monitor climate-action performance through suitable indicators, including:"
+            },
+            {
+                type: "table",
+                rows: [
+                    [
+                        "Indicator",
+                        "Examples"
+                    ],
+                    [
+                        "Renewable Energy",
+                        "Installed capacity and energy generated"
+                    ],
+                    [
+                        "Energy Efficiency",
+                        "Electricity consumption and savings"
+                    ],
+                    [
+                        "Carbon Management",
+                        "Estimated carbon footprint/emission reduction"
+                    ],
+                    [
+                        "Water Conservation",
+                        "Water consumption, harvesting and recharge"
+                    ],
+                    [
+                        "Green Campus",
+                        "Plantation, green cover and biodiversity initiatives"
+                    ],
+                    [
+                        "Waste Management",
+                        "Waste generated, recycled and treated"
+                    ],
+                    [
+                        "Sustainable Mobility",
+                        "EVs, charging facilities and shared/public transport"
+                    ],
+                    [
+                        "Awareness",
+                        "Climate/environment programmes conducted"
+                    ],
+                    [
+                        "Research",
+                        "Climate and sustainability publications/projects"
+                    ],
+                    [
+                        "Community Engagement",
+                        "Outreach and extension activities"
+                    ]
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Relevant data may be compiled annually for institutional sustainability and accreditation reporting."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "13. Compliance and Documentation"
+            },
+            {
+                type: "paragraph",
+                text: "All climate-action activities shall be undertaken in accordance with applicable laws, environmental regulations, institutional policies, safety requirements, and approved procedures."
+            },
+            {
+                type: "paragraph",
+                text: "The University shall maintain appropriate documentary evidence such as:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Policies and office orders;",
+                    "Energy and environmental audit reports;",
+                    "Utility and consumption records;",
+                    "Photographs and activity reports;",
+                    "Attendance records;",
+                    "Research and project documentation;",
+                    "Vendor/service records; and",
+                    "Sustainability and SDG reports."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "14. Review and Continuous Improvement"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall be reviewed at least once every three years or earlier if required due to changes in environmental regulations, institutional priorities, technological developments, climate risks, or sustainability frameworks."
+            },
+            {
+                type: "paragraph",
+                text: "Based on monitoring and evaluation, the University may introduce additional climate mitigation and adaptation measures."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "15. Policy Commitment"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University is committed to creating a low-carbon, climate-resilient and environmentally responsible campus through responsible energy use, renewable energy, sustainable mobility, water conservation, waste management, biodiversity protection, climate education, research, innovation and community engagement."
+            }
+        ],
+    },
+    "policy-for-admission-procedure": {
+        summary: "Kalinga University is committed to providing a transparent, fair, merit-based, student-friendly, and systematic admission process for all eligible applicants. The University shall follow…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University is committed to providing a transparent, fair, merit-based, student-friendly, and systematic admission process for all eligible applicants. The University shall follow applicable regulations, statutory requirements, academic norms, and institutional procedures while admitting students to various programmes."
+            },
+            {
+                type: "paragraph",
+                text: "This Policy establishes a common framework for admission to undergraduate, postgraduate, doctoral, diploma, certificate, and other approved academic programmes offered by the University."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Objectives"
+            },
+            {
+                type: "paragraph",
+                text: "The objectives of this Policy are to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Ensure a transparent, fair, and efficient admission process.",
+                    "Provide equal opportunity to eligible applicants without discrimination.",
+                    "Clearly communicate programme eligibility, admission requirements, fees, and procedures.",
+                    "Ensure verification of academic and other required documents.",
+                    "Maintain proper records of applications, admissions, and student enrolment.",
+                    "Facilitate timely admission and commencement of academic activities.",
+                    "Ensure compliance with applicable regulatory and University requirements."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Scope"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall apply to all applicants seeking admission to academic programmes offered by Kalinga University through the University's approved admission channels."
+            },
+            {
+                type: "paragraph",
+                text: "The procedure shall cover:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Undergraduate programmes;",
+                    "Postgraduate programmes;",
+                    "Doctoral programmes;",
+                    "Diploma programmes;",
+                    "International admissions, wherever applicable; and",
+                    "Other programmes approved by the competent authority."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Programme-specific admission requirements may vary according to the applicable academic and regulatory provisions."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Admission Eligibility"
+            },
+            {
+                type: "paragraph",
+                text: "Admission shall be offered only to candidates who satisfy the prescribed eligibility criteria for the respective programme."
+            },
+            {
+                type: "paragraph",
+                text: "Eligibility may include:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Required educational qualification;",
+                    "Minimum qualifying marks or grade;",
+                    "Relevant subject/stream requirements;",
+                    "Entrance examination, where applicable;",
+                    "Interview or other selection requirements, where applicable;",
+                    "Age requirements, wherever prescribed; and",
+                    "Any other condition specified by the University or competent regulatory authority."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Candidates shall be responsible for ensuring that they meet the eligibility requirements before submitting an application."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Admission Process"
+            },
+            {
+                type: "paragraph",
+                text: "The admission process shall generally follow the following stages:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Programme Information: The University shall provide information regarding programmes, eligibility, admission requirements, fee structure, important dates, and applicable procedures through approved communication channels.",
+                    "Application: Eligible candidates may submit the prescribed application form through the University's designated online or offline admission process along with the required information and documents.",
+                    "Application Review: The concerned admission authority shall examine applications for completeness and determine whether applicants meet the prescribed eligibility criteria.",
+                    "Selection: Selection shall be made according to the approved admission criteria of the respective programme, which may include merit, qualifying examination performance, entrance examination, interview, counselling, or other approved mechanisms.",
+                    "Document Verification: Candidates provisionally selected for admission shall be required to submit/produce original or valid documents for verification within the prescribed period.",
+                    "Admission Confirmation: Admission shall be confirmed after satisfactory verification of eligibility and documents and completion of prescribed admission formalities, including payment of applicable fees."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Required Documents"
+            },
+            {
+                type: "paragraph",
+                text: "Depending on the programme and applicable requirements, candidates may be required to submit/produce:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Proof of identity;",
+                    "Recent passport-size photographs;",
+                    "Mark sheets and certificates of qualifying examinations;",
+                    "Transfer/Migration Certificate, wherever applicable;",
+                    "Character Certificate, wherever applicable;",
+                    "Category/Reservation Certificate, where applicable;",
+                    "Entrance examination scorecard, where applicable;",
+                    "Medical/fitness certificate, where required;",
+                    "Gap-year affidavit/document, where applicable; and",
+                    "Other documents prescribed by the University or competent authority."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Admission shall remain subject to verification of the authenticity and validity of submitted documents."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Reservation and Equal Opportunity"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall implement applicable reservation, relaxation, and special provisions in accordance with prevailing government regulations and competent statutory requirements."
+            },
+            {
+                type: "paragraph",
+                text: "The admission process shall be conducted without discrimination on the basis of gender, caste, community, disability, economic background, nationality, or other legally protected grounds, subject to applicable laws and regulations. Appropriate support and reasonable facilities may be provided to eligible students with disabilities and other students requiring assistance, as per applicable provisions."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Fee Payment and Admission Confirmation"
+            },
+            {
+                type: "paragraph",
+                text: "Selected candidates shall be required to deposit the prescribed admission and applicable programme fees within the specified timeline."
+            },
+            {
+                type: "paragraph",
+                text: "Admission shall be considered confirmed only after:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Selection under the applicable admission process;",
+                    "Verification of required documents;",
+                    "Fulfilment of eligibility conditions; and",
+                    "Payment of prescribed fees and completion of required formalities."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The University shall provide appropriate acknowledgement/receipt for fees paid through authorized channels."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Admission Through Entrance Examination/Counselling"
+            },
+            {
+                type: "paragraph",
+                text: "Where an entrance examination, aptitude test, interview, counselling, or other selection mechanism is prescribed, the University shall conduct the process according to approved programme-specific criteria."
+            },
+            {
+                type: "paragraph",
+                text: "The selection criteria and relevant procedures shall be communicated to applicants through appropriate official channels."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. International Admissions"
+            },
+            {
+                type: "paragraph",
+                text: "Admissions of international applicants, wherever applicable, shall be processed through the designated University mechanism and in accordance with applicable regulatory requirements, eligibility norms, documentation requirements, visa provisions, and other statutory conditions. Such candidates may be required to provide additional documents for verification."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "11. Verification, Cancellation and Withdrawal"
+            },
+            {
+                type: "paragraph",
+                text: "The University reserves the right to cancel or withdraw admission where:"
+            },
+            {
+                type: "list",
+                items: [
+                    "A candidate is found ineligible;",
+                    "False, misleading, forged, or incomplete documents are submitted;",
+                    "Information provided by the applicant is materially incorrect;",
+                    "Admission has been obtained through unauthorized means; or",
+                    "Any applicable admission requirement has not been fulfilled."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Withdrawal and refund of fees shall be governed by the University's approved rules and applicable regulations in force at the relevant time."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "12. Admission Records and Data Management"
+            },
+            {
+                type: "paragraph",
+                text: "The Admission Office shall maintain appropriate records of applications, selection, document verification, fee payment, admission confirmation, and enrolment."
+            },
+            {
+                type: "paragraph",
+                text: "Admission-related information shall be maintained securely and handled in accordance with applicable institutional procedures and legal requirements concerning confidentiality and data protection."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "13. Roles and Responsibilities"
+            },
+            {
+                type: "list",
+                items: [
+                    "Admission Office: Coordinate and administer the admission process and maintain admission records.",
+                    "Academic Departments/Schools: Provide programme-specific eligibility and academic inputs and support verification and counselling.",
+                    "Finance/Accounts Department: Process admission fee payments and maintain financial records.",
+                    "Registrar/Competent Authority: Provide administrative oversight and approve matters requiring institutional authorization."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "14. Transparency and Grievance Redressal"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall make reasonable efforts to ensure that admission-related information is communicated clearly and accurately."
+            },
+            {
+                type: "paragraph",
+                text: "Applicants may raise admission-related queries or grievances through the University’s designated admission/grievance redressal mechanism, either by submitting a written application or through the ERP portal to the designated University Coordinator. Such matters shall be examined by the appropriate authority and addressed in accordance with applicable University rules."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "15. Review and Amendment"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall be reviewed periodically or whenever required due to changes in applicable laws, regulatory requirements, University ordinances, academic programmes, or institutional procedures. Any amendment to this Policy shall be approved by the competent authority."
+            }
+        ],
+    },
+    "policy-for-advanced-and-slow-learners": {
+        summary: "Kalinga University recognizes that students possess diverse learning abilities, academic backgrounds, learning styles, and developmental needs. To ensure inclusive and outcome-oriented…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University recognizes that students possess diverse learning abilities, academic backgrounds, learning styles, and developmental needs. To ensure inclusive and outcome-oriented education, the University shall provide appropriate academic support to students who demonstrate advanced learning abilities as well as students who require additional academic support."
+            },
+            {
+                type: "paragraph",
+                text: "This Policy establishes a systematic mechanism for identification, categorization, academic support, enrichment, mentoring, monitoring, and continuous improvement for Advanced and Slow Learners."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Objectives"
+            },
+            {
+                type: "paragraph",
+                text: "The objectives of this Policy are to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Identify students with advanced learning abilities and those requiring additional academic support.",
+                    "Provide appropriate enrichment opportunities to advanced learners.",
+                    "Provide structured remedial and academic support to slow learners.",
+                    "Improve students' academic performance, confidence, participation, and learning outcomes.",
+                    "Promote personalized and student-centric teaching-learning practices.",
+                    "Strengthen mentoring and continuous academic monitoring.",
+                    "Ensure that every student receives appropriate opportunities to achieve their academic potential."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Scope"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall apply to students enrolled in undergraduate, postgraduate, diploma, certificate, and other academic programmes of Kalinga University. The identification and support mechanism may be implemented at the programme, semester, course, or departmental level, depending on academic requirements."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Identification of Advanced and Slow Learners"
+            },
+            {
+                type: "paragraph",
+                text: "Students may be identified using a combination of appropriate academic and continuous assessment indicators, including:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Performance in internal assessments and examinations;",
+                    "Previous academic performance;",
+                    "Class participation and engagement;",
+                    "Assignments, projects, presentations, and practical performance;",
+                    "Learning ability and pace of understanding;",
+                    "Performance in quizzes and other formative assessments;",
+                    "Faculty observations;",
+                    "Participation in research, innovation, competitions, and academic activities; and",
+                    "Performance during diagnostic or baseline assessments, wherever conducted."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The identification process shall be academic in nature and shall be used for providing appropriate support rather than labelling or stigmatizing students."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Support for Advanced Learners"
+            },
+            {
+                type: "paragraph",
+                text: "Advanced learners may be provided opportunities for academic enrichment and higher-order learning through:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Advanced assignments, case studies, projects, and problem-solving activities.",
+                    "Participation in research projects, publications, patents, innovation, and entrepreneurship activities.",
+                    "Participation in seminars, conferences, workshops, hackathons, competitions, and academic clubs.",
+                    "Opportunities for peer learning and academic mentoring.",
+                    "Exposure to additional learning resources, databases, software, laboratories, and other academic facilities.",
+                    "Participation in internships, industry interaction, field projects, and interdisciplinary activities.",
+                    "Guidance for competitive examinations and higher studies.",
+                    "Opportunities to undertake challenging or extended learning activities beyond the prescribed curriculum."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Support for Slow Learners"
+            },
+            {
+                type: "paragraph",
+                text: "Students requiring additional academic support may be provided suitable interventions, including:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Remedial Classes: Additional classes to strengthen fundamental concepts and address identified learning gaps.",
+                    "Tutorials and Doubt-Clearing Sessions: Small-group or individual sessions for clarification of difficult concepts.",
+                    "Mentoring: Regular academic mentoring and individualized guidance by faculty members.",
+                    "Simplified Learning Materials: Additional notes, question banks, practice exercises, videos, presentations, and other suitable resources.",
+                    "Academic Counselling: Guidance regarding study methods, time management, examination preparation, and academic improvement.",
+                    "Follow-up Assessment: Periodic assessment to measure progress and determine the effectiveness of interventions."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Individualized Academic Support"
+            },
+            {
+                type: "paragraph",
+                text: "Where appropriate, departments may prepare an Academic Support Plan for students requiring additional assistance. The plan may include identified learning gaps, proposed interventions, faculty mentor, timeline, learning outcomes, and progress indicators."
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall adopt suitable teaching strategies based on students' learning needs and the nature of the course."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Mentoring and Faculty Responsibility"
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members and designated mentors shall:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Identify students requiring academic support;",
+                    "Maintain appropriate interaction with assigned students;",
+                    "Monitor academic progress;",
+                    "Provide guidance and additional learning resources;",
+                    "Encourage student participation and confidence;",
+                    "Record major interventions undertaken; and",
+                    "Refer students for additional academic or counselling support wherever required."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Departments shall coordinate the implementation of the Policy at the programme level."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Monitoring and Evaluation"
+            },
+            {
+                type: "paragraph",
+                text: "The effectiveness of academic interventions may be monitored through:"
+            },
+            {
+                type: "table",
+                rows: [
+                    [
+                        "Indicator",
+                        "Monitoring Method"
+                    ],
+                    [
+                        "Academic Performance",
+                        "Internal/external examination results"
+                    ],
+                    [
+                        "Conceptual Understanding",
+                        "Quizzes, tests and assignments"
+                    ],
+                    [
+                        "Attendance",
+                        "Class/Remedial class attendance"
+                    ],
+                    [
+                        "Participation",
+                        "Classroom and academic activities"
+                    ],
+                    [
+                        "Learning Progress",
+                        "Periodic assessments"
+                    ],
+                    [
+                        "Advanced Learning",
+                        "Projects, research, competitions, etc."
+                    ],
+                    [
+                        "Student Feedback",
+                        "Feedback from students"
+                    ],
+                    [
+                        "Overall Improvement",
+                        "Comparative academic performance"
+                    ]
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The University may compare students' performance before and after interventions to assess academic improvement."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. Documentation and Records"
+            },
+            {
+                type: "paragraph",
+                text: "Departments shall maintain appropriate records relating to the implementation of this Policy, which may include:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Identification criteria and lists;",
+                    "Diagnostic/baseline assessment records;",
+                    "Remedial class schedules;",
+                    "Attendance records;",
+                    "Mentoring records;",
+                    "Additional learning materials;",
+                    "Assessment and progress reports;",
+                    "Photographs and activity reports, where appropriate; and",
+                    "Evidence of enrichment activities for advanced learners."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "11. Roles and Responsibilities"
+            },
+            {
+                type: "list",
+                items: [
+                    "Faculty Members: Identify learning needs, provide appropriate interventions, mentor students, and monitor progress.",
+                    "Department/Programme Heads: Coordinate implementation, review departmental data, and ensure appropriate academic interventions.",
+                    "Academic Administration: Facilitate institutional implementation and provide necessary academic support.",
+                    "IQAC: May monitor the effectiveness of the Policy as part of the University's quality-assurance framework and recommend improvements.",
+                    "Students: Participate actively in assigned academic support and enrichment activities and take responsibility for their learning progress."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "12. Review and Continuous Improvement"
+            },
+            {
+                type: "paragraph",
+                text: "The implementation of this Policy shall be periodically reviewed by the concerned academic authorities. Feedback and academic performance data may be used to improve teaching-learning strategies and student-support mechanisms."
+            },
+            {
+                type: "paragraph",
+                text: "The Policy may be revised based on academic requirements, regulatory provisions, institutional priorities, and emerging teaching-learning practices."
+            }
+        ],
+    },
+    "internship-and-training-policy": {
+        summary: "Kalinga University recognizes internships and training as an integral component of experiential and outcome-based education. Industry exposure, practical training, field experience…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University recognizes internships and training as an integral component of experiential and outcome-based education. Industry exposure, practical training, field experience, research internships, community engagement, and professional learning provide students with opportunities to apply classroom knowledge in real-world situations and develop professional competencies."
+            },
+            {
+                type: "paragraph",
+                text: "This Policy establishes a structured framework for planning, facilitating, monitoring, assessing, and documenting internships and training undertaken by students of the University."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Objectives"
+            },
+            {
+                type: "paragraph",
+                text: "The objectives of this Policy are to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Provide students with practical exposure relevant to their academic programmes.",
+                    "Bridge the gap between theoretical knowledge and professional practice.",
+                    "Develop technical, professional, communication, teamwork, problem-solving, and employability skills.",
+                    "Facilitate interaction between students, industry, research organizations, government bodies, NGOs, and other professional institutions.",
+                    "Encourage experiential learning, innovation, entrepreneurship, and research.",
+                    "Provide opportunities for students to understand workplace practices and professional ethics.",
+                    "Strengthen industry-academia and institutional collaborations."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Scope"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall apply to students enrolled in undergraduate, postgraduate, diploma, doctoral, and other approved programmes wherever internships or training are prescribed or permitted as part of the curriculum or academic development."
+            },
+            {
+                type: "paragraph",
+                text: "Internships/training may be undertaken with:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Industries and corporate organizations;",
+                    "Government and public-sector organizations;",
+                    "Research laboratories and institutions;",
+                    "Hospitals and healthcare organizations, where applicable;",
+                    "Educational institutions;",
+                    "NGOs and community organizations;",
+                    "Start-ups and incubators;",
+                    "Professional organizations;",
+                    "Laboratories and technology centres; and",
+                    "Other organizations approved by the University."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Types of Internship and Training"
+            },
+            {
+                type: "paragraph",
+                text: "Depending upon programme requirements, students may undertake:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Summer Internship",
+                    "Industrial Training",
+                    "Research Internship",
+                    "Project-Based Internship",
+                    "Clinical/Field Training, wherever applicable",
+                    "Community/Extension Internship",
+                    "Entrepreneurship/Start-up Internship",
+                    "Short-Term Training and Skill Development Programmes",
+                    "Other approved experiential learning opportunities"
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The duration and academic requirements shall be determined in accordance with the applicable curriculum and University regulations."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Eligibility and Academic Requirements"
+            },
+            {
+                type: "paragraph",
+                text: "Students shall be eligible to undertake internships/training subject to the requirements prescribed by their respective programme, curriculum, department, and University. Where applicable, students shall complete prerequisite courses, obtain departmental approval, maintain the required attendance, and fulfil other academic requirements before undertaking the internship."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Identification and Selection of Internship Organizations"
+            },
+            {
+                type: "paragraph",
+                text: "Students may identify internship opportunities through:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Training & Placement (T & P) Department;",
+                    "Faculty recommendations;",
+                    "Industry and institutional MoUs;",
+                    "University-approved internship portals;",
+                    "Direct applications to organizations; or",
+                    "Other approved channels."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The concerned Department/T & P Coordinator shall verify the relevance and suitability of the organization and internship before granting approval."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Internship Approval and Allocation"
+            },
+            {
+                type: "paragraph",
+                text: "Before commencement of an internship, students shall submit the prescribed internship details to the Internship / Training & Placement Department including:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Name and address of the organization;",
+                    "Internship title/area;",
+                    "Duration and dates;",
+                    "Proposed learning objectives;",
+                    "Name/designation of external supervisor, where applicable; and",
+                    "Other information prescribed by the University."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Internships shall be undertaken only after obtaining the required approval from the designated University authority."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Roles and Responsibilities"
+            },
+            {
+                type: "list",
+                items: [
+                    "Training & Placement Department: The University shall facilitate internship opportunities, institutional collaborations, industry interaction, documentation, and monitoring.",
+                    "Department/Training & Placement Coordinator: The Coordinator shall guide students, approve suitable internship organizations, maintain records, coordinate with external organizations, and monitor internship progress.",
+                    "Faculty Mentor: The Faculty Mentor shall provide academic guidance, communicate with the external supervisor where required, monitor student progress, and support assessment.",
+                    "Host Organization: The host organization shall provide appropriate training/work exposure, assign a supervisor where feasible, monitor student participation, and provide feedback/certificate as applicable.",
+                    "Student: The student shall comply with the rules of the host organization, maintain discipline and professional conduct, complete assigned work, maintain required records, and submit the prescribed internship report."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Internship Monitoring"
+            },
+            {
+                type: "paragraph",
+                text: "Students shall maintain appropriate records such as:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Internship diary/logbook;",
+                    "Attendance record;",
+                    "Work assignments;",
+                    "Learning outcomes;",
+                    "Supervisor feedback;",
+                    "Photographs or activity evidence, where permitted;",
+                    "Internship certificate; and",
+                    "Final internship report."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Faculty mentors or designated coordinators may conduct periodic reviews through meetings, presentations, progress reports, or communication with the host organization."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. Assessment and Academic Credit"
+            },
+            {
+                type: "paragraph",
+                text: "Where internship/training forms part of the curriculum, assessment shall be conducted in accordance with the approved academic scheme."
+            },
+            {
+                type: "paragraph",
+                text: "Assessment may consider:"
+            },
+            {
+                type: "table",
+                rows: [
+                    [
+                        "Component",
+                        "Examples"
+                    ],
+                    [
+                        "Attendance & Participation",
+                        "Regularity and engagement"
+                    ],
+                    [
+                        "Work Performance",
+                        "Quality and completion of assigned tasks"
+                    ],
+                    [
+                        "Supervisor Feedback",
+                        "Evaluation by host organization"
+                    ],
+                    [
+                        "Internship Report",
+                        "Content, analysis and documentation"
+                    ],
+                    [
+                        "Presentation/Viva",
+                        "Understanding and learning outcomes"
+                    ],
+                    [
+                        "Professional Conduct",
+                        "Discipline, teamwork and communication"
+                    ]
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Academic credit shall be awarded only after fulfilment of the prescribed requirements."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "11. Student Conduct and Safety"
+            },
+            {
+                type: "paragraph",
+                text: "Students shall:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Follow the rules and policies of the host organization;",
+                    "Maintain professional behaviour and discipline;",
+                    "Respect confidentiality and intellectual property;",
+                    "Follow workplace health and safety requirements;",
+                    "Avoid unauthorized disclosure of organizational information;",
+                    "Maintain regular communication with the Faculty Mentor; and",
+                    "Immediately report significant issues or safety concerns to the appropriate University authority."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Students undertaking internships involving laboratories, hospitals, field sites, machinery, travel, or other potentially hazardous environments shall follow applicable safety requirements."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "12. Industry and Institutional Collaboration"
+            },
+            {
+                type: "paragraph",
+                text: "The University may establish MoUs, collaboration agreements, internship partnerships, and institutional linkages with suitable organizations to facilitate structured internship and training opportunities."
+            },
+            {
+                type: "paragraph",
+                text: "Such collaborations may support internships, industrial visits, joint projects, research, skill development, guest lectures, placements, and other forms of experiential learning."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "13. Attendance, Leave and Extension"
+            },
+            {
+                type: "paragraph",
+                text: "Students shall maintain the attendance and working hours prescribed by the host organization and applicable academic requirements."
+            },
+            {
+                type: "paragraph",
+                text: "Leave during internship shall be taken only with appropriate permission from the host supervisor and, where required, the Faculty Mentor."
+            },
+            {
+                type: "paragraph",
+                text: "Any extension, interruption, or change in internship schedule shall be communicated to and approved by the concerned University authority."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "14. Documentation and Records"
+            },
+            {
+                type: "paragraph",
+                text: "The Department/ Training & Placement Cell shall maintain appropriate records, including:"
+            },
+            {
+                type: "list",
+                items: [
+                    "List of internship organizations;",
+                    "Student internship allocation/approval;",
+                    "Internship duration and details;",
+                    "MoUs or collaboration records, where applicable;",
+                    "Attendance and completion records;",
+                    "Internship certificates;",
+                    "Reports and assessment records;",
+                    "Supervisor feedback; and",
+                    "Consolidated internship outcome reports."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "These records may be used for academic monitoring, quality assurance, accreditation, institutional reporting, and continuous improvement."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "15. Grievance Redressal"
+            },
+            {
+                type: "paragraph",
+                text: "Students may report internship-related academic, administrative, safety, or other genuine concerns to the Faculty Mentor, Internship / T & P Coordinator, Head of Department or designated University authority."
+            },
+            {
+                type: "paragraph",
+                text: "The matter shall be examined and addressed through the appropriate institutional mechanism."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "16. Review and Continuous Improvement"
+            },
+            {
+                type: "paragraph",
+                text: "The implementation of this Policy shall be periodically reviewed based on student feedback, employer/host feedback, internship outcomes, placement trends, academic requirements, and institutional priorities."
+            },
+            {
+                type: "paragraph",
+                text: "The University may revise internship procedures, assessment mechanisms, documentation requirements, and industry partnerships to strengthen experiential learning."
+            }
+        ],
+    },
+    "policy-for-teaching-enhancement": {
+        summary: "Kalinga University is committed to providing high-quality, learner-centric, inclusive, and outcome-oriented education. Effective teaching requires continuous enhancement of pedagogical…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University is committed to providing high-quality, learner-centric, inclusive, and outcome-oriented education. Effective teaching requires continuous enhancement of pedagogical practices, faculty competencies, curriculum delivery, technology integration, assessment methods, and student engagement."
+            },
+            {
+                type: "paragraph",
+                text: "The Policy for Teaching Enhancement establishes a systematic framework for strengthening teaching-learning practices and promoting continuous professional development among faculty members. The Policy aims to create an academic environment that encourages innovation, reflection, collaboration, technology-enabled learning, and evidence-based improvement in teaching."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Objectives"
+            },
+            {
+                type: "paragraph",
+                text: "The objectives of this Policy are to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Enhance the quality and effectiveness of classroom teaching and learning.",
+                    "Promote learner-centric, participatory, experiential, and outcome-based teaching practices.",
+                    "Encourage innovative pedagogical approaches and appropriate use of educational technology.",
+                    "Strengthen faculty knowledge, teaching skills, and professional competencies.",
+                    "Improve student engagement, learning outcomes, and academic performance.",
+                    "Promote continuous assessment, feedback, reflection, and improvement in teaching.",
+                    "Encourage interdisciplinary, industry-oriented, research-based, and practical learning.",
+                    "Support the use of digital resources and blended learning approaches."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Scope"
+            },
+            {
+                type: "paragraph",
+                text: "This Policy shall apply to all faculty members engaged in teaching, academic coordination, mentoring, assessment, and other teaching-learning activities at Kalinga University."
+            },
+            {
+                type: "paragraph",
+                text: "The Policy shall cover classroom teaching, laboratory/practical teaching, tutorials, project supervision, online/blended learning, assessment, mentoring, academic advising, and other related teaching-learning activities."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Teaching-Learning Approaches"
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall be encouraged to adopt appropriate learner-centric approaches based on course requirements and student needs, including:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Interactive and participatory teaching;",
+                    "Experiential and activity-based learning;",
+                    "Problem-based and project-based learning;",
+                    "Case studies and simulations;",
+                    "Collaborative and peer learning;",
+                    "Flipped and blended learning;",
+                    "Practical and laboratory-based learning;",
+                    "Field-based and industry-oriented learning;",
+                    "Research-based learning; and",
+                    "Appropriate digital and technology-enabled teaching."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall select teaching methods according to the nature of the course, programme outcomes, learning outcomes, and student requirements."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Curriculum and Course Planning"
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall prepare appropriate course plans before commencement of the academic term."
+            },
+            {
+                type: "paragraph",
+                text: "Course planning may include:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Course outcomes and learning objectives;",
+                    "Unit-wise teaching schedule;",
+                    "Teaching methodologies;",
+                    "Learning resources;",
+                    "Practical/project activities;",
+                    "Assessment strategy;",
+                    "ICT/digital resources;",
+                    "Remedial and enrichment activities; and",
+                    "Mapping of learning outcomes with appropriate assessment methods."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Departments shall periodically review curriculum delivery and identify areas requiring improvement."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Faculty Development and Capacity Building"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall encourage faculty members to participate in:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Faculty Development Programmes (FDPs);",
+                    "Workshops, seminars, conferences, and training programmes;",
+                    "Orientation and refresher programmes;",
+                    "MOOCs and other recognized online learning programmes;",
+                    "Training in educational technologies and digital tools;",
+                    "Programmes on outcome-based education and assessment;",
+                    "Industry interaction and professional development activities;",
+                    "Research and pedagogical innovation initiatives; and",
+                    "Peer-learning and knowledge-sharing activities."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Departments may organize internal training and knowledge-sharing sessions based on identified faculty development needs."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Technology-Enabled Teaching"
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall be encouraged to appropriately integrate technology into teaching and learning through:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Learning Management Systems (LMS);",
+                    "Digital classrooms and multimedia resources;",
+                    "Online educational platforms;",
+                    "Virtual laboratories and simulations;",
+                    "Digital libraries and academic databases;",
+                    "Online quizzes and assessment tools;",
+                    "Recorded lectures and learning resources; and",
+                    "Other approved educational technologies."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Technology shall be used meaningfully to improve learning rather than merely replace conventional teaching methods."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Student Engagement and Inclusive Teaching"
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall promote an inclusive and supportive learning environment where students are encouraged to ask questions, participate in discussions, collaborate with peers, and provide constructive feedback."
+            },
+            {
+                type: "paragraph",
+                text: "Appropriate teaching strategies may be adopted for:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Advanced learners;",
+                    "Students requiring additional academic support;",
+                    "Students with diverse learning needs; and",
+                    "Students requiring reasonable academic support or accessibility measures."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The University shall encourage respectful, equitable, and non-discriminatory teaching practices."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Assessment and Feedback"
+            },
+            {
+                type: "paragraph",
+                text: "Assessment shall be aligned with the intended learning outcomes and academic requirements of the programme."
+            },
+            {
+                type: "paragraph",
+                text: "Faculty members shall use appropriate formative and summative assessment methods, which may include:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Assignments;",
+                    "Quizzes;",
+                    "Presentations;",
+                    "Projects;",
+                    "Case studies;",
+                    "Practical assessments;",
+                    "Class tests;",
+                    "Viva voce; and",
+                    "Semester/end-term examinations."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Timely and constructive feedback shall be provided to students wherever appropriate to help them identify learning gaps and improve their academic performance."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. Peer Learning and Teaching Innovation"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall encourage faculty members to share effective teaching practices and innovations through:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Peer observation;",
+                    "Teaching-learning workshops;",
+                    "Departmental academic meetings;",
+                    "Best-practice sharing;",
+                    "Demonstration classes;",
+                    "Collaborative lesson planning;",
+                    "Teaching innovation projects; and",
+                    "Documentation of successful pedagogical practices."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Departments may identify and disseminate effective teaching practices for wider institutional adoption."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "11. Student Feedback"
+            },
+            {
+                type: "paragraph",
+                text: "Student feedback may be collected periodically through approved institutional mechanisms to understand students' learning experiences and identify areas for improvement."
+            },
+            {
+                type: "paragraph",
+                text: "Feedback shall be used constructively for academic enhancement and faculty development. Faculty members may be provided appropriate guidance or support wherever improvement areas are identified."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "12. Monitoring and Documentation"
+            },
+            {
+                type: "paragraph",
+                text: "Departments shall maintain appropriate records relating to teaching enhancement activities, which may include:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Course plans and lesson plans;",
+                    "Teaching schedules;",
+                    "Teaching-learning resources;",
+                    "FDP/training participation;",
+                    "Innovative teaching practices;",
+                    "Student feedback;",
+                    "Assessment and result analysis;",
+                    "Remedial/enrichment activities;",
+                    "Peer-learning activities; and",
+                    "Departmental review and improvement reports."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The IQAC may facilitate institutional monitoring and documentation of teaching-learning quality and recommend continuous improvement measures."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "13. Roles and Responsibilities"
+            },
+            {
+                type: "list",
+                items: [
+                    "Faculty Members: Plan and deliver effective teaching, adopt appropriate pedagogies, assess student learning, provide feedback, and participate in professional development.",
+                    "Heads of Departments/Programme Coordinators: Monitor curriculum delivery, coordinate academic planning, review teaching effectiveness, and facilitate faculty development.",
+                    "Academic Administration: Provide institutional support and facilitate implementation of teaching enhancement initiatives.",
+                    "IQAC: Facilitate quality monitoring, documentation, feedback mechanisms, and continuous improvement in teaching-learning practices.",
+                    "Students: Participate actively in learning activities, provide constructive feedback, and engage responsibly in the teaching-learning process."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "14. Continuous Improvement"
+            },
+            {
+                type: "paragraph",
+                text: "The University shall use appropriate academic evidence, student feedback, assessment results, faculty reflections, peer observations, and other relevant inputs to identify opportunities for improvement."
+            },
+            {
+                type: "paragraph",
+                text: "Teaching enhancement initiatives may be periodically reviewed to ensure their relevance, effectiveness, and alignment with programme outcomes and institutional objectives."
+            }
+        ],
+    },
+    "policy-for-mentoring-programmes": {
+        summary: "Kalinga University recognizes mentoring as an important component of student-centric education and holistic development. The University shall implement a structured Mentor–Mentee Programme…",
+        blocks: [
+            {
+                type: "heading",
+                level: 1,
+                text: "1. Preamble"
+            },
+            {
+                type: "paragraph",
+                text: "Kalinga University recognizes mentoring as an important component of student-centric education and holistic development. The University shall implement a structured Mentor–Mentee Programme to provide students with continuous academic guidance, career support, personal development assistance, and timely institutional support."
+            },
+            {
+                type: "paragraph",
+                text: "The programme shall facilitate meaningful interaction between faculty members (Mentors) and students (Mentees) and shall support academic achievement, professional development, employability, research, innovation, and overall student well-being."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "2. Purpose and Objectives"
+            },
+            {
+                type: "paragraph",
+                text: "The Mentoring Programme aims to:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Provide individual academic and career guidance to students.",
+                    "Establish regular and meaningful Mentor–Mentee interaction.",
+                    "Monitor academic performance, attendance, participation, and progress.",
+                    "Identify and support slow learners through suitable academic interventions.",
+                    "Encourage advanced learners towards research, innovation, internships, competitions, and higher education.",
+                    "Assist students in career planning, skill development, internships, placements, and entrepreneurship.",
+                    "Identify students requiring additional institutional support and facilitate appropriate referrals.",
+                    "Promote communication skills, leadership, confidence, discipline, and responsible behaviour."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "3. Scope"
+            },
+            {
+                type: "paragraph",
+                text: "The policy shall apply to eligible students and faculty members of all Schools/Departments and academic programmes of Kalinga University. The University may modify the implementation mechanism according to programme requirements and student strength."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "4. Mentor–Mentee System"
+            },
+            {
+                type: "list",
+                items: [
+                    "Mentor: A faculty member designated by the Department/School to provide academic, professional, developmental, and appropriate institutional guidance to assigned students.",
+                    "Mentee: A student assigned to a designated faculty Mentor for regular guidance, academic monitoring, and developmental support."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "The Department/School shall prepare and maintain a Mentor–Mentee Allocation List at the beginning of the academic session/semester. Wherever practicable, continuity of the same Mentor–Mentee relationship shall be maintained for effective follow-up."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "5. Role of the Mentor"
+            },
+            {
+                type: "paragraph",
+                text: "The Mentor shall:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Maintain regular interaction with assigned Mentees.",
+                    "Monitor attendance, academic performance, internal assessments, and examination results.",
+                    "Identify academic difficulties and recommend remedial measures.",
+                    "Guide students regarding internships, training, placements, higher education, research, innovation, and entrepreneurship.",
+                    "Encourage participation in seminars, workshops, conferences, clubs, competitions, hackathons, and other institutional activities.",
+                    "Support advanced and slow learners through appropriate interventions.",
+                    "Identify students requiring additional support and refer them to the appropriate University support system.",
+                    "Maintain necessary mentoring records and submit reports as required.",
+                    "Maintain professional conduct and appropriate confidentiality regarding student information."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "6. Responsibilities of the Mentee"
+            },
+            {
+                type: "paragraph",
+                text: "The Mentee shall:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Attend scheduled Mentor–Mentee meetings regularly.",
+                    "Communicate academic and developmental concerns to the Mentor.",
+                    "Act upon agreed academic and developmental guidance.",
+                    "Maintain academic discipline and satisfactory attendance.",
+                    "Participate in recommended academic, professional, co-curricular, and extracurricular activities.",
+                    "Provide accurate information required for mentoring and academic monitoring.",
+                    "Seek timely guidance whenever academic or career-related difficulties arise."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "7. Mentoring Activities"
+            },
+            {
+                type: "paragraph",
+                text: "The Mentor–Mentee Programme may include:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Individual and group mentoring sessions.",
+                    "Academic progress and attendance review.",
+                    "Examination and performance analysis.",
+                    "Remedial/extra academic support.",
+                    "Career and higher education guidance.",
+                    "Internship and placement guidance.",
+                    "Research, innovation, and entrepreneurship guidance.",
+                    "Skill, communication, leadership, and personality development.",
+                    "Participation in clubs, societies, competitions, and community activities.",
+                    "Referral to counselling or other appropriate institutional support services, wherever required."
+                ]
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "8. Frequency and Documentation"
+            },
+            {
+                type: "paragraph",
+                text: "Mentor–Mentee meetings shall be conducted at least once every month, wherever practicable, with additional meetings based on student needs."
+            },
+            {
+                type: "paragraph",
+                text: "Departments/Schools shall maintain appropriate records, including:"
+            },
+            {
+                type: "list",
+                items: [
+                    "Mentor–Mentee allocation list.",
+                    "Student profile and academic progress.",
+                    "Meeting dates and attendance.",
+                    "Issues identified and guidance provided.",
+                    "Interventions and follow-up actions.",
+                    "Advanced/slow learner support records.",
+                    "Career/internship guidance records.",
+                    "Student feedback and periodic mentoring reports."
+                ]
+            },
+            {
+                type: "paragraph",
+                text: "Digital records may be maintained through the University's approved ERP/LMS or other institutional systems."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "9. Monitoring and Responsibilities"
+            },
+            {
+                type: "paragraph",
+                text: "The Head of Department/Programme Coordinator/Mentoring Coordinator shall monitor the implementation of the Mentor–Mentee Programme and consolidate periodic reports."
+            },
+            {
+                type: "paragraph",
+                text: "The IQAC may review implementation, documentation, student feedback, outcomes, and good practices as part of institutional quality assurance and continuous improvement."
+            },
+            {
+                type: "paragraph",
+                text: "The effectiveness of the programme may be assessed through academic performance, attendance, student participation, internship/placement engagement, research and innovation participation, student feedback, and completion of mentoring interventions."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "10. Confidentiality and Non-Discrimination"
+            },
+            {
+                type: "paragraph",
+                text: "Mentoring shall be conducted in a professional, respectful, inclusive, and non-discriminatory manner. Student information shall be treated with appropriate confidentiality and used only for legitimate academic or support purposes. Matters requiring specialized assistance shall be referred to the appropriate competent authority or professional support service."
+            },
+            {
+                type: "heading",
+                level: 1,
+                text: "11. Review and Effective Date"
+            },
+            {
+                type: "paragraph",
+                text: "This policy shall be reviewed periodically or whenever required by changes in institutional, academic, or regulatory requirements. The policy shall come into force from the date of approval by the competent authority of Kalinga University."
+            }
+        ],
+    },
 };

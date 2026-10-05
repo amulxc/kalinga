@@ -107,7 +107,8 @@ export default function RoboticsCodingDronesTrainingCentrePage() {
 
       <Gallery
         images={galleryImages}
-        title="Glimpses of Robotics, Coding & Drones Centre Activities"
+        title="Glimpses"
+        enableLightbox
       />
 
       <RaipurVideoSection

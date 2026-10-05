@@ -6,6 +6,19 @@ import SectionHeading from '../components/general/SectionHeading';
 import { AccordionItem } from '../components/general/accordion';
 import ImageListItem from '../components/ccrc/imagelistitem';
 import FAQ from '../components/general/faq';
+import dynamic from 'next/dynamic';
+
+const Gallery = dynamic(
+    () => import('@/app/components/general/gallery'),
+    { ssr: false }
+);
+
+// Glimpses of Hackathon 2026
+const glimpsesImages = Array.from({ length: 37 }, (_, i) => ({
+    id: i + 1,
+    image: `/news-and-events/ku-hackathon-2027/glimpses/${String(i + 1).padStart(2, '0')}.webp`,
+    alt: `Hackathon 2026 glimpse ${i + 1}`,
+}));
 
 const KUHackathon2027Page = () => {
 
@@ -234,14 +247,14 @@ const KUHackathon2027Page = () => {
                     "The Department of Computer Science and the Faculty of Information Technology are organizing Hackathon-2027, a 24-hour non-stop innovation challenge at Kalinga University starting at 11:00 A.M. on the 18th February and ending at 11:00 A.M. on the 19th February 2027.",
                     "Students from schools across India are encouraged to bring their ideas to a national-level platform and work individually or in teams to solve real-world problems using technology and develop software prototypes and innovative technology solutions. It is a competitive platform for students to showcase their technical talent, apply their coding skills, explore emerging technologies, develop problem-solving skills, and receive guidance from industry experts."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/course/student-computer.webp"
+                imageUrl="/news-and-events/ku-hackathon-2027/laptop.png"
                 imageAlt="KU Hackathon 2027 - 24-hour innovation challenge"
             />
 
             {/* Why Participate */}
             <ImageListItem
                 items={whyParticipateItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/gallery/UG/Bachelor-of-Computer-Applications-in-Artificial-Intelligence-and-Machine-Learning.jpg"
+                imageSrc="/news-and-events/ku-hackathon-2027/podium.png"
                 title="Why Participate?"
                 subtitle=""
                 description=""
@@ -250,11 +263,12 @@ const KUHackathon2027Page = () => {
             {/* Domains */}
             <ImageListItem
                 items={domainItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/departments/programs-offered.webp"
+                imageSrc="/news-and-events/ku-hackathon-2027/hall.png"
                 title="Domains"
                 subtitle=""
                 description="Select any one domain:"
                 reverseLayout={true}
+                className="mt-8 md:mt-12"
             />
 
             {/* Presentation */}
@@ -311,7 +325,7 @@ const KUHackathon2027Page = () => {
             {/* Rules and Regulations */}
             <ImageListItem
                 items={rulesItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/campus-life/whywork.webp"
+                imageSrc="/news-and-events/ku-hackathon-2027/cheque.png"
                 title="Rules and Regulations"
                 subtitle=""
                 description=""
@@ -338,6 +352,9 @@ const KUHackathon2027Page = () => {
                 items={[]}
                 pyClassName="py-8 md:py-12"
             />
+
+            {/* Glimpses */}
+            <Gallery title="Glimpses of Hackathon 2026" images={glimpsesImages} enableLightbox />
         </>
     );
 };

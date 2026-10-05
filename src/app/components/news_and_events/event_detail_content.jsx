@@ -20,6 +20,7 @@ const EventDetailContent = ({
   galleryImages = [],
   link = '',
   linkLabel = 'Know More',
+  linkCard = null,
   showMainImage = true
 }) => {
   // State to track the currently selected image
@@ -84,7 +85,43 @@ const EventDetailContent = ({
         </div>
 
         {/* Brochure / external link supplied by the CMS `link` field */}
-        {link && (
+        {link && linkCard && (
+          <div className="mb-8 md:mb-12 rounded-2xl bg-[var(--lite-sand)] p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h3 className="font-stix text-xl md:text-2xl text-[var(--foreground)]">
+                {linkCard.title}
+              </h3>
+              {linkCard.subtitle && (
+                <p className="mt-2 text-gray-700 font-plus-jakarta-sans">{linkCard.subtitle}</p>
+              )}
+            </div>
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-[var(--button-red)] px-5 py-3 text-white font-semibold font-plus-jakarta-sans hover:opacity-90 transition"
+            >
+              {linkCard.label || linkLabel}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 3v10m0 0l4-4m-4 4l-4-4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 17v3h16v-3"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        )}
+        {link && !linkCard && (
           <div className="mb-8 md:mb-12">
             <a
               href={link}

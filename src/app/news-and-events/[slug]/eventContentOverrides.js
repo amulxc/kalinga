@@ -19,17 +19,20 @@ export const EVENT_CONTENT_OVERRIDES = {
 
 <p>We invite aspiring young entrepreneurs to pitch their ideas, compete, and take their first step towards building successful business ventures.</p>
 
+<div style="text-align:center">
 <h2>In Collaboration With</h2>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/young-indians.png" alt="Young Indians" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/sr-university.png" alt="SR University, Warangal" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/asma-pune.png" alt="ASMA Institute of Management, Pune" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/campus-on.png" alt="Campus On" style="height:70px;width:auto;margin:0" /></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/young-indians.png" alt="Young Indians" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/sr-university.png" alt="SR University, Warangal" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/asma-pune.png" alt="ASMA Institute of Management, Pune" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/campus-on.png" alt="Campus On" style="height:70px;width:auto;margin:0" /></div>
 <p><strong>Powered By:</strong></p>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/unstop.png" alt="Unstop" style="height:70px;width:auto;margin:0" /></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/unstop.png" alt="Unstop" style="height:70px;width:auto;margin:0" /></div>
 <p><strong>Trophy Partner:</strong></p>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/gift-kya-de.png" alt="Gift Kya De? (GKD)" style="height:70px;width:auto;margin:0" /></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/gift-kya-de.png" alt="Gift Kya De? (GKD)" style="height:70px;width:auto;margin:0" /></div>
 <p><strong>Gifting Partner:</strong></p>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/orgalife.png" alt="Orgalife" style="height:70px;width:auto;margin:0" /></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/orgalife.png" alt="Orgalife" style="height:70px;width:auto;margin:0" /></div>
 <p><strong>Sponsored By:</strong></p>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/7-overground.png" alt="7 Overground" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/kms-seeds.png" alt="KMS Seeds Private Limited" style="height:70px;width:auto;margin:0" /></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/partners/7-overground.png" alt="7 Overground" style="height:70px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/partners/kms-seeds.png" alt="KMS Seeds Private Limited" style="height:70px;width:auto;margin:0" /></div>
 <p><strong>Aligned With UN Sustainable Development Goals (SDGs):</strong> SDG 4 &ndash; Quality Education, SDG 8 &ndash; Decent Work and Economic Growth, SDG 9 &ndash; Industry, Innovation and Infrastructure</p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin:8px 0 20px"><img src="/news-and-events/ideathon-6-0/sdg/sdg-4.webp" alt="SDG 4" style="height:110px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/sdg/sdg-8.webp" alt="SDG 8" style="height:110px;width:auto;margin:0" /><img src="/news-and-events/ideathon-6-0/sdg/sdg-9.webp" alt="SDG 9" style="height:110px;width:auto;margin:0" /></div>
+</div>
 
 <h2>Who Can Participate?</h2>
 <ul>
@@ -95,43 +98,47 @@ export const EVENT_CONTENT_OVERRIDES = {
   </tbody>
 </table>
 
+<h2>Important Information</h2>
+<ul>
+  <li>Teams should achieve a minimum score of <strong>50%</strong> to be eligible for the reward.</li>
+  <li>Maximum presentation time: <strong>15 minutes</strong> per team.</li>
+  <li>Maximum number of members in a team: <strong>5</strong>.</li>
+  <li>Accommodation facility is available on a chargeable basis as per the University norms.</li>
+  <li>The business plans are to be submitted to: <a href="mailto:ideathon@kalingauniversity.ac.in">ideathon@kalingauniversity.ac.in</a></li>
+</ul>
+
 <h2>Registration Fees</h2>
 <table>
   <thead>
     <tr>
       <th>Teams</th>
       <th>Round 1 (Entry Fee)</th>
-      <th>Round 2 (For Shortlisted Teams)</th>
+      <th>Round 2 (Entry Fee)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Indian Teams</td>
+      <td>Indian Team</td>
       <td>INR 200/-</td>
       <td>INR 1500/-</td>
     </tr>
     <tr>
-      <td>International Teams</td>
+      <td>International Team</td>
       <td>USD 5</td>
       <td>USD 15</td>
     </tr>
   </tbody>
 </table>
 
-<h2>Important Information</h2>
-<ul>
-  <li>The teams should get a minimum score of 50% to be eligible for the reward.</li>
-  <li>Maximum presentation time: 15 minutes per team.</li>
-  <li>Maximum number of members in a team: 5.</li>
-  <li>Accommodation facility is available on a chargeable basis as per the University norms.</li>
-  <li>Business plans are to be submitted to <a href="mailto:ideathon@kalingauniversity.ac.in">ideathon@kalingauniversity.ac.in</a>.</li>
-</ul>
+<h3>Scan to Register</h3>
+<img src="/news-and-events/ideathon-6-0/registration-qr.png" alt="Scan to Register QR code" style="width:200px;height:auto;margin:8px 0 12px" />
+<p><strong>Note -</strong> The registration fee must be paid using the QR Code and Account Details in the registration form.</p>
 
 <h2>Contact Persons</h2>
 <ul>
-  <li><strong>Dr. Divya Nandini Sharma:</strong> +91-6261763882, +91-7024116975</li>
   <li><strong>Dr. Satvik Jain:</strong> +91-8800328488</li>
   <li><strong>Mr. Abhishek Jaiswar:</strong> +91-8303561035</li>
+  <li><strong>Dr. Divya Nandini Sharma:</strong> +91-6261763882, +91-7024116975</li>
   <li><strong>Email:</strong> <a href="mailto:ideathon@kalingauniversity.ac.in">ideathon@kalingauniversity.ac.in</a></li>
 </ul>
 `,
@@ -141,6 +148,19 @@ export const EVENT_CONTENT_OVERRIDES = {
 export const EVENT_LINK_OVERRIDES = {
     "ideathon-6-0": "/news-and-events/ideathon-6-0/IDEATHON-6.0-Brochure.pdf",
 };
+
+/** Heading, caption and button label for events shown as a brochure card. */
+export const EVENT_LINK_CARDS = {
+    "ideathon-6-0": {
+        title: "IDEATHON 6.0",
+        subtitle: "Know more about the Business Plan Competition",
+        label: "Download Brochure",
+    },
+};
+
+export function getEventLinkCard(slug) {
+    return EVENT_LINK_CARDS[slug];
+}
 
 export function getEventLink(slug, apiLink) {
     return EVENT_LINK_OVERRIDES[slug] ?? apiLink;

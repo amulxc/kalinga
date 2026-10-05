@@ -375,6 +375,12 @@ export const pageDataMap: Record<string, PageData> = {
         banner: "/news-and-events/ideathon-6-0/banner.webp",
         imagePosition: "object-center",
     },
+    "/ku-hackathon-2027": {
+        slug: "/ku-hackathon-2027",
+        title: "KU Hackathon 2027",
+        banner: "/news-and-events/ku-hackathon-2027/banner.webp",
+        imagePosition: "object-center",
+    },
     "/nss": {
         slug: "/nss",
         title: "NSS",

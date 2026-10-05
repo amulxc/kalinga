@@ -103,7 +103,7 @@ export default function MSMETrainingCentrePage() {
 
       <CareerPath careers={learnCards} title="What You’ll Learn" description="" />
 
-      <Gallery images={galleryImages} title="Glimpses of MSME Centre Activities" />
+      <Gallery images={galleryImages} title="Glimpses" enableLightbox />
 
       <RaipurVideoSection
         videoId="lqO-cvAVMvc"

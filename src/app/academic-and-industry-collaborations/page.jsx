@@ -166,6 +166,10 @@ const clubSections = [
         image:
           "https://cdn.kalingauniversity.ac.in/Academic-and-Industry-Collaborations/Eiffcon.webp",
       },
+      {
+        name: "Niira Educom",
+        image: "/partners/niira-educom.webp",
+      },
 
     ],
   },

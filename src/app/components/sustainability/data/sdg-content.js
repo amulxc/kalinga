@@ -231,7 +231,14 @@ export const SUSTAINABILITY_POLICIES = [
     {
         goal: "SDG 4 – Quality Education",
         theme: "Access, Equity, Academic Quality",
-        policies: ["Lifelong Learning Access Policy"],
+        policies: [
+            "Lifelong Learning Access Policy",
+            "Policy for Admission Procedure",
+            "Policy for Advanced & Slow Learners",
+            "Internship & Training Policy",
+            "Policy for Teaching Enhancement",
+            "Policy for Mentoring Programmes",
+        ],
     },
     {
         goal: "SDG 5 – Gender Equality",
@@ -295,6 +302,15 @@ export const SUSTAINABILITY_POLICIES = [
             "Plastic Use Minimization Policy",
             "Policy on Extending the Useful Life of Disposable Items and Services",
             "Single-Use and Disposable Items Minimization Policy",
+        ],
+    },
+    {
+        goal: "SDG 13 – Climate Action",
+        theme: "Environmental Commitment",
+        policies: [
+            "Policy for Adoption and Integration of Sustainable Development Goals (SDGs)",
+            "Sustainable Investment Policy",
+            "Policy for Climate Action for Sustainability",
         ],
     },
     {

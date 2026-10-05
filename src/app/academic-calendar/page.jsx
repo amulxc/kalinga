@@ -9,17 +9,17 @@ const annualReportButtons = [
   {
     id: 0,
     text: "B. Pharmacy",
-    href: "https://cdn.kalingauniversity.ac.in/academic-calendar/Academic+Calendar+(Tentative)+2025-26+Only+for+B.+Pharmacy.pdf",
+    href: "/academic-calendar/b-pharmacy-2026-27.pdf",
   },
   {
     id: 1,
-    text: "D. Pharmacy & Pharm D (Revised)",
-    href: "https://cdn.kalingauniversity.ac.in/academic-calendar/Academic+Calendar+D.+Pharmacy+%26+Pharm+D+(Revised).pdf",
+    text: "D. Pharmacy & Pharm D",
+    href: "/academic-calendar/d-pharmacy-and-pharm-d-2026-27.pdf",
   },
   {
     id: 2,
     text: "Except Annual Mode & B.Pharmacy / M.Pharmacy",
-    href: "https://cdn.kalingauniversity.ac.in/academic-calendar/Academic-Calendar-(Except-Annual-Mode-&-B.Pharmacy-M.Pharmacy).pdf",
+    href: "/academic-calendar/except-annual-mode-and-b-pharmacy-m-pharmacy-2026-27.pdf",
   },
 
 ];
@@ -36,11 +36,11 @@ export default function Page() {
           {/* ✅ PAGE HEADING */}
           <div className="mb-10 text-center">
             <h2 className="mb-4" >
-              Academic Calendar 2025-26
+              Academic Calendar 2026-27
 
             </h2>
             <p className="text-[16px] text-[#555]">
-              The academic calendar for the year 2025-26 covers all the academic events scheduled throughout the year at Kalinga University.
+              The academic calendar for the year 2026-27 covers all the academic events scheduled throughout the year at Kalinga University.
             </p>
           </div>
 

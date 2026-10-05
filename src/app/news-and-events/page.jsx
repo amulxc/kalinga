@@ -75,8 +75,9 @@ const staticUpcomingEvents = [
     id: 'ku-hackathon-2027',
     title: 'KU Hackathon 2027',
     description: 'The Department of Computer Science and the Faculty of Information Technology are organizing Hackathon-2027, a 24-hour non-stop innovation challenge at Kalinga University. Students from schools across India work individually or in teams to solve real-world problems using technology and build software prototypes.',
-    date: '18 Feb, 2027',
-    imageSrc: 'https://cdn.kalingauniversity.ac.in/course/student-computer.webp',
+    date: '18th-19th February, 2027',
+    organisedBy: 'Department of Computer Science & Faculty of Information Technology',
+    imageSrc: '/news-and-events/ku-hackathon-2027.jpg',
     imageAlt: 'KU Hackathon 2027',
     buttonText: 'Read More',
     link: '/ku-hackathon-2027',
@@ -196,6 +197,7 @@ function NewsAndEvents() {
       imageSrc: getEventImage(item.slug)?.image || item.primary_image?.image || item.images?.[0]?.image || 'https://cdn.kalingauniversity.ac.in/common/student.jpg',
       imageAlt: getEventImage(item.slug)?.alt || item.primary_image?.alt || parseHtmlToText(item.heading),
       date: item.date,
+      organisedBy: item.department_name || undefined,
       buttonText: 'Read More',
       slug: item.slug
     }));
@@ -296,65 +298,89 @@ function NewsAndEvents() {
   const upcomingevents = [
     {
       id: 'icdiacs-26',
-      title: 'ICDIACS 2026',
-      description: 'This conference aims to provide an international multidisciplinary platform for researchers, academicians, industry experts, and innovators to discuss recent advancements in Artificial Intelligence, Cybersecurity, Digital Intelligence, Intelligent Systems, Cloud Computing, IoT, Data Science, and Sustainable Digital Technologies. The conference focuses on promoting research and innovation that contribute toward sustainable technological growth and global development aligned with the United Nations Sustainable Development Goals (SDGs).',
-      date: '27.10.2026 - 28.10.2026',
+      title: '3rd International Conference on Digital Intelligence: AI, Cybersecurity and Computing for a Sustainable Future (ICDIACS 2026)',
+      description: 'The conference provides a platform for researchers, academicians, industry experts, and innovators to discuss advancements in AI, Cybersecurity, Digital Intelligence, IoT, Data Science, and Sustainable Digital Technologies.',
+      date: '27th-28th October, 2026',
+      organisedBy: 'Department of Computer Science & Faculty of Information Technology',
+      imageSrc: '/news-and-events/conferences/icdiacs-2026.webp',
+      imageAlt: '3rd International Conference on Digital Intelligence: AI, Cybersecurity and Computing for a Sustainable Future (ICDIACS 2026)',
       buttonText: 'Read More',
       link: "/icdiacs-26",
     },
     {
       id: 'global-conference-law',
-      title: 'Emerging Trends In Artificial Intelligence: Comparative Approaches Of Legal Governance',
-      description: 'The Two-Day Global Conference on “Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance” aims to examine the growing relationship between AI and legal systems globally. Due to the growing influence of AI across commercial laws, criminal justice systems, intellectual property regimes, judicial institutions, healthcare regulations, cyber law frameworks, and international legal mechanisms, it raises concerns regarding privacy, transparency, accountability, liability, bias, and protection of human rights',
-      date: '20.11.2026 - 21.11.2026',
+      title: 'Global Conference on Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance',
+      description: 'The conference provides a global platform for legal professionals, academicians, researchers, policymakers, and industry experts to discuss comparative legal and regulatory approaches to AI governance.',
+      date: '20th-21st November, 2026',
+      organisedBy: 'Faculty of Law',
+      imageSrc: '/news-and-events/conferences/legal-governance.webp',
+      imageAlt: 'Global Conference on Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance',
       buttonText: 'Read More',
       link: "https://kalingauniversity.ac.in/law-organize-two-days-conference",
     },
     {
       id: 'ai-for-humanity-27',
-      title: 'AI For Humanity 2027',
-      description: 'The Faculty of Education at Kalinga University, Naya Raipur, is a beacon of knowledge and innovation. With a team of highly qualified and experienced faculty members, it offers comprehensive and industry-aligned programs for aspiring educators. The Department focuses not just on theoretical knowledge but also on practical application through internships and hands-on experiences. Kalinga University Faculty of Education instils in its students a passion for teaching, equipping them with the skills and expertise needed to excel in their careers and make a meaningful impact in the field of education.',
-      date: '22.01.2027 - 23.01.2027',
+      title: '3rd International Conference on AI for Humanity: Leveraging Indian Knowledge Systems to Accelerate Sustainable Development Goals',
+      description: 'The conference aims to explore the role of Artificial Intelligence and Indian Knowledge Systems in addressing global sustainability challenges.',
+      date: '22nd-23rd January, 2027',
+      organisedBy: 'Faculty of Education',
+      imageSrc: '/news-and-events/conferences/ai-for-humanity-2027.webp',
+      imageAlt: '3rd International Conference on AI for Humanity: Leveraging Indian Knowledge Systems to Accelerate Sustainable Development Goals',
       buttonText: 'Read More',
       link: "/ai-for-humanity-27",
     },
     {
       id: 'scisustain-27',
-      title: 'SciSustain 2027',
-      description: 'Artificial Intelligence is rapidly transforming scientific discovery, innovation, and sustainable development across disciplines. SciSustain 2027 provides an international platform where researchers, academicians, scientists, industry experts, innovators, policymakers, and students converge to explore AI-enabled scientific solutions that address global sustainability challenges and align with the United Nations Sustainable Development Goals (SDGs).',
-      date: '19.01.2027 - 20.01.2027',
+      title: 'SciSustain 2027 - International Conference on AI-Driven Scientific Innovations for Sustainable Development Goals',
+      description: 'The conference promotes interdisciplinary collaboration by integrating Artificial Intelligence with Materials Science, Mathematical Sciences, Life Sciences, Forensic Science, Environmental Sciences, and more.',
+      date: '19th-20th January, 2027',
+      organisedBy: 'Faculty of Science',
+      imageSrc: '/news-and-events/conferences/scisustain-2027.webp',
+      imageAlt: 'SciSustain 2027 - International Conference on AI-Driven Scientific Innovations for Sustainable Development Goals',
       buttonText: 'Read More',
       link: "/scisustain-2027",
     },
     {
       id: 'icbtaisg-27',
-      title: 'ICBTAISG - 2027',
-      description: 'The global business environment is being reshaped by the convergence of Artificial Intelligence (AI), sustainability, and inclusive growth. Organisations must leverage AI-driven innovation while addressing ethical concerns, environmental responsibility, and social equity. As AI transforms industries through automation and intelligent decision-making, businesses also face challenges related to governance, workforce adaptation, and data privacy.',
-      date: '23.02.2027 - 24.02.2027',
+      title: 'International Conference on Business Transformation in the Age of AI, Sustainability and Inclusive Growth (ICBTAISG - 2027)',
+      description: 'The conference aims to exchange ideas, present innovative research, and explore strategies to build resilient, sustainable, and inclusive businesses in an AI-driven economy.',
+      date: '23rd-24th February, 2027',
+      organisedBy: 'Faculty of Commerce and Management',
+      imageSrc: '/news-and-events/conferences/icbtaisg-2027.webp',
+      imageAlt: 'International Conference on Business Transformation in the Age of AI, Sustainability and Inclusive Growth (ICBTAISG - 2027)',
       buttonText: 'Read More',
       link: "/ICBTAISG-2027",
     },
     {
       id: 'indian-knowledge-systems',
       title: 'Integration of Indian Knowledge Systems for Sustainable Development and Technological Transformation',
-      description: 'The global landscape is undergoing profound transformations driven by environmental challenges, technological advances, social inequalities, and shifting political dynamics. In this context, the pursuit of a sustainable future requires a multidisciplinary and inclusive approach — one that bridges the spheres of culture, society, and governance.',
-      date: '26.02.2027 - 27.02.2027',
+      description: 'The conference aims to promote the integration of Indian Knowledge Systems (IKS) into contemporary education, research, and innovation for holistic and sustainable development.',
+      date: '26th-27th February, 2027',
+      organisedBy: 'Faculty of Arts and Humanities',
+      imageSrc: '/news-and-events/conferences/indian-knowledge-systems.webp',
+      imageAlt: 'Integration of Indian Knowledge Systems for Sustainable Development and Technological Transformation',
       buttonText: 'Read More',
       link: "/Indian-knowledge-systems",
     },
     {
       id: 'iceasre-2027',
-      title: 'International Conference On Engineering, Agritech & Sustainable Rural Ecosystems - ICEASRE-2027',
-      description: 'The International Conference on Engineering, Agritech and Sustainable Rural Ecosystems (ICEASRE-2027) aims to provide a comprehensive platform for professionals, academics, researchers, policymakers, and industry experts to discuss, share, and explore the latest advancements, applications, and potential impacts of a greener future on sustainable development.',
-      date: '12.03.2027 - 13.03.2027',
+      title: 'International Conference on Engineering, Agritech & Sustainable Rural Ecosystems (ICEASRE - 2027)',
+      description: 'The conference will provide a platform to explore how advancements in engineering and Agritech can address pressing challenges in rural communities.',
+      date: '12th-13th March, 2027',
+      organisedBy: 'Faculty of Technology',
+      imageSrc: '/news-and-events/conferences/iceasre-2027.webp',
+      imageAlt: 'International Conference on Engineering, Agritech & Sustainable Rural Ecosystems (ICEASRE - 2027)',
       buttonText: 'Read More',
       link: "/iceasre-2027",
     },
     {
       id: 'viksit-bharat-2047',
       title: 'International Conference on AI and Translational Innovations in Pharmaceutical Sciences and Healthcare for Viksit Bharat @2047',
-      description: 'The conference aims to provide a dynamic platform for researchers, academicians, healthcare professionals, industry experts, and students to discuss the transformative role of Artificial Intelligence and translational research in advancing healthcare in India. The conference will focus on emerging areas such as AI-driven drug discovery, precision medicine, digital healthcare, pharmacovigilance, bioinformatics, smart drug delivery, and clinical research.',
-      date: '30.03.2027 - 31.03.2027',
+      description: 'The conference aims to discuss the transformative role of Artificial Intelligence and translational research in advancing healthcare in India.',
+      date: '30th-31st March, 2027',
+      organisedBy: 'Faculty of Pharmacy',
+      imageSrc: '/news-and-events/conferences/viksit-bharat-2047.webp',
+      imageAlt: 'International Conference on AI and Translational Innovations in Pharmaceutical Sciences and Healthcare for Viksit Bharat @2047',
       buttonText: 'Read More',
       link: "/viksit-bharat-2047",
     }
@@ -388,6 +414,7 @@ function NewsAndEvents() {
         activities={upcomingevents}
         useModal={true}
         autoplay={false}
+        stackedLayout
       />
       {upcomingEventItems.length > 0 && (
         <StudentActivities
@@ -396,6 +423,7 @@ function NewsAndEvents() {
           subtitle=""
           activities={upcomingEventItems}
           autoplay={false}
+          stackedLayout
         />
       )}
       <MediaCardSlider

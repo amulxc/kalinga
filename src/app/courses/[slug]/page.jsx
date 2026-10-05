@@ -819,7 +819,7 @@ export default function DynamicCoursePage() {
           ctaLink=""
         />
       )}
-      {['bachelor-of-arts-in-film-making', 'master-of-arts-in-film-making'].includes(slug) && (
+      {['bachelor-of-arts-in-film-making', 'master-of-arts-in-film-making', 'bachelor-of-business-adminstration-in-film-making'].includes(slug) && (
         <FacilitySlider
           title="Film Studio Of KU"
           subtitle="Lights, Camera, Action!"

@@ -49,6 +49,17 @@ const defaultActivities = [
   },
 ];
 
+// "2026-11-23" -> "23 November, 2026"; free-text dates ("27th-28th October, 2026") pass through.
+function formatActivityDate(date) {
+  if (typeof date === "string" && /^\d{4}-\d{2}-\d{2}/.test(date)) {
+    const d = new Date(date);
+    if (!Number.isNaN(d.getTime())) {
+      return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+    }
+  }
+  return date;
+}
+
 function getPreviewText(desc) {
   const text = Array.isArray(desc) ? desc.join(" ") : (desc || "").toString();
   const words = text.trim().split(/\s+/);
@@ -71,6 +82,7 @@ export default function StudentActivities({
   fallbackToGlobal = false,
   useModal = false,
   autoplay = true,
+  stackedLayout = false,
 }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -188,6 +200,12 @@ export default function StudentActivities({
 
     return (
       <div className={`bg-[var(--light-gray)] rounded-lg p-5 ${cardHeightClass} flex flex-col`}>
+        {stackedLayout && (
+          <h3 className="text-left text-lg mt-0 mb-4 leading-normal">
+            {activity.title}
+          </h3>
+        )}
+
         {activity.imageSrc && (
           <div className="relative w-full h-[250px]">
             <Image
@@ -196,7 +214,7 @@ export default function StudentActivities({
               fill
               className="rounded-lg object-cover"
             />
-            {activity.date && (
+            {!stackedLayout && activity.date && (
               <div className="absolute bottom-3 right-3 bg-[var(--dark-orange-red-light)] px-3 py-1.5 rounded text-[#000] text-[11px] font-medium z-10">
                 {activity.date}
               </div>
@@ -204,15 +222,36 @@ export default function StudentActivities({
           </div>
         )}
 
-        {!activity.imageSrc && activity.date && (
+        {stackedLayout && (activity.date || activity.organisedBy) && (
+          <div className="mt-4 mb-3 space-y-2 text-left text-sm text-neutral-800">
+            {activity.date && (
+              <p className="m-0">
+                <span className="font-bold">Date - </span>
+                <span className="bg-[var(--dark-orange-red-light)] px-2 py-0.5 rounded font-semibold text-[#000]">
+                  {formatActivityDate(activity.date)}
+                </span>
+              </p>
+            )}
+            {activity.organisedBy && (
+              <p className="m-0">
+                <span className="font-bold">Organized By - </span>
+                {activity.organisedBy}
+              </p>
+            )}
+          </div>
+        )}
+
+        {!stackedLayout && !activity.imageSrc && activity.date && (
           <div className="w-fit bg-[var(--dark-orange-red-light)] px-3 py-1 rounded text-[#000] text-[11px] font-medium mb-3">
             {activity.date}
           </div>
         )}
 
-        <h3 className="text-left text-lg mt-0 mb-2 leading-normal">
-          {activity.title}
-        </h3>
+        {!stackedLayout && (
+          <h3 className="text-left text-lg mt-0 mb-2 leading-normal">
+            {activity.title}
+          </h3>
+        )}
 
         <div className="text-left flex-grow text-neutral-800">
           <p className="m-0 text-sm whitespace-pre-wrap">

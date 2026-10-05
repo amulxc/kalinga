@@ -107,7 +107,8 @@ export default function ElectricVehiclesTrainingCentrePage() {
 
       <Gallery
         images={galleryImages}
-        title="Glimpses of Electric Vehicles Training Centre"
+        title="Glimpses"
+        enableLightbox
       />
 
       <AdmissionCareer />

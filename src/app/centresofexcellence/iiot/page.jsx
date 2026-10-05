@@ -107,7 +107,8 @@ export default function IIoTTrainingCentrePage() {
 
       <Gallery
         images={galleryImages}
-        title="Glimpses of IIoT Training Centre Activities"
+        title="Glimpses"
+        enableLightbox
       />
 
       <AdmissionCareer />

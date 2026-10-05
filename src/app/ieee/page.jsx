@@ -159,6 +159,11 @@ const message =
 
 const galleryImages1 = [
   {
+    id: 77,
+    image: "/ieee/achievements/anu-g-pillai-senior-member.webp",
+    alt: "Congratulations to Dr. Anu G Pillai on being elevated to Senior Member of IEEE"
+  },
+  {
     id: 1,
     image: "https://cdn.kalingauniversity.ac.in/ieee/achievement/MM-School-1.jpg",
     alt: "Achievement Gallery 1"
@@ -541,7 +546,7 @@ const galleryImages1 = [
 
 ]
 
-// Branch Awards images (shown after Achievements, click opens the popup).
+// Branch Awards images (shown after Achievements, displayed directly - not clickable).
 // Add entries as { id, image: "<cdn url>", alt } - the section appears once filled.
 const branchAwardsImages = [
   { id: 1, image: "/ieee/branch-awards/outstanding-student-branch-award-2025.jpg", alt: "IEEE India Council Outstanding Student Branch Award 2025" },
@@ -648,14 +653,11 @@ export default function Page() {
             ],
             data: [
               { slNo: 1, name: "Dr. Vijayalaxmi Biradar", designation: "IEEE KU SB Counsellor", memberId: "92478983" },
-              { slNo: 2, name: "Dr. Anita Verma", designation: "Member", memberId: "99682747" },
-              { slNo: 3, name: "Mr. Abhishek Kumar Gupta", designation: "Member", memberId: "100827345" },
-              { slNo: 4, name: "Dr. Amita Gautam", designation: "Member", memberId: "102745563" },
-              { slNo: 5, name: "Mr. Piyush Srivastava", designation: "Chairperson", memberId: "100057465" },
-              { slNo: 6, name: "Ms. Simpi Kumari", designation: "Vice Chairperson", memberId: "100511898" },
-              { slNo: 7, name: "Ms. Chilikuri Shivani", designation: "Secretary", memberId: "100666290" },
-              { slNo: 8, name: "Mr. Ashutosh Kumar", designation: "Treasurer", memberId: "100050482" },
-              { slNo: 9, name: "Mr. Vishesh Satapathy", designation: "Web Master", memberId: "101181975" },
+              { slNo: 2, name: "Mr. Piyush Srivastava", designation: "Chairperson", memberId: "100057465" },
+              { slNo: 3, name: "Ms. Simpi Kumari", designation: "Vice Chairperson", memberId: "100511898" },
+              { slNo: 4, name: "Ms. Chilikuri Shivani", designation: "Secretary", memberId: "100666290" },
+              { slNo: 5, name: "Mr. Ashutosh Kumar", designation: "Treasurer", memberId: "100050482" },
+              { slNo: 6, name: "Mr. Vishesh Satapathy", designation: "Web Master", memberId: "101181975" },
             ],
           }
           , {
@@ -1101,10 +1103,23 @@ export default function Page() {
         title="Achievements"
       />
       {branchAwardsImages.length > 0 && (
-        <AchievementsGallery
-          images={branchAwardsImages}
-          title="Branch Awards"
-        />
+        <section className="bg-white py-16">
+          <div className="px-2">
+            <div className="mb-6 sm:mb-8 md:mb-10 text-center">
+              <SectionHeading title="Branch Awards" />
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+              {branchAwardsImages.map((item) => (
+                <div
+                  key={item.id}
+                  className="relative w-full sm:w-[calc(50%-1rem)] max-w-[560px] aspect-[4/3] overflow-hidden rounded-[10px] shadow-lg"
+                >
+                  <Image src={item.image} alt={item.alt} fill sizes="(min-width: 640px) 560px, 100vw" className="object-cover" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       )}
       {/* ================== UBA ACTIVITIES TABS ================== */}
       {/* <VisaFroFrroGuidelines

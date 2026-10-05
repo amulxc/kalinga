@@ -57,7 +57,7 @@ export default function OtherCommittees() {
     ],
     data: [
       { slNo: "1", name: "Dr. Lincy Roy", position: "Head of the Committee", designation: "Assistant Professor" },
-      { slNo: "2", name: "Dr. A. Vijayanand", position: "Member", designation: "Chief Proctor" },
+      { slNo: "2", name: "Dr. Swapnil Jain", position: "Member", designation: "Chief Proctor" },
       { slNo: "3", name: "Ms. Saloni Tyagi", position: "Member", designation: "Assistant Professor, Faculty of Law" },
       // { slNo: "4", name: "Ms. Mariyam Ahmed", position: "Member", designation: "Assistant Professor, Faculty of C&M" },
       { slNo: "5", name: "Mrs. Shilpi N. Tanwani", position: "Member", designation: "Academic Officer, Administration" },

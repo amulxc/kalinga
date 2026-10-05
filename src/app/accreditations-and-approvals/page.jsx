@@ -20,6 +20,7 @@ function Accreditations() {
         { id: 7, name: "NBA", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/nba-logo-mba.webp" },
         { id: 8, name: "NAAC Accreditation B+", logo: "https://cdn.kalingauniversity.ac.in/about/accerdation/naac-kalinga.webp" },
         { id: 9, name: "NIRF", logo: "https://cdn.kalingauniversity.ac.in/accreditation/nirf-logo-new.jpeg" },
+        { id: 10, name: "Niira Educom", logo: "/partners/niira-educom.webp" },
 
     ]
     const defaultButtons = [
