@@ -163,6 +163,11 @@ export const pageDataMap: Record<string, PageData> = {
         title: "MSME Training",
         banner: "https://cdn.kalingauniversity.ac.in/msme/msme-banner.webp",
     },
+    "/centresofexcellence/ultratech": {
+        slug: "/centresofexcellence/ultratech",
+        title: "Training and Research",
+        banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
+    },
     "/centresofexcellence/robotics": {
         slug: "/centresofexcellence/robotics",
         title: "Robotics, Coding & Drones Training",
@@ -197,6 +202,54 @@ export const pageDataMap: Record<string, PageData> = {
         slug: "/icdiacs-26",
         title: "ICDIACS 2026",
         breadcrumbLabel: "ICDIACS 2026",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/ai-for-humanity-27": {
+        slug: "/ai-for-humanity-27",
+        title: "3rd International Conference on AI For Humanity",
+        breadcrumbLabel: "3rd International Conference on AI For Humanity",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/scisustain-2027": {
+        slug: "/scisustain-2027",
+        title: "SciSustain 2027",
+        breadcrumbLabel: "SciSustain 2027",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/ICBTAISG-2027": {
+        slug: "/ICBTAISG-2027",
+        title: "ICBTAISG 2027",
+        breadcrumbLabel: "ICBTAISG 2027",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/icbtaisg-2027": {
+        slug: "/icbtaisg-2027",
+        title: "ICBTAISG 2027",
+        breadcrumbLabel: "ICBTAISG 2027",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/iceasre-2027": {
+        slug: "/iceasre-2027",
+        title: "ICEASRE 2027",
+        breadcrumbLabel: "ICEASRE 2027",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/Indian-knowledge-systems": {
+        slug: "/Indian-knowledge-systems",
+        title: "Indian Knowledge Systems",
+        breadcrumbLabel: "Indian Knowledge Systems",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/indian-knowledge-systems": {
+        slug: "/indian-knowledge-systems",
+        title: "Indian Knowledge Systems",
+        breadcrumbLabel: "Indian Knowledge Systems",
+        banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
+    },
+    "/viksit-bharat-2047": {
+        slug: "/viksit-bharat-2047",
+        title: "Viksit Bharat 2047",
+        breadcrumbLabel: "Viksit Bharat 2047",
         banner: "https://cdn.kalingauniversity.ac.in/conferences/conferences-objective.webp",
     },
     "/contact-us": {

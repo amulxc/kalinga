@@ -83,6 +83,7 @@ export default function StudentActivities({
   useModal = false,
   autoplay = true,
   stackedLayout = false,
+  aboutLabel = "",
 }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -201,7 +202,7 @@ export default function StudentActivities({
     return (
       <div className={`bg-[var(--light-gray)] rounded-lg p-5 ${cardHeightClass} flex flex-col`}>
         {stackedLayout && (
-          <h3 className="text-left text-lg mt-0 mb-4 leading-normal">
+          <h3 className="text-left text-xl font-semibold mt-0 mb-4 leading-normal">
             {activity.title}
           </h3>
         )}
@@ -223,13 +224,11 @@ export default function StudentActivities({
         )}
 
         {stackedLayout && (activity.date || activity.organisedBy) && (
-          <div className="mt-4 mb-3 space-y-2 text-left text-sm text-neutral-800">
+          <div className="mt-4 mb-3 flex flex-col gap-5 text-left text-sm text-neutral-800">
             {activity.date && (
-              <p className="m-0">
+              <p className="m-0 text-base font-semibold">
                 <span className="font-bold">Date - </span>
-                <span className="bg-[var(--dark-orange-red-light)] px-2 py-0.5 rounded font-semibold text-[#000]">
-                  {formatActivityDate(activity.date)}
-                </span>
+                {formatActivityDate(activity.date)}
               </p>
             )}
             {activity.organisedBy && (
@@ -255,6 +254,7 @@ export default function StudentActivities({
 
         <div className="text-left flex-grow text-neutral-800">
           <p className="m-0 text-sm whitespace-pre-wrap">
+            {stackedLayout && aboutLabel && <span className="font-bold">{aboutLabel} - </span>}
             {preview}
           </p>
         </div>

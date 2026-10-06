@@ -298,7 +298,7 @@ function NewsAndEvents() {
   const upcomingevents = [
     {
       id: 'icdiacs-26',
-      title: '3rd International Conference on Digital Intelligence: AI, Cybersecurity and Computing for a Sustainable Future (ICDIACS 2026)',
+      title: 'ICDIACS 2026',
       description: 'The conference provides a platform for researchers, academicians, industry experts, and innovators to discuss advancements in AI, Cybersecurity, Digital Intelligence, IoT, Data Science, and Sustainable Digital Technologies.',
       date: '27th-28th October, 2026',
       organisedBy: 'Department of Computer Science & Faculty of Information Technology',
@@ -309,7 +309,7 @@ function NewsAndEvents() {
     },
     {
       id: 'global-conference-law',
-      title: 'Global Conference on Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance',
+      title: 'Two-Day Global Conference on Emerging Trends in Artificial Intelligence',
       description: 'The conference provides a global platform for legal professionals, academicians, researchers, policymakers, and industry experts to discuss comparative legal and regulatory approaches to AI governance.',
       date: '20th-21st November, 2026',
       organisedBy: 'Faculty of Law',
@@ -320,7 +320,7 @@ function NewsAndEvents() {
     },
     {
       id: 'ai-for-humanity-27',
-      title: '3rd International Conference on AI for Humanity: Leveraging Indian Knowledge Systems to Accelerate Sustainable Development Goals',
+      title: '3rd International Conference on AI For Humanity',
       description: 'The conference aims to explore the role of Artificial Intelligence and Indian Knowledge Systems in addressing global sustainability challenges.',
       date: '22nd-23rd January, 2027',
       organisedBy: 'Faculty of Education',
@@ -331,7 +331,7 @@ function NewsAndEvents() {
     },
     {
       id: 'scisustain-27',
-      title: 'SciSustain 2027 - International Conference on AI-Driven Scientific Innovations for Sustainable Development Goals',
+      title: 'SciSustain 2027',
       description: 'The conference promotes interdisciplinary collaboration by integrating Artificial Intelligence with Materials Science, Mathematical Sciences, Life Sciences, Forensic Science, Environmental Sciences, and more.',
       date: '19th-20th January, 2027',
       organisedBy: 'Faculty of Science',
@@ -342,7 +342,7 @@ function NewsAndEvents() {
     },
     {
       id: 'icbtaisg-27',
-      title: 'International Conference on Business Transformation in the Age of AI, Sustainability and Inclusive Growth (ICBTAISG - 2027)',
+      title: 'ICBTAISG 2027',
       description: 'The conference aims to exchange ideas, present innovative research, and explore strategies to build resilient, sustainable, and inclusive businesses in an AI-driven economy.',
       date: '23rd-24th February, 2027',
       organisedBy: 'Faculty of Commerce and Management',
@@ -353,7 +353,7 @@ function NewsAndEvents() {
     },
     {
       id: 'indian-knowledge-systems',
-      title: 'Integration of Indian Knowledge Systems for Sustainable Development and Technological Transformation',
+      title: 'Indian Knowledge Systems',
       description: 'The conference aims to promote the integration of Indian Knowledge Systems (IKS) into contemporary education, research, and innovation for holistic and sustainable development.',
       date: '26th-27th February, 2027',
       organisedBy: 'Faculty of Arts and Humanities',
@@ -364,7 +364,7 @@ function NewsAndEvents() {
     },
     {
       id: 'iceasre-2027',
-      title: 'International Conference on Engineering, Agritech & Sustainable Rural Ecosystems (ICEASRE - 2027)',
+      title: 'ICEASRE 2027',
       description: 'The conference will provide a platform to explore how advancements in engineering and Agritech can address pressing challenges in rural communities.',
       date: '12th-13th March, 2027',
       organisedBy: 'Faculty of Technology',
@@ -375,7 +375,7 @@ function NewsAndEvents() {
     },
     {
       id: 'viksit-bharat-2047',
-      title: 'International Conference on AI and Translational Innovations in Pharmaceutical Sciences and Healthcare for Viksit Bharat @2047',
+      title: 'Viksit Bharat 2047',
       description: 'The conference aims to discuss the transformative role of Artificial Intelligence and translational research in advancing healthcare in India.',
       date: '30th-31st March, 2027',
       organisedBy: 'Faculty of Pharmacy',
@@ -415,6 +415,7 @@ function NewsAndEvents() {
         useModal={true}
         autoplay={false}
         stackedLayout
+        aboutLabel="About the Conference"
       />
       {upcomingEventItems.length > 0 && (
         <StudentActivities
@@ -424,6 +425,7 @@ function NewsAndEvents() {
           activities={upcomingEventItems}
           autoplay={false}
           stackedLayout
+          aboutLabel="About the Event"
         />
       )}
       <MediaCardSlider

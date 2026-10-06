@@ -27,8 +27,8 @@ export default function UltraTechTrainingCentrePage() {
     <main className="bg-white">
       <ImageContent
         imageSrc="/centresofexcellence/ultratech/logo.webp"
-        title="In Collaboration With UltraTech Cement"
-        subtitle=""
+        title="Training and Research Centre"
+        subtitle="In Collaboration With UltraTech Cement"
         description={[
           "UltraTech Cement is a flagship company of the Aditya Birla Group, one of the world’s leading cement manufacturing companies and a major provider of building solutions. The company focuses on quality, innovation, sustainability, and customer satisfaction. This centre of excellence empowers future engineers with industry-ready skills through experiential learning, industry interaction, and applied research. Through hands-on exposure to modern manufacturing processes, emerging technologies, and advanced engineering practices, it strengthens technical competency in cement manufacturing, mechanical engineering, sustainability, automation, and digital technologies.",
         ]}

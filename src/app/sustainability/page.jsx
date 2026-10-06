@@ -1,7 +1,7 @@
 import SustainabilityClient from "./SustainabilityClient";
 
 export const metadata = {
-  title: "Sustainability & SGD Cell | Green Campus | Kalinga University",
+  title: "SDG Cell",
   description: "Kalinga University is committed to the UN Sustainable Development Goals (SDGs). Explore our green initiatives, waste management, and solar energy projects for a better future.",
   keywords: "Sustainability university Raipur, Sustainable Development Goals Chhattisgarh, Green campus Kalinga, SDG implementation India higher education",
   alternates: {
