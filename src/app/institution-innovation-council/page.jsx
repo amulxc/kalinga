@@ -94,6 +94,11 @@ const certificates = [
     src: "https://cdn.kalingauniversity.ac.in/IIC/chart+(6).png",
     alt: "IIC Star Rating 2023-24",
   },
+  {
+    id: 3,
+    src: "/iic/iic-star-rating-2024-25.jpeg",
+    alt: "IIC Star Rating 2024-25",
+  },
 ];
 
 // ================= MASTERCLASS DATA =================

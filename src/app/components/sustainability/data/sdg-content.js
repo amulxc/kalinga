@@ -325,7 +325,10 @@ export const SUSTAINABILITY_POLICIES = [
         goal: "SDG 15 – Life on Land",
         theme: "Biodiversity",
         policies: [
-            "Hazardous Waste Disposal and Management Policy",
+            {
+                label: "Hazardous Waste Disposal and Management Policy",
+                slug: "hazardous-waste-disposal-and-management-policy-sdg-15",
+            },
             "Invasive and Alien Species Impact Reduction Policy",
             "Plastic Waste Reduction and Management Policy",
             "Policy on Conservation of IUCN-Listed and Other Threatened Species",

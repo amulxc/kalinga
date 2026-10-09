@@ -10484,3 +10484,8 @@ export const POLICY_CONTENT = {
         ],
     },
 };
+
+// The SDG 15 listing of this policy shares the SDG 12 text; only its header
+// table (policy-meta.js) differs.
+POLICY_CONTENT["hazardous-waste-disposal-and-management-policy-sdg-15"] =
+    POLICY_CONTENT["hazardous-waste-disposal-and-management-policy"];

@@ -43,6 +43,11 @@ export function resolvePolicy(policy) {
     const label = labelOf(policy);
 
     if (typeof policy !== "string") {
+        // An explicit slug gives a separate generated page to a policy whose
+        // name is shared with another goal (e.g. the SDG 15 hazardous waste page).
+        if (policy.slug) {
+            return { label, href: `${POLICY_BASE_PATH}/${policy.slug}`, isExternal: false };
+        }
         if (policy.pdfUrl) {
             return { label, href: policy.pdfUrl, isExternal: true };
         }
@@ -65,15 +70,17 @@ export const POLICY_PAGES = (() => {
     for (const { goal, policies } of SUSTAINABILITY_POLICIES) {
         for (const policy of policies) {
             // An entry with its own href/pdfUrl is served by that destination.
-            if (typeof policy !== "string") continue;
+            // One with an explicit slug gets its own generated page.
+            if (typeof policy !== "string" && !policy.slug) continue;
 
-            const slug = policySlug(policy);
+            const name = labelOf(policy);
+            const slug = typeof policy === "string" ? policySlug(policy) : policy.slug;
             const existing = bySlug.get(slug);
 
             if (existing) {
                 existing.goals.push(goal);
             } else {
-                bySlug.set(slug, { slug, name: policy, href: `${POLICY_BASE_PATH}/${slug}`, goals: [goal] });
+                bySlug.set(slug, { slug, name, href: `${POLICY_BASE_PATH}/${slug}`, goals: [goal] });
             }
         }
     }

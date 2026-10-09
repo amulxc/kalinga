@@ -16,7 +16,7 @@ const learnCards = [
   "Insights into Sustainable Practices",
 ].map((description, index) => ({ id: index + 1, title: "", description }));
 
-const galleryImages = [1, 2, 3, 4, 5].map((n) => ({
+const galleryImages = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => ({
   id: n,
   image: `/centresofexcellence/ultratech/glimpses/${n}.webp`,
   alt: `UltraTech Cement Training and Research Centre glimpse ${n}`,

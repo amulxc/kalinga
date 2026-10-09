@@ -188,8 +188,15 @@ export const POLICY_META = {
     "hazardous-waste-disposal-and-management-policy": {
         implementedYear: "2021-22",
         approved: "Board of Management on 10.06.2024",
-        notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/90, Dated 28.06.2024",
+        notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/96, Dated 28.06.2024",
         inForceSince: "28.06.2024",
+        nextReview: "2027-28",
+    },
+    "hazardous-waste-disposal-and-management-policy-sdg-15": {
+        implementedYear: "2021-22",
+        approved: "Board of Management on 10.06.2024",
+        notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/107, Dated 10.07.2024",
+        inForceSince: "10.07.2024",
         nextReview: "2027-28",
     },
     "landfill-waste-management-and-reduction-policy": {
