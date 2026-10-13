@@ -65,7 +65,15 @@ function PolicyBlocks({ blocks }) {
                                         <tr key={rowIndex}>
                                             {row.map((cell, cellIndex) => (
                                                 <td key={cellIndex} className="border border-gray-200 p-3 align-top">
-                                                    {cell}
+                                                    {Array.isArray(cell) ? (
+                                                        <ul className="space-y-2 pl-5 list-disc marker:text-[var(--button-red)]">
+                                                            {cell.map((item) => (
+                                                                <li key={item.slice(0, 60)}>{item}</li>
+                                                            ))}
+                                                        </ul>
+                                                    ) : (
+                                                        cell
+                                                    )}
                                                 </td>
                                             ))}
                                         </tr>

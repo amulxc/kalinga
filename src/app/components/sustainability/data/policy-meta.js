@@ -360,4 +360,18 @@ export const POLICY_META = {
         inForceSince: "25.08.2024",
         nextReview: "2027-28",
     },
+    "policy-for-scholarships-and-fee-concessions": {
+        implementedYear: "2015-16",
+        approved: "Board of Management on 09.08.2024",
+        notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/129, Dated 25.08.2024",
+        inForceSince: "25.08.2024",
+        nextReview: "2027-28",
+    },
+    "policy-for-students-council": {
+        implementedYear: "2015-16",
+        approved: "Board of Management on 09.08.2024",
+        notification: "Notified By Registrar vide - Ref. No. KU/2024/Reg./NH/131, Dated 25.08.2024",
+        inForceSince: "25.08.2024",
+        nextReview: "2027-28",
+    },
 };

@@ -238,6 +238,8 @@ export const SUSTAINABILITY_POLICIES = [
             "Internship & Training Policy",
             "Policy for Teaching Enhancement",
             "Policy for Mentoring Programmes",
+            "Policy for Scholarships & Fee Concessions",
+            "Policy for Students’ Council",
         ],
     },
     {
