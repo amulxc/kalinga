@@ -142,3 +142,17 @@ export const ANNUAL_REPORTS = [
             "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2024-2025_compressed.pdf",
     },
 ];
+
+export const MOUS = [
+    { label: "MoU with City Eye Care Hospital", pdfUrl: "/sustainability/mous/city-eye-care-hospital.pdf" },
+    { label: "MoU with Kopalvani Child Welfare Organization", pdfUrl: "/sustainability/mous/kopalvani-child-welfare-organization.pdf" },
+    { label: "MoU with M/s. Adatte E-Waste Management Private Limited", pdfUrl: "/sustainability/mous/adatte-e-waste-management.pdf" },
+    { label: "MoU with New Gurukul Education Society (NGES)", pdfUrl: "/sustainability/mous/new-gurukul-education-society.pdf" },
+    { label: "MoU with NH MMI Narayana Superspeciality Hospital", pdfUrl: "/sustainability/mous/nh-mmi-narayana-superspeciality-hospital.pdf" },
+    { label: "MoU with Ramkrishna Care Hospital, Raipur", pdfUrl: "/sustainability/mous/ramkrishna-care-hospital.pdf" },
+    { label: "MoU with Saptgiri Hospital", pdfUrl: "/sustainability/mous/saptgiri-hospital.pdf" },
+    { label: "MoU with Shri Ganesh Vinayak Eye Hospital", pdfUrl: "/sustainability/mous/shri-ganesh-vinayak-eye-hospital.pdf" },
+    { label: "MoU with Urmila Memorial Hospital", pdfUrl: "/sustainability/mous/urmila-memorial-hospital.pdf" },
+    { label: "MoU with VY Hospital, Kamal Vihar, Raipur", pdfUrl: "/sustainability/mous/vy-hospital.pdf" },
+    { label: "MoU with Yash Foundation", pdfUrl: "/sustainability/mous/yash-foundation.pdf" },
+];

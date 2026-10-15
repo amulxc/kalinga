@@ -5,7 +5,7 @@ import HTMLFlipBook from 'react-pageflip';
 import { Document, Page as ReactPdfPage, pdfjs } from 'react-pdf';
 
 // Set up PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";

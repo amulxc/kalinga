@@ -5,7 +5,12 @@ import HTMLFlipBook from 'react-pageflip';
 import { Document, Page as ReactPdfPage, pdfjs } from 'react-pdf';
 
 // Set up PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// Self-hosted (CSP blocks third-party workers). Copy of react-pdf's pdfjs-dist worker; refresh when upgrading react-pdf.
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+
+// CDN PDFs have no CORS headers; route them through the same-origin rewrite in next.config.mjs
+const CDN_ORIGIN = 'https://cdn.kalingauniversity.ac.in/';
+const toLoadableUrl = (url) => (url && url.startsWith(CDN_ORIGIN) ? `/cdn-files/${url.slice(CDN_ORIGIN.length)}` : url);
 
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
@@ -237,7 +242,7 @@ const FlipbookModal = ({ isOpen, onClose, pdfUrl, title }) => {
                         {/* Flipbook Content area */}
                         <div className="p-1">
                             <Document
-                                file={pdfUrl}
+                                file={toLoadableUrl(pdfUrl)}
                                 onLoadSuccess={onDocumentLoadSuccess}
                                 onLoadError={onDocumentLoadError}
                                 loading={

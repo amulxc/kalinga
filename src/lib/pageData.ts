@@ -344,7 +344,7 @@ export const pageDataMap: Record<string, PageData> = {
     "/institution-innovation-council": {
         slug: "/institution-innovation-council",
         title: "Institution Innovation Council",
-        banner: "https://cdn.kalingauniversity.ac.in/contact-us/contact-us-banner.webp",
+        banner: "/images/iic/iic-banner.jpg",
     },
     "/internal-quality-assurance-cell": {
         slug: "/internal-quality-assurance-cell",
@@ -592,7 +592,7 @@ export const pageDataMap: Record<string, PageData> = {
     "/unnat-bharat-abhiyan": {
         slug: "/unnat-bharat-abhiyan",
         title: "Unnat Bharat Abhiyan",
-        banner: "https://cdn.kalingauniversity.ac.in/kif/kif-banner.webp",
+        banner: "/images/uba/uba-banner.jpg",
     },
     "/value-added-course": {
         slug: "/value-added-course",

@@ -10,6 +10,7 @@ import MissionVisionSection from "../components/sustainability/sections/MissionV
 import CompositionSection from "../components/sustainability/sections/CompositionSection";
 import SustainabilityPoliciesSection from "../components/sustainability/sections/SustainabilityPoliciesSection";
 import CentresOfExcellenceSection from "../components/sustainability/sections/CentresOfExcellenceSection";
+import MoUsSection from "../components/sustainability/sections/MoUsSection";
 import AnnualReportsSection from "../components/sustainability/sections/AnnualReportsSection";
 import SdgGoalsSection from "../components/sustainability/sections/SdgGoalsSection";
 import InitiativesSection from "../components/sustainability/sections/InitiativesSection";
@@ -53,6 +54,7 @@ const SustainabilityClient = () => {
                         <CompositionSection />
                         <SustainabilityPoliciesSection />
                         <CentresOfExcellenceSection />
+                        <MoUsSection />
                         <AnnualReportsSection />
                         <SdgGoalsSection />
                         <InitiativesSection />

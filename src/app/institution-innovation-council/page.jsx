@@ -210,7 +210,10 @@ export default function InstitutionInnovationCouncil() {
 
 
       <ImageContent
-        imageSrc="https://cdn.kalingauniversity.ac.in/research/research-main-content.webp"
+        imageSrc="/images/iic/iic-logo.png"
+        imageAlt="Institution's Innovation Council (Ministry of Education Initiative)"
+        imageWidth={512}
+        imageHeight={230}
         description="An Initiative of the Ministry of Education"
         additionalContent={[
           "In 2018, the Ministry of Education (MoE), through the MoE’s Innovation Cell (MIC), launched the Institution’s Innovation Council (IIC) in collaboration with AICTE for Higher Educational Institutions (HEIs) to promote the culture of innovation and start-up ecosystem in educational institutions. The main objective of IIC is to engage a large number of faculty members and students in various entrepreneurship and innovation-related activities. It includes IPR, Ideathon, Proof of Concept Development, Design Thinking, and project handling and management at the pre-incubation level. The IIC model enables HEIs to address key challenges such as limited people’s involvement, occasional or unplanned Innovation and Entrepreneurship (I&E) activities, limited engagement of top leaders, poor coordination, weak resource planning, and underutilization of students’ creative potential."
@@ -248,8 +251,10 @@ export default function InstitutionInnovationCouncil() {
       {/* IIC Functions */}
       <ImageListItem
         items={objectives}
-        imageSrc="https://cdn.kalingauniversity.ac.in/common/kalinga-students-2.jpg"
+        imageSrc="/images/iic/iic-functions.png"
+        imageAlt="Speaker at Kalinga University podium"
         title="Functions of IIC at Kalinga University"
+        subtitle=""
         description={false}
       />
 

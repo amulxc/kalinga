@@ -55,6 +55,10 @@ const nextConfig = {
     ];
   },
   // Redirects and headers handled in middleware/next.config
+  // Same-origin proxy for CDN PDFs: the CDN sends no CORS headers, so pdf.js can't fetch them cross-origin
+  async rewrites() {
+    return [{ source: '/cdn-files/:path*', destination: 'https://cdn.kalingauniversity.ac.in/:path*' }];
+  },
   async headers() {
     return [
       {
@@ -80,6 +84,7 @@ const nextConfig = {
               "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://maps.google.com https://www.googletagmanager.com",
               "object-src 'none'",
               "base-uri 'self'",
+              "worker-src 'self' blob:",
               "form-action 'self' https://api.kalingauniversity.ac.in https://admissions.kalingauniversity.ac.in",
             ].join('; '),
           },

@@ -11,6 +11,7 @@ export const SUSTAINABILITY_SECTIONS = [
     { id: "sdg-cell-composition", label: "Composition of SDG Cell" },
     { id: "sustainability-policies", label: "Sustainability Policies" },
     { id: "centres-of-excellence", label: "Centre of Excellence (CoE)" },
+    { id: "mous", label: "MoUs" },
     { id: "annual-reports", label: "Annual Reports" },
     { id: "sustainable-development-goals", label: "Sustainable Development Goals" },
     { id: "our-initiatives", label: "Our Initiatives" },

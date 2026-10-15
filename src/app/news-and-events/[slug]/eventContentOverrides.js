@@ -85,14 +85,14 @@ export const EVENT_CONTENT_OVERRIDES = {
   <tbody>
     <tr>
       <td>Registration Start Date: 1<sup>st</sup> August 2026</td>
-      <td>Registration Start Date: 11<sup>th</sup> October 2026</td>
+      <td>Registration Start Date: 28<sup>th</sup> October 2026</td>
     </tr>
     <tr>
-      <td>Closing Date: 3<sup>rd</sup> October 2026</td>
+      <td>Closing Date: 17<sup>th</sup> October 2026</td>
       <td>Closing Date: 7<sup>th</sup> November 2026</td>
     </tr>
     <tr>
-      <td>Announcement of Shortlisted Teams: 11<sup>th</sup> October 2026</td>
+      <td>Announcement of Shortlisted Teams: 27<sup>th</sup> October 2026</td>
       <td>Presentation of Business Plan (Online/Offline): 23<sup>rd</sup> and 24<sup>th</sup> November 2026</td>
     </tr>
   </tbody>

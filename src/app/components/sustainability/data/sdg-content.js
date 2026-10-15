@@ -361,13 +361,13 @@ export const SUSTAINABILITY_POLICIES = [
 export const SDG_CELL_MEMBERS = [
     { name: "Dr. Vijayalaxmi", designation: "Chairperson", faculty: "IQAC" },
     { name: "Dr. Anita Verma", designation: "Coordinator", faculty: "Faculty of Science" },
+    { name: "Dr. Amita Gautam", designation: "Member", faculty: "Faculty of Technology" },
     { name: "Ms. Ankita Nihlani", designation: "Member", faculty: "Faculty of Commerce & Management" },
     { name: "Dr. Swapnil Jain", designation: "Member", faculty: "Faculty of Technology" },
-    { name: "Dr. Chandra Bhoosan Singh", designation: "Member", faculty: "Faculty of Commerce & Management" },
+    { name: "Dr. Chandra Bhooshan Singh", designation: "Member", faculty: "Faculty of Commerce & Management" },
     { name: "Dr. Priyanka Gupta", designation: "Member", faculty: "Faculty of Science" },
     { name: "Dr. Anushree Saha", designation: "Member", faculty: "Faculty of Science" },
     { name: "Ms. Sonali Kispotta", designation: "Member", faculty: "Faculty of Arts & Humanities" },
-    { name: "Ms. Jesika Minj", designation: "Member", faculty: "Faculty of Arts & Humanities" },
     { name: "Ms. Moumita Pal", designation: "Member", faculty: "Faculty of Arts & Humanities" },
     { name: "Mr. Ashutosh Kumar", designation: "Student Member", faculty: "B.Tech. (CSE) – 7th Semester" },
 ];

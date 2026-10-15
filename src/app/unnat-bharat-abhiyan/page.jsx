@@ -106,15 +106,12 @@ const ubaContact = [
 
 /* ---------------- UBA Team ---------------- */
 const ubaTeamTable = [
-  { slNo: 1, name: "Dr. Vijayalaxmi Biradar", designation: "Director IQAC", role: "Member" },
-  { slNo: 2, name: "Dr. Smita Premanand", designation: "Assistant Professor, NSS Program Officer", role: "Member" },
-  { slNo: 3, name: "Mr. Anup Kumar Jana", designation: "Assistant Professor", role: "Member" },
-  { slNo: 4, name: "Mr. Sarat Chandra Mohanty", designation: "Assistant Professor", role: "Member" },
-  { slNo: 5, name: "Dr. Anu G Pillai", designation: "Assistant Professor", role: "Member" },
-  { slNo: 6, name: "Dr. Anita Verma", designation: "Assistant Professor", role: "Member" },
-  { slNo: 7, name: "Ms. Rupal Gupta", designation: "Research Associate", role: "Member" },
-  { slNo: 8, name: "Mr. Ashwan Kumar Sahu", designation: "IQAC Office Assistant", role: "Member" },
-  { slNo: 9, name: "Mr. Hemant Kumar Sahu", designation: "IQAC Office Assistant", role: "Member" },
+  { slNo: 1, name: "Dr. Vijayalaxmi", designation: "Director IQAC", role: "Member" },
+  { slNo: 2, name: "Dr. Harsha Sharma", designation: "NSS Program Officer", role: "Member" },
+  { slNo: 3, name: "Mr. Abhishek Kumar Gupta", designation: "Research Assistant", role: "Member" },
+  { slNo: 4, name: "Mr. Ashwan Kumar Sahu", designation: "IQAC Office Assistant", role: "Member" },
+  { slNo: 5, name: "Mr. Hemant Sahu", designation: "IQAC Office Assistant", role: "Member" },
+  { slNo: 6, name: "Mr. Ashutosh Kumar", designation: "IQAC Intern", role: "Member" },
 ];
 
 
@@ -196,15 +193,16 @@ export default function UnnatBharatAbhiyanPage() {
         description={[
           "Kalinga University proudly participates in the Unnat Bharat Abhiyan as a voluntary organisation by contributing towards rural progress. It has received approval on 07-10-2022. The university has taken significant measures to promote sustainable solutions and improve its infrastructure and lifestyle. Through fieldwork and surveys, it encourages rural empowerment by bridging the knowledge with the real community needs.",
         ]}
-        imageUrl="https://cdn.kalingauniversity.ac.in/common/students-3.jpg"
+        imageUrl="/images/uba/uba-commitment.jpg"
       />
 
       <VisionMission data={visionMissionData} showImg={false} />
 
       <ImageListItem
         items={objectives}
-        imageSrc="https://cdn.kalingauniversity.ac.in/common/kalinga-students-2.jpg"
+        imageSrc="/images/uba/uba-goals.jpg"
         title="Goals of Unnat Bharat Abhiyan"
+        subtitle=""
         description={false}
       />
       <AdmissionSteps
@@ -388,6 +386,7 @@ export default function UnnatBharatAbhiyanPage() {
 
                   <div className="mt-8">
                     <Gallery
+                      enableLightbox
                       title="Glimpses"
                       images={ubaImages}
                       backgroundColor="bg-white"
