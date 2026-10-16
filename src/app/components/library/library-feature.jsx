@@ -14,7 +14,7 @@ export default function LibraryGrid() {
         },
         {
           title: "Research Publications",
-          value: "7200+",
+          value: "5000+",
           description: "Scholarly research publications by faculty and researchers.",
         },
 

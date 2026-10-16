@@ -7,12 +7,12 @@ const stats = [
   { number: "3 Cr+", label: "Scholarships Distributed" },
   { number: "130+", label: "Programs Offered" },
   { number: "400+", label: "Recruitment Partners" },
-  { number: "7200+", label: "Research Publications" },
-  { number: "562+", label: "Patents Filed" },
+  { number: "5000+", label: "Research Publications" },
+  { number: "565+", label: "Patents Filed" },
   // { number: "160+", label: "Sponsored Research Projects" },
   // { number: "130+", label: "Consultancy Projects" },
   { number: "200+", label: "MoUs Signed" },
-  { number: "7", label: "Centres of Excellence" },
+  { number: "8", label: "Centres of Excellence" },
   { number: "100+", label: "Advanced Laboratories" },
 ];
 

@@ -120,6 +120,7 @@ export default function PhdPage() {
         items={Items}
         imageSrc="https://cdn.kalingauniversity.ac.in/research-resources/research-toolkit.webp"
         title="Your Research Toolkit"
+        subtitle=""
         description=""
       />
       <section className="pt-16 pb-16 bg-white">

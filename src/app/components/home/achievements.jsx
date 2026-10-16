@@ -43,13 +43,13 @@ const achievements = [
   {
     id: 6,
     title: 'Research Publications',
-    number: '7200+',
+    number: '5000+',
     description: 'Peer-reviewed contributions',
   },
   {
     id: 7,
     title: 'Patents',
-    number: '562+',
+    number: '565+',
     description: 'Innovations protected',
   },
   // {
@@ -73,7 +73,7 @@ const achievements = [
   {
     id: 11,
     title: 'Centres of Excellence',
-    number: '7',
+    number: '8',
     description: 'Specialized research and innovation hubs',
   },
   {

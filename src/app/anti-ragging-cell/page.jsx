@@ -202,7 +202,7 @@ function SportsFacilitiesTabs() {
 
   const renderTabContent = (tabId) => {
     if (tabId === "y2024")
-      return <EventsTable title="Anti-Ragging Committee (2023-24)" description="The Anti-Ragging Committee is the Supervisory and Advisory Committee in preserving a culture of Ragging-Free Environment in Kalinga University Campus. The Anti-Ragging Squad- office bearers work under the Supervision of the Anti-Ragging Committee and engage in the work of checking places like Hostels, Buses, Canteens, Classrooms and other places of student congregation. The Anti-Ragging Committee is involved in designing strategies and an action plan for curbing the Menace of Ragging in the college by adopting an array of activities." data={events2024} />;
+      return <EventsTable title="Anti-Ragging Committee (2026-27)" columns={committeeColumns} description="The Anti-Ragging Committee is the Supervisory and Advisory Committee in preserving a culture of Ragging-Free Environment in Kalinga University Campus. The Anti-Ragging Squad- office bearers work under the Supervision of the Anti-Ragging Committee and engage in the work of checking places like Hostels, Buses, Canteens, Classrooms and other places of student congregation. The Anti-Ragging Committee is involved in designing strategies and an action plan for curbing the Menace of Ragging in the college by adopting an array of activities." data={events2026} />;
 
     if (tabId === "y2023")
       return <EventsTable title="Anti-Ragging Squad (2023-24)
@@ -302,8 +302,8 @@ function SportsFacilitiesTabs() {
   );
 }
 
-function EventsTable({ title, description, data }) {
-  const columns = [
+function EventsTable({ title, description, data, columns: customColumns }) {
+  const columns = customColumns || [
     {
       key: "sno",
       label: "S. No.",
@@ -349,19 +349,28 @@ function EventsTable({ title, description, data }) {
   );
 }
 
-const events2024 = [
-  { sno: 1, name: "Dr. Swapnil Jain", designation: "Head of the Committee", area: "Chief Proctor" },
-  { sno: 2, name: "Mr. Badrinath Kesharwani", designation: "Member", area: "Civil Representative" },
-  { sno: 3, name: "Mr. Gopal Krishna Agrawal", designation: "Member", area: "NGO Representative" },
-  { sno: 4, name: "Mr. Lallan Singh", designation: "Member", area: "Police Representative" },
-  { sno: 5, name: "Mr. Kailash Agrawal", designation: "Member", area: "Local Media" },
-  { sno: 6, name: "Mr. Sarvan Droliya", designation: "Member", area: "Social Worker" },
-  { sno: 7, name: "Dr. Rahul Mishra", designation: "Member", area: "Faculty Member" },
-  { sno: 8, name: "Dr. Sushma Dubey", designation: "Member", area: "Faculty Member" },
-  { sno: 9, name: "Dr. Amit Joshi", designation: "Member", area: "Faculty Member" },
-  { sno: 10, name: "Mr. Suresh Sinha", designation: "Member", area: "Parents Representative" },
-  { sno: 11, name: "Ms. Lavanya Bilesiya", designation: "Member", area: "Student Representative" },
-  { sno: 12, name: "Mr. Vishal Kr. Singh", designation: "Member", area: "Student Representative" },
+const committeeColumns = [
+  { key: "sno", label: "S.No.", width: "w-20" },
+  { key: "name", label: "Name of the Member", width: "flex-1" },
+  { key: "designation", label: "Designation", width: "w-56" },
+  { key: "role", label: "Status / Role", width: "w-56" },
+];
+
+const events2026 = [
+  { sno: 1, name: "Dr. Rupesh Thakur", designation: "Chief Proctor & HoD-Biochemistry", role: "Head of the Committee" },
+  { sno: 2, name: "Dr. A. Rajshekhar", designation: "Dean, Faculty of Arts & Humanities", role: "Member" },
+  { sno: 3, name: "Ms. Saloni Tyagi", designation: "Faculty", role: "Member" },
+  { sno: 4, name: "Ms. Ankita Nilhani", designation: "Assistant Registrar", role: "Member" },
+  { sno: 5, name: "Mr. Manish Singh", designation: "Administrator & Chief Warden", role: "Member" },
+  { sno: 6, name: "Mr Kailash Agrawal", designation: "Civil Representative", role: "Member" },
+  { sno: 7, name: "Dr. Sanyukta Gandhi", designation: "NGO Representative", role: "Member" },
+  { sno: 8, name: "Mr. Vinod Singh", designation: "Police Representative", role: "Member" },
+  { sno: 9, name: "Mr. Siddharth Jain", designation: "Local Media", role: "Member" },
+  { sno: 10, name: "Mr. Bhupesh Vaishnav", designation: "Social Worker", role: "Member" },
+  { sno: 11, name: "Mr. Santosh Kumar Chandrakar", designation: "Parents Representative", role: "Member" },
+  { sno: 12, name: "Dr. Babhuti Kashyap", designation: "Counselor", role: "Member" },
+  { sno: 13, name: "Mr. Amit Patel", designation: "Boys Students Representative", role: "Member" },
+  { sno: 14, name: "Ms. Simran Sharma", designation: "Girls Students Representative", role: "Member" },
 ];
 const events2023 = [
   { sno: 1, name: "Dr. Sandeep Gandhi", designation: "Head of the Committee", area: "Registrar" },

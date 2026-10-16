@@ -13,14 +13,14 @@ export default function OtherCommittees() {
       { key: "position", label: "", width: "flex-1" },
     ],
     data: [
-      { slNo: "1", name: "Dr. Rahul Mishra", position: "Dean, Academic Affairs - Chairperson of the Committee" },
-      { slNo: "2", name: "Lt. Vibha Chandrakar", position: "In-Charge Dean, Student Welfare" },
-      { slNo: "3", name: "Mrs. Saloni Tyagi", position: "In-Charge HoD, Faculty of Law" },
-      { slNo: "4", name: "Dr. Shilpi Shrivastava", position: "HoD, Chemistry" },
-      { slNo: "5", name: "Mr. Manish Singh", position: "Chief Warden" },
-      { slNo: "6", name: "Dr. Swapnil Jain", position: "Chief Proctor" },
-      { slNo: "7", name: "Dr. Naresh Kumar Khunte", position: "Assistant Professor, Faculty of Technology" },
-      { slNo: "8", name: "Dr. Lincy Roy", position: "Assistant Professor" },
+      { slNo: "1", name: "Dr. Lincy Roy", position: "Dy. Registrar & Head HR - Head of the Committee" },
+      { slNo: "2", name: "Dr. Rupesh Thakur", position: "Chief Proctor & HoD-Biochemistry" },
+      { slNo: "3", name: "Mrs. Shilpi N Tanwani", position: "Academic Officer" },
+      { slNo: "4", name: "Ms Saloni Tyagi", position: "Faculty" },
+      { slNo: "5", name: "Ms. Parvinder Shesh", position: "International Student Advisor" },
+      { slNo: "6", name: "Ms. Riya Sen", position: "Student Representative" },
+      { slNo: "7", name: "Ms. Simran Sharma", position: "Student Representative" },
+      { slNo: "8", name: "Mr. Naresh Sharma", position: "Lawyer" },
     ],
   };
 
@@ -86,10 +86,10 @@ export default function OtherCommittees() {
     ],
   };
 
-  // SC/ST Cell
+  // SC & ST Committee
   const scStCell = {
     id: 4,
-    title: "SC/ST Cell",
+    title: "SC & ST Committee",
     columns: [
       { key: "slNo", label: "S.No.", width: "w-16" },
       { key: "name", label: "Name", width: "flex-1" },
@@ -99,17 +99,17 @@ export default function OtherCommittees() {
     data: [
       { slNo: "1", name: "Dr. Nuresh Khunte", designation: "Head of the Committee", area: "Faculty" },
       { slNo: "2", name: "Dr. Harsha Patil", designation: "Member", area: "Faculty" },
-      { slNo: "3", name: "Mr. Arun Kumar Lahre", designation: "Member", area: "Faculty" },
-      { slNo: "4", name: "Mr. Aayush Gondale", designation: "Member", area: "Faculty" },
+      { slNo: "3", name: "Mr. Abhishek Kumar", designation: "Member", area: "Faculty" },
+      { slNo: "4", name: "Mr. Harsh Khare", designation: "Member", area: "Non-Teaching" },
       { slNo: "5", name: "Mr. Sobharam Sonekar", designation: "Member", area: "Non-Teaching" },
-      { slNo: "6", name: "Ms. Nikita Joshi", designation: "Member", area: "Assistant DSW" },
+      { slNo: "6", name: "Mr. Kuldeep Banjare", designation: "Member", area: "Medical Staff" },
     ],
   };
 
-  // OBC Cell
+  // OBC Committee
   const obcCell = {
     id: 5,
-    title: "OBC Cell",
+    title: "OBC Committee",
     columns: [
       { key: "slNo", label: "S.No.", width: "w-16" },
       { key: "name", label: "Name", width: "flex-1" },
@@ -117,12 +117,12 @@ export default function OtherCommittees() {
       { key: "area", label: "Area", width: "w-32" },
     ],
     data: [
-      { slNo: "1", name: "Dr. Anjaneyulu Bendi", designation: "Head of the Committee", area: "Faculty" },
-      { slNo: "2", name: "Dr. D. M. Sahu", designation: "Member", area: "Faculty" },
+      { slNo: "1", name: "Dr. Bendi Anjaneyulu", designation: "Head of the Committee", area: "Deputy DAA & Dean (I/C), Faculty of Science" },
+      { slNo: "2", name: "Dr D. M. Sahu", designation: "Member", area: "Faculty" },
       { slNo: "3", name: "Dr. Sanjeev Yadav", designation: "Member", area: "Faculty" },
-      { slNo: "4", name: "Mr. Gaurav Tamrakar", designation: "Member", area: "Faculty" },
-      { slNo: "5", name: "Mr. Rajesh Vishwakarma", designation: "Member", area: "Non-Teaching" },
-      { slNo: "6", name: "Ms. Anita Sahu", designation: "Member", area: "Non-Teaching" },
+      { slNo: "4", name: "Mr Gaurav Tamrakar", designation: "Member", area: "Faculty" },
+      { slNo: "5", name: "Mr Rajesh Vishwakarma", designation: "Member", area: "Non-Teaching" },
+      { slNo: "6", name: "Ms Anita Sahu", designation: "Member", area: "Non-Teaching" },
     ],
   };
 

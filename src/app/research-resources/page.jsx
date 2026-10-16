@@ -186,6 +186,7 @@ export default function ResearchResources() {
         items={Items}
         imageSrc="https://cdn.kalingauniversity.ac.in/research-resources/research-toolkit.webp"
         title="Your Research Toolkit"
+        subtitle=""
         description=""
       />
 

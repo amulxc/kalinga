@@ -552,6 +552,7 @@ const CentralInstrumentationFacilityPage = () => {
         items={items}
         imageSrc="https://cdn.kalingauniversity.ac.in/CIF/cif-objectives+(1).webp"
         title="Objectives of CIF"
+        subtitle=""
         description="Explore state-of-the-art instruments that support advanced research across various disciplines."
         buttonText="Read More"
         className="!bg-[var(--background)]"

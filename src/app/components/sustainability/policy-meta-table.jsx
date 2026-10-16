@@ -21,7 +21,18 @@ export default function PolicyMetaTable({ meta }) {
                                 {label}
                             </th>
                             <td className="border border-gray-200 p-3 text-[var(--text-gray-card)]">
-                                {meta[key]}
+                                {key === "notification" && meta.notificationUrl ? (
+                                    <a
+                                        href={meta.notificationUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[var(--button-red)] underline hover:no-underline"
+                                    >
+                                        {meta[key]}
+                                    </a>
+                                ) : (
+                                    meta[key]
+                                )}
                             </td>
                         </tr>
                     ))}

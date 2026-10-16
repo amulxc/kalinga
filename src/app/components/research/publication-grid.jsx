@@ -10,7 +10,7 @@ export default function PublicationGrid({
   stats = [
     {
       title: "Research Publications",
-      value: "7200 +",
+      value: "5000 +",
       description: "Kalinga University has produced a strong body of research publications in reputed national and international journals, reflecting academic depth and innovation.",
     },
     // {
@@ -20,7 +20,7 @@ export default function PublicationGrid({
     // },
     {
       title: "Patents",
-      value: "562 +",
+      value: "565 +",
       description: "Our institution actively supports patent filing and innovation, resulting in numerous granted and filed patents that translate research into real-world solutions.",
     },
     {
@@ -41,7 +41,7 @@ export default function PublicationGrid({
     {
       id: 1,
       title: 'Centres of Excellence (CoE)',
-      value: '7',
+      value: '8',
       description: "Centres of Excellence include: AI & ML Courses Training Centre; Automobile Training Centre; BRIDGE Courses Training Centre; Robotics, Coding, & Drone; Electric Vehicles Training Centre; IIoT Training Centre; and MSME Training Centre.",
 
     },
@@ -54,7 +54,7 @@ export default function PublicationGrid({
     {
       id: 3,
       title: 'Books & Chapters',
-      value: '4263 +',
+      value: '3800 +',
       description: "Published a vast collection of books and book chapters across diverse disciplines.",
     }
   ]
