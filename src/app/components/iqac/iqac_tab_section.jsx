@@ -2125,7 +2125,7 @@ export default function IqacTabSection() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       {/* 2025-2029 Plan */}
                       <a
-                        href="https://cdn.kalingauniversity.ac.in/IQAC/strategic-plan/Strategic-Plan-for-2025-29.pdf"
+                        href="/iqac/strategic-plan/Strategic-Plan-for-2025-29.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-[var(--button-red)] hover:shadow-lg transition-all duration-300"
