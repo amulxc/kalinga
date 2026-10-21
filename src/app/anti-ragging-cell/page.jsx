@@ -140,6 +140,7 @@ export default function Page() {
         items={objectives}
         imageSrc="https://cdn.kalingauniversity.ac.in/anti-ragging-cell/2149502730.jpg"
         title="Anti-Ragging Policy"
+        subtitle=""
         description="As per the order of Supreme Court of India and subsequent Notification from University Grants Commission (UGC), ragging constitutes one or more of any intention by any student or group of students on:"
       />
 

@@ -289,11 +289,16 @@ export default function DynamicDepartmentPage() {
       ? "Department of Management"
       : displayDepartmentName;
 
+    // Override head image for specific slug
+    const headImageSrc = slug === "faculty-of-science"
+      ? "/departments/dr-anjaneyulu-bendi.webp"
+      : faculty.image || "";
+
     return {
       title: faculty.name || "",
       subtitle: `Message from the ${designationName}`,
       department: headDepartmentName,
-      imageSrc: faculty.image || "",
+      imageSrc: headImageSrc,
       quote: faculty.quote_description || "",
       message: faculty.about || "",
     };
