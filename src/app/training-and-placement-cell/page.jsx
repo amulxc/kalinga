@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import MainIntro from '@/app/components/about/main_intro'
-import ImageContent from '@/app/components/ccrc/imagecontent'
 import ImageListItem from '@/app/components/ccrc/imagelistitem'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/app/components/general/tab'
 import CareerPath from '@/app/components/course/career_path'
@@ -311,14 +310,6 @@ const TrainingAndPlacementCell = () => {
         showKnowMore={true}
       />
       <ImageListItem items={items} description="" imageSrc="https://cdn.kalingauniversity.ac.in/placement/placement-training-cell/placement-intro-2.webp" title="Training And Placement Cell" />
-      <ImageContent
-        title="Our Career And Corporate Resource Centre"
-        description="The Career and Corporate Resource Centre (CCRC) of Kalinga University bridges academic learning and industrial knowledge through collaborations and customised solutions. Our services include: Corporate Trainings & Psychometric Analysis, Consultancy Services: 360 Degree PMS & HRIS, Corporate Social Responsibility, Training and Placements, and Incubation support."
-        imageSrc="https://cdn.kalingauniversity.ac.in/ccrc/ccrclogo.webp"
-        imageAlt="Training And Placement Cell"
-        buttonLink="/career-and-corporate-resource-centre"
-        buttonText="Explore More"
-      />
       <div className="container mx-auto mt-8 rounded-2xl bg-[var(--card-gray)] p-5 md:p-7">
         <Tabs defaultValue="tab1">
           <TabsList className="gap-0">

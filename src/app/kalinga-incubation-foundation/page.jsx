@@ -487,7 +487,6 @@ export default function KIFPage({
       <ImageListItem textClassName="hidden" listItemTextClassName="text-black" imageSrc="https://cdn.kalingauniversity.ac.in/kif/chart+(17).webp" boxItems={boxItems} title="Our Key Offerings" subtitle="About KIF" description="Kalinga Incubation Foundation (KIF) is a platform for students to incubate their ideas and turn them into reality." />
       <QuickLinks links={links} title="What Awaits You At KIF?" description="Discover a comprehensive ecosystem with state-of-the-art infrastructure, expert mentorship, networking opportunities, seed funding support, and hands-on training through workshops and pitch sessions to transform your innovative ideas into successful startups."
         backgroundColor="bg-white" textColorClassName="text-black" showReadMore={false} />
-      <ImageContent title="Career and Corporate Resource Centre" subtitle="About CCRC" description="The Career and Corporate Resource Centre (CCRC) of Kalinga University bridges academic learning and industrial knowledge through collaborations and customised solutions. Our services include: Corporate Trainings & Psychometric Analysis, Consultancy Services: 360 Degree PMS & HRIS, Corporate Social Responsibility, Training and Placements, and Incubation support." imageSrc="https://cdn.kalingauniversity.ac.in/ccrc/ccrclogo.webp" imageAlt="CCRC Banner" buttonLink="/career-and-corporate-resource-centre" buttonText="Read More" />
       <AdmissionSteps
         steps={kifSteps}
         subtitleClassName="hidden"

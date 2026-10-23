@@ -204,11 +204,6 @@ const aboutQuickLinks = [
     description: "Kalinga Incubation Foundation supports students’ innovative business ideas and turns them into successful business ventures.",
   },
   {
-    id: 6,
-    title: "CCRC",
-    description: "Our Career and Corporate Resource Centre (CCRC) prepares students and corporate employees for a successful career through experiential learning methods.",
-  },
-  {
     id: 7,
     title: "Academic Clubs",
     description: "Our department’s clubs will give you real practical exposure through hands-on training programs, guest lectures, workshops, project work, case studies, industrial visits, and creative works.",

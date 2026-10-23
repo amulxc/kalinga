@@ -114,7 +114,7 @@ export const pageDataMap: Record<string, PageData> = {
     },
     "/career-and-corporate-resource-centre": {
         slug: "/career-and-corporate-resource-centre",
-        title: "Career and Corporate Resource Centre",
+        title: "CCRC",
         banner: "https://cdn.kalingauniversity.ac.in/ccrc/IMG-20250409-WA0032-Picsart-AiImageEnhancer.jpg",
         imagePosition: "object-center",
     },

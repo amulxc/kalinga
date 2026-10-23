@@ -374,8 +374,7 @@ export default function CCRCPage() {
     <ImageContent
       imageSrc="https://cdn.kalingauniversity.ac.in/ccrc/ccrclogo.webp"
       imageAlt="CCRC Banner"
-      title="Career and Corporate Resource Centre"
-      subtitle="About CCRC"
+      title="About CCRC"
       description=""
       additionalContent={[]}
     />
