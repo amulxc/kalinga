@@ -35,12 +35,15 @@ export default function SdgGoalsSection() {
                         </>
                     );
 
+                    // PDFs open in a new tab; report pages open in place.
+                    const isPdf = goal.reportUrl?.toLowerCase().endsWith(".pdf");
+
                     return goal.reportUrl ? (
                         <a
                             key={goal.id}
                             href={goal.reportUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            target={isPdf ? "_blank" : undefined}
+                            rel={isPdf ? "noopener noreferrer" : undefined}
                             title={`${goal.alt} - View Report`}
                             className={`${TILE_CLASSES} cursor-pointer`}
                         >

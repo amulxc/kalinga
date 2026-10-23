@@ -64,9 +64,9 @@ function Valueadditioncards() {
             link: "/central-instrumentation-facility",
         },
         {
-            title: "CoE",
+            title: "Centres of Excellence",
             description:
-                "Our Centres of Excellence include: Electric Vehicles (Godawari Electric Motors Pvt. Ltd. - Eblu), IIoT (Technoviz Automation), Robotics, Coding, & Drones (BDS Education), AI-ML (IBM Innovation Centre for Education - ICE), MSME (IamSMEofIndia), BRIDGE Courses (BOSCH), Automobile Training Centre (JustAuto Solutions).",
+                "Our advanced research and training centres include the Electric Vehicles Training Centre - in collaboration with Godawari Electric Motors Pvt. Ltd. (Eblu); IIoT Training Centre - in collaboration with Technoviz Automation; Robotics, Coding, & Drones Training Centre - in collaboration with BDS Education; MSME Training Centre - in collaboration with IamSMEofIndia; BRIDGE Courses Training Centre - in collaboration with BOSCH; AI-ML Courses Training Centre - in collaboration with IBM Innovation Centre for Education; Automobile Training Centre - in collaboration with JustAuto Solutions; and Training and Research Centre - in collaboration with UltraTech Cement.",
             imageSrc:
                 "https://cdn.kalingauniversity.ac.in/godawari/godawari-banner.webp",
             logoSrc: "",

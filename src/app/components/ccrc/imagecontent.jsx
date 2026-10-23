@@ -7,12 +7,12 @@ import SectionHeading from "@/app/components/general/SectionHeading";
 
 export default function ImageContent({
   imageSrc = "https://cdn.kalingauniversity.ac.in/kif/kif.png",
-  imageAlt = "CCRC Banner",
+  imageAlt = "",
   imageWidth = 600,
   imageHeight = 400,
-  title = "Career and Corporate Resource Centre",
-  subtitle = "About CCRC",
-  description = "The Career and Corporate Resource Centre (CCRC) of Kalinga University bridges academic learning and industrial knowledge through collaborations and customised solutions. Our services include: Corporate Trainings & Psychometric Analysis, Consultancy Services: 360 Degree PMS & HRIS, Corporate Social Responsibility, Training and Placements, and Incubation support. ",
+  title = "",
+  subtitle = "",
+  description = "",
   buttonText = "Read More",
   buttonLink = null, // Add link prop for navigation
   certificateLink = null, // Link to certificate
@@ -44,7 +44,7 @@ export default function ImageContent({
         {hasImage && (
           <Image
             src={imageSrc}
-            alt={imageAlt}
+            alt={imageAlt || title}
             width={imageWidth}
             height={imageHeight}
             className="md:col-span-4 col-span-6 w-9/12 md:w-4/5"

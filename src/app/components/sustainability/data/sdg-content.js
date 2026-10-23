@@ -383,6 +383,8 @@ export const SDG_CELL_MEMBERS = [
  */
 export const SDG_GOAL_REPORTS = {
     2: "/sdg-reports/sdg-02-zero-hunger-report.pdf",
+    // SDG 3 has its own report page, which links the full PDF.
+    3: "/sustainability/sdg-3-report",
 };
 
 export const SDG_GOAL_TILES = Array.from({ length: 17 }, (_, index) => {

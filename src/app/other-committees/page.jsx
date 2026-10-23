@@ -86,28 +86,41 @@ export default function OtherCommittees() {
     ],
   };
 
-  // SC-ST and OBC Committee
-  const scStObcCommittee = {
+  // SC & ST Committee
+  const scStCommittee = {
     id: 4,
-    title: "SC-ST and OBC Committee Members",
+    title: "SC & ST Committee",
     columns: [
       { key: "slNo", label: "S.No.", width: "w-16" },
       { key: "name", label: "Name Of Member", width: "flex-1" },
       { key: "position", label: "", width: "flex-1" },
     ],
     data: [
-      { slNo: "1", name: "Dr. Nuresh Khunte", position: "Faculty - Head of the SC & ST Committee" },
+      { slNo: "1", name: "Dr. Nuresh Khunte", position: "Faculty - Head of the Committee" },
       { slNo: "2", name: "Dr. Harsha Patil", position: "Faculty" },
       { slNo: "3", name: "Mr. Abhishek Kumar", position: "Faculty" },
       { slNo: "4", name: "Mr. Harsh Khare", position: "Non-Teaching" },
       { slNo: "5", name: "Mr. Sobharam Sonekar", position: "Non-Teaching" },
       { slNo: "6", name: "Mr. Kuldeep Banjare", position: "Medical Staff" },
-      { slNo: "7", name: "Dr. Bendi Anjaneyulu", position: "Deputy DAA & Dean (I/C), Faculty of Science - Head of the OBC Committee" },
-      { slNo: "8", name: "Dr D. M. Sahu", position: "Faculty" },
-      { slNo: "9", name: "Dr. Sanjeev Yadav", position: "Faculty" },
-      { slNo: "10", name: "Mr Gaurav Tamrakar", position: "Faculty" },
-      { slNo: "11", name: "Mr Rajesh Vishwakarma", position: "Non-Teaching" },
-      { slNo: "12", name: "Ms Anita Sahu", position: "Non-Teaching" },
+    ],
+  };
+
+  // OBC Committee
+  const obcCommittee = {
+    id: 5,
+    title: "OBC Committee",
+    columns: [
+      { key: "slNo", label: "S.No.", width: "w-16" },
+      { key: "name", label: "Name Of Member", width: "flex-1" },
+      { key: "position", label: "", width: "flex-1" },
+    ],
+    data: [
+      { slNo: "1", name: "Dr. Bendi Anjaneyulu", position: "Deputy DAA & Dean (I/C), Faculty of Science - Head of the Committee" },
+      { slNo: "2", name: "Dr D. M. Sahu", position: "Faculty" },
+      { slNo: "3", name: "Dr. Sanjeev Yadav", position: "Faculty" },
+      { slNo: "4", name: "Mr Gaurav Tamrakar", position: "Faculty" },
+      { slNo: "5", name: "Mr Rajesh Vishwakarma", position: "Non-Teaching" },
+      { slNo: "6", name: "Ms Anita Sahu", position: "Non-Teaching" },
     ],
   };
 
@@ -167,7 +180,8 @@ export default function OtherCommittees() {
     internalComplaintCommittee,
     grievanceRedressalCommittee,
     womenCellCommittee,
-    scStObcCommittee,
+    scStCommittee,
+    obcCommittee,
     minorityCell,
     studentCouncil,
   ];

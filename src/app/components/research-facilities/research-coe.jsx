@@ -59,6 +59,13 @@ export default function ResearchCE() {
         image: "https://cdn.kalingauniversity.ac.in/research/justauto-solutions.png",
         href: "/centresofexcellence/automobile",
       },
+      {
+        id: 8,
+        name: "Training and Research Centre",
+        title: "It provides practical knowledge in cement manufacturing, mechanical engineering, sustainability, automation, and digital technologies.",
+        image: "/centresofexcellence/ultratech/logo.webp",
+        href: "/centresofexcellence/ultratech",
+      },
     ],
     []
   );
@@ -79,7 +86,7 @@ export default function ResearchCE() {
 
       <CenterOfExcellence
         title="Centres of Excellence"
-        description="To align academic learning with industrial knowledge we have partnered with seven leading companies that offer skill-based training to students in various high-demanding sectors like electric vehicles, drone technology, AI, cybersecurity, automobiles, and many more. We’re a leading research university, empowering students to go from textbooks to real-world innovation and become ready to stand out in the competitive job market."
+        description="To align academic learning with industrial knowledge we have partnered with eight leading companies that offer skill-based training to students in various high-demanding sectors like electric vehicles, drone technology, AI, cybersecurity, automobiles, and many more. We’re a leading research university, empowering students to go from textbooks to real-world innovation and become ready to stand out in the competitive job market."
         centres={centres.map(c => ({
           ...c,
           // Custom onClick per card

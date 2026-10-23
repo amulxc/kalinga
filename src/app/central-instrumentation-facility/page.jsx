@@ -54,7 +54,7 @@ const CentralInstrumentationFacilityPage = () => {
     },
     {
       title: "Scanning Electron Microscope & Microscopy",
-      startDate: "26.09.2026",
+      startDate: "03.10.2026",
       time: "10:00 A.M. to 5:00 P.M.",
       venue: "Kalinga University",
       price: "INR 1,200/-",
@@ -78,33 +78,6 @@ const CentralInstrumentationFacilityPage = () => {
       qrLabel: "Scan To Register",
       registrationButton: "Register Now",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfot7eI-S2T_mRB4eEfaXSvO-fL1WHAiLQgB-mol7e4GFG3Ag/viewform"
-    },
-    {
-      title: "Foreign Exchange & Commodity Market",
-      startDate: "09.10.2026",
-      time: "09:00 A.M. to 04:00 P.M.",
-      venue: "Kalinga University",
-      mode: "Hybrid (Online and Offline)",
-      price: "INR 1,200/-",
-      priceLabel: "Registration Fees",
-      applications: "Global Currency Trading, Commodity Trading, Risk Management & Hedging, International Business & Finance, Investment & Portfolio Diversification",
-      skills: [
-        "Foreign Exchange Market Fundamentals",
-        "Commodity Market Basics",
-        "Currency & Commodity Trading Strategies",
-        "Market Analysis & Price Trends",
-        "Risk Management"
-      ],
-      skillsLabel: "What You'll Learn",
-      participants: "Students (From any Academic Background), Working Professionals, Startup Founders, Business Owners, Investors, Traders",
-      included: ["Participation Certificate", "Lunch"],
-      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-2.jpg",
-      imageAlt: "Foreign Exchange & Commodity Market",
-      knowMoreButton: "Know More",
-      qrCode: "/cif/hands-on-training-26-27/qr-forex-commodity-market.png",
-      qrLabel: "Scan To Register",
-      registrationButton: "Register Now",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeVWCdozKGoZ4SONAoFP9EHowLn9K6zxQxr0X82qzg4dPcDGQ/viewform?usp=sharing&ouid=109816923151979468296"
     },
     {
       title: "Legal Drafting",
@@ -135,6 +108,28 @@ const CentralInstrumentationFacilityPage = () => {
       qrLabel: "Scan To Register",
       registrationButton: "Register Now",
       registrationLink: "https://forms.gle/kbsvajeK5YMX5czU7"
+    },
+    {
+      title: "Startup 360° from Ideas to Enterprise",
+      startDate: "22.01.2027",
+      venue: "Kalinga University",
+      price: "INR 1,200/-",
+      priceLabel: "Registration Fees",
+      applications: "Startup Development, Entrepreneurship, Business Planning, Market Research, Startup Funding, and Business Growth and Management",
+      skills: [
+        "Identifying Business Opportunities",
+        "Developing a Business Model from Scratch",
+        "Startup Planning and Strategy",
+        "Branding and Marketing Fundamentals",
+        "Funding and Investor Pitching",
+        "Business Registration and Legal Compliance"
+      ],
+      skillsLabel: "What You'll Learn",
+      participants: "Commerce & Management Students, Aspiring Entrepreneurs, Startup Founders, Researchers with Business Ideas, and Individuals Interested in Entrepreneurship",
+      included: ["Participation Certificate", "Lunch"],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-2.jpg",
+      imageAlt: "Startup 360° from Ideas to Enterprise",
+      knowMoreButton: "Know More"
     },
     {
       title: "3D Printing",
@@ -255,6 +250,28 @@ const CentralInstrumentationFacilityPage = () => {
       knowMoreButton: "Know More"
     },
     {
+      title: "Theodolite & Total Station in Surveying",
+      startDate: "20.02.2027",
+      venue: "Kalinga University",
+      price: "INR 1,200/-",
+      priceLabel: "Registration Fees",
+      applications: "Land and Construction Site Surveying, Building and Road Alignment, Topographic and Contour Mapping, Infrastructure Development, Height and Elevation Measurement, and Construction Quality Control",
+      skills: [
+        "Instrument Components and Operating Principles",
+        "Instrument Setup, Centring and Levelling",
+        "Horizontal and Vertical Angle Measurement",
+        "Theodolite and Total Station Operation",
+        "Field Data Recording and Basic Error Checks",
+        "Digital Surveying and Data Workflows"
+      ],
+      skillsLabel: "What You'll Learn",
+      participants: "Diploma/UG/PG Students (Civil Engineering, Surveying, Geomatics, and other relevant fields), Research Scholars, Site Engineers, and Construction Professionals",
+      included: ["Participation Certificate", "Lunch"],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-4.jpg",
+      imageAlt: "Theodolite & Total Station in Surveying",
+      knowMoreButton: "Know More"
+    },
+    {
       title: "High-Performance Liquid Chromatography",
       startDate: "27.02.2027",
       time: "09:00 A.M. to 4:00 P.M.",
@@ -305,6 +322,69 @@ const CentralInstrumentationFacilityPage = () => {
       qrLabel: "Scan To Register",
       registrationButton: "Register Now",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSewSUqs8Gh79oxcPYAUu0DVhRHWV5B8n91D-182wakEmD3Ijw/viewform"
+    },
+    {
+      title: "From Target Identification to Molecular Interaction: A Hands-on Training in Computational Drug Discovery",
+      startDate: "13.03.2027",
+      venue: "Kalinga University",
+      price: "INR 1,200/-",
+      priceLabel: "Registration Fees",
+      applications: "Drug Discovery and Development, Pharmaceutical Research, Molecular Biology and Biotechnology, Biomedical Research, Disease Target Identification",
+      skills: [
+        "Target Identification and Validation",
+        "Basics of Computational Drug Discovery",
+        "Molecular Docking Techniques",
+        "Protein–Ligand Interaction Analysis",
+        "Molecular Interaction Visualization"
+      ],
+      skillsLabel: "What You'll Learn",
+      participants: "UG/PG/Ph.D. Students (Biotechnology, Pharmacy, Bioinformatics, Life Sciences, and other relevant fields), Research Scholars, Researchers, Industry Professionals",
+      included: ["Participation Certificate", "Lunch"],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-5.jpg",
+      imageAlt: "From Target Identification to Molecular Interaction: A Hands-on Training in Computational Drug Discovery",
+      knowMoreButton: "Know More"
+    },
+    {
+      title: "From Sequence to Evolutionary Tree: A Complete Hands-on Workflow in Molecular Phylogenetics",
+      startDate: "27.03.2027",
+      venue: "Kalinga University",
+      price: "INR 1,200/-",
+      priceLabel: "Registration Fees",
+      applications: "Evolutionary Biology Research, Molecular Biology and Biotechnology, Genetic Diversity Analysis, Species Identification and Classification, and Biodiversity and Conservation Studies",
+      skills: [
+        "Basics of Molecular Phylogenetics",
+        "DNA and Protein Sequence Retrieval",
+        "Sequence Alignment Techniques",
+        "Phylogenetic Tree Construction & Interpretation",
+        "Evolutionary Relationship Analysis"
+      ],
+      skillsLabel: "What You'll Learn",
+      participants: "UG/PG/Ph.D. Students (Biotechnology, Bioinformatics, Zoology, Botany, Microbiology, Life Sciences, and other relevant fields), Research Scholars, Researchers, and Industry Professionals",
+      included: ["Participation Certificate", "Lunch"],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-6.jpg",
+      imageAlt: "From Sequence to Evolutionary Tree: A Complete Hands-on Workflow in Molecular Phylogenetics",
+      knowMoreButton: "Know More"
+    },
+    {
+      title: "SEM and Microscopy",
+      startDate: "03.04.2027",
+      venue: "Kalinga University",
+      price: "INR 1,200/-",
+      priceLabel: "Registration Fees",
+      applications: "Nanotechnology Research, Material Science & Engineering, Biomedical & Life Sciences, Electronics Manufacturing, and Forensic Science",
+      skills: [
+        "SEM Principles",
+        "Sample Preparation Methods",
+        "Elemental Composition Analysis",
+        "Microstructural Features Analysis",
+        "Image Capturing"
+      ],
+      skillsLabel: "What You'll Learn",
+      participants: "Engineering & Technology Students, Forensic Science Students and Professionals, Research Scholars, and Industry Professionals",
+      included: ["Participation Certificate", "Lunch"],
+      imageUrl: "https://cdn.kalingauniversity.ac.in/CIF/program-26-27/images-7.jpg",
+      imageAlt: "SEM and Microscopy",
+      knowMoreButton: "Know More"
     },
     {
       title: "X-Ray Diffractometer",

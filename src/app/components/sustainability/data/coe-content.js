@@ -129,17 +129,17 @@ export const ANNUAL_REPORTS = [
     {
         label: "Annual Report 2022–23",
         pdfUrl:
-            "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2022-2023_compressed.pdf",
+            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual+Report+2022-23+.pdf",
     },
     {
         label: "Annual Report 2023–24",
         pdfUrl:
-            "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2023-2024_compressed.pdf",
+            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2023-2024.pdf",
     },
     {
         label: "Annual Report 2024–25",
         pdfUrl:
-            "https://cdn.kalingauniversity.ac.in/sdg-cell/Annual-Report+2024-2025_compressed.pdf",
+            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2024-2025.pdf",
     },
 ];
 

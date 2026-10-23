@@ -3,14 +3,14 @@ import SectionHeading from "../general/SectionHeading";
 
 export default function ImageListItem({
   imageSrc = "/images/ccrc/ccrc-banner.png",
-  imageAlt = "CCRC Banner",
+  imageAlt = "",
   imageWidth = 600,
   imageHeight = 400,
-  title = "About CCRC",
-  subtitle = "Career and Corporate Resource Centre",
+  title = "",
+  subtitle = "",
   subtitle1 = "",
-  description = "The Career and Corporate Resource Centre (CCRC) of Kalinga University bridges academic learning and industrial knowledge through collaborations and customised solutions. Our services include: Corporate Trainings & Psychometric Analysis, Consultancy Services: 360 Degree PMS & HRIS.",
-  buttonText = "Apply for CCRC",
+  description = "",
+  buttonText = "",
   onButtonClick,
   items = [],
   boxItems = [],
@@ -73,7 +73,7 @@ export default function ImageListItem({
               <div className="relative w-[280px] sm:w-[320px] md:w-full max-w-[500px] h-[350px] md:h-[450px] lg:h-[500px] md:translate-y-0 translate-y-4">
                 <Image
                   src={imageSrc}
-                  alt={imageAlt}
+                  alt={imageAlt || title}
                   fill
                   className={`object-cover rounded-2xl border-8 border-white shadow-2xl md:-translate-x-6 lg:-translate-x-12 scale-105 md:scale-110 ${imageClassName}`}
                 />
@@ -81,7 +81,7 @@ export default function ImageListItem({
             ) : (
               <Image
                 src={imageSrc}
-                alt={imageAlt}
+                alt={imageAlt || title}
                 fill
                 className={`object-cover rounded-xl ${imageClassName}`}
               />
