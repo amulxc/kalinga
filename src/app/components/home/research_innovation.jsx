@@ -21,8 +21,8 @@ export default function ResearchInnovation() {
 
   const stats = [
     { label: 'Research Publications', value: '5000+', variant: 'white', targetValue: 5000, setter: setResearchPublications },
-    { label: 'Startups', value: '6+', variant: 'white', targetValue: 6, setter: setStartups },
-    { label: 'Research Labs', value: '90+', variant: 'white', targetValue: 90, setter: setResearchLabs },
+    { label: 'Startups', value: '11+', variant: 'white', targetValue: 11, setter: setStartups },
+    { label: 'Research Labs', value: '100+', variant: 'white', targetValue: 100, setter: setResearchLabs },
     { label: 'Citations', value: '2136+', variant: 'white', targetValue: 2136, setter: setCitations },
     { label: 'Patents', value: '565+', variant: 'white', targetValue: 565, setter: setPatents },
     { label: 'H-Index', value: '19+', variant: 'white', targetValue: 19, setter: setHIndex },
@@ -100,7 +100,7 @@ export default function ResearchInnovation() {
               titleClassName="text-[var(--foreground)]"
             />
             <p className="text-[var(--foreground)] mt-2 sm:mt-4">
-              Empowering researchers with the most advanced research labs, including a Central Instrumentation Facility featuring exclusive instruments for cutting-edge experiments. Our 90+ Research Labs and an active IPR cell will accelerate your research work.
+              Empowering researchers with the most advanced research labs, including a Central Instrumentation Facility featuring exclusive instruments for cutting-edge experiments. Our 100+ Research Labs and an active IPR cell will accelerate your research work.
             </p>
             <div className="mt-4 sm:mt-6">
               <Link href="/research">

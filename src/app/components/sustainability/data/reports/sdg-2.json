@@ -1,0 +1,2049 @@
+{
+  "number": 2,
+  "title": "Zero Hunger",
+  "sourceUrl": "https://drive.google.com/file/d/1vLuUZpt_I6Cq0y7etVOW6qrXLOx7Kc_G/view",
+  "sourceDate": "24 October 2026",
+  "dashboard": [
+    {
+      "label": "SDG 02 Related Publications (2024-25)",
+      "value": "85"
+    },
+    {
+      "label": "Cumulative SDG 02 Related Publications",
+      "value": "123"
+    },
+    {
+      "label": "Field-Weighted Citation Impact (FWCI)",
+      "value": "1.05"
+    },
+    {
+      "label": "Citation Count",
+      "value": "395"
+    },
+    {
+      "label": "Proportion of Graduates in Health Professions (2024-25)",
+      "value": "108"
+    },
+    {
+      "label": "Sustainable Food Waste Management through Vermicomposting",
+      "value": "Converts biodegradable campus waste into nutrient-rich organic compost, promoting sustainable waste management and improving soil fertility for campus greenery."
+    },
+    {
+      "label": "Renewable Energy Generation through Biogas",
+      "value": "Utilizes food and biodegradable waste from hostels and campus facilities to generate renewable biogas and organic manure, reducing waste disposal and dependence on conventional energy sources."
+    },
+    {
+      "label": "Staff Hunger Interventions : Initiatives",
+      "value": "Affordable Campus Dining , Food Zone with Mini-Market , Zero Food Waste Initiative , Nutrition and Health Awareness, Subsidized Staff Meals - Policy"
+    }
+  ],
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Kalinga University, Raipur is committed to advancing Sustainable Development Goal 2 (Zero Hunger) by promoting research, education, innovation, and community outreach focused on food security, sustainable agriculture, and improved nutrition. Through interdisciplinary research, awareness programmes, rural engagement, and collaborations with local communities, the University encourages sustainable agricultural practices and supports initiatives that enhance nutritional well-being. Faculty members and students actively contribute through research publications, extension activities, and capacity-building programmes that address regional agricultural challenges. These collective efforts reflect the University's dedication to creating sustainable food systems, improving livelihoods, and contributing meaningfully to the global goal of ending hunger and ensuring food security for all."
+    }
+  ],
+  "sections": [
+    {
+      "title": "2.1 RESEARCH ON HUNGER",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University demonstrates its strong commitment to addressing global food security challenges through impactful research aligned with SDG 2 – Zero Hunger. Scopus-indexed publications produced during 2021–2025, 123 research papers directly contribute to the themes of agriculture, food security, nutrition, crop production, Zero Hunger, and sustainable and advanced agricultural practices. These scholarly contributions reflect the University's interdisciplinary research approach, integrating biotechnology, environmental science, agricultural sciences, and public health to develop innovative, sustainable, and evidence-based solutions aimed at eradicating hunger, improving nutritional outcomes, strengthening food security, and promoting sustainable food systems at local, national, and global levels."
+        },
+        {
+          "type": "paragraph",
+          "text": "A Glimpse of Research Publications aligned with SDG 2 (Zero Hunger) is presented below."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sl. No.",
+            "Year",
+            "Title of the Paper",
+            "Name of the Journal",
+            "Research Paper Link"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Investigating the Effects of Agricultural Practices on Pollinator Diversity and Ecosystem Service Sustainability",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Animal Environment",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105039794233?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Aptamer-based sensing in food science: precision tools for enhanced consumer safety and perception",
+                "colSpan": 1
+              },
+              {
+                "text": "Current Opinion in Food Science",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105021018454?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Impact of Smart Technologies on Precision Agriculture For Sustainable Crop Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Archives for Technical Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105030076530?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Enhancement of Omega-3 Fatty Acid Production by Metabolic Engineering or Genetic Modification of Microorganisms",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Pure and Applied Microbiology",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105026250007?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Impact of agricultural runoff on freshwater biodiversity and ecosystem resilience",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105024455914?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Impact of Novel Food Processing Techniques on the Physicochemical, Dietary, Sensory, and Safety Characteristics of Plant-Based Non-dairy Drinks",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Food Health and Bioenvironmental Science",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105028675380?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "7",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Assessment of agricultural soil quality in macro and micronutrient analysis of Kasargod, Kerala, India, using GIS techniques",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Hazardous Materials Advances",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105013992584?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "8",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Integrating aquaponics systems with sustainable aquaculture for efficient food production",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105024194631?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "9",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Role of zooplankton in aquatic food webs and their influence on fisheries management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105024243168?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "10",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Bioaccumulation of emerging contaminants in aquatic food chains and its implications for public health",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/105024212618?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "The advancements and application of pulsed ultraviolet technology in food processing: A biokinetic perspective",
+                "colSpan": 1
+              },
+              {
+                "text": "Non-Thermal Processing of Functional Foods",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85213170063?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "12",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Analyzing the economic benefits of sustainable fisheries management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85215616051?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "13",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Utilizing AI to enhance the effectiveness of plant breeding for the development of climate-resilient smart food crops",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85209752034?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "14",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "A wireless sensor network-based smart agriculture for the detection of plant pathogens with agricultural biotechnology",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85209902969?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "15",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Monitoring and control system for the detection of crop health in agricultural application through an ensemble based deep learning strategy",
+                "colSpan": 1
+              },
+              {
+                "text": "Multimedia Tools and Applications",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85179343279?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "16",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Non-thermal techniques for microbiological safety, nutritional preservation, and enhanced efficiency in dairy processing",
+                "colSpan": 1
+              },
+              {
+                "text": "Functional Food Science",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85201634195?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "17",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Physiological and molecular insights into the allelopathic effects on agro-ecosystems under changing environmental conditions",
+                "colSpan": 1
+              },
+              {
+                "text": "Physiology and Molecular Biology of Plants",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85189285592?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "18",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Future of food industry sustainability using biotechnological interventions in the dairy sector",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85185800971?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "19",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Implementation of a food traceability system utilizing the Internet of Things and blockchain technology to enhance safety measures within the food supply chain",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO Web of Conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85183913338?origin=resultslist",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "20",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "An Integrated Approach to Dairy Farming: AI and IoT-Enabled Monitoring of Cows and Crops via a Mobile Application",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO Web of Conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "https://www.scopus.com/pages/publications/85183907138?origin=resultslist",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "2.1.1 Zero Hunger: CiteScore",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The cumulative Citation Count is 395 achieved by Kalinga University's SDG 2-aligned publications which reflects the institution's sustained commitment to producing high-quality, impactful research in food security, sustainable agriculture, and nutritional sciences. This strong citation performance demonstrates that the university's research is published in reputable, high-impact journals and is widely recognized by the global academic community. The consistently high CiteScore highlights the scientific relevance, credibility, and influence of these scholarly contributions, reinforcing Kalinga University's role in advancing research that supports the achievement of Sustainable Development Goal 2: Zero Hunger."
+        },
+        {
+          "type": "heading",
+          "text": "2.1.2 Zero Hunger: FWCI",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's SDG 2-aligned research demonstrates strong academic impact, with a commendable Field-Weighted Citation Impact (FWCI) 1.05 indicating that its publications are cited significantly above the global average. This citation performance reflects the University's growing influence in sustainable agriculture, food security, nutrition, and hunger eradication, highlighting the quality, relevance, and global recognition of its research contributions toward achieving Zero Hunger. Some glimpse of Research papers are mentioned below -"
+        },
+        {
+          "type": "heading",
+          "text": "2.1.3 Zero Hunger: Publications",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has demonstrated a strong research commitment towards SDG 2 (Zero Hunger) through the publication of 123 research papers. These research outcomes reflect the University's growing academic impact and sustained contribution to advancing knowledge in food security, sustainable agriculture, and nutrition."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Category",
+            "SDG - 2 Aligned Research Papers",
+            "Column1",
+            "Column2"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021"
+              },
+              {
+                "text": "4"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2022"
+              },
+              {
+                "text": "0"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2023"
+              },
+              {
+                "text": "4"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2024"
+              },
+              {
+                "text": "33"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2025"
+              },
+              {
+                "text": "52"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2026"
+              },
+              {
+                "text": "31"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ]
+          ],
+          "caption": "Year-wise Resrach Papers (SDG - 2)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure: Year-wise Research Papers aligned with SDG 2"
+        }
+      ]
+    },
+    {
+      "title": "2.2 CAMPUS FOOD WASTE",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The university follows an integrated campus food waste management system by converting leftover food into valuable resources through its biogas plant and vermi-compost unit. The generated biogas is utilized for hostel food preparation, while the vermi-compost enriches campus landscaping and gardening. Awareness posters, campaigns, and educational programs encourage students and staff to minimize food wastage, adopt responsible consumption practices, and conserve natural resources, thereby fostering a culture of sustainability and supporting a circular economy on campus."
+        },
+        {
+          "type": "heading",
+          "text": "2.2.1 Campus Food Waste Tracking",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to reducing food waste and promoting responsible food consumption as part of its efforts towards SDG 2: Zero Hunger. The University has established a systematic mechanism to monitor and quantify food waste generated from hostel messes and campus dining facilities, enabling the assessment of consumption patterns and implementation of effective waste reduction strategies. During the academic session 2024–2025, a total of 8,294 kg of food waste was generated from July 2024 to June 2025, with an average monthly generation of approximately 691 kg and an average daily generation of around 22.35 kg. Importantly, 100% of the collected food waste was processed through the campus Biogas Plant, supporting sustainable waste management, resource recovery, and circular economy practices. Alongside systematic monitoring and processing, the University actively promotes awareness about food conservation and prevention of food wastage among students, faculty, staff, and other campus stakeholders."
+        },
+        {
+          "type": "paragraph",
+          "text": "Awareness campaigns, posters, digital displays, and signboards carrying messages such as “Stop Food Waste” and “Serve What You Waste, Can Save Others Life” are displayed across dining and other relevant areas to encourage mindful eating and responsible consumption. Students and staff are encouraged to take only the quantity of food they can consume, avoid over-serving, and recognize food as a valuable resource. Through the integrated approach of monitoring, awareness generation, food waste prevention, and sustainable waste processing, Kalinga University is fostering a culture of responsible consumption and environmental stewardship across the campus. These initiatives contribute particularly to SDG 2 (Zero Hunger), SDG 7 (Affordable and Clean Energy), SDG 12 (Responsible Consumption and Production), and SDG 13 (Climate Action) while promoting food conservation, resource efficiency, and sustainable campus development."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/ea4c844b7840056a.jpeg",
+          "alt": "SDG 2: 2.2.1 Campus Food Waste Tracking - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/1383e338debf0f53.jpeg",
+          "alt": "SDG 2: 2.2.1 Campus Food Waste Tracking - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/d5e99cd4a96532bc.jpeg",
+          "alt": "SDG 2: 2.2.1 Campus Food Waste Tracking - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Awareness Posters at Mess & Canteen"
+        },
+        {
+          "type": "heading",
+          "text": "2.2.2 Indicator: Campus Food Waste",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has a diverse campus community comprising students, teaching staff, non-teaching staff, marketing staff, and other supporting personnel. The total campus population is 6500+ individuals. This substantial campus community provides a strong foundation for implementing and promoting the United Nations Sustainable Development Goals (SDGs) through inclusive education, employee welfare, sustainable campus practices, health and well-being, and community engagement initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has established a biogas plant as part of its commitment to sustainable waste management and environmental conservation. The facility utilizes food waste generated from university cafeterias and hostels, along with other biodegradable organic waste, to produce biogas through the process of anaerobic digestion. The generated biogas is used for food preparation in the university hostels, thereby reducing dependence on conventional fuels and lowering greenhouse gas emissions. In addition, the nutrient-rich slurry produced during the process is utilized as an organic fertilizer for campus landscaping and gardening. This initiative promotes resource conservation, circular economy practices, and sustainable campus operations while contributing to the University’s efforts toward SDG 2 (Zero Hunger)."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/8e19c28829711b20.jpeg",
+          "alt": "SDG 2: 2.2.2 Indicator: Campus Food Waste - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Food waste generated on campus is converted into clean biogas for hostel cooking, replacing LPG and producing organic fertilizer through sustainable waste management."
+        }
+      ]
+    },
+    {
+      "title": "2.3 STUDENT HUNGER",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Table: Year-wise Summary of Campus Food Waste Generation and Processing, 2024–2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hostel Mess, Hygienic Canteens, and Food Zone with Mini-Market"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Month",
+            "Food Waste Generated (kg)",
+            "Average per Day (kg)",
+            "Waste Utilized/Processed (kg)",
+            "Remarks"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "July 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "297",
+                "colSpan": 1
+              },
+              {
+                "text": "9.58",
+                "colSpan": 1
+              },
+              {
+                "text": "297",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "August 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "680",
+                "colSpan": 1
+              },
+              {
+                "text": "22.67",
+                "colSpan": 1
+              },
+              {
+                "text": "680",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "September 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "790",
+                "colSpan": 1
+              },
+              {
+                "text": "25.48",
+                "colSpan": 1
+              },
+              {
+                "text": "790",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "October 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "769",
+                "colSpan": 1
+              },
+              {
+                "text": "25.63",
+                "colSpan": 1
+              },
+              {
+                "text": "769",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "November 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "650",
+                "colSpan": 1
+              },
+              {
+                "text": "20.97",
+                "colSpan": 1
+              },
+              {
+                "text": "650",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "December 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "720",
+                "colSpan": 1
+              },
+              {
+                "text": "23.23",
+                "colSpan": 1
+              },
+              {
+                "text": "720",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "7",
+                "colSpan": 1
+              },
+              {
+                "text": "January 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "794",
+                "colSpan": 1
+              },
+              {
+                "text": "25.61",
+                "colSpan": 1
+              },
+              {
+                "text": "794",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "8",
+                "colSpan": 1
+              },
+              {
+                "text": "February 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "840",
+                "colSpan": 1
+              },
+              {
+                "text": "30",
+                "colSpan": 1
+              },
+              {
+                "text": "840",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "9",
+                "colSpan": 1
+              },
+              {
+                "text": "March 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "823",
+                "colSpan": 1
+              },
+              {
+                "text": "26.55",
+                "colSpan": 1
+              },
+              {
+                "text": "823",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "10",
+                "colSpan": 1
+              },
+              {
+                "text": "April 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "783",
+                "colSpan": 1
+              },
+              {
+                "text": "26.10",
+                "colSpan": 1
+              },
+              {
+                "text": "783",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "May 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "834",
+                "colSpan": 1
+              },
+              {
+                "text": "26.90",
+                "colSpan": 1
+              },
+              {
+                "text": "834",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "12",
+                "colSpan": 1
+              },
+              {
+                "text": "June 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "314",
+                "colSpan": 1
+              },
+              {
+                "text": "10.47",
+                "colSpan": 1
+              },
+              {
+                "text": "314",
+                "colSpan": 1
+              },
+              {
+                "text": "Biogas Plant",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Naya Raipur, is committed to eliminating student hunger by ensuring continuous access to safe, nutritious, and affordable food for all students. The university operates well-maintained hostel mess facilities, hygienic canteens, and a Food Zone with a mini-market within the campus. The mini-market offers healthy food items, beverages, and daily essentials at reasonable prices, making nutritious food easily accessible. These facilities ensure that students have convenient access to balanced meals and healthy food options throughout the day, promoting their health, well-being, and academic success."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/b1cf74e99ec98917.jpeg",
+          "alt": "SDG 2: 2.3 STUDENT HUNGER - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Campus Mess, Kalinga University – Providing Nutritious, Hygienic, and Affordable Meals to Students and Staff."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/a57ba284db7209bf.jpeg",
+          "alt": "SDG 2: 2.3 STUDENT HUNGER - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/c7868cc88e5313f0.jpeg",
+          "alt": "SDG 2: 2.3 STUDENT HUNGER - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mini-Market at Kalinga University Campus – Providing Stationery, Daily-Need Essentials, Snacks, Beverages, and Other Convenient Shop Services for Students and Staff."
+        },
+        {
+          "type": "heading",
+          "text": "2.3.1 Student Food Insecurity and Hunger",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Naya Raipur, recognizes that access to safe, nutritious, and affordable food is fundamental to students' health, well-being, academic success, and overall campus experience. To ensure that no student faces food insecurity during their academic journey, the University has established accessible and affordable food facilities across the campus."
+        },
+        {
+          "type": "listItem",
+          "text": "The University operates well-managed hostel mess facilities, hygienic canteens, and a Food Zone with a mini-market, providing balanced meals, healthy snacks, beverages, and essential food items at reasonable prices. These facilities ensure that students have convenient access to nutritious food throughout the day."
+        },
+        {
+          "type": "listItem",
+          "text": "In addition, the University promotes responsible food consumption through \"No Food Waste\" awareness campaigns, posters, and student engagement activities that encourage mindful eating and reduce food wastage. Nutritional awareness programmes and health campaigns are also organized regularly to educate students about healthy eating habits, food hygiene, and balanced nutrition."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these sustained initiatives, Kalinga University creates an inclusive campus environment where every student has reliable access to healthy and affordable food, reinforcing its commitment to student welfare, equity, sustainable campus practices and Sustainable Development Goal (SDG) 2: Zero Hunger."
+        },
+        {
+          "type": "heading",
+          "text": "2.3.2 Students Hunger Interventions",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Naya Raipur, is committed to promoting food security, nutritional well-being, and social equity across its campus. Recognizing that access to nutritious and affordable food is essential for academic success and overall well-being, the University has established comprehensive support systems to ensure that students and staff have continuous access to healthy food, these initiative has been taken -"
+        },
+        {
+          "type": "listItem",
+          "text": "Affordable Campus Dining: The University operates well-managed hostel mess facilities and hygienic canteens that provide balanced, nutritious meals at reasonable prices, ensuring that quality food is accessible to all students and staff."
+        },
+        {
+          "type": "listItem",
+          "text": "Food Zone with Mini-Market: A dedicated Food Zone, including a mini-market, offers healthy food items, beverages, snacks, and daily essentials at affordable prices, enabling convenient access to nutritious food throughout the day."
+        },
+        {
+          "type": "listItem",
+          "text": "Zero Food Waste Initiative: The University promotes responsible food consumption through awareness campaigns, posters, and student engagement programmes encouraging the message \"Stop Food Waste\" and reducing food wastage. Food waste generated on campus is utilized in the University's biogas plant and vermicomposting unit, supporting sustainable waste management."
+        },
+        {
+          "type": "listItem",
+          "text": "Nutrition and Health Awareness: Regular awareness programmes, workshops, and health campaigns educate students and staff about balanced diets, food hygiene, healthy eating habits, and sustainable food practices."
+        },
+        {
+          "type": "listItem",
+          "text": "Food Distribution and Community Awareness: Kalinga University promotes the message \"Don't Waste Food\" by encouraging responsible food consumption and organizing food distribution drives in nearby villages. These initiatives help provide surplus food to needy communities while raising awareness about reducing food waste, preventing hunger, and supporting SDG 2: Zero Hunger."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these initiatives, Kalinga University ensures that nutritious and affordable food remains readily available on campus, helping prevent food insecurity while fostering a healthy, inclusive, and sustainable learning environment in alignment with Sustainable Development Goal (SDG) 2: Zero Hunger."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/c427cbf7445950de.jpeg",
+          "alt": "SDG 2: 2.3.2 Students Hunger Interventions - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/75398a8d197221fc.jpeg",
+          "alt": "SDG 2: 2.3.2 Students Hunger Interventions - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/7a5326c6a0cabf04.jpeg",
+          "alt": "SDG 2: 2.3.2 Students Hunger Interventions - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/8f431e4e2511d0a0.jpeg",
+          "alt": "SDG 2: 2.3.2 Students Hunger Interventions - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mini – Market, Kalinga Canteen, Food distribution at nearby villages"
+        },
+        {
+          "type": "heading",
+          "text": "2.3.3 Sustainable Food Choices on Campus",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to promoting sustainable, healthy, and environmentally responsible food practices across its campus in alignment with the Sustainable Development Goals. The University has implemented various initiatives to support sustainable food systems by reducing food waste, encouraging responsible consumption, and adopting eco-friendly practices. These efforts create environmental awareness among students, faculty, and staff while fostering a culture of sustainability and responsible resource management throughout the campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sustainable Food Practices and Initiatives:"
+        },
+        {
+          "type": "listItem",
+          "text": "Encouraging the Use of Locally Sourced and Seasonal Produce from Six Adopted Village"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has adopted six villages—Kotni, Paloud, Kotrabhata, Tandul, Kuhera, and Parsada—and actively promotes the use of locally sourced and seasonal produce. Fresh vegetables and other food items procured from farms and suppliers in these villages are utilized on campus, thereby reducing transportation-related carbon emissions. This initiative supports local agricultural communities, strengthens rural livelihoods, and encourages sustainable food consumption practices while contributing to environmentally responsible campus operations and regional economic development."
+        },
+        {
+          "type": "listItem",
+          "text": "Promoting a Plastic-Free Campus through a Single-Use Plastic Ban"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has adopted a Single-Use Plastic Ban Policy to minimize plastic waste and promote environmental sustainability across the campus. Under this policy, the use of disposable plastic bags, cups, plates, straws, bottles, and cutlery is prohibited and replaced with reusable or biodegradable alternatives during academic, administrative, and campus events. The University promotes a plastic-free campus by encouraging the use of eco-friendly alternatives, such as paper cups and other biodegradable products, to reduce solid waste generation. Regular awareness campaigns, signage, and monitoring ensure effective implementation and compliance among students, faculty, staff, and visitors. Through these initiatives, the University significantly reduces plastic pollution, strengthens responsible waste management practices, and reinforces its commitment to the Sustainable Development Goals."
+        },
+        {
+          "type": "paragraph",
+          "text": "Plastic Prohibition Policy –"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/090d736e63f10e13.png",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/f63049b306fcbd95.png",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/fb29994034e3174e.jpeg",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/7cb18c13a8f5e505.jpeg",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/3186a77d8794a71c.jpeg",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Awareness Poster on “Say No to Plastic” – Promoting Plastic-Free Practices and Sustainable Waste Management on Campus"
+        },
+        {
+          "type": "listItem",
+          "text": "Food Waste Management through Composting and Biogas Plant"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has established an effective food waste management system through composting and vermicomposting to promote sustainable waste disposal practices. Biodegradable waste, including food waste from cafeterias and hostels, is collected and processed along with garden waste such as dry leaves, grass clippings, and pruning residues in compost pits and vermicomposting units. Earthworms are used in the vermicomposting process to accelerate the decomposition of organic matter and produce nutrient-rich vermin-compost. The compost and vermin-compost generated are utilized for maintaining the University's gardens, lawns, and plantations, reducing waste sent to landfills while supporting a circular economy and environmentally sustainable campus management in alignment with the Sustainable Development Goals."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/894bd49ce1ba7590.jpeg",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/7eb9be0cd7f794af.jpeg",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Food Waste Management through Vermicomposting – Converting Organic Waste into Nutrient-Rich Compost for Sustainable Campus Practices"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has also established a biogas plant that converts food and other biodegradable waste generated from hostels and campus dining facilities into clean, renewable energy. The biogas produced is used for cooking in the hostel kitchens, reducing dependence on LPG and lowering greenhouse gas emissions. In addition to generating clean energy, the plant produces nutrient-rich slurry, which is utilized as organic fertilizer for campus gardens and plantations. This initiative promotes sustainable waste management, resource recovery, and circular economy practices while contributing to the University's environmental sustainability goals."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/7e6a787cd77e4653.jpeg",
+          "alt": "SDG 2: 2.3.3 Sustainable Food Choices on Campus - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Biogas Plant at Kalinga University – Converting Food and Biodegradable Waste from Hostels and Campus into Renewable Energy and Organic Manure"
+        },
+        {
+          "type": "listItem",
+          "text": "Promoting Awareness and Sustainable Consumption Behavior"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University regularly conducts awareness programmes, workshops, campaigns and outreach activities to encourage sustainable consumption and responsible resource use among students, faculty, and staff. These initiatives promote waste reduction, food conservation, eco-friendly practices, and environmental stewardship, fostering a culture of sustainability and supporting the achievement of the Sustainable Development Goals across the campus community."
+        },
+        {
+          "type": "heading",
+          "text": "2.3.4 Healthy and Affordable Food Choices",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Promoting Sustainable and Healthy Food Choices"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University promotes sustainable and healthy food choices by providing balanced, nutritious, vegetarian, and vegan meal options in its hostels and canteens. The University also follows sustainable procurement practices by sourcing quality food responsibly, ensuring ethical standards while encouraging healthy eating habits and environmentally responsible food consumption across the campus."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/7170af90c8ed2ef5.jpeg",
+          "alt": "SDG 2: 2.3.4 Healthy and Affordable Food Choices - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Canteen Food Menu Chart Displayed – Promoting Meal Transparency, Nutritional Awareness, and Healthy Food Choices among Students and Staff"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mess Food Menu for National Students – Displaying Daily Meal Options to Promote Nutritional Awareness, Healthy Choices and Meal Planning."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/bab076159fff2165.jpeg",
+          "alt": "SDG 2: 2.3.4 Healthy and Affordable Food Choices - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Calorie per Meal – Indian Student Menu"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Day",
+            "Breakfast Menu",
+            "Breakfast (kcal)",
+            "Lunch Menu",
+            "Lunch (kcal)",
+            "Dinner Menu",
+            "Dinner (kcal)",
+            "Daily Total (kcal)"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Monday",
+                "colSpan": 1
+              },
+              {
+                "text": "4 Idli, Sambar, Coconut Chutney, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "520",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Dal Panchmel, Cabbage Aloo Mutter, Mix Veg Raita, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "820",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Paneer Butter Masala, Dal Fry, Onion Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,190",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Tuesday",
+                "colSpan": 1
+              },
+              {
+                "text": "Onion Paratha, Aloo Black Chana, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "620",
+                "colSpan": 1
+              },
+              {
+                "text": "Jeera Rice, Chapati, Dal Tadka, Lauki Chana Masala, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "780",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Dal Fry, Aloo Soya Masala, Onion Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "2,200",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Wednesday",
+                "colSpan": 1
+              },
+              {
+                "text": "4 Vada, Coconut Chutney, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "520",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Dal Tomato, Egg Curry/Vegetable Do Pyaza, Pyaz Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Kali Masoor Ki Dal, Aloo Green Peas Curry, Onion Salad, Gulab Jamun, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,170",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Thursday",
+                "colSpan": 1
+              },
+              {
+                "text": "4 Pav, Bhaji, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "740",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Dal Vada Curry, Bhindi Aloo Masala, Mix Veg Raita, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "Jeera Rice, Chapati, Dal Fry, Chole Masala, Onion Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "2,340",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Friday",
+                "colSpan": 1
+              },
+              {
+                "text": "Poha, Ghugni, Boiled Egg/Banana, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "630",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Dal Panchmel, Cabbage Aloo Mutter, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "780",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Dal Tadka, Egg Curry/Kofta Curry, Onion Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,260",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Saturday",
+                "colSpan": 1
+              },
+              {
+                "text": "5 Poori, Sabji, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "730",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Yellow Dal Tadka, Mutter Paneer, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Dal Fry, Mix Veg Dry, Onion Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "780",
+                "colSpan": 1
+              },
+              {
+                "text": "2,360",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sunday",
+                "colSpan": 1
+              },
+              {
+                "text": "2 Uttapam, Sambar, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "500",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Moong Dal Fry, Aloo Baigan Green Peas Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "Mutter Pulao, Chapati, Rajma Masala, Onion Salad, Rice Kheer, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,150",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Average",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "609 kcal",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "804 kcal",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "826 kcal",
+                "colSpan": 1
+              },
+              {
+                "text": "2,239 kcal/day",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Table: Calorie Content per Meal for the Indian Student Menu (Breakfast, Lunch and Dinner)"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/5ae4990362ba665a.jpeg",
+          "alt": "SDG 2: 2.3.4 Healthy and Affordable Food Choices - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mess Food Menu for International Students – Displaying Diverse Meal Options to Support Nutritional Well-Being and Inclusive Food Choices."
+        },
+        {
+          "type": "paragraph",
+          "text": "Calorie per Meal – International Student Menu"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Day",
+            "Breakfast Menu",
+            "Breakfast (kcal)",
+            "Lunch Menu",
+            "Lunch (kcal)",
+            "Dinner Menu",
+            "Dinner (kcal)",
+            "Daily Total (kcal)"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Monday",
+                "colSpan": 1
+              },
+              {
+                "text": "Bread Toast, Masala Omelette, Butter & Jam, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "600",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Rajma, Boiled Egg, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Chicken Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,250",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Tuesday",
+                "colSpan": 1
+              },
+              {
+                "text": "Fried Slice Bread, Banana, Butter, Jam, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "650",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Egg Bhurji, Tomato Stew, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Fried Chicken Gravy, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "900",
+                "colSpan": 1
+              },
+              {
+                "text": "2,350",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Wednesday",
+                "colSpan": 1
+              },
+              {
+                "text": "Bread, Butter, Jam, Masala Omelette, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "600",
+                "colSpan": 1
+              },
+              {
+                "text": "Tomato Rice, Chapati, Egg Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "750",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Chicken Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,200",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Thursday",
+                "colSpan": 1
+              },
+              {
+                "text": "Pav, Tomato Sauce, Boiled Egg, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "550",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Chatpata Masala Aloo, Tomato Stew, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "750",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Egg Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "750",
+                "colSpan": 1
+              },
+              {
+                "text": "2,050",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Friday",
+                "colSpan": 1
+              },
+              {
+                "text": "Egg Roll, Tomato Sauce, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "550",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Egg Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "750",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Chicken Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,150",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Saturday",
+                "colSpan": 1
+              },
+              {
+                "text": "Poori, Sabji, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "650",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Tomato Stew, Potato Chips, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "Tomato Rice, Chapati, Egg Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "2,250",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sunday",
+                "colSpan": 1
+              },
+              {
+                "text": "Bread, Butter, Jam, Banana, Tea",
+                "colSpan": 1
+              },
+              {
+                "text": "600",
+                "colSpan": 1
+              },
+              {
+                "text": "Mixed Vegetable Noodles, Chapati, Egg Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "800",
+                "colSpan": 1
+              },
+              {
+                "text": "Steamed Rice, Chapati, Chicken Curry, Green Salad, Pickle",
+                "colSpan": 1
+              },
+              {
+                "text": "850",
+                "colSpan": 1
+              },
+              {
+                "text": "2,250",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Average",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "600 kcal",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "779 kcal",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "836 kcal",
+                "colSpan": 1
+              },
+              {
+                "text": "2,215 kcal/day",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Table: Calorie Content per Meal for the International Student Menu (Breakfast, Lunch and Dinner)"
+        },
+        {
+          "type": "heading",
+          "text": "2.3.5 Staff Hunger Interventions",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Naya Raipur, is committed to promoting food security, nutritional well-being, and social equity across its campus. Recognizing that access to nutritious and affordable food is essential for academic success and overall well-being, the University has established comprehensive support systems to ensure that students and staff have continuous access to healthy food, these initiative has been taken -"
+        },
+        {
+          "type": "listItem",
+          "text": "Affordable Campus Dining: The University operates well-managed hostel mess facilities and hygienic canteens that provide balanced, nutritious meals at reasonable prices, ensuring that quality food is accessible to all students and staff."
+        },
+        {
+          "type": "listItem",
+          "text": "Food Zone with Mini-Market: A dedicated Food Zone, including a mini-market, offers healthy food items, beverages, snacks, and daily essentials at affordable prices, enabling convenient access to nutritious food throughout the day."
+        },
+        {
+          "type": "listItem",
+          "text": "Zero Food Waste Initiative: The University promotes responsible food consumption through awareness campaigns, posters, and student engagement programmes encouraging the message \"Stop Food Waste\" and reducing food wastage. Food waste generated on campus is utilized in the University's biogas plant and vermicomposting unit, supporting sustainable waste management."
+        },
+        {
+          "type": "listItem",
+          "text": "Nutrition and Health Awareness: Regular awareness programmes, workshops, and health campaigns educate students and staff about balanced diets, food hygiene, healthy eating habits, and sustainable food practices."
+        },
+        {
+          "type": "listItem",
+          "text": "Subsidized Staff Meals Initiative: Kalinga University promotes employee welfare and well-being through its Staff Welfare Office Order for Subsidized Meals, providing teaching and non-teaching staff with access to affordable, hygienic, nutritious, and wholesome meals through the campus cafeteria/mess facility. The initiative helps reduce employees’ daily food expenses, promotes healthy eating practices during working hours, and contributes to a supportive, inclusive, and employee-friendly workplace environment. Through this initiative, the University demonstrates its commitment to food accessibility, employee welfare, healthy workplace practices, and decent working conditions, contributing to SDG 2 (Zero Hunger), SDG 3 (Good Health and Well-being), and SDG 8 (Decent Work and Economic Growth). Office Order regarding: Staff Welfare Initiative: Subsidized Meals for Employee Well-Being through Affordable Food Services at Kalinga University."
+        },
+        {
+          "type": "paragraph",
+          "text": "Policy reg. Subsidized Staff Meals Initiative"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/c4ce00f93449f574.png",
+          "alt": "SDG 2: 2.3.5 Staff Hunger Interventions - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/3a8967215ace37f2.png",
+          "alt": "SDG 2: 2.3.5 Staff Hunger Interventions - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/ee498ee49edae5a2.png",
+          "alt": "SDG 2: 2.3.5 Staff Hunger Interventions - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Food Distribution and Community Awareness: Kalinga University promotes the message \"Don't Waste Food\" by encouraging responsible food consumption and organizing food distribution drives in nearby villages. These initiatives help provide surplus food to needy communities while raising awareness about reducing food waste, preventing hunger, and supporting SDG 2: Zero Hunger."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/9350932a185e0d2d.png",
+          "alt": "SDG 2: 2.3.5 Staff Hunger Interventions - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/596ea03fdcb86fe7.png",
+          "alt": "SDG 2: 2.3.5 Staff Hunger Interventions - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-2/7fdb75de876ab0bb.png",
+          "alt": "SDG 2: 2.3.5 Staff Hunger Interventions - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Food Distribution and Community Awareness Programs – Promoting Food Security, Nutrition, Social Responsibility and Community Well-Being"
+        }
+      ]
+    },
+    {
+      "title": "2.4 PROPORTION OF GRADUATES IN AGRICULTURE AND AQUACULTURE INCLUDING SUSTAINABILITY ASPECTS",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "2.4.1 Indicator: Proportion of Graduates in Agriculture and Aquaculture",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The Faculty of Science at Kalinga University integrates sustainability concepts into its academic programmes by incorporating topics such as sustainable agriculture, food security, environmental conservation, renewable energy, and biodiversity. Through classroom teaching, laboratory activities, research, and outreach programmes, students develop scientific knowledge and practical skills that contribute to achieving SDG 2: Zero Hunger and sustainable development."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Data Collected",
+            "Definition",
+            "Proportion of Graduates in Health Professions"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Number of graduates - 1122",
+                "colSpan": 1
+              },
+              {
+                "text": "This is the total headcount number of graduates at all levels from your institution in the year 2024-25",
+                "colSpan": 1
+              },
+              {
+                "text": "1122",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Number of graduates in Department of Biotechnology & Zoology - 108",
+                "colSpan": 1
+              },
+              {
+                "text": "This is the total headcount number of graduates at all levels (ISCED 6, 7, or 8) who were studying any aspect of food sustainability within a Biotechnology & Zoology course and successfully completed the course in year 2024-25. This is a subset of the total number of graduates.",
+                "colSpan": 1
+              },
+              {
+                "text": "108",
+                "colSpan": 1
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2.5 NATIONAL HUNGER",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University organizes awareness programmes, seminars, poster campaigns, and community outreach activities to address national hunger challenges. These initiatives promote food conservation, balanced nutrition, responsible consumption, and community participation, encouraging students and the public to support the achievement of Zero Hunger."
+        },
+        {
+          "type": "heading",
+          "text": "2.5.1 Access to Food Security Knowledge",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University promotes food security and sustainable agriculture through its six adopted villages by organizing awareness programmes, seminars, expert lectures, workshops, and Nukkad Natak. These initiatives equip local farmers and food producers with knowledge of sustainable farming practices, resource conservation, nutrition, and modern agricultural technologies, enhancing agricultural productivity, strengthening rural livelihoods and contributing to Zero Hunger."
+        },
+        {
+          "type": "heading",
+          "text": "2.5.2 Events for Local Farmers and Food Producers",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University regularly organizes awareness programmes, training workshops, seminars, expert lectures, and interactive events for local farmers and food producers, particularly in its six adopted villages. These programmes promote sustainable agricultural practices, efficient resource management, improved crop productivity, and food security while encouraging knowledge sharing between academic experts and rural communities."
+        },
+        {
+          "type": "heading",
+          "text": "2.5.3 University Access to Local Farmers and Food Producers",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University ensures direct access for local farmers to its knowledge resources, expertise, and agricultural facilities through various outreach programmes. The University organizes Kisan Melas, awareness programmes, training workshops, and vermicompost distribution initiatives, enabling farmers to benefit from scientific research, expert guidance, sustainable farming practices, and quality agricultural inputs. These initiatives strengthen university–community partnerships, enhance agricultural productivity, and promote sustainable agriculture and food security."
+        },
+        {
+          "type": "heading",
+          "text": "2.5.4 Sustainable Food Purchases",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to strengthening sustainable food systems through responsible procurement and community engagement. The University procures wheat, rice, vegetables, and other agricultural produce from its six adopted villages: Kotni, Paloud, Kotrabhata, Tandul, Kuhera, and Parsada, whenever feasible, supporting local farmers while reducing transportation-related environmental impacts. Through sustainable food practices, food waste reduction initiatives, awareness programmes, and community outreach, the University promotes responsible consumption and strengthens rural livelihoods. By integrating sustainability into campus operations, education, and extension activities, Kalinga University actively advances SDG 2: Zero Hunger, contributing to food security, environmental stewardship, and long-term sustainable development."
+        }
+      ]
+    }
+  ]
+}

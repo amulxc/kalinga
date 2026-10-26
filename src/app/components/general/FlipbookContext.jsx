@@ -1,9 +1,12 @@
 'use client';
 
 import React, { createContext, useContext, useState, useCallback } from 'react';
-import FlipbookModal from './FlipbookModal';
-import PdfSliderModal from './PdfSliderModal';
+import dynamic from 'next/dynamic';
 import { getProxyPdfUrl } from '@/app/lib/pdfProxy';
+
+// PDF.js needs browser APIs and must not be evaluated during server rendering.
+const FlipbookModal = dynamic(() => import('./FlipbookModal'), { ssr: false });
+const PdfSliderModal = dynamic(() => import('./PdfSliderModal'), { ssr: false });
 
 const FlipbookContext = createContext(undefined);
 
@@ -42,20 +45,20 @@ export const FlipbookProvider = ({ children }) => {
     return (
         <FlipbookContext.Provider value={{ openFlipbook, openPdfSlider, closeFlipbook }}>
             {children}
-            <FlipbookModal
+            {isOpen && <FlipbookModal
                 isOpen={isOpen}
                 onClose={closeFlipbook}
                 pdfUrl={pdfUrl}
                 title={title}
-            />
-            <PdfSliderModal
+            />}
+            {isSliderOpen && <PdfSliderModal
                 isOpen={isSliderOpen}
                 onClose={closeFlipbook}
                 pdfUrl={pdfUrl}
                 title={title}
                 limitPages={sliderLimit}
                 lockAfterInitialPages={lockAfterInitialPages}
-            />
+            />}
         </FlipbookContext.Provider>
     );
 };

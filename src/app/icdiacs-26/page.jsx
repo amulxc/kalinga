@@ -967,7 +967,7 @@ const ICDIACSConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/Brochure+/CSIT-International_Conference.pdf"
+                        href="/conferences/icdiacs-2026-brochure.pdf"
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 rounded-xl bg-[var(--button-red)] px-5 py-3 text-white font-semibold hover:opacity-90 transition"

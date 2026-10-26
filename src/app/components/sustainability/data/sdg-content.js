@@ -377,14 +377,15 @@ export const SDG_CELL_MEMBERS = [
 /* ------------------------------------------------------------------ */
 
 /**
- * Goal-wise reports, served from `public/sdg-reports/` so they open directly in
- * the browser's built-in PDF viewer. Only the goals present in this map are
+ * Goal-wise report pages. Only the goals present in this map are
  * clickable; the rest render as plain tiles until their report is published.
  */
 export const SDG_GOAL_REPORTS = {
-    2: "/sdg-reports/sdg-02-zero-hunger-report.pdf",
-    // SDG 3 has its own report page, which links the full PDF.
+    2: "/sustainability/sdg-2-report",
     3: "/sustainability/sdg-3-report",
+    4: "/sustainability/sdg-4-report",
+    8: "/sustainability/sdg-8-report",
+    17: "/sustainability/sdg-17-report",
 };
 
 export const SDG_GOAL_TILES = Array.from({ length: 17 }, (_, index) => {

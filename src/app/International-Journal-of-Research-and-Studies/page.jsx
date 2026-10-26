@@ -1680,7 +1680,7 @@ const UnivistaJournalPage = () => {
         },
         {
             id: 191,
-            shortName: "A Comparative Study & Analysis Of Leading Bldc Fan Brand In India With Special Reference To Atomberg Technologies Pvt Ltd",
+            shortName: "A Comparative Study & Analysis Of Leading BLDC Fan Brand In India With Special Reference To Atomberg Technologies Pvt Ltd",
             title: "Pratham Pincha",
             duration: "April - June 2026",
             level: "VOL 1",

@@ -739,6 +739,30 @@ export const pageDataMap: Record<string, PageData> = {
         title: "Waste Management",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     },
+    "/sustainability/sdg-2-report": {
+        slug: "/sustainability/sdg-2-report",
+        title: "SDG 2: Zero Hunger Report",
+        breadcrumbLabel: "SDG 2 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-4-report": {
+        slug: "/sustainability/sdg-4-report",
+        title: "SDG 4: Quality Education Report",
+        breadcrumbLabel: "SDG 4 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-8-report": {
+        slug: "/sustainability/sdg-8-report",
+        title: "SDG 8: Decent Work and Economic Growth Report",
+        breadcrumbLabel: "SDG 8 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-17-report": {
+        slug: "/sustainability/sdg-17-report",
+        title: "SDG 17: Partnerships for the Goals Report",
+        breadcrumbLabel: "SDG 17 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
     "/sustainability/good-health-and-well-being": {
         slug: "/sustainability/good-health-and-well-being",
         title: "Good Health and Well-Being",

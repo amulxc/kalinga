@@ -12,7 +12,6 @@ import GlobalArrowButton from "../components/general/global-arrow_button";
 import FlipbookTrigger from "../components/general/FlipbookTrigger";
 import MasterClassTab from "../components/ctcd/master_class_tab";
 import Gallery from "@/app/components/general/gallery";
-import PdfThumbnail from "../components/general/PdfThumbnail";
 
 /* ---------------- Goals ---------------- */
 const objectives = [
@@ -82,6 +81,11 @@ const annualReportButtons = [
     text: "2023-24",
     href: "https://cdn.kalingauniversity.ac.in/IIC/IIC_Appreciation_Letter_AY_2023_24+(1).pdf",
   },
+  {
+    id: 4,
+    text: "2024-25",
+    href: "/iic/iic-appreciation-letter-2024-25.pdf",
+  },
 ];
 const certificates = [
   {
@@ -96,8 +100,9 @@ const certificates = [
   },
   {
     id: 3,
-    src: "/iic/iic-star-rating-2024-25.jpeg",
+    src: "/iic/iic-star-rating-certificate-2024-25.jpg",
     alt: "IIC Star Rating 2024-25",
+    href: "/iic/iic-star-rating-certificate-2024-25.pdf",
   },
 ];
 
@@ -310,6 +315,7 @@ export default function InstitutionInnovationCouncil() {
             {certificates.map((img) => (
               <div key={img.id} className="flex flex-col items-center">
                 <div className="relative w-full max-w-md aspect-[4/3] border-4 border-[var(--button-red)] rounded-2xl overflow-hidden shadow-lg bg-white">
+                  {img.href && <a href={img.href} target="_blank" rel="noopener noreferrer" aria-label={`Open ${img.alt} certificate PDF`} className="absolute inset-0 z-10 rounded-xl focus-visible:outline-2 focus-visible:outline-[var(--button-red)]" />}
                   <Image
                     src={img.src}
                     alt={img.alt}
@@ -340,15 +346,17 @@ export default function InstitutionInnovationCouncil() {
           {/* ✅ BUTTON GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {annualReportButtons.map((item) => (
-              <FlipbookTrigger
+              <a
                 key={item.id}
-                pdfUrl={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 title={`Appreciation Letter ${item.text}`}
                 className="group relative w-full aspect-[3/4] overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg focus:outline-none block"
               >
                 {/* Image Area (PDF Thumbnail) */}
                 <div className="absolute inset-0 w-full h-full">
-                  <PdfThumbnail url={item.href} alt={item.text} />
+                  <Image src={`/iic/iic-appreciation-letter-${item.text}.jpg`} alt={`IIC Letter of Appreciation ${item.text}`} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-contain" />
                 </div>
 
                 {/* Gradient Overlay */}
@@ -370,7 +378,7 @@ export default function InstitutionInnovationCouncil() {
                     </div>
                   </div>
                 </div>
-              </FlipbookTrigger>
+              </a>
             ))}
           </div>
 
