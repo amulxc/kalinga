@@ -10,17 +10,18 @@ export default function OtherCommittees() {
     columns: [
       { key: "slNo", label: "S.No.", width: "w-16" },
       { key: "name", label: "Name Of Member", width: "flex-1" },
-      { key: "position", label: "", width: "flex-1" },
+      { key: "position", label: "Position", width: "flex-1" },
+      { key: "designation", label: "Designation", width: "flex-1" },
     ],
     data: [
-      { slNo: "1", name: "Dr. Lincy Roy", position: "Dy. Registrar & Head HR - Head of the Committee" },
-      { slNo: "2", name: "Dr. Rupesh Thakur", position: "Chief Proctor & HoD-Biochemistry" },
-      { slNo: "3", name: "Mrs. Shilpi N Tanwani", position: "Academic Officer" },
-      { slNo: "4", name: "Ms Saloni Tyagi", position: "Faculty" },
-      { slNo: "5", name: "Ms. Parvinder Shesh", position: "International Student Advisor" },
-      { slNo: "6", name: "Ms. Riya Sen", position: "Student Representative" },
-      { slNo: "7", name: "Ms. Simran Sharma", position: "Student Representative" },
-      { slNo: "8", name: "Mr. Naresh Sharma", position: "Lawyer" },
+      { slNo: "1", name: "Dr. Lincy Roy", position: "Head of the Committee", designation: "Dy. Registrar & Head HR" },
+      { slNo: "2", name: "Dr. Rupesh Thakur", position: "Member", designation: "Chief Proctor & HoD-Biochemistry" },
+      { slNo: "3", name: "Mrs. Shilpi N Tanwani", position: "Member", designation: "Academic Officer" },
+      { slNo: "4", name: "Ms Saloni Tyagi", position: "Member", designation: "Faculty" },
+      { slNo: "5", name: "Ms. Parvinder Shesh", position: "Member", designation: "International Student Advisor" },
+      { slNo: "6", name: "Ms. Riya Sen", position: "Member", designation: "Student Representative" },
+      { slNo: "7", name: "Ms. Simran Sharma", position: "Member", designation: "Student Representative" },
+      { slNo: "8", name: "Mr. Naresh Sharma", position: "Member", designation: "Lawyer" },
     ],
   };
 
@@ -93,15 +94,16 @@ export default function OtherCommittees() {
     columns: [
       { key: "slNo", label: "S.No.", width: "w-16" },
       { key: "name", label: "Name Of Member", width: "flex-1" },
-      { key: "position", label: "", width: "flex-1" },
+      { key: "position", label: "Position", width: "flex-1" },
+      { key: "designation", label: "Designation", width: "flex-1" },
     ],
     data: [
-      { slNo: "1", name: "Dr. Nuresh Khunte", position: "Faculty - Head of the Committee" },
-      { slNo: "2", name: "Dr. Harsha Patil", position: "Faculty" },
-      { slNo: "3", name: "Mr. Abhishek Kumar", position: "Faculty" },
-      { slNo: "4", name: "Mr. Harsh Khare", position: "Non-Teaching" },
-      { slNo: "5", name: "Mr. Sobharam Sonekar", position: "Non-Teaching" },
-      { slNo: "6", name: "Mr. Kuldeep Banjare", position: "Medical Staff" },
+      { slNo: "1", name: "Dr. Nuresh Khunte", position: "Head of the Committee", designation: "Faculty" },
+      { slNo: "2", name: "Dr. Harsha Patil", position: "Member", designation: "Faculty" },
+      { slNo: "3", name: "Mr. Abhishek Kumar", position: "Member", designation: "Faculty" },
+      { slNo: "4", name: "Mr. Harsh Khare", position: "Member", designation: "Non-Teaching" },
+      { slNo: "5", name: "Mr. Sobharam Sonekar", position: "Member", designation: "Non-Teaching" },
+      { slNo: "6", name: "Mr. Kuldeep Banjare", position: "Member", designation: "Medical Staff" },
     ],
   };
 
@@ -112,15 +114,16 @@ export default function OtherCommittees() {
     columns: [
       { key: "slNo", label: "S.No.", width: "w-16" },
       { key: "name", label: "Name Of Member", width: "flex-1" },
-      { key: "position", label: "", width: "flex-1" },
+      { key: "position", label: "Position", width: "flex-1" },
+      { key: "designation", label: "Designation", width: "flex-1" },
     ],
     data: [
-      { slNo: "1", name: "Dr. Bendi Anjaneyulu", position: "Deputy DAA & Dean (I/C), Faculty of Science - Head of the Committee" },
-      { slNo: "2", name: "Dr D. M. Sahu", position: "Faculty" },
-      { slNo: "3", name: "Dr. Sanjeev Yadav", position: "Faculty" },
-      { slNo: "4", name: "Mr Gaurav Tamrakar", position: "Faculty" },
-      { slNo: "5", name: "Mr Rajesh Vishwakarma", position: "Non-Teaching" },
-      { slNo: "6", name: "Ms Anita Sahu", position: "Non-Teaching" },
+      { slNo: "1", name: "Dr. Bendi Anjaneyulu", position: "Head of the Committee", designation: "Deputy DAA & Dean (I/C), Faculty of Science" },
+      { slNo: "2", name: "Dr D. M. Sahu", position: "Member", designation: "Faculty" },
+      { slNo: "3", name: "Dr. Sanjeev Yadav", position: "Member", designation: "Faculty" },
+      { slNo: "4", name: "Mr Gaurav Tamrakar", position: "Member", designation: "Faculty" },
+      { slNo: "5", name: "Mr Rajesh Vishwakarma", position: "Member", designation: "Non-Teaching" },
+      { slNo: "6", name: "Ms Anita Sahu", position: "Member", designation: "Non-Teaching" },
     ],
   };
 
