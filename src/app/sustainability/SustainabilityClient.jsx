@@ -15,6 +15,7 @@ import AnnualReportsSection from "../components/sustainability/sections/AnnualRe
 import SdgGoalsSection from "../components/sustainability/sections/SdgGoalsSection";
 import InitiativesSection from "../components/sustainability/sections/InitiativesSection";
 import StudentEngagementSection from "../components/sustainability/sections/StudentEngagementSection";
+import VideosSection from "../components/sustainability/sections/VideosSection";
 
 /**
  * Sustainability page — side panel on the left, content sections on the right.
@@ -59,6 +60,7 @@ const SustainabilityClient = () => {
                         <SdgGoalsSection />
                         <InitiativesSection />
                         <StudentEngagementSection />
+                        <VideosSection />
                     </main>
                 </div>
             </div>

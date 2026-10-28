@@ -16,6 +16,7 @@ export const SUSTAINABILITY_SECTIONS = [
     { id: "sustainable-development-goals", label: "Sustainable Development Goals" },
     { id: "our-initiatives", label: "Our Initiatives" },
     { id: "student-engagement", label: "Clubs" },
+    { id: "videos", label: "Videos" },
 ];
 
 export default SUSTAINABILITY_SECTIONS;

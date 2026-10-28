@@ -62,6 +62,19 @@ src/app/components/sustainability/
 7. `sustainable-development-goals` — The 17 goal tiles with goal-wise reports
 8. `our-initiatives` — Links to the six initiative detail pages
 9. `student-engagement` — "Clubs": Green Club and BIS Standard Club
+10. `videos` — "Videos": Sustainable Campus, with an inline video player
+
+## Sustainability video
+
+The Videos navigation item appears immediately below Clubs in both the desktop
+side panel and mobile picker. `sections/VideosSection.jsx` renders the supplied
+"Sustainable campus.mp4" from
+`public/sustainability/videos/sustainable-campus.mp4`, downloaded from the
+[shared Drive folder](https://drive.google.com/drive/folders/1R6gQHBjBYTZVCI15JoDrsNWTyEP7zs6v).
+The player uses native controls and inline playback, and loads the video only
+when requested (`preload="none"`).
+The published copy is compressed to 1280×720 H.264 (CRF 26) with AAC audio and
+MP4 fast-start enabled: 28.3 MB versus the 95.0 MB original (70% smaller).
 
 ## Policy and report PDFs
 
