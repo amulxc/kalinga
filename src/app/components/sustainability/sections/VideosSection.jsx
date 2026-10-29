@@ -13,25 +13,25 @@ const VIDEOS = [
 
 export default function VideosSection() {
     return (
-        <SectionBlock id="videos" title="Videos">
+        <SectionBlock
+            id="videos"
+            title="Sustainable Campus"
+            subtitle="Explore a sustainable campus environment."
+        >
             <div className="space-y-6">
                 {VIDEOS.map((video) => (
-                    <figure key={video.id} className="space-y-3">
-                        <video
-                            aria-label={video.title}
-                            controls
-                            preload="none"
-                            playsInline
-                            className="w-full aspect-video rounded-xl bg-black"
-                        >
-                            <source src={video.src} type="video/mp4" />
-                            Your browser does not support embedded video.{' '}
-                            <a href={video.src}>Watch {video.title}</a>.
-                        </video>
-                        <figcaption className="font-stix !text-lg text-[var(--foreground)]">
-                            {video.title}
-                        </figcaption>
-                    </figure>
+                    <video
+                        key={video.id}
+                        aria-label={video.title}
+                        controls
+                        preload="none"
+                        playsInline
+                        className="w-full aspect-video rounded-xl bg-black"
+                    >
+                        <source src={video.src} type="video/mp4" />
+                        Your browser does not support embedded video.{' '}
+                        <a href={video.src}>Watch {video.title}</a>.
+                    </video>
                 ))}
             </div>
         </SectionBlock>
