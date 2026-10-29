@@ -1942,6 +1942,214 @@ const UnivistaJournalPage = () => {
             level: "VOL 1",
             slug: "/univista/vol-1-issue-2/151-Seema-Dhritlhare.pdf"
         },
+        {
+            id: 224,
+            shortName: "Chemotherapy And Management Of Pancreatic Cancer",
+            title: "Jacques Niyonkuru",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-2-Jacques-Niyonkuru.pdf"
+        },
+        {
+            id: 225,
+            shortName: "Fast Dissolving Tablets: Formulation Approaches, Emerging Technologies, And Therapeutic Applications",
+            title: "Rashmi Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-3-Rashmi-Singh.pdf"
+        },
+        {
+            id: 226,
+            shortName: "Formulation And Evaluation Of Piperazine As Controlled Release Matrix Tablets: A Comprehensive Review",
+            title: "Ayush Sharma",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-7-Ayush-Sharma.pdf"
+        },
+        {
+            id: 227,
+            shortName: "Challenges And Emerging Treatment Strategies For Pediatric Asthma",
+            title: "Harshita Chanap",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-8-Harshita-Chanap.pdf"
+        },
+        {
+            id: 228,
+            shortName: "Gastroretentive Superporous Hydrogel In Peptic Ulcer Therapy: A Comprehensive Review",
+            title: "Raj Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-9-Raj-Singh.pdf"
+        },
+        {
+            id: 229,
+            shortName: "Advances In Herbal Transdermal Drug Delivery Systems For Anti-Inflammatory Therapy: Formulation, Evaluation, And Emerging Technologies",
+            title: "Shreya Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-10-Shreya-Sahu.pdf"
+        },
+        {
+            id: 230,
+            shortName: "Use Of Polyherbal Formulations For The Effective Treatment Of Diabetes Mellitus",
+            title: "Adarsh Rathore",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-11-Adarsh-Rathore.pdf"
+        },
+        {
+            id: 231,
+            shortName: "Artificial Intelligence And Machine Learning In Rational Drug Design And Lead Optimization Current Advances And Unborn Outlook",
+            title: "Chitransh Khare",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-12-Chitransh-Khare.pdf"
+        },
+        {
+            id: 232,
+            shortName: "In Vitro Evaluation Of The Antioxidant And Anti-Inflammatory Potential Of Croton Bonplandianus",
+            title: "Adarsh Ranjan Jagat",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-13-Adarsh-Ranjan-Jagat.pdf"
+        },
+        {
+            id: 233,
+            shortName: "Peptide-Based Strategies For Diagnosis And Therapy Of Lung Cancer: Mechanisms, Delivery Systems, And Clinical Translation",
+            title: "Aditya Nishad",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-14-Aditya-Nishad.pdf"
+        },
+        {
+            id: 234,
+            shortName: "Dual Modulation Of CD44 P-GP Pathways Using Hyaluronic Acid Nanocarriers For Colon Cancer Therapy",
+            title: "Aviral Pandey",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-15-Aviral-Pandey.pdf"
+        },
+        {
+            id: 235,
+            shortName: "Polymeric Nanoparticles For Diabetic Wound Healing: Current Advances And Translational Prospects",
+            title: "Devashish Kumar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-16-Devashish-Kumar.pdf"
+        },
+        {
+            id: 236,
+            shortName: "Current Therapeutic Challenges In The Treatment Of Psoriasis In Ayurveda",
+            title: "Ravi Ranjan",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-17-Ravi-Ranjan.pdf"
+        },
+        {
+            id: 237,
+            shortName: "Salicylic Acid In Psoriasis Management: Keratolytic And Therapeutic Implication - A Review",
+            title: "Rohan Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-18-Rohan-Singh.pdf"
+        },
+        {
+            id: 238,
+            shortName: "Phytochemical Constituents of Amorphophallus paeoniifolius (Dennst.) Nicolson and Their Antioxidant Potential: A Comprehensive Review",
+            title: "Mr. Ayush Jaiswal",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-19-Mr-Ayush-Jaiswal.pdf"
+        },
+        {
+            id: 239,
+            shortName: "In-Vitro Evaluation Of Efflux Pump Inhibitory Activity Of Chenopodium Album Against Antibiotic-Resistant Bacteria",
+            title: "Jyoti Rani",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-20-Jyoti-Rani.pdf"
+        },
+        {
+            id: 240,
+            shortName: "Assessment Of Synergistic Interaction Between Allium Sativum Extract, Honey, And Amoxicillin Against Multi-Drug Resistant (MDR) Clinical Isolates Of Escherichia Coli",
+            title: "Anirban Maity",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-21-Anirban-Maity.pdf"
+        },
+        {
+            id: 241,
+            shortName: "In Vitro Protein Denaturation Inhibition Assay Of Cuscuta Reflexa For Potential Anti-Inflammatory Activity In Eczema Management",
+            title: "Khushi Chaurasiya",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-22-Khushi-Chaurasiya.pdf"
+        },
+        {
+            id: 242,
+            shortName: "In-Vitro Enzyme Inhibition Approach For Pharmacological Management Of Type-2 Diabetes Mellitus Using A Combination Of Quercetin And Gallic Acid",
+            title: "Anshul Prakash",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-23-Anshul-Prakash.pdf"
+        },
+        {
+            id: 243,
+            shortName: "Development And Evaluation Of Sustained Release Matrix Tablets Of Niclosamide For Anthelmintic Therapy",
+            title: "Biswajeet Panda",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-24-Biswajeet-Panda.pdf"
+        },
+        {
+            id: 244,
+            shortName: "In Silico-Guided Development And Physicochemical Characterization Of Cinnamon Extract-Loaded Transdermal Patches For Postprandial Hyperglycemia Management: A Comprehensive Review",
+            title: "Chinmay Kumar Pradhan",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-25-Chinmay-Kumar-Pradhan.pdf"
+        },
+        {
+            id: 245,
+            shortName: "Development And Evaluation Of A Sodium Alginate And HPMC-Based In Situ Gelling Gastroretentive System Of Curcumin For Anti-Ulcer Therapy",
+            title: "Subashis Sahoo",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-26-Subashis-Sahoo.pdf"
+        },
+        {
+            id: 246,
+            shortName: "Advances In Effervescent Tablet Formulations: Design, Evaluation, And Therapeutic Applications",
+            title: "Vishal Kumar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-27-Vishal-Kumar.pdf"
+        },
+        {
+            id: 247,
+            shortName: "Comparative Study Of Acetycholinesterase Inhibitory Activity Of Various Extract Of Bacopa Monnieri And Aegle Marmelos",
+            title: "Dhaneshwari Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-28-Dhaneshwari-Sahu.pdf"
+        },
+        {
+            id: 248,
+            shortName: "Development Of A Wireless Biochip For On-Demand Transdermal Drug Delivery",
+            title: "Sunil Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-29-Sunil-Sahu.pdf"
+        },
+        {
+            id: 249,
+            shortName: "Enzymes Responsive Hydrogels For The Treatment Of Cancer Therapy",
+            title: "Mohammad Faiz",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-30-Mohammad-Faiz.pdf"
+        },
     ];
 
     // Derived values based on the selected archives tab
