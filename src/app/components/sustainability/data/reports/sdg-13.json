@@ -1,0 +1,2709 @@
+{
+  "number": 13,
+  "title": "Climate Action",
+  "sourceUrl": "https://drive.google.com/file/d/1EBHJx0ASwiDzIiTRRUFPtIj2H16tHEFt/view",
+  "sourceDate": "27 October 2026",
+  "dashboard": [
+    {
+      "label": "SDG 13 Related Publications (2024–25)",
+      "value": "107"
+    },
+    {
+      "label": "Cumulative SDG 13 Publications",
+      "value": "148"
+    },
+    {
+      "label": "Field-Weighted Citation Impact",
+      "value": "0.62"
+    },
+    {
+      "label": "Citation Count",
+      "value": "238"
+    },
+    {
+      "label": "SDG 13 Outreach Activities",
+      "value": "7"
+    },
+    {
+      "label": "DG 13-Aligned Courses/Subjects",
+      "value": "24"
+    },
+    {
+      "label": "Major Climate Research Themes",
+      "value": "6"
+    },
+    {
+      "label": "Community-Level Climate/Environment Activities",
+      "value": "3"
+    },
+    {
+      "label": "Climate-Action Technologies",
+      "value": "7"
+    },
+    {
+      "label": "Low-Carbon Campus Measures",
+      "value": "5"
+    },
+    {
+      "label": "International Conference on Emerging Technologies for Sustainable Development” (ICETSD-2025)",
+      "value": "743 Participants"
+    }
+  ],
+  "intro": [
+    {
+      "type": "image",
+      "src": "/sdg-reports/sdg-13/21ac39f63454f391.png",
+      "alt": "SDG 13: Climate Action - report evidence"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sustainable Development Goal 13 calls for urgent action to combat climate change and its impacts. Within higher education, the goal recognises the role of universities in generating evidence, developing mitigation and adaptation solutions, strengthening climate resilience, supporting low-carbon transitions and educating society about climate risks."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kalinga University, Raipur contributes to this agenda through multidisciplinary research covering climate change impacts, carbon emissions and sequestration, extreme weather and disaster-risk reduction, climate-resilient infrastructure, atmospheric pollution, biodiversity responses and climate-smart technological solutions."
+    }
+  ],
+  "sections": [
+    {
+      "title": "13.1 Research on Climate Action",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Based on the publication records supplied by Kalinga University, 52 distinct climate-action-aligned research papers were identified for the period 2021-2025. The screening focused on titles demonstrating direct and substantial relevance to climate change mitigation or adaptation, greenhouse-gas reduction, carbon sequestration, climate-related hazards, ecological impacts, climate resilience and atmospheric conditions linked to climate action."
+        },
+        {
+          "type": "paragraph",
+          "text": "The resulting portfolio demonstrates contributions from science, computer science and information technology, engineering and technology, law, pharmacy, commerce and management, and arts and humanities. This interdisciplinary profile is important because climate action requires integrated scientific, technological, legal, public-health, governance and socio-economic responses."
+        },
+        {
+          "type": "heading",
+          "text": "13.1.1 Climate Action – Cite Score",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University demonstrates a significant research contribution towards Sustainable Development Goal 13 (SDG 13): Climate Change. During the period 2021–2025, the University produced 118 research papers aligned with SDG 13. These publications collectively received 238 citations, reflecting the scholarly visibility, relevance, and impact of research related to quality education. These bibliometric indicators highlight the University & sustained efforts in advancing knowledge related to education, teaching-learning practices, educational innovation, inclusion, skill development, and lifelong learning. Overall the research performance during 2014–2025 reflects Kalinga University& commitment to strengthening quality education and contributing to the achievement of SDG 4 through impactful research, knowledge creation, and dissemination."
+        },
+        {
+          "type": "heading",
+          "text": "13.1.2 Climate Action - FWCI",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Field-Weighted Citation Impact (FWCI) compares the citations received by an output with the global average for similar publications by subject, year and document type. The supplied dataset does not include citation counts or SciVal FWCI values, so no unsupported numerical FWCI has been stated."
+        },
+        {
+          "type": "paragraph",
+          "text": "The research themes identified are globally active areas that are strongly connected to climate mitigation, adaptation and resilience. For final THE reporting, the screened publication list may be uploaded to SciVal or matched in Scopus to calculate aggregate FWCI, total citations, citations per publication, international collaboration and the proportion of outputs in highly cited journals. These publications have achieved a Field-Weighted Citation Impact (FWCI) of 0.62, indicating that they are cited significantly more often than the global average in their respective disciplines."
+        },
+        {
+          "type": "heading",
+          "text": "13.1.3 Climate Action - Publications",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has shown consistent growth in research aligned with SDG 13 (Climate Action), increasing from 0 publications in 2021 to 91 in 2025. The rise reflects the University’s growing research focus on climate change, environmental sustainability, and climate action, supporting global efforts to address climate-related challenges."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Year",
+            "SDG - 13 Aligned Research Papers"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021",
+                "colSpan": 1
+              },
+              {
+                "text": "0",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "2",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "9",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "16",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "91",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/50c343f99d9dd7e5.png",
+          "alt": "SDG 13: 13.1.3 Climate Action - Publications - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 1: Year-wise SDG 13 research publication trend."
+        },
+        {
+          "type": "paragraph",
+          "text": "Faculty-wise Contribution"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Faculty of Science and Faculty of CS & IT are the leading contributors, followed by the Faculty of Technology, Pharmacy, Commerce & Management and Law. The distribution reflects a broad research base ranging from climate science and ecology to artificial intelligence, remote sensing, infrastructure resilience, environmental law and public-health risk."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/88599ae379e8eefb.png",
+          "alt": "SDG 13: 13.1.3 Climate Action - Publications - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 2: Faculty-wise contribution to climate-action research."
+        },
+        {
+          "type": "paragraph",
+          "text": "Research Theme Distribution"
+        },
+        {
+          "type": "paragraph",
+          "text": "The publication portfolio is distributed across climate-change policy and adaptation, disaster risk and extreme events, carbon emissions and mitigation, atmospheric pollution, ecosystem impacts and climate-smart agriculture. Carbon sequestration, flood prediction, heat-wave research, climate-resilient infrastructure, greenhouse-gas reduction and biodiversity adaptation are notable areas of strength."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/973388081bd5dfe1.png",
+          "alt": "SDG 13: 13.1.3 Climate Action - Publications - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 3: Theme-wise distribution of SDG 13 research outputs."
+        },
+        {
+          "type": "paragraph",
+          "text": "Summary of Research Themes"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Research theme",
+            "Publications",
+            "Illustrative contribution"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              },
+              {
+                "text": "15",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate adaptation, climate governance, legal frameworks, climate-resilient infrastructure and low-carbon transitions.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              },
+              {
+                "text": "13",
+                "colSpan": 1
+              },
+              {
+                "text": "Flood forecasting, heat waves, forest-fire detection, landslides and disaster-risk reduction.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              },
+              {
+                "text": "12",
+                "colSpan": 1
+              },
+              {
+                "text": "Greenhouse-gas assessment, carbon sequestration, carbon footprints and emission reduction.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "9",
+                "colSpan": 1
+              },
+              {
+                "text": "Air-quality monitoring, air-pollution modelling and atmospheric environmental assessment.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Ecosystems & Climate Impacts",
+                "colSpan": 1
+              },
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate effects on biodiversity, wildlife, aquaculture, coral reefs and marine systems.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Climate-smart Agriculture & Water",
+                "colSpan": 1
+              },
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "Drought, climate-smart crops and resource resilience.",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Major Research Contributions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University’s climate-action portfolio includes modelling of climate-change impacts on reservoirs and infrastructure, bibliometric mapping of heat-wave research, urban climate adaptation, carbon sequestration in orchards, mangroves and green buildings, remote-sensing assessment of coral-reef health, greenhouse-gas emissions from rice cultivation, real-time flood prediction, AI-based landslide and forest-fire detection, and legal analysis of climate governance and carbon trading."
+        },
+        {
+          "type": "paragraph",
+          "text": "The portfolio also demonstrates the use of advanced technologies such as artificial intelligence, machine learning, geographic information systems, remote sensing, computer vision, Internet of Things and edge computing. These methods support early warning, environmental monitoring, risk mapping, climate-impact assessment and evidence-based adaptation planning."
+        },
+        {
+          "type": "paragraph",
+          "text": "Representative SDG 13 Publications"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Year",
+            "Title",
+            "Faculty/Department",
+            "Journal",
+            "Theme"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Waterborne Pathogen Surveillance in Flood-Prone Regions Using qPCR",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Urban Development with Green Infrastructures for Optimised Climate Change Conditions",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "World Researchers Associations",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Unveiling the Climate Change Impact and Suitability Assessment of CMIP5 and CMIP6 Emission Scenarios for the Mahanadi Reservoir Project Complex, Chhattisgarh",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Water Management Modeling",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "The Relationship Between Urban Heat Islands and Cardiovascular Events",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Smart IoT-Based Air Quality Monitoring and Alert System for Urban Environments",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Review on Suitability of Carbon Sequestration in Mango Orchards in Village of Garhfuljhar, Chhattisgarh, India",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Kronika Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Real-Time Flood Prediction Using Remote Sensing and Edge Computing",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Phytoplankton dynamics and their role in carbon sequestration across different oceanic zones",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Ocean acidification on carbonate chemical disruption and its implications for marine calcifiers and shellfish farming",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "Ecosystems & Climate Impacts",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Monitoring Indoor Air Quality in Hospitals and Its Impact on Patient Recovery",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Modelling Carbon Sequestration Efficiency in Green Roof and Wall Systems",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Mangrove sediment ecological and biogeochemical significance for blue carbon sequestration",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Long-Term Effects of Urban Air Pollution on Respiratory Health in Children",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Conclusion"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur demonstrates a growing and multidisciplinary contribution to SDG 13: Climate Action. The identified publications cover climate mitigation, adaptation, carbon management, extreme-weather risk, environmental monitoring, biodiversity and climate resilience. The strong growth in recent years provides credible evidence of expanding institutional engagement with climate-related challenges."
+        },
+        {
+          "type": "paragraph",
+          "text": "Annexure: SDG 13 Publication Evidence"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Year",
+            "Publication title",
+            "Author(s)",
+            "Faculty/Department",
+            "Research theme"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Waterborne Pathogen Surveillance in Flood-Prone Regions Using qPCR",
+                "colSpan": 1
+              },
+              {
+                "text": "Ayesha Bano Khan; Shinki Katyayani Pandey",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Urban Development with Green Infrastructures for Optimised Climate Change Conditions",
+                "colSpan": 1
+              },
+              {
+                "text": "Akshit Lamba; Swati Agrawal",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Unveiling the Climate Change Impact and Suitability Assessment of CMIP5 and CMIP6 Emission Scenarios for the Mahanadi Reservoir Project Complex, Chhattisgarh",
+                "colSpan": 1
+              },
+              {
+                "text": "Akshit Lamba; Ashutosh Pandey; Choman Adil; E.V. Raghava Rao; Shailesh Singh Thakur; Swapnil Jain; Swati Agrawal",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "The Relationship Between Urban Heat Islands and Cardiovascular Events",
+                "colSpan": 1
+              },
+              {
+                "text": "Anjali Rajput; Lalit Sachdeva",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Smart IoT-Based Air Quality Monitoring and Alert System for Urban Environments",
+                "colSpan": 1
+              },
+              {
+                "text": "Gaurav Tamrakar; Ravinder Sharma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Review on Suitability of Carbon Sequestration in Mango Orchards in Village of Garhfuljhar, Chhattisgarh, India",
+                "colSpan": 1
+              },
+              {
+                "text": "Abhismita Roy",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Real-Time Flood Prediction Using Remote Sensing and Edge Computing",
+                "colSpan": 1
+              },
+              {
+                "text": "Gurudiwan Prachi; Rajesh Sehgal",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Phytoplankton dynamics and their role in carbon sequestration across different oceanic zones",
+                "colSpan": 1
+              },
+              {
+                "text": "Ashu Nayak",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Ocean acidification on carbonate chemical disruption and its implications for marine calcifiers and shellfish farming",
+                "colSpan": 1
+              },
+              {
+                "text": "Pooja Sharma; Priya Vij",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Ecosystems & Climate Impacts",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Monitoring Indoor Air Quality in Hospitals and Its Impact on Patient Recovery",
+                "colSpan": 1
+              },
+              {
+                "text": "Ghate, Atul Dattatraya; Pradhan, Sachin",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Modelling Carbon Sequestration Efficiency in Green Roof and Wall Systems",
+                "colSpan": 1
+              },
+              {
+                "text": "Chiranjeev Singh; Manish Nandy",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Mangrove sediment ecological and biogeochemical significance for blue carbon sequestration",
+                "colSpan": 1
+              },
+              {
+                "text": "Harish Jaiswal; Naina Bhoyar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Long-Term Effects of Urban Air Pollution on Respiratory Health in Children",
+                "colSpan": 1
+              },
+              {
+                "text": "Pinki Nayak; Sandeep Soni",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Integrated remote sensing and GIS approach for mapping coral reef health in response to climate change",
+                "colSpan": 1
+              },
+              {
+                "text": "Aakansha Soy",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Harnessing Roadside Vegetation for Carbon Sequestration in Urban India: Potential and Challenges",
+                "colSpan": 1
+              },
+              {
+                "text": "Abhismita Roy; Ms. Abhismita Roy",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Harnessing GIS, remote sensing, and machine learning for sustainable management and carbon sequestration of non-timber forest products in Gujarat, India",
+                "colSpan": 1
+              },
+              {
+                "text": "Hari Sankar; Hari Shankar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Examining the Influence of Climate Change and Habitat Loss on the Migration Patterns and Population Dynamics of Migratory Species",
+                "colSpan": 1
+              },
+              {
+                "text": "Priyanka Gupta; Sarvaree Bano",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy, Ecosystems & Climate Impacts",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Evaluating the Role of Landscape Restoration in Enhancing Biodiversity Resilience to Climate Extremes",
+                "colSpan": 1
+              },
+              {
+                "text": "Preeti Pandey; Sarvaree Bano",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Ecosystems & Climate Impacts",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Evaluating the Resilience of Wildlife Populations to Climate Change and Its Implications for Conservation Strategies",
+                "colSpan": 1
+              },
+              {
+                "text": "Anubha Joshi; Brijkant Shukla",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Evaluating the Effectiveness of Climate Adaptation Strategies in Protecting Biodiversity in Protected Areas",
+                "colSpan": 1
+              },
+              {
+                "text": "Pokhraj Sahu; Priya Paul",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy, Ecosystems & Climate Impacts",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Correction: Harnessing GIS, remote sensing, and machine learning for sustainable management and carbon sequestration of non-timber forest products in Gujarat, India",
+                "colSpan": 1
+              },
+              {
+                "text": "Hari Shankar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate-induced stress and disease dynamics in aquaculture species",
+                "colSpan": 1
+              },
+              {
+                "text": "R. Udayakumar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Ecosystems & Climate Impacts",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change And Mitigation: AComprehensive Overview",
+                "colSpan": 1
+              },
+              {
+                "text": "Priya Paul",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change Adaptation Strategies in Urban Infrastructure Planning",
+                "colSpan": 1
+              },
+              {
+                "text": "Debarghya Biswas; Deepak Kumar Sahu",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Autonomous Drones for Forest Fire Detection and Early Response Systems",
+                "colSpan": 1
+              },
+              {
+                "text": "Priya Vij; Venu Anand Das Vaishnav",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT; Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "AI-Integrated Disaster Risk Reduction System for Real-Time Response and Prevention in Vulnerable Regions",
+                "colSpan": 1
+              },
+              {
+                "text": "Jainish Roy",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "A Study on the Role of Photovoltaic Technology in Reducing India’s Carbon Footprint",
+                "colSpan": 1
+              },
+              {
+                "text": "Aloke Verma; Dr. Shilpi Shrivastava",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "A Climate Change Impacts on Structural Durability of Concrete",
+                "colSpan": 1
+              },
+              {
+                "text": "Mrs. Soumya Pandey",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Utilizing AI to enhance the effectiveness of plant breeding for the development of climate-resilient smart food crops",
+                "colSpan": 1
+              },
+              {
+                "text": "Divya",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Ecosystems & Climate Impacts",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Prediction of Air Pollution Utilizing an Adaptive Network Fuzzy Inference System with the Aid of Genetic Algorithm",
+                "colSpan": 1
+              },
+              {
+                "text": "R. Udayakumar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "PERFORMANCE ANALYSIS OF ENVIRONMENTAL SUSTAINABILITY USING RENEWABLE ENERGY SOURCES TO DECREASE GREENHOUSE GAS EMISSION",
+                "colSpan": 1
+              },
+              {
+                "text": "Ashu Nayak; Shailesh Madhavrao Deshmukh",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Formulation And Characterization in Pharmaceutical Aerosols",
+                "colSpan": 1
+              },
+              {
+                "text": "Prerana Sahu; Rashmi Sinha",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Flood Hazard: A QGIS Plugin for Assessing Flood Consequences",
+                "colSpan": 1
+              },
+              {
+                "text": "Ashutosh Pandey",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Computer Vision Application for Effective Flood Forecasting in Public Health Systems",
+                "colSpan": 1
+              },
+              {
+                "text": "Uruj Jaleel",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Assessing Greenhouse Gas Emissions from Rice Paddy Fields: The Impact of Water Management Practices on Methane and Nitrous Oxide",
+                "colSpan": 1
+              },
+              {
+                "text": "Preeti Pandey; Shilpi Shrivastava",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon Emissions & Mitigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Adapting Pharmacognosy to Climate Change: Threats to Medicinal Flora and Sustainable Conservation Measures",
+                "colSpan": 1
+              },
+              {
+                "text": "Birendra Kumar Sahu; Sachin Pradhan",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate Change & Policy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Accounting for natural disasters using risk of information security",
+                "colSpan": 1
+              },
+              {
+                "text": "Ankita Nihlani; Parvindar Kaur Chhabda",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "ANALYSIS, ASSESSMENT, AND MANAGEMENT OF ENVIRONMENTAL AIR POLLUTION USING ENVIRONMENTAL ENGINEERING IN DEVELOPING COUNTRIES",
+                "colSpan": 1
+              },
+              {
+                "text": "Diwakar; Rajvir Saini",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "AI-enabled Landslide Recognition for Effective Public Health Risk Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Nikita Sharma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Risk & Extreme Events",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "A Real-Time Air Quality and Public Health Monitoring and Management Model",
+                "colSpan": 1
+              },
+              {
+                "text": "Ravinder Sharma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Pollution & Atmospheric Studies",
+                "colSpan": 1
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13.2 Low-carbon Energy Use",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to reducing its carbon footprint by promoting the efficient use of energy and increasing the adoption of low-carbon and renewable energy sources across its campus. To promote sustainability and environmental responsibility, the University is taking various green initiatives and contributing towards various United Nations Sustainable Development Goals (SDGs), the campus features a green landscape that supports ecological balance and biodiversity, pedestrian-friendly pathways, and the use of sustainable modes of transportation like bicycles and e-vehicles. Solar panels and LED lights installed in different buildings reduce electricity consumption and promote the usage of renewable sources of energy. Various outreach activities, environmental-focused projects, and research initiatives build awareness among students and staff."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/6f044a29d64fac3e.png",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/89b1bdbf1116c6b7.png",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/07d004322ad2984a.png",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/1e13c8e064e930df.jpeg",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "EV in the campus"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/2d70dcf900166cf9.png",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Solar Lights in Buildings"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/0ca2fc307aac25ef.png",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sensor Light in the corridor"
+        },
+        {
+          "type": "paragraph",
+          "text": "Biogas Plant and Eco-Friendly vehicles for carbon management"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to advancing Sustainable Development Goal by implementing practical measures for reducing greenhouse gas emissions and promoting low-carbon practices across the campus. The university's biogas plant and eco-friendly transportation initiatives contribute to responsible carbon management and demonstrate its commitment to creating a sustainable and climate-resilient campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "For efficient waste management, the University has installed a biogas plant on campus that converts organic and food waste generated from hostels and other campus areas into renewable energy. The biogas produced is used as a clean fuel, reducing the dependence on conventional fuels. The plant also produces nutrient-rich slurry, an organic fertiliser used in gardening and landscaping purposes, promoting sustainable resource usage and a circular approach towards waste management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The institution has established a Centre of Excellence dedicated to promoting sustainable and innovative practices across campus. As a key initiative, an eBlu Electric Vehicle (EV) has been introduced to create awareness about eco-friendly and energy-efficient transportation systems. The university actively encourages staff members to adopt carpooling practices, helping to reduce fuel consumption, traffic congestion, and carbon emissions. Additionally, well-organized bus facilities are provided to ensure safe, reliable, and convenient commuting for staff. These combined efforts demonstrate the institution’s strong commitment to environmental responsibility, energy conservation, and building a greener, more sustainable campus culture."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/deeca6f99d557415.png",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Biogas Plant of the University"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Data Collected",
+            "Definition"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Total energy used",
+                "colSpan": 1
+              },
+              {
+                "text": "Total energy used in 2024 in 2025 in 3,578.5476 GJ",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Total energy used from low-carbon sources 200 V",
+                "colSpan": 1
+              },
+              {
+                "text": "Energy used from low-carbon sources in 2024 in 0.01 Gigajoule (GJ)",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/3a6b6b51a09e92fc.png",
+          "alt": "SDG 13: 13.2 Low-carbon Energy Use - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Biogas plant of the University"
+        }
+      ]
+    },
+    {
+      "title": "13.3 Environmental Education Measures",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University integrates environmental education and climate-action perspectives into its academic, research, and extension activities to promote awareness and responsible environmental practices among students and staff. The University encourages interdisciplinary learning related to environmental sustainability, climate change, natural resource conservation, renewable energy, waste management, biodiversity, and the Sustainable Development Goals (SDGs). A core course of ‘Environmental Studies’ for all UG programs provides a basic understanding of environment and sustainability including the ‘climate change and SDGs component’ in their very first year, while minor degree programs like environmental management, Climate Science, Renewable Energy provide scope for more specialization."
+        },
+        {
+          "type": "heading",
+          "text": "13.3.1: Local Education Programmes in Climate",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Tutoring climate change associated courses at different schools of Kalinga University and organizing environmental activities for educational purposes for the community."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University incorporates environment- and climate-related concepts into various academic programmes and courses offered across different schools and departments. Through courses such as Environmental Studies, Environmental Chemistry, Green Chemistry, Sustainable Development, Environmental Science, and other interdisciplinary subjects, students are introduced to fundamental concepts related to climate change, greenhouse gas emissions, environmental pollution, biodiversity conservation, natural resource management, renewable energy, waste management, and sustainable practices."
+        },
+        {
+          "type": "paragraph",
+          "text": "List- SDG13-Aligned Courses and Subjects Promoting Climate Change"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Course Code",
+            "Course Title",
+            "SDG 13 Relevance"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "MAPA304B",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Management-I",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster preparedness, resilience, risk reduction and climate adaptation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "MAPA404B",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Management-II",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster risk reduction, resilience and climate adaptation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "MAECO-303A",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Economics",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental protection, climate action and sustainable resource use",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "MAGEO102",
+                "colSpan": 1
+              },
+              {
+                "text": "Climatology",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate systems, climate variability, climate change and adaptation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "MAGEO104B",
+                "colSpan": 1
+              },
+              {
+                "text": "Natural Hazards and Disaster Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Hazard assessment, resilience, risk reduction and climate adaptation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "MAGEO202",
+                "colSpan": 1
+              },
+              {
+                "text": "Oceanography",
+                "colSpan": 1
+              },
+              {
+                "text": "Marine systems, climate interactions and ocean conservation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "7",
+                "colSpan": 1
+              },
+              {
+                "text": "MAGEO204B",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Geography",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental systems, climate action and ecosystem conservation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "8",
+                "colSpan": 1
+              },
+              {
+                "text": "MASOC302",
+                "colSpan": 1
+              },
+              {
+                "text": "Sociology of Environment",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate action, sustainable lifestyles and ecosystem protection",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "9",
+                "colSpan": 1
+              },
+              {
+                "text": "MSOWR104A",
+                "colSpan": 1
+              },
+              {
+                "text": "Social Work and Disaster Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Community resilience, climate adaptation and disaster preparedness",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "10",
+                "colSpan": 1
+              },
+              {
+                "text": "BAJMC101A",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental awareness, climate action and sustainable lifestyles",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "BPED103",
+                "colSpan": 1
+              },
+              {
+                "text": "Health Education and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental responsibility and climate/environmental awareness",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "12",
+                "colSpan": 1
+              },
+              {
+                "text": "BALLB905D",
+                "colSpan": 1
+              },
+              {
+                "text": "Maritime Law",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate resilience and marine environmental protection",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "13",
+                "colSpan": 1
+              },
+              {
+                "text": "MZOO305A",
+                "colSpan": 1
+              },
+              {
+                "text": "Forest & Wildlife Conservation",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate action, forest conservation and biodiversity protection",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "14",
+                "colSpan": 1
+              },
+              {
+                "text": "MBT303",
+                "colSpan": 1
+              },
+              {
+                "text": "Environmental Biotechnology",
+                "colSpan": 1
+              },
+              {
+                "text": "Pollution control, environmental restoration and climate-resilient development",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "15",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE505C",
+                "colSpan": 1
+              },
+              {
+                "text": "Air and Noise Pollution Control",
+                "colSpan": 1
+              },
+              {
+                "text": "Air pollution control and climate-related environmental concerns",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "16",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE505D",
+                "colSpan": 1
+              },
+              {
+                "text": "GIS and Advanced Remote Sensing",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate assessment, environmental monitoring and disaster management",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "17",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE604B",
+                "colSpan": 1
+              },
+              {
+                "text": "River Engineering",
+                "colSpan": 1
+              },
+              {
+                "text": "Flood control, sustainable water management and climate adaptation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "18",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCEOE606D",
+                "colSpan": 1
+              },
+              {
+                "text": "Renewable Energy Resources",
+                "colSpan": 1
+              },
+              {
+                "text": "Clean energy transition and reduction of greenhouse-gas emissions",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "19",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE703A",
+                "colSpan": 1
+              },
+              {
+                "text": "Water Resource Engineering",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate-resilient infrastructure and sustainable water management",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "20",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE703B",
+                "colSpan": 1
+              },
+              {
+                "text": "Ground Improvement Techniques",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate-resilient engineering and sustainable construction",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "21",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE704C",
+                "colSpan": 1
+              },
+              {
+                "text": "Geosynthesis & Reinforced Soil Structures",
+                "colSpan": 1
+              },
+              {
+                "text": "Resilient and sustainable infrastructure",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE704D",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster Preparedness & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Disaster preparedness, risk reduction, resilience and climate adaptation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "23",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCE704E",
+                "colSpan": 1
+              },
+              {
+                "text": "Sustainable Construction Methods",
+                "colSpan": 1
+              },
+              {
+                "text": "Low-carbon development, sustainable materials and resilient infrastructure",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "24",
+                "colSpan": 1
+              },
+              {
+                "text": "BTCEOE705B",
+                "colSpan": 1
+              },
+              {
+                "text": "Bioeconomics",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate action, circular resource use and biodiversity conservation",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "List of Events:"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Sr. No",
+            "Name of the event",
+            "Date of the event"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1.",
+                "colSpan": 1
+              },
+              {
+                "text": "Poster making & Awareness drive on “World River Day”",
+                "colSpan": 1
+              },
+              {
+                "text": "24/09/2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2.",
+                "colSpan": 1
+              },
+              {
+                "text": "World Environment Day Celebration",
+                "colSpan": 1
+              },
+              {
+                "text": "05/06/2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3.",
+                "colSpan": 1
+              },
+              {
+                "text": "Wildlife Week Celebration 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "04/10/2025- 08/10/2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4.",
+                "colSpan": 1
+              },
+              {
+                "text": "International Conference on Emerging Technologies for Sustainable Development” (ICETSD-2025)",
+                "colSpan": 1
+              },
+              {
+                "text": "17/04/2025- 18/04/2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5.",
+                "colSpan": 1
+              },
+              {
+                "text": "Seminar on “Waste Optimization and Cleaner Technology: A Sustainable Approach to Solid and E-Waste Management, Energy Recovery, and Mitigating the Effects of Climate Change”",
+                "colSpan": 1
+              },
+              {
+                "text": "03/09/2025 – 04/09/2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6.",
+                "colSpan": 1
+              },
+              {
+                "text": "World Ozone Day Celebration",
+                "colSpan": 1
+              },
+              {
+                "text": "15/09/25,16/09/25 & 24/09/25",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "7.",
+                "colSpan": 1
+              },
+              {
+                "text": "Public Awareness on Water Conservation",
+                "colSpan": 1
+              },
+              {
+                "text": "26/03/25",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Summary Report"
+        },
+        {
+          "type": "paragraph",
+          "text": "World River Day:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 24.09. 2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 02:00 PM Onwards"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: New Building, Kalinga University, Naya Raipur (C.G.)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: NCC Department (Army Wing)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: 37 cadets"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details of Program:The program was held offline at Kalinga University, Kotni, Naya Raipur, from 02:00 PM onwards, with 37 cadets actively participating. The event aimed to create awareness about river conservation and cleanliness under the theme “#Hamari Nadiya – Hamari Zimmedari (Cleaning & Protecting Rivers – Cradle of Civilization & Lifeline)”."
+        },
+        {
+          "type": "paragraph",
+          "text": "World Environment Day Celebration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 05.06.2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 10:00 AM Onwards"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: Convention Hall & Big Conference Hall, New Circuit House, Civil Line Raipur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: Chhattisgarh Environment Conservation Board"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: More than 300 Number of"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University Student Participants: 06"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details of Program: To commemorate World Environment Day, a Poster Making Competition was organized focusing on the theme “Plastic Pollution – Side Effects & Solutions.” The event witnessed enthusiastic participation across four categories:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Category I: Up to 12 years"
+        },
+        {
+          "type": "paragraph",
+          "text": "Category II: 13 to 17 years"
+        },
+        {
+          "type": "paragraph",
+          "text": "Category III: 18 to 21 years"
+        },
+        {
+          "type": "paragraph",
+          "text": "Category IV: Handicapped persons"
+        },
+        {
+          "type": "paragraph",
+          "text": "Wildlife Week Celebration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 04.10.2025 - 08.10.2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 10:00 AM onwards"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: Kalinga University Campus, Naya Raipur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: Nandanvan Jungle Safari, Chhattisgarh Forest & Climate Change Department"
+        },
+        {
+          "type": "paragraph",
+          "text": "in collaboration with Green Club & Department of Zoology Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: 247"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details of Program:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Participants from multiple colleges and universities created vibrant Rangoli artworks and compelling slogans centered on wildlife conservation, sustainable ecosystems, and human–nature coexistence Painting, Debate, and Open-Mic Competitions, drawing from schools, undergraduate and postgraduate students across institutions. The events highlighted artistic expression, intellectual engagement, and environmental consciousness."
+        },
+        {
+          "type": "paragraph",
+          "text": "International Conference on Emerging Technologies for Sustainable Development” (ICETSD-2025)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 17.04.2025 to 18.04.2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 9:30AM to 3:45PM"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: Auditorium (Online), Seminar Hall (Offline) & MBSF-06 (Online)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: Kalinga University Campus, Naya Raipur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: 743"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details of Program: The event was held in collaboration with Government Engineering College Raipur, Guru Ghasidas Vishwavidyalaya Bilaspur, Visvesvaraya Group of Institutions Gautam Buddha Nagar, UltraTech Cement, and the Center for Energy and Environmental Sustainability. The seven technical sessions focused on crucial areas including sustainable agriculture and food security, global health innovation, water management and sanitation, transformative energy technologies, resilient development, technology-driven governance and justice, and educational technologies for sustainable learning."
+        },
+        {
+          "type": "paragraph",
+          "text": "Seminar on “Waste Optimization and Cleaner Technology: A Sustainable Approach to Solid and E-Waste Management, Energy Recovery, and Mitigating the Effects of Climate Change"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 03.09.2025 to 05.09.2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 10:00 AM onwards"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: Auditorium (Online), Seminar Hall (Offline)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: Kalinga University Campus, Naya Raipur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: 69"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details of Program: Sessions focused on Waste generation and global trends, cleaner technology, waste optimization, sustainable solid waste management, climate change and waste linkages, recycling innovations, circular economy, energy recovery from waste, and e-waste management"
+        },
+        {
+          "type": "paragraph",
+          "text": "World Ozone Day"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 15.09.25,16.09.25 & 24.09.25"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 10:00 AM onwards"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: Kalinga University Campus, Naya Raipur & Circuit House: Raipur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: Kalinga University in collaboration with Chhattisgarh Environmental Conservation Board (CECB)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: 150"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details of Program: Green Club & Department of Zoology, Kalinga University in collaboration with Chhattisgarh Environmental Conservation Board (CECB) organized the 1 st Phase of “Envirothon: Waste to Wealth. This was a collaborative effort between Kalinga University and CECB, to address the overarching and challenging global issue of “Waste Management”. The main focus was to allow the young minds to creatively think for solutions which can be used in effectively and efficiently recycling waste."
+        },
+        {
+          "type": "paragraph",
+          "text": "Water Conservation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 26.03.25"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 10:30AM – 1: 00 PM"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: Kalinga University Campus, Naya Raipur & Circuit House: Raipur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: Department of Zoology, Kalinga University”"
+        },
+        {
+          "type": "paragraph",
+          "text": "In Association with “Central Ground Water Board, ChhattisgarhMinistry of Jal Shakti, Govt. of India"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: 109"
+        },
+        {
+          "type": "paragraph",
+          "text": "Details of Program:"
+        },
+        {
+          "type": "paragraph",
+          "text": "A student awareness program was organized in collaboration between the Department of Zoology, Kalinga University and The Central Groundwater Board, Ministry of Jal Shakti, Raipur, Chhattisgarh. The program aimed at making the students understand the ways in which groundwater survey and quality analysis is done, current status of groundwater levels in Chhattisgarh and the need to conserve groundwater."
+        },
+        {
+          "type": "paragraph",
+          "text": "Glimpses of the Programs:"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/516f7d580a7c4522.png",
+          "alt": "SDG 13: 13.3.1: Local Education Programmes in Climate - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/b89e0255e4ac02b8.png",
+          "alt": "SDG 13: 13.3.1: Local Education Programmes in Climate - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/61b065706e2de116.png",
+          "alt": "SDG 13: 13.3.1: Local Education Programmes in Climate - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "International Conference on Emerging Technologies for Sustainable Development”"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/959099e72d770f0e.png",
+          "alt": "SDG 13: 13.3.1: Local Education Programmes in Climate - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/04566ae6b7b6843f.png",
+          "alt": "SDG 13: 13.3.1: Local Education Programmes in Climate - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Poster Making Competition on the occasion of World Environment Day Celebration"
+        },
+        {
+          "type": "heading",
+          "text": "13.3.2 Climate Action Plan, Shared",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Response: Various MoUs have been signed with different academic and government bodies related to climate change and action plans."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/4201b003e8d4a0b0.png",
+          "alt": "SDG 13: 13.3.2 Climate Action Plan, Shared - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "MoU with New Gurukul Education Society"
+        },
+        {
+          "type": "heading",
+          "text": "13.3.3 Co-operative Planning for Climate Change Disasters",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "As part of its commitment towards sustainable development and social responsibility, Kalinga University encourages students and faculty members to engage with nearby communities and understand local environmental and climate-related challenges. Through awareness programmes, field visits, surveys, interactive sessions, workshops, and extension activities, the University facilitates the exchange of knowledge on issues such as climate change, extreme weather events, water conservation, disaster preparedness, environmental protection, waste management, and sustainable use of natural resources. Through its academic and outreach activities, Kalinga University aims to develop socially responsible graduates who are capable of understanding environmental challenges and contributing to climate resilience. The University's continued focus on community engagement, environmental awareness, and cooperative action supports."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Topic",
+            "Local community",
+            "Date of visit"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1.",
+                "colSpan": 1
+              },
+              {
+                "text": "Training session on Rain water harvesting",
+                "colSpan": 1
+              },
+              {
+                "text": "Palaud Village",
+                "colSpan": 1
+              },
+              {
+                "text": "6/09/2022",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2.",
+                "colSpan": 1
+              },
+              {
+                "text": "Cleaning drive activity on World Wetland Day Celebration",
+                "colSpan": 1
+              },
+              {
+                "text": "Van Chetna Kendra, Kodar Dam, Patwa, Mahasamund",
+                "colSpan": 1
+              },
+              {
+                "text": "02/02/2023",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3.",
+                "colSpan": 1
+              },
+              {
+                "text": "Pollution Awareness Program",
+                "colSpan": 1
+              },
+              {
+                "text": "Primary school of village Kuhera",
+                "colSpan": 1
+              },
+              {
+                "text": "13/2/2023",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Glimpses of the Programs"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/8fa3cb2eff511cf9.png",
+          "alt": "SDG 13: 13.3.3 Co-operative Planning for Climate Change Disasters - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Awareness Program on Rain water harvesting"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/7b4fe8dc01bbe4a8.png",
+          "alt": "SDG 13: 13.3.3 Co-operative Planning for Climate Change Disasters - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cleaning drive activity on World Wetland Day Celebration"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/8c03c2d3dae0953e.png",
+          "alt": "SDG 13: 13.3.3 Co-operative Planning for Climate Change Disasters - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pollution awareness program"
+        },
+        {
+          "type": "heading",
+          "text": "13.3.4 Inform and Support Government",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University organized a Workshop & Training Session on Fire Safety & Disaster Management on 11 September 2024 at the Auditorium, Kalinga University. The programme was conducted as part of the University's commitment to strengthening awareness, preparedness, and institutional capacity for managing emergencies and disasters."
+        },
+        {
+          "type": "paragraph",
+          "text": "The workshop provided students, faculty members, and staff with essential knowledge regarding fire prevention, emergency response, evacuation procedures, disaster preparedness, and safety measures. The training emphasized the importance of timely action, coordinated response, risk awareness, and responsible behaviour during fire-related and other emergency situations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Date: 11.09.2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Time: 1:45 PM to 3:30 PM"
+        },
+        {
+          "type": "paragraph",
+          "text": "Venue: Auditorium, Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Bodies: Kalinga University, Naya Raipur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants: 122"
+        },
+        {
+          "type": "paragraph",
+          "text": "Glimpses of the Programs"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/3ca51e2e875a8a93.png",
+          "alt": "SDG 13: 13.3.4 Inform and Support Government - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/ef909be683f31594.png",
+          "alt": "SDG 13: 13.3.4 Inform and Support Government - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/e0a906d4bd35d1db.png",
+          "alt": "SDG 13: 13.3.4 Inform and Support Government - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Training Session on Fire Safety & Disaster Management"
+        },
+        {
+          "type": "heading",
+          "text": "13.3.5 Environmental Education Collaborate with NGO",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University promotes education for sustainable development through community engagement and collaboration with organizations such as Arpan Kalyan Samiti, Raipur. During 2022–2025, the University contributed to educational workshops, training programmes and community-engagement initiatives aimed at creating safer and more inclusive educational environments. These engagements provide opportunities for students and educators to develop social responsibility."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/b69fefd26c4a09d4.png",
+          "alt": "SDG 13: 13.3.5 Environmental Education Collaborate with NGO - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has strengthened its community engagement and educational outreach through collaboration with Saubhagya Foundation, Raipur, contributing to awareness, capacity building and the development of safer and more inclusive educational environments. A certificate issued by Saubhagya Foundation on 18 November 2025 confirms that Kalinga University provided services related to creating safer and more inclusive school environments within the community."
+        },
+        {
+          "type": "paragraph",
+          "text": "During the period 2022–2025, the collaboration included workshops for students, training programmes for teachers and school administrators, and community engagement initiatives. The documented activities focused on awareness and prevention of sexual violence, safeguarding practices, gender equality and safe-school practices."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-13/9548c3c60917cfb3.png",
+          "alt": "SDG 13: 13.3.5 Environmental Education Collaborate with NGO - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, the University promotes environmental awareness through participation in activities and events such as tree plantation programmes, environmental awareness campaigns, Earth Day and other environmentally significant observances, workshops, and educational activities. The University may also engage with NGOs and other external stakeholders as part of academic networking, awareness activities, and environmental initiatives, wherever appropriate."
+        }
+      ]
+    }
+  ]
+}

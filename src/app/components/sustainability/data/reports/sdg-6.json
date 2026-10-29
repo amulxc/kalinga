@@ -1,0 +1,1736 @@
+{
+  "number": 6,
+  "title": "Clean Water and Sanitation",
+  "sourceUrl": "https://drive.google.com/file/d/159n019NfqtLNxYJE-SHcwDxHH2xz63j6/view",
+  "sourceDate": "27 October 2026",
+  "dashboard": [
+    {
+      "label": "SDG 06 Related Publications (2024-25)",
+      "value": "75"
+    },
+    {
+      "label": "Cumulative SDG 06 Related Publications",
+      "value": "100"
+    },
+    {
+      "label": "Citation Count",
+      "value": "192"
+    },
+    {
+      "label": "Field-Weighted Citation Impact (FWCI)",
+      "value": "0.59"
+    },
+    {
+      "label": "Leading Research Areas",
+      "value": "Water Quality and Pollution (31 outputs); Wastewater Treatment and Reuse (29 outputs)"
+    },
+    {
+      "label": "Water Consumption",
+      "value": "9,402 water tankers × 4,500 litres = 42,309,000 litres (2025)"
+    },
+    {
+      "label": "Sewage Treatment Infrastructure",
+      "value": "5 STP units, with stated capacity of 30 KLD each"
+    },
+    {
+      "label": "Total Installed STP Capacity",
+      "value": "150 KLD (combined stated capacity)"
+    },
+    {
+      "label": "Water Conservation Initiatives",
+      "value": "Wastewater treatment, water reuse, rainwater harvesting and efficient irrigation"
+    }
+  ],
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Kalinga University, Raipur demonstrates a growing research contribution towards Sustainable Development Goal 6 (Clean Water and Sanitation), particularly through academic work related to water quality, wastewater treatment, groundwater assessment, pollution control, hydrological modelling, water management, smart irrigation, sanitation, and aquatic ecosystems. This report has been prepared for Indicator 6.1: Research on Water, using the publication datasets provided by the University."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the uploaded institutional records, 80 SDG 6-aligned research outputs were identified for the period 2021-2025. The evidence indicates active participation from multiple faculties, with major contributions from the Faculty of Science, Faculty of Technology, Faculty of CS & IT, Faculty of Pharmacy, and Faculty of Commerce & Management."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kalinga University actively contributes to Sustainable Development Goal 6 (Clean Water and Sanitation) through research and innovation focusing on water quality, wastewater treatment, water conservation, pollution control, and sustainable water resource management."
+    },
+    {
+      "type": "paragraph",
+      "text": "The University's research contributions reflect its commitment to addressing environmental challenges and promoting sustainable solutions. During 2024–2025, Kalinga University recorded 75 SDG 6-related research publications, bringing its cumulative research output to 100 publications. These research contributions have received 192 citations, with a Field-Weighted Citation Impact (FWCI) of 0.59, reflecting the University's scholarly engagement in clean water and sanitation research."
+    },
+    {
+      "type": "paragraph",
+      "text": "Through multidisciplinary research, academic collaboration, and scientific innovation, Kalinga University continues to strengthen its contribution towards water sustainability, environmental protection, and responsible management of water resources."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Indicator",
+        "Finding"
+      ],
+      "rows": [
+        [
+          {
+            "text": "SDG 06 Related Publications (2024-25)",
+            "colSpan": 1
+          },
+          {
+            "text": "75",
+            "colSpan": 1
+          }
+        ],
+        [
+          {
+            "text": "Cumulative SDG 06 Related Publications",
+            "colSpan": 1
+          },
+          {
+            "text": "100",
+            "colSpan": 1
+          }
+        ],
+        [
+          {
+            "text": "Citation Count",
+            "colSpan": 1
+          },
+          {
+            "text": "192",
+            "colSpan": 1
+          }
+        ],
+        [
+          {
+            "text": "Field-Weighted Citation Impact (FWCI)",
+            "colSpan": 1
+          },
+          {
+            "text": "0.59",
+            "colSpan": 1
+          }
+        ]
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "6.1 Research on Water",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The University’s research portfolio under SDG 6 addresses the scientific, technological, environmental and social dimensions of clean water and sanitation. The identified publications focus on practical and regionally relevant concerns such as groundwater quality in Chhattisgarh, fluoride and heavy metal contamination, sewage treatment, industrial effluents, wastewater treatment using nanomaterials, river and reservoir water quality, smart irrigation systems, and water resource management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The research is multidisciplinary in nature. Science-based studies contribute to physicochemical analysis, contaminant detection and remediation. Engineering and technology outputs contribute to sewage treatment, water tanks, river cleaning systems and hydrological modelling. Computer science and information technology outputs contribute to IoT-based monitoring, blockchain-enabled water management, smart irrigation and data-driven water quality systems. Pharmacy-linked outputs contribute to antimicrobial resistance and pharmaceutical contamination in wastewater."
+        },
+        {
+          "type": "heading",
+          "text": "6.1.1 Clean Water and Sanitation: CiteScore",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University demonstrates its commitment to Sustainable Development Goal 6 (Clean Water and Sanitation) through quality research publications in reputed national and international journals. The University's research activities focus on addressing critical environmental challenges, including water quality assessment, wastewater treatment, water pollution control, groundwater management, and sustainable utilization of water resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "During 2025, Kalinga University's research contributions in clean water and sanitation were represented across various indexed journals, reflecting the institution's emphasis on research quality, scientific innovation, and academic excellence."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's SDG 6-related research publications have appeared in journals such as Water Conservation and Management, International Journal of Environmental Sciences, International Journal of Aquatic Research and Environmental Studies, Coordination Chemistry Reviews, Comments on Inorganic Chemistry, Next Nanotechnology, Larhyss Journal, FishTaxa – Journal of Fish Taxonomy, and Bioinorganic Chemistry and Applications."
+        },
+        {
+          "type": "paragraph",
+          "text": "These publications highlight Kalinga University's multidisciplinary research contributions and its growing academic engagement in water-related scientific studies. Through research dissemination in national and international journals, the University continues to promote innovative solutions for water conservation, environmental sustainability, and responsible water resource management, contributing towards the objectives of SDG 6 – Clean Water and Sanitation."
+        },
+        {
+          "type": "heading",
+          "text": "6.1.2 Clean Water and Sanitation: FWCI",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University demonstrates its commitment to SDG 6: Clean Water and Sanitation through research in water conservation, wastewater treatment, groundwater management, water pollution control, and sustainable water-resource utilization. During 2021–2025, the University recorded 80 SDG 6-related research outputs, Based on the University's research impact calculation, the Field-Weighted Citation Impact (FWCI) is 0.59. This highlights the University's ongoing research contributions while identifying opportunities to strengthen research visibility, international collaboration, publication quality, and citation impact in clean water and sanitation research."
+        },
+        {
+          "type": "heading",
+          "text": "6.1.3 Clean Water and Sanitation: Publications",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The publication scale indicator captures the number of research outputs related to water and sanitation. The screening of the uploaded publication datasets identified 100 SDG 6-aligned outputs. The output shows a clear rise in recent years, particularly in 2025, reflecting increased institutional engagement with sustainability-oriented research."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Category",
+            "Research Paper: Count",
+            "Column1",
+            "Column2"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021"
+              },
+              {
+                "text": "0"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2022"
+              },
+              {
+                "text": "1"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2023"
+              },
+              {
+                "text": "4"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2024"
+              },
+              {
+                "text": "10"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2025"
+              },
+              {
+                "text": "65"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ]
+          ],
+          "caption": "Year-wise Research Papers"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 1: Year-wise SDG 6-aligned research output"
+        },
+        {
+          "type": "paragraph",
+          "text": "Research Highlights"
+        },
+        {
+          "type": "listItem",
+          "text": "Groundwater and public health: Publications on fluoride contamination, groundwater contamination, groundwater vulnerability and drinking water quality directly support safe drinking water research."
+        },
+        {
+          "type": "listItem",
+          "text": "Wastewater treatment technologies: Studies on nanocomposites, biochar-based filters, metal oxide nanoparticles, photocatalytic treatment, membrane technologies and advanced adsorbents strengthen research on wastewater treatment and reuse."
+        },
+        {
+          "type": "listItem",
+          "text": "Water pollution and monitoring: Work on river pollution, industrial discharge, physicochemical parameters, reservoir assessment, nitrate detection and heavy metals contributes to evidence-based water quality monitoring."
+        },
+        {
+          "type": "listItem",
+          "text": "Digital and smart water systems: IoT-enabled irrigation, fuzzy logic water quality monitoring, blockchain-enabled water management, data-driven aquatic farming and decentralised desalination reflect emerging technology application in water sustainability."
+        },
+        {
+          "type": "listItem",
+          "text": "Aquatic ecosystems and wetlands: Research on ponds, wetlands, freshwater fish, aquatic birds and river systems connects SDG 6 with biodiversity, ecosystem conservation and sustainable water governance."
+        }
+      ]
+    },
+    {
+      "title": "6.2 Water Consumption per Person – Year 2025",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University systematically monitors water consumption as part of its commitment towards SDG 6: Clean Water and Sanitation. Water-use records are maintained to assess consumption patterns and support institutional initiatives for water conservation, wastewater reuse, rainwater harvesting and groundwater recharge."
+        },
+        {
+          "type": "heading",
+          "text": "6.2.1 Water Consumption Tracking",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University maintains monthly records of water tanker supplies and supports sustainable water management through rainwater harvesting and sewage treatment facilities. The following table presents the recorded water tanker supply and associated water management infrastructure for 2025."
+        },
+        {
+          "type": "paragraph",
+          "text": "Table 6.2.1: Water Consumption Tracking and Water Management – 2025"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S.No.",
+            "Month / Particulars",
+            "Total Tankers",
+            "Water Quantity (Litres)"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "January",
+                "colSpan": 1
+              },
+              {
+                "text": "643",
+                "colSpan": 1
+              },
+              {
+                "text": "2,893,500",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "February",
+                "colSpan": 1
+              },
+              {
+                "text": "844",
+                "colSpan": 1
+              },
+              {
+                "text": "3,798,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "March",
+                "colSpan": 1
+              },
+              {
+                "text": "1,158",
+                "colSpan": 1
+              },
+              {
+                "text": "5,211,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "April",
+                "colSpan": 1
+              },
+              {
+                "text": "1,556",
+                "colSpan": 1
+              },
+              {
+                "text": "7,002,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "May",
+                "colSpan": 1
+              },
+              {
+                "text": "1,186",
+                "colSpan": 1
+              },
+              {
+                "text": "5,337,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "June",
+                "colSpan": 1
+              },
+              {
+                "text": "237",
+                "colSpan": 1
+              },
+              {
+                "text": "1,066,500",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "7",
+                "colSpan": 1
+              },
+              {
+                "text": "July",
+                "colSpan": 1
+              },
+              {
+                "text": "149",
+                "colSpan": 1
+              },
+              {
+                "text": "670,500",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "8",
+                "colSpan": 1
+              },
+              {
+                "text": "August",
+                "colSpan": 1
+              },
+              {
+                "text": "573",
+                "colSpan": 1
+              },
+              {
+                "text": "2,578,500",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "9",
+                "colSpan": 1
+              },
+              {
+                "text": "September",
+                "colSpan": 1
+              },
+              {
+                "text": "977",
+                "colSpan": 1
+              },
+              {
+                "text": "4,396,500",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "10",
+                "colSpan": 1
+              },
+              {
+                "text": "October",
+                "colSpan": 1
+              },
+              {
+                "text": "698",
+                "colSpan": 1
+              },
+              {
+                "text": "3,141,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "November",
+                "colSpan": 1
+              },
+              {
+                "text": "717",
+                "colSpan": 1
+              },
+              {
+                "text": "3,226,500",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "12",
+                "colSpan": 1
+              },
+              {
+                "text": "December",
+                "colSpan": 1
+              },
+              {
+                "text": "664",
+                "colSpan": 1
+              },
+              {
+                "text": "2,988,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "",
+                "colSpan": 1
+              },
+              {
+                "text": "Total Water Tanker Supply – 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "9,402",
+                "colSpan": 1
+              },
+              {
+                "text": "42,309,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "13",
+                "colSpan": 1
+              },
+              {
+                "text": "Capacity per water tanker",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "4,500",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "14",
+                "colSpan": 1
+              },
+              {
+                "text": "Total campus population",
+                "colSpan": 1
+              },
+              {
+                "text": "6,500 persons",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "15",
+                "colSpan": 1
+              },
+              {
+                "text": "Annual tanker water supply per person",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "6,509.077",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "16",
+                "colSpan": 1
+              },
+              {
+                "text": "Daily tanker water supply per person",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "17.833",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "17",
+                "colSpan": 1
+              },
+              {
+                "text": "Rainwater harvesting structures",
+                "colSpan": 1
+              },
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "80,000 (total capacity)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "18",
+                "colSpan": 1
+              },
+              {
+                "text": "Sewage Treatment Plants (STPs)",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "150,000 (combined daily treatment capacity)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "19",
+                "colSpan": 1
+              },
+              {
+                "text": "Reported wastewater treated per 8-hour operating cycle",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              },
+              {
+                "text": "10,000",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "20",
+                "colSpan": 1
+              },
+              {
+                "text": "Reuse of treated wastewater",
+                "colSpan": 1
+              },
+              {
+                "text": "Campus gardening and landscaping",
+                "colSpan": 1
+              },
+              {
+                "text": "—",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The University uses these records as the quantitative basis for monitoring water consumption and evaluating water-use efficiency."
+        },
+        {
+          "type": "heading",
+          "text": "6.2.2 Water Consumption per Person",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "For assessment of water-use intensity, annual water consumption is related to the campus population for the corresponding reporting year."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University systematically monitors water consumption to promote efficient utilization of water resources and sustainable campus management. During 2025, the University maintained records of water tanker supplies to assess water usage in relation to its total campus population of 6,500 individuals, comprising students, faculty members, and administrative and support staff."
+        },
+        {
+          "type": "paragraph",
+          "text": "During 2025, the University recorded 9,402 water tankers, each with a capacity of 4,500 litres, resulting in an annual recorded tanker water supply of 42,309,000 litres (42,309 m³)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Calculation of Water Consumption per Person"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Total Annual Recorded Tanker Water Supply"
+        },
+        {
+          "type": "paragraph",
+          "text": "= Total Water Tankers × Capacity per Tanker"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 9,402 × 4,500 litres"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 42,309,000 litres"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 42,309 m³/year"
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Annual Water Supply per Person"
+        },
+        {
+          "type": "paragraph",
+          "text": "= Total Annual Recorded Tanker Water Supply ÷ Total Campus Population"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 42,309 m³ ÷ 6,500 persons"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 6.509 m³/person/year"
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Annual Water Supply per Person in Litres"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 42,309,000 litres ÷ 6,500 persons"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 6,509.077 litres/person/year"
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Daily Water Supply per Person"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 6,509.077 litres ÷ 365 days"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 17.833 litres/person/day"
+        },
+        {
+          "type": "paragraph",
+          "text": "5. Daily Water Supply per Person in Cubic Metres"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 6.509077 m³ ÷ 365 days"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 0.017833 m³/person/day"
+        },
+        {
+          "type": "paragraph",
+          "text": "Table 6.2.2: Water Consumption per Person – 2025"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Indicator",
+            "2025"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Total recorded water tankers",
+                "colSpan": 1
+              },
+              {
+                "text": "9,402",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Capacity per tanker",
+                "colSpan": 1
+              },
+              {
+                "text": "4,500 litres",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Annual recorded tanker water supply",
+                "colSpan": 1
+              },
+              {
+                "text": "42,309,000 litres",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Annual recorded tanker water supply",
+                "colSpan": 1
+              },
+              {
+                "text": "42,309 m³",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Total campus population",
+                "colSpan": 1
+              },
+              {
+                "text": "6,500 individuals",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Annual water supply per person",
+                "colSpan": 1
+              },
+              {
+                "text": "6.509 m³",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Annual water supply per person",
+                "colSpan": 1
+              },
+              {
+                "text": "6,509.077 litres",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Daily water supply per person",
+                "colSpan": 1
+              },
+              {
+                "text": "17.833 litres",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Daily water supply per person",
+                "colSpan": 1
+              },
+              {
+                "text": "0.017833 m³",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University's recorded tanker water supply during 2025 was 42,309 m³, equivalent to 6.509 m³ per person annually and 17.833 litres per person daily, based on a campus population of 6,500 individuals."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University complements its water supply monitoring with water conservation initiatives, including sewage treatment, reuse of treated wastewater for campus landscaping, rainwater harvesting, groundwater recharge, and sustainable water management practices. These initiatives reflect Kalinga University's commitment to responsible water resource utilization and the objectives of Sustainable Development Goal 6 – Clean Water and Sanitation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively promotes sustainable water management through its Action Plan for Water Conservation, which incorporates wastewater treatment and recycling, rainwater harvesting, groundwater recharge, smart irrigation, sustainable landscaping, and water conservation awareness initiatives. These practices demonstrate the University's commitment to efficient water resource utilization and environmental sustainability."
+        },
+        {
+          "type": "paragraph",
+          "text": "During 2025, the University strengthened its water conservation efforts through the operation of five Sewage Treatment Plants (STPs), each with a capacity of 30 KLD, providing a combined installed treatment capacity of 150 KLD. Treated wastewater is stored and reused for campus gardening and landscaping, supporting freshwater conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Furthermore, the University maintains four rainwater harvesting structures, each with a capacity of 20,000 litres, providing a combined installed capacity of 80,000 litres. The campus also incorporates soak pits and borewell/open-well recharge arrangements to facilitate rainwater infiltration and groundwater replenishment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these integrated initiatives, Kalinga University continues to promote responsible water consumption, wastewater reuse, groundwater conservation, and sustainable campus development, contributing towards Sustainable Development Goal 6 – Clean Water and Sanitation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evidence/Documents:"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/01c1e80200adbfc8.png",
+          "alt": "SDG 6: 6.2.2 Water Consumption per Person - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/4c0c8036dfe539d4.png",
+          "alt": "SDG 6: 6.2.2 Water Consumption per Person - report evidence"
+        }
+      ]
+    },
+    {
+      "title": "6.3 Water Usage and Care",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to the responsible use, conservation and protection of water resources across its campus. The University has adopted a combination of wastewater treatment and reuse, rainwater harvesting, groundwater recharge, sustainable landscaping, monitoring and awareness measures to reduce freshwater demand and promote responsible water management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's Action Plan for Water Conservation specifically covers reducing water usage, recycling and reuse of wastewater, rainwater harvesting and groundwater recharge, smart irrigation, sustainable landscaping, monitoring and assessment, and awareness and capacity building. These measures provide an institutional framework for responsible water usage and support the objectives of SDG 6: Clean Water and Sanitation."
+        },
+        {
+          "type": "heading",
+          "text": "6.3.1 Wastewater Treatment",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "During 2025, Kalinga University continued its commitment to sustainable water management through the operation of five Sewage Treatment Plants (STPs) installed across the campus. Each STP has a treatment capacity of 30 Kilolitres per Day (KLD), providing a combined installed treatment capacity of 150 KLD (150,000 litres per day)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's wastewater treatment system processes 10,000 litres of wastewater during an eight-hour operating cycle. The treated wastewater is collected and stored in designated storage tanks and subsequently reused for campus gardening, irrigation, and landscaping purposes, reducing the demand for freshwater for non-potable applications."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University also undertakes regular monitoring of wastewater quality before and after treatment to support effective wastewater management. The University maintains its STP infrastructure through routine operational checks and maintenance activities to ensure the continued functioning of its wastewater treatment facilities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through its wastewater treatment and reuse practices during 2025, Kalinga University strengthened its campus water management system, reduced dependence on freshwater for landscaping, and promoted efficient utilization of available water resources. These practices reflect the University's continued efforts towards environmental sustainability and responsible campus infrastructure management."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Particulars",
+            "Details"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Number of STPs installed",
+                "colSpan": 1
+              },
+              {
+                "text": "5 STP Plants",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Capacity of each STP",
+                "colSpan": 1
+              },
+              {
+                "text": "30 KLD",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Wastewater treatment operation",
+                "colSpan": 1
+              },
+              {
+                "text": "8 hours – 10,000 litres",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Storage of treated water",
+                "colSpan": 1
+              },
+              {
+                "text": "Tank storage",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Reuse of treated wastewater",
+                "colSpan": 1
+              },
+              {
+                "text": "Garden/landscape irrigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Operation & maintenance",
+                "colSpan": 1
+              },
+              {
+                "text": "LTR chemical used periodically; air-blower engine oil maintenance every two months",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Water-quality monitoring",
+                "colSpan": 1
+              },
+              {
+                "text": "Water quality checked before and after treatment",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also undertakes water-quality assessment before and after wastewater treatment. This provides a mechanism for examining the quality of incoming wastewater and treated water before its subsequent reuse."
+        },
+        {
+          "type": "paragraph",
+          "text": "The reuse of treated wastewater for gardens is particularly significant from a sustainability perspective, as it converts wastewater into a useful resource while simultaneously reducing the demand for freshwater for landscaping."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/d4105cc560dace22.png",
+          "alt": "SDG 6: 6.3.1 Wastewater Treatment - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.3.2 Preventing Water System Pollution",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University undertakes environmental management measures intended to minimize the risk of pollutants entering its water and drainage systems. The University's environmental-audit framework includes objectives relating to waste minimization, safe disposal of hazardous waste, appropriate utilization of natural resources and identification and resolution of environmental problems."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University has also established a dedicated Waste Disposal Policy – Hazardous Materials, applicable to departments, laboratories, workshops, research centres, hostels, health centres, maintenance units and administrative offices. The policy covers chemical waste, biomedical and biological waste, oils, lubricants and solvents, among other hazardous materials."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/ada993431a75f93e.png",
+          "alt": "SDG 6: 6.3.2 Preventing Water System Pollution - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/f7ee4129818fafaa.png",
+          "alt": "SDG 6: 6.3.2 Preventing Water System Pollution - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Importantly, the policy requires segregation of hazardous waste at source and specifies that hazardous waste should not be mixed with regular municipal waste. It also provides for designated storage, authorized handling and disposal through authorized waste handlers or treatment/disposal facilities. These measures help reduce the possibility of hazardous substances contaminating the campus environment and water systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's STP infrastructure further supports pollution prevention by treating wastewater before its reuse for landscaping instead of directly utilizing untreated wastewater."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/bb1be8941175ddd2.png",
+          "alt": "SDG 6: 6.3.2 Preventing Water System Pollution - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.3.3 Free Drinking Water Provided",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University provides water facilities across its campus for students, faculty, staff and other campus users. The sanitation audit also confirms the general availability of water within sanitation facilities and records functioning drainage systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "For this indicator, however, the documents presently provided do not contain sufficient specific evidence regarding the number and locations of free drinking-water points/RO systems/water coolers across the campus."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/e3fdd02ebd19d520.png",
+          "alt": "SDG 6: 6.3.3 Free Drinking Water Provided - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.3.4 Water-Conscious Building Standards",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University incorporates water-conservation measures into its campus infrastructure and environmental-management practices. The University's Action Plan for Water Conservation identifies rainwater harvesting, groundwater recharge, wastewater recycling and reuse, smart irrigation and reduction of water consumption as key areas of intervention."
+        },
+        {
+          "type": "paragraph",
+          "text": "Physical evidence available from the University demonstrates the presence of rainwater-harvesting arrangements and soak pits designed to channel rainwater into the ground. The geo-tagged evidence also documents borewell/open-well recharge arrangements, including borewells recharged through rainwater-harvesting systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "These facilities demonstrate the integration of water conservation with campus infrastructure and contribute to:"
+        },
+        {
+          "type": "listItem",
+          "text": "groundwater recharge;"
+        },
+        {
+          "type": "listItem",
+          "text": "reduction of surface runoff;"
+        },
+        {
+          "type": "listItem",
+          "text": "improved utilization of rainwater;"
+        },
+        {
+          "type": "listItem",
+          "text": "reduced dependence on externally supplied freshwater; and"
+        },
+        {
+          "type": "listItem",
+          "text": "sustainable management of campus water resources."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/4305af8519198b56.png",
+          "alt": "SDG 6: 6.3.4 Water-Conscious Building Standards - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/a7138b5ceaed77ab.png",
+          "alt": "SDG 6: 6.3.4 Water-Conscious Building Standards - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.3.5 Water-Conscious Planting",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The University promotes sustainable use of water in landscaping by combining treated wastewater reuse with water-conservation practices. Treated water generated through the University's STPs is stored and reused for supplying campus gardens, reducing the requirement for freshwater for maintaining green areas."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's Water Conservation Action Plan also separately identifies Smart Irrigation and Sustainable Landscaping as components of its water-conservation strategy."
+        },
+        {
+          "type": "paragraph",
+          "text": "This approach creates an integrated cycle in which wastewater generated on campus is treated and subsequently utilized for landscaping, thereby supporting water conservation and reducing pressure on freshwater resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "However, the currently provided evidence does not specifically identify the plant species as drought-tolerant/native species. Therefore, such a claim should not presently be made in the SDG report unless plantation records or supporting evidence are provided."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/c6b12a6a8f7c0e80.jpeg",
+          "alt": "SDG 6: 6.3.5 Water-Conscious Planting - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/e5df0bbcf8502bf2.jpeg",
+          "alt": "SDG 6: 6.3.5 Water-Conscious Planting - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/3093f46dba418d9f.jpeg",
+          "alt": "SDG 6: 6.3.5 Water-Conscious Planting - report evidence"
+        }
+      ]
+    },
+    {
+      "title": "6.4 Water Reuse",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University promotes the reuse and recycling of water as an important component of its water-conservation strategy. The University combines wastewater treatment, reuse of treated water, rainwater harvesting and groundwater recharge to reduce dependence on freshwater resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's Action Plan for Water Conservation explicitly includes “Recycling and Reuse of Wastewater” as one of its major areas, along with reducing water usage, rainwater harvesting and groundwater recharge, smart irrigation and sustainable landscaping."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/2d2e5890902b4f55.png",
+          "alt": "SDG 6: 6.4 Water Reuse - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/ea3a77c466c1d1a3.png",
+          "alt": "SDG 6: 6.4 Water Reuse - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.4.1 Water Reuse Policy",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has established an institutional approach towards water conservation and reuse through its Action Plan for Water Conservation. The Action Plan provides a framework for managing water resources responsibly and identifies the following key areas:"
+        },
+        {
+          "type": "listItem",
+          "text": "Reducing water usage"
+        },
+        {
+          "type": "listItem",
+          "text": "Recycling and reuse of wastewater"
+        },
+        {
+          "type": "listItem",
+          "text": "Rainwater harvesting and groundwater recharge"
+        },
+        {
+          "type": "listItem",
+          "text": "Smart irrigation"
+        },
+        {
+          "type": "listItem",
+          "text": "Sustainable landscaping"
+        },
+        {
+          "type": "listItem",
+          "text": "Monitoring and assessment"
+        },
+        {
+          "type": "listItem",
+          "text": "Awareness and capacity building"
+        },
+        {
+          "type": "paragraph",
+          "text": "These measures demonstrate that water reuse is incorporated within the University's broader environmental-management and water-conservation approach."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/a90d290c408278fb.png",
+          "alt": "SDG 6: 6.4.1 Water Reuse Policy - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "A major component of the University's reuse system is its Sewage Treatment Plant (STP) infrastructure. Based on the data provided by the University, five STP plants have been installed, with a stated capacity of 30 KLD each. Wastewater is treated through these facilities, stored in tanks after treatment and subsequently supplied for campus gardening purposes."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Water Reuse Component",
+            "Kalinga University Practice"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Institutional framework",
+                "colSpan": 1
+              },
+              {
+                "text": "Action Plan for Water Conservation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Wastewater treatment facility",
+                "colSpan": 1
+              },
+              {
+                "text": "5 STP plants",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Capacity of each STP",
+                "colSpan": 1
+              },
+              {
+                "text": "30 KLD",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Reported treatment operation",
+                "colSpan": 1
+              },
+              {
+                "text": "10,000 litres during an 8-hour operation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Storage after treatment",
+                "colSpan": 1
+              },
+              {
+                "text": "Tank storage",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Reuse of treated water",
+                "colSpan": 1
+              },
+              {
+                "text": "Garden/landscape irrigation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Water-quality monitoring",
+                "colSpan": 1
+              },
+              {
+                "text": "Before and after treatment",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Rainwater management",
+                "colSpan": 1
+              },
+              {
+                "text": "Rainwater harvesting and groundwater recharge",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable water-use measures",
+                "colSpan": 1
+              },
+              {
+                "text": "Smart irrigation and sustainable landscaping included in Action Plan",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The reuse of treated wastewater for gardening helps conserve freshwater by substituting treated water for potable/freshwater in a non-potable application. The University's practice therefore supports the principles of Reduce, Reuse and Recycle in campus water management."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rainwater Harvesting and Groundwater Recharge"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University also adopts rainwater harvesting and groundwater recharge as complementary approaches to sustainable water management."
+        },
+        {
+          "type": "paragraph",
+          "text": "Geo-tagged evidence provided by the University documents physical rainwater-management infrastructure on campus. The photographs show pipes carrying harvested rainwater to ground level and dedicated soak pits for harvesting rainwater."
+        },
+        {
+          "type": "paragraph",
+          "text": "The available geo-tagged documentation further shows borewell/open-well recharge facilities and identifies borewells being recharged through the rainwater-harvesting system."
+        },
+        {
+          "type": "paragraph",
+          "text": "These systems facilitate the infiltration of rainwater into the ground and support the replenishment of groundwater resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "Reuse of Treated Wastewater for Landscaping"
+        },
+        {
+          "type": "paragraph",
+          "text": "A significant water-reuse practice at Kalinga University is the utilization of STP-treated wastewater for gardening. Instead of discharging all treated water as waste, the treated water is collected in storage tanks and supplied to campus gardens."
+        },
+        {
+          "type": "paragraph",
+          "text": "This practice provides multiple environmental benefits:"
+        },
+        {
+          "type": "listItem",
+          "text": "reduces freshwater requirement for landscaping;"
+        },
+        {
+          "type": "listItem",
+          "text": "promotes productive reuse of wastewater;"
+        },
+        {
+          "type": "listItem",
+          "text": "reduces wastage of treated water;"
+        },
+        {
+          "type": "listItem",
+          "text": "supports maintenance of campus green areas; and"
+        },
+        {
+          "type": "listItem",
+          "text": "contributes towards sustainable campus water management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's approach is also consistent with its Environmental Audit objectives, which emphasize appropriate utilization of natural resources and institutional initiatives towards environmental conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Water Reuse Monitoring"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University has reported that water-quality testing is undertaken before and after wastewater treatment. Operation and maintenance activities for the STPs are also carried out periodically. These practices are important for maintaining the treatment infrastructure and ensuring that wastewater is appropriately treated before being reused for landscaping."
+        }
+      ]
+    },
+    {
+      "title": "6.5 Water in the Community",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University extends its commitment towards SDG 6: Clean Water and Sanitation beyond the physical boundaries of the campus by engaging students, faculty members and local communities in activities related to water conservation, rainwater harvesting, river protection, responsible water use and environmental awareness."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University has conducted community-oriented training and awareness programmes that encourage sustainable management of water resources and strengthen public understanding of issues such as rainwater harvesting, water scarcity, river pollution and conservation."
+        },
+        {
+          "type": "heading",
+          "text": "6.5.1 Water Management Educational Opportunities",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University provides educational and awareness opportunities related to water management through extension and community-engagement activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "A significant initiative was the Training Session on Rainwater Harvesting, organized by the Department of Civil Engineering at Palaud Village on 6 September 2022. The programme was conducted as an extension activity for villagers and focused specifically on practical understanding of rainwater harvesting and water conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The training covered:"
+        },
+        {
+          "type": "listItem",
+          "text": "Introduction to rainwater harvesting and water conservation"
+        },
+        {
+          "type": "listItem",
+          "text": "Layout and importance of water-harvesting systems"
+        },
+        {
+          "type": "listItem",
+          "text": "Demonstration of a rainwater-harvesting model"
+        },
+        {
+          "type": "listItem",
+          "text": "Structural aspects of rainwater harvesting"
+        },
+        {
+          "type": "listItem",
+          "text": "Installation procedures for household-level systems"
+        },
+        {
+          "type": "listItem",
+          "text": "Discussion on water scarcity"
+        },
+        {
+          "type": "listItem",
+          "text": "Design and specifications of rainwater-harvesting structures"
+        },
+        {
+          "type": "listItem",
+          "text": "Distribution of study material to community members"
+        },
+        {
+          "type": "paragraph",
+          "text": "The programme therefore provided local residents with both conceptual knowledge and practical guidance that could assist them in adopting water-conservation systems at the household and community levels."
+        },
+        {
+          "type": "paragraph",
+          "text": "The documentation records participation by members of the Gram Sabha, Self-Help Groups and Mahila Samiti, with approximately 70–80 community members taking part. Participants were sensitized to the potential use of conserved and reused water for purposes including agriculture, cattle feeding, washing and other domestic applications."
+        },
+        {
+          "type": "paragraph",
+          "text": "This initiative demonstrates the University's contribution towards improving community knowledge and capacity for sustainable water management."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/fe09bf62d95fe456.png",
+          "alt": "SDG 6: 6.5.1 Water Management Educational Opportunities - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.5.3 Off-Campus Water Conservation Support",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University provides practical support for water conservation outside the campus through community-extension activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "The rainwater-harvesting training at Palaud Village was specifically conducted off campus and provided villagers with guidance on the design, structure, installation and practical application of rainwater-harvesting systems. The activity also addressed local problems associated with water scarcity."
+        },
+        {
+          "type": "paragraph",
+          "text": "The programme encouraged villagers to implement rainwater-harvesting structures and conserve water within their own community. At the conclusion of the programme, participating villagers took an oath to save water, conserve water and construct water-harvesting structures."
+        },
+        {
+          "type": "paragraph",
+          "text": "This represents direct community-level support for sustainable water conservation beyond the University's campus."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/eedc27167d4e478d.png",
+          "alt": "SDG 6: 6.5.3 Off-Campus Water Conservation Support - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/f74bf01ddeaa15f3.png",
+          "alt": "SDG 6: 6.5.3 Off-Campus Water Conservation Support - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.5.4 Sustainable Water Extraction on Campus",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has implemented measures intended to support sustainable use and recharge of groundwater resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "Geo-tagged documentation supplied by the University demonstrates the existence of rainwater-harvesting structures, soak pits and borewell/open-well recharge facilities on the campus. The evidence specifically shows rainwater being channelled through pipes towards recharge structures and soak pits."
+        },
+        {
+          "type": "paragraph",
+          "text": "The subsequent geo-tagged documentation shows borewell/open-well recharge systems and identifies borewells being recharged through rainwater harvesting."
+        },
+        {
+          "type": "paragraph",
+          "text": "These measures support the replenishment of groundwater and reduce the environmental impact associated with groundwater extraction."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's Water Conservation Action Plan also includes Rainwater Harvesting and Groundwater Recharge as one of its major institutional water-management priorities."
+        },
+        {
+          "type": "paragraph",
+          "text": "However, the available documentation does not currently quantify the volume of groundwater extracted or the quantity recharged annually. Such quantitative records would further strengthen this indicator."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additional Evidence Recommended:"
+        },
+        {
+          "type": "listItem",
+          "text": "Number and capacity of operational borewells"
+        },
+        {
+          "type": "listItem",
+          "text": "Annual groundwater extraction records"
+        },
+        {
+          "type": "listItem",
+          "text": "Groundwater permission/NOC, if applicable"
+        },
+        {
+          "type": "listItem",
+          "text": "Quantity of rainwater recharged annually"
+        },
+        {
+          "type": "listItem",
+          "text": "Technical drawings of recharge structures"
+        },
+        {
+          "type": "heading",
+          "text": "6.5.5 Cooperation on Water Security",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University engages with community stakeholders in activities promoting water conservation and environmental protection."
+        },
+        {
+          "type": "paragraph",
+          "text": "The rainwater-harvesting programme at Palaud Village involved the Village Sarpanch, Gram Sabha members, Self-Help Groups and Mahila Samiti, demonstrating cooperation between the University and local community stakeholders for improving awareness of water conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University has also organized World River Day through its NCC Army Wing under the Puneet Sagar Abhiyan, following directions from HQ DG NCC. The event was organized on 24 September 2025 and focused on river conservation and cleanliness."
+        },
+        {
+          "type": "paragraph",
+          "text": "These activities demonstrate cooperation at community and national-programme levels in addressing water-related environmental concerns."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/1d0965d4278f3a06.png",
+          "alt": "SDG 6: 6.5.5 Cooperation on Water Security - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "6.5.6 Promoting Conscious Water Usage on Campus",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University's institutional approach towards water conservation includes awareness and capacity-building measures as part of its Action Plan for Water Conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Water-conscious practices implemented within the campus include:"
+        },
+        {
+          "type": "listItem",
+          "text": "wastewater treatment through STPs;"
+        },
+        {
+          "type": "listItem",
+          "text": "reuse of treated wastewater for gardening;"
+        },
+        {
+          "type": "listItem",
+          "text": "rainwater harvesting;"
+        },
+        {
+          "type": "listItem",
+          "text": "groundwater recharge;"
+        },
+        {
+          "type": "listItem",
+          "text": "sustainable landscaping;"
+        },
+        {
+          "type": "listItem",
+          "text": "monitoring of water consumption; and"
+        },
+        {
+          "type": "listItem",
+          "text": "environmental auditing."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's Environmental Audit framework also seeks to understand the awareness of employees and students towards environmental conservation and to recognize institutional initiatives undertaken for conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "These practices establish a foundation for promoting responsible use of water among campus stakeholders."
+        },
+        {
+          "type": "paragraph",
+          "text": "However, the currently provided documents do not contain sufficiently specific evidence of dedicated on-campus campaigns such as “Save Water” posters, workshops, emails, signage or water-conservation drives. Photographs or records of such initiatives should therefore be added if available."
+        },
+        {
+          "type": "heading",
+          "text": "6.5.7 Promoting Conscious Water Usage in the Wider Community",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively promotes awareness regarding responsible water use and protection of water resources within the wider community."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's Rainwater Harvesting Training Programme at Palaud Village provided practical education to community members regarding water conservation, rainwater harvesting, groundwater improvement and reuse of water."
+        },
+        {
+          "type": "paragraph",
+          "text": "Another important initiative was the celebration of World River Day on 24 September 2025. The programme was organized by the NCC Army Wing under the theme:"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Hamari Nadiya – Hamari Zimmedari”"
+        },
+        {
+          "type": "paragraph",
+          "text": "The programme sought to create awareness about river conservation, river pollution and sustainable preservation of natural water resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "A total of 37 NCC cadets participated in poster-making and awareness activities. The programme emphasized:"
+        },
+        {
+          "type": "listItem",
+          "text": "protection of rivers and aquatic ecosystems;"
+        },
+        {
+          "type": "listItem",
+          "text": "understanding the relationship between river health and sustainable living;"
+        },
+        {
+          "type": "listItem",
+          "text": "prevention of river pollution;"
+        },
+        {
+          "type": "listItem",
+          "text": "environmental stewardship; and"
+        },
+        {
+          "type": "listItem",
+          "text": "responsible use and conservation of natural water resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "These community and awareness initiatives demonstrate Kalinga University's efforts to promote water-conscious behaviour beyond its campus and contribute towards the wider objectives of SDG 6 – Clean Water and Sanitation."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/dc33afe7e0ea5048.png",
+          "alt": "SDG 6: 6.5.7 Promoting Conscious Water Usage in the Wider Community - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-6/77e64d00c839c714.png",
+          "alt": "SDG 6: 6.5.7 Promoting Conscious Water Usage in the Wider Community - report evidence"
+        }
+      ]
+    }
+  ]
+}

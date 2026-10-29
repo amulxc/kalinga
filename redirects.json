@@ -2023,5 +2023,30 @@
         "source": "/KAL-MAT-2025-26",
         "destination": "/kalmat",
         "permanent": true
+    },
+    {
+        "source": "/sustainability/sdg-2-report",
+        "destination": "/sustainability/sdg-2",
+        "permanent": true
+    },
+    {
+        "source": "/sustainability/sdg-3-report",
+        "destination": "/sustainability/sdg-3",
+        "permanent": true
+    },
+    {
+        "source": "/sustainability/sdg-4-report",
+        "destination": "/sustainability/sdg-4",
+        "permanent": true
+    },
+    {
+        "source": "/sustainability/sdg-8-report",
+        "destination": "/sustainability/sdg-8",
+        "permanent": true
+    },
+    {
+        "source": "/sustainability/sdg-17-report",
+        "destination": "/sustainability/sdg-17",
+        "permanent": true
     }
 ]

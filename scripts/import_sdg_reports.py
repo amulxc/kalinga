@@ -1,5 +1,5 @@
-"""Import the four public SDG Word reports into website content.
-Usage: python scripts/import_sdg_reports.py <directory-containing-sdg-N.docx>
+"""Import the public SDG Word reports into website content.
+Usage: python scripts/import_sdg_reports.py <directory-containing-sdg-N.docx> [goal numbers...]
 Source: https://drive.google.com/drive/folders/1N-PTkZuEFLBmgt9cnZcbR1hRUTOF-ODG
 """
 import hashlib
@@ -21,10 +21,14 @@ NS = {
     "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
 }
 REPORTS = {
-    2: ("Zero Hunger", "1vLuUZpt_I6Cq0y7etVOW6qrXLOx7Kc_G"),
-    4: ("Quality Education", "1JvLV54kIs3Ga2_gLdPIM7bpPJHpwkGcf"),
-    8: ("Decent Work and Economic Growth", "1-ULjNlrL8G4_7npqIGZywud9CmpbTSho"),
-    17: ("Partnerships for the Goals", "1IO_dmLCYZZPOPEf2Q2wJziLqcoqbxOfN"),
+    2: ("Zero Hunger", "1vLuUZpt_I6Cq0y7etVOW6qrXLOx7Kc_G", "24 October 2026"),
+    4: ("Quality Education", "1JvLV54kIs3Ga2_gLdPIM7bpPJHpwkGcf", "24 October 2026"),
+    6: ("Clean Water and Sanitation", "159n019NfqtLNxYJE-SHcwDxHH2xz63j6", "27 October 2026"),
+    8: ("Decent Work and Economic Growth", "1-ULjNlrL8G4_7npqIGZywud9CmpbTSho", "24 October 2026"),
+    9: ("Industry, Innovation and Infrastructure", "1VTPowPwOzHKTTw4s17N1mOwC700lgsko", "27 October 2026"),
+    # SDG 13 is a legacy .doc on Drive; save it as sdg-13.docx (e.g. with Word) before importing.
+    13: ("Climate Action", "1EBHJx0ASwiDzIiTRRUFPtIj2H16tHEFt", "27 October 2026"),
+    17: ("Partnerships for the Goals", "1IO_dmLCYZZPOPEf2Q2wJziLqcoqbxOfN", "24 October 2026"),
 }
 
 def clean(text):
@@ -42,7 +46,7 @@ def tag(ns, name):
     return "{" + NS[ns] + "}" + name
 
 def import_report(number, source_dir):
-    title, file_id = REPORTS[number]
+    title, file_id, source_date = REPORTS[number]
     archive = zipfile.ZipFile(source_dir / f"sdg-{number}.docx")
     document = ET.fromstring(archive.read("word/document.xml"))
     for parent in document.iter():
@@ -164,9 +168,12 @@ def import_report(number, source_dir):
     first_table = True
     for el in document.find("w:body", NS):
         if el.tag == tag("w", "tbl"):
+            rows = [[text_of(c) for c in r.findall("w:tc", NS)] for r in el.findall("w:tr", NS)]
+            if first_table and len(rows) < 2:
+                # SDG 13 opens with a one-cell title banner before its dashboard table.
+                continue
             if first_table:
                 first_table = False
-                rows = [[text_of(c) for c in r.findall("w:tc", NS)] for r in el.findall("w:tr", NS)]
                 dashboard = [{"label": r[-2], "value": r[-1]} for r in rows[1:]]
             else:
                 content += table(el)
@@ -174,7 +181,10 @@ def import_report(number, source_dir):
             text = text_of(el)
             if text.startswith(("SDG ", "SDG-")) and re.search(rf"\b{number}:", text) and len(text) < 150:
                 continue
-            match = re.match(rf"^({number}\.\d+(?:\.\d+)?)[. ]*([^\d].*)", text)
+            # SDG 13 leaves its 13.3 section heading unnumbered.
+            if number == 13 and text == "Environmental education measures":
+                text = "13.3 Environmental Education Measures"
+            match = re.match(rf"^({number}\.\d+(?:\.\d+)?)[.: ]*([^\d].*)", text)
             if match:
                 # A floating caption interrupts this one heading in the original Word layout.
                 if number == 17 and match.group(1) == "17.2.1":
@@ -193,16 +203,18 @@ def import_report(number, source_dir):
             sections[-1]["blocks"].append(block)
         else:
             intro.append(block)
-    intro = [block for block in intro if block.get("text") != "Introduction"]
+    # SDG 9 repeats its goal number and title as plain paragraphs above the introduction.
+    intro = [block for block in intro if block.get("text") not in ("Introduction", f"SDG {number}", title)]
     if not intro and sections:
         # SDG 8 begins immediately with its research section; use its opening as the introduction.
         intro = [sections[0]["blocks"].pop(0)]
-    report = {"number": number, "title": title, "sourceUrl": f"https://drive.google.com/file/d/{file_id}/view", "sourceDate": "24 October 2026", "dashboard": dashboard, "intro": intro, "sections": sections}
+    report = {"number": number, "title": title, "sourceUrl": f"https://drive.google.com/file/d/{file_id}/view", "sourceDate": source_date, "dashboard": dashboard, "intro": intro, "sections": sections}
     dest = ROOT / "src" / "app" / "components" / "sustainability" / "data" / "reports"
     dest.mkdir(parents=True, exist_ok=True)
     (dest / f"sdg-{number}.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"SDG {number}: {len(sections)} sections, {len(image_cache)} images")
 
 if __name__ == "__main__":
-    for number in REPORTS:
+    # Optional goal numbers after the directory limit the import, e.g. `... <dir> 6 9 13`.
+    for number in [int(n) for n in sys.argv[2:]] or REPORTS:
         import_report(number, Path(sys.argv[1]))

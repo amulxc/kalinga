@@ -739,26 +739,44 @@ export const pageDataMap: Record<string, PageData> = {
         title: "Waste Management",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     },
-    "/sustainability/sdg-2-report": {
-        slug: "/sustainability/sdg-2-report",
+    "/sustainability/sdg-2": {
+        slug: "/sustainability/sdg-2",
         title: "SDG 2: Zero Hunger Report",
         breadcrumbLabel: "SDG 2 Report",
         banner: "/banners/sustainability-banner.webp",
     },
-    "/sustainability/sdg-4-report": {
-        slug: "/sustainability/sdg-4-report",
+    "/sustainability/sdg-4": {
+        slug: "/sustainability/sdg-4",
         title: "SDG 4: Quality Education Report",
         breadcrumbLabel: "SDG 4 Report",
         banner: "/banners/sustainability-banner.webp",
     },
-    "/sustainability/sdg-8-report": {
-        slug: "/sustainability/sdg-8-report",
+    "/sustainability/sdg-6": {
+        slug: "/sustainability/sdg-6",
+        title: "SDG 6: Clean Water and Sanitation Report",
+        breadcrumbLabel: "SDG 6 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-8": {
+        slug: "/sustainability/sdg-8",
         title: "SDG 8: Decent Work and Economic Growth Report",
         breadcrumbLabel: "SDG 8 Report",
         banner: "/banners/sustainability-banner.webp",
     },
-    "/sustainability/sdg-17-report": {
-        slug: "/sustainability/sdg-17-report",
+    "/sustainability/sdg-9": {
+        slug: "/sustainability/sdg-9",
+        title: "SDG 9: Industry, Innovation and Infrastructure Report",
+        breadcrumbLabel: "SDG 9 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-13": {
+        slug: "/sustainability/sdg-13",
+        title: "SDG 13: Climate Action Report",
+        breadcrumbLabel: "SDG 13 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-17": {
+        slug: "/sustainability/sdg-17",
         title: "SDG 17: Partnerships for the Goals Report",
         breadcrumbLabel: "SDG 17 Report",
         banner: "/banners/sustainability-banner.webp",
