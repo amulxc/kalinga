@@ -12,6 +12,7 @@ export default function NPFChatbot() {
             .npf_ai_agents,
             [class*="npf_ai_agent"],
             [id*="npf_ai_agent"],
+            iframe[src*="agent.mymio.ai"],
             iframe[src*="agent.nopaperforms.com"],
             iframe[id*="npf_ai_agent"] {
               z-index: 2147483647 !important;
@@ -27,7 +28,7 @@ export default function NPFChatbot() {
       <Script
         id="npf-ai-agents-script"
         strategy="afterInteractive"
-        src="https://952l3jx2nj.in1.agent.nopaperforms.com/en-gb/backend/agents/aiagentscpt.js/6426019081578b6b/4763de4ad8644825a87bf95197289cd6"
+        src="https://952l3jx2nj.in1.agent.mymio.ai/en-gb/backend/agents/aiagentscpt.js/6426019081578b6b/4763de4ad8644825a87bf95197289cd6"
       />
     </>
   );

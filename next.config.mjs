@@ -76,12 +76,12 @@ const nextConfig = {
             value: [
               "default-src 'self'",
               // unsafe-eval: React dev mode uses eval() for stack reconstruction; safe to drop in prod
-              `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://track.nopaperforms.com https://challenges.cloudflare.com`,
+              `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://track.nopaperforms.com https://challenges.cloudflare.com https://952l3jx2nj.in1.agent.nopaperforms.com https://952l3jx2nj.in1.agent.mymio.ai https://miocdn.npfs.co`,
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com data:",
-              "img-src 'self' data: blob: https://cdn.kalingauniversity.ac.in https://kalinga-university.s3.amazonaws.com https://s3.ap-south-1.amazonaws.com https://flagcdn.com https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://www.googletagmanager.com",
+              "img-src 'self' data: blob: https://cdn.kalingauniversity.ac.in https://kalinga-university.s3.amazonaws.com https://s3.ap-south-1.amazonaws.com https://flagcdn.com https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://www.googletagmanager.com https://952l3jx2nj.in1.agent.mymio.ai",
               "connect-src 'self' https://api.kalingauniversity.ac.in https://maps.googleapis.com https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://track.nopaperforms.com",
-              "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://maps.google.com https://www.googletagmanager.com",
+              "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://maps.google.com https://www.googletagmanager.com https://952l3jx2nj.in1.agent.mymio.ai",
               "object-src 'none'",
               "base-uri 'self'",
               "worker-src 'self' blob:",
