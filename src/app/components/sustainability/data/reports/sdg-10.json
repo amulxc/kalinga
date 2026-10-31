@@ -1,0 +1,858 @@
+{
+  "number": 10,
+  "title": "Reduced Inequalities",
+  "sourceUrl": "https://drive.google.com/file/d/1_ZP3K77fkR0oAp8I9yWyY65-DnL7hP-y/view",
+  "sourceDate": "30 October 2026",
+  "dashboard": [
+    {
+      "label": "SDG 10 Related Publications (2024-25)",
+      "value": "32"
+    },
+    {
+      "label": "Cumulative SDG 10 Related Publications",
+      "value": "43"
+    },
+    {
+      "label": "Citation Count",
+      "value": "90"
+    },
+    {
+      "label": "Field-Weighted Citation Impact (FWCI)",
+      "value": "0.94"
+    },
+    {
+      "label": "No. of Events",
+      "value": "4"
+    }
+  ],
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Kalinga University, Raipur is committed to promoting equality, diversity, inclusion, and social justice in accordance with the United Nations Sustainable Development Goal 10 (Reduced Inequalities). The University believes that quality higher education should be accessible to learners irrespective of gender, caste, religion, disability, socio-economic background, or nationality. During 2025, the University strengthened its commitment by expanding financial support, encouraging inclusive education, promoting diversity, supporting research, and implementing institutional policies that create an equitable academic environment."
+    }
+  ],
+  "sections": [
+    {
+      "title": "10.1 Research on Reduced Inequalities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University encourages interdisciplinary research addressing social equity, inclusion, public policy, human rights, gender equality, tribal welfare, rural development, disability studies, constitutional rights, and sustainable development."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University promotes:"
+        },
+        {
+          "type": "listItem",
+          "text": "Research on social inclusion and equality"
+        },
+        {
+          "type": "listItem",
+          "text": "Publications aligned with the Sustainable Development Goals"
+        },
+        {
+          "type": "listItem",
+          "text": "Faculty participation in national and international conferences"
+        },
+        {
+          "type": "listItem",
+          "text": "Student research projects addressing societal challenges"
+        },
+        {
+          "type": "listItem",
+          "text": "Innovation for inclusive development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Research related to inequality contributes towards evidence-based policymaking and supports national priorities under the Sustainable Development Goals."
+        },
+        {
+          "type": "paragraph",
+          "text": "At Kalinga University, the assessment of SDG 10 reflects the University's commitment to promoting inclusive development, equal opportunities and the reduction of social and economic disparities. During the reporting period, the University recorded 43 SDG 10-related research publications, receiving 90 citations and achieving a Field-Weighted Citation Impact (FWCI) of 0.94. Through interdisciplinary research, student support initiatives, skill-development programmes, community outreach, awareness campaigns, accessibility measures and institutional efforts to promote non-discrimination, the University contributes to addressing inequalities and strengthening inclusive participation in higher education and society. These initiatives reflect Kalinga University's continued engagement with the objectives of SDG 10 and its commitment to fostering an equitable, accessible and socially inclusive environment for students, faculty and the wider community."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Category",
+            "Research Paper: Count",
+            "Column1",
+            "Column2"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021"
+              },
+              {
+                "text": "0"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2022"
+              },
+              {
+                "text": "0"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2023"
+              },
+              {
+                "text": "6"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2024"
+              },
+              {
+                "text": "9"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2025"
+              },
+              {
+                "text": "23"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2026"
+              },
+              {
+                "text": "5"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ]
+          ],
+          "caption": "Year-wise Research Papers"
+        },
+        {
+          "type": "paragraph",
+          "text": "Research on Reduced Inequalities"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University supports research addressing the social, economic and institutional dimensions of inequality in alignment with Sustainable Development Goal 10: Reduced Inequalities. During the reporting period, 43 scholarly publications were identified as aligned with SDG 10, generating a total of 90 citations and recording a Field-Weighted Citation Impact (FWCI) of 0.94. The University's research engagement contributes to discussions on social inclusion, equal opportunities, poverty reduction, educational access, gender equality, disability inclusion, social protection and the empowerment of disadvantaged communities. Through interdisciplinary academic inquiry and research dissemination, Kalinga University seeks to strengthen the knowledge base for evidence-informed policies and practices that promote equitable development and reduce inequalities within society."
+        },
+        {
+          "type": "paragraph",
+          "text": "Patent"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Research Output",
+            "Author(s)",
+            "Department",
+            "SDG 10 Theme",
+            "Evidence Type"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "The Fabric of Gender Identity, Society, and Power",
+                "colSpan": 1
+              },
+              {
+                "text": "Mr. A. K. Kaul",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender Equality, Social Inclusion, Equality",
+                "colSpan": 1
+              },
+              {
+                "text": "Book Chapter (2024–25)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "Individual Moral Thinking Towards Environment Issues and Concerns with Special Reference to the Novels of Amitav Ghosh Through Attainment Model",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Shilpi Bhattacharya",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities",
+                "colSpan": 1
+              },
+              {
+                "text": "Sustainable Development, Environmental Justice",
+                "colSpan": 1
+              },
+              {
+                "text": "Patent (Granted)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "Experiential Learning for Enhancing Leadership Skills in Graduate and Undergraduate Students of Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Monika Sethi",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Inclusive Education, Capacity Building",
+                "colSpan": 1
+              },
+              {
+                "text": "Patent",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "Experiential Learning for Career Development Training for Management Students",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Monika Sethi",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Employability, Equal Opportunity",
+                "colSpan": 1
+              },
+              {
+                "text": "Patent",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "Total Quality Management (TQM) and Total Productive Maintenance (TPM) in Live Projects of Graduate Students of Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Monika Sethi",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Skill Development, Capacity Building",
+                "colSpan": 1
+              },
+              {
+                "text": "Patent",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Book Chapters"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Faculty Author(s)",
+            "Book Chapter / Research Output",
+            "SDG 10 Focus Area"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Dr. Ajay Kumar Shukla",
+                "colSpan": 1
+              },
+              {
+                "text": "Examining Social Inclusion and Equity in Access to Quality Education, Healthcare and Gender Equality: A Case Study of Kotni, Kotrabhata, Kuhera and Paunta Communities",
+                "colSpan": 1
+              },
+              {
+                "text": "Social Inclusion, Education, Healthcare, Gender Equality",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Dr. Vivek Malik, Dr. Nausheen Hussain & Dr. Toshan Tarak",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender-Inclusive Laws: Legal Tools for Equitable Justice",
+                "colSpan": 1
+              },
+              {
+                "text": "Human Rights, Gender Equality",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Dr. Saroj Nayyar",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. B.R. Ambedkar's Vision for Education: A Philosophy of Empowerment and Social Justice",
+                "colSpan": 1
+              },
+              {
+                "text": "Social Justice, Inclusive Education",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Dr. S.K. Gupta, Dr. Neeraj Tiwari & Dr. Mamta Rani",
+                "colSpan": 1
+              },
+              {
+                "text": "Women's Empowerment Through Access to Education",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender Equality, Inclusive Education",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Dr. Saroj Nayyar",
+                "colSpan": 1
+              },
+              {
+                "text": "Beyond Bricks and Mortar: Well-being for Women in Construction",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender Equality, Labour Inclusion",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Ekta Chandrakar",
+                "colSpan": 1
+              },
+              {
+                "text": "Privacy as a Human Right: Unheard Voices",
+                "colSpan": 1
+              },
+              {
+                "text": "Human Rights, Equality",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Dr. Esha Chatterjee",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender & Society; Constructing Gender Identity: Fairy Tales as Tools for Socialization – A Sociological Perspective",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender Studies, Social Inclusion",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Mrs. L. Jyoti Reddy & Dr. A. Rajshekhar",
+                "colSpan": 1
+              },
+              {
+                "text": "Breaking Barriers: The Role of Education in Achieving Gender Equality",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender Equality, Education",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Ms. Jesika Minj",
+                "colSpan": 1
+              },
+              {
+                "text": "Independence Over \"I Do\": Why Some Divorced Women Skip a Second Marriage",
+                "colSpan": 1
+              },
+              {
+                "text": "Women's Rights, Social Inclusion",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Mr. Snehashish Sarkar",
+                "colSpan": 1
+              },
+              {
+                "text": "The Causes and Consequences of Marital Discords and Separated Women: A Critical Analysis",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender Justice, Social Welfare",
+                "colSpan": 1
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10.3 International Students from Developing Countries",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur has a sizeable international student community, with a large proportion coming from developing countries in Asia and Africa. According to the university, it currently enrolls around 650 international students from more than 33 countries."
+        },
+        {
+          "type": "paragraph",
+          "text": "The International Students Cell at Kalinga University has been established to streamline the academic processes of our global students, helping them seize the best opportunities and resources of our university. The members of our cell take utmost care of our students from their arrival and admission into our programs to providing support and guidance until they receive their degree."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University states that it provides:"
+        },
+        {
+          "type": "listItem",
+          "text": "International admissions assistance"
+        },
+        {
+          "type": "listItem",
+          "text": "Visa and FRRO guidance"
+        },
+        {
+          "type": "listItem",
+          "text": "Airport pickup (for eligible students)"
+        },
+        {
+          "type": "listItem",
+          "text": "Separate hostel facilities"
+        },
+        {
+          "type": "listItem",
+          "text": "Orientation and cultural integration programs"
+        },
+        {
+          "type": "listItem",
+          "text": "English language and communication support"
+        },
+        {
+          "type": "listItem",
+          "text": "Faith and worship facilities for students from different religious backgrounds"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/6bc1a259eb0e1d7e.png",
+          "alt": "SDG 10: 10.3 International Students from Developing Countries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/ae0664b5bf75f017.png",
+          "alt": "SDG 10: 10.3 International Students from Developing Countries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/c47fe56abbc0432c.png",
+          "alt": "SDG 10: 10.3 International Students from Developing Countries - report evidence"
+        }
+      ]
+    },
+    {
+      "title": "10.4 Proportion of Students with Disabilities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to promoting inclusive and equitable access to higher education for students with disabilities. The University provides a barrier-free campus environment, reasonable accommodations, accessible infrastructure, and student support services in accordance with its Disability-Friendly and Barrier-Free Environment Policy and the Rights of Persons with Disabilities (RPwD) Act, 2016. The proportion of students with disabilities is monitored through institutional records to ensure equal opportunities, facilitate academic participation, and strengthen the University's commitment to diversity, inclusion, and social equity. Kalinga University is committed to creating an inclusive campus that enables students with disabilities to participate fully in academic and campus life."
+        },
+        {
+          "type": "paragraph",
+          "text": "Table 1: Availability of Accessibility Facilities"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Wheelchair accessibility",
+            "4"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Ramps/Elevators",
+                "colSpan": 1
+              },
+              {
+                "text": "6/ 2",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Accessible washrooms",
+                "colSpan": 1
+              },
+              {
+                "text": "345",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/ec8d4abc757bbf2d.png",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/0638023602fed97d.jpeg",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/9f312af84ad14601.jpeg",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/b491a98c9f2e957c.png",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/d7bc3ffe0db5b9f5.png",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/6c0de1a21e1bd27c.png",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/cc50c56ea4f7f11a.png",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/ddda202fc0b52f2e.png",
+          "alt": "SDG 10: 10.4 Proportion of Students with Disabilities - report evidence"
+        }
+      ]
+    },
+    {
+      "title": "10.6 Measures Against Discrimination",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Financial Inclusion and Scholarships"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reducing financial inequality remains one of the University's primary objectives. Kalinga University provides a comprehensive scholarship programme designed to improve access to higher education for meritorious and disadvantaged students. Publicly available information shows scholarships under multiple categories, including Merit, Social, Sports, Entrance Examination, Innovation & Research, Culture & Achievers, Sibling, and other institutional schemes. The University also reports that more than 5,000 students have benefited and that over ₹3 crore in scholarships have been distributed. Kalinga University has signed an MOU with Canara Bank and the Central Bank of India, which are providing financial assistance to our students during admissions"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/d670f5c23dac0153.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/94e5c435df753f5d.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/2daa40b6de767456.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/f840d37792a4f64b.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/656d638bfb9dcf56.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/acacd3bdd5a8e967.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/535c7be1d07711a4.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/1b365a9a1ef6a26a.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/baf23bbc620cd812.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Equal Opportunity in Admissions"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University follows transparent admission procedures and encourages students from diverse socio-economic and geographical backgrounds."
+        },
+        {
+          "type": "paragraph",
+          "text": "Special emphasis is given to:"
+        },
+        {
+          "type": "listItem",
+          "text": "Rural students"
+        },
+        {
+          "type": "listItem",
+          "text": "Economically weaker sections"
+        },
+        {
+          "type": "listItem",
+          "text": "Socially disadvantaged communities"
+        },
+        {
+          "type": "listItem",
+          "text": "Female students"
+        },
+        {
+          "type": "listItem",
+          "text": "First-generation learners"
+        },
+        {
+          "type": "listItem",
+          "text": "Students from different states"
+        },
+        {
+          "type": "paragraph",
+          "text": "These measures improve educational access and reduce barriers to higher education. In line with THE Impact Rankings methodology, Kalinga University should demonstrate institutional mechanisms that promote equity and protect all stakeholders from discrimination."
+        },
+        {
+          "type": "paragraph",
+          "text": "Equal Opportunity Cell"
+        },
+        {
+          "type": "listItem",
+          "text": "Kalinga University is committed to providing an inclusive and equitable environment for all students, employees, and visitors. This Equal Opportunity Policy aims to promote fairness, dignity, and respect for all individuals, regardless of their background, characteristics, or circumstances. This policy applies to all members of the university community, including students, employees, contractors, and visitors. It covers all aspects of university life, including admissions, employment, education, and services."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/c7eab1bd81434058.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/3915b0ea16edbdde.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/5e9c607f4c1a5932.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Internal Complaints Committee (ICC)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University in Raipur has established an Internal Complaint Committee (ICC) alongside its Women Cell to prevent sexual harassment and address grievances on campus. The committee is mandated by UGC guidelines to ensure a safe, secure, and equal environment for all students, staff, and faculty members.The ICC comprises key academic and administrative members who handle grievances in a strictly confidential manner."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/cd5aee0b82e0aca4.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "POSH implementation"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Women's Cell or Sexual Harassment Prevention Committee has been constituted at Kalinga University under the guidelines issued by the UGC, NAAC, and the Supreme Court to consider complaints related to any sexual discrimination or harassment of girls or women within the University."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "EVENT",
+            "TOTAL NO. OF PARTICIPATION"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1.POSH TRAINING SESSION – CERTIFCATION COURSE 20 HOUR",
+                "colSpan": 1
+              },
+              {
+                "text": "205",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/faf3caa8fa3f3914.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/3ff20fbb1842a4d1.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/5285a07e09aa599c.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/40b76853aa079f6b.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/fb7575dcdaed9e27.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Anti-Ragging Committee"
+        },
+        {
+          "type": "listItem",
+          "text": "Ragging is ruining the lives and careers of innocent students and even harming their health. Ragging is completely banned on our campus, and we take strict action against any student who is found guilty of ragging. Our cell ensures that every student pursues their education without the fear of harassment or bullying. As per the order of the Supreme Court of India, UGC guidelines, and State Government instructions, Kalinga University is following the “Zero-Tolerance Policy” towards ragging."
+        },
+        {
+          "type": "listItem",
+          "text": "Say No to Ragging, Say Yes to Respect! At Kalinga University, we stand united in creating a campus where safety, respect, and inclusivity thrive. From 8th to 12th August 2025, we observed Anti-Ragging Week, where students, staff, and faculty members came together to pledge for a ragging-free environment."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/c7110afb0306edac.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/3d23db8cce24e198.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/bd671b11a3fd189e.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Grievance Redressal Cell"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Grievance Redressal Cell is established at KU as per the UGC guidelines to record the complaints of students and staff members regarding academic, administrative, discrimination, harassment, examination, finance, facilities, and infrastructure-related issues. The dedicated committee members look after the seriousness of the problems and take necessary action."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-10/553b4b5b83dce1ac.png",
+          "alt": "SDG 10: 10.6 Measures Against Discrimination - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Student Counselling"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University prioritises the emotional and mental well-being of its students by supporting them in their academic and personal journey. We believe that in no circumstances should students be pressurised, but we should try to look at situations from their perspective. Our experienced counselling team addresses key challenges that are hindering their overall well-being and meets their emotional needs with utmost care."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1036 @@
+{
+  "number": 5,
+  "title": "Gender Equality",
+  "sourceUrl": "https://drive.google.com/file/d/1kqldN0uibMUaobAfzUvVHZFc4UrSUmXz/view",
+  "sourceDate": "30 October 2026",
+  "dashboard": [
+    {
+      "label": "SDG 05 Related Publications (2024-25)",
+      "value": "05"
+    },
+    {
+      "label": "Cumulative SDG 05 Related Publications",
+      "value": "8"
+    },
+    {
+      "label": "Citation Count",
+      "value": "1"
+    },
+    {
+      "label": "Field-Weighted Citation Impact (FWCI)",
+      "value": "0.43"
+    },
+    {
+      "label": "No. of Events",
+      "value": "06"
+    }
+  ],
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Gender equality is recognized as a fundamental human right and an essential foundation for achieving peaceful, prosperous, and sustainable societies. Despite significant progress in education, healthcare, political participation, and economic opportunities over the past few decades, women and girls continue to experience discrimination, violence, unequal access to resources, and underrepresentation in leadership positions across the world."
+    },
+    {
+      "type": "paragraph",
+      "text": "To address these persistent inequalities, the United Nations adopted Sustainable Development Goal 5 (SDG 5): Achieve Gender Equality and Empower All Women and Girls as part of the 2030 Agenda for Sustainable Development. SDG 5 seeks to eliminate all forms of discrimination and violence against women, ensure equal participation in leadership and decision-making, recognize unpaid care work, provide universal access to sexual and reproductive health and rights, and strengthen policies that promote gender equality. India has made considerable progress in promoting gender equality through constitutional guarantees, legislative reforms, and national policies. Articles 14, 15, 16, 21, and 39 of the Constitution of India provide equality before the law, prohibit discrimination on the basis of sex, and promote equal opportunities for women. The National Education Policy 2020 identifies gender inclusion as one of the key priorities for transforming higher education. It recommends the creation of safe, equitable, and inclusive learning environments, establishment of Gender Inclusion Funds, increased participation of women in STEM disciplines, and removal of barriers that restrict women's access to education."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kalinga University has embedded gender equality and inclusivity within its institutional vision of developing talent and creating knowledge for a vibrant and inclusive society. The University's vision and mission emphasize holistic development, equal opportunities, innovation, and improvement in the quality of life, providing a strong institutional foundation for the implementation of SDG 5. Kalinga University's commitment to SDG 5 extends beyond compliance with statutory requirements. Through gender-responsive governance, inclusive academic policies, research, community engagement, leadership development, and partnerships, the University seeks to create an equitable campus culture where women and men have equal opportunities to learn, lead, innovate, and contribute to sustainable development. This commitment aligns with the University's broader vision of becoming a globally recognized institution that advances knowledge creation while fostering an inclusive and socially responsible society."
+    }
+  ],
+  "sections": [
+    {
+      "title": "5.1 Research on gender equality",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Research is one of the strongest mechanisms through which higher educational institutions contribute to Sustainable Development Goal 5 (Gender Equality). Kalinga University has developed a vibrant research ecosystem that encourages interdisciplinary, socially relevant, and impact-oriented research addressing national priorities and global sustainable development challenges. Through its emphasis on innovation, research collaborations, publications, intellectual property generation, consultancy, and community engagement, the University contributes to advancing gender equality and women's empowerment."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's research policy promotes multidisciplinary scholarship across law, social sciences, education, management, engineering, health sciences, agriculture, humanities, and allied disciplines. Faculty members are encouraged to undertake research addressing gender justice, human rights, social inclusion, women’s empowerment, public policy, entrepreneurship, sustainable development, and community development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Research aligned with SDG 5 contributes to evidence-based policymaking, strengthens gender-sensitive governance, informs teaching, and supports inclusive social transformation. Kalinga University encourages faculty members to publish high-quality research in national and international journals indexed in Scopus, Web of Science, UGC-CARE, and other recognized databases. Faculty publications addressing SDG 5 encompass themes such as gender equality, women’s empowerment, constitutional rights, public policy, labour rights, education, health, entrepreneurship, tribal development, social justice, and inclusive governance."
+        },
+        {
+          "type": "paragraph",
+          "text": "At Kalinga University, the assessment of SDG 5 reflects the University's commitment to promoting gender equality, women's empowerment and equal opportunities for all. During the reporting period, the University recorded 8 SDG 5-related research publications, receiving 11 citations and achieving a Field-Weighted Citation Impact (FWCI) of 0.43. Through interdisciplinary research, gender-sensitisation programmes, women's empowerment initiatives, awareness campaigns, educational opportunities, institutional support mechanisms and efforts to promote a safe and inclusive campus environment, the University contributes to addressing gender-based disparities and strengthening women's participation in higher education and society. These initiatives reflect Kalinga University's engagement with the objectives of SDG 5 and its commitment to fostering a gender-responsive, equitable and inclusive academic environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Research on Gender Equality"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Category",
+            "Research Paper: Count",
+            "Column1",
+            "Column2"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021"
+              },
+              {
+                "text": "0"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2022"
+              },
+              {
+                "text": "1"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2023"
+              },
+              {
+                "text": "0"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2024"
+              },
+              {
+                "text": "2"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2025"
+              },
+              {
+                "text": "3"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2026"
+              },
+              {
+                "text": "2"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ]
+          ],
+          "caption": "Year-wise Research Papers"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University supports research addressing the social, economic, educational and institutional dimensions of gender equality in alignment with Sustainable Development Goal 5: Gender Equality. During the reporting period, 8 scholarly publications were identified as aligned with SDG 5, generating a total of 11 citations and recording a Field-Weighted Citation Impact (FWCI) of 0.43. The University's research engagement contributes to academic discussions on women's empowerment, gender equity, equal access to education, women's participation in leadership and decision-making, gender-based discrimination, workplace equality and the advancement of women's rights. Through interdisciplinary academic inquiry and research dissemination, Kalinga University seeks to strengthen the knowledge base for evidence-informed policies and institutional practices that promote gender equality, empower women and girls, and support inclusive and sustainable development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Research Paper/ Book Chapter"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Faculty",
+            "Department",
+            "Publication Title",
+            "Chapter/Paper",
+            "Year",
+            "SDG 5 Theme"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "Ms. Vanshika Kapoor",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Law",
+                "colSpan": 1
+              },
+              {
+                "text": "Justice and Gender: Exploring Women's Encounter with Crime, AI and Law",
+                "colSpan": 1
+              },
+              {
+                "text": "Cyberstalking and Victimization of Women in India: An Analysis of the Indian Criminal Justice System in Cyberspace",
+                "colSpan": 1
+              },
+              {
+                "text": "2026",
+                "colSpan": 1
+              },
+              {
+                "text": "Women's Safety, Cyber Crime, Justice",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Anita Samal",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities",
+                "colSpan": 1
+              },
+              {
+                "text": "Critical Perspectives on Sustainable Futures: Society, Culture and Governance",
+                "colSpan": 1
+              },
+              {
+                "text": "Innovative Governance for Sustainable Development: A Study of Women Leadership in the Indian Administrative Service",
+                "colSpan": 1
+              },
+              {
+                "text": "2026",
+                "colSpan": 1
+              },
+              {
+                "text": "Women Leadership",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "Vishakha Sarkar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Law",
+                "colSpan": 1
+              },
+              {
+                "text": "Role of the Women in the National Development of India",
+                "colSpan": 1
+              },
+              {
+                "text": "Gender Diversity on Board: Measure to Enhance Corporate Governance",
+                "colSpan": 1
+              },
+              {
+                "text": "2026",
+                "colSpan": 1
+              },
+              {
+                "text": "Women in Corporate Leadership",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "Ms. Shainey Das",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Critical Perspectives on Sustainable Futures: Society, Culture and Governance",
+                "colSpan": 1
+              },
+              {
+                "text": "Sohrai Art of Jharkhand: Matrilineal Heritage Empowering Contemporary Fashion",
+                "colSpan": 1
+              },
+              {
+                "text": "2026",
+                "colSpan": 1
+              },
+              {
+                "text": "",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Patent"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Faculty Name",
+            "Department",
+            "Patent Title",
+            "Nature of Contribution"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Shilpi Bhattacharya",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities",
+                "colSpan": 1
+              },
+              {
+                "text": "Biopolitics: A Blot on Existing Realities of Gender, Class, Caste and Sexuality with Reference to Salman Rushdie's Midnight's Children and Mahasweta Devi's Mother of 1084",
+                "colSpan": 1
+              },
+              {
+                "text": "Explores the intersection of gender, class, caste, and social justice, contributing to academic discourse on gender discrimination, equality, and women's rights.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Asha Ambhaikar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Computer Science & Information Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Multilayered Tele-Healthcare Data Analysis System",
+                "colSpan": 1
+              },
+              {
+                "text": "Promotes equitable access to telemedicine and remote healthcare services through digital technologies, enhancing healthcare accessibility for women and rural communities.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "Ms. Abhismita Roy",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "IoT-Based Wearable Health Monitoring Device",
+                "colSpan": 1
+              },
+              {
+                "text": "Enables continuous health monitoring through wearable technology, supporting preventive healthcare and improving health outcomes for women and vulnerable populations.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "Dr. Rajesh Kumar Manik et al.",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Sandhi Mitra: Ayurvedic Support for Joint Health",
+                "colSpan": 1
+              },
+              {
+                "text": "Promotes accessible and affordable healthcare through Ayurvedic innovation, contributing to improved health and well-being, particularly for women and the elderly.",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Event Title",
+            "Date",
+            "Theme",
+            "Nature of Contribution to SDG 5"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "Two-Day Global Conference on Recent Trends in Law, Arbitration, Mediation, Economy & Society",
+                "colSpan": 1
+              },
+              {
+                "text": "28 February – 1 March 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Human Rights, Social Justice, Inclusive Governance, Sustainable Development",
+                "colSpan": 1
+              },
+              {
+                "text": "Brought together legal scholars and practitioners to discuss law, mediation, human rights, social justice, and equitable governance. The conference emphasized access to justice, gender-sensitive legal systems, and women's participation in dispute resolution.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "Online Quiz Competition on \"Constitution of India: Foundations, Rights and Governance\"",
+                "colSpan": 1
+              },
+              {
+                "text": "14 April 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Constitutional Values, Human Rights",
+                "colSpan": 1
+              },
+              {
+                "text": "Enhanced constitutional literacy, awareness of fundamental rights, democratic values, and legal equality. Promoted understanding of constitutional safeguards that protect women's rights and gender equality.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "International Conference on Innovative Education Strategies under the NEP 2020 Framework: Chhattisgarh and Beyond",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Education, Inclusive Learning",
+                "colSpan": 1
+              },
+              {
+                "text": "Focused on inclusive, equitable, and quality education under NEP 2020, promoting equal educational opportunities, multidisciplinary learning, and capacity building for all learners, including women.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "Strengths-Based Social Work Practice – GIAN Course & International Conference",
+                "colSpan": 1
+              },
+              {
+                "text": "3–8 February 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Human Rights, Social Justice",
+                "colSpan": 1
+              },
+              {
+                "text": "Addressed empowerment, human rights, social justice, client autonomy, and reducing structural oppression. The programme encouraged inclusive practices benefiting women and vulnerable communities.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "International Conference on Innovation in Clean and Sustainable Energy Technologies for Tribal and Rural Regions (Vision Viksit Bharat 2047)",
+                "colSpan": 1
+              },
+              {
+                "text": "27–28 February 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Sustainable Development",
+                "colSpan": 1
+              },
+              {
+                "text": "Promoted inclusive development through sustainable technologies for rural and tribal communities, indirectly supporting women's empowerment by improving access to essential services and livelihoods.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "Constitution@75: Evolving Text, Context & Transformations – Rights, Governance & Technology in Focus (HNLU)",
+                "colSpan": 1
+              },
+              {
+                "text": "25 January 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "Constitutional Values, Human Rights, Governance",
+                "colSpan": 1
+              },
+              {
+                "text": "Explored constitutional principles, governance, human rights, inclusivity, and legal reforms. Encouraged interdisciplinary dialogue on equality, justice, and democratic participation.",
+                "colSpan": 1
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5.3 Student Access Measures",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University recognizes education as one of the most effective instruments for advancing gender equality and inclusive development. In alignment with Sustainable Development Goal 5, the University integrates principles of equality, human dignity, constitutional values, and social justice into its academic ecosystem. Through interdisciplinary programmes, value-added courses, skill enhancement initiatives, and co-curricular activities, the University seeks to cultivate graduates who are socially responsible, ethically conscious, and committed to promoting gender equity in their professional and personal lives."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's curriculum follows the principles of the National Education Policy (NEP) 2020 by encouraging multidisciplinary learning, value-based education, experiential learning, and holistic development. Gender sensitivity is promoted not only through classroom teaching but also through seminars, workshops, awareness campaigns, community engagement, and student support mechanisms. The University's Gender Equity initiative explicitly aims to develop curricula that recognize the contributions of women, challenge discriminatory practices, and promote positive attitudes and non-violent relationships among students."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/c06360468c5947ec.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/3bda9f21600204a8.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gender Courses"
+        },
+        {
+          "type": "paragraph",
+          "text": "While Kalinga University does not currently advertise standalone degree programmes exclusively titled \"Gender Studies\" or \"Women's Studies,\" gender-related concepts are integrated across several disciplines including Law, Political Science, Sociology, Social Work, Psychology, Education, and Liberal Arts. These programmes examine issues relating to equality, social justice, women's rights, constitutional protections, public policy, and sustainable development."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/2bee6efa6d2da140.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/d275438717582f2c.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/d324f71002efce2a.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/8e99ea7d21f5f8a3.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Human Rights Education"
+        },
+        {
+          "type": "paragraph",
+          "text": "Human rights education forms an important component of teaching across several programmes, particularly within the Faculty of Law, Arts and Humanities, Social Sciences, and Management. Students are introduced to international human rights frameworks, constitutional safeguards, equality before law, protection against discrimination, labour rights, child rights, and women's rights"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/2fbd87546b359d95.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Constitutional Studies"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Constitution of India provides the legal foundation for gender equality, and constitutional values are integrated into teaching across multiple disciplines. Courses in Political Science, Public Administration, Law, and related social science programmes emphasize constitutional provisions concerning equality, dignity, non-discrimination, fundamental rights, directive principles of state policy, and affirmative action."
+        },
+        {
+          "type": "paragraph",
+          "text": "Students examine constitutional provisions such as Articles 14, 15, 16, 21, and 39, along with significant judicial decisions and legislative measures including the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013. Classroom learning is complemented through seminars, Constitution Day celebrations, legal literacy activities, and discussions on contemporary issues relating to gender justice and inclusive governance."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/a4a92a7f516424e0.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/f8253a75d62ee31c.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/cf01ff2249fa1206.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/0647745eca9becda.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/2afebf61c32dac83.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Women's Studies"
+        },
+        {
+          "type": "paragraph",
+          "text": "Although Kalinga University does not presently operate a separate Department or Centre for Women's Studies, themes related to women's empowerment, gender justice, feminist perspectives, and inclusive development are incorporated within several interdisciplinary programmes. Faculty encourage students to undertake dissertations, research projects, presentations, and field-based studies addressing women's participation in education, health, entrepreneurship, governance, rural development, and sustainable development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Gender Mainstreaming"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's stated objectives include:"
+        },
+        {
+          "type": "listItem",
+          "text": "promoting equal educational opportunities for all students;"
+        },
+        {
+          "type": "listItem",
+          "text": "developing curricula that recognize the contributions of women;"
+        },
+        {
+          "type": "listItem",
+          "text": "challenging discriminatory social and cultural practices;"
+        },
+        {
+          "type": "listItem",
+          "text": "encouraging mutual respect, empathy, and responsible citizenship; and"
+        },
+        {
+          "type": "listItem",
+          "text": "fostering positive attitudes towards gender equality across the campus community."
+        },
+        {
+          "type": "paragraph",
+          "text": "Gender mainstreaming is further supported through awareness campaigns, workshops, International Women's Day celebrations, legal literacy programmes, and sensitization activities conducted throughout the academic year."
+        },
+        {
+          "type": "paragraph",
+          "text": "Curriculum Integration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gender equality is integrated across the curriculum through interdisciplinary teaching rather than being confined to a single programme. Faculty members incorporate gender perspectives into subjects relating to law, governance, management, education, literature, psychology, sociology, public administration, and sustainable development."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University follows an outcome-based education framework aligned with NEP 2020, encouraging critical thinking, ethical leadership, social responsibility, and experiential learning. This approach enables students to understand gender issues within broader contexts such as human rights, public policy, community development, environmental sustainability, entrepreneurship, and innovation. The University's commitment to multidisciplinary education and industry-relevant curricula supports this integrated learning environment."
+        },
+        {
+          "type": "listItem",
+          "text": "Equal Opportunity Cell"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to providing an inclusive and equitable environment for all students, employees, and visitors. This Equal Opportunity Policy aims to promote fairness, dignity, and respect for all individuals, regardless of their background, characteristics, or circumstances. This policy applies to all members of the university community, including students, employees, contractors, and visitors. It covers all aspects of university life, including admissions, employment, education, and services."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/2d3550a59229f701.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/89a61ec75627587f.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/ab58c06c20ddce6e.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Internal Complaints Committee (ICC)"
+        },
+        {
+          "type": "listItem",
+          "text": "Kalinga University in Raipur has established an Internal Complaint Committee (ICC) alongside its Women Cell to prevent sexual harassment and address grievances on campus. The committee is mandated by UGC guidelines to ensure a safe, secure, and equal environment for all students, staff, and faculty members.The ICC comprises key academic and administrative members who handle grievances in a strictly confidential manner."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/b5396c76f199d72c.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/45ff1d744feeae76.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/dff0ecf000ab645a.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Anti-Ragging Committee"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ragging is ruining the lives and careers of innocent students and even harming their health. Ragging is completely banned on our campus, and we take strict action against any student who is found guilty of ragging. Our cell ensures that every student pursues their education without the fear of harassment or bullying. As per the order of the Supreme Court of India, UGC guidelines, and State Government instructions, Kalinga University is following the “Zero-Tolerance Policy” towards ragging."
+        },
+        {
+          "type": "paragraph",
+          "text": "Say No to Ragging, Say Yes to Respect! At Kalinga University, we stand united in creating a campus where safety, respect, and inclusivity thrive. From 8th to 12th August 2025, we observed Anti-Ragging Week, where students, staff, and faculty members came together to pledge for a ragging-free environment."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/c7110afb0306edac.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/3d23db8cce24e198.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/27e23a46eb3f30bf.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Grievance Redressal Cell"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Grievance Redressal Cell is established at KU as per the UGC guidelines to record the complaints of students and staff members regarding academic, administrative, discrimination, harassment, examination, finance, facilities, and infrastructure-related issues. The dedicated committee members look after the seriousness of the problems and take necessary action."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/553b4b5b83dce1ac.png",
+          "alt": "SDG 5: 5.3 Student Access Measures - report evidence"
+        }
+      ]
+    },
+    {
+      "title": "5.4 Proportion of Senior Female Academics",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to promoting gender equality and women's leadership in academia by providing equal opportunities for recruitment, career advancement, and leadership positions. The University encourages the participation of women in senior academic roles, including Professors, Associate Professors, Heads of Departments, Deans, and other academic leadership positions. The proportion of senior female academics is maintained through institutional human resource records and reflects the University's commitment to fostering an inclusive, diverse, and equitable academic environment in alignment with Sustainable Development Goal 5 (Gender Equality). Publicly available sources do not disclose the exact proportion of senior female academics; therefore, this indicator should be reported using official Human Resource records maintained by the University."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Faculty (Women) Total",
+            "13"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Administration Staff (Women)",
+                "colSpan": 1
+              },
+              {
+                "text": "14",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Department-wise Faculty count (Women)",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities - 1Faculty of Commerce & Management - 3Faculty of Education - 1Faculty of Law - 3Faculty of Pharmacy - 1Faculty of Science - 5Faculty of Technology - 0Faculty of CS & IT - 0",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Recent women Employee Recruitment",
+                "colSpan": 1
+              },
+              {
+                "text": "240",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Board of Management (Women)",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Academic Council (Women)",
+                "colSpan": 1
+              },
+              {
+                "text": "4",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "IQAC (Women)",
+                "colSpan": 1
+              },
+              {
+                "text": "3",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Research Committee (Women)",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Head of Department (Women)",
+                "colSpan": 1
+              },
+              {
+                "text": "7",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/180fda165c6fa747.png",
+          "alt": "SDG 5: 5.4 Proportion of Senior Female Academics - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/e2db81d04c0e557a.png",
+          "alt": "SDG 5: 5.4 Proportion of Senior Female Academics - report evidence"
+        }
+      ]
+    },
+    {
+      "title": "5.6 Women’s Progress Measures",
+      "blocks": [
+        {
+          "type": "listItem",
+          "text": "POSH Policy"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Women's Cell or Sexual Harassment Prevention Committee has been constituted at Kalinga University under the guidelines issued by the UGC, NAAC, and the Supreme Court to consider complaints related to any sexual discrimination or harassment of girls or women within the University."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/3f68d82bd69f8ad6.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/19a57f6ba7efa824.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Equal Opportunity Policy"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to providing an inclusive and equitable environment for all students, employees, and visitors. This Equal Opportunity Policy aims to promote fairness, dignity, and respect for all individuals, regardless of their background, characteristics, or circumstances. This policy applies to all members of the university community, including students, employees, contractors, and visitors. It covers all aspects of university life, including admissions, employment, education, and services"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/2d3550a59229f701.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/89a61ec75627587f.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/ab58c06c20ddce6e.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "listItem",
+          "text": "Maternity Leave Policy & Paternity Leave Policy"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/496d9bbb01b75d15.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/16772c32e2f74c91.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/bf95682f002921fa.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/68278e3775a1c0e5.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/8c09c7b385e3a3fa.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/469af87f82d2411b.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "CCTV",
+            "500"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Security",
+                "colSpan": 1
+              },
+              {
+                "text": "17",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Emergency Helpline",
+                "colSpan": 1
+              },
+              {
+                "text": "32",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Safe Transport",
+                "colSpan": 1
+              },
+              {
+                "text": "42",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/91a7c6891a715171.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/5d0a79d6b70f5c77.png",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-5/7abcb13cc40b17de.jpeg",
+          "alt": "SDG 5: 5.6 Women’s Progress Measures - report evidence"
+        }
+      ]
+    }
+  ]
+}

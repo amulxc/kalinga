@@ -23,12 +23,38 @@ NS = {
 REPORTS = {
     2: ("Zero Hunger", "1vLuUZpt_I6Cq0y7etVOW6qrXLOx7Kc_G", "24 October 2026"),
     4: ("Quality Education", "1JvLV54kIs3Ga2_gLdPIM7bpPJHpwkGcf", "24 October 2026"),
+    5: ("Gender Equality", "1kqldN0uibMUaobAfzUvVHZFc4UrSUmXz", "30 October 2026"),
     6: ("Clean Water and Sanitation", "159n019NfqtLNxYJE-SHcwDxHH2xz63j6", "27 October 2026"),
+    7: ("Affordable and Clean Energy", "1nbhDemiXsN6vh-JpRFkFOCDtNjcS3_Ap", "29 October 2026"),
     8: ("Decent Work and Economic Growth", "1-ULjNlrL8G4_7npqIGZywud9CmpbTSho", "24 October 2026"),
     9: ("Industry, Innovation and Infrastructure", "1VTPowPwOzHKTTw4s17N1mOwC700lgsko", "27 October 2026"),
+    10: ("Reduced Inequalities", "1_ZP3K77fkR0oAp8I9yWyY65-DnL7hP-y", "30 October 2026"),
+    11: ("Sustainable Cities and Communities", "1ESA2O0DdjfSj6Mb_O-dswmv2I6ExDwqt", "29 October 2026"),
+    12: ("Responsible Consumption and Production", "13HPKAk3EwIeJdF5l8xw7NEdIHkBIKrFt", "29 October 2026"),
     # SDG 13 is a legacy .doc on Drive; save it as sdg-13.docx (e.g. with Word) before importing.
     13: ("Climate Action", "1EBHJx0ASwiDzIiTRRUFPtIj2H16tHEFt", "27 October 2026"),
+    14: ("Life Below Water", "1N5YNMMzcEaKnVN7LhrESmh8rZi9R4TN0", "30 October 2026"),
+    15: ("Life on Land", "1Hw7i7-TQkDR6k4tSXXmg3RmisMoSDzrI", "30 October 2026"),
     17: ("Partnerships for the Goals", "1IO_dmLCYZZPOPEf2Q2wJziLqcoqbxOfN", "24 October 2026"),
+}
+# Some reports leave section headings unnumbered; name them with their THE Impact Rankings metric number.
+UNNUMBERED_HEADINGS = {
+    5: {
+        "Student access measures": "5.3 Student Access Measures",
+        "Proportion of senior female academics": "5.4 Proportion of Senior Female Academics",
+        "Women’s progress measures": "5.6 Women’s Progress Measures",
+    },
+    10: {
+        "Research on reduced inequalities": "10.1 Research on Reduced Inequalities",
+        "International students from developing countries": "10.3 International Students from Developing Countries",
+        "Proportion of students with disabilities": "10.4 Proportion of Students with Disabilities",
+        "Measures against discrimination": "10.6 Measures Against Discrimination",
+    },
+    13: {"Environmental education measures": "13.3 Environmental Education Measures"},
+}
+# Section headings a report omits entirely, inserted before their first subsection.
+MISSING_HEADINGS = {
+    15: {"15.3.1": "15.3 Supporting Land Ecosystems through Action"},
 }
 
 def clean(text):
@@ -174,17 +200,19 @@ def import_report(number, source_dir):
                 continue
             if first_table:
                 first_table = False
-                dashboard = [{"label": r[-2], "value": r[-1]} for r in rows[1:]]
+                dashboard = [{"label": r[-2], "value": r[-1]} for r in rows[1:] if any(r)]
             else:
                 content += table(el)
         elif el.tag == tag("w", "p"):
             text = text_of(el)
-            if text.startswith(("SDG ", "SDG-")) and re.search(rf"\b{number}:", text) and len(text) < 150:
+            # Title lines: "SDG 5 : Gender Equality", "SDG – 7: ...", "SDG 10 – Reduced Inequalities".
+            is_title = re.match(rf"^SDG[\s–-]*0?{number}\s*[:–-]", text) or (text.startswith(("SDG ", "SDG-")) and re.search(rf"\b{number}:", text))
+            if is_title and len(text) < 150:
                 continue
-            # SDG 13 leaves its 13.3 section heading unnumbered.
-            if number == 13 and text == "Environmental education measures":
-                text = "13.3 Environmental Education Measures"
+            text = UNNUMBERED_HEADINGS.get(number, {}).get(text, text)
             match = re.match(rf"^({number}\.\d+(?:\.\d+)?)[.: ]*([^\d].*)", text)
+            if match and match.group(1) in MISSING_HEADINGS.get(number, {}):
+                content.append({"type": "heading", "text": MISSING_HEADINGS[number][match.group(1)], "level": 2})
             if match:
                 # A floating caption interrupts this one heading in the original Word layout.
                 if number == 17 and match.group(1) == "17.2.1":
@@ -203,8 +231,8 @@ def import_report(number, source_dir):
             sections[-1]["blocks"].append(block)
         else:
             intro.append(block)
-    # SDG 9 repeats its goal number and title as plain paragraphs above the introduction.
-    intro = [block for block in intro if block.get("text") not in ("Introduction", f"SDG {number}", title)]
+    # SDG 9 repeats its goal number and title (SDG 10 its campus) as plain paragraphs above the introduction.
+    intro = [block for block in intro if block.get("text") not in ("Introduction", f"SDG {number}", title, "Kalinga University, Raipur")]
     if not intro and sections:
         # SDG 8 begins immediately with its research section; use its opening as the introduction.
         intro = [sections[0]["blocks"].pop(0)]

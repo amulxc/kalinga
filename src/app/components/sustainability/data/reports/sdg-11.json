@@ -1,0 +1,4149 @@
+{
+  "number": 11,
+  "title": "Sustainable Cities and Communities",
+  "sourceUrl": "https://drive.google.com/file/d/1ESA2O0DdjfSj6Mb_O-dswmv2I6ExDwqt/view",
+  "sourceDate": "29 October 2026",
+  "dashboard": [
+    {
+      "label": "Scholarly Output",
+      "value": "189"
+    },
+    {
+      "label": "Citation Count",
+      "value": "265"
+    },
+    {
+      "label": "Field-Weighted Citation Impact (FWCI)",
+      "value": "0.57"
+    },
+    {
+      "label": "Environmental Awareness and Sustainability Activities",
+      "value": "6"
+    },
+    {
+      "label": "Workshops and Skill Development Programmes",
+      "value": "4"
+    },
+    {
+      "label": "Innovation, Start-up and Entrepreneurship Events",
+      "value": "3"
+    },
+    {
+      "label": "Conferences, Seminars and Academic Programmes",
+      "value": "4"
+    },
+    {
+      "label": "Cultural, Youth and Alumni Activities",
+      "value": "3"
+    },
+    {
+      "label": "Legal Awareness and Human Rights Activities",
+      "value": "2"
+    },
+    {
+      "label": "National and Professional Observances",
+      "value": "2"
+    },
+    {
+      "label": "Technology and Research Conferences",
+      "value": "2"
+    },
+    {
+      "label": "Community Outreach and Social Welfare Activities",
+      "value": "2"
+    }
+  ],
+  "intro": [
+    {
+      "type": "image",
+      "src": "/sdg-reports/sdg-11/9bcb382f4f526d29.png",
+      "alt": "SDG 11: Sustainable Cities and Communities - report evidence"
+    },
+    {
+      "type": "image",
+      "src": "/sdg-reports/sdg-11/9bcb382f4f526d29.png",
+      "alt": "SDG 11: Sustainable Cities and Communities - report evidence"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sustainable Development Goal 11 (SDG 11) aims to \"Make cities and human settlements inclusive, safe, resilient, and sustainable.\" It focuses on sustainable urban development through resilient infrastructure, environmental conservation, resource efficiency, cultural heritage preservation, disaster resilience, and inclusive communities. Higher education institutions play a significant role in achieving this goal by promoting sustainability through education, research, innovation, community engagement, and environmentally responsible campus practices."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kalinga University, located at Kotni, Naya Raipur, Chhattisgarh, is committed to advancing sustainable development in alignment with the National Education Policy (NEP) 2020, Smart Cities Mission, Swachh Bharat Mission, LiFE (Lifestyle for Environment), and the United Nations Sustainable Development Goals. The University integrates sustainability into its academic programmes, research, campus operations, and outreach activities to foster responsible citizenship and sustainable urban development."
+    },
+    {
+      "type": "paragraph",
+      "text": "The University offers multidisciplinary programmes that encourage students to address contemporary challenges related to environmental protection, renewable energy, waste management, water conservation, biodiversity, climate resilience, and sustainable infrastructure. Through project-based learning, research, and extension activities, students gain practical knowledge to contribute to sustainable communities."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kalinga University also promotes environmental stewardship through green campus initiatives, rainwater harvesting, energy-efficient infrastructure, tree plantation, waste management, and community outreach programmes. Collaborations with government agencies, industries, and local communities further strengthen its efforts in promoting sustainable practices and social responsibility."
+    },
+    {
+      "type": "paragraph",
+      "text": "By integrating education, research, innovation, sustainable campus management, and community engagement, Kalinga University actively contributes to the achievement of United Nations Sustainable Development Goal 11—Sustainable Cities and Communities, fostering inclusive, resilient, and environmentally sustainable development for society and future generations."
+    }
+  ],
+  "sections": [
+    {
+      "title": "11.1 Research on Sustainable Cities and Communities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, has established a strong research ecosystem that promotes sustainable urban development, environmental sustainability, climate resilience, resource conservation, and community well-being, directly contributing to United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities). The University encourages faculty members, researchers, and students to undertake interdisciplinary research that addresses contemporary urban challenges while supporting sustainable and inclusive development."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Category",
+            "Research Paper: Count",
+            "Column1",
+            "Column2"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021"
+              },
+              {
+                "text": "0"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2022"
+              },
+              {
+                "text": "6"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2023"
+              },
+              {
+                "text": "9"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2024"
+              },
+              {
+                "text": "15"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2025"
+              },
+              {
+                "text": "100"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2026"
+              },
+              {
+                "text": "67"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ]
+          ],
+          "caption": "Year-wise Research Papers"
+        },
+        {
+          "type": "heading",
+          "text": "11.1.1 Sustainable Cities and Communities: CiteScore",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively encourages its faculty members, researchers, and research scholars to publish in high-impact, peer-reviewed national and international journals indexed in Scopus, Web of Science, SCI, SCIE, and UGC-CARE. Institutional support is provided through the Research and Innovation Cell (RIC), Research Development Cell (RDC), Central Instrumentation Facility (CIF), and Intellectual Property Rights (IPR) Cell, which facilitate quality research, interdisciplinary collaboration, manuscript development, and publication in prestigious journals."
+        },
+        {
+          "type": "paragraph",
+          "text": "According to the latest University research statistics, Kalinga University has published more than 4,700 research papers, along with 549+ patents, 3,300+ books and book chapters, and over 160 sponsored research projects, reflecting a vibrant research culture and a growing contribution to sustainable development and global scientific knowledge."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University regularly organizes international conferences, faculty development programmes, workshops, research methodology programmes, expert lectures, and publication awareness sessions to enhance research quality and encourage publication in high CiteScore journals. Collaborative research with industries, government agencies, and international institutions further strengthens the visibility and impact of the University's scholarly output."
+        },
+        {
+          "type": "paragraph",
+          "text": "By promoting excellence in research, interdisciplinary collaboration, and publication in internationally reputed journals, Kalinga University continues to strengthen its contribution to SDG 11: Sustainable Cities and Communities, while enhancing its global research impact and performance in the THE Impact Rankings."
+        },
+        {
+          "type": "paragraph",
+          "text": "Table 11.1.1 Cite Score Metrics for SDG 11 (Sustainable Cities and Communities)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Metric",
+            "Value"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Total publications corresponding to SDG 11",
+                "colSpan": 1
+              },
+              {
+                "text": "12",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Publications with CiteScore > 5",
+                "colSpan": 1
+              },
+              {
+                "text": "10 (Approx.)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Proportion above 5.0",
+                "colSpan": 1
+              },
+              {
+                "text": "83% (Approx.)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Average CiteScore (overall)",
+                "colSpan": 1
+              },
+              {
+                "text": "≈ 5.8 (Approx.)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Highest CiteScore recorded",
+                "colSpan": 1
+              },
+              {
+                "text": "≈ 8.4 (Journal of Intelligent & Fuzzy Systems, 2024)",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "11.1.2 Sustainable Cities and Communities: Field-Weighted Citation Impact (FWCI)",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Field-Weighted Citation Impact (FWCI) is a globally recognized bibliometric indicator used to evaluate the quality and scholarly influence of a university's research output related to Sustainable Development Goal 11 (Sustainable Cities and Communities). Unlike simple citation counts, FWCI measures the number of citations received by a publication relative to the global average for similar publications, taking into account the publication type (journal article, review, conference paper, book, or book chapter), year of publication, and subject area as classified by Elsevier's All Science Journal Classification (ASJC) system. An FWCI value of 1.00 represents the world average, while a value above 1.00 indicates that publications are cited more frequently than expected."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, actively promotes high-quality, impactful research that contributes to sustainable urban development, environmental sustainability, climate resilience, and inclusive communities. Through its Research and Innovation Cell (RIC), Research Development Cell (RDC), Central Instrumentation Facility (CIF), and Intellectual Property Rights (IPR) Cell, the University provides institutional support for producing internationally visible research with high citation impact."
+        },
+        {
+          "type": "heading",
+          "text": "11.1.3 Sustainable Cities and Communities: Publications",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, has established a vibrant research culture that encourages faculty members, researchers, and students to undertake multidisciplinary research addressing critical challenges related to sustainable cities and communities. The University actively promotes publication in reputed national and international journals, conference proceedings, books, and book chapters through the support of its Research and Innovation Cell (RIC), Research Development Cell (RDC), Central Instrumentation Facility (CIF), and Intellectual Property Rights (IPR) Cell."
+        },
+        {
+          "type": "paragraph",
+          "text": "According to the latest research statistics, Kalinga University has produced more than 4,700 research publications, along with 3,300+ books and book chapters, 549+ patents, and over 160 sponsored research projects, demonstrating its strong commitment to research excellence and sustainable development. A significant proportion of these publications address themes directly or indirectly aligned with SDG 11, contributing to solutions for urban sustainability, environmental conservation, resilient infrastructure, and community development."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University further strengthens its research productivity by organizing International Conferences, Faculty Development Programmes (FDPs), Workshops, Research Methodology Programmes, Expert Lectures, and Publication Awareness Programmes. These initiatives enhance research capacity, encourage interdisciplinary collaboration, and promote publication in high-quality journals."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University also collaborates with government agencies, industries, research organizations, and international institutions through 200+ Memoranda of Understanding (MoUs). These partnerships facilitate collaborative research, joint publications, consultancy projects, and knowledge exchange, thereby increasing the University's contribution to sustainable urban and regional development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through its consistent growth in research publications, interdisciplinary research initiatives, and commitment to addressing societal and environmental challenges, Kalinga University significantly contributes to SDG 11: Sustainable Cities and Communities, supporting evidence-based policies and innovative solutions for building inclusive, resilient, and sustainable communities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Table: Sustainable Cities and Communities-Publications"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Title of paper",
+            "Name of the author/s",
+            "Department of the teacher",
+            "Name of journal",
+            "Year of publication",
+            "ISSN number"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Enhancing Special Education through Mobile Applications: A Comprehensive Analysis",
+                "colSpan": 1
+              },
+              {
+                "text": "Shraddha Verma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Education",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Social Impact",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2455-670X",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Synergizing Smart Agriculture with Hybrid Deep Learning: Predicting Crop Yields Using IoT",
+                "colSpan": 1
+              },
+              {
+                "text": "Abhijeet Madhukar Haval",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO Web of Conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Empowering Sustainable Agriculture: An Enhanced Deep Learning Model for PD Detection in Agricultural Operation System",
+                "colSpan": 1
+              },
+              {
+                "text": "Nikita Pathrotkar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Empowering Sustainable Agriculture: An Enhanced Deep Learning Model for PD Detection in Agricultural Operation System",
+                "colSpan": 1
+              },
+              {
+                "text": "Nikita Pathrotkar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Smart Health Monitoring System of Agricultural Machines: Deep Learning-based Optimization with IoT and AI",
+                "colSpan": 1
+              },
+              {
+                "text": "Kumar Shwetabh",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Implementation of a food traceability system utilizing the Internet of Things and blockchain technology to enhance safety measures within the food supply chain",
+                "colSpan": 1
+              },
+              {
+                "text": "Taruna Chopra",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Implementation of a food traceability system utilizing the Internet of Things and blockchain technology to enhance safety measures within the food supply chain",
+                "colSpan": 1
+              },
+              {
+                "text": "Nikita Pathrotkar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Application of machine learning techniques and the Internet of Things for smart, sustainable agriculture",
+                "colSpan": 1
+              },
+              {
+                "text": "Abhijeet Madhukar Haval",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Application of machine learning techniques and the Internet of Things for smart, sustainable agriculture",
+                "colSpan": 1
+              },
+              {
+                "text": "F Rahman",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "IoT Integration for Enhanced Turmeric Cultivation: A Case Study in Smart Agriculture",
+                "colSpan": 1
+              },
+              {
+                "text": "Dev Ras Pandey",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "IoT Integration for Enhanced Turmeric Cultivation: A Case Study in Smart Agriculture",
+                "colSpan": 1
+              },
+              {
+                "text": "Nidhi Mishra",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "BIO web of conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2273-1709",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Horizoning recent trends in the security of smart cities: Exploratory analysis using latent semantic analysis",
+                "colSpan": 1
+              },
+              {
+                "text": "Shamneesh Sharma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Intelligent & Fuzzy Systems",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "1064-1246",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Horizoning recent trends in the security of smart cities: Exploratory analysis using latent semantic analysis",
+                "colSpan": 1
+              },
+              {
+                "text": "Nidhi Mishra",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Intelligent & Fuzzy Systems",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "1064-1246",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable innovations for harnessing marine biotechnology through advanced bioinformatics",
+                "colSpan": 1
+              },
+              {
+                "text": "Birendra Kumar Sahu",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal.",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2228-6705",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Renewable Energy: A Pathway to sustainable futures",
+                "colSpan": 1
+              },
+              {
+                "text": "Renuka Sahu",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Xian University of Architecture & Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "1006-7931",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "The role of IOT in manufacturing process improvement and sustainable development",
+                "colSpan": 1
+              },
+              {
+                "text": "Vivek Shrivastava",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Lifestyle and SDG'S Review",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2965-730X",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "The role of IOT in manufacturing process improvement and sustainable development",
+                "colSpan": 1
+              },
+              {
+                "text": "Naveen Singh Rana",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Lifestyle and SDG'S Review",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2965-730X",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Financial strength of agribusiness to accelerate responsible investment for sustainable development",
+                "colSpan": 1
+              },
+              {
+                "text": "Atul Dattatraya Ghate",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Journal of Lifestyle and SDG'S Review",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2965-730X",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Evaluating the effectiveness of eco-labeling schemes in promoting sustainable fishing practices",
+                "colSpan": 1
+              },
+              {
+                "text": "Naveen Upadhyay",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2980-7840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Analyzing the economic benefits of sustainable fisheries management",
+                "colSpan": 1
+              },
+              {
+                "text": "Lalit Sachdeva",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2980-7840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Analyzing the economic benefits of sustainable fisheries management",
+                "colSpan": 1
+              },
+              {
+                "text": "Parvindar Kaur Chhabda",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2980-7840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Digital Transformation and Sustainability: A Study of how Firms Use Digital to Achieve Sustainable Goals",
+                "colSpan": 1
+              },
+              {
+                "text": "Lalit Sachdeva",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Indian Journal of Information Sources and Services",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2231-6094",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Digital Transformation and Sustainability: A Study of how Firms Use Digital to Achieve Sustainable Goals",
+                "colSpan": 1
+              },
+              {
+                "text": "Naveen Upadhyay",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Indian Journal of Information Sources and Services",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2231-6094",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "A systematic analysis of AI-based methods for thermal control and energy-efficiency in Sustainable Buildings",
+                "colSpan": 1
+              },
+              {
+                "text": "Madhu Sahu",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Architecture Image Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2184-8645",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "A systematic analysis of AI-based methods for thermal control and energy-efficiency in Sustainable Buildings",
+                "colSpan": 1
+              },
+              {
+                "text": "Subrata Majee",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Architecture Image Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2184-8645",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "An Innovative Approach to Modeling and Sustainable Conservation of Architectural Heritage in Historic Buildings",
+                "colSpan": 1
+              },
+              {
+                "text": "Nidhi Mishra",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Architecture Image Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2184-8645",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "An Innovative Approach to Modeling and Sustainable Conservation of Architectural Heritage in Historic Buildings",
+                "colSpan": 1
+              },
+              {
+                "text": "Abhijeet Madhukar Haval",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Architecture Image Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2184-8645",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "A systematic review of sustainability management in small and medium enterprises to improve sustainable development goals",
+                "colSpan": 1
+              },
+              {
+                "text": "Atul Dattatraya Ghate",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Acta Innovations",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2300-5599",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "A systematic review of sustainability management in small and medium enterprises to improve sustainable development goals",
+                "colSpan": 1
+              },
+              {
+                "text": "Byju John",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Acta Innovations",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2300-5599",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements In Biotechnology for Sustainable Bioenergy Production: Experimental Approaches and Future Directions",
+                "colSpan": 1
+              },
+              {
+                "text": "Amit Joshi",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "African Journal of Biological Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2663-2187",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements In Biotechnology for Sustainable Bioenergy Production: Experimental Approaches and Future Directions",
+                "colSpan": 1
+              },
+              {
+                "text": "Jharna Maiti",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "African Journal of Biological Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2663-2187",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Pharmacognosy And Biodiversity Conservation Balancing Traditional Knowledge and Sustainable Use",
+                "colSpan": 1
+              },
+              {
+                "text": "Ashish Agrawal",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Southafrican Gastroenterology Review",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "1812-1659",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Pharmacognosy And Biodiversity Conservation Balancing Traditional Knowledge and Sustainable Use",
+                "colSpan": 1
+              },
+              {
+                "text": "Prachi Gurudiwan",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Southafrican Gastroenterology Review",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "1812-1659",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Adapting Pharmacognosy to Climate Change: Threats to Medicinal Flora and Sustainable Conservation Measures",
+                "colSpan": 1
+              },
+              {
+                "text": "Birendra Kumar Sahu",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Southafrican Gastroenterology Review",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "1812-1659",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Adapting Pharmacognosy to Climate Change: Threats to Medicinal Flora and Sustainable Conservation Measures",
+                "colSpan": 1
+              },
+              {
+                "text": "Sachin Pradhan",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "Southafrican Gastroenterology Review",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "1812-1659",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable Soil and Crop Management Practices to Boost the Crop Productivity and Soil Properties",
+                "colSpan": 1
+              },
+              {
+                "text": "Nidhi Mishra",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Natural and Engineering Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2458-8989",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable Soil and Crop Management Practices to Boost the Crop Productivity and Soil Properties",
+                "colSpan": 1
+              },
+              {
+                "text": "Abhijeet Madhukar Haval",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Natural and Engineering Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2458-8989",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Local Community Participation based Ecotourism Management for Sustainable Development of Marine Protected Areas",
+                "colSpan": 1
+              },
+              {
+                "text": "Jainish Roy",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Natural and Engineering Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "2458-8989",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable and precision agriculture biotechnological model using deep learning algorithm",
+                "colSpan": 1
+              },
+              {
+                "text": "Ashu Nayak",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2228-6705",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable and precision agriculture biotechnological model using deep learning algorithm",
+                "colSpan": 1
+              },
+              {
+                "text": "Divya",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2228-6705",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Biotechnological models for soil health restoration to enhance the soil health and sustainable agriculture: present condition and future research",
+                "colSpan": 1
+              },
+              {
+                "text": "Divya",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2228-6705",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Biotechnological models for soil health restoration to enhance the soil health and sustainable agriculture: present condition and future research",
+                "colSpan": 1
+              },
+              {
+                "text": "Dinesh Kumar Yalakala",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "Agricultural Biotechnology Journal",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2228-6705",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable recirculating aquaculture model (RAM) and its part in circular economy aquatic food generation",
+                "colSpan": 1
+              },
+              {
+                "text": "Sandeep Soni",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2980-7840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable recirculating aquaculture model (RAM) and its part in circular economy aquatic food generation",
+                "colSpan": 1
+              },
+              {
+                "text": "Rajvir Saini",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2980-7840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Triple Bottom Line Accounting for Sustainable Corporate Reporting",
+                "colSpan": 1
+              },
+              {
+                "text": "Moniza Nurez Khan",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2229-7359",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Triple Bottom Line Accounting for Sustainable Corporate Reporting",
+                "colSpan": 1
+              },
+              {
+                "text": "Shinki Katyayani Pandey",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2229-7359",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable Finance: Evaluating Green Bonds in Developing Economies",
+                "colSpan": 1
+              },
+              {
+                "text": "Priya Vij",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2229-7359",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable Finance: Evaluating Green Bonds in Developing Economies",
+                "colSpan": 1
+              },
+              {
+                "text": "Atul Dattatraya Ghate",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2229-7359",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements in Sustainable Design for Scooters, Autos, and ‎Passenger Cars: A Lifecycle Analysi",
+                "colSpan": 1
+              },
+              {
+                "text": "Mrunal Salwadkar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Advances and Innovations in Multidisciplinary Engineering",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2227-5053",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements in Sustainable Design for Scooters, Autos, and ‎Passenger Cars: A Lifecycle Analysi",
+                "colSpan": 1
+              },
+              {
+                "text": "Namrata Mishra",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "Advances and Innovations in Multidisciplinary Engineering",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2227-5053",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Green Approaches And Applications In The Extraction Of Keratin From Chicken Feathers: A Sustainable Waste-To-Resource Strategy",
+                "colSpan": 1
+              },
+              {
+                "text": "Megha Chaturvedi",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of creative research thoughts",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2320-2882",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements in Solar Cell Technologies and Their Multifaceted Applications in a Sustainable Future",
+                "colSpan": 1
+              },
+              {
+                "text": "Aloke Verma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2583-1062",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements in Solar Cell Technologies and Their Multifaceted Applications in a Sustainable Future",
+                "colSpan": 1
+              },
+              {
+                "text": "Aloke Verma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal Of Progressive Research In Engineering Management And Science (IJPREMS)",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2583-1062",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Utilisation of Termite Mound Soil: Insights into its Agricultural, Structural and Environmentally Sustainable potential .",
+                "colSpan": 1
+              },
+              {
+                "text": "Ajay Kumar Harit",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Tanz",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "1869-7720",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Correction: Harnessing GIS, remote sensing, and machine learning for sustainable management and carbon sequestration of non-timber forest products in Gujarat, India",
+                "colSpan": 1
+              },
+              {
+                "text": "Hari Shankar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Arts & Humanities",
+                "colSpan": 1
+              },
+              {
+                "text": "Agroforestry Systems",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "0167-4366",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements in Sustainable Design for Scooters, Autos, and Passenger Cars: A Lifecycle Analysis",
+                "colSpan": 1
+              },
+              {
+                "text": "Mrunal Swalkar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Basic and Applied Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2227-5053",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Advancements in Sustainable Design for Scooters, Autos, and Passenger Cars: A Lifecycle Analysis",
+                "colSpan": 1
+              },
+              {
+                "text": "Namrata Mishra",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Basic and Applied Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2227-5053",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable management of antibiotic resistance in aquaculture environments",
+                "colSpan": 1
+              },
+              {
+                "text": "R. Udayakumar",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2980-7840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "The impact of artificial intelligence and big data systems in enhancing marine health to promote sustainable tourism",
+                "colSpan": 1
+              },
+              {
+                "text": "Sandeep soni",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2980-7840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Biodegradable fishing gear: A sustainable solution to ghost net pollution in marine environments",
+                "colSpan": 1
+              },
+              {
+                "text": "Venu Anand Das",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "International Journal of Aquatic Research and Environmental Studies",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "29807840",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Representation of entrepreneurs success and failure in a sustainable energy sector: A case study",
+                "colSpan": 1
+              },
+              {
+                "text": "Byju John",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "Applications of Mathematics in Science and Technology: International Conference on Mathematical Applications in Science and Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "978-104035908-2",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Sustainable Smart Systems in Chhattisgarh Through Ambient Renewable Energy Harvesting",
+                "colSpan": 1
+              },
+              {
+                "text": "Aloke Verma",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "Multidisciplinary Journal of Academic Publications",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "3107-538X",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Conservation Challenges and Sustainable Utilization ofEthnomedicinal Plants in Bhoramdev Sanctuary, Kabirdham District, Chhattisgarh",
+                "colSpan": 1
+              },
+              {
+                "text": "Deepa Biswas",
+                "colSpan": 1
+              },
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "JOURNAL OF APPLIED BIOANALYSIS",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "2405-710X",
+                "colSpan": 1
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "11.2 Support of Arts and Heritage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to preserving, promoting, and celebrating India's rich cultural heritage while fostering creativity, inclusivity, and community engagement in alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities). Recognizing that arts and cultural heritage are essential components of sustainable societies, the University integrates cultural preservation, artistic expression, and heritage awareness into its academic, co-curricular, and extension activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Located in Naya Raipur, Chhattisgarh, a state renowned for its rich tribal traditions, folk arts, music, dance, handicrafts, and archaeological heritage, Kalinga University actively promotes the preservation and dissemination of local and national cultural heritage. Through its Schools of Humanities, Education, Fine Arts-related activities, NSS, NCC, student clubs, and cultural societies, the University provides students with opportunities to engage with India's diverse artistic and cultural traditions."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University organizes a wide range of cultural programmes, including traditional festivals, folk dance and music performances, theatre, literary events, art exhibitions, heritage lectures, cultural competitions, and national celebrations, encouraging students to appreciate and preserve the country's tangible and intangible cultural heritage. These events also promote intercultural dialogue, social inclusion, and respect for India's diverse cultural identities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively supports the conservation and promotion of Chhattisgarh's indigenous tribal heritage, including traditional crafts, folk literature, local music, dance forms, and indigenous knowledge systems, by collaborating with local artists, cultural organizations, government agencies, and community groups. Students participate in heritage awareness programmes, field visits to historical monuments and museums, and community outreach activities that strengthen their understanding of cultural preservation and sustainable community development."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also provides access to cultural resources through its Central Library, digital learning resources, seminars, exhibitions, and academic programmes that encourage research on history, culture, literature, archaeology, and heritage conservation. Faculty members and students undertake research and documentation on regional culture, indigenous traditions, and sustainable cultural practices, contributing to the preservation and dissemination of local knowledge."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through its continued support for arts, culture, and heritage, Kalinga University fosters an inclusive campus environment that values cultural diversity, strengthens community identity, and promotes sustainable development. These initiatives demonstrate the University's commitment to SDG 11: Sustainable Cities and Communities by preserving cultural heritage, supporting artistic expression, and ensuring that cultural resources remain accessible to present and future generations."
+        },
+        {
+          "type": "heading",
+          "text": "11.2.1 Public Access to Buildings",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to promoting public access to educational, cultural, and community spaces that contribute to lifelong learning, cultural exchange, and sustainable community development in alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities). The University encourages members of the public, schools, community organizations, government agencies, alumni, researchers, and industry representatives to access its academic and cultural infrastructure through various institutional programmes and public events."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University campus provides access to key facilities such as the Central Library, auditoriums, seminar halls, conference facilities, open-air venues, sports complexes, and exhibition spaces for educational, cultural, and community-oriented activities. These facilities host conferences, workshops, exhibitions, cultural festivals, public lectures, awareness campaigns, and outreach programmes that are open to external participants upon invitation or registration. The University also offers a virtual campus tour and maintains visitor-friendly infrastructure to facilitate public engagement with its academic environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University regularly organizes cultural programmes such as Kalinga Utsav, national festivals, folk dance and music performances, literary events, exhibitions, and celebrations of regional festivals including Hareli and Teeja. These events showcase the cultural heritage of Chhattisgarh and India while providing opportunities for the wider community to participate in and appreciate local traditions and cultural diversity."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's Central Library serves as an important knowledge resource with extensive collections of books, journals, digital resources, and e-learning databases. Through library services, seminars, exhibitions, and academic events, the University promotes access to knowledge and cultural resources for students, researchers, academicians, and invited members of the public. The University also provides authenticated off-campus access to electronic resources for its academic community, supporting continuous learning and research."
+        },
+        {
+          "type": "paragraph",
+          "text": "By providing access to its educational infrastructure, cultural facilities, and community spaces, Kalinga University strengthens public engagement, promotes cultural appreciation, and supports the preservation and dissemination of knowledge, thereby contributing to SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "heading",
+          "text": "11.2.2 Public Access to Libraries",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to promoting equitable access to knowledge, information, and lifelong learning by providing access to its library resources for students, faculty members, researchers, alumni, visiting scholars, and external academic stakeholders. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University supports public access to books, scholarly publications, digital resources, and learning materials that contribute to education, research, cultural preservation, and community development."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Central Library of Kalinga University serves as a comprehensive knowledge hub with a rich collection of printed books, reference materials, national and international journals, magazines, newspapers, theses, dissertations, and digital learning resources covering diverse disciplines. The Library is equipped with modern ICT facilities, an Online Public Access Catalogue (OPAC), reading halls, internet-enabled services, and subscriptions to electronic databases, ensuring efficient access to academic resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University welcomes research scholars, academicians, alumni, industry professionals, and visitors from educational institutions to utilize library resources for academic and research purposes, subject to the University's library rules and membership or visitor policies. The Library also supports collaborative learning through orientation programmes, book exhibitions, reading promotion activities, information literacy sessions, and awareness programmes that encourage the effective use of library resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition to physical collections, Kalinga University provides access to a wide range of e-books, e-journals, institutional publications, and digital databases, enabling users to access scholarly information and research publications. The University encourages the dissemination of knowledge through institutional publications, conference proceedings, research journals, and other academic resources that contribute to sustainable education and community learning."
+        },
+        {
+          "type": "paragraph",
+          "text": "By providing accessible library facilities and promoting knowledge sharing, Kalinga University strengthens education, research, and cultural development while contributing to SDG 11: Sustainable Cities and Communities by ensuring that learning resources remain accessible to the wider academic and community ecosystem."
+        },
+        {
+          "type": "heading",
+          "text": "11.2.3 Public Access to Museums, Exhibition Spaces or Galleries",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to promoting public access to art, culture, and heritage by organizing exhibitions, cultural displays, academic exhibitions, and awareness programmes that are accessible to students, researchers, visitors, schools, and the local community. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University encourages the preservation and dissemination of cultural heritage through exhibition spaces, art displays, and community-oriented cultural events."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University regularly hosts art exhibitions, science and technology exhibitions, cultural exhibitions, project exhibitions, literary events, and heritage-themed programmes in its auditoriums, seminar halls, exhibition spaces, and open campus venues. These events showcase students' creative works, research projects, traditional crafts, paintings, sculptures, photographs, and innovations while providing opportunities for public participation and knowledge exchange."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University also celebrates national festivals, tribal cultural programmes, folk art performances, handicraft exhibitions, and literary festivals, highlighting the rich cultural heritage of Chhattisgarh and India. These programmes are organized in collaboration with government agencies, educational institutions, artists, and community organizations, promoting awareness of local traditions, indigenous knowledge, and cultural diversity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Although the University does not maintain a permanent public museum, it provides temporary exhibition spaces and galleries for displaying academic achievements, cultural artefacts, artworks, traditional crafts, research innovations, and thematic exhibitions during conferences, festivals, awareness campaigns, and outreach programmes. The University also encourages students and visitors to participate in educational visits to museums, heritage sites, archaeological monuments, and art galleries to enhance cultural understanding and heritage appreciation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these initiatives, Kalinga University promotes creativity, cultural preservation, public engagement, and lifelong learning, thereby contributing to SDG 11: Sustainable Cities and Communities by making cultural and educational resources accessible to society."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/3a9c76ba9d677a6f.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/5dc78fdf59bb109f.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Workshop on Best out of waste” “Workshop on Scientific toy”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date of Event: 10th to 12th May 2023 Date of Event: 1st to 3rd December 2023"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/5fada5e8066dea7f.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/54a08620fd4acb20.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Drone Technology Workshop Workshop on Portable Microscope / Foldscope”"
+        },
+        {
+          "type": "paragraph",
+          "text": "29th November to 3rd December 2022 28-02-2023 to 02-03-2023"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/a0f2a6c4c5e1fa0a.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/ba6d51a5046f8d40.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Donation Drive: Donate to Make a Difference”"
+        },
+        {
+          "type": "paragraph",
+          "text": "(under Unnat Bharat Abhiyan)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annexure :3"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/589809e97dedd5af.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/e3e543643846e480.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Guest Lecture on"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Innovation/Prototype Validation –Converting Innovation into a Start-up”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organized by the Marketing Club “Mercadeo”Faculty of Commerce and Management,"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annexure : 4"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/8813661785372400.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/cff1e58c3718881d.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "“A Session on Startup Summit: Demo Day/Exhibition of Startups &Linkage with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Innovation Ambassadors/Experts for Mentorship Support”Related to SDG No.(s)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organized by “Faculty of Technology” In Association With Institutions Innovation Council"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annexure : 5"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/0c7d733ebbf47120.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/da558352c036aa48.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/a7110c5cc52f6040.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "National Seminar on From Vachanas to Vision:Mahatma Basaveshwara’s Ideas in Contemporary Society Related to SDG No.(s) Organized by: “Shaheed Veer Narayan Singh Research Chair (Faculty of Arts & Humanities & Faculty of Law)”"
+        },
+        {
+          "type": "paragraph",
+          "text": "In Association with"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Innovation and Integrative Research Center Journal (IIRCJ)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annexure.: 6"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/ecf01ef0a55ac07a.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/6ac0dac42f469b24.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Surana & Surana Judex 3.0"
+        },
+        {
+          "type": "paragraph",
+          "text": "Human Rights Law Moot Court competition"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 7"
+        },
+        {
+          "type": "paragraph",
+          "text": "Legal Aid Activity"
+        },
+        {
+          "type": "paragraph",
+          "text": "On"
+        },
+        {
+          "type": "paragraph",
+          "text": "Legal Awareness regarding Domestic Safety & Avoidance of Violence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 8"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/58c48efc9b885bbf.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "ICSTDTSD 2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 9"
+        },
+        {
+          "type": "paragraph",
+          "text": "“2nd International Conference on Chhattisgarh@2047: Transforming Education through Sustainability Innovation Inclusion & Indian Knowledge System“"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 10"
+        },
+        {
+          "type": "paragraph",
+          "text": "IEEE 3rd International World Conference on Communication & Computing 2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 11"
+        },
+        {
+          "type": "paragraph",
+          "text": "2nd Alumni Meet (Raipur Chapter) Organized by “Alumni Association Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 12"
+        },
+        {
+          "type": "paragraph",
+          "text": "Two-Week Online Faculty Development Programme (FDP) on the theme \"Emerging Trends in Research and Innovative Teaching Pedagogy"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 13"
+        },
+        {
+          "type": "paragraph",
+          "text": "Guest Lecture On Lean Start Up &Minimum Viable Product/Business Boot Camp or Mentoring Session"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 14"
+        },
+        {
+          "type": "paragraph",
+          "text": "The 76th Year of the Indian Constitution Day Celebration"
+        },
+        {
+          "type": "paragraph",
+          "text": "With a Focus on"
+        },
+        {
+          "type": "paragraph",
+          "text": "“Dignity Beyond Text: POSH as an Instrument to Enforce Article"
+        },
+        {
+          "type": "paragraph",
+          "text": "14 & 15 of the Constitution of India”"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 15"
+        },
+        {
+          "type": "paragraph",
+          "text": "Engineers Day Celebration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 16"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/827b0a4aec3ced90.png",
+          "alt": "SDG 11: 11.2.3 Public Access to Museums, Exhibition Spaces or Galleries - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tourism Treasure Hunt 2025 Incredible India and Chhattisgarh On the Occasion of"
+        },
+        {
+          "type": "paragraph",
+          "text": "World Tourism Day"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 17"
+        },
+        {
+          "type": "paragraph",
+          "text": "Open Mic: Youth Voices “A celebration of youth expression and empowerment"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annex.: 18"
+        },
+        {
+          "type": "paragraph",
+          "text": "Global Conference on Cyber Violence and Digital Deception: Undertaking, Preventing and Responding to Technology Facilitated Crimes"
+        },
+        {
+          "type": "heading",
+          "text": "11.2.4 Public Access to Green Spaces",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to promoting environmental sustainability, biodiversity conservation, and community well-being by providing free public access to its open and green spaces. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University has developed a green, eco-friendly campus that encourages environmental awareness, recreation, and healthy lifestyles for students, staff, visitors, and the local community."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University campus features well-maintained gardens, landscaped lawns, tree-lined avenues, medicinal plant gardens, open recreational areas, biodiversity-rich green zones, and pedestrian-friendly pathways that are accessible to visitors during University working hours and public events. These green spaces provide opportunities for relaxation, environmental education, outdoor learning, cultural activities, fitness, and community interaction while enhancing the ecological quality of the campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University regularly organizes tree plantation drives, biodiversity conservation programmes, environmental awareness campaigns, cleanliness drives, Yoga Day celebrations, Nature Day activities, and World Environment Day programmes in its open green spaces. These activities are conducted in collaboration with NSS, NCC, Eco Clubs, student organizations, government agencies, NGOs, and local communities, promoting public participation in environmental conservation and sustainable living."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's green campus also incorporates sustainable practices such as rainwater harvesting, energy-efficient landscaping, waste segregation, water conservation, and biodiversity enhancement, creating a healthy and environmentally responsible campus environment. During educational visits, outreach programmes, cultural events, seminars, and environmental campaigns, members of the public are encouraged to utilize these open spaces for learning, awareness, and recreation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through the provision of accessible green spaces and environmentally sustainable campus infrastructure, Kalinga University contributes significantly to SDG 11: Sustainable Cities and Communities by fostering ecological sustainability, public health, and community engagement."
+        },
+        {
+          "type": "heading",
+          "text": "11.2.5 Arts and Heritage Contribution",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, actively contributes to the promotion and preservation of local arts, culture, and heritage by organizing and supporting a wide range of public cultural performances and artistic events throughout the year. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University provides a vibrant platform for students, faculty members, local artists, and community groups to celebrate the rich cultural traditions of Chhattisgarh and India while strengthening community engagement and cultural diversity."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University regularly organizes annual cultural festivals, folk dance performances, music concerts, theatre productions, literary programmes, traditional art exhibitions, street plays (Nukkad Natak), patriotic events, and inter-university cultural competitions. These programmes are open to students, parents, alumni, invited schools, local communities, government organizations, and the general public, encouraging wider participation in arts and cultural activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University celebrates important national and regional festivals such as Independence Day, Republic Day, International Yoga Day, Hareli, Teeja, Navratri, and other cultural occasions, featuring performances of folk dance, folk music, drama, poetry recitation, classical and contemporary music, and traditional cultural presentations. These events provide opportunities for students to showcase their talents while preserving and promoting the cultural heritage of the region."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also encourages student participation through its Cultural Club, NSS, NCC, Literary Club, Music and Dance Groups, and departmental cultural societies, which regularly organize public performances, awareness programmes, and community outreach activities. Street plays and cultural performances are conducted on themes such as environmental conservation, health awareness, gender equality, social harmony, road safety, and sustainable development, using art as a medium for public education and community engagement."
+        },
+        {
+          "type": "paragraph",
+          "text": "By promoting cultural performances and supporting local artists, Kalinga University strengthens the connection between higher education and society, contributes to the preservation of intangible cultural heritage, and fosters appreciation of India's diverse artistic traditions. These initiatives demonstrate the University's commitment to SDG 11: Sustainable Cities and Communities by making arts and cultural heritage accessible to the wider community."
+        },
+        {
+          "type": "heading",
+          "text": "11.2.6 Record and Preserve Cultural Heritage",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to preserving and promoting the intangible cultural heritage of India, with particular emphasis on the rich tribal and folk traditions of Chhattisgarh. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University undertakes academic, research, documentation, and community engagement initiatives to record, preserve, and disseminate local folklore, traditional knowledge, indigenous languages, performing arts, customs, and cultural practices for future generations."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University encourages faculty members, researchers, and students to undertake research, field studies, documentation projects, and community-based learning on the cultural heritage of local and tribal communities. Through academic programmes, seminars, conferences, cultural festivals, and extension activities, Kalinga University promotes the documentation and preservation of folk literature, oral traditions, indigenous knowledge systems, traditional arts and crafts, folk music, folk dances, tribal customs, local languages, and traditional ecological knowledge."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University collaborates with local communities, cultural organizations, government departments, educational institutions, and subject experts to organize heritage awareness programmes, cultural exhibitions, folk performances, traditional festivals, and community outreach activities. These initiatives provide opportunities for students to interact with local communities, document traditional practices, and appreciate the cultural diversity of the region."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also promotes research publications, conference proceedings, student projects, dissertations, and digital documentation related to regional history, literature, folklore, and cultural heritage. Through its Central Library, institutional repository, and academic publications, the University contributes to the preservation and dissemination of knowledge on India's diverse cultural traditions."
+        },
+        {
+          "type": "paragraph",
+          "text": "By integrating cultural preservation into teaching, research, and community engagement, Kalinga University actively contributes to safeguarding intangible cultural heritage while strengthening cultural identity, social inclusion, and sustainable community development. These initiatives support the objectives of SDG 11: Sustainable Cities and Communities by ensuring that traditional knowledge and cultural heritage are documented, preserved, and shared with present and future generations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Annexure:"
+        },
+        {
+          "type": "paragraph",
+          "text": "International Yoga Day"
+        },
+        {
+          "type": "paragraph",
+          "text": "."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/669d5de63383eb91.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Certification Training Program Jan Shikshan Sansthan (JSS)"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/f791418b08fcb4dd.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/0fd8190e7e139d71.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Poster Making Competition on Theme “Harmony with Nature: Cultivating a Greener Tomorrow”"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/f711ca25df9450f2.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/4aa668a709f5d519.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Painting competition for celebrating World Ozone Day 2023"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/909f0c0a744e8b77.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/ee43203c67f02163.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "World Wetlands Day, 2024"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/14157a37b182b24d.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Paper Bag Distribution Campaign"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/37e3efeadd37525f.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/64f1522973db8a91.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/42f2edc7828199cc.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/f46321707cabe9ac.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/2435e6cd2644e978.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/24fb868a02a4177e.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "UNNAT BHARAT ABHIYAN"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/9b9bbc157df33113.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/5563e63f783348a3.png",
+          "alt": "SDG 11: 11.2.6 Record and Preserve Cultural Heritage - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nature Camp and Workshop on Termites and Birds Identification"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Name of Event",
+            "Estimated No. of Students Participated",
+            "Outcome of the Event"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "International Yoga Day",
+                "colSpan": 1
+              },
+              {
+                "text": "150",
+                "colSpan": 1
+              },
+              {
+                "text": "Promoted physical and mental well-being, healthy lifestyles, and a healthier campus community.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "Certification Training Programme – Jan Shikshan Sansthan (JSS)",
+                "colSpan": 1
+              },
+              {
+                "text": "30",
+                "colSpan": 1
+              },
+              {
+                "text": "Enhanced practical skills, employability, and opportunities for skill-based learning.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "Poster Making Competition – “Harmony with Nature: Cultivating a Greener Tomorrow”",
+                "colSpan": 1
+              },
+              {
+                "text": "40",
+                "colSpan": 1
+              },
+              {
+                "text": "Developed environmental awareness and encouraged creative expression on sustainability.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "Painting Competition for World Ozone Day 2023",
+                "colSpan": 1
+              },
+              {
+                "text": "35",
+                "colSpan": 1
+              },
+              {
+                "text": "Increased awareness of ozone-layer protection and environmental conservation.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "World Wetlands Day 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "60",
+                "colSpan": 1
+              },
+              {
+                "text": "Improved awareness of wetland conservation, biodiversity, and ecosystem protection.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "Paper Bag Distribution Campaign",
+                "colSpan": 1
+              },
+              {
+                "text": "80",
+                "colSpan": 1
+              },
+              {
+                "text": "Encouraged alternatives to single-use plastic and promoted responsible consumption.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "7",
+                "colSpan": 1
+              },
+              {
+                "text": "Unnat Bharat Abhiyan (UBA)",
+                "colSpan": 1
+              },
+              {
+                "text": "50",
+                "colSpan": 1
+              },
+              {
+                "text": "Strengthened student engagement in rural development and community-oriented activities.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "8",
+                "colSpan": 1
+              },
+              {
+                "text": "Nature Camp and Workshop on Termites and Birds Identification",
+                "colSpan": 1
+              },
+              {
+                "text": "35",
+                "colSpan": 1
+              },
+              {
+                "text": "Improved understanding of biodiversity, species identification, and ecological conservation.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "9",
+                "colSpan": 1
+              },
+              {
+                "text": "Workshop on Best Out of Waste",
+                "colSpan": 1
+              },
+              {
+                "text": "40",
+                "colSpan": 1
+              },
+              {
+                "text": "Promoted waste reduction, reuse, recycling, and creative resource utilization.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "10",
+                "colSpan": 1
+              },
+              {
+                "text": "Workshop on Scientific Toy",
+                "colSpan": 1
+              },
+              {
+                "text": "40",
+                "colSpan": 1
+              },
+              {
+                "text": "Encouraged experiential learning, scientific thinking, and low-cost educational innovation.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "Drone Technology Workshop",
+                "colSpan": 1
+              },
+              {
+                "text": "60",
+                "colSpan": 1
+              },
+              {
+                "text": "Introduced students to drone technology, its applications, and emerging technical skills.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "12",
+                "colSpan": 1
+              },
+              {
+                "text": "Workshop on Portable Microscope/Foldscope",
+                "colSpan": 1
+              },
+              {
+                "text": "40",
+                "colSpan": 1
+              },
+              {
+                "text": "Familiarized students with affordable scientific tools and practical observation techniques.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "13",
+                "colSpan": 1
+              },
+              {
+                "text": "Donation Drive – “Donate to Make a Difference” under UBA",
+                "colSpan": 1
+              },
+              {
+                "text": "50",
+                "colSpan": 1
+              },
+              {
+                "text": "Encouraged social responsibility, community support, and a culture of giving.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "14",
+                "colSpan": 1
+              },
+              {
+                "text": "Guest Lecture on “Innovation/Prototype Validation – Converting Innovation into a Start-up”",
+                "colSpan": 1
+              },
+              {
+                "text": "70",
+                "colSpan": 1
+              },
+              {
+                "text": "Improved understanding of prototype validation, entrepreneurship, and innovation commercialization.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "15",
+                "colSpan": 1
+              },
+              {
+                "text": "Startup Summit – Demo Day/Exhibition of Start-ups and Mentorship Linkages",
+                "colSpan": 1
+              },
+              {
+                "text": "100",
+                "colSpan": 1
+              },
+              {
+                "text": "Provided exposure to start-up ideas, expert mentoring, innovation networks, and entrepreneurial opportunities.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "16",
+                "colSpan": 1
+              },
+              {
+                "text": "National Seminar – “From Vachanas to Vision: Mahatma Basaveshwara’s Ideas in Contemporary Society”",
+                "colSpan": 1
+              },
+              {
+                "text": "100",
+                "colSpan": 1
+              },
+              {
+                "text": "Promoted ethical values, social inclusion, cultural awareness, and interdisciplinary discussion.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "17",
+                "colSpan": 1
+              },
+              {
+                "text": "Surana & Surana Judex 3.0 – Human Rights Law Moot Court Competition",
+                "colSpan": 1
+              },
+              {
+                "text": "80",
+                "colSpan": 1
+              },
+              {
+                "text": "Developed legal reasoning, advocacy, public speaking, and awareness of human rights.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "18",
+                "colSpan": 1
+              },
+              {
+                "text": "Legal Aid Activity on Domestic Safety and Avoidance of Violence",
+                "colSpan": 1
+              },
+              {
+                "text": "60",
+                "colSpan": 1
+              },
+              {
+                "text": "Increased awareness of legal rights, domestic safety, and mechanisms for seeking assistance.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "19",
+                "colSpan": 1
+              },
+              {
+                "text": "ICSTDTSD 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "120",
+                "colSpan": 1
+              },
+              {
+                "text": "Supported academic exchange, research dissemination, and discussion of emerging developments relevant to sustainable development.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "20",
+                "colSpan": 1
+              },
+              {
+                "text": "2nd International Conference on Chhattisgarh@2047: Transforming Education through Sustainability, Innovation, Inclusion and Indian Knowledge System",
+                "colSpan": 1
+              },
+              {
+                "text": "150",
+                "colSpan": 1
+              },
+              {
+                "text": "Encouraged dialogue on inclusive education, sustainability, innovation, and regional development.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "21",
+                "colSpan": 1
+              },
+              {
+                "text": "IEEE 3rd International World Conference on Communication & Computing 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "120",
+                "colSpan": 1
+              },
+              {
+                "text": "Facilitated technical knowledge sharing, research presentation, and professional networking.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "2nd Alumni Meet (Raipur Chapter)",
+                "colSpan": 1
+              },
+              {
+                "text": "70",
+                "colSpan": 1
+              },
+              {
+                "text": "Strengthened alumni–university relationships, professional networking, and opportunities for institutional collaboration.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "23",
+                "colSpan": 1
+              },
+              {
+                "text": "Two-Week Online FDP on “Emerging Trends in Research and Innovative Teaching Pedagogy”",
+                "colSpan": 1
+              },
+              {
+                "text": "80",
+                "colSpan": 1
+              },
+              {
+                "text": "Enhanced research skills, teaching practices, and awareness of innovative pedagogical approaches.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "24",
+                "colSpan": 1
+              },
+              {
+                "text": "Guest Lecture on Lean Start-up and Minimum Viable Product/Business Boot Camp or Mentoring Session",
+                "colSpan": 1
+              },
+              {
+                "text": "60",
+                "colSpan": 1
+              },
+              {
+                "text": "Improved understanding of lean business models, minimum viable products, and entrepreneurial planning.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "25",
+                "colSpan": 1
+              },
+              {
+                "text": "Constitution Day Celebration – “Dignity Beyond Text: POSH as an Instrument to Enforce Articles 14 & 15 of the Constitution of India”",
+                "colSpan": 1
+              },
+              {
+                "text": "100",
+                "colSpan": 1
+              },
+              {
+                "text": "Promoted constitutional values, gender equality, dignity, and awareness of workplace sexual-harassment prevention.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "26",
+                "colSpan": 1
+              },
+              {
+                "text": "Engineers Day Celebration",
+                "colSpan": 1
+              },
+              {
+                "text": "120",
+                "colSpan": 1
+              },
+              {
+                "text": "Recognized engineering contributions and encouraged innovation, technical learning, and professional responsibility.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "27",
+                "colSpan": 1
+              },
+              {
+                "text": "Open Mic: Youth Voices – “A Celebration of Youth Expression and Empowerment”",
+                "colSpan": 1
+              },
+              {
+                "text": "100",
+                "colSpan": 1
+              },
+              {
+                "text": "Encouraged student expression, confidence, creativity, participation, and inclusion.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "28",
+                "colSpan": 1
+              },
+              {
+                "text": "Global Conference on Cyber Violence and Digital Deception: Undertaking, Preventing and Responding to Technology-Facilitated Crimes",
+                "colSpan": 1
+              },
+              {
+                "text": "120",
+                "colSpan": 1
+              },
+              {
+                "text": "Raised awareness of cyber violence, digital deception, online safety, and prevention and response mechanisms.",
+                "colSpan": 1
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "11.3 Expenditure on Arts and Heritage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, recognizes that investment in arts, culture, and heritage is essential for preserving cultural identity, promoting creativity, and strengthening community engagement. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University allocates financial resources annually to organize cultural programmes, heritage celebrations, literary activities, art exhibitions, and awareness initiatives that preserve and promote the rich cultural heritage of Chhattisgarh and India."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University provides dedicated financial support for organizing Kalinga Utsav, annual cultural festivals, folk music and dance performances, theatre productions, literary events, art exhibitions, traditional celebrations, national festivals, and heritage awareness programmes. Budgetary provisions are also made for inviting folk artists, cultural experts, resource persons, and performers to interact with students and the wider community."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition to cultural events, the University invests in the maintenance and enhancement of auditoriums, seminar halls, exhibition spaces, open-air performance venues, cultural infrastructure, library resources related to arts and heritage, and cultural clubs. Financial assistance is also provided to student cultural societies, NSS, NCC, and departmental clubs for organizing cultural competitions, heritage exhibitions, traditional art workshops, street plays, and community outreach programmes."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University encourages research and documentation related to regional literature, tribal culture, folk traditions, indigenous knowledge systems, and cultural heritage by supporting seminars, conferences, publications, and field-based research. These investments contribute to preserving intangible cultural heritage while promoting creativity, social inclusion, and cultural diversity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through sustained financial investment in arts and heritage, Kalinga University creates opportunities for students and the community to engage with cultural traditions, artistic expression, and heritage preservation, thereby contributing to SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "heading",
+          "text": "11.3.1 Indicator: Arts and Heritage Expenditure",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, demonstrates its commitment to arts, culture, and heritage preservation by allocating financial resources for organizing cultural programmes, maintaining cultural infrastructure, promoting artistic activities, and preserving India's rich cultural heritage. In accordance with THE Impact Rankings SDG 11, the University records annual expenditure dedicated to supporting arts and heritage as part of its institutional budget."
+        },
+        {
+          "type": "paragraph",
+          "text": "During the 2024 financial year, Kalinga University incurred expenditure on a variety of cultural and heritage initiatives, including:"
+        },
+        {
+          "type": "listItem",
+          "text": "Organization of Kalinga Utsav and annual cultural festivals."
+        },
+        {
+          "type": "listItem",
+          "text": "Celebration of national and regional festivals showcasing Indian and Chhattisgarhi culture."
+        },
+        {
+          "type": "listItem",
+          "text": "Folk music, folk dance, theatre, and literary events."
+        },
+        {
+          "type": "listItem",
+          "text": "Art exhibitions, heritage awareness programmes, and cultural competitions."
+        },
+        {
+          "type": "listItem",
+          "text": "Maintenance and operation of auditoriums, seminar halls, and exhibition spaces used for cultural activities."
+        },
+        {
+          "type": "listItem",
+          "text": "Financial support to Cultural Clubs, NSS, NCC, and student societies organizing heritage-related events."
+        },
+        {
+          "type": "listItem",
+          "text": "Purchase of books, publications, and learning resources related to arts, literature, and cultural heritage."
+        },
+        {
+          "type": "listItem",
+          "text": "Honoraria for artists, resource persons, and cultural experts."
+        },
+        {
+          "type": "listItem",
+          "text": "Public cultural programmes, exhibitions, and outreach activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "These expenditures reflect the University's sustained investment in preserving cultural heritage, promoting artistic expression, and strengthening community participation in cultural activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Data Collected Definition"
+        },
+        {
+          "type": "paragraph",
+          "text": "University Expenditure"
+        },
+        {
+          "type": "paragraph",
+          "text": "The total annual expenditure incurred by Kalinga University during the 2024 financial year, as reported in the University's audited financial statements. This includes expenditure on academic, administrative, research, infrastructure, student welfare, community engagement, and operational activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "University Expenditure on Arts and Heritage"
+        },
+        {
+          "type": "paragraph",
+          "text": "The total annual expenditure incurred by Kalinga University during the 2024 financial year specifically for supporting arts, culture, heritage, literature, exhibitions, cultural infrastructure, heritage awareness programmes, cultural festivals, traditional performances, museums/exhibition spaces (if applicable), cultural clubs, and heritage-related academic activities, excluding expenditure on sports facilities and sports events."
+        }
+      ]
+    },
+    {
+      "title": "11.4 Sustainable Practices",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to promoting sustainable campus development by adopting environmentally responsible practices that support United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities). The University integrates sustainability into its campus planning, infrastructure, transportation, housing, and resource management to create a safe, inclusive, and environmentally friendly learning environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Located in Naya Raipur (Atal Nagar), a planned smart city, Kalinga University has developed a green campus that encourages sustainable mobility, energy conservation, water management, waste reduction, and biodiversity conservation. The University continuously improves its infrastructure to minimize environmental impact while enhancing the quality of life for students, staff, and visitors."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University promotes sustainable transportation by providing university bus services, pedestrian-friendly pathways, adequate bicycle parking, and encouraging shared transportation to reduce vehicular emissions. The campus also supports barrier-free access for persons with disabilities, ensuring inclusive and accessible mobility."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University provides safe and sustainable student residential facilities equipped with essential amenities, energy-efficient lighting, water conservation measures, waste segregation systems, and green landscaping. Hostel facilities are designed to promote healthy living while encouraging responsible consumption of water and energy."
+        },
+        {
+          "type": "paragraph",
+          "text": "To strengthen environmental sustainability, the University has implemented several green initiatives, including rainwater harvesting, sewage treatment, solid waste management, tree plantation, plastic reduction campaigns, energy-efficient infrastructure, LED lighting, and environmental awareness programmes. Through the active participation of NSS, NCC, Eco Club, student societies, and faculty members, the University regularly organizes cleanliness drives, plantation programmes, environmental campaigns, and sustainability awareness activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also integrates sustainability into teaching, research, and community outreach by encouraging interdisciplinary projects related to renewable energy, climate change, sustainable infrastructure, environmental management, and smart cities. These initiatives contribute to creating a resilient, inclusive, and environmentally sustainable campus while supporting regional and national sustainability goals."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through sustainable campus planning, responsible resource management, eco-friendly transportation, and environmentally conscious residential facilities, Kalinga University actively contributes to the achievement of SDG 11: Sustainable Cities and Communities, fostering a culture of sustainability among its students, faculty, staff, and the wider community."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.1 Sustainable Practices Targets",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: In Place by 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to reducing the environmental impact of campus transportation by promoting safe, accessible, and sustainable commuting practices. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University has adopted measures and institutional practices that encourage low-carbon mobility and environmentally responsible transportation for students, faculty, staff, and visitors."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University promotes walking as the primary mode of movement within the campus through a network of pedestrian-friendly pathways, landscaped walkways, and barrier-free access for persons with disabilities. The compact campus layout enables students and staff to conveniently access academic buildings, hostels, administrative offices, libraries, laboratories, and recreational facilities on foot."
+        },
+        {
+          "type": "paragraph",
+          "text": "To reduce the number of private vehicles entering the campus, Kalinga University operates university bus services for students and employees travelling from Raipur, Naya Raipur, and nearby areas. These shuttle services help reduce traffic congestion, fuel consumption, and greenhouse gas emissions while providing safe and affordable transportation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also encourages carpooling and shared transportation among faculty, staff, and students to minimize individual vehicle use and optimize transportation resources. Dedicated parking areas and effective traffic management practices contribute to a safe and organized campus environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition, Kalinga University supports cycling and other non-motorized modes of transport by providing bicycle parking facilities and encouraging cycling within the campus. As part of its long-term sustainability vision, the University is committed to expanding green mobility initiatives, including promoting electric vehicles and enhancing sustainable transport infrastructure as campus development progresses."
+        },
+        {
+          "type": "paragraph",
+          "text": "To monitor progress, the University regularly reviews transportation facilities and incorporates sustainable mobility objectives into its Green Campus initiatives. Awareness campaigns on sustainable transportation, environmental conservation, and climate action are conducted through NSS, NCC, Eco Club, and student organizations, encouraging the University community to adopt environmentally responsible commuting habits."
+        },
+        {
+          "type": "paragraph",
+          "text": "These initiatives demonstrate Kalinga University's commitment to creating a low-carbon, accessible, and sustainable campus while contributing to SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sustainable Commuting Targets (2024)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has established the following sustainable commuting targets:"
+        },
+        {
+          "type": "listItem",
+          "text": "Promote walking as the preferred mode of intra-campus transportation through safe pedestrian pathways."
+        },
+        {
+          "type": "listItem",
+          "text": "Encourage the use of university shuttle/bus services to reduce dependence on private vehicles."
+        },
+        {
+          "type": "listItem",
+          "text": "Promote carpooling and ride-sharing among faculty, staff, and students."
+        },
+        {
+          "type": "listItem",
+          "text": "Provide and maintain bicycle parking facilities to encourage cycling."
+        },
+        {
+          "type": "listItem",
+          "text": "Improve barrier-free mobility for persons with disabilities across the campus."
+        },
+        {
+          "type": "listItem",
+          "text": "Organize annual awareness programmes on green mobility and sustainable transportation."
+        },
+        {
+          "type": "listItem",
+          "text": "Continuously improve campus transport infrastructure to reduce carbon emissions and support environmentally sustainable commuting."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/39a853a507926f1d.jpeg",
+          "alt": "SDG 11: 11.4.1 Sustainable Practices Targets - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/082cf256050de691.jpeg",
+          "alt": "SDG 11: 11.4.1 Sustainable Practices Targets - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/bd791f374a7e5cf7.jpeg",
+          "alt": "SDG 11: 11.4.1 Sustainable Practices Targets - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Electric Vehicles at Campus"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/273400dbfbf11b18.jpeg",
+          "alt": "SDG 11: 11.4.1 Sustainable Practices Targets - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/2f694ad7d79edba6.jpeg",
+          "alt": "SDG 11: 11.4.1 Sustainable Practices Targets - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Bus Facility at Campus"
+        },
+        {
+          "type": "heading",
+          "text": "11.4.2 Promote Sustainable Commuting",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, actively promotes sustainable commuting by implementing initiatives that encourage environmentally friendly, safe, and efficient modes of transportation for students, faculty, staff, and visitors. In line with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University encourages the use of low-carbon transportation to reduce traffic congestion, greenhouse gas emissions, and environmental pollution."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University operates bus transportation services connecting the campus with Raipur, Naya Raipur (Atal Nagar), and nearby areas, providing a convenient alternative to private vehicles. This shared transportation system helps reduce fuel consumption and carbon emissions while ensuring safe and affordable commuting for the University community."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University also promotes walking and cycling as sustainable modes of transport within the campus. Well-maintained pedestrian pathways, landscaped walkways, and bicycle parking facilities encourage students and employees to choose non-motorized transportation. The campus is designed to support safe and accessible movement between academic buildings, hostels, libraries, laboratories, and recreational facilities."
+        },
+        {
+          "type": "paragraph",
+          "text": "To further reduce the number of individual vehicles on campus, the University encourages carpooling and ride-sharing among faculty members, staff, and students. Awareness campaigns conducted through NSS, NCC, Eco Club, and student organizations highlight the environmental and economic benefits of sustainable commuting, including reduced carbon emissions, improved air quality, and healthier lifestyles."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University integrates sustainable mobility into its Green Campus initiatives by organizing programmes such as World Environment Day, World Bicycle Day, Road Safety Awareness Campaigns, Clean Air Campaigns, and Green Mobility Awareness Drives. These activities promote responsible transportation choices and reinforce environmental consciousness among the University community."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these initiatives, Kalinga University continues to foster a culture of sustainable mobility while contributing to cleaner transportation systems and supporting SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "paragraph",
+          "text": "a) Maintenance of Lush Green Campus: University has a ten hectares of land which was transferred to it from Forest Department for the purpose of creating infrastructure required 12 for the development of various Offices/ Departments of the University. Although felling of trees is for development of various infrastructure cannot be avoided, yet only those trees are felled which fall in the development area and others are not disturbed"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/f2d28f27c6a32fe6.png",
+          "alt": "SDG 11: 11.4.2 Promote Sustainable Commuting - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Plantation drives: Plantation drives are regular activities in the Campus, and usually in all important occasions, plantation activity is taken up. University has maintained a garden in which different ornamental plants have been raised."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/d2c912a88da04e75.png",
+          "alt": "SDG 11: 11.4.2 Promote Sustainable Commuting - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organic composting: The activity of making organic compost has been initiated in the campus where all the biodegradable waste material are filled up in the compost pit. In the 13 course of time, organic compost is prepared. This organic compost is utilized for manuring in flowerbeds and plantations."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/54e0936dc5efb1b7.png",
+          "alt": "SDG 11: 11.4.2 Promote Sustainable Commuting - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/81c6ecf33383aac6.jpeg",
+          "alt": "SDG 11: 11.4.2 Promote Sustainable Commuting - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/8a6afa9a3e33e2db.jpeg",
+          "alt": "SDG 11: 11.4.2 Promote Sustainable Commuting - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Remote Controlled Water Surface Cleaning Robot"
+        },
+        {
+          "type": "heading",
+          "text": "11.4.3 Allow Remote Working",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, recognizes the importance of flexible working arrangements in promoting sustainability, employee well-being, and efficient resource utilization. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University supports telecommuting, online working, and hybrid work practices for eligible academic and administrative activities wherever operationally feasible."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University utilizes a robust digital ecosystem comprising Learning Management Systems (LMS), ERP, video conferencing platforms, email services, cloud-based collaboration tools, and digital document management systems, enabling faculty members and administrative staff to perform academic, administrative, and research-related responsibilities remotely whenever required."
+        },
+        {
+          "type": "paragraph",
+          "text": "Faculty members are encouraged to conduct online classes, virtual meetings, research supervision, academic mentoring, webinars, faculty development programmes (FDPs), workshops, conferences, and academic counselling through digital platforms. Administrative meetings, committee meetings, interviews, and training programmes are also conducted in hybrid or virtual mode whenever appropriate, reducing the need for physical travel."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University permits work-from-home arrangements under specific circumstances, including official approval, emergency situations, public health advisories, academic breaks, or duties that can be effectively performed remotely. Such practices help reduce employee commuting, lower fuel consumption, minimize greenhouse gas emissions, and improve work-life balance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University also encourages the digital submission and processing of official documents, online communication, e-office practices, and paperless administration, further reducing unnecessary travel and supporting sustainable campus operations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these flexible work practices and digital transformation initiatives, Kalinga University contributes to reducing its environmental footprint while enhancing institutional efficiency and supporting SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/bfd4cb4485e4f40d.png",
+          "alt": "SDG 11: 11.4.3 Allow Remote Working - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-11/67beaa703c651832.png",
+          "alt": "SDG 11: 11.4.3 Allow Remote Working - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "11.4.4 Affordable Housing for Employees",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to providing a supportive and inclusive work environment by offering affordable on-campus residential accommodation for eligible employees. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University facilitates access to safe, secure, and affordable housing for faculty members and staff, helping to reduce commuting distances, improve work-life balance, and enhance overall well-being."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University provides staff quarters and residential accommodation for eligible teaching and non-teaching employees within or adjacent to the campus, subject to availability and institutional policies. These residential facilities are offered at subsidized or affordable rates determined by the University, enabling employees to reside close to their workplace and reducing transportation costs and carbon emissions."
+        },
+        {
+          "type": "paragraph",
+          "text": "The residential facilities are equipped with essential amenities such as electricity, water supply, sanitation, internet connectivity, security services, parking, landscaped surroundings, and access to campus facilities. Employees residing on campus also have convenient access to the library, healthcare facilities, sports amenities, cafeterias, and recreational spaces, contributing to a healthy and sustainable living environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "By providing affordable housing, Kalinga University supports sustainable campus development, promotes employee welfare, and minimizes the environmental impact associated with daily commuting. The initiative also strengthens the University's commitment to creating an inclusive and resilient campus community."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through the provision of affordable residential facilities, Kalinga University contributes to SDG 11: Sustainable Cities and Communities by promoting sustainable living, reducing transportation-related emissions, and enhancing the quality of life of its employees."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.5 Affordable Housing for Students",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to providing safe, affordable, and inclusive residential facilities for students to ensure equitable access to higher education and promote sustainable campus living. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University offers well-maintained on-campus hostels at affordable charges, enabling students from diverse socio-economic backgrounds and different regions of India to pursue their education in a secure and supportive environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University provides separate boys' and girls' hostels with furnished rooms and essential amenities, including 24×7 security, Wi-Fi connectivity, electricity, purified drinking water, hygienic dining facilities, housekeeping, laundry services, recreational spaces, and medical assistance. The hostels are located within or near the academic campus, allowing students to walk to classrooms, laboratories, libraries, and other academic facilities, thereby reducing the need for daily transportation and supporting a low-carbon campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University strives to keep hostel charges reasonable and affordable, with fee structures approved by the University administration. The residential facilities are designed to provide a comfortable living environment while minimizing commuting costs and promoting student well-being. The hostels also incorporate sustainable practices such as energy-efficient lighting, water conservation measures, waste segregation, green landscaping, and regular cleanliness drives, contributing to environmentally responsible campus operations."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University further supports residential students through warden supervision, anti-ragging measures, counselling services, health care, indoor and outdoor recreational facilities, cultural activities, and academic support, creating an inclusive and vibrant campus community."
+        },
+        {
+          "type": "paragraph",
+          "text": "By providing affordable, safe, and sustainable student accommodation, Kalinga University enhances access to quality higher education, reduces transportation-related environmental impacts, and promotes sustainable campus living in support of SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.6 Pedestrian Priority on Campus",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to creating a safe, accessible, and pedestrian-friendly campus that promotes sustainable mobility and enhances the well-being of students, faculty, staff, and visitors. In alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities), the University prioritizes pedestrian movement within the campus by designing infrastructure that encourages walking as the primary mode of transportation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University campus features dedicated pedestrian pathways, landscaped walkways, paved footpaths, pedestrian crossings, and traffic-calming measures that enable safe movement between academic buildings, hostels, libraries, laboratories, administrative offices, cafeterias, sports facilities, and recreational areas. The campus layout minimizes dependence on motorized vehicles, making walking the most convenient and environmentally sustainable mode of travel."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has also adopted barrier-free infrastructure to ensure accessibility for persons with disabilities. Ramps, accessible pathways, handrails, tactile features (where applicable), and designated access routes enable inclusive mobility across the campus. Vehicle movement is regulated through designated roads and parking areas, ensuring that pedestrian safety remains a priority."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's green campus design, with tree-lined avenues, shaded walkways, landscaped gardens, seating areas, and open spaces, provides a comfortable environment for walking while contributing to improved air quality and campus aesthetics. Awareness programmes conducted through NSS, NCC, Eco Club, and student organizations further encourage students and staff to prefer walking over motorized transport for short-distance travel within the campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "By prioritizing pedestrian access and integrating sustainable campus planning, Kalinga University promotes healthy lifestyles, reduces carbon emissions, improves road safety, and supports environmentally responsible mobility. These initiatives contribute directly to the achievement of SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.7 Local Authority Collaboration Regarding Planning and Development",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Year: 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, actively collaborates with local authorities, government departments, statutory bodies, and community organizations to support sustainable planning, infrastructure development, environmental conservation, and community welfare in alignment with United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities). Situated in Naya Raipur (Atal Nagar)—India's first planned Greenfield Smart City—the University contributes to regional development through academic partnerships, community outreach, research, and capacity-building initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University works with organizations such as the Nava Raipur Atal Nagar Development Authority (NRDA/NRANVP), Raipur Municipal Corporation, Government of Chhattisgarh, educational institutions, industries, and non-governmental organizations to organize awareness programmes, plantation drives, Swachh Bharat campaigns, environmental protection activities, road safety programmes, health camps, and community development initiatives. Faculty members and students participate in extension activities that promote sustainable urban development, environmental stewardship, and civic responsibility."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through NSS, NCC, and various academic departments, Kalinga University conducts village adoption programmes, cleanliness drives, literacy campaigns, environmental awareness programmes, water conservation initiatives, and health awareness activities in nearby communities. These programmes contribute to improving the quality of life of local residents while strengthening collaboration between the University and local authorities."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also contributes to regional planning and development through research, consultancy, technical expertise, internships, and collaborative projects in areas such as environmental management, sustainable infrastructure, renewable energy, public health, smart technologies, and disaster resilience. Faculty experts participate in seminars, workshops, and stakeholder consultations organized by government agencies and professional bodies to support evidence-based planning and sustainable development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Although housing development for local residents is the responsibility of government agencies and urban development authorities, Kalinga University supports the broader objective of affordable and sustainable communities by providing technical knowledge, skilled graduates, community outreach, and research that contribute to inclusive urban and regional development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these collaborative efforts, Kalinga University strengthens partnerships with local authorities and promotes sustainable planning, environmental protection, and community development, thereby contributing to the achievement of SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.7 Local Authority Collaboration Regarding Planning and Development",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Indicator: Work with local authorities to address planning issues and development, including ensuring that local residents are able to access affordable housing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Response: Yes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Collaboration with Local Authorities for Sustainable Planning and Community Development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, actively collaborates with local government agencies, statutory bodies, industries, and community organizations to support sustainable regional development, infrastructure planning, environmental conservation, and community welfare. As part of its commitment to SDG 11 – Sustainable Cities and Communities, the University works with various stakeholders to promote inclusive urban and rural development through education, research, outreach programmes, and technical expertise."
+        },
+        {
+          "type": "paragraph",
+          "text": "Being located in Naya Raipur (Atal Nagar), the University maintains close interaction with government departments, local administration, municipal authorities, and development agencies for implementing community development initiatives, environmental awareness programmes, health camps, sanitation drives, plantation activities, road safety campaigns, and village adoption programmes through its National Service Scheme (NSS), National Cadet Corps (NCC), Unnat Bharat Abhiyan (UBA), and Institutional Social Responsibility (ISR) initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also contributes technical knowledge through faculty expertise, student projects, consultancy, and research collaborations that support sustainable infrastructure, environmental management, renewable energy, water conservation, waste management, and rural development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Key Areas of Collaboration"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Community Development through Government Partnerships"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University collaborates with local authorities and government departments to organize programmes on:"
+        },
+        {
+          "type": "listItem",
+          "text": "Rural development and village outreach."
+        },
+        {
+          "type": "listItem",
+          "text": "Health awareness and medical camps."
+        },
+        {
+          "type": "listItem",
+          "text": "Cleanliness and sanitation campaigns under Swachh Bharat Mission."
+        },
+        {
+          "type": "listItem",
+          "text": "Environmental conservation and plantation drives."
+        },
+        {
+          "type": "listItem",
+          "text": "Water conservation and sustainable resource management."
+        },
+        {
+          "type": "listItem",
+          "text": "Skill development and entrepreneurship promotion."
+        },
+        {
+          "type": "listItem",
+          "text": "Digital literacy and community awareness programmes."
+        },
+        {
+          "type": "paragraph",
+          "text": "These activities strengthen the University's engagement with neighbouring communities while supporting local development priorities."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Participation in Regional Planning and Sustainable Development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Through academic expertise and institutional collaborations, the University supports regional planning by:"
+        },
+        {
+          "type": "listItem",
+          "text": "Conducting research on environmental sustainability and renewable energy."
+        },
+        {
+          "type": "listItem",
+          "text": "Providing technical inputs through consultancy and collaborative projects."
+        },
+        {
+          "type": "listItem",
+          "text": "Organizing workshops, seminars, and awareness programmes on sustainable urban development."
+        },
+        {
+          "type": "listItem",
+          "text": "Encouraging student participation in solving local engineering, environmental, and societal challenges through project-based learning."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Collaboration for Housing and Inclusive Community Development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Although Kalinga University is not a housing development authority, it contributes to inclusive community development by:"
+        },
+        {
+          "type": "listItem",
+          "text": "Conducting awareness programmes on government welfare and housing schemes whenever organized in collaboration with government agencies."
+        },
+        {
+          "type": "listItem",
+          "text": "Supporting livelihood enhancement, skill development, entrepreneurship, and employability initiatives that improve the socio-economic conditions of local communities."
+        },
+        {
+          "type": "listItem",
+          "text": "Encouraging extension activities that promote improved living conditions, sanitation, health, and sustainable community infrastructure."
+        },
+        {
+          "type": "paragraph",
+          "text": "These initiatives indirectly contribute to creating resilient and inclusive communities, consistent with the objectives of SDG 11."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Student and Faculty Engagement"
+        },
+        {
+          "type": "paragraph",
+          "text": "Faculty members and students regularly participate in outreach activities through:"
+        },
+        {
+          "type": "listItem",
+          "text": "National Service Scheme (NSS)."
+        },
+        {
+          "type": "listItem",
+          "text": "National Cadet Corps (NCC)."
+        },
+        {
+          "type": "listItem",
+          "text": "Unnat Bharat Abhiyan (UBA)."
+        },
+        {
+          "type": "listItem",
+          "text": "Environmental awareness campaigns."
+        },
+        {
+          "type": "listItem",
+          "text": "Blood donation camps."
+        },
+        {
+          "type": "listItem",
+          "text": "Health and hygiene awareness programmes."
+        },
+        {
+          "type": "listItem",
+          "text": "Road safety and traffic awareness campaigns."
+        },
+        {
+          "type": "listItem",
+          "text": "Village adoption and community engagement activities."
+        },
+        {
+          "type": "paragraph",
+          "text": "These programmes strengthen collaboration between the University and local authorities while encouraging students to contribute to sustainable community development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Contribution to SDG 11"
+        },
+        {
+          "type": "paragraph",
+          "text": "Through its partnerships with government agencies, local authorities, industries, and community organizations, Kalinga University contributes to:"
+        },
+        {
+          "type": "listItem",
+          "text": "Sustainable urban and rural development."
+        },
+        {
+          "type": "listItem",
+          "text": "Community participation in planning and environmental management."
+        },
+        {
+          "type": "listItem",
+          "text": "Improved public health and sanitation."
+        },
+        {
+          "type": "listItem",
+          "text": "Environmental conservation and climate awareness."
+        },
+        {
+          "type": "listItem",
+          "text": "Capacity building and skill development."
+        },
+        {
+          "type": "listItem",
+          "text": "Inclusive and resilient community development."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.8 Planning Development: New Build Standards",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Commitment to Sustainable Infrastructure Development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, is committed to developing a sustainable, environmentally responsible, and future-ready campus by integrating green infrastructure and resource-efficient practices into the planning, design, construction, and operation of its academic and administrative facilities. The University recognizes that sustainable infrastructure plays a vital role in achieving Sustainable Development Goal 11 (Sustainable Cities and Communities) and therefore incorporates environmental considerations into all major infrastructure development projects."
+        },
+        {
+          "type": "paragraph",
+          "text": "Located in Naya Raipur (Atal Nagar), Chhattisgarh, the University has developed its campus with emphasis on environmental sustainability, energy conservation, water management, green landscaping, and efficient utilization of natural resources. The campus master planning focuses on creating an eco-friendly learning environment that supports quality education while minimizing environmental impacts."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University continuously upgrades its infrastructure to provide modern teaching-learning facilities, research laboratories, innovation centres, hostels, sports facilities, and community spaces while incorporating sustainable construction practices and environmentally responsible campus management."
+        },
+        {
+          "type": "paragraph",
+          "text": "Adoption of Sustainable Building Practices"
+        },
+        {
+          "type": "paragraph",
+          "text": "While Kalinga University is continuously strengthening its green campus initiatives, the University adopts sustainable design principles consistent with nationally accepted green building concepts such as those promoted by GRIHA (Green Rating for Integrated Habitat Assessment), IGBC (Indian Green Building Council), the Energy Conservation Building Code (ECBC), and the guidelines issued by the Bureau of Energy Efficiency (BEE) wherever applicable."
+        },
+        {
+          "type": "paragraph",
+          "text": "During the planning and construction of new academic blocks, laboratories, hostels, administrative buildings, and research facilities, emphasis is placed on:"
+        },
+        {
+          "type": "listItem",
+          "text": "Maximizing natural daylight and cross ventilation."
+        },
+        {
+          "type": "listItem",
+          "text": "Reducing energy consumption through efficient electrical systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Conserving water through rainwater harvesting and wastewater reuse."
+        },
+        {
+          "type": "listItem",
+          "text": "Increasing green cover and landscaped open spaces."
+        },
+        {
+          "type": "listItem",
+          "text": "Ensuring accessibility and barrier-free infrastructure."
+        },
+        {
+          "type": "listItem",
+          "text": "Creating a healthy indoor environment for students and staff."
+        },
+        {
+          "type": "paragraph",
+          "text": "These initiatives reflect the University's long-term commitment to sustainable campus development and responsible infrastructure planning."
+        },
+        {
+          "type": "paragraph",
+          "text": "Key Sustainable Design and Construction Features"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Energy Efficiency and Renewable Energy Integration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University promotes energy-efficient campus infrastructure through:"
+        },
+        {
+          "type": "listItem",
+          "text": "Installation of LED lighting systems across academic and administrative buildings."
+        },
+        {
+          "type": "listItem",
+          "text": "Adoption of energy-efficient electrical equipment and appliances."
+        },
+        {
+          "type": "listItem",
+          "text": "Utilization of solar photovoltaic systems to supplement campus electricity requirements (where installed and expanded)."
+        },
+        {
+          "type": "listItem",
+          "text": "Building orientation and architectural planning that maximize natural daylight and ventilation, thereby reducing dependence on artificial lighting and air-conditioning."
+        },
+        {
+          "type": "listItem",
+          "text": "Regular maintenance and energy conservation measures implemented through the University's engineering and maintenance departments."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Water Conservation and Sustainable Water Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University has implemented several measures for efficient water utilization, including:"
+        },
+        {
+          "type": "listItem",
+          "text": "Rainwater harvesting systems for groundwater recharge."
+        },
+        {
+          "type": "listItem",
+          "text": "Sewage Treatment Plant (STP) for treatment and reuse of wastewater for gardening and landscape maintenance."
+        },
+        {
+          "type": "listItem",
+          "text": "Water-efficient plumbing fixtures to reduce potable water consumption."
+        },
+        {
+          "type": "listItem",
+          "text": "Periodic monitoring of water usage and maintenance of water distribution systems to minimize losses."
+        },
+        {
+          "type": "listItem",
+          "text": "Extensive green landscaping supported through treated water reuse wherever feasible."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Sustainable Materials and Responsible Construction"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University encourages environmentally responsible construction by:"
+        },
+        {
+          "type": "listItem",
+          "text": "Utilizing durable and locally available construction materials wherever feasible."
+        },
+        {
+          "type": "listItem",
+          "text": "Promoting efficient utilization of construction resources to minimize material wastage."
+        },
+        {
+          "type": "listItem",
+          "text": "Following standard construction practices that ensure structural safety, durability, and resource efficiency."
+        },
+        {
+          "type": "listItem",
+          "text": "Encouraging segregation and proper disposal of construction waste in accordance with applicable environmental regulations."
+        },
+        {
+          "type": "listItem",
+          "text": "Selecting building materials that contribute to lower maintenance requirements and improved lifecycle performance."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Green Campus Planning and Environmental Integration"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's campus planning integrates infrastructure with environmental conservation through:"
+        },
+        {
+          "type": "listItem",
+          "text": "Large green landscaped areas and avenue plantation throughout the campus."
+        },
+        {
+          "type": "listItem",
+          "text": "Preservation and enhancement of biodiversity through tree plantation drives and green belt development."
+        },
+        {
+          "type": "listItem",
+          "text": "Well-planned pedestrian pathways and internal road networks."
+        },
+        {
+          "type": "listItem",
+          "text": "Proper solid waste segregation and environmentally responsible waste management systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Development of open recreational spaces that contribute to a healthy campus environment."
+        },
+        {
+          "type": "listItem",
+          "text": "Barrier-free infrastructure and universal accessibility features for persons with disabilities."
+        },
+        {
+          "type": "paragraph",
+          "text": "5. Healthy Indoor Environment"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University places emphasis on creating safe, comfortable, and healthy indoor environments by:"
+        },
+        {
+          "type": "listItem",
+          "text": "Designing buildings with adequate natural lighting and ventilation."
+        },
+        {
+          "type": "listItem",
+          "text": "Maintaining clean classrooms, laboratories, libraries, hostels, and administrative spaces."
+        },
+        {
+          "type": "listItem",
+          "text": "Providing spacious learning environments that enhance thermal comfort and indoor air quality."
+        },
+        {
+          "type": "listItem",
+          "text": "Regular maintenance of ventilation, electrical, and sanitation systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Ensuring compliance with fire safety, occupational safety, and building maintenance standards."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.9 Building on Brownfield Sites",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Indicator: Build on brownfield sites, where possible"
+        },
+        {
+          "type": "paragraph",
+          "text": "Response: Currently not applicable; however, Kalinga University is committed to sustainable redevelopment and the optimal utilization of existing developed land wherever feasible."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, was established on previously undeveloped land in Naya Raipur (Atal Nagar), Chhattisgarh, with the vision of creating a modern multidisciplinary institution equipped with world-class academic, research, healthcare, and innovation infrastructure. The campus was developed through a planned approach on land that was not previously occupied by industrial activities or urban infrastructure and therefore did not require brownfield remediation or environmental reclamation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Since the site did not possess the characteristics of a brownfield area—such as abandoned industrial facilities, contaminated land, or obsolete urban infrastructure—the University's initial development focused on sustainable campus planning rather than redevelopment. This provided an opportunity to integrate environmentally responsible infrastructure, energy-efficient buildings, green landscaping, rainwater harvesting systems, renewable energy initiatives, and resource-efficient construction practices from the beginning."
+        },
+        {
+          "type": "paragraph",
+          "text": "As Kalinga University continues to expand its academic, research, innovation, and community engagement facilities, it recognizes the importance of sustainable land-use planning by maximizing the utilization of existing infrastructure and redeveloping underutilized campus spaces wherever possible before considering additional land expansion. This approach aligns with the University's commitment to sustainable campus development and responsible land management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University envisions future campus growth through the revitalization and adaptive reuse of existing built spaces, promoting efficient land utilization, environmental conservation, and long-term sustainability in accordance with the objectives of SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "heading",
+          "text": "11.4.9 Building on Brownfield Sites",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, was established on previously undeveloped land in Naya Raipur (Atal Nagar), Chhattisgarh, with the vision of creating a modern multidisciplinary institution equipped with world-class academic, research, healthcare, and innovation infrastructure. The campus was developed through a planned approach on land that was not previously occupied by industrial activities or urban infrastructure and therefore did not require brownfield remediation or environmental reclamation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Since the site did not possess the characteristics of a brownfield area—such as abandoned industrial facilities, contaminated land, or obsolete urban infrastructure—the University's initial development focused on sustainable campus planning rather than redevelopment. This provided an opportunity to integrate environmentally responsible infrastructure, energy-efficient buildings, green landscaping, rainwater harvesting systems, renewable energy initiatives, and resource-efficient construction practices from the beginning."
+        },
+        {
+          "type": "paragraph",
+          "text": "As Kalinga University continues to expand its academic, research, innovation, and community engagement facilities, it recognizes the importance of sustainable land-use planning by maximizing the utilization of existing infrastructure and redeveloping underutilized campus spaces wherever possible before considering additional land expansion. This approach aligns with the University's commitment to sustainable campus development and responsible land management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University envisions future campus growth through the revitalization and adaptive reuse of existing built spaces, promoting efficient land utilization, environmental conservation, and long-term sustainability in accordance with the objectives of SDG 11: Sustainable Cities and Communities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Future Vision and Strategic Initiatives"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Sustainable Redevelopment of Existing Campus Infrastructure"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University intends to prioritize the redevelopment and adaptive reuse of underutilized buildings, vacant institutional spaces, and obsolete infrastructure within the existing campus before undertaking new construction. Future redevelopment projects will incorporate green building principles, energy-efficient technologies, and environmentally sustainable construction practices."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Efficient Land Utilization and Conservation"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University is committed to optimizing the use of available campus land by promoting vertical expansion, multifunctional academic spaces, and redevelopment of existing facilities wherever feasible. This strategy minimizes unnecessary greenfield expansion while preserving open spaces, biodiversity, and landscaped areas across the campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Campus Revitalization and Smart Infrastructure Development"
+        },
+        {
+          "type": "paragraph",
+          "text": "Future infrastructure planning will focus on modernizing existing facilities through renovation, technological upgrades, improved accessibility, and smart campus solutions. Redevelopment initiatives will enhance the learning environment while creating safer, more inclusive, and environmentally sustainable spaces for students, faculty, staff, and visitors."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Environmental Sustainability and Regulatory Compliance"
+        },
+        {
+          "type": "paragraph",
+          "text": "All future redevelopment and renovation activities will comply with applicable environmental regulations, green building guidelines, and sustainable construction standards. Kalinga University will continue to promote waste minimization, recycling of construction materials, energy conservation, water-efficient infrastructure, and environmentally responsible resource management, thereby contributing to SDG 11 (Sustainable Cities and Communities) and SDG 12 (Responsible Consumption and Production)."
+        }
+      ]
+    }
+  ]
+}

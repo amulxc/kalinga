@@ -1,0 +1,2538 @@
+{
+  "number": 7,
+  "title": "Affordable and Clean Energy",
+  "sourceUrl": "https://drive.google.com/file/d/1nbhDemiXsN6vh-JpRFkFOCDtNjcS3_Ap/view",
+  "sourceDate": "29 October 2026",
+  "dashboard": [
+    {
+      "label": "SDG 7 Related Publications (2024–2025)",
+      "value": "210"
+    },
+    {
+      "label": "Cumulative SDG 7 Related Publications",
+      "value": "289"
+    },
+    {
+      "label": "Total Citation Count",
+      "value": "554"
+    },
+    {
+      "label": "Field-Weighted Citation Impact (FWCI)",
+      "value": "1.07"
+    },
+    {
+      "label": "Research Publications in 2025",
+      "value": "144"
+    },
+    {
+      "label": "Research Publications in 2024",
+      "value": "56"
+    },
+    {
+      "label": "Growth in Research Publications (2024–2025)",
+      "value": "157.14%"
+    }
+  ],
+  "intro": [
+    {
+      "type": "paragraph",
+      "text": "Kalinga University, Raipur, demonstrated substantial growth in research publications related to SDG 7 – Affordable and Clean Energy during 2025. The University recorded 144 research publications in 2025, compared with 56 publications in 2024, representing an increase of approximately 157.14%. The research dashboard reports 289 cumulative SDG 7-related publications, 554 citations, and a Field-Weighted Citation Impact (FWCI) of 1.07, indicating citation performance approximately 7% above the global average for comparable publications."
+    }
+  ],
+  "sections": [
+    {
+      "title": "7.1 Research on Clean Energy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SDG 7 seeks to ensure access to affordable, reliable, sustainable and modern energy for all. Within the higher-education context, research plays an important role in developing clean-energy technologies, improving energy efficiency, supporting renewable-energy integration and generating knowledge for sustainable energy transitions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University's Scopus-indexed research demonstrates multidisciplinary engagement with these objectives through studies involving renewable energy, solar photovoltaics, energy-storage systems, electric mobility, smart-grid technologies, microgrids, bioenergy and sustainable energy management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The increasing number of potentially SDG 7-aligned Scopus publications, particularly during 2024–2025, indicates strengthening research activity in clean and sustainable energy domains."
+        },
+        {
+          "type": "heading",
+          "text": "7.1.1 Affordable and Clean Energy - CiteScore",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, demonstrates growing research engagement in Affordable and Clean Energy (SDG 7) through publications addressing renewable energy, solar and photovoltaic technologies, energy storage, smart grids, electric vehicles, biofuels, energy efficiency, and sustainable energy systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's research performance reflects increasing academic contributions to clean-energy research and technological innovation. In 2025, the University recorded 144 SDG 7-related research publications, compared with 56 publications in 2024, representing a growth of approximately 157.14%. The research dashboard reports a cumulative total of 289 SDG 7-related publications, with 554 citations and a Field-Weighted Citation Impact (FWCI) of 1.07."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Particulars",
+            "Details"
+          ],
+          "rows": [
+            [
+              {
+                "text": "SDG 7 Related Publications (2024–2025)",
+                "colSpan": 1
+              },
+              {
+                "text": "210",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Cumulative SDG 7 Related Publications",
+                "colSpan": 1
+              },
+              {
+                "text": "289",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Total Citation Count",
+                "colSpan": 1
+              },
+              {
+                "text": "554",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Field-Weighted Citation Impact (FWCI)",
+                "colSpan": 1
+              },
+              {
+                "text": "1.07",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Research Assessment Period",
+                "colSpan": 1
+              },
+              {
+                "text": "2021–2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Highest Research Publication Year",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Publications in 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "144",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Publications in 2024",
+                "colSpan": 1
+              },
+              {
+                "text": "56",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Growth in Research Publications (2024–2025)",
+                "colSpan": 1
+              },
+              {
+                "text": "157.14%",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The research publication trend highlights Kalinga University's increasing contribution to affordable and clean energy research. The rise in annual publications from 3 in 2021 to 144 in 2025 demonstrates substantial growth in research activity. Furthermore, the reported FWCI of 1.07 indicates that the University's SDG 7-related research receives approximately 7% more citations than the global average for comparable publications, reflecting its academic visibility and research impact."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/e0a6ffe19c4243d5.png",
+          "alt": "SDG 7: 7.1.1 Affordable and Clean Energy - CiteScore - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure : Year-wise SDG 7-aligned research output"
+        },
+        {
+          "type": "paragraph",
+          "text": "Major Research Areas"
+        },
+        {
+          "type": "listItem",
+          "text": "Solar energy and photovoltaic technologies"
+        },
+        {
+          "type": "listItem",
+          "text": "Renewable and hybrid energy systems"
+        },
+        {
+          "type": "listItem",
+          "text": "Smart grids and microgrids"
+        },
+        {
+          "type": "listItem",
+          "text": "Energy-storage systems and batteries"
+        },
+        {
+          "type": "listItem",
+          "text": "Electric vehicles and charging technologies"
+        },
+        {
+          "type": "listItem",
+          "text": "Biofuels and fuel-cell technologies"
+        },
+        {
+          "type": "listItem",
+          "text": "Perovskite and advanced solar-cell materials"
+        },
+        {
+          "type": "listItem",
+          "text": "Greenhouse-gas reduction and sustainable energy systems"
+        },
+        {
+          "type": "heading",
+          "text": "7.1.2 Affordable and Clean Energy - FWCI",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Field-Weighted Citation Impact (FWCI) measures the citation performance of research publications by normalising citations according to publication year, document type, and subject area. Kalinga University, Raipur, has recorded an FWCI score of 1.07 for SDG 7 – Affordable and Clean Energy, indicating that its research publications receive approximately 7% more citations than the global average for comparable research outputs."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's SDG 7 research portfolio comprises 289 cumulative research publications, with 210 publications recorded during 2024–2025 and a total of 554 citations. In 2025, the University recorded 144 research publications, compared with 56 in 2024, reflecting a growth of approximately 157.14%. These research contributions encompass solar energy, renewable energy systems, energy storage, smart grids, electric vehicles, biofuels, and other clean-energy technologies. The FWCI score reflects the University's above-average citation performance and its growing contribution to research and innovation in sustainable energy technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "FWCI – SDG 7 Research Performance"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Parameter",
+            "Institutional Value"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Indicator",
+                "colSpan": 1
+              },
+              {
+                "text": "Field-Weighted Citation Impact (FWCI)",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Research Area",
+                "colSpan": 1
+              },
+              {
+                "text": "SDG 7 – Affordable and Clean Energy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Assessment Period",
+                "colSpan": 1
+              },
+              {
+                "text": "2021–2025",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Cumulative SDG 7 Research Publications",
+                "colSpan": 1
+              },
+              {
+                "text": "289",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "SDG 7 Related Publications (2024–2025)",
+                "colSpan": 1
+              },
+              {
+                "text": "210",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Total Citation Count",
+                "colSpan": 1
+              },
+              {
+                "text": "554",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Actual SDG 7 FWCI",
+                "colSpan": 1
+              },
+              {
+                "text": "1.07",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Citation Performance Relative to Global Average",
+                "colSpan": 1
+              },
+              {
+                "text": "7% Above Global Average",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Highest Research Publication Year",
+                "colSpan": 1
+              },
+              {
+                "text": "2025 (144 Publications)",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "7.1.3 Affordable and Clean Energy - Publications",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The publications indicator reflects Kalinga University's research contributions towards Affordable and Clean Energy (SDG 7). The University recorded 210 SDG 7-related research publications during 2024–2025, with a cumulative research output of 289 publications. The annual research output increased significantly from 3 publications in 2021 to 144 in 2025. Notably, publications increased from 56 in 2024 to 144 in 2025, representing a growth of approximately 157.14%. This upward trend demonstrates the University's expanding research engagement in renewable energy, energy efficiency, and sustainable energy technologies."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Year",
+            "SDG 7 Publications"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021",
+                "colSpan": 1
+              },
+              {
+                "text": "3",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "9",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "2",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "56",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "144",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Total (2021–2025)",
+                "colSpan": 1
+              },
+              {
+                "text": "234",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/e53660b0595fbf35.png",
+          "alt": "SDG 7: 7.1.3 Affordable and Clean Energy - Publications - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Department-wise Contribution"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Faculty of Technology is the strongest contributor to SDG 7 research, followed by the Faculty of CS & IT and the Faculty of Science. The pattern reflects the technical nature of clean energy research, which often requires engineering design, power systems, artificial intelligence, materials science and computational modelling."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Faculty / Department",
+            "No. of SDG 7 Outputs"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Faculty of Technology",
+                "colSpan": 1
+              },
+              {
+                "text": "127",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of CS & IT",
+                "colSpan": 1
+              },
+              {
+                "text": "8",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of Science",
+                "colSpan": 1
+              },
+              {
+                "text": "58",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of Engineering",
+                "colSpan": 1
+              },
+              {
+                "text": "20",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of Commerce & Management",
+                "colSpan": 1
+              },
+              {
+                "text": "19",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of Education",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Not specified",
+                "colSpan": 1
+              },
+              {
+                "text": "2",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of Law",
+                "colSpan": 1
+              },
+              {
+                "text": "1",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of Pharmacy",
+                "colSpan": 1
+              },
+              {
+                "text": "1",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Faculty of Physics",
+                "colSpan": 1
+              },
+              {
+                "text": "1",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/4dc9b6d5eb7007ad.png",
+          "alt": "SDG 7: 7.1.3 Affordable and Clean Energy - Publications - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure : Department-wise contribution to clean energy research."
+        },
+        {
+          "type": "paragraph",
+          "text": "Research Theme Distribution"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University's SDG 7 research encompasses diverse areas of clean and renewable energy, with Solar and Photovoltaic Energy (81 outputs) emerging as the leading research theme, followed by Smart Grid, Microgrid & Power Systems (60 outputs) and Other Energy Research (59 outputs). Additional contributions include electric vehicles, energy storage, bioenergy, energy efficiency, and sustainability. This multidisciplinary research engagement reflects the University's commitment to advancing clean-energy technologies, sustainable energy management, and renewable energy innovation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Major Research Contributions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University’s clean energy research portfolio includes work on lead-free and organic perovskite solar cells, performance improvement of photovoltaic systems, solar tracking, grid-connected PV systems, microgrid stability, smart electricity monitoring, electric vehicle charging systems, hybrid energy storage, battery technologies, biofuels and bioethanol, and artificial intelligence-driven power management."
+        },
+        {
+          "type": "paragraph",
+          "text": "The titles screened indicate relevance to both technology development and applied sustainability. For example, research on solar cell performance and perovskite materials contributes to renewable energy generation; microgrid and smart-grid studies support energy reliability; EV charging and battery management research supports low-carbon transport; and biofuel/biomass studies support alternative clean energy pathways."
+        },
+        {
+          "type": "paragraph",
+          "text": "Journal and Publication Channel Evidence"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Journal / Publication Channel",
+            "No. of Research Papers"
+          ],
+          "rows": [
+            [
+              {
+                "text": "E3S Web of conference",
+                "colSpan": 1
+              },
+              {
+                "text": "17",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "E3S Web of Conferences",
+                "colSpan": 1
+              },
+              {
+                "text": "1",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "A Study on Next-Generation Materials and Devicesv",
+                "colSpan": 1
+              },
+              {
+                "text": "10",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "E3S",
+                "colSpan": 1
+              },
+              {
+                "text": "10",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Proceedings of 2025 International Conference on Intelligent Systems and Pioneering Innovations in Robotics and Electric Mobility: Transforming Mobility and Automation Through Intelligent Engineering, INSPIRE 2025",
+                "colSpan": 1
+              },
+              {
+                "text": "10",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "IEEE Xplore",
+                "colSpan": 1
+              },
+              {
+                "text": "9",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Journal of Computational Analysis and Applications",
+                "colSpan": 1
+              },
+              {
+                "text": "8",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "International Journal of Environmental Sciences",
+                "colSpan": 1
+              },
+              {
+                "text": "6",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "TELEMATIQUE",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "European Chemical Bulletin",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "IEEE",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "AIP Conference Proceedings",
+                "colSpan": 1
+              },
+              {
+                "text": "5",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Representative SDG 7 Publications"
+        },
+        {
+          "type": "paragraph",
+          "text": "The following representative publications address clean energy, renewable technologies, sustainable power systems, and related research areas. Journal names and publication links require verification against the University’s bibliographic records."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "S. No.",
+            "Year",
+            "Title of Paper"
+          ],
+          "rows": [
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Aluminum Oxide Used Between Molybdenum Trioxide and Poly (3, 4-Ethylene Dioxy Thiophene) Polystyrene S...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Hybrid technology with multi power oriented machine with solar panels for open field farming system",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Sun Motion Tracking System to Control Solar Panel Using ATmega 89C52 Microcontroller",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Synthesis and Characterization of Photovoltaic Properties of Tin Based Lead-Free Perovskite Solar Cell",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "5",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Design of Microgrids for Hybrid Electric Vehicles Charging Stations",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "6",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Effective design and simulation of a PFC-based CUK converter for high speed battery charging of electr...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "7",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "A natural power system based self-rechargeable battery to power electric vehicles",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "8",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Design and Development of Charging Station for Electric Vehicles",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "9",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Energy Management Strategy for Hybrid Electric Vehicle with Battery Thermal Health Constrained",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "10",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Nanocomposites utilizing carbon quantum dots for lithium energy storage and transformation",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "1",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Advancing Energy Storage and Conversion with Ti3C2Tx MXene-Based Flexible Two-Dimensional Hybrid Nanom...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "12",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Enhancing the Efficiency of Energy Storage and Management Systems for Hybrid Renewable Energy Applicat...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "13",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Performance Analysis of Lithium-Ion Battery Based on Model Reduction Analysis",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "14",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Thermal Management System for A Lithium-Ion Battery Module Incorporating Discharge Rate and Cell Seque...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "15",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Distributed Microgrid State Estimation: New Opportunities and challenges in Smart Grid",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "16",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "IEEE 9 Bus Power System Stability Improvement With Facts Devices",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "17",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "A Low-Cost Control Architecture for Buck Converter Fed VSI Based BLDC Motor Drive",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "18",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Three Phase Shunt Active Power Filter using pq theory Analysis of Stability Problem in Wind Generator ...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "19",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "A Review on Power System Stability Improvement",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "20",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Biofuels as an opportunity to sustainable energy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "21",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Economic and environmental impacts of biofuels in Indian context",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "2",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "A Renewable Biofuel-Bioethanol: A Review",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "23",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Energy Efficient Underwater Sensor Networks Routing Protocol utilizing Advanced Particle Swarm Optimiz...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "24",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Weighted Particle Swarm Optimization Algorithms and Power Management Strategies for Grid Hybrid Energy...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "25",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "A Hybrid Modified Artificial Bee Colony (ABC)-Based Artificial Neural Network Model for Power Manageme...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "26",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Energy Efficient Adaptive LTE Selection Model for Improved QoS Performance in Wireless Networks",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "27",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Mobility Based Energy Efficient Mobile Handover for Improved Data Streaming in Mobile Networks",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "28",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Experimental study of pressure generated by ANSYS hydro-wind flow to generate electricity with the hel...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "29",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Critical Analysis on Thermo-Physical parameters and modelling of Hybrid Energy",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "30",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Carbon nanotube-reinforced polymer composites: a promising material for high-performance energy harves...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "31",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "High-performance, wind-driven Triboelectric-Electromagnetic Hybrid Nanogenerator for self-powered wire...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "32",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Real time Wind Based Power Approximation Model for Improved Performance in Power Distribution Systems",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "3",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Climate change: the legal framework for addressing its impact and regulating greenhouse gas emissions ...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "34",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Towards environmental sustainability: Innovation in renewable energy research paving the way to a low ...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "35",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "Renewable Energy: A Pathway to sustainable futures",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "36",
+                "colSpan": 1
+              },
+              {
+                "text": "2024",
+                "colSpan": 1
+              },
+              {
+                "text": "The Role of Renewable Energy in Electricity Production in Chhattisgarh",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "37",
+                "colSpan": 1
+              },
+              {
+                "text": "2025",
+                "colSpan": 1
+              },
+              {
+                "text": "AI-Assisted Predictive Maintenance of Renewable Energy Infrastructure",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "38",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Automatic Solar Tracking System",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "39",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Enhancing The Efficiency of A Phase Change Material-Based Solar Pond",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "40",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Solar Energy efficiency improvement effort of perovskite solor cell",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "41",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Advancements in solar bio cells: a literature review of research and policy developments",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "42",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Performance improvement of a solar photovoltaic system",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "43",
+                "colSpan": 1
+              },
+              {
+                "text": "2022",
+                "colSpan": 1
+              },
+              {
+                "text": "Smart Electricity Monitoring and Control System Using loT",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "4",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Investigation of photoluminescence, thermoluminescence, and energy transfer mechanism in Ce/Dy co-dope...",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "45",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Solar Power Bank with Wireless Charging",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "46",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Efficiency improvement effort of perovskite solar cell",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "47",
+                "colSpan": 1
+              },
+              {
+                "text": "2023",
+                "colSpan": 1
+              },
+              {
+                "text": "Triple-Junction Tandem Organic Solar Cell Performance Modeling for Analysis and Improvement",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Conclusion"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, demonstrates significant and growing research contributions towards SDG 7 – Affordable and Clean Energy through multidisciplinary research in renewable energy, solar photovoltaic technologies, smart grids, electric vehicles, energy storage, bioenergy, and energy-efficient systems. The University recorded 210 SDG 7-related publications during 2024–2025, with a cumulative research output of 289 publications and 554 citations. Research publications increased from 56 in 2024 to 144 in 2025, reflecting a remarkable growth of 157.14%. Furthermore, the Field-Weighted Citation Impact (FWCI) of 1.07 indicates citation performance above the global average for comparable research outputs. These achievements highlight the University's expanding research capacity, academic visibility, and commitment to advancing sustainable energy solutions, providing valuable evidence of its research contributions under THE Impact Rankings Indicator 7.1."
+        }
+      ]
+    },
+    {
+      "title": "7.2 University Measures Towards Affordable and Clean Energy",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "7.2.1 Energy-Efficient Renovation and Building",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to developing and maintaining an energy-efficient and environmentally sustainable campus through the adoption of green infrastructure and energy conservation practices. The University integrates energy efficiency considerations into the planning, construction, renovation, and operation of campus buildings to minimize energy consumption, reduce greenhouse gas emissions, and promote responsible use of natural resources. Sustainable infrastructure development is guided by the University's commitment to environmental stewardship and the Sustainable Development Goals (SDGs), particularly SDG 7: Affordable and Clean Energy."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University has installed a 300 kWp Solar Power Plant, which contributes significantly to meeting the campus's electricity requirements through clean and renewable energy. The plant has generated 125,946.60 kWh of electricity, reducing dependence on conventional grid power and lowering carbon emissions. In addition, a biogas plant has been established to convert biodegradable organic waste into renewable energy, supporting efficient waste management while producing an alternative source of clean fuel."
+        },
+        {
+          "type": "paragraph",
+          "text": "To further enhance energy efficiency, Kalinga University has implemented sensor-based LED lighting systems in various academic and administrative buildings. These systems automatically regulate lighting based on occupancy, thereby minimizing unnecessary electricity consumption and improving overall energy performance. The University also promotes the use of energy-efficient electrical equipment and encourages periodic maintenance of electrical systems to optimize operational efficiency."
+        },
+        {
+          "type": "paragraph",
+          "text": "Energy conservation is complemented by a range of awareness and capacity-building initiatives. The University regularly observes National Energy Conservation Day and organizes awareness campaigns, workshops, seminars, poster competitions, technical exhibitions, and student-led projects focusing on renewable energy, energy-efficient technologies, and sustainable infrastructure. Faculty members and students actively undertake research on improving solar photovoltaic performance, hybrid renewable energy systems, and smart energy management solutions, contributing to the development of innovative and sustainable energy practices."
+        },
+        {
+          "type": "paragraph",
+          "text": "Recognizing the importance of developing a skilled workforce for the clean energy sector, Kalinga University also conducts a Free Solar PV Installation Helper Training Programme under the Green Jobs Sector (NSQF Level 4). The programme equips participants with practical skills in solar photovoltaic installation and maintenance, enhancing employability while supporting India's transition towards renewable energy."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through the integration of renewable energy infrastructure, energy-efficient technologies, sustainable campus operations, research, and skill development initiatives, Kalinga University demonstrates its strong commitment to creating an energy-efficient campus and advancing the objectives of SDG 7: Affordable and Clean Energy."
+        },
+        {
+          "type": "heading",
+          "text": "7.2.2 Upgrade Buildings to Higher Energy Efficiency",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Building Energy Efficiency Upgrade Plan at Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to continuously improving the energy performance of its campus infrastructure through the adoption of energy-efficient technologies, renewable energy integration, and sustainable building management practices. In line with its commitment to Sustainable Development Goal 7 (Affordable and Clean Energy), the University has implemented several measures to reduce electricity consumption, improve operational efficiency, and minimize its environmental footprint while providing a comfortable learning and working environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's energy efficiency strategy is based on the following key principles:"
+        },
+        {
+          "type": "listItem",
+          "text": "Energy-Efficient Infrastructure: Adoption of energy-saving technologies such as sensor-based LED lighting systems, energy-efficient electrical equipment, and optimized building services to reduce electricity consumption across academic, administrative, residential, and common facilities."
+        },
+        {
+          "type": "listItem",
+          "text": "Renewable Energy Integration: Maximizing the use of clean energy through the installation and efficient utilization of a 300 kWp rooftop Solar Power Plant, supported by renewable energy initiatives such as the campus biogas plant to reduce dependence on conventional grid electricity."
+        },
+        {
+          "type": "listItem",
+          "text": "Continuous Monitoring and Improvement: Regular monitoring of electricity consumption, renewable energy generation, and maintenance of electrical infrastructure to enhance overall energy performance and identify opportunities for further improvement."
+        },
+        {
+          "type": "paragraph",
+          "text": "As part of its energy conservation efforts, Kalinga University has installed sensor-based LED lighting systems throughout the campus. These systems automatically control lighting based on occupancy, significantly reducing unnecessary electricity usage while lowering operational costs. The University also encourages the use of energy-efficient appliances and periodically upgrades electrical systems to improve performance and reliability."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University's 300 kWp Solar Power Plant contributes to sustainable campus operations by generating clean and renewable electricity. During 2024–25, the solar power plant generated 93,936.10 kWh of electricity, equivalent to 338.17 Gigajoules (GJ). This renewable energy generation helps reduce dependence on conventional grid electricity and supports the University's efforts to minimise greenhouse gas emissions. The University's built-up campus area benefits from these renewable energy and energy conservation initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "To complement renewable energy generation, Kalinga University also operates a biogas plant, which converts biodegradable organic waste into renewable fuel, thereby promoting circular resource management and reducing dependence on conventional energy sources."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University regularly organizes National Energy Conservation Day, renewable energy awareness campaigns, workshops, seminars, technical exhibitions, poster competitions, and student innovation projects to promote responsible energy consumption and sustainable technologies. Faculty members and students actively undertake research on solar photovoltaic efficiency, hybrid renewable energy systems, smart energy management, and green technologies, supporting continuous improvements in campus sustainability."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through the integration of renewable energy infrastructure, energy-efficient technologies, continuous monitoring, and future-focused planning, Kalinga University is steadily transforming its campus into a more sustainable and energy-efficient environment. These initiatives reduce operational costs, lower carbon emissions, and reinforce the University's commitment to achieving SDG 7: Affordable and Clean Energy while serving as a model for sustainable campus development."
+        },
+        {
+          "type": "heading",
+          "text": "7.2.3 Carbon Reduction and Emission Reduction Process",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to reducing greenhouse gas emissions and promoting a low-carbon campus through renewable energy adoption, energy-efficient infrastructure, sustainable waste management, and environmental awareness initiatives. As part of its commitment to Sustainable Development Goal 7 (Affordable and Clean Energy) and broader environmental sustainability goals, the University continuously implements measures to minimize its carbon footprint while promoting responsible resource utilization across the campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "A key component of Kalinga University's carbon reduction strategy is the adoption of renewable energy infrastructure. The University operates a 300 kWp Solar Power Plant, which contributes to clean electricity generation and reduces dependence on conventional grid electricity. During 2024–25, the solar power plant generated 93,936.10 kWh of renewable electricity, equivalent to 338.17 Gigajoules (GJ). This renewable energy generation supports the University's efforts to reduce greenhouse gas emissions associated with electricity consumption, promote energy efficiency, and strengthen environmentally sustainable campus operations."
+        },
+        {
+          "type": "paragraph",
+          "text": "To further improve energy efficiency and reduce indirect emissions, Kalinga University has installed sensor-based LED lighting systems across academic, administrative, and residential buildings. These systems optimize electricity usage by automatically controlling lighting based on occupancy, thereby reducing unnecessary energy consumption and associated greenhouse gas emissions."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also promotes sustainable waste-to-energy practices through the operation of a biogas plant, where biodegradable organic waste is converted into renewable fuel. This initiative not only provides an alternative source of clean energy but also minimizes methane emissions from organic waste disposal while supporting effective campus waste management."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University complements these infrastructure initiatives with extensive environmental awareness and capacity-building programmes. The University regularly organizes National Energy Conservation Day, renewable energy awareness campaigns, workshops, seminars, poster competitions, technical exhibitions, and student-led innovation projects to encourage energy conservation and climate-responsible behaviour among students, faculty, staff, and the surrounding community. Faculty members and students actively undertake research on renewable energy technologies, solar photovoltaic efficiency, hybrid energy systems, and smart energy management, contributing to long-term carbon reduction solutions."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's commitment to green skills development is further reflected through its Free Solar PV Installation Helper Training Programme (NSQF Level 4) under the Green Jobs Sector, which prepares skilled professionals capable of supporting India's transition towards clean and renewable energy technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "Key Carbon Reduction Measures Implemented by Kalinga University"
+        },
+        {
+          "type": "listItem",
+          "text": "Installation and operation of a 300 kWp Solar Power Plant for renewable electricity generation."
+        },
+        {
+          "type": "listItem",
+          "text": "Use of sensor-based LED lighting systems to reduce electricity consumption."
+        },
+        {
+          "type": "listItem",
+          "text": "Operation of a biogas plant for converting biodegradable waste into clean energy."
+        },
+        {
+          "type": "listItem",
+          "text": "Promotion of renewable energy research, innovation, and student projects."
+        },
+        {
+          "type": "listItem",
+          "text": "Organization of energy conservation campaigns, workshops, seminars, and awareness programmes."
+        },
+        {
+          "type": "listItem",
+          "text": "Skill development through Solar PV Installation Helper Training to promote green employment and clean energy adoption."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through the integration of renewable energy generation, energy-efficient technologies, sustainable waste management, environmental education, and green skill development, Kalinga University continues to strengthen its carbon reduction efforts and contribute towards a cleaner, more sustainable, and climate-resilient campus, supporting the objectives of SDG 7: Affordable and Clean Energy as well as India's commitment to sustainable development and climate action."
+        },
+        {
+          "type": "heading",
+          "text": "7.2.4 Plan to Reduce Energy Consumption",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Energy Consumption Reduction Plan at Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University has developed a comprehensive strategy to reduce overall campus energy consumption by integrating renewable energy, adopting energy-efficient technologies, promoting sustainable operational practices, and encouraging responsible energy use among all stakeholders. The University's plan aligns with its commitment to Sustainable Development Goal 7 (Affordable and Clean Energy) and supports its vision of developing a sustainable, energy-efficient, and environmentally responsible campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Objectives"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University aims to promote sustainable energy management and improve energy efficiency across its campus through the following objectives:"
+        },
+        {
+          "type": "listItem",
+          "text": "Reduce overall electricity consumption through energy-efficient infrastructure and sustainable operational practices."
+        },
+        {
+          "type": "listItem",
+          "text": "Increase the utilisation of renewable energy to reduce dependence on conventional electricity sources."
+        },
+        {
+          "type": "listItem",
+          "text": "Encourage responsible energy consumption among students, faculty members, staff, and visitors."
+        },
+        {
+          "type": "listItem",
+          "text": "Strengthen energy management through regular monitoring, maintenance, and continuous improvement."
+        },
+        {
+          "type": "listItem",
+          "text": "Promote research, innovation, and skill development in renewable energy and energy conservation technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "Current Energy Scenario"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University's major energy-consuming facilities include academic and administrative buildings, laboratories, computer centres, student hostels, residential facilities, libraries, auditoriums, water pumping systems, campus lighting, air-conditioning, ventilation, and other electrical equipment."
+        },
+        {
+          "type": "paragraph",
+          "text": "To promote sustainable energy utilisation, the University operates a 300 kWp Solar Power Plant, which generated 93,936.10 kWh of renewable electricity (equivalent to 338.17 Gigajoules) during the 2024–25 reporting period. This renewable energy generation contributes to reducing dependence on conventional grid electricity and supports the University's carbon reduction initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "Additionally, the University operates a biogas plant that converts biodegradable organic waste into renewable fuel, promoting sustainable waste management and alternative energy utilisation. The adoption of sensor-based LED lighting, energy-efficient electrical systems, and regular maintenance practices further supports energy conservation across campus facilities."
+        },
+        {
+          "type": "paragraph",
+          "text": "These initiatives demonstrate Kalinga University's continued efforts to improve energy efficiency, promote renewable energy utilisation, and maintain environmentally responsible campus operations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Strategic Action Plan"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Energy Monitoring and Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University periodically reviews electricity consumption and renewable energy generation to identify opportunities for improving energy efficiency. Regular maintenance of electrical systems and monitoring of solar power generation help optimize overall campus energy performance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Future initiatives include:"
+        },
+        {
+          "type": "listItem",
+          "text": "Conducting periodic energy audits."
+        },
+        {
+          "type": "listItem",
+          "text": "Maintaining records of electricity consumption and renewable energy generation."
+        },
+        {
+          "type": "listItem",
+          "text": "Developing digital monitoring systems for energy performance analysis."
+        },
+        {
+          "type": "listItem",
+          "text": "Promoting data-driven decision-making for energy conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Energy-Efficient Infrastructure"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University continues to upgrade campus infrastructure through:"
+        },
+        {
+          "type": "listItem",
+          "text": "Installation of sensor-based LED lighting systems across academic and administrative buildings."
+        },
+        {
+          "type": "listItem",
+          "text": "Replacement of conventional lighting with high-efficiency LED fixtures."
+        },
+        {
+          "type": "listItem",
+          "text": "Use of energy-efficient electrical equipment wherever feasible."
+        },
+        {
+          "type": "listItem",
+          "text": "Regular preventive maintenance of electrical installations to minimize energy losses."
+        },
+        {
+          "type": "paragraph",
+          "text": "Future upgrades will include smart lighting controls, automated energy management systems, and adoption of high-efficiency electrical appliances."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/750d6531aae8bbc7.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/71f5df2db3c45f85.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/f382d4a72e3fc1b4.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/f9732d8d7a8018a0.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/a7933041d38ae494.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/e56e21b749925331.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/061f1c2f44a860d4.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/54e22446a8984fef.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Renewable Energy Expansion"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University plans to further strengthen renewable energy utilization by:"
+        },
+        {
+          "type": "listItem",
+          "text": "Expanding rooftop solar photovoltaic installations."
+        },
+        {
+          "type": "listItem",
+          "text": "Enhancing the efficiency and maintenance of the existing 300 kWp Solar Power Plant."
+        },
+        {
+          "type": "listItem",
+          "text": "Increasing the utilization of renewable energy generated through the campus biogas plant."
+        },
+        {
+          "type": "listItem",
+          "text": "Exploring additional clean energy technologies suitable for campus operations."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/fc84bd770a040434.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/2adac5dae6dee8d5.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Sustainable Operations and Maintenance"
+        },
+        {
+          "type": "paragraph",
+          "text": "To minimize unnecessary energy consumption, Kalinga University follows responsible operational practices such as:"
+        },
+        {
+          "type": "listItem",
+          "text": "Scheduled maintenance of electrical and renewable energy systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Optimized operation of lighting, air-conditioning, and laboratory equipment."
+        },
+        {
+          "type": "listItem",
+          "text": "Procurement of energy-efficient electrical appliances."
+        },
+        {
+          "type": "listItem",
+          "text": "Continuous replacement of outdated equipment with modern energy-saving alternatives."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/daf5b434a1be15c5.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/808ec0d2327f2031.jpeg",
+          "alt": "SDG 7: 7.2.4 Plan to Reduce Energy Consumption - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "5. Awareness and Capacity Building"
+        },
+        {
+          "type": "paragraph",
+          "text": "Recognizing that behavioural change plays an important role in energy conservation, the University regularly organizes:"
+        },
+        {
+          "type": "listItem",
+          "text": "National Energy Conservation Day celebrations."
+        },
+        {
+          "type": "listItem",
+          "text": "Renewable energy awareness campaigns."
+        },
+        {
+          "type": "listItem",
+          "text": "Workshops, seminars, guest lectures, and technical exhibitions."
+        },
+        {
+          "type": "listItem",
+          "text": "Poster competitions and student innovation projects."
+        },
+        {
+          "type": "listItem",
+          "text": "Faculty development programmes on renewable energy technologies."
+        },
+        {
+          "type": "listItem",
+          "text": "Solar PV Installation Helper Training Programme (NSQF Level 4) under the Green Jobs Sector to develop skilled manpower for the renewable energy industry."
+        },
+        {
+          "type": "paragraph",
+          "text": "6. Sustainable Waste and Resource Management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's biogas plant supports both waste management and renewable energy generation by converting biodegradable waste into clean fuel. This integrated approach reduces waste disposal requirements while contributing to campus energy sustainability."
+        },
+        {
+          "type": "paragraph",
+          "text": "Implementation Timeline"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Phase",
+            "Duration",
+            "Planned Activities"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Phase I",
+                "colSpan": 1
+              },
+              {
+                "text": "0–12 Months",
+                "colSpan": 1
+              },
+              {
+                "text": "Strengthen LED lighting coverage, conduct energy audits, enhance awareness programmes, optimize solar plant performance.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Phase II",
+                "colSpan": 1
+              },
+              {
+                "text": "1–3 Years",
+                "colSpan": 1
+              },
+              {
+                "text": "Expand rooftop solar capacity, introduce smart energy monitoring systems, replace conventional electrical equipment with energy-efficient alternatives.",
+                "colSpan": 1
+              }
+            ],
+            [
+              {
+                "text": "Phase III",
+                "colSpan": 1
+              },
+              {
+                "text": "3–5 Years",
+                "colSpan": 1
+              },
+              {
+                "text": "Integrate advanced energy management technologies, increase renewable energy contribution, and incorporate energy-efficient design into future campus infrastructure.",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Monitoring and Expected Outcomes"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University will continue to monitor electricity consumption, renewable energy generation, and the performance of energy-efficient systems through periodic reviews. The effectiveness of energy conservation initiatives will be evaluated using indicators such as electricity consumption trends, renewable energy generation, operational cost savings, and reduced dependence on conventional grid electricity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these initiatives, Kalinga University aims to continuously improve campus energy efficiency, expand the use of renewable energy, reduce greenhouse gas emissions, and strengthen its contribution towards SDG 7: Affordable and Clean Energy, while creating a sustainable learning environment for future generations."
+        },
+        {
+          "type": "heading",
+          "text": "7.2.5 Energy Wastage Identification",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Energy Wastage Identification and Mitigation at Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University follows a systematic approach to identify areas of unnecessary energy consumption and implement corrective measures that improve overall energy efficiency across the campus. The University recognizes that minimizing energy wastage is essential for reducing operational costs, conserving natural resources, and achieving the objectives of Sustainable Development Goal 7 (Affordable and Clean Energy)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Objectives"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's energy wastage identification programme aims to:"
+        },
+        {
+          "type": "listItem",
+          "text": "Identify major sources of unnecessary electricity consumption."
+        },
+        {
+          "type": "listItem",
+          "text": "Improve the efficiency of campus infrastructure and electrical systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Promote responsible energy use among students, faculty, and staff."
+        },
+        {
+          "type": "listItem",
+          "text": "Reduce operational costs through energy conservation."
+        },
+        {
+          "type": "listItem",
+          "text": "Support continuous improvement in sustainable campus management."
+        },
+        {
+          "type": "paragraph",
+          "text": "Methodology"
+        },
+        {
+          "type": "paragraph",
+          "text": "Energy wastage is identified through a combination of:"
+        },
+        {
+          "type": "listItem",
+          "text": "Periodic monitoring of campus electricity consumption."
+        },
+        {
+          "type": "listItem",
+          "text": "Inspection of lighting systems, electrical equipment, and renewable energy installations."
+        },
+        {
+          "type": "listItem",
+          "text": "Regular maintenance of electrical infrastructure."
+        },
+        {
+          "type": "listItem",
+          "text": "Observation of operational practices across academic, residential, and administrative facilities."
+        },
+        {
+          "type": "listItem",
+          "text": "Feedback from departments, facility management personnel, and campus users regarding energy consumption patterns."
+        },
+        {
+          "type": "paragraph",
+          "text": "Key Areas of Energy Wastage and Corrective Measures"
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Lighting Systems"
+        },
+        {
+          "type": "paragraph",
+          "text": "Identified Issues"
+        },
+        {
+          "type": "listItem",
+          "text": "Unnecessary operation of lights in unoccupied areas."
+        },
+        {
+          "type": "listItem",
+          "text": "Use of conventional lighting in selected locations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Corrective Measures"
+        },
+        {
+          "type": "listItem",
+          "text": "Installation of sensor-based LED lighting systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Replacement of conventional lighting with energy-efficient LED fixtures."
+        },
+        {
+          "type": "listItem",
+          "text": "Promotion of responsible lighting practices across campus."
+        },
+        {
+          "type": "paragraph",
+          "text": "2. Electrical Equipment"
+        },
+        {
+          "type": "paragraph",
+          "text": "Identified Issues"
+        },
+        {
+          "type": "listItem",
+          "text": "Idle operation of computers and electrical appliances."
+        },
+        {
+          "type": "listItem",
+          "text": "Use of outdated equipment with higher power consumption."
+        },
+        {
+          "type": "paragraph",
+          "text": "Corrective Measures"
+        },
+        {
+          "type": "listItem",
+          "text": "Procurement of energy-efficient electrical equipment."
+        },
+        {
+          "type": "listItem",
+          "text": "Regular maintenance of electrical appliances."
+        },
+        {
+          "type": "listItem",
+          "text": "Encouraging users to switch off equipment when not in use."
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Renewable Energy Systems"
+        },
+        {
+          "type": "paragraph",
+          "text": "Identified Issues"
+        },
+        {
+          "type": "listItem",
+          "text": "Performance loss due to dust accumulation and routine wear."
+        },
+        {
+          "type": "paragraph",
+          "text": "Corrective Measures"
+        },
+        {
+          "type": "listItem",
+          "text": "Periodic maintenance and cleaning of the 300 kWp Solar Power Plant."
+        },
+        {
+          "type": "listItem",
+          "text": "Continuous monitoring of renewable electricity generation."
+        },
+        {
+          "type": "listItem",
+          "text": "Performance optimization through regular inspections."
+        },
+        {
+          "type": "paragraph",
+          "text": "4. Laboratory and Academic Facilities"
+        },
+        {
+          "type": "paragraph",
+          "text": "Identified Issues"
+        },
+        {
+          "type": "listItem",
+          "text": "Continuous operation of laboratory equipment beyond operational requirements."
+        },
+        {
+          "type": "paragraph",
+          "text": "Corrective Measures"
+        },
+        {
+          "type": "listItem",
+          "text": "Scheduled use of laboratory equipment."
+        },
+        {
+          "type": "listItem",
+          "text": "Proper shutdown procedures after laboratory sessions."
+        },
+        {
+          "type": "listItem",
+          "text": "Awareness among laboratory staff regarding energy conservation."
+        },
+        {
+          "type": "paragraph",
+          "text": "5. Campus Utilities"
+        },
+        {
+          "type": "paragraph",
+          "text": "Identified Issues"
+        },
+        {
+          "type": "listItem",
+          "text": "Energy consumption associated with water pumping and common utility services."
+        },
+        {
+          "type": "paragraph",
+          "text": "Corrective Measures"
+        },
+        {
+          "type": "listItem",
+          "text": "Preventive maintenance of pumping systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Efficient scheduling of utility operations."
+        },
+        {
+          "type": "listItem",
+          "text": "Promotion of water conservation practices to reduce energy demand."
+        },
+        {
+          "type": "paragraph",
+          "text": "6. Behavioural Energy Conservation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University recognizes that behavioural changes significantly contribute to reducing energy consumption. The University regularly conducts:"
+        },
+        {
+          "type": "listItem",
+          "text": "National Energy Conservation Day celebrations."
+        },
+        {
+          "type": "listItem",
+          "text": "Renewable energy awareness campaigns."
+        },
+        {
+          "type": "listItem",
+          "text": "Workshops, seminars, and guest lectures."
+        },
+        {
+          "type": "listItem",
+          "text": "Poster competitions and student projects."
+        },
+        {
+          "type": "listItem",
+          "text": "Faculty and student engagement programmes on sustainable energy practices."
+        },
+        {
+          "type": "paragraph",
+          "text": "These initiatives encourage the campus community to adopt simple yet effective energy-saving habits, including switching off unused lights and equipment, minimizing unnecessary electricity consumption, and promoting responsible use of renewable energy resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "Continuous Improvement"
+        },
+        {
+          "type": "paragraph",
+          "text": "The University continuously reviews its energy conservation practices and upgrades infrastructure wherever feasible. Future initiatives include expanding smart energy monitoring systems, increasing renewable energy capacity, introducing automated energy management technologies, and strengthening campus-wide awareness programmes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through regular identification of energy wastage, implementation of corrective measures, and active participation of the University community, Kalinga University continues to improve its energy efficiency and reinforce its commitment to sustainable campus development under SDG 7: Affordable and Clean Energy."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/835d622adf538432.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/1a8507c20e53d580.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/eb68fe2c1f7245ba.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/fc84bd770a040434.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/5a5af87c808d651b.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/81b3027faee66293.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/a32a54acd538cd6b.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/e56e21b749925331.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/061f1c2f44a860d4.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/54e22446a8984fef.jpeg",
+          "alt": "SDG 7: 7.2.5 Energy Wastage Identification - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "7.2.6 Divestment Policy",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/2bc785684bd90dfe.png",
+          "alt": "SDG 7: 7.2.6 Divestment Policy - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sustainable Investment and Clean Energy Commitment"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to promoting environmental sustainability by prioritizing investments in renewable energy infrastructure, energy-efficient technologies, and sustainable campus development. While the University's primary focus is on expanding clean energy adoption rather than investing in carbon-intensive infrastructure, its sustainability initiatives reflect a long-term commitment to reducing dependence on conventional energy sources and promoting responsible resource utilization."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University has invested in a 300 kWp Solar Power Plant, which serves as a major source of renewable electricity for campus operations. Continuous improvements in energy-efficient infrastructure, including the installation of sensor-based LED lighting systems and a biogas plant for renewable energy generation from biodegradable waste, further demonstrate the University's commitment to sustainable development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Future infrastructure development and campus modernization initiatives continue to emphasize renewable energy technologies, energy-efficient equipment, and environmentally responsible practices. Through these measures, Kalinga University aligns its institutional development with the objectives of SDG 7: Affordable and Clean Energy, supporting India's transition towards a cleaner and more sustainable energy future."
+        }
+      ]
+    },
+    {
+      "title": "7.3 Energy Use Density (Energy Performance Index)",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, regularly monitors renewable energy generation and campus energy performance to improve operational efficiency and promote sustainable energy utilisation. The University has a total built-up area of approximately 829,921 sq. ft. (77,102 m²) and operates a 300 kWp Solar Power Plant to support its renewable energy requirements."
+        },
+        {
+          "type": "paragraph",
+          "text": "During the 2024–25 reporting period, the solar power plant generated 93,936.10 kWh of renewable electricity, equivalent to 338.17 Gigajoules (GJ)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Calculation of Renewable Energy Generation Density"
+        },
+        {
+          "type": "paragraph",
+          "text": "Annual Renewable Electricity Generated (2024–25) = 93,936.10 kWh"
+        },
+        {
+          "type": "paragraph",
+          "text": "Total Built-up Area = 77,102 m²"
+        },
+        {
+          "type": "paragraph",
+          "text": "Renewable Energy Generation Density = Annual Renewable Electricity Generated ÷ Total Built-up Area"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 93,936.10 ÷ 77,102"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 1.22 kWh/m²/year"
+        },
+        {
+          "type": "paragraph",
+          "text": "Conversion into Gigajoules (GJ):"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 338.17 ÷ 77,102"
+        },
+        {
+          "type": "paragraph",
+          "text": "= 0.00439 GJ/m²/year"
+        },
+        {
+          "type": "paragraph",
+          "text": "The renewable energy generation density of 1.22 kWh/m²/year (0.00439 GJ/m²/year) reflects the University's solar electricity generation relative to its built-up campus area. Through renewable energy utilisation, energy-efficient infrastructure, and regular monitoring of electricity generation, Kalinga University continues to strengthen sustainable campus operations and reduce its dependence on conventional energy sources."
+        }
+      ]
+    },
+    {
+      "title": "7.4 Energy and the Community",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "7.4.1 Community Outreach for Energy Efficiency",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively promotes awareness of renewable energy, energy conservation, and sustainable development among students, faculty, school students, and the wider community. The University regularly organizes National Energy Conservation Day, renewable energy awareness programmes, workshops, seminars, guest lectures, technical exhibitions, poster competitions, and outreach activities to encourage responsible energy consumption and environmental stewardship."
+        },
+        {
+          "type": "paragraph",
+          "text": "As part of its commitment to green skill development, the University conducts a Free Solar PV Installation Helper Training Programme (NSQF Level 4) under the Green Jobs Sector. The programme equips participants with practical knowledge and technical skills in solar photovoltaic installation and maintenance, creating employment opportunities while promoting wider adoption of renewable energy technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "These initiatives contribute to increasing public awareness of clean energy solutions and support India's transition towards sustainable and affordable energy."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/8777fffcaa53bf1d.jpeg",
+          "alt": "SDG 7: 7.4.1 Community Outreach for Energy Efficiency - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/5d618f82505ffc34.jpeg",
+          "alt": "SDG 7: 7.4.1 Community Outreach for Energy Efficiency - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "7.4.2 Promotion of Renewable Energy",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively promotes the adoption of renewable energy through campus infrastructure, academic programmes, research activities, and community engagement initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University's renewable energy initiatives include:"
+        },
+        {
+          "type": "listItem",
+          "text": "Installation of a 300 kWp Solar Power Plant."
+        },
+        {
+          "type": "listItem",
+          "text": "Operation of a campus biogas plant."
+        },
+        {
+          "type": "listItem",
+          "text": "Renewable energy awareness campaigns."
+        },
+        {
+          "type": "listItem",
+          "text": "National Energy Conservation Day celebrations."
+        },
+        {
+          "type": "listItem",
+          "text": "Solar PV skill development programmes."
+        },
+        {
+          "type": "listItem",
+          "text": "Student projects on renewable energy technologies."
+        },
+        {
+          "type": "listItem",
+          "text": "Faculty research on solar photovoltaic systems, hybrid renewable energy systems, and smart energy management."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these initiatives, the University encourages students and the wider community to adopt sustainable energy practices and contributes towards India's renewable energy goals."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/58d856cf6d1bf32e.jpeg",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/6500f78dafe5aa97.jpeg",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/133897e28ce01359.jpeg",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/c33b63a61919e61f.jpeg",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Certificates:"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/32c99e26dc8aeba8.png",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/1a9e1f9b72e53697.png",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Certificates : Certified Trainers"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/c8949f928080ffa7.png",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/0aea9fb8a7296a9f.png",
+          "alt": "SDG 7: 7.4.2 Promotion of Renewable Energy - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Participant’s Certificate for Skill Competency"
+        },
+        {
+          "type": "heading",
+          "text": "7.4.3 Energy Efficiency Services for Industry",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University contributes to capacity building in renewable energy by offering training programmes, academic research, and technical education in clean energy technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Solar PV Installation Helper Training Programme (NSQF Level 4) prepares participants with practical skills required by the renewable energy industry, thereby supporting the development of a skilled workforce for solar energy installation and maintenance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Faculty members and students also undertake research and innovation projects related to renewable energy technologies, smart energy management, and solar photovoltaic performance, creating opportunities for future academic-industry collaboration in sustainable energy solutions."
+        },
+        {
+          "type": "heading",
+          "text": "7.4.4 Policy Development for Clean Energy Technology",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-7/e7ecacd2e3122186.png",
+          "alt": "SDG 7: 7.4.4 Policy Development for Clean Energy Technology - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University promotes the development and adoption of clean energy technologies through academic research, innovation, training programmes, and institutional sustainability initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "Research undertaken by faculty members and students focuses on:"
+        },
+        {
+          "type": "listItem",
+          "text": "Solar photovoltaic performance improvement."
+        },
+        {
+          "type": "listItem",
+          "text": "Hybrid renewable energy systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Smart energy management."
+        },
+        {
+          "type": "listItem",
+          "text": "Sustainable energy technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University integrates these activities with awareness programmes, technical exhibitions, and skill development initiatives, encouraging wider adoption of renewable energy technologies within society."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these efforts, Kalinga University contributes to knowledge generation and supports national priorities for clean and sustainable energy development."
+        },
+        {
+          "type": "heading",
+          "text": "7.4.5 Assistance to Low-Carbon Innovation",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University encourages innovation and research in renewable energy and sustainable technologies through interdisciplinary research projects, student innovation activities, technical exhibitions, and project-based learning."
+        },
+        {
+          "type": "paragraph",
+          "text": "Faculty members and students actively work on:"
+        },
+        {
+          "type": "listItem",
+          "text": "Solar photovoltaic efficiency enhancement."
+        },
+        {
+          "type": "listItem",
+          "text": "Hybrid renewable energy systems."
+        },
+        {
+          "type": "listItem",
+          "text": "Smart energy management."
+        },
+        {
+          "type": "listItem",
+          "text": "Green technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "The University also promotes entrepreneurship and employability in the renewable energy sector through its Solar PV skill development programme, creating opportunities for future innovation in low-carbon technologies."
+        }
+      ]
+    },
+    {
+      "title": "7.5 Low-Carbon Energy Use",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "7.5.1 Low-Carbon Energy Use",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University, Raipur, promotes the utilisation of low-carbon energy sources to reduce dependence on conventional electricity and support sustainable campus operations. The University's renewable energy infrastructure includes a 300 kWp Solar Power Plant and a biogas plant, contributing to clean energy generation, sustainable waste management, and greenhouse gas emission reduction."
+        },
+        {
+          "type": "paragraph",
+          "text": "During the 2024–25 reporting period, the University's solar power plant generated 93,936.10 kWh of renewable electricity, equivalent to 338.17 Gigajoules (GJ). This renewable energy generation helps reduce dependence on grid-supplied electricity and supports the University's efforts towards environmentally responsible energy consumption."
+        },
+        {
+          "type": "paragraph",
+          "text": "Renewable Energy Generation (2024–25)"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Energy Source",
+            "Energy Generated (kWh)",
+            "Energy Generated (GJ)"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Solar Power Plant (300 kWp)",
+                "colSpan": 1
+              },
+              {
+                "text": "93,936.10",
+                "colSpan": 1
+              },
+              {
+                "text": "338.17",
+                "colSpan": 1
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition to solar electricity generation, the University operates a biogas plant that converts biodegradable organic waste into renewable fuel, supporting sustainable waste utilisation and alternative energy production. The University also promotes energy conservation through sensor-based LED lighting, energy-efficient electrical systems, and awareness initiatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "Through these measures, Kalinga University continues to strengthen its low-carbon energy practices, improve renewable energy utilisation, and support environmentally sustainable campus operations."
+        }
+      ]
+    }
+  ]
+}

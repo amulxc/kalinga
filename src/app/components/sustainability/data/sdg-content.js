@@ -384,10 +384,17 @@ export const SDG_GOAL_REPORTS = {
     2: "/sustainability/sdg-2",
     3: "/sustainability/sdg-3",
     4: "/sustainability/sdg-4",
+    5: "/sustainability/sdg-5",
     6: "/sustainability/sdg-6",
+    7: "/sustainability/sdg-7",
     8: "/sustainability/sdg-8",
     9: "/sustainability/sdg-9",
+    10: "/sustainability/sdg-10",
+    11: "/sustainability/sdg-11",
+    12: "/sustainability/sdg-12",
     13: "/sustainability/sdg-13",
+    14: "/sustainability/sdg-14",
+    15: "/sustainability/sdg-15",
     17: "/sustainability/sdg-17",
 };
 

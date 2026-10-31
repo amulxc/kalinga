@@ -745,16 +745,34 @@ export const pageDataMap: Record<string, PageData> = {
         breadcrumbLabel: "SDG 2 Report",
         banner: "/banners/sustainability-banner.webp",
     },
+    "/sustainability/sdg-3": {
+        slug: "/sustainability/sdg-3",
+        title: "SDG 3: Good Health and Well-Being Report",
+        breadcrumbLabel: "SDG 3 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
     "/sustainability/sdg-4": {
         slug: "/sustainability/sdg-4",
         title: "SDG 4: Quality Education Report",
         breadcrumbLabel: "SDG 4 Report",
         banner: "/banners/sustainability-banner.webp",
     },
+    "/sustainability/sdg-5": {
+        slug: "/sustainability/sdg-5",
+        title: "SDG 5: Gender Equality Report",
+        breadcrumbLabel: "SDG 5 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
     "/sustainability/sdg-6": {
         slug: "/sustainability/sdg-6",
         title: "SDG 6: Clean Water and Sanitation Report",
         breadcrumbLabel: "SDG 6 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-7": {
+        slug: "/sustainability/sdg-7",
+        title: "SDG 7: Affordable and Clean Energy Report",
+        breadcrumbLabel: "SDG 7 Report",
         banner: "/banners/sustainability-banner.webp",
     },
     "/sustainability/sdg-8": {
@@ -769,10 +787,40 @@ export const pageDataMap: Record<string, PageData> = {
         breadcrumbLabel: "SDG 9 Report",
         banner: "/banners/sustainability-banner.webp",
     },
+    "/sustainability/sdg-10": {
+        slug: "/sustainability/sdg-10",
+        title: "SDG 10: Reduced Inequalities Report",
+        breadcrumbLabel: "SDG 10 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-11": {
+        slug: "/sustainability/sdg-11",
+        title: "SDG 11: Sustainable Cities and Communities Report",
+        breadcrumbLabel: "SDG 11 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-12": {
+        slug: "/sustainability/sdg-12",
+        title: "SDG 12: Responsible Consumption and Production Report",
+        breadcrumbLabel: "SDG 12 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
     "/sustainability/sdg-13": {
         slug: "/sustainability/sdg-13",
         title: "SDG 13: Climate Action Report",
         breadcrumbLabel: "SDG 13 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-14": {
+        slug: "/sustainability/sdg-14",
+        title: "SDG 14: Life Below Water Report",
+        breadcrumbLabel: "SDG 14 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-15": {
+        slug: "/sustainability/sdg-15",
+        title: "SDG 15: Life on Land Report",
+        breadcrumbLabel: "SDG 15 Report",
         banner: "/banners/sustainability-banner.webp",
     },
     "/sustainability/sdg-17": {

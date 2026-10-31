@@ -1,0 +1,1421 @@
+{
+  "number": 15,
+  "title": "Life on Land",
+  "sourceUrl": "https://drive.google.com/file/d/1Hw7i7-TQkDR6k4tSXXmg3RmisMoSDzrI/view",
+  "sourceDate": "30 October 2026",
+  "dashboard": [
+    {
+      "label": "SDG 15-Related Publications (2024-25)",
+      "value": "91"
+    },
+    {
+      "label": "SDG 15-Related Publications (Cumulative)",
+      "value": "211"
+    },
+    {
+      "label": "Field-Weighted Citation Impact (FWCI)",
+      "value": "0.2"
+    },
+    {
+      "label": "Citation Count",
+      "value": "215"
+    },
+    {
+      "label": "No. of Events",
+      "value": "4"
+    }
+  ],
+  "intro": [
+    {
+      "type": "image",
+      "src": "/sdg-reports/sdg-15/628c09f91dd6f7d4.png",
+      "alt": "SDG 15: Life on Land - report evidence"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sustainable Development Goal (SDG) 15: Life on Land focuses on protecting, restoring and promoting the sustainable use of terrestrial ecosystems while ensuring the conservation of biodiversity for present and future generations. As biodiversity loss, land degradation, deforestation and ecosystem degradation continue to pose significant global environmental challenges, universities have a vital responsibility as stewards of their natural environment. Through education, research, innovation, institutional policies and community engagement, higher education institutions can contribute to sustainable land management, biodiversity conservation, ecological restoration and the responsible use of natural resources."
+    },
+    {
+      "type": "paragraph",
+      "text": "At Kalinga University, SDG 15 is reflected through initiatives that promote environmental education, biodiversity conservation, sustainable campus management, research on terrestrial ecosystems and outreach programmes that encourage responsible stewardship of land resources. These efforts demonstrate the University's commitment to supporting global sustainability goals while creating positive environmental and societal impacts at the local, regional and national levels."
+    },
+    {
+      "type": "paragraph",
+      "text": "SDG 15: Life on Land is closely interconnected with several other Sustainable Development Goals, highlighting the integrated nature of sustainable development. The conservation and restoration of terrestrial ecosystems contribute significantly to Climate Action (SDG 13) by enhancing carbon sequestration, increasing ecosystem resilience and supporting climate adaptation strategies. Sustainable management of forests, biodiversity and natural habitats complements Life Below Water (SDG 14) by maintaining healthy watersheds, reducing land-based pollution and protecting aquatic ecosystems."
+    },
+    {
+      "type": "paragraph",
+      "text": "Healthy terrestrial ecosystems also support Zero Hunger (SDG 2) by promoting sustainable agriculture, improving soil fertility, conserving pollinators and strengthening food security. Biodiversity conservation and sustainable land management contribute to No Poverty (SDG 1) by sustaining rural livelihoods and ecosystem-based economic opportunities. Furthermore, the availability of Clean Water and Sanitation (SDG 6) depends on well-managed forests, wetlands and watersheds while the responsible adoption of renewable energy and resource-efficient practices under Affordable and Clean Energy (SDG 7) helps reduce pressure on land resources and ecosystems."
+    },
+    {
+      "type": "paragraph",
+      "text": "At Kalinga University, these interconnections are reflected through interdisciplinary education, sustainability-focused research, environmental conservation initiatives, community outreach programmes and institutional policies that collectively contribute to multiple Sustainable Development Goals while advancing the University's commitment to environmental stewardship and sustainable development."
+    }
+  ],
+  "sections": [
+    {
+      "title": "15.1 Research on Land Ecosystems",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively promotes interdisciplinary research that contributes to the conservation, restoration, and sustainable management of terrestrial ecosystems. Research undertaken by the University addresses key themes including biodiversity conservation, sustainable agriculture, forestry, land restoration, environmental sustainability, soil health, ecosystem management and climate resilience. Through high-quality scholarly publications, the University contributes to scientific knowledge that supports the objectives of Sustainable Development Goal 15: Life on Land."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Category",
+            "No. of Publications",
+            "Published from the Faculty/Departments"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Environmental Sustainability"
+              },
+              {
+                "text": "259"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Sustainable Agriculture"
+              },
+              {
+                "text": "142"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Plant Sciences"
+              },
+              {
+                "text": "131"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Geospatial Applications (GIS & Remote Sensing)"
+              },
+              {
+                "text": "73"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Land Management & Land Resources"
+              },
+              {
+                "text": "60"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Soil Health & Soil Science"
+              },
+              {
+                "text": "46"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Ecology & Ecosystem Studies"
+              },
+              {
+                "text": "41"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Forestry"
+              },
+              {
+                "text": "36"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Biodiversity Conservation"
+              },
+              {
+                "text": "36"
+              },
+              {
+                "text": "0"
+              }
+            ],
+            [
+              {
+                "text": "Water Resources & Watershed Management"
+              },
+              {
+                "text": "22"
+              },
+              {
+                "text": "0"
+              }
+            ]
+          ],
+          "caption": "Major Research Areas Aligned with SDG 15"
+        },
+        {
+          "type": "heading",
+          "text": "15.1.1 Life on Land: Cite Score",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "An assessment of Kalinga University's research publications aligned with Sustainable Development Goal 15 (SDG 15: Life on Land) was undertaken using the University's Scopus publication dataset. According to the SDG 15 dashboard data, the University recorded 211 SDG 15-related publications, with a total of 215 citations and a Field-Weighted Citation Impact (FWCI) of 0.2. These publications contribute to research related to biodiversity conservation, environmental management, agriculture, forestry, ecology, and sustainable development."
+        },
+        {
+          "type": "paragraph",
+          "text": "In accordance with the SDG 15.1.1 methodology, publications appearing in journals ranked within the top 10% according to CiteScore percentile were identified based on verified CiteScore rankings. Of the 211 publications assessed, 2 were published in journals positioned within the top 10% of their respective Scopus subject categories. This represents 1.45% of the publications, indicating the proportion of SDG 15-related scholarly output published in journals within this CiteScore percentile range."
+        },
+        {
+          "type": "paragraph",
+          "text": "In addition to its research output, Kalinga University reported 4 SDG 15-related events, reflecting its activities associated with the Life on Land goal. Together, these indicators provide an overview of the University's research publications, citation impact, publication placement, and related activities supporting biodiversity conservation and sustainable land management."
+        },
+        {
+          "type": "heading",
+          "text": "15.1.2 Life on Land: FWCI",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "The Field-Weighted Citation Impact (FWCI) of approximately 0.2 indicates that Kalinga University's SDG 15-related publications receive around 1.8 times the citations expected globally for similar publications, considering differences in publication year, document type and subject area."
+        },
+        {
+          "type": "paragraph",
+          "text": "This FWCI reflects the growing academic visibility and influence of the University's research in biodiversity conservation, sustainable land management, environmental sciences, agriculture, ecology and related interdisciplinary fields. The citation impact demonstrates Kalinga University's contribution to knowledge generation and research addressing contemporary environmental challenges under SDG 15: Life on Land."
+        },
+        {
+          "type": "heading",
+          "text": "15.1.3 Life on Land: Publications",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University actively promotes research addressing SDG 15: Life on Land, covering terrestrial ecosystems, biodiversity, sustainable land management and environmentally responsible resource use. Based on the University's SDG 15-aligned research publication database, a total of 211 publications were identified as contributing to the objectives of SDG 15."
+        },
+        {
+          "type": "paragraph",
+          "text": "These publications cover diverse areas including:"
+        },
+        {
+          "type": "listItem",
+          "text": "Biodiversity conservation and ecosystem management"
+        },
+        {
+          "type": "listItem",
+          "text": "Sustainable agriculture and crop improvement"
+        },
+        {
+          "type": "listItem",
+          "text": "Soil and land resource management"
+        },
+        {
+          "type": "listItem",
+          "text": "Environmental pollution and remediation"
+        },
+        {
+          "type": "listItem",
+          "text": "Ecological restoration"
+        },
+        {
+          "type": "listItem",
+          "text": "Climate impacts on terrestrial ecosystems"
+        },
+        {
+          "type": "listItem",
+          "text": "Remote sensing and GIS-based land-use studies"
+        },
+        {
+          "type": "listItem",
+          "text": "Sustainable natural resource management"
+        },
+        {
+          "type": "listItem",
+          "text": "Land-sensitive waste and environmental management"
+        },
+        {
+          "type": "paragraph",
+          "text": "The 211 SDG 15-related publications demonstrate the scale and multidisciplinary nature of Kalinga University's research contribution towards conservation of terrestrial ecosystems, sustainable resource management and protection of biodiversity."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Category",
+            "Research Paper: Count",
+            "Column1",
+            "Column2"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2021"
+              },
+              {
+                "text": "4"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2022"
+              },
+              {
+                "text": "14"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2023"
+              },
+              {
+                "text": "33"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2024"
+              },
+              {
+                "text": "28"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2025"
+              },
+              {
+                "text": "63"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            [
+              {
+                "text": "2026"
+              },
+              {
+                "text": "69"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ]
+          ],
+          "caption": "Year-wise Research Papers"
+        }
+      ]
+    },
+    {
+      "title": "15.2 Supporting Land Ecosystems through Education",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "15.2.1 Events about Sustainable Use of Land",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Event – Nature Camp for Forest Biodiversity and Wildlife Conservation under World Wildlife Week"
+        },
+        {
+          "type": "paragraph",
+          "text": "Location: Keshkal Forest Division and Tatamari Eco-Tourism Resort, Keshkal, Chhattisgarh"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date of the Event: 5–6 October"
+        },
+        {
+          "type": "paragraph",
+          "text": "No. of Participants: 29 students and 5 faculty/non-teaching staff; 34 participants in total."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Objective: To promote awareness and practical understanding of forest ecosystems, terrestrial biodiversity and wildlife conservation. The programme aimed to familiarize students with forest resources, including native plants and medicinal herbs, develop biodiversity assessment skills and strengthen understanding of the importance of conserving natural forest habitats."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Description: The Department of Zoology and Green Club, Kalinga University, in collaboration with Keshkal Forest Division, organized a two-day field-based nature camp focused on forest biodiversity and terrestrial ecosystem conservation. Expert sessions covered biodiversity assessment, ecological monitoring and forest conservation strategies, with emphasis on sustainable practices and protection of natural habitats. A student-led cleaning drive was also conducted at Gobrahin Shiva Mandir, Keshkal, where more than 35 kg of waste was collected to reduce pollution impacts on the surrounding forest and wildlife habitat."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Outcome: The programme strengthened students' practical knowledge of forest biodiversity assessment, terrestrial ecosystem monitoring and wildlife conservation. Participants also interacted with forest officials to understand ongoing challenges and conservation measures for protecting green habitats and forest resources."
+        },
+        {
+          "type": "paragraph",
+          "text": "Coordinator(s): Department of Zoology, Kalinga University."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/54d5cd444343b086.png",
+          "alt": "SDG 15: 15.2.1 Events about Sustainable Use of Land - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Photos of the Event`"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/98bb2463fb7edeae.png",
+          "alt": "SDG 15: 15.2.1 Events about Sustainable Use of Land - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Event - International Conference on Emerging Technologies for Sustainable Innovation, Management, and Development (ICETSIMD 2025)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Location: Auditorium and MBFF-20, Kalinga University (Hybrid Mode)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date of the Event: 27–28 March 2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "No. of Participants: 314 registered participants and 97 attendees including researchers, academicians, industry professionals, research scholars and students"
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Objective: To provide an international platform for researchers, academicians, practitioners, industry experts, engineers, research scholars and students to exchange knowledge and present innovations in emerging technologies for sustainable innovation, management and development. The conference aimed to foster interdisciplinary collaboration, promote research on sustainable technological solutions, encourage capacity building and explore the role of emerging technologies in addressing global challenges related to sustainability, innovation and socio-economic development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Description: The Faculty of Computer Science and Information Technology in association with the IPR Cell organized the two-day International Conference on Emerging Technologies for Sustainable Innovation, Management and Development (ICETSIMD 2025) in hybrid mode. The conference brought together experts from academia, industry and research organizations to discuss recent advancements in emerging technologies and their applications in sustainable development. The programme featured keynote lectures, technical paper presentations, interactive discussions and networking sessions covering topics such as artificial intelligence, the Internet of Things (IoT), renewable energy, innovation management and sustainable development. The conference facilitated knowledge exchange, promoted collaborative research, encouraged technology-driven solutions for sustainability and enhanced participants' understanding of emerging technologies and their practical applications in addressing global environmental, economic and societal challenges."
+        },
+        {
+          "type": "paragraph",
+          "text": "Coordinator(s): Dr. Omprakash Dewangan, Head, Faculty of Computer Science and Information Technology, Organizing Secretary, ICETSIMD 2025."
+        },
+        {
+          "type": "paragraph",
+          "text": "Brochure of the International ConferencePress Release of the International Conference"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/b1a4978cd2707f73.png",
+          "alt": "SDG 15: 15.2.1 Events about Sustainable Use of Land - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/902692f7a5730a11.png",
+          "alt": "SDG 15: 15.2.1 Events about Sustainable Use of Land - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "15.2.2 Sustainably farmed food on campus",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/d06aaedbda6a65e8.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/52d5ff726ceb6f05.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/8bd3ce031fb83c1c.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/81d9f31f61606c2e.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/afbfa05424bb8ba6.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/824713b8354655ac.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/5cb803a7a9aec53f.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/4404abc660d8c256.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/cd9dc385f530946b.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tree Plantation in the Campus"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/96e469905afcf6c8.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Green House Set Up in the Campus"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/1d38f2abbd5dabb7.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/6f251b169bad8c6b.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/38bdc8d22e30d035.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/808335970aef2d12.png",
+          "alt": "SDG 15: 15.2.2 Sustainably farmed food on campus - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Vermicompost Unit in the CampusOrganic Farm in the Campus"
+        },
+        {
+          "type": "heading",
+          "text": "15.2.3 Maintain and extend current ecosystems’ biodiversity",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/4ec05919cbd89b5c.jpg",
+          "alt": "SDG 15: 15.2.3 Maintain and extend current ecosystems’ biodiversity - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University campus supports a rich and diverse assemblage of plant species, reflecting"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/3cad4784f1dd783a.jpg",
+          "alt": "SDG 15: 15.2.3 Maintain and extend current ecosystems’ biodiversity - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "A survey of the campus vegetation recorded 104 plant species belonging to a wide range of families, growth forms, and ecological categories."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/5adc66b37cadaf60.png",
+          "alt": "SDG 15: 15.2.3 Maintain and extend current ecosystems’ biodiversity - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "The campus flora comprises trees, shrubs, herbs, climbers, lianas, gymnosperms and ornamental plants representing families such as Fabaceae, Apocynaceae, Asteraceae, Rutaceae, Euphorbiaceae, Moraceae, Myrtaceae, Poaceae and Cactaceae. The diversity includes both native species, such as Neem (Azadirachta indica), Peepal (Ficus religiosa), Banyan relatives (Ficus racemosa), Jamun (Syzygium cumini), Ashoka (Saraca asoca) and Tulsi (Ocimum sanctum) as well as several exotic ornamental and horticultural species."
+        },
+        {
+          "type": "paragraph",
+          "text": "Many of the species present on campus possess significant medicinal, ecological and economic value. Medicinal plants such as Aloe vera (Aloe vera), Brahmi (Bacopa monnieri), Giloy (Tinospora cordifolia), Adusa (Justicia adhatoda), Chiraita (Andrographis paniculata) and Satavar (Asparagus racemosus) contribute to the conservation of traditional herbal resources. Fruit-bearing species including Mango (Mangifera indica), Guava (Psidium guajava), Papaya (Carica papaya), Lemon (Citrus limon) and Coconut (Cocos nucifera) further enrich the campus ecosystem."
+        },
+        {
+          "type": "paragraph",
+          "text": "The presence of numerous flowering and ornamental species such as Gulmohar (Delonix regia), Allamanda (Allamanda cathartica), Bougainvillea (Bougainvillea glabra), Hibiscus (Hibiscus rosa-sinensis) and Marigold (Tagetes erecta) enhance the aesthetic value of the campus while supporting pollinators like butterflies, bees and birds. Additionally, bamboo species, palms, cacti and climbers contribute to habitat heterogeneity and ecological resilience."
+        },
+        {
+          "type": "paragraph",
+          "text": "The mixture of native and exotic species promotes biodiversity while providing ecological services such as carbon sequestration, air purification, soil conservation, microclimate regulation and habitat support for urban wildlife. The campus therefore serves as an important green space for environmental education, biodiversity conservation and sustainable campus development."
+        },
+        {
+          "type": "paragraph",
+          "text": "Photos"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/0c916e7fc5c6fc4b.png",
+          "alt": "SDG 15: 15.2.3 Maintain and extend current ecosystems’ biodiversity - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/7e0a36492008d448.jpeg",
+          "alt": "SDG 15: 15.2.3 Maintain and extend current ecosystems’ biodiversity - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Animal Diversity in the Campus"
+        },
+        {
+          "type": "heading",
+          "text": "15.2.4 Educational programmes on ecosystems",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Name of the Event: Educational Field Visit to Mohrenga Forest Trail (Indira Priyadarshini Nature Safari)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date of the Event: 1 October 2024"
+        },
+        {
+          "type": "paragraph",
+          "text": "Location: Mohrenga Forest Trail, Indira Priyadarshini Nature Safari, Raipur District, Chhattisgarh"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Department: Department of Botany and Microbiology, Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Coordinators: Faculty Members, Department of Botany and Microbiology, Kalinga University"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Students: 32"
+        },
+        {
+          "type": "paragraph",
+          "text": "Faculty Members and Laboratory Staff: 08"
+        },
+        {
+          "type": "paragraph",
+          "text": "Total Participants: 40"
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Objectives:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The field visit was organized with the following objectives:"
+        },
+        {
+          "type": "listItem",
+          "text": "To provide hands-on experience in assessing forest vegetation and biodiversity."
+        },
+        {
+          "type": "listItem",
+          "text": "To train students in field botany sampling techniques and species identification using taxonomic keys."
+        },
+        {
+          "type": "listItem",
+          "text": "To enhance understanding of forest ecosystems, plant community structure and ecological relationships."
+        },
+        {
+          "type": "listItem",
+          "text": "To enable microbiology students to collect and study fungal and bacterial samples from natural habitats."
+        },
+        {
+          "type": "listItem",
+          "text": "To promote awareness of biodiversity conservation, sustainable ecosystem management and environmental stewardship."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Description:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Department of Botany and Microbiology organized an educational field visit to the Mohrenga Forest Trail at Indira Priyadarshini Nature Safari on 1 October 2024. Spread over approximately 555 hectares, the Nature Safari is one of the prominent biodiversity-rich areas of Chhattisgarh, supporting diverse flora, fauna, bamboo groves and medicinal plant species."
+        },
+        {
+          "type": "paragraph",
+          "text": "The visit was designed as a practical learning exercise to complement classroom teaching through direct exposure to natural ecosystems. During the field excursion, Botany students conducted assessments of forest vegetation by identifying plant species with the help of field guides and taxonomic keys. They studied plant community structures, canopy layers, dominant species composition and understory vegetation. Students also recorded ecological data such as tree height, girth, canopy spread and ground flora characteristics."
+        },
+        {
+          "type": "paragraph",
+          "text": "The participants were introduced to important field sampling methods including quadrat sampling and transect surveys which enabled them to assess species density, frequency and distribution patterns across different habitats within the forest."
+        },
+        {
+          "type": "paragraph",
+          "text": "A practical session on the use of taxonomic identification keys provided students with valuable skills in species identification based on morphological characteristics such as leaf arrangement, venation patterns, flower structures and growth habits."
+        },
+        {
+          "type": "paragraph",
+          "text": "Microbiology students collected fungal and bacterial samples from forest soil, decaying wood and leaf litter for further laboratory analysis. These activities helped them understand microbial diversity and the role of microorganisms in nutrient cycling and ecosystem functioning."
+        },
+        {
+          "type": "paragraph",
+          "text": "The guided nature walks offered opportunities to observe biodiversity conservation measures and ecosystem dynamics firsthand. Students gained valuable insights into the interactions between plants, animals and microorganisms thereby strengthening their understanding of environmental science, taxonomy, ecology and conservation biology."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Outcomes:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The field visit successfully achieved its intended learning outcomes:"
+        },
+        {
+          "type": "listItem",
+          "text": "Enhanced understanding of forest biodiversity and ecosystem dynamics."
+        },
+        {
+          "type": "listItem",
+          "text": "Improved practical knowledge of vegetation assessment and ecological sampling techniques."
+        },
+        {
+          "type": "listItem",
+          "text": "Development of skills in plant identification using taxonomic keys."
+        },
+        {
+          "type": "listItem",
+          "text": "Increased awareness of biodiversity conservation and sustainable environmental practices."
+        },
+        {
+          "type": "listItem",
+          "text": "Better understanding of medicinal plants and their ecological significance."
+        },
+        {
+          "type": "listItem",
+          "text": "Practical exposure to microbial diversity and plant-microbe interactions in natural habitats."
+        },
+        {
+          "type": "listItem",
+          "text": "Strengthened observational, analytical and field research skills among students."
+        },
+        {
+          "type": "paragraph",
+          "text": "Photos:"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/d64f13c039c974f8.png",
+          "alt": "SDG 15: 15.2.4 Educational programmes on ecosystems - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/c58b18ec2c131268.png",
+          "alt": "SDG 15: 15.2.4 Educational programmes on ecosystems - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/820c4348216545a1.png",
+          "alt": "SDG 15: 15.2.4 Educational programmes on ecosystems - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/c1c736b85f4680ac.png",
+          "alt": "SDG 15: 15.2.4 Educational programmes on ecosystems - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Data collection During the Educational Field"
+        },
+        {
+          "type": "heading",
+          "text": "15.2.5 Sustainable management of land for agriculture (educational outreach)",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Event - Excursion-cum-Industrial Visit to Shree Dhanwantari Herbals, Amritsar, Punjab"
+        },
+        {
+          "type": "paragraph",
+          "text": "Location- Shree Dhanwantari Herbals, Nag Kalan, Majitha Road, Amritsar, Punjab."
+        },
+        {
+          "type": "paragraph",
+          "text": "Date of the Event- The educational excursion conducted from 28 December 2024 to 8 January 2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "No. of Participants- 74 students from the Department of Biotechnology, accompanied by faculty members."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Objective- To provide students with practical exposure to Ayurvedic medicine manufacturing, herbal resource management, quality control, research and development, sustainable production practices and industrial operations while enhancing their understanding of the integration of traditional Ayurvedic knowledge with modern biotechnology."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Description- The Department of Biotechnology organized an excursion-cum-industrial visit to Shree Dhanwantari Herbals to provide experiential learning in the field of herbal medicine manufacturing. During the visit, students observed the complete production process, including raw material selection, processing, quality testing, packaging and distribution of Ayurvedic products. They also gained insights into ISO 9001:2015 and GMP-certified manufacturing practices, research and development activities, regulatory compliance, sustainable sourcing of medicinal plants and career opportunities in the biotechnology and herbal pharmaceutical sectors. The programme successfully combined industrial exposure with educational and nature-based learning enriching students' practical understanding of biotechnology and the Ayurvedic pharmaceutical industry."
+        },
+        {
+          "type": "paragraph",
+          "text": "Coordinator(s)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Dr. Sushma Dubey, Head, Department of BiotechnologyMr. Sangram Keshari Samal, Assistant Professor, Department of Biotechnology"
+        },
+        {
+          "type": "paragraph",
+          "text": "Certificate of the Industrial VisitPhotos"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/e9380c6f5d2b22b1.png",
+          "alt": "SDG 15: 15.2.5 Sustainable management of land for agriculture (educational outreach) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/1280ad6004865b59.png",
+          "alt": "SDG 15: 15.2.5 Sustainable management of land for agriculture (educational outreach) - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "During Visit to the Campus"
+        }
+      ]
+    },
+    {
+      "title": "15.3 Supporting Land Ecosystems through Action",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "15.3.1 Sustainable use, conservation and restoration of land (policy)",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/e891d8b878262bf8.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/07ca4b2d4d49aff2.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/bdc311cb25d0d873.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/c25bbc0f31c94b81.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/e6c0f1f863a91bc0.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/33f776e700941de8.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/f96da2b6ba49f08e.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/626db4950fb985e2.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/982f0149e8044dc8.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/17d47338eb7af01d.png",
+          "alt": "SDG 15: 15.3.1 Sustainable use, conservation and restoration of land (policy) - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "15.3.2 Monitoring IUCN and other conservation species (policies)",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/5c64a014823112f8.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/95986126dd35fef8.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/e29d17245a0cbffd.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/9c02f76989f2c491.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/4e50afa7e655e740.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/9538dc25fef520bf.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/11781ab1ad3c4466.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/2b775dec082a1060.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/30e4c34bcfb04c35.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/b8397e87ff05b70f.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/b0b0807f96358c1d.png",
+          "alt": "SDG 15: 15.3.2 Monitoring IUCN and other conservation species (policies) - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "15.3.3 Local biodiversity included in planning and development",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University incorporates green spaces and vegetated areas into local site planning and development to support environmental quality and biodiversity. The landscaped area at Ram Chowk, maintained by Kalinga University, demonstrates the integration of vegetation and green cover within the developed roadside environment. Such planted and maintained spaces help provide habitat for local flora and fauna, improve landscape connectivity, reduce environmental stress and contribute to the conservation of urban and peri-urban biodiversity. Through the maintenance of these green areas, the University promotes environmentally responsible development while enhancing the ecological value of the surrounding landscape."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/45b27af32f4796ec.png",
+          "alt": "SDG 15: 15.3.3 Local biodiversity included in planning and development - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ram Chowk, Naya Raipur"
+        },
+        {
+          "type": "heading",
+          "text": "15.3.4 Alien species impact reduction (policies)",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/72de07007e67d0f5.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/f6bc8c804ac6e313.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/a15c5b3fa4841520.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/43eab70202f936ed.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/b8f4f9e2273df289.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/7ca55c073e257d3e.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/10f9f6bb2aba03b4.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/eeef447caff74dcf.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/3ccd2daef323f060.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/6450d9255c7aaa3f.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/ee7780aa8aa17385.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/e1b8f970e815afd6.png",
+          "alt": "SDG 15: 15.3.4 Alien species impact reduction (policies) - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "15.3.5 Collaboration for shared land ecosystems",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Name of the Event: Poster Making Competition on World Environment Day"
+        },
+        {
+          "type": "paragraph",
+          "text": "Date of the Event: 05 June 2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "Location: Convention Hall & Big Conference Hall, New Circuit House, Civil Line, Raipur (C.G.)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizing Agency: Chhattisgarh Environment Conservation Board"
+        },
+        {
+          "type": "paragraph",
+          "text": "Coordinators"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mr. Sheikh Abdul Kadir, Deputy Dean of Students' WelfareMs. Nikita Joshi, Assistant Dean of Students' Welfare"
+        },
+        {
+          "type": "paragraph",
+          "text": "Number of Participants"
+        },
+        {
+          "type": "paragraph",
+          "text": "Total Participants: More than 300"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University Participants: 06 Students"
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Objectives"
+        },
+        {
+          "type": "paragraph",
+          "text": "The competition was organized to create awareness about the adverse effects of plastic pollution and to encourage participants to express innovative and sustainable solutions through creative artwork. The event aimed to promote environmental consciousness and responsible environmental behaviour among students and the community."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Description"
+        },
+        {
+          "type": "paragraph",
+          "text": "On the occasion of World Environment Day 2025, the Chhattisgarh Environment Conservation Board organized a Poster Making Competition on the theme “Plastic Pollution – Side Effects & Solutions.” The event was conducted offline at the Convention Hall and Big Conference Hall, Raipur."
+        },
+        {
+          "type": "paragraph",
+          "text": "More than 300 participants from different age groups registered and participated in the competition. Through their posters, participants effectively highlighted the environmental and health hazards caused by plastic pollution and suggested practical measures to reduce plastic waste and promote sustainable alternatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "The programme was graced by Mr. P.C. Pandey, Chairman of the State Level Expert Evaluation Committee and Retired Indian Forest Officer who appreciated the creativity and environmental awareness demonstrated by the participants. Officials from the Chhattisgarh Environment Conservation Board were also present during the event."
+        },
+        {
+          "type": "paragraph",
+          "text": "Six students from Kalinga University actively participated under the guidance of the Department of Students' Welfare, showcasing the university’s commitment towards environmental sustainability and social responsibility."
+        },
+        {
+          "type": "paragraph",
+          "text": "Programme Outcomes"
+        },
+        {
+          "type": "listItem",
+          "text": "Enhanced awareness regarding plastic pollution and its environmental impacts."
+        },
+        {
+          "type": "listItem",
+          "text": "Encouraged students to communicate environmental issues through creative and artistic expression."
+        },
+        {
+          "type": "listItem",
+          "text": "Promoted responsible consumption practices and sustainable lifestyle choices."
+        },
+        {
+          "type": "listItem",
+          "text": "Strengthened commitment towards environmental conservation and public awareness initiatives."
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/c379213c96d11ba5.png",
+          "alt": "SDG 15: 15.3.5 Collaboration for shared land ecosystems - report evidence"
+        },
+        {
+          "type": "paragraph",
+          "text": "Related Sustainable Development Goals (SDGs)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Poster Making CompetitionPoster Making CompetitionSDG 4 – Quality EducationSDG 12 – Responsible Consumption and ProductionSDG 15 – Life on LandSDG 17 – Partnerships for the Goals"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sample Posters in the CompetitionPoster Making CompetitionParticipants in the Poster Making CompetitionPoster Making Competition"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/d9fcf9db620c19c0.png",
+          "alt": "SDG 15: 15.3.5 Collaboration for shared land ecosystems - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/c127f2f0d9d03b48.png",
+          "alt": "SDG 15: 15.3.5 Collaboration for shared land ecosystems - report evidence"
+        }
+      ]
+    },
+    {
+      "title": "15.4 Land sensitive waste disposal",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/60a428a3b97d5cd5.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/0a11280833318fcb.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/381647489312dd53.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/6fe0cd5b22af831d.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/287f900bf65af17c.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/72d1e45a137a7939.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/626d612ba69bcb60.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/f6af62da2310dc44.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/db45ad7ae5b46eb8.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/f1f8501bc5144e77.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/5ce1693f35d3355d.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/6d40ef8b7574c706.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/99f1fa8f7ec9339c.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/ee3fd3cc5174d7df.png",
+          "alt": "SDG 15: 15.4 Land sensitive waste disposal - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "15.4.1 Water discharge guidelines and standards",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Water Discharge Guidelines and Standards"
+        },
+        {
+          "type": "listItem",
+          "text": "Kalinga University is committed to responsible wastewater management and protection of surrounding water resources."
+        },
+        {
+          "type": "listItem",
+          "text": "Wastewater generated from laboratories, hostels, academic buildings, canteens and other campus facilities shall be properly collected, treated and managed before discharge or reuse."
+        },
+        {
+          "type": "listItem",
+          "text": "Treated wastewater discharge shall comply with applicable CPCB, CECB and other statutory environmental standards and requirements."
+        },
+        {
+          "type": "listItem",
+          "text": "Relevant water-quality parameters may include:"
+        },
+        {
+          "type": "listItem",
+          "text": "pH"
+        },
+        {
+          "type": "listItem",
+          "text": "Biological Oxygen Demand (BOD)"
+        },
+        {
+          "type": "listItem",
+          "text": "Chemical Oxygen Demand (COD)"
+        },
+        {
+          "type": "listItem",
+          "text": "Total Suspended Solids (TSS)"
+        },
+        {
+          "type": "listItem",
+          "text": "Oil and grease"
+        },
+        {
+          "type": "listItem",
+          "text": "Microbiological parameters, where applicable"
+        },
+        {
+          "type": "listItem",
+          "text": "Untreated wastewater shall not be discharged into nearby drains, soil, ponds or other natural water bodies."
+        },
+        {
+          "type": "listItem",
+          "text": "Wherever feasible, treated wastewater shall be reused for gardening, landscape irrigation, toilet flushing and other non-potable purposes."
+        },
+        {
+          "type": "listItem",
+          "text": "The University shall maintain appropriate records of wastewater treatment, monitoring and compliance."
+        },
+        {
+          "type": "listItem",
+          "text": "Periodic review of wastewater-management practices shall be undertaken to promote water conservation, pollution prevention and sustainable campus development."
+        },
+        {
+          "type": "heading",
+          "text": "15.4.2 Policy on plastic waste reduction",
+          "level": 3
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/3239bc06e718bc23.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/3df46d39a82c5846.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/b2101fc95ce8b76d.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/d93a0f554003ba4a.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/972b13b3844b879d.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/838e551baf0626a1.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/d02e708b0fc72607.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/de27e3a9b4522b3a.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/d35704ad0beddb93.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/70f1785e6819db87.png",
+          "alt": "SDG 15: 15.4.2 Policy on plastic waste reduction - report evidence"
+        },
+        {
+          "type": "heading",
+          "text": "15.4.3 Policy on hazardous waste disposal",
+          "level": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalinga University is committed to the safe, responsible and environmentally sound management of hazardous waste generated on campus. The policy covers the identification, segregation, collection, storage, transportation, treatment and final disposal of hazardous waste. Hazardous waste from laboratories, workshops, healthcare facilities, maintenance activities and other campus operations shall be handled carefully. Different categories of hazardous waste shall be segregated at the point of generation to prevent unsafe mixing and contamination. Waste containers shall be properly labelled, securely closed and stored in designated areas with appropriate safety precautions. Hazardous chemicals, used laboratory reagents, contaminated materials, oils, solvents and other hazardous substances shall be managed according to their nature and risk. The University shall ensure that hazardous waste is not discharged into drains, soil, water bodies or general waste streams Where applicable, hazardous waste shall be transferred only to authorized waste management agencies or approved treatment and disposal facilities. Records of hazardous waste generation, storage, transportation and disposal shall be maintained for monitoring and regulatory compliance. Students, faculty, laboratory staff, housekeeping personnel and other relevant employees shall receive appropriate training on hazardous waste handling and emergency procedures."
+        },
+        {
+          "type": "paragraph",
+          "text": "Policy-"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/7ef953b157ee289d.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/d127fb846a390445.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/3706b25b7a98d56e.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/7d6ff98457a3ad21.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/4b2db3b8bc2ef4bb.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/07a9ae70010aafb1.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/e282012d7295ec41.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/2abee234f84b564b.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/3921b94f6ef42290.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/15b00c526789ee4c.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/bbd7f996fb3f6179.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/f24493e1d35570a4.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        },
+        {
+          "type": "image",
+          "src": "/sdg-reports/sdg-15/8f86c4e4f6d67b8a.png",
+          "alt": "SDG 15: 15.4.3 Policy on hazardous waste disposal - report evidence"
+        }
+      ]
+    }
+  ]
+}
