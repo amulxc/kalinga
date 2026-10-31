@@ -193,14 +193,14 @@ export default function UnnatBharatAbhiyanPage() {
         description={[
           "Kalinga University proudly participates in the Unnat Bharat Abhiyan as a voluntary organisation by contributing towards rural progress. It has received approval on 07-10-2022. The university has taken significant measures to promote sustainable solutions and improve its infrastructure and lifestyle. Through fieldwork and surveys, it encourages rural empowerment by bridging the knowledge with the real community needs.",
         ]}
-        imageUrl="/images/uba/uba-commitment.jpg"
+        imageUrl="/images/uba/uba-household-survey.jpg"
       />
 
       <VisionMission data={visionMissionData} showImg={false} />
 
       <ImageListItem
         items={objectives}
-        imageSrc="/images/uba/uba-goals.jpg"
+        imageSrc="/images/uba/uba-digital-seva.jpg"
         title="Goals of Unnat Bharat Abhiyan"
         subtitle=""
         description={false}
