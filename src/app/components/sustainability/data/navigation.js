@@ -13,6 +13,7 @@ export const SUSTAINABILITY_SECTIONS = [
     { id: "centres-of-excellence", label: "Centre of Excellence (CoE)" },
     { id: "mous", label: "MoUs" },
     { id: "annual-reports", label: "Annual Reports" },
+    { id: "carbon-emission-report", label: "Carbon Emission Report" },
     { id: "sustainable-development-goals", label: "Sustainable Development Goals" },
     { id: "our-initiatives", label: "Our Initiatives" },
     { id: "student-engagement", label: "Clubs" },

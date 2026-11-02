@@ -12,6 +12,7 @@ import SustainabilityPoliciesSection from "../components/sustainability/sections
 import CentresOfExcellenceSection from "../components/sustainability/sections/CentresOfExcellenceSection";
 import MoUsSection from "../components/sustainability/sections/MoUsSection";
 import AnnualReportsSection from "../components/sustainability/sections/AnnualReportsSection";
+import CarbonEmissionReportSection from "../components/sustainability/sections/CarbonEmissionReportSection";
 import SdgGoalsSection from "../components/sustainability/sections/SdgGoalsSection";
 import InitiativesSection from "../components/sustainability/sections/InitiativesSection";
 import StudentEngagementSection from "../components/sustainability/sections/StudentEngagementSection";
@@ -57,6 +58,7 @@ const SustainabilityClient = () => {
                         <CentresOfExcellenceSection />
                         <MoUsSection />
                         <AnnualReportsSection />
+                        <CarbonEmissionReportSection />
                         <SdgGoalsSection />
                         <InitiativesSection />
                         <StudentEngagementSection />

@@ -395,7 +395,7 @@ const SciSustainConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://cdn.kalingauniversity.ac.in/conferences/Scisustain/SciSustain-2026-27.pdf"
+                        href="/brochure/scisustain-2027.pdf"
                         download
                         target="_blank"
                         rel="noreferrer"
