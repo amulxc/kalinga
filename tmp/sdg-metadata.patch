@@ -1,0 +1,30 @@
+diff --git a/src/lib/pageData.ts b/src/lib/pageData.ts
+index 54993b1..9d67900 100644
+--- a/src/lib/pageData.ts
++++ b/src/lib/pageData.ts
+@@ -739,6 +739,12 @@ export const pageDataMap: Record<string, PageData> = {
+         title: "Waste Management",
+         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
+     },
++    "/sustainability/sdg-1": {
++        slug: "/sustainability/sdg-1",
++        title: "SDG 1: No Poverty Report",
++        breadcrumbLabel: "SDG 1 Report",
++        banner: "/banners/sustainability-banner.webp",
++    },
+     "/sustainability/sdg-2": {
+         slug: "/sustainability/sdg-2",
+         title: "SDG 2: Zero Hunger Report",
+@@ -823,6 +829,12 @@ export const pageDataMap: Record<string, PageData> = {
+         breadcrumbLabel: "SDG 15 Report",
+         banner: "/banners/sustainability-banner.webp",
+     },
++    "/sustainability/sdg-16": {
++        slug: "/sustainability/sdg-16",
++        title: "SDG 16: Peace, Justice and Strong Institutions Report",
++        breadcrumbLabel: "SDG 16 Report",
++        banner: "/banners/sustainability-banner.webp",
++    },
+     "/sustainability/sdg-17": {
+         slug: "/sustainability/sdg-17",
+         title: "SDG 17: Partnerships for the Goals Report",

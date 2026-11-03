@@ -1,0 +1,213 @@
+1. Add this in a separate heading below Publication Policy - 
+
+
+  
+
+
+
+AI Governance and Accountability Frameworks: Research References 
+
+
+S.No.
+	Title of the Framework/Instrument
+	Version
+	Version DOI
+	Concept DOI (All Versions)
+	1
+	The AI Accountability Framework 2026: Framework and Doctrines
+	Version 3.0
+	https://doi.org/10.5281/zenodo.21119709
+	        https://doi.org/10.5281/zenodo.21119708
+	2
+	Duggal Global Agentic AI Liability Framework: A Conceptual, Normative, and Operationally Precise Blueprint for Accountability, Responsibility, and Governance in the Era of Autonomous Artificial Intelligence Agents
+	Version 1.1
+	https://doi.org/10.5281/zenodo.21273447
+	https://doi.org/10.5281/zenodo.21273446
+	3
+	Universal Declaration of AI Accountability Rights (UDAAR 2026)
+	Version 1.0
+	https://doi.org/10.5281/zenodo.22019725
+	https://doi.org/10.5281/zenodo.22019724
+	4
+	New Delhi Compact on Artificial Intelligence Accountability
+	Version 3.2
+	https://doi.org/10.5281/zenodo.22020134
+	https://doi.org/10.5281/zenodo.22020133
+	5
+	Global South Legal Architecture for Artificial Intelligence Governance and Accountability: A Common Minimum Denominators Approach for the Global South Group of Nations
+	Version 6
+	https://doi.org/10.5281/zenodo.22020360
+	https://doi.org/10.5281/zenodo.22020359
+	
+
+2. In submission guidelines, make the mail ID in bold - 
+
+
+  
+
+
+
+3.   
+
+In Publication Policy - After publication charges.  - add - 
+
+
+Selected outstanding papers presented at the conference will also be considered for publication in an Edited Book with ISBN, to be published by Satyam Law International, without any additional publication charges.
+
+
+   4.   
+
+Change the dates to - 
+
+
+      * Submission of Abstract: 16th October 2026
+      * Confirmation of Abstract: 17th October 2026
+      * Last Date for Registration And Payment: 18th October 2026
+      * Submission of Full Paper: 25th October 2026
+
+
+      5.   
+
+It will be - 
+
+
+Prof. Dr. Farhana Helal Mehtab
+Designation/Institution 
+Dean, School of Law, Southeast University, Bangladesh 
+
+
+  
+
+
+
+Write complete - Professor, 
+
+
+  
+
+
+
+Prof. Dr. Balamurugan Baluswamy 
+
+
+
+
+         6. 
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+Add these logos under collaborators.
+
+
+         7.   
+
+Add after 9  - 
+
+
+  
+
+
+
+
+
+            8. Make a separate section before Committees - 
+
+
+  
+
+
+
+Our Guests
+Chief Guest & Distinguished Speakers 
+
+
+Add this heading and subtitle and below names - 
+
+
+Chief Guest 
+
+
+Hon'ble Justice (Rtd.) Indira Banerjee 
+Former Judge, Supreme Court of India 
+Former Chief Justice, Madras High Court 
+
+
+Our Distinguished Speakers 
+
+
+Adv. Dr. Riju Raj S. Jamwal 
+Managing Partner JRD & Partners 
+General counsel and Senior litigating Advocate 
+Supreme Court of India, New Delhi 
+
+
+Mr. Zoheb Amin 
+Corporate Legal Advisor 
+Zycus Infotech Private Ltd., Mumbai, Maharashtra 
+
+
+Prof. Alfredo M. Ronchi 
+Professor 
+Politecnico di Milano, Milano, Italia 
+
+
+Prof. Andrii Paziuk 
+Professor
+Kyiv Aviation Institute, Ukraine 
+
+
+Prof. Dr. Farhana Helal Mehtab 
+Dean, School of Law
+Southeast University, Bangladesh 
+
+
+Prof. Om Prakash Vyas 
+Director
+Dr. Shyama Prasad Mukherjee International Institute of Information Technology (IIIT), Naya Raipur 
+
+
+Dr. Pavan Duggal 
+Senior Advocate, Supreme Court of India, Global Chair, International AI Accountability Forum, Chairman, International Commission on Cyber Security Law, Founder, Cyber Law University. 
+
+
+Prof. Dr. Shashikala Gurpur 
+Director, Symbiosis Law School Pune, Maharashtra 
+
+
+Prof. Dr. Tabrez Ahmad 
+Professor & Dean 
+MANUU Law School - Maulana Azad National Urdu University, Gachibowli, Hyderabad, Telangana 
+
+
+Mr. Sameet Gambhir 
+Associate Partner - Risk & Legal 
+A Big 4 Consulting Firm Group, Gurugram, Haryana 
+
+
+Adv. Hamida Siddique 
+Senior Advocate, High Court of Chhattisgarh
+Mediator, Potential Mediation Trainer MCPC Supreme Court 
+
+
+Dr. Sarah Jane Fox 
+Associate Professor, Academic at Leicester Law School
+University of Leicester (UK) 
+
+
+
+
+________________
