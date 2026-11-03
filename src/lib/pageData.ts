@@ -592,7 +592,7 @@ export const pageDataMap: Record<string, PageData> = {
     "/unnat-bharat-abhiyan": {
         slug: "/unnat-bharat-abhiyan",
         title: "Unnat Bharat Abhiyan",
-        banner: "/images/uba/uba-banner.jpg",
+        banner: "/images/uba/uba-banner-village-visit.jpg",
     },
     "/value-added-course": {
         slug: "/value-added-course",
