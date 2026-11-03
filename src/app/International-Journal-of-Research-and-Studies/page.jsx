@@ -2150,6 +2150,46 @@ const UnivistaJournalPage = () => {
             level: "VOL 1",
             slug: "/univista/vol-1-issue-2/FOP-30-Mohammad-Faiz.pdf"
         },
+        {
+            "id": 250,
+            "shortName": "Emulgel-Based Drug Delivery Systems For Topical Antifungal Applications: A Review",
+            "title": "Rachael Amin Elia Lupe",
+            "duration": "April - June 2026",
+            "level": "VOL 1",
+            "slug": "/univista/vol-1-issue-2/250-Rachael-Amin-Elia-Lupe.pdf"
+        },
+        {
+            "id": 251,
+            "shortName": "The Matrimonial Home as Carceral Space: Property Rights of Women in Live-In Relationships and the Failure of the Domestic Violence Act's 'Shared Household' Doctrine",
+            "title": "Asna Jabi",
+            "duration": "April - June 2026",
+            "level": "VOL 1",
+            "slug": "/univista/vol-1-issue-2/251-Asna-Jabi-Matrimonial-Home.pdf"
+        },
+        {
+            "id": 252,
+            "shortName": "The Algorithmic Magistrate: Automated Judicial Orders in Traffic and Municipal Offences and the Constitutional Delegation of Judicial Power",
+            "title": "Asna Jabi",
+            "duration": "April - June 2026",
+            "level": "VOL 1",
+            "slug": "/univista/vol-1-issue-2/252-Asna-Jabi-Algorithmic-Magistrate.pdf"
+        },
+        {
+            "id": 253,
+            "shortName": "THE VIDEO-FORENSIC GAP: WHY 100% CCTV COVERAGE IN POLICE STATIONS HAS FAILED TO REDUCE CUSTODIAL DEATHS-A DISTRICT-LEVEL PROCESS TRACING STUDY",
+            "title": "Asna Jabi",
+            "duration": "April - June 2026",
+            "level": "VOL 1",
+            "slug": "/univista/vol-1-issue-2/253-Asna-Jabi-Video-Forensic-Gap.pdf"
+        },
+        {
+            "id": 254,
+            "shortName": "The Pedagogy of Statelessness: Education Exclusion of Children of Undocumented Migrants and the Right to Dignity Under Article 21",
+            "title": "Asna Jabi",
+            "duration": "April - June 2026",
+            "level": "VOL 1",
+            "slug": "/univista/vol-1-issue-2/254-Asna-Jabi-Pedagogy-of-Statelessness.pdf"
+        },
     ];
 
     // Derived values based on the selected archives tab

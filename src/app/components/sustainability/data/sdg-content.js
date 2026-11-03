@@ -381,6 +381,7 @@ export const SDG_CELL_MEMBERS = [
  * clickable; the rest render as plain tiles until their report is published.
  */
 export const SDG_GOAL_REPORTS = {
+    1: "/sustainability/sdg-1",
     2: "/sustainability/sdg-2",
     3: "/sustainability/sdg-3",
     4: "/sustainability/sdg-4",
@@ -395,6 +396,7 @@ export const SDG_GOAL_REPORTS = {
     13: "/sustainability/sdg-13",
     14: "/sustainability/sdg-14",
     15: "/sustainability/sdg-15",
+    16: "/sustainability/sdg-16",
     17: "/sustainability/sdg-17",
 };
 

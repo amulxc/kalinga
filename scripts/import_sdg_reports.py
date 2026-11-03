@@ -21,6 +21,7 @@ NS = {
     "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
 }
 REPORTS = {
+    1: ("No Poverty", "1l99vuiJrq4S8_NbRBQ-0hPr0_geD0l4Y", "30 October 2026"),
     2: ("Zero Hunger", "1vLuUZpt_I6Cq0y7etVOW6qrXLOx7Kc_G", "24 October 2026"),
     4: ("Quality Education", "1JvLV54kIs3Ga2_gLdPIM7bpPJHpwkGcf", "24 October 2026"),
     5: ("Gender Equality", "1kqldN0uibMUaobAfzUvVHZFc4UrSUmXz", "30 October 2026"),
@@ -35,6 +36,7 @@ REPORTS = {
     13: ("Climate Action", "1EBHJx0ASwiDzIiTRRUFPtIj2H16tHEFt", "27 October 2026"),
     14: ("Life Below Water", "1N5YNMMzcEaKnVN7LhrESmh8rZi9R4TN0", "30 October 2026"),
     15: ("Life on Land", "1Hw7i7-TQkDR6k4tSXXmg3RmisMoSDzrI", "30 October 2026"),
+    16: ("Peace, Justice and Strong Institutions", "1loiQ4R38qJHUB4bR5x1en7SKQOe28_rt", "3 November 2026"),
     17: ("Partnerships for the Goals", "1IO_dmLCYZZPOPEf2Q2wJziLqcoqbxOfN", "24 October 2026"),
 }
 # Some reports leave section headings unnumbered; name them with their THE Impact Rankings metric number.
@@ -55,6 +57,17 @@ UNNUMBERED_HEADINGS = {
 # Section headings a report omits entirely, inserted before their first subsection.
 MISSING_HEADINGS = {
     15: {"15.3.1": "15.3 Supporting Land Ecosystems through Action"},
+}
+
+# The SDG 1 report switches to unnumbered headings after its metrics.
+SDG_1_SECTIONS = {
+    "Institutional Commitment to SDG 1", "Key Initiatives Contributing to SDG 1",
+    "Financial Literacy and Financial Empowerment", "Entrepreneurship and Startup Development",
+    "Skill Development and Livelihood-Oriented Initiatives", "Employability and Career Development",
+    "Rural Development and Community Empowerment", "Community Outreach and Legal Empowerment",
+    "Community Outreach and Social Engagement", "Access to Justice for Vulnerable Communities",
+    "Accessible Healthcare and Poverty Reduction", "Consolidated Table of SDG 1-Related Events and Outcomes",
+    "Major Outcomes of SDG 1 Initiatives", "14. Impact Metrics for SDG 1",
 }
 
 def clean(text):
@@ -210,6 +223,11 @@ def import_report(number, source_dir):
             if is_title and len(text) < 150:
                 continue
             text = UNNUMBERED_HEADINGS.get(number, {}).get(text, text)
+            if number == 1 and text in SDG_1_SECTIONS:
+                current_heading = text
+                content.append({"type": "heading", "text": text, "level": 2})
+                content += media(el)
+                continue
             match = re.match(rf"^({number}\.\d+(?:\.\d+)?)[.: ]*([^\d].*)", text)
             if match and match.group(1) in MISSING_HEADINGS.get(number, {}):
                 content.append({"type": "heading", "text": MISSING_HEADINGS[number][match.group(1)], "level": 2})
@@ -237,6 +255,8 @@ def import_report(number, source_dir):
         # SDG 8 begins immediately with its research section; use its opening as the introduction.
         intro = [sections[0]["blocks"].pop(0)]
     report = {"number": number, "title": title, "sourceUrl": f"https://drive.google.com/file/d/{file_id}/view", "sourceDate": source_date, "dashboard": dashboard, "intro": intro, "sections": sections}
+    if number in (1, 16):
+        report["introEvidence"] = [block for block in intro if block["type"] != "paragraph"]
     dest = ROOT / "src" / "app" / "components" / "sustainability" / "data" / "reports"
     dest.mkdir(parents=True, exist_ok=True)
     (dest / f"sdg-{number}.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

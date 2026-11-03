@@ -10,10 +10,16 @@ import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
 import PublicationGrid from '../components/research/publication-grid';
 import Gallery from '../components/general/gallery';
+import ImageLightbox, { useImageLightbox } from '../components/general/ImageLightbox';
 
 
 
 const LawConferencePage = () => {
+    const flyerImages = [1, 2].map((page) => ({
+        image: `/law-conference/flyer-page-${page}.webp`,
+        alt: `Conference flyer page ${page} of 2`,
+    }));
+    const flyerLightbox = useImageLightbox(flyerImages.length);
 
     const abstractItems = [
         {
@@ -38,7 +44,7 @@ const LawConferencePage = () => {
         },
         {
             id: 6,
-            text: `Acceptance of the Abstract will be communicated via e-mail - <a href="mailto:lawconference@kalingauniversity.ac.in">lawconference@kalingauniversity.ac.in</a>`,
+            text: `Acceptance of the Abstract will be communicated via e-mail - <a href="mailto:lawconference@kalingauniversity.ac.in"><strong>lawconference@kalingauniversity.ac.in</strong></a>`,
         }
     ]
 
@@ -96,11 +102,15 @@ const LawConferencePage = () => {
         },
         {
             id: 7,
-            text: "<strong>Edited Book with ISBN:</strong> Select papers may also be published in an Edited Book with ISBN without any publication charges.",
+            text: "<strong>Edited Book with ISBN:</strong> Select papers may also be published in an Edited Book with ISBN without any publication charges. Selected outstanding papers presented at the conference will also be considered for publication in an Edited Book with ISBN, to be published by Satyam Law International, without any additional publication charges.",
         }
     ]
 
     const collaborators = [
+        { id: 4, image: "/law-conference/collaborators/iiit-naya-raipur.webp", alt: "IIIT Naya Raipur" },
+        { id: 5, image: "/law-conference/collaborators/cgiam.webp", alt: "Chhattisgarh Institute of Arbitration and Mediation" },
+        { id: 6, image: "/law-conference/collaborators/amritsar-law-college.webp", alt: "Amritsar Law College" },
+        { id: 7, image: "/law-conference/collaborators/aditya-college-for-law.webp", alt: "Aditya College for Law" },
         {
             id: 1,
             image: "/law-conference/collaborators/law-teachers-india.webp",
@@ -181,12 +191,12 @@ const LawConferencePage = () => {
                 { key: "designation", label: "Designation/Institution" }
             ],
             data: [
-                { name: "Prof. (Dr.) Farhana Helal Mehtab", designation: "Dean, Faculty of Law, Green University of Bangladesh, Bangladesh" },
+                { name: "Prof. Dr. Farhana Helal Mehtab", designation: "Dean, School of Law, Southeast University, Bangladesh" },
                 { name: "Dr. Sarah Jane Fox", designation: "Associate Professor, School of Justice, Staffordshire University, UK" },
                 { name: "Mr. Alfredo M. Ronchi", designation: "EC, Medici Framework, Italy" },
-                { name: "Prof. Andrii Paziuk", designation: "Prof., Kyiv Aviation Institute, Ukraine " },
+                { name: "Prof. Andrii Paziuk", designation: "Professor, Kyiv Aviation Institute, Ukraine" },
                 { name: "Dr. Ahmad Ghouri", designation: "Associate Professor, University of Sussex Brighton, England, United Kingdom" },
-                { name: "Prof. Balamurugan Baluswamy", designation: "Professor and Chairperson<br />School of Engineering and IT, MAHE, Dubai" },
+                { name: "Prof. Dr. Balamurugan Baluswamy", designation: "Professor and Chairperson<br />School of Engineering and IT, MAHE, Dubai" },
                 { name: "Dr. Mohammad Ataur Rahman", designation: "Advocate, Supreme Court of Bangladesh, Bangladesh" },
                 { name: "Dr. Garry Fehr", designation: "Associate Vice-President Research Engagement and Graduate Studies<br />University of the Fraser Valley, Canada" }
             ]
@@ -477,10 +487,10 @@ const LawConferencePage = () => {
             id: 1,
             question: "Important Dates",
             answer: [
-                "Submission of Abstract: 10<sup>th</sup> September 2026",
-                "Confirmation of Abstract: 20<sup>th</sup> September 2026",
-                "Last Date for Registration And Payment: 30<sup>th</sup> September 2026",
-                "Submission of Full Paper: 15<sup>th</sup> October 2026",
+                "Submission of Abstract: 16<sup>th</sup> October 2026",
+                "Confirmation of Abstract: 17<sup>th</sup> October 2026",
+                "Last Date for Registration And Payment: 18<sup>th</sup> October 2026",
+                "Submission of Full Paper: 25<sup>th</sup> October 2026",
                 "Global Conference: 20<sup>th</sup> &amp; 21<sup>st</sup> November 2026"
             ]
         }
@@ -634,6 +644,9 @@ const LawConferencePage = () => {
                                 className="w-full h-full object-contain rounded-lg"
                             />
                         </div>
+                        <div className="w-24 h-24 md:w-28 md:h-28 relative rounded-xl overflow-hidden shadow-md bg-white p-1 border border-gray-100">
+                            <img src="/law-conference/sdg-10.webp" alt="SDG 10 - Reduced Inequalities" className="w-full h-full object-contain rounded-lg" />
+                        </div>
                         <div className="w-24 h-24 md:w-28 md:h-28 relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 bg-white p-1 border border-gray-100">
                             <img
                                 src="https://cdn.kalingauniversity.ac.in/law-conference/sustainability-16.webp"
@@ -681,6 +694,39 @@ const LawConferencePage = () => {
                                 </div>
                             ))}
                         </div>
+                    </div>
+                    <div className="mt-12 border-t border-gray-100 pt-8">
+                        <h3 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight mb-6">
+                            Conference Flyer
+                        </h3>
+                        <div className="mx-auto grid max-w-[640px] grid-cols-1 justify-items-center gap-5 sm:grid-cols-2">
+                            {[1, 2].map((page) => (
+                                <button
+                                    key={page}
+                                    type="button"
+                                    onClick={() => flyerLightbox.open(page - 1)}
+                                    aria-label={`View conference flyer page ${page}`}
+                                    className="block w-full max-w-[300px] rounded-xl transition-shadow hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red-800"
+                                >
+                                <img
+                                    src={`/law-conference/flyer-page-${page}.webp`}
+                                    alt={`Two-Day Global Conference on Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance — flyer page ${page} of 2`}
+                                    width={1191}
+                                    height={1684}
+                                    loading="lazy"
+                                    decoding="async"
+                                    className="w-full h-auto cursor-zoom-in rounded-xl border border-gray-100 shadow-sm"
+                                />
+                                </button>
+                            ))}
+                        </div>
+                        <ImageLightbox
+                            images={flyerImages}
+                            index={flyerLightbox.index}
+                            onClose={flyerLightbox.close}
+                            onPrev={flyerLightbox.showPrev}
+                            onNext={flyerLightbox.showNext}
+                        />
                     </div>
                 </div>
             </section>
@@ -949,6 +995,24 @@ const LawConferencePage = () => {
                 description=""
             />
 
+
+            <section className="px-4 py-12 md:px-8">
+                <div className="max-w-7xl mx-auto">
+                    <SectionHeading title="AI Governance and Accountability Frameworks: Research References" />
+                    <div className="mt-8 overflow-x-auto rounded-xl border border-gray-200">
+                        <table className="w-full min-w-[850px] text-left text-sm">
+                            <thead className="bg-[var(--button-red)] text-white"><tr>{['S.No.', 'Title of the Framework/Instrument', 'Version', 'Version DOI', 'Concept DOI (All Versions)'].map(label => <th key={label} scope="col" className="p-4">{label}</th>)}</tr></thead>
+                            <tbody>{[["The AI Accountability Framework 2026: Framework and Doctrines","Version 3.0","21119709","21119708"],["Duggal Global Agentic AI Liability Framework: A Conceptual, Normative, and Operationally Precise Blueprint for Accountability, Responsibility, and Governance in the Era of Autonomous Artificial Intelligence Agents","Version 1.1","21273447","21273446"],["Universal Declaration of AI Accountability Rights (UDAAR 2026)","Version 1.0","22019725","22019724"],["New Delhi Compact on Artificial Intelligence Accountability","Version 3.2","22020134","22020133"],["Global South Legal Architecture for Artificial Intelligence Governance and Accountability: A Common Minimum Denominators Approach for the Global South Group of Nations","Version 6","22020360","22020359"]].map(([title, version, versionDoi, conceptDoi], index) => (
+                                <tr key={versionDoi} className="border-t border-gray-200 even:bg-gray-50">
+                                    <td className="p-4 align-top">{index + 1}</td><th scope="row" className="p-4 align-top font-medium">{title}</th><td className="p-4 align-top whitespace-nowrap">{version}</td>
+                                    {[versionDoi, conceptDoi].map(doi => <td key={doi} className="p-4 align-top"><a href={`https://doi.org/10.5281/zenodo.${doi}`} target="_blank" rel="noopener noreferrer" className="text-red-800 underline break-words">{`https://doi.org/10.5281/zenodo.${doi}`}</a></td>)}
+                                </tr>
+                            ))}</tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
             <FAQ
                 id="conference-information"
                 title="Important Information"
@@ -958,6 +1022,27 @@ const LawConferencePage = () => {
                 items={[...importantDatesItems, ...modeofconference, ...conferenceInfoItems]}
                 pyClassName="py-12"
             />
+
+            <section className="px-4 py-12 md:px-8 bg-[var(--lite-sand)]">
+                <div className="max-w-7xl mx-auto">
+                    <SectionHeading title="Chief Guest & Distinguished Speakers" subtitle="Our Guests" />
+                    <div className="max-w-2xl mx-auto mt-8 rounded-xl bg-white border border-gray-200 p-6 text-center">
+                        <h3 className="text-red-800 font-semibold mb-3">Chief Guest</h3>
+                        <h4 className="text-xl font-bold mb-3">Hon&apos;ble Justice (Rtd.) Indira Banerjee</h4>
+                        <p>Former Judge, Supreme Court of India</p>
+                        <p>Former Chief Justice, Madras High Court</p>
+                    </div>
+                    <h3 className="text-2xl font-bold text-center mt-10 mb-6">Our Distinguished Speakers</h3>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        {[["Adv. Dr. Riju Raj S. Jamwal","Managing Partner JRD & Partners","General counsel and Senior litigating Advocate","Supreme Court of India, New Delhi"],["Mr. Zoheb Amin","Corporate Legal Advisor","Zycus Infotech Private Ltd., Mumbai, Maharashtra"],["Prof. Alfredo M. Ronchi","Professor","Politecnico di Milano, Milano, Italia"],["Prof. Andrii Paziuk","Professor","Kyiv Aviation Institute, Ukraine"],["Prof. Dr. Farhana Helal Mehtab","Dean, School of Law","Southeast University, Bangladesh"],["Prof. Om Prakash Vyas","Director","Dr. Shyama Prasad Mukherjee International Institute of Information Technology (IIIT), Naya Raipur"],["Dr. Pavan Duggal","Senior Advocate, Supreme Court of India, Global Chair, International AI Accountability Forum, Chairman, International Commission on Cyber Security Law, Founder, Cyber Law University."],["Prof. Dr. Shashikala Gurpur","Director, Symbiosis Law School Pune, Maharashtra"],["Prof. Dr. Tabrez Ahmad","Professor & Dean","MANUU Law School - Maulana Azad National Urdu University, Gachibowli, Hyderabad, Telangana"],["Mr. Sameet Gambhir","Associate Partner - Risk & Legal","A Big 4 Consulting Firm Group, Gurugram, Haryana"],["Adv. Hamida Siddique","Senior Advocate, High Court of Chhattisgarh","Mediator, Potential Mediation Trainer MCPC Supreme Court"],["Dr. Sarah Jane Fox","Associate Professor, Academic at Leicester Law School","University of Leicester (UK)"]].map(([name, ...details]) => (
+                            <article key={name} className="rounded-xl border border-gray-200 bg-white p-6 text-center">
+                                <h4 className="text-lg font-bold mb-3">{name}</h4>
+                                {details.map(detail => <p key={detail} className="text-gray-700 text-sm leading-relaxed">{detail}</p>)}
+                            </article>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             <FAQ
                 id="committee-members"

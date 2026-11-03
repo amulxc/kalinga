@@ -739,6 +739,12 @@ export const pageDataMap: Record<string, PageData> = {
         title: "Waste Management",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     },
+    "/sustainability/sdg-1": {
+        slug: "/sustainability/sdg-1",
+        title: "SDG 1: No Poverty Report",
+        breadcrumbLabel: "SDG 1 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
     "/sustainability/sdg-2": {
         slug: "/sustainability/sdg-2",
         title: "SDG 2: Zero Hunger Report",
@@ -821,6 +827,12 @@ export const pageDataMap: Record<string, PageData> = {
         slug: "/sustainability/sdg-15",
         title: "SDG 15: Life on Land Report",
         breadcrumbLabel: "SDG 15 Report",
+        banner: "/banners/sustainability-banner.webp",
+    },
+    "/sustainability/sdg-16": {
+        slug: "/sustainability/sdg-16",
+        title: "SDG 16: Peace, Justice and Strong Institutions Report",
+        breadcrumbLabel: "SDG 16 Report",
         banner: "/banners/sustainability-banner.webp",
     },
     "/sustainability/sdg-17": {
