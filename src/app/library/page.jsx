@@ -33,7 +33,7 @@ const page = () => {
       <LibraryIntro />
       <RaipurVideoSection
         videoId="llHISVPRkxI"
-        thumbnail="https://kalinga-university.s3.amazonaws.com/kalinga_backend/files/department/about/FacultyofCommerceAndMangement-AboutDept.webp"
+        thumbnail="https://img.youtube.com/vi/llHISVPRkxI/maxresdefault.jpg"
         title=""
         description="" // optional
         alt="Video thumbnail"
