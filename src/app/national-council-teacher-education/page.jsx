@@ -90,24 +90,24 @@ const tableColumns = [
 const tableData = [
   {
     slNo: "A",
-    title: "Affidavit for NCTE ITEP",
+    title: "Affidavit for NCTE ITEP - Registrar",
     action: (
       <a
-        href=""
+        href="/ncte/affidavit-registrar.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"
       >
-        Know More
+        View PDF
       </a>
     )
   },
   {
     slNo: "B",
-    title: "Balance sheet as on the last date of the last financial year",
+    title: "Affidavit for NCTE ITEP - Chairman",
     action: (
       <a
-        href="https://cdn.kalingauniversity.ac.in/common/national-council/K.+Balance+Sheet.pdf"
+        href="/ncte/affidavit-chairman.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"
@@ -118,6 +118,20 @@ const tableData = [
   },
   {
     slNo: "C",
+    title: "Balance sheet as on the last date of the last financial year",
+    action: (
+      <a
+        href="/ncte/balance-sheet.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[var(--button-red)] hover:underline"
+      >
+        View PDF
+      </a>
+    )
+  },
+  {
+    slNo: "D",
     title: "Details of available infrastructure facilities",
     action: (
       <a
@@ -131,21 +145,20 @@ const tableData = [
     )
   },
   {
-    slNo: "D",
+    slNo: "E",
     title: "Details of faculty",
     action: (
       <a
-        href="https://cdn.kalingauniversity.ac.in/common/national-council/List+of+Teaching+Staff+of+Faculty+of+Education.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/ncte/details-of-faculty.xlsx"
+        download
         className="text-[var(--button-red)] hover:underline"
       >
-        View PDF
+        Download
       </a>
     )
   },
   {
-    slNo: "E",
+    slNo: "F",
     title: "Details of instructional facilities such as laboratory and library",
     action: (
       <a
@@ -159,25 +172,11 @@ const tableData = [
     )
   },
   {
-    slNo: "F",
+    slNo: "G",
     title: "Details of sanctioned programme along with annual intake",
     action: (
       <a
-        href="https://cdn.kalingauniversity.ac.in/common/national-council/List+of+Programmes+Running+in+KU.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[var(--button-red)] hover:underline"
-      >
-        View PDF
-      </a>
-    )
-  },
-  {
-    slNo: "G",
-    title: "Details of students",
-    action: (
-      <a
-        href="https://cdn.kalingauniversity.ac.in/common/national-council/List+of+Students+(Education+Deptt.)+2024-2026+%26+2023-2025.pdf"
+        href="/ncte/sanctioned-programme.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"
@@ -188,6 +187,20 @@ const tableData = [
   },
   {
     slNo: "H",
+    title: "Details of students",
+    action: (
+      <a
+        href="/ncte/students.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[var(--button-red)] hover:underline"
+      >
+        View PDF
+      </a>
+    )
+  },
+  {
+    slNo: "I",
     title: "Facilities added during the last quarter",
     action: (
       <a
@@ -201,7 +214,7 @@ const tableData = [
     )
   },
   {
-    slNo: "I",
+    slNo: "J",
     title: "Fees Details",
     action: (
       <a
@@ -215,11 +228,11 @@ const tableData = [
     )
   },
   {
-    slNo: "J",
+    slNo: "K",
     title: "Hyperlink of council's",
     action: (
       <a
-        href="https://ncte.gov.in/ncte_new/page/ncte-regulations"
+        href="/about-us#academic-council"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"
@@ -229,11 +242,11 @@ const tableData = [
     )
   },
   {
-    slNo: "K",
+    slNo: "L",
     title: "Income and expenditure account for the last financial year",
     action: (
       <a
-        href="https://cdn.kalingauniversity.ac.in/common/national-council/L.+Income+%26+Expenditure.pdf"
+        href="/ncte/income-expenditure.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"
@@ -243,7 +256,7 @@ const tableData = [
     )
   },
   {
-    slNo: "L",
+    slNo: "M",
     title: "National Council for Teacher Education",
     action: (
       <a
@@ -257,7 +270,7 @@ const tableData = [
     )
   },
   {
-    slNo: "M",
+    slNo: "N",
     title: "Number of books in the library, referred Journals subscribed to, and addition, if any, in the last quarter",
     action: (
       <a
@@ -271,7 +284,7 @@ const tableData = [
     )
   },
   {
-    slNo: "N",
+    slNo: "O",
     title: "Receipt and payment account for the last financial year",
     action: (
       <a
@@ -285,11 +298,11 @@ const tableData = [
     )
   },
   {
-    slNo: "O",
+    slNo: "P",
     title: "Resolution NCTE ITEP",
     action: (
       <a
-        href="https://cdn.kalingauniversity.ac.in/common/national-council/Resolution+NCTE+ITEP.pdf"
+        href="/ncte/resolution.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"

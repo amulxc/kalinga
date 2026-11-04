@@ -697,7 +697,7 @@ const LawConferencePage = () => {
                     </div>
                     <div className="mt-12 border-t border-gray-100 pt-8">
                         <h3 className="font-bold text-xl md:text-2xl lg:text-3xl text-gray-800 leading-tight mb-6">
-                            Conference Flyer
+                            Conference Highlights
                         </h3>
                         <div className="mx-auto grid max-w-[640px] grid-cols-1 justify-items-center gap-5 sm:grid-cols-2">
                             {[1, 2].map((page) => (
@@ -998,7 +998,10 @@ const LawConferencePage = () => {
 
             <section className="px-4 py-12 md:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <SectionHeading title="AI Governance and Accountability Frameworks: Research References" />
+                    <SectionHeading
+                        title="AI Governance and Accountability Frameworks: Research References"
+                        titleClassName="text-center"
+                    />
                     <div className="mt-8 overflow-x-auto rounded-xl border border-gray-200">
                         <table className="w-full min-w-[850px] text-left text-sm">
                             <thead className="bg-[var(--button-red)] text-white"><tr>{['S.No.', 'Title of the Framework/Instrument', 'Version', 'Version DOI', 'Concept DOI (All Versions)'].map(label => <th key={label} scope="col" className="p-4">{label}</th>)}</tr></thead>
@@ -1025,7 +1028,12 @@ const LawConferencePage = () => {
 
             <section className="px-4 py-12 md:px-8 bg-[var(--lite-sand)]">
                 <div className="max-w-7xl mx-auto">
-                    <SectionHeading title="Chief Guest & Distinguished Speakers" subtitle="Our Guests" />
+                    <SectionHeading
+                        title="Chief Guest & Distinguished Speakers"
+                        subtitle="Our Guests"
+                        subtitleClassName="text-center"
+                        titleClassName="text-center"
+                    />
                     <div className="max-w-2xl mx-auto mt-8 rounded-xl bg-white border border-gray-200 p-6 text-center">
                         <h3 className="text-red-800 font-semibold mb-3">Chief Guest</h3>
                         <h4 className="text-xl font-bold mb-3">Hon&apos;ble Justice (Rtd.) Indira Banerjee</h4>
