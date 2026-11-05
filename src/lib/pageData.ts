@@ -714,6 +714,11 @@ export const pageDataMap: Record<string, PageData> = {
         title: "Univista: International Journal of Research and Studies",
         banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
     },
+    "/International-Journal-of-Enterprise-Commerce-and-Management-Research": {
+        slug: "/International-Journal-of-Enterprise-Commerce-and-Management-Research",
+        title: "International Journal of Enterprise, Commerce and Management Research (IJECMR)",
+        banner: "https://cdn.kalingauniversity.ac.in/about/about-banner.webp",
+    },
     "/courses/bca-in-game-development-with-ai": {
         slug: "/courses/bca-in-game-development-with-ai",
         title: "Bachelor of Computer Applications in Game Development with Artificial Intelligence",
