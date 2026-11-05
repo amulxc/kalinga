@@ -72,100 +72,36 @@
           "text": "At Kalinga University, the assessment of SDG 10 reflects the University's commitment to promoting inclusive development, equal opportunities and the reduction of social and economic disparities. During the reporting period, the University recorded 43 SDG 10-related research publications, receiving 90 citations and achieving a Field-Weighted Citation Impact (FWCI) of 0.94. Through interdisciplinary research, student support initiatives, skill-development programmes, community outreach, awareness campaigns, accessibility measures and institutional efforts to promote non-discrimination, the University contributes to addressing inequalities and strengthening inclusive participation in higher education and society. These initiatives reflect Kalinga University's continued engagement with the objectives of SDG 10 and its commitment to fostering an equitable, accessible and socially inclusive environment for students, faculty and the wider community."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "Research Paper: Count",
-            "Column1",
-            "Column2"
-          ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "6"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "9"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "23"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "5"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Research Papers"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers",
+          "xLabel": "Year",
+          "yLabel": "Count of Research Papers",
+          "data": [
+            {
+              "label": "2021",
+              "value": 0
+            },
+            {
+              "label": "2022",
+              "value": 0
+            },
+            {
+              "label": "2023",
+              "value": 6
+            },
+            {
+              "label": "2024",
+              "value": 9
+            },
+            {
+              "label": "2025",
+              "value": 23
+            },
+            {
+              "label": "2026",
+              "value": 5
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -551,11 +487,18 @@
         },
         {
           "type": "table",
-          "headers": [
-            "Wheelchair accessibility",
-            "4"
-          ],
+          "headers": [],
           "rows": [
+            [
+              {
+                "text": "Wheelchair accessibility",
+                "colSpan": 1
+              },
+              {
+                "text": "4",
+                "colSpan": 1
+              }
+            ],
             [
               {
                 "text": "Ramps/Elevators",

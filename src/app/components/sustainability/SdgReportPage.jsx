@@ -4,6 +4,7 @@ import SectionHeading from "../general/SectionHeading";
 import { SDG_GOAL_REPORTS, SDG_GOAL_DEFINITIONS } from "./data/sdg-content";
 
 import ReportTable, { ReportText } from "./SdgReportTable";
+import SdgBarChart from "./SdgBarChart";
 
 function ReportBlocks({ blocks }) {
     // Keep consecutive evidence photographs and list items together.
@@ -34,6 +35,7 @@ function ReportBlocks({ blocks }) {
             if (group.type === "listItem") return <ul key={index} className="list-disc space-y-2 pl-6">{group.items.map((item, itemIndex) => <li key={itemIndex}><ReportText text={item.text} /></li>)}</ul>;
             if (group.type === "heading") return <h3 key={index} className="pt-4 font-plus-jakarta-sans text-lg font-semibold text-[var(--button-red)]">{block.text}</h3>;
             if (group.type === "table") return <ReportTable key={index} block={block} />;
+            if (group.type === "barChart") return <SdgBarChart key={index} block={block} />;
             if (group.type === "links") return <ul key={index} className="space-y-2">{block.items.map((item, itemIndex) => <li key={itemIndex}><a href={item.href} target="_blank" rel="noopener noreferrer" className="text-[var(--button-red)] underline break-words">{item.label}</a></li>)}</ul>;
             return <p key={index}><ReportText text={block.text} /></p>;
         })}

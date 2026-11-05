@@ -25,12 +25,12 @@ export default function ReportTable({ block }) {
     const rows = block.rows.slice(page * pageSize, (page + 1) * pageSize);
     return (
         <div>
-        <div className="overflow-x-auto rounded-lg border border-gray-200" tabIndex={0} role="region" aria-label={block.caption || block.headers.join(", ")}>
+        <div className="overflow-x-auto rounded-lg border border-gray-200" tabIndex={0} role="region" aria-label={block.caption || block.headers?.join(", ") || "Table"}>
             <table className="w-full min-w-[640px] border-collapse text-left text-sm">
                 {block.caption && <caption className="p-4 text-left font-semibold text-[var(--foreground)]"><ReportText text={block.caption} /></caption>}
-                <thead className="bg-[var(--dark-blue)] text-white">
+                {block.headers?.length > 0 && <thead className="bg-[var(--dark-blue)] text-white">
                     <tr>{block.headers.map((header, index) => <th scope="col" key={index} className="border border-white/20 p-3 align-top">{header}</th>)}</tr>
-                </thead>
+                </thead>}
                 <tbody>
                     {rows.map((row, index) => (
                         <tr key={index} className="odd:bg-white even:bg-gray-50">
