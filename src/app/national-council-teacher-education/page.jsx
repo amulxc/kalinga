@@ -3,6 +3,7 @@
 import React from "react";
 import DataTable from "../components/general/data-table";
 import SectionHeading from "../components/general/SectionHeading";
+import FacultyViewer from "./FacultyViewer";
 
 
 
@@ -147,22 +148,14 @@ const tableData = [
   {
     slNo: "E",
     title: "Details of faculty",
-    action: (
-      <a
-        href="/ncte/details-of-faculty.xlsx"
-        download
-        className="text-[var(--button-red)] hover:underline"
-      >
-        Download
-      </a>
-    )
+    action: <FacultyViewer />
   },
   {
     slNo: "F",
     title: "Details of instructional facilities such as laboratory and library",
     action: (
       <a
-        href="/laboratories"
+        href="/academic-facilities"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"
