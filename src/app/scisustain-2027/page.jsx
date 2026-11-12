@@ -6,6 +6,7 @@ import { AccordionItem } from '../components/general/accordion';
 import SectionHeading from '../components/general/SectionHeading';
 import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
+import Gallery from '../components/general/gallery';
 
 const CONFERENCE_EMAIL = "scisustain@kalingauniversity.ac.in";
 const REGISTRATION_FORM_URL = "https://forms.gle/m389AmPmtNw8ANgLA";
@@ -308,6 +309,15 @@ const advisorySections = [
     },
 ];
 
+// SciSustain 2025 event photos (photo 22 is used in the Faculty of Science intro, so it is left out here)
+const glimpsesImages = Array.from({ length: 30 }, (_, i) => i + 1)
+    .filter((n) => n !== 22)
+    .map((n) => ({
+        id: n,
+        image: `/scisustain-2027/glimpses/scisustain-2025-${String(n).padStart(2, "0")}.webp`,
+        alt: `Glimpse of SciSustain 2025 conference, photo ${n}`,
+    }));
+
 const registrationTableSections = [
     {
         id: "important-dates",
@@ -317,11 +327,11 @@ const registrationTableSections = [
             { key: "date", label: "Date", width: "w-56" },
         ],
         data: [
-            { activity: "Abstract Submission Deadline", date: "20th December 2026" },
-            { activity: "Full Paper Submission Deadline", date: "31st December 2026" },
-            { activity: "Notification of Acceptance", date: "31st December 2026" },
-            { activity: "Early Bird Registration Deadline", date: "31st December 2026" },
-            { activity: "Conference Dates", date: "19th & 20th January 2027" },
+            { activity: "Abstract Submission Deadline", date: <>20<sup>th</sup> December 2026</> },
+            { activity: "Full Paper Submission Deadline", date: <>31<sup>st</sup> December 2026</> },
+            { activity: "Notification of Acceptance", date: <>31<sup>st</sup> December 2026</> },
+            { activity: "Early Bird Registration Deadline", date: <>31<sup>st</sup> December 2026</> },
+            { activity: "Conference Dates", date: <>19<sup>th</sup> &amp; 20<sup>th</sup> January 2027</> },
         ],
     },
     {
@@ -491,7 +501,7 @@ const SciSustainConferencePage = () => {
             <section className="py-12 md:py-16 text-center bg-white border-b border-gray-100">
                 <div className="container mx-auto px-4">
                     <p className="text-lg md:text-xl text-gray-500 mb-3">
-                        3rd International Conference on
+                        3<sup>rd</sup> International Conference on
                     </p>
                     <h1 className="font-bold text-3xl md:text-5xl lg:text-6xl text-gray-900 leading-tight mb-4">
                         SciSustain 2027
@@ -502,11 +512,11 @@ const SciSustainConferencePage = () => {
 
                     <div className="flex flex-wrap justify-center items-stretch gap-4 md:gap-5 max-w-4xl mx-auto">
                         {[
-                            ["🗓️", "19th & 20th January 2027"],
+                            ["🗓️", <>19<sup>th</sup> &amp; 20<sup>th</sup> January 2027</>],
                             ["💻", "Mode: Hybrid"],
                             ["📍", "Campus, Kalinga University"],
                         ].map(([icon, label]) => (
-                            <div key={label} className="flex-1 min-w-[180px] rounded-xl bg-[var(--lite-sand)] p-5 shadow-sm">
+                            <div key={icon}className="flex-1 min-w-[180px] rounded-xl bg-[var(--lite-sand)] p-5 shadow-sm">
                                 <p className="text-2xl mb-1" aria-hidden="true">{icon}</p>
                                 <p className="font-semibold text-[var(--foreground)]">{label}</p>
                             </div>
@@ -550,29 +560,18 @@ const SciSustainConferencePage = () => {
 
             {/* About */}
             <MainIntro
-                title="About Kalinga University"
-                subtitle=""
-                description={[
-                    "Kalinga University, Naya Raipur, is a NAAC-accredited institution recognized for its academic excellence, research innovation, and commitment to sustainable development. Established in 2013, the University has rapidly emerged as a leading centre of higher education in Central India, offering undergraduate, postgraduate, and doctoral programmes across science, technology, management, law, and interdisciplinary domains.",
-                    "The University emphasizes a strong research ecosystem supported by advanced laboratories, funded research projects, industry collaborations, and doctoral programmes. It actively promotes interdisciplinary research in emerging areas such as materials science, biotechnology, artificial intelligence, environmental sustainability, and applied sciences, aligning academic inquiry with national priorities and global Sustainable Development Goals (SDGs).",
-                ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/research/research-main-content.webp"
-                imageAlt="Kalinga University"
-            />
-
-            <MainIntro
                 title="About Faculty of Science"
                 subtitle=""
                 description={[
                     "The Faculty of Science, Kalinga University is a multidisciplinary academic and research hub committed to excellence in education, innovation, and sustainable scientific development. The faculty comprises 14 departments — Biotechnology, Biochemistry, Bioinformatics, Botany, Chemistry, Fashion Design, Forensic Science, Interior Design, Library Science, Mathematics, Microbiology, Physics, Yoga, and Zoology — and offers Undergraduate (UG), Postgraduate (PG), and Ph.D. programmes across diverse scientific and interdisciplinary domains.",
                     "The faculty promotes research, innovation, interdisciplinary collaboration, and skill-based education through modern laboratories, research projects, seminars, workshops, and academic partnerships, with its academic and research activities aligned with emerging scientific challenges, national priorities, technological advancement, and the United Nations Sustainable Development Goals (SDGs).",
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-green-campus/sdg-images-1.webp"
-                imageAlt="Faculty of Science, Kalinga University"
+                imageUrl="/scisustain-2027/glimpses/scisustain-2025-22.webp"
+                imageAlt="Dignitaries on stage at SciSustain 2025, Faculty of Science, Kalinga University"
             />
 
             <section className="py-12 md:py-16 bg-[var(--lite-sand)] mx-2 rounded-xl">
-                <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl">
+                <div className="container mx-auto px-4 max-w-6xl">
                     <article className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
                         <div className="flex items-center gap-4 mb-4">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -581,12 +580,6 @@ const SciSustainConferencePage = () => {
                         </div>
                         <p className="text-gray-700 leading-relaxed">
                             Mahatma Gandhi Udyanikee Evam Vanikee Vishwavidyalaya (MGUVV), Sankra–Patan, Durg, Chhattisgarh, is a State University committed to excellence in education, research, innovation, and extension in Horticulture, Forestry, and allied sciences. Established under the Mahatma Gandhi Udyanikee Evam Vanikee Vishwavidyalaya Adhiniyam, 2019, the University focuses on generating and disseminating knowledge that contributes to sustainable agriculture, horticultural advancement, forest conservation, biodiversity management, natural-resource conservation, and rural development. With its multidisciplinary academic and research programmes spanning fruit and vegetable science, floriculture, medicinal and aromatic crops, post-harvest technology, forestry, agroforestry, natural-resource management, forest products, and tree improvement, MGUVV provides a vibrant platform for scientific collaboration and innovation. Its commitment to sustainable production systems, environmental stewardship, technology transfer, and community-oriented research makes the University an important academic partner for advancing science, sustainability, food security, climate resilience, and the Sustainable Development Goals.
-                        </p>
-                    </article>
-                    <article className="bg-white rounded-xl p-6 md:p-8 shadow-sm">
-                        <h2 className="font-stix text-2xl text-[var(--foreground)] mb-4">About Chhattisgarh</h2>
-                        <p className="text-gray-700 leading-relaxed">
-                            Chhattisgarh, located in central India, is a state known for its rich natural resources, biodiversity, cultural heritage, and growing industrial significance. Often referred to as the “Rice Bowl of India,” the state possesses extensive forest cover, fertile plains, and diverse ecosystems. The capital region, Naya Raipur (Atal Nagar), is a planned smart city designed with modern infrastructure, sustainable urban planning, and digital connectivity, an emerging hub for education, research, and innovation.
                         </p>
                     </article>
                 </div>
@@ -601,7 +594,7 @@ const SciSustainConferencePage = () => {
                             titleClassName="text-center !text-white mb-6"
                         />
                         <p className="text-white/90 leading-relaxed text-center md:text-lg">
-                            The 3rd International Conference on SciSustain 2027 envisions establishing a globally recognized interdisciplinary platform that advances scientific excellence, technological innovation, and sustainable development through collaborative research. The conference integrates Material Science, Mathematical Sciences, Life Sciences, Forensic Sciences, and Emerging Technologies to address complex global challenges. Its objectives are to foster cross-disciplinary research collaboration, promote sustainable and innovation-driven technological solutions, strengthen academia–industry–government partnerships, and align scientific inquiry with the United Nations Sustainable Development Goals (SDGs).
+                            The 3<sup>rd</sup> International Conference on SciSustain 2027 envisions establishing a globally recognized interdisciplinary platform that advances scientific excellence, technological innovation, and sustainable development through collaborative research. The conference integrates Material Science, Mathematical Sciences, Life Sciences, Forensic Sciences, and Emerging Technologies to address complex global challenges. Its objectives are to foster cross-disciplinary research collaboration, promote sustainable and innovation-driven technological solutions, strengthen academia–industry–government partnerships, and align scientific inquiry with the United Nations Sustainable Development Goals (SDGs).
                         </p>
                     </div>
                 </div>
@@ -625,6 +618,17 @@ const SciSustainConferencePage = () => {
                 </div>
             </section>
 
+            {/* Dates & Registration */}
+            <FAQ
+                id="registration-details"
+                title="Important Dates & Registration"
+                subtitle="Participate"
+                variant="table-display"
+                tableSections={registrationTableSections}
+                items={registrationInfoItems}
+                pyClassName="py-12"
+            />
+
             {/* Keynote Speakers */}
             <section className="px-4 py-12 md:px-8 bg-[var(--lite-sand)]">
                 <div className="max-w-7xl mx-auto">
@@ -645,15 +649,26 @@ const SciSustainConferencePage = () => {
                 </div>
             </section>
 
-            {/* Dates & Registration */}
+            {/* Advisory Committees */}
             <FAQ
-                id="registration-details"
-                title="Important Dates & Registration"
-                subtitle="Participate"
-                variant="table-display"
-                tableSections={registrationTableSections}
-                items={registrationInfoItems}
-                pyClassName="py-12"
+                id="advisory-committees"
+                title="Advisory Committees"
+                subtitle="Committees"
+                variant="card-display"
+                tableSections={advisorySections}
+                items={[]}
+                pyClassName="py-8 md:py-12"
+            />
+
+            {/* Conference Committees */}
+            <FAQ
+                id="conference-committees"
+                title="Conference Committees"
+                subtitle="Committees"
+                variant="card-display"
+                tableSections={committeeSections}
+                items={[]}
+                pyClassName="py-8 md:py-12"
             />
 
             {/* Register & Pay */}
@@ -702,27 +717,6 @@ const SciSustainConferencePage = () => {
                 subtitle="Recognition"
                 variant="table-display"
                 tableSections={awardsTableSections}
-                items={[]}
-                pyClassName="py-8 md:py-12"
-            />
-
-            {/* Committees */}
-            <FAQ
-                id="conference-committees"
-                title="Conference Committees"
-                subtitle="Committees"
-                variant="card-display"
-                tableSections={committeeSections}
-                items={[]}
-                pyClassName="py-8 md:py-12"
-            />
-
-            <FAQ
-                id="advisory-committees"
-                title="Advisory Committees"
-                subtitle="Committees"
-                variant="card-display"
-                tableSections={advisorySections}
                 items={[]}
                 pyClassName="py-8 md:py-12"
             />
@@ -803,6 +797,14 @@ const SciSustainConferencePage = () => {
                     </a>
                 </div>
             </div>
+
+            {/* Glimpses of SciSustain 2025 */}
+            <Gallery
+                images={glimpsesImages}
+                title="Glimpses of SciSustain 2025"
+                enableLightbox
+                paddingClassName="py-16"
+            />
         </>
     );
 };

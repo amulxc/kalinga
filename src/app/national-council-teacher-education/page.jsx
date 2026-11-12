@@ -136,7 +136,7 @@ const tableData = [
     title: "Details of available infrastructure facilities",
     action: (
       <a
-        href=""
+        href="https://kalingauniversity.ac.in/campus-facilities"
         target="_blank"
         rel="noopener noreferrer"
         className="text-[var(--button-red)] hover:underline"
