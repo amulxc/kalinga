@@ -297,7 +297,7 @@ export default function IJECMRJournalPage() {
     const [selectedArea, setSelectedArea] = useState(null);
 
     return (
-        <div className="pt-[100px] md:pt-0">
+        <div>
             <MainIntro
                 title={JOURNAL_NAME}
                 subtitle="About the Journal"

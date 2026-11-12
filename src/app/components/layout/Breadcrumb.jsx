@@ -104,12 +104,13 @@ const Breadcrumb = () => {
           </div>
 
           {/* Breadcrumb Navigation */}
-          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center justify-start md:justify-start h-auto min-h-[40px] md:min-h-[50px] gap-x-1 gap-y-2 md:pl-0 md:mb-0 w-[95%] md:w-auto">
+          {/* Mobile: crumbs flow as inline text so a long title wraps right after "Home »"; md+: flex row */}
+          <nav aria-label="Breadcrumb" className="block md:flex md:flex-wrap md:items-center md:justify-start h-auto md:min-h-[50px] md:gap-x-1 md:gap-y-2 md:pl-0 md:mb-0 w-[95%] md:w-auto text-left leading-relaxed">
             {breadcrumbs.map((crumb, index) => {
               const isLast = index === breadcrumbs.length - 1;
 
               return (
-                <div key={crumb.href} className="flex items-center">
+                <span key={crumb.href} className="inline md:flex md:items-center">
                   {index > 0 && (
                     <span className="text-[var(--dark-gray)] mx-2 text-[11px] md:text-sm flex-shrink-0">»</span>
                   )}
@@ -125,7 +126,7 @@ const Breadcrumb = () => {
                       {crumb.label}
                     </Link>
                   )}
-                </div>
+                </span>
               );
             })}
           </nav>
