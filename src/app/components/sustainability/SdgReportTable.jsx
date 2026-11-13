@@ -4,6 +4,14 @@ import { useState } from "react";
 
 // Report text is rendered as text, including source URLs, never as source HTML.
 export function ReportText({ text }) {
+    return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) =>
+        /^\*\*[^*]+\*\*$/.test(part)
+            ? <strong key={index}>{linkify(part.slice(2, -2))}</strong>
+            : <span key={index}>{linkify(part)}</span>
+    );
+}
+
+function linkify(text) {
     return text.split(/(https?:\/\/[^\s<>]+)/g).map((part, index) => {
         if (!/^https?:\/\//.test(part)) return part;
         const href = part.replace(/[.,;)]+$/, "");

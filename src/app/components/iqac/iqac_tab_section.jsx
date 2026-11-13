@@ -1590,17 +1590,20 @@ const FEEDBACK_ANALYSIS = {
 // Annual Reports Data
 const ANNUAL_REPORTS = {
   "2024-25": [
+    { title: "Annual Report 2024–25", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2024-2025.pdf" },
     { title: "July-September-2024", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Final-Report-of-Activities-Month-of-July-September-2024.pdf" },
     { title: "October-December-2024", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Final-Report-of-Activities-Month-October-December-2024.pdf" }
 
   ],
 
   "2023-24": [
+    { title: "Annual Report 2023–24", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2023-2024.pdf" },
     { title: "January-June-2024", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-of-Activities-Month-of-January-June-2024.pdf" },
     { title: "July-December-2023", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-of-Activities-Month-July-December-2023.pdf" }
 
   ],
   "2022-23": [
+    { title: "Annual Report 2022–23", url: "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual+Report+2022-23+.pdf" },
     { title: "January-April-2022-23", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-Month-of-January-to-April-2022-23.pdf" },
     { title: "July-December-2022-23", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-of-Activities-Month-of-July-December-2022-23.pdf" }
 

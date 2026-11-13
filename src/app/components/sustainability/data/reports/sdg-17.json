@@ -14,7 +14,7 @@
     },
     {
       "label": "National Signed MoUs",
-      "value": "5"
+      "value": "55"
     },
     {
       "label": "NGO MoUs",
@@ -82,100 +82,42 @@
           "text": "During the period 2021–25, the University produced 111 SDG 17-aligned publications, reflecting its strong commitment to fostering multi-stakeholder research collaborations involving academia, industry, government, and civil society. These publications address key themes such as sustainable development, resource management, policy integration, and global partnerships. Their strong citation performance demonstrates the quality, relevance, and impact of the University's collaborative research. Through interdisciplinary and international partnerships, the University promotes knowledge exchange, innovation, and capacity building while advancing the United Nations Sustainable Development Goals. These sustained research efforts strengthen global cooperation, enhance the University's international research profile, and reinforce its significant contribution to SDG 17: Partnerships for the Goals."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "SDG - 17 Aligned Research Papers",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers (SDG - 17)",
+          "xLabel": "Year",
+          "yLabel": "Research Paper Count",
+          "series": [
+            {
+              "name": "SDG - 17 Aligned Research Papers",
+              "color": "#7030A0"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "1"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "10"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "17"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "83"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "36"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Resrach Papers (SDG - 17)"
+          "data": [
+            {
+              "label": "2021",
+              "value": 0
+            },
+            {
+              "label": "2022",
+              "value": 1
+            },
+            {
+              "label": "2023",
+              "value": 10
+            },
+            {
+              "label": "2024",
+              "value": 17
+            },
+            {
+              "label": "2025",
+              "value": 83
+            },
+            {
+              "label": "2026",
+              "value": 36
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -221,7 +163,7 @@
           "rows": [
             [
               {
-                "text": "",
+                "text": "1",
                 "colSpan": 1
               },
               {
@@ -235,7 +177,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "2",
                 "colSpan": 1
               },
               {
@@ -249,7 +191,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "3",
                 "colSpan": 1
               },
               {
@@ -263,7 +205,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "4",
                 "colSpan": 1
               },
               {
@@ -277,7 +219,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "5",
                 "colSpan": 1
               },
               {
@@ -291,7 +233,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "6",
                 "colSpan": 1
               },
               {
@@ -305,7 +247,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "7",
                 "colSpan": 1
               },
               {
@@ -319,7 +261,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "8",
                 "colSpan": 1
               },
               {
@@ -333,7 +275,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "9",
                 "colSpan": 1
               },
               {
@@ -347,7 +289,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "10",
                 "colSpan": 1
               },
               {
@@ -361,7 +303,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "11",
                 "colSpan": 1
               },
               {
@@ -375,7 +317,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "12",
                 "colSpan": 1
               },
               {
@@ -389,7 +331,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "13",
                 "colSpan": 1
               },
               {
@@ -403,7 +345,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "14",
                 "colSpan": 1
               },
               {
@@ -417,7 +359,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "15",
                 "colSpan": 1
               },
               {
@@ -431,7 +373,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "16",
                 "colSpan": 1
               },
               {
@@ -445,7 +387,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "17",
                 "colSpan": 1
               },
               {
@@ -459,7 +401,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "18",
                 "colSpan": 1
               },
               {
@@ -473,7 +415,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "19",
                 "colSpan": 1
               },
               {
@@ -487,7 +429,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "20",
                 "colSpan": 1
               },
               {
@@ -501,7 +443,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "21",
                 "colSpan": 1
               },
               {
@@ -515,7 +457,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "22",
                 "colSpan": 1
               },
               {
@@ -529,7 +471,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "23",
                 "colSpan": 1
               },
               {
@@ -543,7 +485,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "24",
                 "colSpan": 1
               },
               {
@@ -557,7 +499,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "25",
                 "colSpan": 1
               },
               {
@@ -571,7 +513,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "26",
                 "colSpan": 1
               },
               {
@@ -585,7 +527,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "27",
                 "colSpan": 1
               },
               {
@@ -599,7 +541,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "28",
                 "colSpan": 1
               },
               {
@@ -613,7 +555,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "29",
                 "colSpan": 1
               },
               {
@@ -627,7 +569,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "30",
                 "colSpan": 1
               },
               {
@@ -641,7 +583,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "31",
                 "colSpan": 1
               },
               {
@@ -655,7 +597,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "32",
                 "colSpan": 1
               },
               {
@@ -669,7 +611,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "33",
                 "colSpan": 1
               },
               {
@@ -683,7 +625,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "34",
                 "colSpan": 1
               },
               {
@@ -697,7 +639,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "35",
                 "colSpan": 1
               },
               {
@@ -711,7 +653,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "36",
                 "colSpan": 1
               },
               {
@@ -725,7 +667,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "37",
                 "colSpan": 1
               },
               {
@@ -739,7 +681,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "38",
                 "colSpan": 1
               },
               {
@@ -753,7 +695,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "39",
                 "colSpan": 1
               },
               {
@@ -767,7 +709,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "40",
                 "colSpan": 1
               },
               {
@@ -781,7 +723,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "41",
                 "colSpan": 1
               },
               {
@@ -795,7 +737,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "42",
                 "colSpan": 1
               },
               {
@@ -809,7 +751,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "43",
                 "colSpan": 1
               },
               {
@@ -823,7 +765,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "44",
                 "colSpan": 1
               },
               {
@@ -837,7 +779,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "45",
                 "colSpan": 1
               },
               {
@@ -851,7 +793,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "46",
                 "colSpan": 1
               },
               {
@@ -865,7 +807,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "47",
                 "colSpan": 1
               },
               {
@@ -879,7 +821,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "48",
                 "colSpan": 1
               },
               {
@@ -893,7 +835,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "49",
                 "colSpan": 1
               },
               {
@@ -907,21 +849,7 @@
             ],
             [
               {
-                "text": "",
-                "colSpan": 1
-              },
-              {
-                "text": "SRI SRI NRUSINGHNATH AYURVED COLLEGE AND RESEARCH INSTITUTE",
-                "colSpan": 1
-              },
-              {
-                "text": "2025",
-                "colSpan": 1
-              }
-            ],
-            [
-              {
-                "text": "",
+                "text": "50",
                 "colSpan": 1
               },
               {
@@ -935,7 +863,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "51",
                 "colSpan": 1
               },
               {
@@ -949,7 +877,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "52",
                 "colSpan": 1
               },
               {
@@ -963,7 +891,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "53",
                 "colSpan": 1
               },
               {
@@ -977,7 +905,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "54",
                 "colSpan": 1
               },
               {
@@ -991,7 +919,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "55",
                 "colSpan": 1
               },
               {
@@ -1005,7 +933,7 @@
             ],
             [
               {
-                "text": "",
+                "text": "56",
                 "colSpan": 1
               },
               {
@@ -3148,7 +3076,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-1",
                 "colSpan": 1
               }
             ],
@@ -3162,7 +3090,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-2",
                 "colSpan": 1
               }
             ],
@@ -3176,7 +3104,7 @@
                 "colSpan": 1
               },
               {
-                "text": "https://kalingauniversity.ac.in/sustainability/sdg-3-report",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-3",
                 "colSpan": 1
               }
             ],
@@ -3190,7 +3118,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-4",
                 "colSpan": 1
               }
             ],
@@ -3204,7 +3132,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-5",
                 "colSpan": 1
               }
             ],
@@ -3218,7 +3146,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-6",
                 "colSpan": 1
               }
             ],
@@ -3232,7 +3160,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-7",
                 "colSpan": 1
               }
             ],
@@ -3246,7 +3174,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-8",
                 "colSpan": 1
               }
             ],
@@ -3260,7 +3188,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-9",
                 "colSpan": 1
               }
             ],
@@ -3274,7 +3202,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-10",
                 "colSpan": 1
               }
             ],
@@ -3288,7 +3216,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-11",
                 "colSpan": 1
               }
             ],
@@ -3302,7 +3230,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-12",
                 "colSpan": 1
               }
             ],
@@ -3316,7 +3244,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-13",
                 "colSpan": 1
               }
             ],
@@ -3330,7 +3258,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-14",
                 "colSpan": 1
               }
             ],
@@ -3344,7 +3272,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-15",
                 "colSpan": 1
               }
             ],
@@ -3358,7 +3286,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-16",
                 "colSpan": 1
               }
             ],
@@ -3372,7 +3300,7 @@
                 "colSpan": 1
               },
               {
-                "text": "",
+                "text": "https://kalingauniversity.ac.in/sustainability/sdg-17",
                 "colSpan": 1
               }
             ]

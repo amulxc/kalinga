@@ -61,103 +61,57 @@
         },
         {
           "type": "paragraph",
-          "text": "Research on Gender Equality"
+          "text": "**Research on Gender Equality**"
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "Research Paper: Count",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers",
+          "xLabel": "Year",
+          "yLabel": "Count of Research Papers",
+          "series": [
+            {
+              "name": "Research Paper: Count",
+              "color": "#4EA72E"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "1"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "2"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "3"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "2"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Research Papers"
+          "data": [
+            {
+              "label": "2021",
+              "values": [
+                0
+              ]
+            },
+            {
+              "label": "2022",
+              "values": [
+                1
+              ]
+            },
+            {
+              "label": "2023",
+              "values": [
+                0
+              ]
+            },
+            {
+              "label": "2024",
+              "values": [
+                2
+              ]
+            },
+            {
+              "label": "2025",
+              "values": [
+                3
+              ]
+            },
+            {
+              "label": "2026",
+              "values": [
+                2
+              ]
+            }
+          ]
         },
         {
           "type": "paragraph",

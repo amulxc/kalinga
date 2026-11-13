@@ -94,100 +94,42 @@
           "text": "Kalinga University, Raipur, has established a strong research ecosystem that promotes sustainable urban development, environmental sustainability, climate resilience, resource conservation, and community well-being, directly contributing to United Nations Sustainable Development Goal 11 (Sustainable Cities and Communities). The University encourages faculty members, researchers, and students to undertake interdisciplinary research that addresses contemporary urban challenges while supporting sustainable and inclusive development."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "Research Paper: Count",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers",
+          "xLabel": "Year",
+          "yLabel": "Count of Research Papers",
+          "series": [
+            {
+              "name": "Research Paper: Count",
+              "color": "#70AD47"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "6"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "9"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "15"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "100"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "67"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Research Papers"
+          "data": [
+            {
+              "label": "2021",
+              "value": 0
+            },
+            {
+              "label": "2022",
+              "value": 6
+            },
+            {
+              "label": "2023",
+              "value": 9
+            },
+            {
+              "label": "2024",
+              "value": 15
+            },
+            {
+              "label": "2025",
+              "value": 100
+            },
+            {
+              "label": "2026",
+              "value": 67
+            }
+          ]
         },
         {
           "type": "heading",

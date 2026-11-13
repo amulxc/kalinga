@@ -40,100 +40,42 @@
       "title": "14.1 Research on life below water",
       "blocks": [
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "Research Paper: Count",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers",
+          "xLabel": "Year",
+          "yLabel": "Count of Research Papers",
+          "series": [
+            {
+              "name": "Research Paper: Count",
+              "color": "#70AD47"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "1"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "7"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "81"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "14"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Research Papers"
+          "data": [
+            {
+              "label": "2021",
+              "value": 0
+            },
+            {
+              "label": "2022",
+              "value": 0
+            },
+            {
+              "label": "2023",
+              "value": 1
+            },
+            {
+              "label": "2024",
+              "value": 7
+            },
+            {
+              "label": "2025",
+              "value": 81
+            },
+            {
+              "label": "2026",
+              "value": 14
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -171,62 +113,41 @@
           "text": "The University's research portfolio covers a broad range of themes that contribute to the objectives of SDG 14. Major areas of research include water resources water quality and water conservation aquatic biodiversity and aquatic ecosystems wastewater treatment and water pollution control wetland conservation and river basin and watershed management. These studies focus on sustainable water management pollution assessment freshwater biodiversity aquatic ecology ecosystem health innovative wastewater treatment technologies wetland protection hydrological processes and integrated watershed management. Collectively these research contributions demonstrate Kalinga University's commitment to generating scientific knowledge that supports the sustainable management of aquatic ecosystems protects freshwater resources and contributes to national and global efforts towards achieving SDG 14: Life Below Water."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "No. of Publications"
+          "type": "barChart",
+          "caption": "Major Research Areas in Kalinga University Aligned with SDG 14",
+          "yLabel": "Number of Research Papers",
+          "series": [
+            {
+              "name": "No. of Publications",
+              "color": "#4472C4"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "Water Resources, Water Quality & Water Conservation"
-              },
-              {
-                "text": "152"
-              }
-            ],
-            [
-              {
-                "text": "Aquatic Biodiversity, Fisheries & Marine/Aquatic Ecosystems"
-              },
-              {
-                "text": "133"
-              }
-            ],
-            [
-              {
-                "text": "Wastewater Treatment & Water Pollution Control"
-              },
-              {
-                "text": "27"
-              }
-            ],
-            [
-              {
-                "text": "Wetlands & Wetland Conservation"
-              },
-              {
-                "text": "10"
-              }
-            ],
-            [
-              {
-                "text": "River Basin & Watershed Management"
-              },
-              {
-                "text": "10"
-              }
-            ],
-            [
-              {
-                "text": "Related Environmental & Aquatic Studies"
-              },
-              {
-                "text": "31"
-              }
-            ]
-          ],
-          "caption": "Major Research Areas in Kalinga UniversityAligned with SDG 14"
+          "data": [
+            {
+              "label": "Water Resources, Water Quality & Water Conservation",
+              "value": 152
+            },
+            {
+              "label": "Aquatic Biodiversity, Fisheries & Marine/Aquatic Ecosystems",
+              "value": 133
+            },
+            {
+              "label": "Wastewater Treatment & Water Pollution Control",
+              "value": 27
+            },
+            {
+              "label": "Wetlands & Wetland Conservation",
+              "value": 10
+            },
+            {
+              "label": "River Basin & Watershed Management",
+              "value": 10
+            },
+            {
+              "label": "Related Environmental & Aquatic Studies",
+              "value": 31
+            }
+          ]
         }
       ]
     },

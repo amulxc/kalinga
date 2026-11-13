@@ -5,8 +5,16 @@ import MainIntro from '../components/about/main_intro';
 import { AccordionItem } from '../components/general/accordion';
 import SectionHeading from '../components/general/SectionHeading';
 import ImageListItem from '../components/ccrc/imagelistitem';
+import Gallery from '../components/general/gallery';
 import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
+
+// Photos from the previous edition of the Faculty of Technology International Conference
+const glimpsesImages = Array.from({ length: 19 }, (_, i) => ({
+    id: i + 1,
+    image: `/conference-glimpses/iceasre-2027/${String(i + 1).padStart(2, "0")}.webp`,
+    alt: `Glimpse of the Faculty of Technology International Conference, photo ${i + 1}`,
+}));
 
 const ICEASREConferencePage = () => {
 
@@ -276,7 +284,7 @@ const ICEASREConferencePage = () => {
                 description={[
                     "The Faculty of Technology at Kalinga University is a comprehensive educational hub offering programs in engineering and technology, including B.Tech degrees in Electrical Engineering, Civil Engineering, and Mechanical Engineering. It also provides Diploma programs and M.Tech degrees. The faculty focuses on providing students with a strong foundation in theory and practical skills, preparing them for a variety of careers in the field."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/Home/about-kalinga.webp"
+                imageUrl="/conference-glimpses/iceasre-2027/01.webp"
                 imageAlt="Faculty of Technology"
             />
 
@@ -288,7 +296,7 @@ const ICEASREConferencePage = () => {
                     "The International Conference on Engineering, Agritech and Sustainable Rural Ecosystems (ICEASRE-2027) aims to provide a comprehensive platform for professionals, academics, researchers, policymakers, and industry experts to discuss, share, and explore the latest advancements, applications, and potential impacts of a greener future on sustainable development.",
                     "The conference will provide insights into the United Nations Sustainable Development Goals (SDGs), focusing on how emerging technologies can contribute to achieving these goals. This includes addressing global challenges such as poverty, hunger, clean water and sanitation, affordable and clean energy, decent work, and climate action."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/research/research-main-content.webp"
+                imageUrl="/conference-glimpses/iceasre-2027/15.webp"
                 imageAlt="Scope of Papers - ICEASRE 2027"
                 reverseLayout={true}
                 sectionClassName="md:py-16 bg-[var(--lite-sand)] py-16 !pb-20"
@@ -343,7 +351,7 @@ const ICEASREConferencePage = () => {
             {/* ================= AWARDS ================= */}
             <ImageListItem
                 items={awardsItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/campus-life/whywork.webp"
+                imageSrc="/conference-glimpses/iceasre-2027/03.webp"
                 title="Awards"
                 subtitle=""
                 description="Participants will be given:"
@@ -399,7 +407,7 @@ const ICEASREConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/Brochure+/FOT_Confrence_Brochure.pdf"
+                        href="/brochure/iceasre-2027.pdf"
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 rounded-xl bg-[var(--button-red)] px-5 py-3 text-white font-semibold hover:opacity-90 transition"
@@ -424,6 +432,14 @@ const ICEASREConferencePage = () => {
                     </a>
                 </div>
             </div>
+
+            {/* Glimpses */}
+            <Gallery
+                images={glimpsesImages}
+                title="Glimpses of the Conference"
+                enableLightbox
+                paddingClassName="py-16"
+            />
         </>
     );
 };

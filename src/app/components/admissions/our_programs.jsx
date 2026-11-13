@@ -83,6 +83,7 @@ export default function OurPrograms({
   hideSearchFilter = false,
   customTitle = null,
   customSubtitle = null,
+  customDescription = null,
   maxPrograms = null,
   backgroundColor = "bg-white",
   mobileMaxWidth = null,
@@ -466,6 +467,11 @@ export default function OurPrograms({
             titleClassName={`text-center ${textColor}`}
             subtitleTextColor={customPrograms ? "text-white" : "text-center"}
           />
+          {customDescription && (
+            <p className={`mt-4 mx-auto max-w-4xl leading-relaxed ${customPrograms ? "text-white/90" : "text-gray-700"}`}>
+              {customDescription}
+            </p>
+          )}
         </div>
 
         {/* Programs Container */}

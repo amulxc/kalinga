@@ -5,8 +5,16 @@ import MainIntro from '../components/about/main_intro';
 import { AccordionItem } from '../components/general/accordion';
 import SectionHeading from '../components/general/SectionHeading';
 import ImageListItem from '../components/ccrc/imagelistitem';
+import Gallery from '../components/general/gallery';
 import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
+
+// Photos from the previous edition of the Faculty of Arts and Humanities National Conference
+const glimpsesImages = Array.from({ length: 9 }, (_, i) => ({
+    id: i + 1,
+    image: `/conference-glimpses/indian-knowledge-systems/${String(i + 1).padStart(2, "0")}.webp`,
+    alt: `Glimpse of the Faculty of Arts and Humanities National Conference, photo ${i + 1}`,
+}));
 
 const IndianKnowledgeSystemsConferencePage = () => {
 
@@ -201,14 +209,14 @@ const IndianKnowledgeSystemsConferencePage = () => {
                     "The global landscape is undergoing profound transformations driven by environmental challenges, technological advances, social inequalities, and shifting political dynamics. In this context, the pursuit of a sustainable future requires a multidisciplinary and inclusive approach — one that bridges the spheres of culture, society, and governance.",
                     "This conference aims to create a vibrant platform for scholars, policymakers, practitioners, and community leaders to engage in critical dialogue about how we can transition toward a more just, resilient, and sustainable world. By examining the intersections of cultural narratives, social systems, and governance models, the event seeks to challenge conventional paradigms and propose innovative solutions to the complex challenges of our time. Culture shapes our values, beliefs, and behaviours; society reflects our collective organisation and resilience; governance determines how power and resources are distributed. This conference invites contributions that explore emerging trends, indigenous knowledge systems, participatory governance, social justice, and the role of education, media, and the arts in shaping sustainable futures."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/research/research-main-content.webp"
+                imageUrl="/conference-glimpses/indian-knowledge-systems/04.webp"
                 imageAlt="Indian Knowledge Systems Conference"
             />
 
             {/* ================= CONFERENCE AIMS ================= */}
             <ImageListItem
                 items={aimsItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/Home/about-kalinga.webp"
+                imageSrc="/conference-glimpses/indian-knowledge-systems/02.webp"
                 title="This Conference Aims To"
                 subtitle=""
                 description="The key objectives of the conference are as follows:"
@@ -260,7 +268,7 @@ const IndianKnowledgeSystemsConferencePage = () => {
             {/* ================= SUBMISSION GUIDELINES ================= */}
             <ImageListItem
                 items={submissionItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/gallery/UG/Bachelor-of-Computer-Applications-in-Artificial-Intelligence-and-Machine-Learning.jpg"
+                imageSrc="/conference-glimpses/indian-knowledge-systems/07.webp"
                 title="Submission Guidelines"
                 subtitle=""
                 description="Please follow the guidelines below while preparing and submitting your work:"
@@ -316,7 +324,7 @@ const IndianKnowledgeSystemsConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/Brochure+/Faculty+of+Arts_and_Humanities_Brochure.pdf"
+                        href="/brochure/indian-knowledge-systems-2027.pdf"
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 rounded-xl bg-[var(--button-red)] px-5 py-3 text-white font-semibold hover:opacity-90 transition"
@@ -341,6 +349,14 @@ const IndianKnowledgeSystemsConferencePage = () => {
                     </a>
                 </div>
             </div>
+
+            {/* Glimpses */}
+            <Gallery
+                images={glimpsesImages}
+                title="Glimpses of the Conference"
+                enableLightbox
+                paddingClassName="py-16"
+            />
         </>
     );
 };

@@ -22,7 +22,7 @@
     },
     {
       "label": "Proportion of Graduates in Health Professions (2024-25)",
-      "value": "108"
+      "value": "104"
     },
     {
       "label": "Sustainable Food Waste Management through Vermicomposting",
@@ -535,100 +535,54 @@
           "text": "Kalinga University has demonstrated a strong research commitment towards SDG 2 (Zero Hunger) through the publication of 123 research papers. These research outcomes reflect the University's growing academic impact and sustained contribution to advancing knowledge in food security, sustainable agriculture, and nutrition."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "SDG - 2 Aligned Research Papers",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers (SDG - 2)",
+          "xLabel": "Year",
+          "yLabel": "Research Paper Count",
+          "series": [
+            {
+              "name": "SDG - 2 Aligned Research Papers",
+              "color": "#D49E00"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "4"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "4"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "33"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "52"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "31"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Resrach Papers (SDG - 2)"
+          "data": [
+            {
+              "label": "2021",
+              "values": [
+                4
+              ]
+            },
+            {
+              "label": "2022",
+              "values": [
+                0
+              ]
+            },
+            {
+              "label": "2023",
+              "values": [
+                4
+              ]
+            },
+            {
+              "label": "2024",
+              "values": [
+                33
+              ]
+            },
+            {
+              "label": "2025",
+              "values": [
+                52
+              ]
+            },
+            {
+              "label": "2026",
+              "values": [
+                31
+              ]
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1970,7 +1924,7 @@
           "rows": [
             [
               {
-                "text": "Number of graduates - 1122",
+                "text": "Number of graduates - 1881",
                 "colSpan": 1
               },
               {
@@ -1978,13 +1932,13 @@
                 "colSpan": 1
               },
               {
-                "text": "1122",
+                "text": "1881",
                 "colSpan": 1
               }
             ],
             [
               {
-                "text": "Number of graduates in Department of Biotechnology & Zoology - 108",
+                "text": "Number of graduates in Department of Biotechnology & Zoology - 104",
                 "colSpan": 1
               },
               {
@@ -1992,7 +1946,7 @@
                 "colSpan": 1
               },
               {
-                "text": "108",
+                "text": "104",
                 "colSpan": 1
               }
             ]

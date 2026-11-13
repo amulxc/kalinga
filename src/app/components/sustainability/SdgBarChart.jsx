@@ -12,6 +12,49 @@ export default function SdgBarChart({ block }) {
     const ticks = Array.from({ length: top / step + 1 }, (_, i) => top - i * step);
     const colorOf = (i) => series[i].color || DEFAULT_COLORS[i % DEFAULT_COLORS.length];
 
+    // Long category names (e.g. research areas) don't fit under vertical bars, so draw them horizontally.
+    if (rows.some(r => String(r.label).length > 12)) {
+        return (
+            <figure className="rounded-lg border border-gray-200 bg-white p-4 md:p-6">
+                {block.caption && <figcaption className="mb-6 text-center font-semibold text-lg">{block.caption}</figcaption>}
+                <div className="space-y-3">
+                    {rows.map(r => (
+                        <div key={r.label} className="grid grid-cols-1 gap-1 md:grid-cols-[minmax(0,16rem)_1fr] md:items-center md:gap-3">
+                            <span className="text-xs font-medium md:text-right">{r.label}</span>
+                            <div className="space-y-1">
+                                {r.values.map((v, i) => {
+                                    const n = Number(v) || 0;
+                                    return (
+                                        <div key={i} className="flex items-center gap-2">
+                                            <div
+                                                className="h-5"
+                                                style={{ width: `${(n / top) * 85}%`, backgroundColor: colorOf(i) }}
+                                                role="img"
+                                                aria-label={`${r.label} – ${series[i].name}: ${n}`}
+                                            />
+                                            <span className="text-xs font-semibold">{n}</span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                {block.yLabel && <p className="mt-4 text-center text-xs text-gray-600">{block.yLabel}</p>}
+                {series.length > 1 && (
+                    <div className="mt-3 flex flex-wrap justify-center gap-4 text-xs">
+                        {series.map((s, i) => (
+                            <span key={s.name} className="flex items-center gap-1.5">
+                                <span className="inline-block h-3 w-3" style={{ backgroundColor: colorOf(i) }} />
+                                {s.name}
+                            </span>
+                        ))}
+                    </div>
+                )}
+            </figure>
+        );
+    }
+
     return (
         <figure className="rounded-lg border border-gray-200 bg-white p-4 md:p-6">
             {block.caption && <figcaption className="mb-6 text-center font-semibold text-lg">{block.caption}</figcaption>}

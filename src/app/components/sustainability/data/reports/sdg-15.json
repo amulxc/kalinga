@@ -61,125 +61,57 @@
           "text": "Kalinga University actively promotes interdisciplinary research that contributes to the conservation, restoration, and sustainable management of terrestrial ecosystems. Research undertaken by the University addresses key themes including biodiversity conservation, sustainable agriculture, forestry, land restoration, environmental sustainability, soil health, ecosystem management and climate resilience. Through high-quality scholarly publications, the University contributes to scientific knowledge that supports the objectives of Sustainable Development Goal 15: Life on Land."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "No. of Publications",
-            "Published from the Faculty/Departments"
+          "type": "barChart",
+          "caption": "Major Research Areas Aligned with SDG 15",
+          "yLabel": "No. of Researches",
+          "series": [
+            {
+              "name": "No. of Publications",
+              "color": "#4472C4"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "Environmental Sustainability"
-              },
-              {
-                "text": "259"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Sustainable Agriculture"
-              },
-              {
-                "text": "142"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Plant Sciences"
-              },
-              {
-                "text": "131"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Geospatial Applications (GIS & Remote Sensing)"
-              },
-              {
-                "text": "73"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Land Management & Land Resources"
-              },
-              {
-                "text": "60"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Soil Health & Soil Science"
-              },
-              {
-                "text": "46"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Ecology & Ecosystem Studies"
-              },
-              {
-                "text": "41"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Forestry"
-              },
-              {
-                "text": "36"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Biodiversity Conservation"
-              },
-              {
-                "text": "36"
-              },
-              {
-                "text": "0"
-              }
-            ],
-            [
-              {
-                "text": "Water Resources & Watershed Management"
-              },
-              {
-                "text": "22"
-              },
-              {
-                "text": "0"
-              }
-            ]
-          ],
-          "caption": "Major Research Areas Aligned with SDG 15"
+          "data": [
+            {
+              "label": "Environmental Sustainability",
+              "value": 259
+            },
+            {
+              "label": "Sustainable Agriculture",
+              "value": 142
+            },
+            {
+              "label": "Plant Sciences",
+              "value": 131
+            },
+            {
+              "label": "Geospatial Applications (GIS & Remote Sensing)",
+              "value": 73
+            },
+            {
+              "label": "Land Management & Land Resources",
+              "value": 60
+            },
+            {
+              "label": "Soil Health & Soil Science",
+              "value": 46
+            },
+            {
+              "label": "Ecology & Ecosystem Studies",
+              "value": 41
+            },
+            {
+              "label": "Forestry",
+              "value": 36
+            },
+            {
+              "label": "Biodiversity Conservation",
+              "value": 36
+            },
+            {
+              "label": "Water Resources & Watershed Management",
+              "value": 22
+            }
+          ]
         },
         {
           "type": "heading",
@@ -265,100 +197,42 @@
           "text": "The 211 SDG 15-related publications demonstrate the scale and multidisciplinary nature of Kalinga University's research contribution towards conservation of terrestrial ecosystems, sustainable resource management and protection of biodiversity."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "Research Paper: Count",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers",
+          "xLabel": "Year",
+          "yLabel": "Count of Research Papers",
+          "series": [
+            {
+              "name": "Research Paper: Count",
+              "color": "#70AD47"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "4"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "14"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "33"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "28"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "63"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "69"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Research Papers"
+          "data": [
+            {
+              "label": "2021",
+              "value": 4
+            },
+            {
+              "label": "2022",
+              "value": 14
+            },
+            {
+              "label": "2023",
+              "value": 33
+            },
+            {
+              "label": "2024",
+              "value": 28
+            },
+            {
+              "label": "2025",
+              "value": 63
+            },
+            {
+              "label": "2026",
+              "value": 69
+            }
+          ]
         }
       ]
     },

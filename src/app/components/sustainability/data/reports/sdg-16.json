@@ -31,11 +31,6 @@
   ],
   "intro": [
     {
-      "type": "image",
-      "src": "/sdg-reports/sdg-16/c2900521679218cd.png",
-      "alt": "SDG 16: Peace, Justice and Strong Institutions - report evidence"
-    },
-    {
       "type": "paragraph",
       "text": "Kalinga University, Raipur, is committed to promoting peaceful, inclusive and just societies by strengthening institutional accountability, transparency, ethical governance and respect for human rights. The University actively contributes to SDG 16 through its Faculty of Law, Legal Aid Cell, Internal Complaints Committee (ICC), Anti-Ragging Committee, Grievance Redressal Cell and various student welfare initiatives. These institutional mechanisms ensure access to justice, protect individual rights, promote gender equality and provide a safe, inclusive and discrimination-free campus environment."
     },
@@ -84,100 +79,42 @@
           "text": "Kalinga University has demonstrated consistent growth in research publications aligned with SDG 16: Peace, Justice and Strong Institutions. As illustrated in the graph, the University recorded no aligned publications in 2021 and 2022, followed by 7 papers in 2023 and 4 papers in 2024. A significant increase was observed in 2025, with 22 research publications, representing the highest annual contribution. In 2026, the University recorded 9 publications. These research contributions reflect growing academic engagement in areas such as human rights, social justice, legal reforms, good governance, institutional accountability and peaceful societies."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "SDG - 16 Aligned Research Papers",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers (SDG - 16)",
+          "xLabel": "Year",
+          "yLabel": "Research Paper Count",
+          "series": [
+            {
+              "name": "SDG - 16 Aligned Research Papers",
+              "color": "#0070C0"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "7"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "4"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "22"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "9"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Research Papers (SDG - 16)"
+          "data": [
+            {
+              "label": "2021",
+              "value": 0
+            },
+            {
+              "label": "2022",
+              "value": 0
+            },
+            {
+              "label": "2023",
+              "value": 7
+            },
+            {
+              "label": "2024",
+              "value": 4
+            },
+            {
+              "label": "2025",
+              "value": 22
+            },
+            {
+              "label": "2026",
+              "value": 9
+            }
+          ]
         },
         {
           "type": "paragraph",

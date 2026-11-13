@@ -6,9 +6,17 @@ import ImageContent from '../components/ccrc/imagecontent';
 import { AccordionItem } from '../components/general/accordion';
 import SectionHeading from '../components/general/SectionHeading';
 import ImageListItem from '../components/ccrc/imagelistitem';
+import Gallery from '../components/general/gallery';
 import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
 import PublicationGrid from '../components/research/publication-grid';
+
+// Photos from the previous edition of the Faculty of Education International Conference
+const glimpsesImages = Array.from({ length: 23 }, (_, i) => ({
+    id: i + 1,
+    image: `/conference-glimpses/ai-for-humanity-27/${String(i + 1).padStart(2, "0")}.webp`,
+    alt: `Glimpse of the Faculty of Education International Conference, photo ${i + 1}`,
+}));
 
 const AIForHumanityConferencePage = () => {
 
@@ -425,7 +433,7 @@ const AIForHumanityConferencePage = () => {
                 description={[
                     "Kalinga University, established in 2013, stands out as one of the leading private universities strategically located in the Smart City of New Raipur, Chhattisgarh. The University has consistently ranked among the top 101–150 universities in India under the NIRF Rankings 2025 for the fourth consecutive year and has also received a NAAC B+ accreditation, continuously shining on the horizon of high-quality education."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/Home/about-kalinga.webp"
+                imageUrl="/conference-glimpses/ai-for-humanity-27/01.webp"
                 imageAlt="Kalinga University Campus"
             /> */}
 
@@ -438,7 +446,7 @@ const AIForHumanityConferencePage = () => {
                 description={[
                     "The Faculty of Education at Kalinga University, Naya Raipur, is a beacon of knowledge and innovation. With a team of highly qualified and experienced faculty members, it offers comprehensive and industry-aligned programs for aspiring educators. The Department focuses not just on theoretical knowledge but also on practical application through internships and hands-on experiences. Kalinga University's Faculty of Education instils in its students a passion for teaching, equipping them with the skills and expertise needed to excel in their careers and make a meaningful impact in the field of education."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/research/research-main-content.webp"
+                imageUrl="/conference-glimpses/ai-for-humanity-27/07.webp"
                 imageAlt="Faculty of Education"
                 reverseLayout={true}
                 sectionClassName="md:py-16 bg-[var(--lite-sand)] py-16 !pb-20"
@@ -529,7 +537,7 @@ const AIForHumanityConferencePage = () => {
             {/* ================= SUBMISSION GUIDELINES ================= */}
             <ImageListItem
                 items={submissionItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/campus-life/whywork.webp"
+                imageSrc="/conference-glimpses/ai-for-humanity-27/03.webp"
                 title="Submission Guidelines"
                 subtitle=""
                 description="Please follow the guidelines below while preparing and submitting your work:"
@@ -611,6 +619,14 @@ const AIForHumanityConferencePage = () => {
                     </a>
                 </div>
             </div>
+
+            {/* Glimpses */}
+            <Gallery
+                images={glimpsesImages}
+                title="Glimpses of the Conference"
+                enableLightbox
+                paddingClassName="py-16"
+            />
         </>
     );
 };

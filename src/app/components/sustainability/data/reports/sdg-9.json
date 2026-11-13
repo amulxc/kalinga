@@ -204,54 +204,47 @@
           "text": "Kalinga University has demonstrated significant growth in research aligned with SDG 9 (Industry, Innovation and Infrastructure), with publications increasing from 3 in 2021 to 159 in 2025. The steady rise, particularly in 2024 and 2025, reflects the University's growing research engagement in innovation, technological advancement, sustainable industrial development, and resilient infrastructure."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "SDG - 9 Aligned Research Papers"
+          "type": "barChart",
+          "xLabel": "SDG 9 Aligned Research Papers",
+          "yLabel": "Research Paper Count",
+          "series": [
+            {
+              "name": "SDG - 9 Aligned Research Papers",
+              "color": "#31859C"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "3"
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "5"
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "17"
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "46"
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "159"
-              }
-            ]
-          ],
-          "caption": "Research data from the report"
+          "data": [
+            {
+              "label": "2021",
+              "values": [
+                3
+              ]
+            },
+            {
+              "label": "2022",
+              "values": [
+                5
+              ]
+            },
+            {
+              "label": "2023",
+              "values": [
+                17
+              ]
+            },
+            {
+              "label": "2024",
+              "values": [
+                46
+              ]
+            },
+            {
+              "label": "2025",
+              "values": [
+                159
+              ]
+            }
+          ]
         },
         {
           "type": "paragraph",

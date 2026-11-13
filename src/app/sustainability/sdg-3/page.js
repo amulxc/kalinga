@@ -9,8 +9,8 @@ import QuickLinkCard from "@/app/components/general/quick_link_card";
 import CustomGallery from "@/app/components/general/gallery";
 import SdgBarChart from "@/app/components/sustainability/SdgBarChart";
 
-// Content from the SDG 3 report (October 2026). The full report, including the
-// event photographs and scanned event reports, is linked as a PDF.
+// Content from the SDG 3 report (October 2026; images from the November 2026 revision).
+// The full report is also linked as a PDF.
 const REPORT_PDF = "/sdg-reports/sdg-03-good-health-and-well-being-report.pdf";
 
 const mainIntroContent = {
@@ -391,6 +391,86 @@ const MediaLink = () => (
     </p>
 );
 
+// Photographs and screenshots extracted from the SDG 3 report (November 2026 revision).
+const IMAGE_DIR = "/sdg-reports/sdg-3";
+
+const image = (name, alt) => ({ src: `${IMAGE_DIR}/${name}.webp`, alt });
+
+const imageSeries = (name, count, alt) =>
+    Array.from({ length: count }, (_, i) => ({
+        src: `${IMAGE_DIR}/${name}-${String(i + 1).padStart(2, "0")}.webp`,
+        alt: count > 1 ? `${alt} (${i + 1} of ${count})` : alt,
+    }));
+
+const ImageGrid = ({ images, caption }) => (
+    <figure className="space-y-2">
+        <div className={`grid gap-4 ${images.length > 1 ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"}`}>
+            {images.map((img) => (
+                <a
+                    key={img.src}
+                    href={img.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-xl border border-gray-100 bg-white p-2 focus-visible:outline-2 focus-visible:outline-[var(--button-red)]"
+                    aria-label={`${img.alt} (open full image)`}
+                >
+                    {/* Report scans and photos keep their original dimensions and are loaded on demand. */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={img.src} alt={img.alt} loading="lazy" decoding="async" className="mx-auto h-auto max-h-[700px] w-full object-contain" />
+                </a>
+            ))}
+        </div>
+        {caption && <figcaption className="text-center text-sm italic text-gray-600">{caption}</figcaption>}
+    </figure>
+);
+
+const mouImages = hospitalMoUs.flatMap((mou, i) =>
+    [1, 2].map((page) => ({
+        src: `${IMAGE_DIR}/3-3-1-mou-${String(i * 2 + page).padStart(2, "0")}.webp`,
+        alt: `MoU with ${mou.text} - page ${page}`,
+    }))
+);
+
+// Scanned event reports (4 pages each), in the order they appear in the report.
+const outreachEventReportImages = [
+    "3-3-2-report-herbal-industrial-visit",
+    "3-3-2-report-posh-training",
+    "3-3-2-report-blood-donation",
+    "3-3-2-report-is-6541-food-hygiene",
+    "3-3-2-report-ayurveda",
+    "3-3-2-report-run-for-mann",
+    "3-3-2-report-pharma-conference",
+    "3-3-2-report-yoga-day",
+    "3-3-2-report-doctors-day",
+    "3-3-2-report-menstrual-stigma",
+    "3-3-2-report-health-checkup-camp",
+    "3-3-2-report-pharmacovigilance",
+    "3-3-2-report-world-pharmacists-day",
+];
+
+const sportsEventReportImages = [
+    "3-3-3-report-football-championship",
+    "3-3-3-report-self-defence-workshop",
+    "3-3-3-report-tug-of-war",
+];
+
+const EventReportGallery = ({ titles, imageNames }) => (
+    <div className="space-y-6">
+        {titles.map((title, i) => (
+            <ImageGrid key={title} images={imageSeries(imageNames[i], 4, `Event report: ${title}`)} caption={title} />
+        ))}
+    </div>
+);
+
+const wellnessCentreImages = [
+    image("3-3-4-wellness-centre-01", "Sports and Wellness Center facilities (1 of 8)"),
+    image("3-3-3-indoor-sports-02", "Sports and Wellness Center facilities (2 of 8)"),
+    ...imageSeries("3-3-4-wellness-centre", 7, "Sports and Wellness Center facilities").slice(1).map((img, i) => ({
+        ...img,
+        alt: `${i < 2 ? "Sports and Wellness Center facilities" : "Yoga and wellness activities at the Wellness Center"} (${i + 3} of 8)`,
+    })),
+];
+
 const Table = (props) => (
     <DataTable overflowX={true} disableContainer={true} className="shadow-none border border-gray-100" {...props} />
 );
@@ -402,6 +482,399 @@ const eventColumns = [
     { key: "organiser", label: "Organized By", widthPx: 200 },
     { key: "participants", label: "No. of Participants", widthPx: 120 },
     { key: "outcome", label: "Outcome of the Programme", widthPx: 360 },
+];
+
+const collaborationSubsections = [
+    {
+        id: 1,
+        question: "3.3.1 Current Collaborations with Health Institutions",
+        component: (
+            <Paragraphs>
+                <p>Kalinga University has established Memoranda of Understanding (MoUs) with leading academic institutions, NGOs and reputed hospitals to strengthen academic excellence, healthcare education, and research collaboration. These partnerships are aimed at integrating research-driven knowledge with clinical practice, thereby enhancing the quality of teaching, learning, and professional training. Through these collaborations, students gain valuable opportunities for internships, clinical postings, hands-on training, skill development, and exposure to diverse medical specialties in real healthcare settings. Such industry-academia linkages enable students to bridge the gap between theoretical learning and practical application, fostering professional competence, experiential learning, and career readiness in the healthcare sector.</p>
+                <SubHeading>List of MoUs</SubHeading>
+                <Table
+                    columns={[
+                        { key: "id", label: "Sl. No.", widthPx: 70 },
+                        { key: "year", label: "Year", widthPx: 90 },
+                        { key: "name", label: "MoU with", widthPx: 420 },
+                    ]}
+                    data={hospitalMoUs.map((mou) => ({
+                        id: mou.id,
+                        year: mou.year,
+                        name: (
+                            <a href={mou.url} target="_blank" rel="noopener noreferrer" className="text-[var(--button-red)] hover:underline">
+                                {mou.text}
+                            </a>
+                        ),
+                    }))}
+                />
+                <ImageGrid images={mouImages} caption="Signed MoUs with health institutions" />
+
+                <SubHeading>Collaborative Wellness Summary Report: 2024-25 Medical Initiatives</SubHeading>
+                <MinorHeading>Executive Overview</MinorHeading>
+                <p>In September 2024, Kalinga University executed a comprehensive series of medical wellness initiatives designed to safeguard the health of its campus community and strengthen the institutional bond between the university and leading regional healthcare providers. The primary objective of these programs was to provide accessible health screenings, promote preventive care through expert consultation, and facilitate the early detection of potential health issues. These initiatives were successfully realized through strategic collaborations with <strong>City Eye Care Hospital</strong> and <strong>Urmila Memorial Hospital</strong>, ensuring that students, faculty, and staff received high-caliber clinical attention.</p>
+
+                <MinorHeading>Free Eye and Dental Checkup Camp (September 3, 2024)</MinorHeading>
+                <BulletList
+                    items={[
+                        "Date: September 3, 2024",
+                        "Time: 10:00 AM to 05:00 PM",
+                        "Venue: Medical Room (New Building), NBGF-09",
+                        "Organizing Bodies: Dean of Students' Welfare & Chief Proctor",
+                        "University Leadership Presence: The camp was inaugurated in the presence of Lt. Vibha Chandrakar (In-charge Dean of Students' Welfare), Dr. A. Vijayanand (Chief Proctor), Dr. Mohammed Shaharyar Khan, Mr. Sheikh Abdul Kadir (Deputy Dean of Students' Welfare), and Ms. Nikita Joshi (Assistant Dean of Students' Welfare).",
+                        "Number of Beneficiaries - 80",
+                        "Outcome of the Program - Promoted awareness of eye care, oral hygiene, and preventive healthcare. The programme facilitated basic eye and dental screenings, helped identify potential health concerns, and encouraged participants to seek timely medical consultation, supporting early diagnosis and improved overall health and well-being.",
+                    ]}
+                />
+                <MinorHeading>Clinical Partnership & Personnel</MinorHeading>
+                <p>The university partnered with <strong>City Eye Care Hospital</strong>, which deployed a specialized medical team to the campus. Key experts and clinical staff included:</p>
+                <BulletList
+                    items={[
+                        "Dr. Manish Shrivastava: Senior Ophthalmologist",
+                        "Dr. Atish Sahu: Dental Consultant (Inaugural Authority)",
+                        "Clinical Support Staff: Ms. Suman Chouhan (Staff Nurse) and Mr. Kuldeep Banjare (Staff Nurse).",
+                    ]}
+                />
+                <MinorHeading>Services & Health Education</MinorHeading>
+                <p>The initiative focused on two critical areas of specialized health:</p>
+                <BulletList
+                    items={[
+                        "Comprehensive eye examinations and visual acuity tests.",
+                        "Professional dental screenings and oral hygiene consultations.",
+                        "Distribution of free eye drops to participants.",
+                    ]}
+                />
+                <MinorHeading>Expert Recommendations</MinorHeading>
+                <p>Dr. Manish Shrivastava provided strategic health advice to participants, emphasizing the necessity of adapting to modern digital demands. His recommendations included:</p>
+                <BulletList
+                    items={[
+                        "Screen Time Management: Strategies to mitigate digital eye strain.",
+                        "Preventive Ocular Care: Regular eye exercises designed to reduce ocular stress and maintain visual health.",
+                    ]}
+                />
+                <ImageGrid
+                    images={imageSeries("3-3-1-eye-dental-camp", 2, "Free Eye and Dental Checkup Camp with City Eye Care Hospital, 3 September 2024")}
+                    caption="Free Eye and Dental Checkup Camp – Promoting Health and Well-Being"
+                />
+
+                <MinorHeading>Free Health Checkup Camp & Heart Wellness Session (September 13, 2024)</MinorHeading>
+                <p><strong>Event Logistics & Leadership</strong></p>
+                <BulletList
+                    items={[
+                        "Date: September 13, 2024",
+                        "Time: 10:00 AM to 05:00 PM",
+                        "Venues: Medical Room NBGF-09 and the University Auditorium",
+                        "Inaugural Authority: The event was inaugurated by Vice Chancellor Dr. R. Shridhar. Other attending officials included Dr. A. Vijayanand, Lt. Vibha Chandrakar, Mr. Sheikh Abdul Kadir, and Ms. Nikita Joshi.",
+                        "Number of Beneficiaries - 75",
+                        "Outcome of the Program - Promoted preventive healthcare and cardiovascular health awareness. The programme encouraged participants to undergo basic health screenings, understand heart disease risk factors, adopt healthier lifestyle practices, and seek timely medical consultation for early detection and better long-term health outcomes.",
+                    ]}
+                />
+                <MinorHeading>Clinical Partnership & Personnel</MinorHeading>
+                <p>The program was conducted in collaboration with <strong>Urmila Memorial Hospital</strong>. The partnership was represented by a high-level executive and clinical team:</p>
+                <BulletList
+                    items={[
+                        "Dr. Vinod Kumar Singh: Medical Director (General and Laparoscopic Surgeon)",
+                        "Dr. Jinesh Kumar Jain: Cardiologist",
+                        "Administrative Leadership: Dr. Sangya Shrivastava (CEO), Mr. Rajesh Dubey (Corporate Head), and Mr. Chandrakant Gupta (Marketing Executive).",
+                        "Clinical Nursing Team: Suman Chouhan, Kuldeep Singh, Thupendrai, Sonamani, Giteshwari, Somnath, and Dinesh.",
+                    ]}
+                />
+                <MinorHeading>Diagnostic Services</MinorHeading>
+                <p>The camp provided advanced diagnostic screenings for comprehensive health assessment:</p>
+                <BulletList
+                    items={[
+                        "Blood Pressure and Blood Sugar monitoring.",
+                        "Electrocardiogram (ECG) for cardiac health screening.",
+                        "Pulmonary Function Test (PFT) for respiratory evaluation.",
+                        "Urine Flow Test (UFT) specifically for male participants.",
+                    ]}
+                />
+                <MinorHeading>Interactive Heart Health Session</MinorHeading>
+                <p>In the University Auditorium, Dr. Jinesh Kumar Jain led an educational session focused on cardiac wellness. Utilizing a PowerPoint presentation, Dr. Jain provided detailed guidance on heart care. This was followed by an interactive Q&amp;A segment specifically designed for faculty members to address clinical doubts regarding cardiovascular health.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-1-heart-health-camp", 2, "Free Health Checkup Camp and Heart Wellness Session with Urmila Memorial Hospital, 13 September 2024")}
+                    caption="Promoting Heart Health Through Preventive Care"
+                />
+            </Paragraphs>
+        ),
+    },
+    {
+        id: 2,
+        question: "3.3.2 Health Outreach Programmes",
+        component: (
+            <Paragraphs>
+                <p>Kalinga University has undertaken numerous community outreach and extension activities aimed at promoting health, hygiene, and overall well-being, particularly among underprivileged and vulnerable sections of society. Through initiatives such as <em>Malaria Prevention Awareness Programmes, Cancer Prevention and Healthy Lifestyle Campaigns, PCOD/PCOS Awareness Workshops, Eye Check-up Camps, Full Body Health Check-up Camps, Blood Donation Camps, and Self-Medication Awareness Drives, Excursion cum Industrial Visit To “Shree Dhanwantari Herbals”</em> the University has worked to enhance public understanding of disease prevention, early diagnosis, healthy living practices, and responsible healthcare behavior. The health screening camps have enabled community members to access preventive healthcare services, identify potential health issues at an early stage, and receive appropriate medical guidance.</p>
+                <p>Programmes such as <em>Drug De-addiction Seminars</em> and <em>Life Skills for Drug Awareness</em> have further contributed to reducing substance abuse and encouraging positive lifestyle choices among youth and communities. The University has also placed significant emphasis on hygiene, sanitation, and nutrition through activities including <em>Menstrual Hygiene Awareness Campaigns</em> and workshops on <em>Improving Hygiene Practices in Schools</em>. These interventions have helped spread awareness regarding personal hygiene, sanitation, waste management, and the prevention of communicable diseases.</p>
+                <p>Additionally, initiatives addressing <em>Women’s Health Issues in Rural Communities</em> and <em>Food Quality Testing in Anganwadi Centres</em> have focused on improving maternal and child health outcomes. Through these impactful programmes, Kalinga University demonstrates its strong commitment to social responsibility, community engagement, and sustainable public health development, creating meaningful and lasting improvements in the quality of life of marginalized populations while contributing significantly to the creation of a healthier and more resilient society.</p>
+                <SubHeading>List of Events</SubHeading>
+                <MediaLink />
+                <Table
+                    columns={[
+                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
+                        { key: "event", label: "Event Title", widthPx: 300 },
+                        { key: "date", label: "Date", widthPx: 130 },
+                        { key: "organiser", label: "Organizing Department", widthPx: 200 },
+                        { key: "participants", label: "Number of Participants", widthPx: 120 },
+                        { key: "outcome", label: "Outcome", widthPx: 340 },
+                    ]}
+                    data={outreachEvents2024_25}
+                />
+                <SubHeading>Program Highlights and Event Reports</SubHeading>
+                <EventReportGallery titles={outreachEventReports} imageNames={outreachEventReportImages} />
+                <SubHeading>Events Conducted at Kalinga University</SubHeading>
+                <MediaLink />
+                <Table columns={eventColumns} data={campusEvents} />
+            </Paragraphs>
+        ),
+    },
+    {
+        id: 3,
+        question: "3.3.3 Shared Sports Facilities",
+        component: (
+            <Paragraphs>
+                <p>Kalinga University has adopted six villages—<strong>Kotni, Kuhera, Paloud, Kotrabhata, Tandul, and Parsada</strong>—as part of its commitment to community development and social responsibility. The University extends its sports infrastructure to students from government schools in these villages, encouraging physical fitness, talent development, and active participation in sports. In addition, Kalinga University shares its academic facilities, including the Seminar Hall and Auditorium, with government organizations for public awareness and outreach initiatives. Notably, the Reserve Bank of India (RBI), Raipur Branch, has utilized these facilities to conduct financial literacy and awareness programmes for students and members of the local community, strengthening the University’s role in societal engagement.</p>
+                <ImageGrid images={[image("3-3-3-sports-wellness-centre-webpage", "Sports & Wellness Centre page on the Kalinga University website")]} />
+                <ImageGrid
+                    images={imageSeries("3-3-3-sports-guidelines", 8, "Sports facility guidelines and playing hours poster")}
+                    caption="Indoor & Outdoor Sports Facility Guidelines & Playing Hours"
+                />
+
+                <SubHeading>Sports Department and Sustainable Development</SubHeading>
+                <p>The Sports Department plays an important role in promoting <strong>health, well-being, inclusion, and sustainable community engagement</strong>, contributing to the objectives of the Sustainable Development Goals (SDGs). The department provides access to sports facilities, training, fitness activities, and recreational opportunities for students, staff, and community members. Through regular sports programmes, competitions, fitness initiatives, and outreach activities, it encourages active lifestyles, teamwork, discipline, leadership, and social interaction. Sports facilities are also shared with the community for various programmes, strengthening university-community engagement. These initiatives primarily contribute to <strong>SDG 3 (Good Health and Well-being), SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), and SDG 11 (Sustainable Cities and Communities)</strong>.</p>
+                <SubHeading>Sports Department Staff Members</SubHeading>
+                <Table
+                    columns={[
+                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
+                        { key: "name", label: "Name", widthPx: 260 },
+                        { key: "designation", label: "Designation", widthPx: 320 },
+                    ]}
+                    data={sportsStaff}
+                />
+                <ImageGrid
+                    images={imageSeries("3-3-3-sports-department", 2, "Department of Sports staff members")}
+                    caption="Sports Department Staff Members"
+                />
+                <p>
+                    <TextLink href="/sustainability/emotional-wellness-and-mental-health-policy">Policy on Emotional Wellness, Mental Health and Resilience</TextLink>
+                </p>
+                <ImageGrid images={imageSeries("3-3-3-emotional-wellness-policy", 4, "Screenshot of the Policy on Emotional Wellness, Mental Health and Resilience")} />
+
+                <SubHeading>Sports Facilities Shared with the Community for Promoting Health, Well-Being, Active Lifestyles and other Community Engagement Programmes</SubHeading>
+                <p>Kalinga University recognizes <strong>sports and physical fitness as essential components of holistic education and well-being</strong>, supporting <strong>SDG 3 – Good Health and Well-being</strong>. The University provides comprehensive sports infrastructure through its dedicated Sports Department, Sports Complex, recreation rooms, and modern fitness facilities. Outdoor amenities include a <strong>cricket ground, football field, basketball and volleyball courts, badminton courts, athletics facilities, and a multi-purpose sports field</strong>, supporting both recreational activities and competitive training. Indoor facilities include <strong>well-equipped gyms with modern fitness equipment</strong>, with separate facilities for boys and girls, accessible to students and staff under the guidance of qualified trainers. The University also promotes holistic wellness through <strong>yoga and aerobics sessions conducted by certified instructors</strong>, contributing to physical and mental well-being. Regular inter- and intra-university sports events, along with participation in national and international competitions, foster <strong>fitness, teamwork, discipline, leadership, and sportsmanship</strong>, strengthening the University’s commitment to a healthy and active campus community.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-3-community-sports", 6, "University sports facilities shared with the community")}
+                    caption="Sports Facilities Shared with the Community for Promoting Health, Well-Being, Active Lifestyles and other Community Engagement Programmes"
+                />
+                <ImageGrid
+                    images={imageSeries("3-3-3-sports-achievers", 2, "Kalinga University sports teams and achievers")}
+                    caption="Celebrating Sports Achievers: Recognizing Excellence, Talent and Outstanding Sporting Accomplishments"
+                />
+
+                <SubHeading>Outdoor Sports Facilities</SubHeading>
+                <p>Kalinga University provides extensive outdoor sports facilities including a cricket ground, football field, basketball and volleyball courts, open-air badminton courts, athletics facilities, and a multi-utility sports field. These spaces support training, recreation, and tournaments, promoting physical fitness, teamwork, and active student engagement.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-3-outdoor-sports", 4, "Outdoor sports facilities at Kalinga University")}
+                    caption="Outdoor Sports Facilities for Fitness and Well-Being"
+                />
+                <SubHeading>Outdoor Games Facilities</SubHeading>
+                <Table
+                    columns={[
+                        { key: "slNo", label: "S.No.", widthPx: 70 },
+                        { key: "game", label: "Outdoor Games", widthPx: 240 },
+                        { key: "material", label: "Material", widthPx: 460 },
+                    ]}
+                    data={outdoorGames}
+                />
+                <SubHeading>Sports Grounds Dimension</SubHeading>
+                <Table
+                    columns={[
+                        { key: "slNo", label: "S.No.", widthPx: 70 },
+                        { key: "facility", label: "Facilities", widthPx: 260 },
+                        { key: "total", label: "Total", widthPx: 100 },
+                        { key: "area", label: "Area", widthPx: 160 },
+                    ]}
+                    data={sportsGrounds}
+                />
+
+                <SubHeading>Indoor Sports Facilities</SubHeading>
+                <p>Kalinga University offers well-equipped indoor sports facilities, including a modern gymnasium with advanced fitness equipment to promote physical health and an active lifestyle. Separate gym facilities for boys and girls are available, ensuring a comfortable and inclusive environment for all users. The gym is accessible to both students and staff and supports regular fitness activities. Qualified gym trainers are available to guide users in proper exercise techniques and structured workout routines, ensuring safe and effective training. In addition, facilities for table tennis, carrom, and chess are provided, along with yoga and aerobics sessions, promoting holistic physical fitness, mental well-being, and an active lifestyle among the university community.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-3-indoor-sports", 6, "Indoor sports and gym facilities at Kalinga University")}
+                    caption="Promoting Fitness through Indoor Sports Activities"
+                />
+
+                <SubHeading>Sports related Activities & Events</SubHeading>
+                <Table
+                    columns={[
+                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
+                        { key: "event", label: "Sports Events", widthPx: 300 },
+                        { key: "date", label: "Date", widthPx: 160 },
+                        { key: "organiser", label: "Organized By", widthPx: 260 },
+                        { key: "awards", label: "Awards", widthPx: 300 },
+                    ]}
+                    data={sportsEvents}
+                />
+                <SubHeading>Program Highlights and Event Reports</SubHeading>
+                <EventReportGallery titles={sportsEventReports} imageNames={sportsEventReportImages} />
+            </Paragraphs>
+        ),
+    },
+    {
+        id: 4,
+        question: "3.3.4 Sexual and Reproductive Health Care Services",
+        component: (
+            <Paragraphs>
+                <p>Kalinga University promotes <strong>women’s health, gender equity, safety, and overall well-being</strong> through an integrated support system aligned with <strong>SDG 3 and SDG 5</strong>. Dedicated bodies, including the <strong>Internal Complaints Committee (ICC), Women’s Cell/POSH Committee, and Student Counselling Cell</strong>, provide confidential counselling, psychosocial support, awareness, and grievance redressal. Health infrastructure includes <strong>medical and first-aid facilities, resident nurses, sanitary napkin vending machines, sanitary waste incinerators, and an ERP-enabled grievance redressal system</strong>. Regular awareness programmes, workshops, expert sessions, and health camps address <strong>menstrual hygiene, reproductive health, nutrition, anaemia prevention, mental health, stress management, cancer awareness, substance-abuse prevention, and healthy lifestyles</strong>. Collaborations with hospitals, healthcare centres, diagnostic facilities, and social organizations facilitate <strong>health check-ups, specialist consultations, vaccination drives, emergency support, and counselling services</strong>. These initiatives foster a <strong>safe, inclusive, health-conscious, and supportive campus environment</strong>, empowering women and promoting holistic well-being across the University community.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-4-menstrual-hygiene-education", 2, "Event report: Redefining Menstrual Stigma as a Matter of Menstrual Health Hygiene")}
+                    caption="Empowering Youth Through Menstrual Health and Hygiene Education"
+                />
+
+                <SubHeading>Institutional Mechanisms for Sexual and Reproductive Health Care Services</SubHeading>
+                <MinorHeading>a) Policy on Gender Equity and Gender Sensitization</MinorHeading>
+                <ImageGrid images={imageSeries("3-3-4-gender-equity-policy", 2, "Screenshot of the Policy on Gender Equity and Gender Sensitization")} />
+                <p>The University is committed to fostering an inclusive, equitable, and gender-sensitive academic environment where every individual is treated with dignity and respect. The Policy on Gender Equity and Gender Sensitization promotes equal opportunities in education, research, employment, leadership, and participation in campus activities. It seeks to prevent gender-based discrimination, harassment, and violence through awareness programs, counseling services, and effective grievance redressal mechanisms. The policy encourages mutual respect, diversity, and inclusiveness, thereby creating a safe, supportive, and empowering campus culture for all stakeholders.</p>
+                <p>
+                    <TextLink href="/sustainability/policies/gender-sensitization">Policy On Gender Equity And Gender Sensitization</TextLink>
+                </p>
+                <p><strong>Women Cell / Prevention of Sexual Harassment (POSH) Committee</strong></p>
+                <Table
+                    columns={[
+                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
+                        { key: "name", label: "Name", widthPx: 240 },
+                        { key: "position", label: "Position", widthPx: 200 },
+                        { key: "designation", label: "Designation", widthPx: 300 },
+                    ]}
+                    data={poshCommittee}
+                />
+
+                <MinorHeading>b) Policy on Emotional Wellness, Mental Health, and Resilience</MinorHeading>
+                <p>The Policy on Emotional Wellness, Mental Health, and Resilience reflects Kalinga University’s commitment to fostering a supportive, inclusive, and psychologically safe campus environment. The policy promotes emotional well-being, mental health awareness, stress management, and resilience among students, faculty, and staff. Through counselling services, mentoring, wellness programs, sports and recreational activities, and early intervention mechanisms, the University seeks to enhance overall well-being, reduce stigma associated with mental health concerns, and empower individuals to achieve personal, academic, and professional success.</p>
+                <ImageGrid images={imageSeries("3-3-4-emotional-wellness-policy", 3, "Screenshot of the Policy on Emotional Wellness, Mental Health and Resilience")} />
+                <p>
+                    <TextLink href="/sustainability/emotional-wellness-and-mental-health-policy">Policy on Emotional Wellness, Mental Health and Resilience</TextLink>
+                </p>
+
+                <MinorHeading>c) Internal Complaint Committee</MinorHeading>
+                <p>The Internal Complaints Committee (ICC) at Kalinga University is constituted in accordance with the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013. The Committee is committed to ensuring a safe, secure, respectful, and inclusive campus environment free from sexual harassment, gender-based discrimination, and misconduct. It provides a confidential, impartial, and transparent mechanism for receiving, investigating, and resolving complaints while safeguarding the dignity, rights, and well-being of all members of the University community.</p>
+                <Table
+                    columns={[
+                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
+                        { key: "name", label: "Name", widthPx: 260 },
+                        { key: "designation", label: "Designation", widthPx: 380 },
+                    ]}
+                    data={internalComplaintCommittee}
+                />
+
+                <MinorHeading>d) Provision of Medical Room &amp; Wellness Center</MinorHeading>
+                <p><strong>Medical Room</strong></p>
+                <p>The University Medical Room serves as a dedicated healthcare facility and acts as the first point of contact for addressing the immediate health and wellness needs of students, faculty members, staff, and visitors. Equipped with essential medical equipment, first-aid supplies, and basic healthcare facilities, it provides prompt medical assistance for minor illnesses, injuries, and emergency situations occurring on campus. Qualified healthcare personnel ensure timely assessment, treatment, and guidance, helping to prevent complications and promote overall well-being.</p>
+                <p>In addition to providing primary healthcare services, the Medical Room plays a significant role in promoting preventive healthcare through health awareness campaigns, routine health check-ups, counseling, and wellness education programs. It also facilitates referrals to specialized healthcare providers and nearby hospitals whenever advanced medical intervention is required. By offering accessible healthcare support, encouraging healthy lifestyle practices, and ensuring a rapid response during emergencies, the University Medical Room contributes substantially to creating a safe, healthy, inclusive, and supportive campus environment that enhances the overall quality of life for the university community.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-4-medical-room", 6, "Medical consultation at the University Medical Room")}
+                    caption="Medical Facilities: Medical Consultation in University Medical Centre"
+                />
+                <p><strong>Sports and Wellness Center</strong></p>
+                <p>The Sports and Wellness Center serves as a vital platform for promoting holistic health and well-being among students, faculty, and staff by encouraging active lifestyles and healthy habits. The Center offers a wide range of sports activities, fitness programs, yoga sessions, meditation practices, recreational events, and wellness initiatives designed to support physical, mental, and emotional health. These activities help individuals improve their physical fitness, build endurance, enhance concentration, and maintain a balanced lifestyle.</p>
+                <p>Beyond physical health, the Center plays a significant role in stress management and emotional well-being by providing opportunities for relaxation, recreation, and social interaction. Participation in sports and wellness programs fosters self-discipline, resilience, teamwork, leadership, and self-confidence while helping individuals develop positive coping mechanisms to manage academic and professional pressures. Regular engagement in these activities contributes to reducing stress and anxiety, improving mental health, enhancing overall quality of life, and creating a positive, energetic, and inclusive campus environment that supports personal growth and community well-being.</p>
+                <ImageGrid images={wellnessCentreImages} caption="Yoga and Wellness Center" />
+
+                <SubHeading>Facilities Available to Women Employees and Students</SubHeading>
+                <MinorHeading>Sanitary Napkin Vending Machines and Incinerators</MinorHeading>
+                <p>Kalinga University is committed to promoting menstrual health, hygiene, dignity, and well-being among its female students, faculty, and staff. Recognizing the importance of accessible menstrual hygiene facilities, the University has installed sanitary napkin vending machines in female washrooms across academic blocks, administrative buildings, hostels, and other key locations on campus. These machines provide convenient, hygienic, and uninterrupted access to sanitary napkins, ensuring that women can effectively manage their menstrual health without inconvenience or embarrassment.</p>
+                <p>To facilitate safe and environmentally responsible disposal of used sanitary products, each vending machine is complemented by a sanitary napkin incinerator. These incinerators help maintain cleanliness, prevent improper waste disposal, and support sustainable waste management practices on campus. The availability of these facilities promotes awareness of menstrual hygiene, reduces stigma associated with menstruation, and empowers women to participate confidently in academic and professional activities. This initiative reflects the University’s commitment to fostering a gender-sensitive, inclusive, safe, and health-conscious campus environment.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-4-sanitary-vending-machine", 2, "Sanitary napkin vending machine and incinerator on campus")}
+                    caption="Menstrual hygiene is supported through sanitary napkin vending machines and eco-friendly disposal facilities"
+                />
+                <MinorHeading>Dedicated Girls Common Room</MinorHeading>
+                <p>Kalinga University provides dedicated Girls’ Common Rooms and Study Rooms within the campus and hostel premises to ensure a safe, comfortable, and supportive environment for female students. These facilities serve as spaces for relaxation, informal interaction, academic discussions, and focused study. The rooms are equipped with adequate seating, lighting, ventilation, and essential amenities to meet students’ academic and personal needs. They offer a secure and peaceful atmosphere where students can spend their free time, prepare for examinations, engage in group learning activities, or seek privacy when required. By providing these facilities, the University promotes the well-being, safety, and academic success of female students while fostering an inclusive, student-friendly, and gender-sensitive campus environment.</p>
+                <ImageGrid images={[image("3-3-4-girls-common-room", "Girls' Common Room at Kalinga University")]} caption="Girl’s Common Room" />
+
+                <SubHeading>Programs and Awareness Activities on Sexual and Reproductive Well-being</SubHeading>
+                <Table columns={eventColumns} data={reproductiveWellbeingActivities} />
+            </Paragraphs>
+        ),
+    },
+    {
+        id: 5,
+        question: "3.3.5 Mental Health Support for Students",
+        component: (
+            <Paragraphs>
+                <p>Kalinga University is committed to promoting the mental health, emotional well-being, and overall psychological wellness of its students. Recognizing that positive mental health is fundamental to academic success, personal growth, and holistic development, the University strives to create a supportive, inclusive, and compassionate campus environment where students feel safe, valued, and empowered.</p>
+                <p>The University provides a range of mental health support mechanisms through its <strong>Mentor–Mentee Framework</strong>, Student Counselling Cell, and various wellness initiatives. Faculty mentors regularly engage with students to understand their academic, emotional, and personal concerns, while trained counsellors offer confidential guidance and professional support to students experiencing stress, anxiety, emotional difficulties, or other mental health challenges.</p>
+                <p>Through awareness programs, workshops, counselling sessions, stress-management activities, and peer-support initiatives, the University encourages students to seek help without fear of stigma and promotes positive coping strategies, resilience, self-care, and healthy lifestyle practices. Special attention is given to the early identification of emotional distress and timely intervention through appropriate support services.</p>
+                <p>By fostering a culture of empathy, respect, inclusion, and psychological safety, Kalinga University aims to strengthen students’ emotional resilience, enhance their overall well-being, and enable them to achieve their academic and personal potential in a healthy and supportive learning environment.</p>
+                <p>
+                    <TextLink href="/sustainability/emotional-wellness-and-mental-health-policy">Policy on Emotional Wellness, Mental Health and Resilience</TextLink>
+                </p>
+                <ImageGrid images={imageSeries("3-3-5-emotional-wellness-policy", 2, "Screenshot of the Policy on Emotional Wellness, Mental Health and Resilience")} />
+                <SubHeading>Objectives of the Mentor-Mentee Framework</SubHeading>
+                <NumberedList items={mentorMenteeObjectives} />
+                <ImageGrid
+                    images={imageSeries("3-3-5-event-report", 4, "Event report promoting mental health and well-being")}
+                    caption="Event Reports Promoting Mental Health, Emotional Wellness and Well-Being"
+                />
+            </Paragraphs>
+        ),
+    },
+    {
+        id: 6,
+        question: "3.3.6 Smoke-Free Policy",
+        component: (
+            <Paragraphs>
+                <p>Kalinga University is firmly committed to fostering a healthy, safe, and environmentally sustainable campus environment through its comprehensive Smoke-Free and Tobacco-Free Campus Policy. Recognizing the significant health risks associated with tobacco consumption and exposure to second-hand smoke, the University strictly prohibits smoking and the use of all tobacco products within the entire campus premises.</p>
+                <p>The policy applies to all students, faculty members, staff, visitors, vendors, and other stakeholders and covers all academic blocks, administrative offices, hostels, libraries, laboratories, cafeterias, recreational areas, vehicles, and open spaces within the University campus. This initiative reflects the University’s dedication to safeguarding the physical and mental well-being of its community while promoting a culture of healthy living and responsible behavior. To ensure effective implementation of the policy, prominent “No Smoking” and “Tobacco-Free Campus” signages are displayed at strategic locations across the campus. Awareness campaigns, health education programs, orientation sessions, and community engagement activities are regularly organized to educate stakeholders about the harmful effects of tobacco use and the importance of adopting healthy lifestyles.</p>
+                <p>Through these sustained efforts, Kalinga University strives to create a clean, healthy, and supportive learning environment that encourages wellness, environmental responsibility, and respect for public health, thereby contributing to the holistic development of its students and the wider community.</p>
+                <p>
+                    <TextLink href="/sustainability/policies/smoke-free-campus-policy">Smoke-Free Campus Policy</TextLink>
+                </p>
+                <ImageGrid images={imageSeries("3-3-6-smoke-free-policy", 2, "Screenshot of the Policy on Maintaining a Tobacco-Free and Smoke-Free Campus Environment")} />
+            </Paragraphs>
+        ),
+    },
+    {
+        id: 7,
+        question: "3.3.7 Mental Health Support for Staff",
+        component: (
+            <Paragraphs>
+                <p>Kalinga University recognizes that the mental health and well-being of its faculty and staff are essential for maintaining a productive, positive, and supportive work environment. The University is committed to fostering a workplace culture that promotes psychological well-being, emotional resilience, and work-life balance among all employees.</p>
+                <p>To support staff mental health, the University regularly organizes awareness programs, workshops, seminars, expert talks, and wellness sessions focusing on stress management, emotional intelligence, mindfulness, resilience building, burnout prevention, and healthy coping strategies. These initiatives aim to enhance awareness of mental health issues, reduce stigma associated with seeking help, and encourage open discussions about emotional and psychological well-being. Faculty and staff members are encouraged to seek guidance and support whenever needed through appropriate counselling and wellness support mechanisms. The University also promotes a culture of empathy, mutual respect, inclusiveness, and collaboration, ensuring that employees feel valued, heard, and supported in their professional environment.</p>
+                <p>Through continuous mental health awareness and support initiatives, Kalinga University strives to create a healthy and psychologically safe workplace where employees can effectively manage personal and professional challenges, maintain positive mental health, enhance job satisfaction, and contribute meaningfully to the University’s mission of academic excellence and holistic development.</p>
+                <p>Kalinga University has established the <strong>Happiness Cell (Mental Health Wellness Centre)</strong> to promote the emotional, psychological, social, and behavioral well-being of students and staff members. The Centre serves as a dedicated support system that fosters a positive, inclusive, and mentally healthy campus environment where individuals can seek guidance, counselling, and assistance for personal and professional challenges.</p>
+                <p>The Happiness Cell addresses a wide range of concerns, including stress, anxiety, emotional distress, adjustment difficulties, interpersonal conflicts, behavioral issues, academic pressure, workplace challenges, and overall mental well-being. Through confidential counselling and guidance services, the Centre helps students and staff develop resilience, emotional balance, self-awareness, and healthy coping mechanisms to navigate everyday challenges effectively. To promote mental health awareness and reduce stigma associated with seeking help, the Happiness Cell regularly organizes workshops, awareness campaigns, motivational talks, wellness sessions, mindfulness practices, stress management programs, and interactive activities. These initiatives encourage positive mental health practices, emotional intelligence, healthy relationships, and a balanced lifestyle among members of the university community.</p>
+                <p>The Centre works collaboratively with faculty mentors, administrative departments, healthcare professionals, and student support services to identify individuals requiring additional care and provide timely interventions. Special emphasis is placed on preventive mental healthcare, early identification of concerns, and creating a supportive ecosystem that nurtures personal growth and overall well-being. Through its comprehensive mental health and wellness initiatives, the Happiness Cell contributes significantly to the University’s commitment towards holistic development and the achievement of Sustainable Development Goal 3 (Good Health and Well-Being). By prioritizing emotional, social, and behavioral wellness, Kalinga University strives to ensure that every student and staff member thrives in a healthy, supportive, and compassionate academic environment.</p>
+                <SubHeading>Objectives of the Happiness Cell</SubHeading>
+                <BulletList items={happinessCellObjectives} />
+                <SubHeading>Team of Qualified Counsellors</SubHeading>
+                <NumberedList items={counsellors} />
+                <SubHeading>Happiness Cell – Support &amp; Wellness Flow Chart</SubHeading>
+                <ImageGrid images={[image("3-3-7-happiness-cell-flow-chart", "Happiness Cell support and wellness flow chart: issue generated, visit to department, counselling, mindfulness practices, stress management programs and interactive activities")]} />
+                <p className="font-medium">Listen | Support | Guide | Empower</p>
+                <NumberedList items={happinessCellFlow} />
+
+                <SubHeading>Events</SubHeading>
+                <MinorHeading>Model/Poster Exhibition on World Mental Health Day</MinorHeading>
+                <p>The Department of Social Work, Faculty of Arts and Humanities, Kalinga University, organized a <strong>Model/Poster Exhibition</strong> on the occasion of <strong>World Mental Health Day</strong> on <strong>10th October 2025</strong> from <strong>9:30 AM to 1:30 PM</strong> at <strong>WBSF-01 (offline Mode)</strong>. The event aimed to raise awareness about mental health and promote student engagement through creative models and posters. A guest talk by <strong>Dr. A. P. Senthil Kumar (Online), Associate Professor, Jigjiga University, Ethiopia</strong>, enriched the session with insights on mental well-being. <strong>The event aligned with UN SDGs 3, 4, 16, and 17</strong>, encouraging discussions on mental health, education, and sustainable partnerships for well-being. The same day the BA psychology students presented a street play on mental health in the same venue. All the faculties and students of the Department of Social Work participated in the event.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-7-mental-health-day", 8, "Model/Poster Exhibition on World Mental Health Day")}
+                    caption="Glimpses of Model/Poster Exhibition on World Mental Health Day – Promoting Emotional Wellness and Mental Health Awareness"
+                />
+                <MinorHeading>International Yoga Day 2025</MinorHeading>
+                <p><strong>International Yoga Day 2025</strong> was celebrated with great enthusiasm at Kalinga University on <strong>21 June 2025</strong>, under the theme <strong>“Yoga for One Earth, One Health.”</strong> Organized by the <strong>Department of Education</strong> with support from the <strong>Chhattisgarh Yoga Aayog, Government of Chhattisgarh</strong>, the programme highlighted the importance of yoga for physical, mental, and spiritual well-being. The event began with live streaming of the national celebration inaugurated by the Hon’ble Prime Minister of India, followed by an address by the Vice Chancellor emphasizing yoga’s relevance to modern life and <strong>SDG 3: Good Health and Well-Being</strong>. A practical yoga session included Om chanting, warm-up exercises, yoga asanas, meditation, breathing techniques, and mindfulness. A <strong>30-minute yoga protocol</strong> was conducted in accordance with AYUSH Ministry guidelines, with live demonstrations by Education Department students and NSS volunteers. The programme recorded <strong>81 registered participants and 100 attendees</strong>, including faculty, staff, and NSS volunteers. Kalinga University’s contribution was also acknowledged by the Ministry of AYUSH through the <strong>“Yoga Sangam Patra” Certificate of Participation</strong>.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-7-yoga-day", 3, "International Yoga Day 2025 at Kalinga University")}
+                    caption="International Yoga Day 2025 – Celebrating Yoga for One Earth, One Health"
+                />
+                <MinorHeading>International Olympic Day - 2025</MinorHeading>
+                <p>Kalinga University celebrated <strong>International Olympic Day</strong> on <strong>23 June 2025</strong> from <strong>10:00 a.m. to 12:30 p.m.</strong> at the <strong>Recreation Hall</strong>. The event was organized for hostel students to promote active participation in recreational sports and encourage the values of sportsmanship, discipline, strategic thinking, and healthy competition. The celebration featured indoor recreational competitions in <strong>Carrom, Pool Table, and Chess</strong>, with a total of <strong>five students participating</strong> enthusiastically. The activities provided students with an engaging platform to develop <strong>strategic thinking, precision, concentration, decision-making skills, and sportsmanship</strong> in a friendly competitive environment. The event was well received by the participants and successfully fostered a spirit of <strong>camaraderie, teamwork, healthy competition, and active engagement</strong> among the hostel students. The celebration highlighted the importance of sports and recreational activities in promoting holistic student development and a healthy campus lifestyle.</p>
+                <ImageGrid
+                    images={imageSeries("3-3-7-olympic-day", 3, "International Olympic Day 2025 recreational competitions")}
+                    caption="International Olympic Day Celebration promoting sportsmanship, healthy competition and recreational activities"
+                />
+            </Paragraphs>
+        ),
+    },
 ];
 
 const reportSections = [
@@ -418,7 +891,7 @@ const reportSections = [
                 <SdgBarChart
                     block={{
                         caption: "Year-wise Research Papers aligned with SDG 3",
-                        xLabel: "Year-wise Count",
+                        xLabel: "Year",
                         yLabel: "Count of Research Papers",
                         series: [{ name: "Research Paper: Count", color: "#70ad47" }],
                         data: researchPaperCounts,
@@ -448,7 +921,7 @@ const reportSections = [
                 <SdgBarChart
                     block={{
                         caption: "Year-wise Book / Book Chapters aligned with SDG 3",
-                        xLabel: "Year-wise Count",
+                        xLabel: "Year",
                         yLabel: "Count of Book/Book Chapters",
                         series: [{ name: "Book / Book Chapters", color: "#d39e00" }],
                         data: bookChapterCounts,
@@ -496,326 +969,16 @@ const reportSections = [
         component: (
             <Paragraphs>
                 <p>Kalinga University has developed strong collaborative partnerships with reputed hospitals, research institutions, government bodies, and national as well as international organizations through Memoranda of Understanding (MoUs). These strategic collaborations foster academic excellence, research innovation, professional development, and experiential learning opportunities for students and faculty. In alignment with Sustainable Development Goal 3 (Good Health and Well-being), many of these partnerships focus on advancing healthcare education, promoting interdisciplinary research, enhancing community health services, and addressing public health challenges, thereby contributing to improved health outcomes and sustainable societal development.</p>
-            </Paragraphs>
-        ),
-    },
-    {
-        id: 4,
-        question: "3.3.1 Current Collaborations with Health Institutions",
-        component: (
-            <Paragraphs>
-                <p>Kalinga University has established Memoranda of Understanding (MoUs) with leading academic institutions, NGOs and reputed hospitals to strengthen academic excellence, healthcare education, and research collaboration. These partnerships are aimed at integrating research-driven knowledge with clinical practice, thereby enhancing the quality of teaching, learning, and professional training. Through these collaborations, students gain valuable opportunities for internships, clinical postings, hands-on training, skill development, and exposure to diverse medical specialties in real healthcare settings. Such industry-academia linkages enable students to bridge the gap between theoretical learning and practical application, fostering professional competence, experiential learning, and career readiness in the healthcare sector.</p>
-                <SubHeading>List of MoUs</SubHeading>
-                <Table
-                    columns={[
-                        { key: "id", label: "Sl. No.", widthPx: 70 },
-                        { key: "year", label: "Year", widthPx: 90 },
-                        { key: "name", label: "MoU with", widthPx: 420 },
-                    ]}
-                    data={hospitalMoUs.map((mou) => ({
-                        id: mou.id,
-                        year: mou.year,
-                        name: (
-                            <a href={mou.url} target="_blank" rel="noopener noreferrer" className="text-[var(--button-red)] hover:underline">
-                                {mou.text}
-                            </a>
-                        ),
-                    }))}
-                />
-
-                <SubHeading>Collaborative Wellness Summary Report: 2024-25 Medical Initiatives</SubHeading>
-                <MinorHeading>Executive Overview</MinorHeading>
-                <p>In September 2024, Kalinga University executed a comprehensive series of medical wellness initiatives designed to safeguard the health of its campus community and strengthen the institutional bond between the university and leading regional healthcare providers. The primary objective of these programs was to provide accessible health screenings, promote preventive care through expert consultation, and facilitate the early detection of potential health issues. These initiatives were successfully realized through strategic collaborations with <strong>City Eye Care Hospital</strong> and <strong>Urmila Memorial Hospital</strong>, ensuring that students, faculty, and staff received high-caliber clinical attention.</p>
-
-                <MinorHeading>Free Eye and Dental Checkup Camp (September 3, 2024)</MinorHeading>
-                <BulletList
-                    items={[
-                        "Date: September 3, 2024",
-                        "Time: 10:00 AM to 05:00 PM",
-                        "Venue: Medical Room (New Building), NBGF-09",
-                        "Organizing Bodies: Dean of Students' Welfare & Chief Proctor",
-                        "University Leadership Presence: The camp was inaugurated in the presence of Lt. Vibha Chandrakar (In-charge Dean of Students' Welfare), Dr. A. Vijayanand (Chief Proctor), Dr. Mohammed Shaharyar Khan, Mr. Sheikh Abdul Kadir (Deputy Dean of Students' Welfare), and Ms. Nikita Joshi (Assistant Dean of Students' Welfare).",
-                        "Number of Beneficiaries - 80",
-                        "Outcome of the Program - Promoted awareness of eye care, oral hygiene, and preventive healthcare. The programme facilitated basic eye and dental screenings, helped identify potential health concerns, and encouraged participants to seek timely medical consultation, supporting early diagnosis and improved overall health and well-being.",
-                    ]}
-                />
-                <MinorHeading>Clinical Partnership & Personnel</MinorHeading>
-                <p>The university partnered with <strong>City Eye Care Hospital</strong>, which deployed a specialized medical team to the campus. Key experts and clinical staff included:</p>
-                <BulletList
-                    items={[
-                        "Dr. Manish Shrivastava: Senior Ophthalmologist",
-                        "Dr. Atish Sahu: Dental Consultant (Inaugural Authority)",
-                        "Clinical Support Staff: Ms. Suman Chouhan (Staff Nurse) and Mr. Kuldeep Banjare (Staff Nurse).",
-                    ]}
-                />
-                <MinorHeading>Services & Health Education</MinorHeading>
-                <p>The initiative focused on two critical areas of specialized health:</p>
-                <BulletList
-                    items={[
-                        "Comprehensive eye examinations and visual acuity tests.",
-                        "Professional dental screenings and oral hygiene consultations.",
-                        "Distribution of free eye drops to participants.",
-                    ]}
-                />
-                <MinorHeading>Expert Recommendations</MinorHeading>
-                <p>Dr. Manish Shrivastava provided strategic health advice to participants, emphasizing the necessity of adapting to modern digital demands. His recommendations included:</p>
-                <BulletList
-                    items={[
-                        "Screen Time Management: Strategies to mitigate digital eye strain.",
-                        "Preventive Ocular Care: Regular eye exercises designed to reduce ocular stress and maintain visual health.",
-                    ]}
-                />
-
-                <MinorHeading>Free Health Checkup Camp & Heart Wellness Session (September 13, 2024)</MinorHeading>
-                <p><strong>Event Logistics & Leadership</strong></p>
-                <BulletList
-                    items={[
-                        "Date: September 13, 2024",
-                        "Time: 10:00 AM to 05:00 PM",
-                        "Venues: Medical Room NBGF-09 and the University Auditorium",
-                        "Inaugural Authority: The event was inaugurated by Vice Chancellor Dr. R. Shridhar. Other attending officials included Dr. A. Vijayanand, Lt. Vibha Chandrakar, Mr. Sheikh Abdul Kadir, and Ms. Nikita Joshi.",
-                        "Number of Beneficiaries - 75",
-                        "Outcome of the Program - Promoted preventive healthcare and cardiovascular health awareness. The programme encouraged participants to undergo basic health screenings, understand heart disease risk factors, adopt healthier lifestyle practices, and seek timely medical consultation for early detection and better long-term health outcomes.",
-                    ]}
-                />
-                <MinorHeading>Clinical Partnership & Personnel</MinorHeading>
-                <p>The program was conducted in collaboration with <strong>Urmila Memorial Hospital</strong>. The partnership was represented by a high-level executive and clinical team:</p>
-                <BulletList
-                    items={[
-                        "Dr. Vinod Kumar Singh: Medical Director (General and Laparoscopic Surgeon)",
-                        "Dr. Jinesh Kumar Jain: Cardiologist",
-                        "Administrative Leadership: Dr. Sangya Shrivastava (CEO), Mr. Rajesh Dubey (Corporate Head), and Mr. Chandrakant Gupta (Marketing Executive).",
-                        "Clinical Nursing Team: Suman Chouhan, Kuldeep Singh, Thupendrai, Sonamani, Giteshwari, Somnath, and Dinesh.",
-                    ]}
-                />
-                <MinorHeading>Diagnostic Services</MinorHeading>
-                <p>The camp provided advanced diagnostic screenings for comprehensive health assessment:</p>
-                <BulletList
-                    items={[
-                        "Blood Pressure and Blood Sugar monitoring.",
-                        "Electrocardiogram (ECG) for cardiac health screening.",
-                        "Pulmonary Function Test (PFT) for respiratory evaluation.",
-                        "Urine Flow Test (UFT) specifically for male participants.",
-                    ]}
-                />
-                <MinorHeading>Interactive Heart Health Session</MinorHeading>
-                <p>In the University Auditorium, Dr. Jinesh Kumar Jain led an educational session focused on cardiac wellness. Utilizing a PowerPoint presentation, Dr. Jain provided detailed guidance on heart care. This was followed by an interactive Q&amp;A segment specifically designed for faculty members to address clinical doubts regarding cardiovascular health.</p>
-            </Paragraphs>
-        ),
-    },
-    {
-        id: 5,
-        question: "3.3.2 Health Outreach Programmes",
-        component: (
-            <Paragraphs>
-                <p>Kalinga University has undertaken numerous community outreach and extension activities aimed at promoting health, hygiene, and overall well-being, particularly among underprivileged and vulnerable sections of society. Through initiatives such as <em>Malaria Prevention Awareness Programmes, Cancer Prevention and Healthy Lifestyle Campaigns, PCOD/PCOS Awareness Workshops, Eye Check-up Camps, Full Body Health Check-up Camps, Blood Donation Camps, and Self-Medication Awareness Drives, Excursion cum Industrial Visit To “Shree Dhanwantari Herbals”</em> the University has worked to enhance public understanding of disease prevention, early diagnosis, healthy living practices, and responsible healthcare behavior. The health screening camps have enabled community members to access preventive healthcare services, identify potential health issues at an early stage, and receive appropriate medical guidance.</p>
-                <p>Programmes such as <em>Drug De-addiction Seminars</em> and <em>Life Skills for Drug Awareness</em> have further contributed to reducing substance abuse and encouraging positive lifestyle choices among youth and communities. The University has also placed significant emphasis on hygiene, sanitation, and nutrition through activities including <em>Menstrual Hygiene Awareness Campaigns</em> and workshops on <em>Improving Hygiene Practices in Schools</em>. These interventions have helped spread awareness regarding personal hygiene, sanitation, waste management, and the prevention of communicable diseases.</p>
-                <p>Additionally, initiatives addressing <em>Women’s Health Issues in Rural Communities</em> and <em>Food Quality Testing in Anganwadi Centres</em> have focused on improving maternal and child health outcomes. Through these impactful programmes, Kalinga University demonstrates its strong commitment to social responsibility, community engagement, and sustainable public health development, creating meaningful and lasting improvements in the quality of life of marginalized populations while contributing significantly to the creation of a healthier and more resilient society.</p>
-                <SubHeading>List of Events</SubHeading>
-                <MediaLink />
-                <Table
-                    columns={[
-                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
-                        { key: "event", label: "Event Title", widthPx: 300 },
-                        { key: "date", label: "Date", widthPx: 130 },
-                        { key: "organiser", label: "Organizing Department", widthPx: 200 },
-                        { key: "participants", label: "Number of Participants", widthPx: 120 },
-                        { key: "outcome", label: "Outcome", widthPx: 340 },
-                    ]}
-                    data={outreachEvents2024_25}
-                />
-                <SubHeading>Program Highlights and Event Reports</SubHeading>
-                <BulletList items={outreachEventReports} />
-                <SubHeading>Events Conducted at Kalinga University</SubHeading>
-                <MediaLink />
-                <Table columns={eventColumns} data={campusEvents} />
-            </Paragraphs>
-        ),
-    },
-    {
-        id: 6,
-        question: "3.3.3 Shared Sports Facilities",
-        component: (
-            <Paragraphs>
-                <p>Kalinga University has adopted six villages—<strong>Kotni, Kuhera, Paloud, Kotrabhata, Tandul, and Parsada</strong>—as part of its commitment to community development and social responsibility. The University extends its sports infrastructure to students from government schools in these villages, encouraging physical fitness, talent development, and active participation in sports. In addition, Kalinga University shares its academic facilities, including the Seminar Hall and Auditorium, with government organizations for public awareness and outreach initiatives. Notably, the Reserve Bank of India (RBI), Raipur Branch, has utilized these facilities to conduct financial literacy and awareness programmes for students and members of the local community, strengthening the University’s role in societal engagement.</p>
-
-                <SubHeading>Sports Department and Sustainable Development</SubHeading>
-                <p>The Sports Department plays an important role in promoting <strong>health, well-being, inclusion, and sustainable community engagement</strong>, contributing to the objectives of the Sustainable Development Goals (SDGs). The department provides access to sports facilities, training, fitness activities, and recreational opportunities for students, staff, and community members. Through regular sports programmes, competitions, fitness initiatives, and outreach activities, it encourages active lifestyles, teamwork, discipline, leadership, and social interaction. Sports facilities are also shared with the community for various programmes, strengthening university-community engagement. These initiatives primarily contribute to <strong>SDG 3 (Good Health and Well-being), SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), and SDG 11 (Sustainable Cities and Communities)</strong>.</p>
-                <SubHeading>Sports Department Staff Members</SubHeading>
-                <Table
-                    columns={[
-                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
-                        { key: "name", label: "Name", widthPx: 260 },
-                        { key: "designation", label: "Designation", widthPx: 320 },
-                    ]}
-                    data={sportsStaff}
-                />
-                <p>
-                    <TextLink href="/sustainability/emotional-wellness-and-mental-health-policy">Policy on Emotional Wellness, Mental Health and Resilience</TextLink>
-                </p>
-
-                <SubHeading>Sports Facilities Shared with the Community for Promoting Health, Well-Being, Active Lifestyles and other Community Engagement Programmes</SubHeading>
-                <p>Kalinga University recognizes <strong>sports and physical fitness as essential components of holistic education and well-being</strong>, supporting <strong>SDG 3 – Good Health and Well-being</strong>. The University provides comprehensive sports infrastructure through its dedicated Sports Department, Sports Complex, recreation rooms, and modern fitness facilities. Outdoor amenities include a <strong>cricket ground, football field, basketball and volleyball courts, badminton courts, athletics facilities, and a multi-purpose sports field</strong>, supporting both recreational activities and competitive training. Indoor facilities include <strong>well-equipped gyms with modern fitness equipment</strong>, with separate facilities for boys and girls, accessible to students and staff under the guidance of qualified trainers. The University also promotes holistic wellness through <strong>yoga and aerobics sessions conducted by certified instructors</strong>, contributing to physical and mental well-being. Regular inter- and intra-university sports events, along with participation in national and international competitions, foster <strong>fitness, teamwork, discipline, leadership, and sportsmanship</strong>, strengthening the University’s commitment to a healthy and active campus community.</p>
-
-                <SubHeading>Outdoor Sports Facilities</SubHeading>
-                <p>Kalinga University provides extensive outdoor sports facilities including a cricket ground, football field, basketball and volleyball courts, open-air badminton courts, athletics facilities, and a multi-utility sports field. These spaces support training, recreation, and tournaments, promoting physical fitness, teamwork, and active student engagement.</p>
-                <SubHeading>Outdoor Games Facilities</SubHeading>
-                <Table
-                    columns={[
-                        { key: "slNo", label: "S.No.", widthPx: 70 },
-                        { key: "game", label: "Outdoor Games", widthPx: 240 },
-                        { key: "material", label: "Material", widthPx: 460 },
-                    ]}
-                    data={outdoorGames}
-                />
-                <SubHeading>Sports Grounds Dimension</SubHeading>
-                <Table
-                    columns={[
-                        { key: "slNo", label: "S.No.", widthPx: 70 },
-                        { key: "facility", label: "Facilities", widthPx: 260 },
-                        { key: "total", label: "Total", widthPx: 100 },
-                        { key: "area", label: "Area", widthPx: 160 },
-                    ]}
-                    data={sportsGrounds}
-                />
-
-                <SubHeading>Indoor Sports Facilities</SubHeading>
-                <p>Kalinga University offers well-equipped indoor sports facilities, including a modern gymnasium with advanced fitness equipment to promote physical health and an active lifestyle. Separate gym facilities for boys and girls are available, ensuring a comfortable and inclusive environment for all users. The gym is accessible to both students and staff and supports regular fitness activities. Qualified gym trainers are available to guide users in proper exercise techniques and structured workout routines, ensuring safe and effective training. In addition, facilities for table tennis, carrom, and chess are provided, along with yoga and aerobics sessions, promoting holistic physical fitness, mental well-being, and an active lifestyle among the university community.</p>
-
-                <SubHeading>Sports related Activities & Events</SubHeading>
-                <Table
-                    columns={[
-                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
-                        { key: "event", label: "Sports Events", widthPx: 300 },
-                        { key: "date", label: "Date", widthPx: 160 },
-                        { key: "organiser", label: "Organized By", widthPx: 260 },
-                        { key: "awards", label: "Awards", widthPx: 300 },
-                    ]}
-                    data={sportsEvents}
-                />
-                <SubHeading>Program Highlights and Event Reports</SubHeading>
-                <BulletList items={sportsEventReports} />
-            </Paragraphs>
-        ),
-    },
-    {
-        id: 7,
-        question: "3.3.4 Sexual and Reproductive Health Care Services",
-        component: (
-            <Paragraphs>
-                <p>Kalinga University promotes <strong>women’s health, gender equity, safety, and overall well-being</strong> through an integrated support system aligned with <strong>SDG 3 and SDG 5</strong>. Dedicated bodies, including the <strong>Internal Complaints Committee (ICC), Women’s Cell/POSH Committee, and Student Counselling Cell</strong>, provide confidential counselling, psychosocial support, awareness, and grievance redressal. Health infrastructure includes <strong>medical and first-aid facilities, resident nurses, sanitary napkin vending machines, sanitary waste incinerators, and an ERP-enabled grievance redressal system</strong>. Regular awareness programmes, workshops, expert sessions, and health camps address <strong>menstrual hygiene, reproductive health, nutrition, anaemia prevention, mental health, stress management, cancer awareness, substance-abuse prevention, and healthy lifestyles</strong>. Collaborations with hospitals, healthcare centres, diagnostic facilities, and social organizations facilitate <strong>health check-ups, specialist consultations, vaccination drives, emergency support, and counselling services</strong>. These initiatives foster a <strong>safe, inclusive, health-conscious, and supportive campus environment</strong>, empowering women and promoting holistic well-being across the University community.</p>
-
-                <SubHeading>Institutional Mechanisms for Sexual and Reproductive Health Care Services</SubHeading>
-                <MinorHeading>a) Policy on Gender Equity and Gender Sensitization</MinorHeading>
-                <p>The University is committed to fostering an inclusive, equitable, and gender-sensitive academic environment where every individual is treated with dignity and respect. The Policy on Gender Equity and Gender Sensitization promotes equal opportunities in education, research, employment, leadership, and participation in campus activities. It seeks to prevent gender-based discrimination, harassment, and violence through awareness programs, counseling services, and effective grievance redressal mechanisms. The policy encourages mutual respect, diversity, and inclusiveness, thereby creating a safe, supportive, and empowering campus culture for all stakeholders.</p>
-                <p>
-                    <TextLink href="/sustainability/policies/gender-sensitization">Policy On Gender Equity And Gender Sensitization</TextLink>
-                </p>
-                <p><strong>Women Cell / Prevention of Sexual Harassment (POSH) Committee</strong></p>
-                <Table
-                    columns={[
-                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
-                        { key: "name", label: "Name", widthPx: 240 },
-                        { key: "position", label: "Position", widthPx: 200 },
-                        { key: "designation", label: "Designation", widthPx: 300 },
-                    ]}
-                    data={poshCommittee}
-                />
-
-                <MinorHeading>b) Policy on Emotional Wellness, Mental Health, and Resilience</MinorHeading>
-                <p>The Policy on Emotional Wellness, Mental Health, and Resilience reflects Kalinga University’s commitment to fostering a supportive, inclusive, and psychologically safe campus environment. The policy promotes emotional well-being, mental health awareness, stress management, and resilience among students, faculty, and staff. Through counselling services, mentoring, wellness programs, sports and recreational activities, and early intervention mechanisms, the University seeks to enhance overall well-being, reduce stigma associated with mental health concerns, and empower individuals to achieve personal, academic, and professional success.</p>
-                <p>
-                    <TextLink href="/sustainability/emotional-wellness-and-mental-health-policy">Policy on Emotional Wellness, Mental Health and Resilience</TextLink>
-                </p>
-
-                <MinorHeading>c) Internal Complaint Committee</MinorHeading>
-                <p>The Internal Complaints Committee (ICC) at Kalinga University is constituted in accordance with the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013. The Committee is committed to ensuring a safe, secure, respectful, and inclusive campus environment free from sexual harassment, gender-based discrimination, and misconduct. It provides a confidential, impartial, and transparent mechanism for receiving, investigating, and resolving complaints while safeguarding the dignity, rights, and well-being of all members of the University community.</p>
-                <Table
-                    columns={[
-                        { key: "slNo", label: "Sl. No.", widthPx: 70 },
-                        { key: "name", label: "Name", widthPx: 260 },
-                        { key: "designation", label: "Designation", widthPx: 380 },
-                    ]}
-                    data={internalComplaintCommittee}
-                />
-
-                <MinorHeading>d) Provision of Medical Room &amp; Wellness Center</MinorHeading>
-                <p><strong>Medical Room</strong></p>
-                <p>The University Medical Room serves as a dedicated healthcare facility and acts as the first point of contact for addressing the immediate health and wellness needs of students, faculty members, staff, and visitors. Equipped with essential medical equipment, first-aid supplies, and basic healthcare facilities, it provides prompt medical assistance for minor illnesses, injuries, and emergency situations occurring on campus. Qualified healthcare personnel ensure timely assessment, treatment, and guidance, helping to prevent complications and promote overall well-being.</p>
-                <p>In addition to providing primary healthcare services, the Medical Room plays a significant role in promoting preventive healthcare through health awareness campaigns, routine health check-ups, counseling, and wellness education programs. It also facilitates referrals to specialized healthcare providers and nearby hospitals whenever advanced medical intervention is required. By offering accessible healthcare support, encouraging healthy lifestyle practices, and ensuring a rapid response during emergencies, the University Medical Room contributes substantially to creating a safe, healthy, inclusive, and supportive campus environment that enhances the overall quality of life for the university community.</p>
-                <p><strong>Sports and Wellness Center</strong></p>
-                <p>The Sports and Wellness Center serves as a vital platform for promoting holistic health and well-being among students, faculty, and staff by encouraging active lifestyles and healthy habits. The Center offers a wide range of sports activities, fitness programs, yoga sessions, meditation practices, recreational events, and wellness initiatives designed to support physical, mental, and emotional health. These activities help individuals improve their physical fitness, build endurance, enhance concentration, and maintain a balanced lifestyle.</p>
-                <p>Beyond physical health, the Center plays a significant role in stress management and emotional well-being by providing opportunities for relaxation, recreation, and social interaction. Participation in sports and wellness programs fosters self-discipline, resilience, teamwork, leadership, and self-confidence while helping individuals develop positive coping mechanisms to manage academic and professional pressures. Regular engagement in these activities contributes to reducing stress and anxiety, improving mental health, enhancing overall quality of life, and creating a positive, energetic, and inclusive campus environment that supports personal growth and community well-being.</p>
-
-                <SubHeading>Facilities Available to Women Employees and Students</SubHeading>
-                <MinorHeading>Sanitary Napkin Vending Machines and Incinerators</MinorHeading>
-                <p>Kalinga University is committed to promoting menstrual health, hygiene, dignity, and well-being among its female students, faculty, and staff. Recognizing the importance of accessible menstrual hygiene facilities, the University has installed sanitary napkin vending machines in female washrooms across academic blocks, administrative buildings, hostels, and other key locations on campus. These machines provide convenient, hygienic, and uninterrupted access to sanitary napkins, ensuring that women can effectively manage their menstrual health without inconvenience or embarrassment.</p>
-                <p>To facilitate safe and environmentally responsible disposal of used sanitary products, each vending machine is complemented by a sanitary napkin incinerator. These incinerators help maintain cleanliness, prevent improper waste disposal, and support sustainable waste management practices on campus. The availability of these facilities promotes awareness of menstrual hygiene, reduces stigma associated with menstruation, and empowers women to participate confidently in academic and professional activities. This initiative reflects the University’s commitment to fostering a gender-sensitive, inclusive, safe, and health-conscious campus environment.</p>
-                <MinorHeading>Dedicated Girls Common Room</MinorHeading>
-                <p>Kalinga University provides dedicated Girls’ Common Rooms and Study Rooms within the campus and hostel premises to ensure a safe, comfortable, and supportive environment for female students. These facilities serve as spaces for relaxation, informal interaction, academic discussions, and focused study. The rooms are equipped with adequate seating, lighting, ventilation, and essential amenities to meet students’ academic and personal needs. They offer a secure and peaceful atmosphere where students can spend their free time, prepare for examinations, engage in group learning activities, or seek privacy when required. By providing these facilities, the University promotes the well-being, safety, and academic success of female students while fostering an inclusive, student-friendly, and gender-sensitive campus environment.</p>
-
-                <SubHeading>Programs and Awareness Activities on Sexual and Reproductive Well-being</SubHeading>
-                <Table columns={eventColumns} data={reproductiveWellbeingActivities} />
-            </Paragraphs>
-        ),
-    },
-    {
-        id: 8,
-        question: "3.3.5 Mental Health Support for Students",
-        component: (
-            <Paragraphs>
-                <p>Kalinga University is committed to promoting the mental health, emotional well-being, and overall psychological wellness of its students. Recognizing that positive mental health is fundamental to academic success, personal growth, and holistic development, the University strives to create a supportive, inclusive, and compassionate campus environment where students feel safe, valued, and empowered.</p>
-                <p>The University provides a range of mental health support mechanisms through its <strong>Mentor–Mentee Framework</strong>, Student Counselling Cell, and various wellness initiatives. Faculty mentors regularly engage with students to understand their academic, emotional, and personal concerns, while trained counsellors offer confidential guidance and professional support to students experiencing stress, anxiety, emotional difficulties, or other mental health challenges.</p>
-                <p>Through awareness programs, workshops, counselling sessions, stress-management activities, and peer-support initiatives, the University encourages students to seek help without fear of stigma and promotes positive coping strategies, resilience, self-care, and healthy lifestyle practices. Special attention is given to the early identification of emotional distress and timely intervention through appropriate support services.</p>
-                <p>By fostering a culture of empathy, respect, inclusion, and psychological safety, Kalinga University aims to strengthen students’ emotional resilience, enhance their overall well-being, and enable them to achieve their academic and personal potential in a healthy and supportive learning environment.</p>
-                <p>
-                    <TextLink href="/sustainability/emotional-wellness-and-mental-health-policy">Policy on Emotional Wellness, Mental Health and Resilience</TextLink>
-                </p>
-                <SubHeading>Objectives of the Mentor-Mentee Framework</SubHeading>
-                <NumberedList items={mentorMenteeObjectives} />
-            </Paragraphs>
-        ),
-    },
-    {
-        id: 9,
-        question: "3.3.6 Smoke-Free Policy",
-        component: (
-            <Paragraphs>
-                <p>Kalinga University is firmly committed to fostering a healthy, safe, and environmentally sustainable campus environment through its comprehensive Smoke-Free and Tobacco-Free Campus Policy. Recognizing the significant health risks associated with tobacco consumption and exposure to second-hand smoke, the University strictly prohibits smoking and the use of all tobacco products within the entire campus premises.</p>
-                <p>The policy applies to all students, faculty members, staff, visitors, vendors, and other stakeholders and covers all academic blocks, administrative offices, hostels, libraries, laboratories, cafeterias, recreational areas, vehicles, and open spaces within the University campus. This initiative reflects the University’s dedication to safeguarding the physical and mental well-being of its community while promoting a culture of healthy living and responsible behavior. To ensure effective implementation of the policy, prominent “No Smoking” and “Tobacco-Free Campus” signages are displayed at strategic locations across the campus. Awareness campaigns, health education programs, orientation sessions, and community engagement activities are regularly organized to educate stakeholders about the harmful effects of tobacco use and the importance of adopting healthy lifestyles.</p>
-                <p>Through these sustained efforts, Kalinga University strives to create a clean, healthy, and supportive learning environment that encourages wellness, environmental responsibility, and respect for public health, thereby contributing to the holistic development of its students and the wider community.</p>
-                <p>
-                    <TextLink href="/sustainability/policies/smoke-free-campus-policy">Smoke-Free Campus Policy</TextLink>
-                </p>
-            </Paragraphs>
-        ),
-    },
-    {
-        id: 10,
-        question: "3.3.7 Mental Health Support for Staff",
-        component: (
-            <Paragraphs>
-                <p>Kalinga University recognizes that the mental health and well-being of its faculty and staff are essential for maintaining a productive, positive, and supportive work environment. The University is committed to fostering a workplace culture that promotes psychological well-being, emotional resilience, and work-life balance among all employees.</p>
-                <p>To support staff mental health, the University regularly organizes awareness programs, workshops, seminars, expert talks, and wellness sessions focusing on stress management, emotional intelligence, mindfulness, resilience building, burnout prevention, and healthy coping strategies. These initiatives aim to enhance awareness of mental health issues, reduce stigma associated with seeking help, and encourage open discussions about emotional and psychological well-being. Faculty and staff members are encouraged to seek guidance and support whenever needed through appropriate counselling and wellness support mechanisms. The University also promotes a culture of empathy, mutual respect, inclusiveness, and collaboration, ensuring that employees feel valued, heard, and supported in their professional environment.</p>
-                <p>Through continuous mental health awareness and support initiatives, Kalinga University strives to create a healthy and psychologically safe workplace where employees can effectively manage personal and professional challenges, maintain positive mental health, enhance job satisfaction, and contribute meaningfully to the University’s mission of academic excellence and holistic development.</p>
-                <p>Kalinga University has established the <strong>Happiness Cell (Mental Health Wellness Centre)</strong> to promote the emotional, psychological, social, and behavioral well-being of students and staff members. The Centre serves as a dedicated support system that fosters a positive, inclusive, and mentally healthy campus environment where individuals can seek guidance, counselling, and assistance for personal and professional challenges.</p>
-                <p>The Happiness Cell addresses a wide range of concerns, including stress, anxiety, emotional distress, adjustment difficulties, interpersonal conflicts, behavioral issues, academic pressure, workplace challenges, and overall mental well-being. Through confidential counselling and guidance services, the Centre helps students and staff develop resilience, emotional balance, self-awareness, and healthy coping mechanisms to navigate everyday challenges effectively. To promote mental health awareness and reduce stigma associated with seeking help, the Happiness Cell regularly organizes workshops, awareness campaigns, motivational talks, wellness sessions, mindfulness practices, stress management programs, and interactive activities. These initiatives encourage positive mental health practices, emotional intelligence, healthy relationships, and a balanced lifestyle among members of the university community.</p>
-                <p>The Centre works collaboratively with faculty mentors, administrative departments, healthcare professionals, and student support services to identify individuals requiring additional care and provide timely interventions. Special emphasis is placed on preventive mental healthcare, early identification of concerns, and creating a supportive ecosystem that nurtures personal growth and overall well-being. Through its comprehensive mental health and wellness initiatives, the Happiness Cell contributes significantly to the University’s commitment towards holistic development and the achievement of Sustainable Development Goal 3 (Good Health and Well-Being). By prioritizing emotional, social, and behavioral wellness, Kalinga University strives to ensure that every student and staff member thrives in a healthy, supportive, and compassionate academic environment.</p>
-                <SubHeading>Objectives of the Happiness Cell</SubHeading>
-                <BulletList items={happinessCellObjectives} />
-                <SubHeading>Team of Qualified Counsellors</SubHeading>
-                <NumberedList items={counsellors} />
-                <SubHeading>Happiness Cell – Support &amp; Wellness Flow Chart</SubHeading>
-                <p className="font-medium">Listen | Support | Guide | Empower</p>
-                <NumberedList items={happinessCellFlow} />
-
-                <SubHeading>Events</SubHeading>
-                <MinorHeading>Model/Poster Exhibition on World Mental Health Day</MinorHeading>
-                <p>The Department of Social Work, Faculty of Arts and Humanities, Kalinga University, organized a <strong>Model/Poster Exhibition</strong> on the occasion of <strong>World Mental Health Day</strong> on <strong>10th October 2025</strong> from <strong>9:30 AM to 1:30 PM</strong> at <strong>WBSF-01 (offline Mode)</strong>. The event aimed to raise awareness about mental health and promote student engagement through creative models and posters. A guest talk by <strong>Dr. A. P. Senthil Kumar (Online), Associate Professor, Jigjiga University, Ethiopia</strong>, enriched the session with insights on mental well-being. <strong>The event aligned with UN SDGs 3, 4, 16, and 17</strong>, encouraging discussions on mental health, education, and sustainable partnerships for well-being. The same day the BA psychology students presented a street play on mental health in the same venue. All the faculties and students of the Department of Social Work participated in the event.</p>
-                <MinorHeading>International Yoga Day 2025</MinorHeading>
-                <p><strong>International Yoga Day 2025</strong> was celebrated with great enthusiasm at Kalinga University on <strong>21 June 2025</strong>, under the theme <strong>“Yoga for One Earth, One Health.”</strong> Organized by the <strong>Department of Education</strong> with support from the <strong>Chhattisgarh Yoga Aayog, Government of Chhattisgarh</strong>, the programme highlighted the importance of yoga for physical, mental, and spiritual well-being. The event began with live streaming of the national celebration inaugurated by the Hon’ble Prime Minister of India, followed by an address by the Vice Chancellor emphasizing yoga’s relevance to modern life and <strong>SDG 3: Good Health and Well-Being</strong>. A practical yoga session included Om chanting, warm-up exercises, yoga asanas, meditation, breathing techniques, and mindfulness. A <strong>30-minute yoga protocol</strong> was conducted in accordance with AYUSH Ministry guidelines, with live demonstrations by Education Department students and NSS volunteers. The programme recorded <strong>81 registered participants and 100 attendees</strong>, including faculty, staff, and NSS volunteers. Kalinga University’s contribution was also acknowledged by the Ministry of AYUSH through the <strong>“Yoga Sangam Patra” Certificate of Participation</strong>.</p>
-                <MinorHeading>International Olympic Day - 2025</MinorHeading>
-                <p>Kalinga University celebrated <strong>International Olympic Day</strong> on <strong>23 June 2025</strong> from <strong>10:00 a.m. to 12:30 p.m.</strong> at the <strong>Recreation Hall</strong>. The event was organized for hostel students to promote active participation in recreational sports and encourage the values of sportsmanship, discipline, strategic thinking, and healthy competition. The celebration featured indoor recreational competitions in <strong>Carrom, Pool Table, and Chess</strong>, with a total of <strong>five students participating</strong> enthusiastically. The activities provided students with an engaging platform to develop <strong>strategic thinking, precision, concentration, decision-making skills, and sportsmanship</strong> in a friendly competitive environment. The event was well received by the participants and successfully fostered a spirit of <strong>camaraderie, teamwork, healthy competition, and active engagement</strong> among the hostel students. The celebration highlighted the importance of sports and recreational activities in promoting holistic student development and a healthy campus lifestyle.</p>
+                <div className="space-y-3 pt-2">
+                    {collaborationSubsections.map((sub) => (
+                        <details key={sub.id} className="group rounded-lg border border-gray-200 bg-white open:border-[var(--button-red)]">
+                            <summary className="cursor-pointer rounded-lg bg-[var(--light-gray)] px-4 py-3 font-plus-jakarta-sans font-semibold text-[var(--foreground)] focus-visible:outline-2 focus-visible:outline-[var(--button-red)]">
+                                {sub.question}
+                            </summary>
+                            <div className="min-w-0 p-4">{sub.component}</div>
+                        </details>
+                    ))}
+                </div>
             </Paragraphs>
         ),
     },

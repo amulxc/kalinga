@@ -11,11 +11,11 @@ import SectionHeading from "../components/general/SectionHeading";
 const JOURNAL_NAME = "International Journal of Enterprise, Commerce and Management Research (IJECMR)";
 const JOURNAL_EMAIL = "ijecmr@kalingauniversity.ac.in";
 
-// Placeholder images reused from the site; replace when final images are provided.
 const IMAGES = {
-    intro: "https://cdn.kalingauniversity.ac.in/academics/commerce-management.webp",
-    aims: "https://cdn.kalingauniversity.ac.in/academic-facilities/businesslab.webp",
-    submission: "https://cdn.kalingauniversity.ac.in/academic-facilities/research-and-statistical-database-lab1.webp",
+    intro: "/ijecmr/ijecmr-intro.webp",
+    aims: "/ijecmr/ijecmr-aims.webp",
+    submission: "/ijecmr/ijecmr-submission.webp",
+    // Placeholder reused from the site; replace when the final image is provided.
     contact: "https://cdn.kalingauniversity.ac.in/academic-facilities/resourcerichlibrary.webp",
 };
 
@@ -270,7 +270,7 @@ const contactInfo = {
 function ScopeModal({ area, onClose }) {
     if (!area) return null;
     return (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={onClose}>
+        <div className="fixed inset-0 z-[200000] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={onClose}>
             <div className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden flex flex-col shadow-2xl" onClick={(e) => e.stopPropagation()}>
                 <div className="p-6 border-b border-gray-100 flex justify-between items-center bg-[var(--dark-blue)] text-white">
                     <h2 className="text-xl md:text-2xl font-bold font-plus-jakarta-sans text-white">{area.shortName}</h2>
@@ -321,16 +321,12 @@ export default function IJECMRJournalPage() {
                 description="The primary aim of IJECMR is to encourage the creation and dissemination of original, rigorous, and relevant research in commerce, enterprise, and management. The key objectives of the journal are to:"
             />
 
-            <div className="mx-2 rounded-t-xl bg-gray-50 pt-12 md:pt-16">
-                <p className="container mx-auto px-4 max-w-4xl text-center text-gray-700 leading-relaxed">
-                    IJECMR welcomes original and unpublished scholarly contributions covering a broad range of subjects related to commerce, enterprise, management, and associated fields. The scope includes, but is not limited to, the following areas.
-                </p>
-            </div>
             <OurPrograms
                 customPrograms={scopeCards}
                 hideSearchFilter={true}
                 customTitle="Scope of the Journal"
                 customSubtitle="Areas of Research"
+                customDescription="IJECMR welcomes original and unpublished scholarly contributions covering a broad range of subjects related to commerce, enterprise, management, and associated fields. The scope includes, but is not limited to, the following areas."
                 programCardTitleClassName="!text-xl"
                 backgroundColor="bg-gray-50"
                 onExploreProgramClick={setSelectedArea}
@@ -339,7 +335,7 @@ export default function IJECMRJournalPage() {
             <ImageListItem
                 items={submissionItems}
                 imageSrc={IMAGES.submission}
-                title="IJECMR Submission Guidelines, Format & Publication Policy"
+                title="Submission Guidelines, Format & Publication Policy"
                 description="IJECMR welcomes submissions in the following formats: research articles, research papers, review papers, and case studies. Authors are requested to adhere to the following word limits for each submission type:"
                 className="!bg-white"
                 textClassName="text-gray-700"

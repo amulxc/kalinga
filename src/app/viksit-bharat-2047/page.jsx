@@ -6,8 +6,16 @@ import ImageContent from '../components/ccrc/imagecontent';
 import { AccordionItem } from '../components/general/accordion';
 import SectionHeading from '../components/general/SectionHeading';
 import ImageListItem from '../components/ccrc/imagelistitem';
+import Gallery from '../components/general/gallery';
 import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
+
+// Photos from the previous edition of the Faculty of Pharmacy International Conference
+const glimpsesImages = Array.from({ length: 22 }, (_, i) => ({
+    id: i + 1,
+    image: `/conference-glimpses/viksit-bharat-2047/${String(i + 1).padStart(2, "0")}.webp`,
+    alt: `Glimpse of the Faculty of Pharmacy International Conference, photo ${i + 1}`,
+}));
 
 const ViksitBharatPharmacyConferencePage = () => {
 
@@ -415,7 +423,7 @@ const ViksitBharatPharmacyConferencePage = () => {
                 description={[
                     "The Faculty of Pharmacy at Kalinga University is deeply committed to producing highly skilled pharmacists and scientists who uphold ethical standards and are equipped to address community health needs. The emphasis on international standards, scientific research, and community service reflects a holistic approach to education and professional development. The investment in state-of-the-art laboratories demonstrates a dedication to providing students with practical, hands-on learning experiences in pharmaceutical sciences."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/course/pharamcy-1.webp"
+                imageUrl="/conference-glimpses/viksit-bharat-2047/10.webp"
                 imageAlt="Faculty of Pharmacy"
             />
 
@@ -427,7 +435,7 @@ const ViksitBharatPharmacyConferencePage = () => {
                     "The conference on “AI and Translational Innovations in Pharmaceutical Sciences and Healthcare for Viksit Bharat 2047” aims to provide a dynamic platform for researchers, academicians, healthcare professionals, industry experts, and students to discuss the transformative role of Artificial Intelligence and translational research in advancing healthcare in India. The conference will focus on emerging areas such as AI-driven drug discovery, precision medicine, digital healthcare, pharmacovigilance, bioinformatics, smart drug delivery, and clinical research.",
                     "Aligned with the vision of Viksit Bharat 2047, the event seeks to encourage innovation, interdisciplinary collaboration, and sustainable healthcare solutions while addressing ethical and regulatory aspects of AI integration to build an accessible, affordable, and patient-centric healthcare system for the future."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/research/research-main-content.webp"
+                imageUrl="/conference-glimpses/viksit-bharat-2047/14.webp"
                 imageAlt="AI and Translational Innovations in Pharmaceutical Sciences and Healthcare"
                 reverseLayout={true}
                 sectionClassName="md:py-16 bg-[var(--lite-sand)] py-16 !pb-20"
@@ -436,7 +444,7 @@ const ViksitBharatPharmacyConferencePage = () => {
             {/* ================= OBJECTIVES ================= */}
             <ImageListItem
                 items={objectiveItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/laboratories/lab-1.webp"
+                imageSrc="/conference-glimpses/viksit-bharat-2047/08.webp"
                 imageAlt="Pharmaceutical sciences research laboratory, Kalinga University"
                 title="Objectives"
                 subtitle=""
@@ -446,7 +454,7 @@ const ViksitBharatPharmacyConferencePage = () => {
             {/* ================= WHY ATTEND ================= */}
             <ImageListItem
                 items={whyAttendItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/campus-life/whywork.webp"
+                imageSrc="/conference-glimpses/viksit-bharat-2047/04.webp"
                 imageAlt="Why attend Kalinga University international conferences"
                 title="Why Attend KU International Conferences?"
                 subtitle=""
@@ -610,7 +618,7 @@ const ViksitBharatPharmacyConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://cdn.kalingauniversity.ac.in/conferences/viksit-bharat/FOPH-2026-27.pdf"
+                        href="/brochure/viksit-bharat-2047.pdf"
                         download
                         target="_blank"
                         rel="noreferrer"
@@ -636,6 +644,14 @@ const ViksitBharatPharmacyConferencePage = () => {
                     </a>
                 </div>
             </div>
+
+            {/* Glimpses */}
+            <Gallery
+                images={glimpsesImages}
+                title="Glimpses of the Conference"
+                enableLightbox
+                paddingClassName="py-16"
+            />
         </>
     );
 };

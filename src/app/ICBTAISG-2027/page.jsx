@@ -4,8 +4,16 @@ import React from 'react';
 import MainIntro from '../components/about/main_intro';
 import { AccordionItem } from '../components/general/accordion';
 import SectionHeading from '../components/general/SectionHeading';
+import Gallery from '../components/general/gallery';
 import FAQ from '../components/general/faq';
 import OrganogramOfKalinga from '../components/about/organogram_of_kalinga';
+
+// Photos from the previous edition of the Faculty of Commerce and Management International Conference
+const glimpsesImages = Array.from({ length: 22 }, (_, i) => ({
+    id: i + 1,
+    image: `/conference-glimpses/icbtaisg-2027/${String(i + 1).padStart(2, "0")}.webp`,
+    alt: `Glimpse of the Faculty of Commerce and Management International Conference, photo ${i + 1}`,
+}));
 
 const ICBTAISGConferencePage = () => {
 
@@ -263,7 +271,7 @@ const ICBTAISGConferencePage = () => {
                     "The Faculty of Commerce and Management is committed to nurturing academic excellence and holistic professional development. It offers a dynamic blend of theoretical knowledge and practical exposure across disciplines such as finance, accounting, corporate law, human resource management, marketing, economics, organisational behaviour, and information technology. With a focus on experiential learning, the faculty integrates fieldwork, case studies, research projects, workshops, and industrial visits into its pedagogy.",
                     "Students are equipped with strong analytical and communication skills, ethical values, and an understanding of business and societal responsibilities. Through expert interactions, hands-on training, and interdisciplinary approaches, the faculty prepares students to thrive in competitive corporate environments and contribute meaningfully to sustainable development. The MBA program under the Faculty of Commerce & Management is NBA-accredited."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/Home/about-kalinga.webp"
+                imageUrl="/conference-glimpses/icbtaisg-2027/16.webp"
                 imageAlt="Faculty of Commerce and Management"
             />
 
@@ -275,7 +283,7 @@ const ICBTAISGConferencePage = () => {
                     "The global business environment is being reshaped by the convergence of Artificial Intelligence (AI), sustainability, and inclusive growth. Organisations must leverage AI-driven innovation while addressing ethical concerns, environmental responsibility, and social equity. As AI transforms industries through automation and intelligent decision-making, businesses also face challenges related to governance, workforce adaptation, and data privacy.",
                     "At the same time, sustainability has become a strategic priority, with organisations integrating ESG principles to address climate change and resource constraints. Inclusive growth further emphasises equitable opportunities, financial inclusion, diversity, digital accessibility, and community development. This conference aims to bring together academicians, researchers, policymakers, industry experts, entrepreneurs, and students to exchange ideas, present innovative research, and explore strategies for building resilient, sustainable, and inclusive businesses in an AI-driven economy."
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/research/research-main-content.webp"
+                imageUrl="/conference-glimpses/icbtaisg-2027/07.webp"
                 imageAlt="Business Transformation in the Age of AI"
                 reverseLayout={true}
                 sectionClassName="md:py-16 bg-[var(--lite-sand)] py-16 !pb-20"
@@ -409,6 +417,14 @@ const ICBTAISGConferencePage = () => {
                     </a>
                 </div>
             </div>
+
+            {/* Glimpses */}
+            <Gallery
+                images={glimpsesImages}
+                title="Glimpses of the Conference"
+                enableLightbox
+                paddingClassName="py-16"
+            />
         </>
     );
 };

@@ -95,100 +95,54 @@
           "text": "The below mentioned graph presents the year-wise number of research papers published in alignment with SDG 8: Decent Work and Economic Growth. Publications increased from 13 in 2023 to 63 in 2025, indicating substantial growth in faculty research productivity and contributions to sustainable economic development."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "SDG - 08 Aligned Research Papers",
-            "Column1",
-            "Column2"
+          "type": "barChart",
+          "caption": "Year-wise Research Papers (SDG - 08)",
+          "xLabel": "Year",
+          "yLabel": "Research Paper Count",
+          "series": [
+            {
+              "name": "SDG - 08 Aligned Research Papers",
+              "color": "#BF9000"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "0"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "3"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "13"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "32"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "63"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ],
-            [
-              {
-                "text": "2026"
-              },
-              {
-                "text": "28"
-              },
-              {
-                "text": ""
-              },
-              {
-                "text": ""
-              }
-            ]
-          ],
-          "caption": "Year-wise Research Papers (SDG - 08)"
+          "data": [
+            {
+              "label": "2021",
+              "values": [
+                0
+              ]
+            },
+            {
+              "label": "2022",
+              "values": [
+                3
+              ]
+            },
+            {
+              "label": "2023",
+              "values": [
+                13
+              ]
+            },
+            {
+              "label": "2024",
+              "values": [
+                32
+              ]
+            },
+            {
+              "label": "2025",
+              "values": [
+                63
+              ]
+            },
+            {
+              "label": "2026",
+              "values": [
+                28
+              ]
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -203,54 +157,48 @@
           "text": "Below mentioned graph illustrates the year-wise number of books and book chapters published per teacher in alignment with SDG 8: Decent Work and Economic Growth. Publications increased from 26 in 2021 to 120 in 2025, despite fluctuations, demonstrating growing faculty contributions to research, knowledge dissemination, and sustainable economic development."
         },
         {
-          "type": "table",
-          "headers": [
-            "Category",
-            "Book/\nBook Chapter"
+          "type": "barChart",
+          "caption": "Year-wise Book / Book Chapter",
+          "xLabel": "Year of Publication",
+          "yLabel": "Count",
+          "series": [
+            {
+              "name": "Book/ Book Chapter",
+              "color": "#7030A0"
+            }
           ],
-          "rows": [
-            [
-              {
-                "text": "2025"
-              },
-              {
-                "text": "120"
-              }
-            ],
-            [
-              {
-                "text": "2024"
-              },
-              {
-                "text": "92"
-              }
-            ],
-            [
-              {
-                "text": "2023"
-              },
-              {
-                "text": "55"
-              }
-            ],
-            [
-              {
-                "text": "2022"
-              },
-              {
-                "text": "105"
-              }
-            ],
-            [
-              {
-                "text": "2021"
-              },
-              {
-                "text": "26"
-              }
-            ]
-          ],
-          "caption": "Year-wise Book / Book Chapter"
+          "data": [
+            {
+              "label": "2021",
+              "values": [
+                26
+              ]
+            },
+            {
+              "label": "2022",
+              "values": [
+                105
+              ]
+            },
+            {
+              "label": "2023",
+              "values": [
+                55
+              ]
+            },
+            {
+              "label": "2024",
+              "values": [
+                92
+              ]
+            },
+            {
+              "label": "2025",
+              "values": [
+                120
+              ]
+            }
+          ]
         },
         {
           "type": "paragraph",
