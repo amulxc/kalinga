@@ -215,6 +215,7 @@ export const pageDataMap: Record<string, PageData> = {
         title: "SciSustain 2027",
         breadcrumbLabel: "SciSustain 2027",
         banner: "/scisustain-2027/glimpses/scisustain-2025-10.webp",
+        imagePosition: "object-[center_55%]",
     },
     "/ICBTAISG-2027": {
         slug: "/ICBTAISG-2027",
