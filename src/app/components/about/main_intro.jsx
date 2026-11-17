@@ -30,6 +30,8 @@ export default function MainIntro({
   subtitleTextColor = "text-[var(--button-red)]",
   titleClassName = "leading-tight !text-left",
   showImage = true,
+  // When the image is hidden, let the text span the full width instead of half the grid.
+  fullWidthWithoutImage = false,
   showKnowMore = true,
   knowMoreLabel = "Read More",
   knowMoreHref = null,
@@ -132,7 +134,7 @@ export default function MainIntro({
         </defs>
       </svg>
       <div className="container mx-auto px-2">
-        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 ${showAll ? 'items-start' : 'items-center'}`}>
+        <div className={`grid grid-cols-1 ${showImage || !fullWidthWithoutImage ? 'lg:grid-cols-2' : ''} gap-8 lg:gap-12 ${showAll ? 'items-start' : 'items-center'}`}>
           {/* Left Section - Text Content */}
           <div className={`flex flex-col order-2 ${reverseLayout ? 'lg:order-2' : 'lg:order-1'} lg:pl-0 lg:pr-4`}>
             {logoUrl && (

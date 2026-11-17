@@ -356,7 +356,7 @@ export default function KIFPage({
       id: 6,
       name: "Master G Academy NIIRA Educom",
       title: "",
-      image: "https://cdn.kalingauniversity.ac.in/kif/Master+G+Academy+NIIRA+Educom.webp",
+      image: "/kif/master-g-academy-niira-educom.webp",
     },
     {
       id: 7,

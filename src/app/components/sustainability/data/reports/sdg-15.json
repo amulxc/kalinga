@@ -63,6 +63,7 @@
         {
           "type": "barChart",
           "caption": "Major Research Areas Aligned with SDG 15",
+          "hideValues": true,
           "yLabel": "No. of Researches",
           "series": [
             {

@@ -54,6 +54,8 @@ export default function SdgReportPage({ report }) {
                 imageUrl={`https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-logo/E-WEB-Goal-${String(report.number).padStart(2, "0")}.png`}
                 imageAlt={`SDG ${report.number}: ${report.title}`}
                 imageObjectFit="contain"
+                showImage={!report.hideIntroImage}
+                fullWidthWithoutImage
                 disableClipPath={false}
                 applyTransform3dSlant={false}
                 initialVisibleParagraphs={1}

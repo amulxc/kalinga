@@ -137,9 +137,9 @@ const healthGraduates = [
     { programme: "D. Pharmacy", graduates: "63", href: PHARMACY_HREF },
     { programme: "Pharm. D", graduates: "19", href: PHARMACY_HREF },
     { programme: "PhD", graduates: "22", href: "/admissions?studyLevel=PhD" },
-    { programme: "BSC (Others)", graduates: "57", href: SCIENCE_HREF },
+    { programme: "BSC (Others)", graduates: "60", href: SCIENCE_HREF },
     { programme: "BSC (Biotechnology)", graduates: "51", href: SCIENCE_HREF },
-    { programme: "Total", graduates: "335" },
+    { programme: "Total", graduates: "338" },
 ];
 
 const hospitalMoUs = [

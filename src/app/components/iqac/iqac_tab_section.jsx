@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { submitForm } from "../../config/api";
 import FlipbookTrigger from "../general/FlipbookTrigger";
 import ResearchSixGridButtons from "../research/research_six_grid-buttons";
+import DocumentLinks from "../sustainability/DocumentLinks";
+import { GOVERNMENT_FUNDED_PROJECTS } from "./governmentFundedProjects";
 
 // Student Feedback Form Component
 function StudentFeedbackForm({ onClose }) {
@@ -1236,7 +1238,8 @@ const IQAC_TABS = [
   { id: "https://kalingauniversity.ac.in/International-Journal-of-Research-and-Studies", label: "Univista: International Journal of Research and Studies" },
   { id: "nba", label: "NBA" },
   { id: "https://kalingauniversity.ac.in/nirf", label: "NIRF" },
-  { id: "annual-reports", label: "Annual Reports" }
+  { id: "annual-reports", label: "Annual Reports" },
+  { id: "government-funded-projects", label: "Government Funded Projects" }
 ];
 
 const IQAC_OBJECTIVES = [
@@ -1587,28 +1590,15 @@ const FEEDBACK_ANALYSIS = {
   ],
 };
 
-// Annual Reports Data
-const ANNUAL_REPORTS = {
-  "2024-25": [
-    { title: "Annual Report 2024–25", url: "https://cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2024-2025.pdf" },
-    { title: "July-September-2024", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Final-Report-of-Activities-Month-of-July-September-2024.pdf" },
-    { title: "October-December-2024", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Final-Report-of-Activities-Month-October-December-2024.pdf" }
+// Annual Reports Data (same documents as the SDG Cell annual reports on /sustainability)
+const ANNUAL_REPORTS = [
+  { label: "Annual Report 2025–26", pdfUrl: "/annual-reports/annual-report-2025-26.pdf" },
+  { label: "Annual Report 2024–25", pdfUrl: "https://cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2024-2025.pdf" },
+  { label: "Annual Report 2023–24", pdfUrl: "https://cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2023-2024.pdf" },
+  { label: "Annual Report 2022–23", pdfUrl: "https://cdn.kalingauniversity.ac.in/annual-reports/Annual+Report+2022-23+.pdf" },
+];
 
-  ],
-
-  "2023-24": [
-    { title: "Annual Report 2023–24", url: "https://cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2023-2024.pdf" },
-    { title: "January-June-2024", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-of-Activities-Month-of-January-June-2024.pdf" },
-    { title: "July-December-2023", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-of-Activities-Month-July-December-2023.pdf" }
-
-  ],
-  "2022-23": [
-    { title: "Annual Report 2022–23", url: "https://cdn.kalingauniversity.ac.in/annual-reports/Annual+Report+2022-23+.pdf" },
-    { title: "January-April-2022-23", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-Month-of-January-to-April-2022-23.pdf" },
-    { title: "July-December-2022-23", url: "https://cdn.kalingauniversity.ac.in/annual-reports/iqac-annual-reports/Report-of-Activities-Month-of-July-December-2022-23.pdf" }
-
-  ],
-};
+const formatINR = (amount) => `₹${amount.toLocaleString("en-IN")}`;
 
 const FINANCIAL_STATEMENTS = [
   { id: 1, text: "Financial Audited Statements 2024-25", href: "https://cdn.kalingauniversity.ac.in/IQAC/statments-2024-25.pdf", useSlider: true, limitPages: 0, lockAfterInitialPages: true },
@@ -1735,8 +1725,8 @@ export default function IqacTabSection() {
       return ["2024-25", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17"];
     } else if (activeTab === "feedback") {
       return ["2024-25", "2023-24", "2022-23", "2021-22", "2020-21", "2019-20", "2018-19", "2017-18", "2016-17", "2015-16", "2014-15"];
-    } else if (activeTab === "annual-reports") {
-      return ["2024-25", "2023-24", "2022-23"];
+    } else if (activeTab === "government-funded-projects") {
+      return Object.keys(GOVERNMENT_FUNDED_PROJECTS).sort((a, b) => b.localeCompare(a));
     }
     return [];
   };
@@ -2307,18 +2297,33 @@ export default function IqacTabSection() {
               {/* Annual Reports Tab */}
               {activeTab === "annual-reports" && (
                 <div className="flex-1">
-                  <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-3">
+                  <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-6 text-center mt-3">
                     Annual Reports
                   </h2>
+                  <DocumentLinks documents={ANNUAL_REPORTS} columns={2} />
+                </div>
+              )}
+
+              {/* Government Funded Projects Tab */}
+              {activeTab === "government-funded-projects" && (
+                <div className="flex-1 min-w-0">
+                  <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-2 text-center mt-3">
+                    Government Funded Projects
+                  </h2>
+                  <p className="text-center text-sm md:text-base text-[var(--foreground)]/70 mb-4">
+                    Funds received from government organisations
+                  </p>
                   <div className="space-y-2 text-left">
                     {getAvailableYears().map((year) => {
                       const isExpanded = expandedYears[year] || false;
-                      const reports = ANNUAL_REPORTS[year] || [];
+                      const projects = GOVERNMENT_FUNDED_PROJECTS[year] || [];
+                      const total = projects.reduce((sum, p) => (p.grantNote ? sum : sum + p.grant), 0);
                       return (
                         <div key={year} className="border-b border-[var(--button-red)] pb-2 last:border-b-0">
                           <button
                             onClick={() => toggleYear(year)}
                             className="w-full flex items-center gap-2 py-1 hover:opacity-80 transition-opacity justify-between pr-3"
+                            aria-expanded={isExpanded}
                             aria-label={`Toggle ${year}`}
                           >
                             <h3 className="font-plus-jakarta-sans text-sm md:text-base text-[var(--foreground)]">
@@ -2331,28 +2336,38 @@ export default function IqacTabSection() {
                             </div>
                           </button>
                           {isExpanded && (
-                            <div className="mt-2 space-y-2">
-                              {reports.length > 0 ? (
-                                reports.map((report, idx) => (
-                                  <FlipbookTrigger key={idx} pdfUrl={report.url} title={report.title}>
-                                    <a
-                                      href={report.url}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="block px-4 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all text-[var(--foreground)] border border-gray-200 group relative overflow-hidden"
-                                    >
-                                      <div className="flex items-center justify-between relative z-10">
-                                        <span className="font-plus-jakarta-sans text-sm md:text-base font-medium">{report.title}</span>
-                                        <svg className="w-5 h-5 text-[var(--button-red)] transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                        </svg>
-                                      </div>
-                                    </a>
-                                  </FlipbookTrigger>
-                                ))
-                              ) : (
-                                <p className="px-4 py-2 text-[var(--foreground)]/60 text-sm">No reports available for this year.</p>
-                              )}
+                            <div className="mt-3 mb-2 overflow-x-auto rounded-lg border border-gray-200">
+                              <table className="w-full min-w-[720px] text-left text-xs md:text-sm font-plus-jakarta-sans">
+                                <thead className="bg-[var(--dark-blue)] text-white">
+                                  <tr>
+                                    <th className="px-3 py-3 font-semibold">S. No.</th>
+                                    <th className="px-3 py-3 font-semibold">Project Title</th>
+                                    <th className="px-3 py-3 font-semibold">Principal / Co-Investigator</th>
+                                    <th className="px-3 py-3 font-semibold">Funding Agency</th>
+                                    <th className="px-3 py-3 font-semibold">Department</th>
+                                    <th className="px-3 py-3 font-semibold text-right whitespace-nowrap">Grant Received (INR)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {projects.map((project, idx) => (
+                                    <tr key={idx} className="border-t border-gray-200 odd:bg-white even:bg-gray-50 align-top text-[var(--foreground)]">
+                                      <td className="px-3 py-3">{idx + 1}</td>
+                                      <td className="px-3 py-3">{project.title}</td>
+                                      <td className="px-3 py-3">{project.investigator}</td>
+                                      <td className="px-3 py-3">{project.agency}</td>
+                                      <td className="px-3 py-3">{project.department}</td>
+                                      <td className="px-3 py-3 text-right whitespace-nowrap">
+                                        {formatINR(project.grant)}
+                                        {project.grantNote && <span className="block text-xs text-[var(--foreground)]/60">({project.grantNote})</span>}
+                                      </td>
+                                    </tr>
+                                  ))}
+                                  <tr className="border-t border-gray-300 bg-[var(--lite-sand)] font-semibold text-[var(--foreground)]">
+                                    <td className="px-3 py-3" colSpan={5}>Total Amount</td>
+                                    <td className="px-3 py-3 text-right whitespace-nowrap">{formatINR(total)}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </div>
                           )}
                         </div>
@@ -2363,7 +2378,7 @@ export default function IqacTabSection() {
               )}
 
               {/* Placeholder content for other tabs */}
-              {!["committee", "initiatives", "minutes", "feedback", "strategic", "satisfaction", "feedback-form", "objectives", "functions", "strategies", "benefits", "financial", "nba", "annual-reports"].includes(activeTab) && (
+              {!["committee", "initiatives", "minutes", "feedback", "strategic", "satisfaction", "feedback-form", "objectives", "functions", "strategies", "benefits", "financial", "nba", "annual-reports", "government-funded-projects"].includes(activeTab) && (
                 <div className="flex-1">
                   <h2 className="font-plus-jakarta-sans text-xl md:text-3xl text-[var(--foreground)] mb-4 text-center mt-3">
                     {IQAC_TABS.find((tab) => tab.id === activeTab)?.label}

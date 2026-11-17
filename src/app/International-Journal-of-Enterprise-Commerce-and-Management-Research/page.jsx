@@ -321,16 +321,19 @@ export default function IJECMRJournalPage() {
                 description="The primary aim of IJECMR is to encourage the creation and dissemination of original, rigorous, and relevant research in commerce, enterprise, and management. The key objectives of the journal are to:"
             />
 
-            <OurPrograms
-                customPrograms={scopeCards}
-                hideSearchFilter={true}
-                customTitle="Scope of the Journal"
-                customSubtitle="Areas of Research"
-                customDescription="IJECMR welcomes original and unpublished scholarly contributions covering a broad range of subjects related to commerce, enterprise, management, and associated fields. The scope includes, but is not limited to, the following areas."
-                programCardTitleClassName="!text-xl"
-                backgroundColor="bg-gray-50"
-                onExploreProgramClick={setSelectedArea}
-            />
+            {/* Spacing keeps Scope visually separate from the Aims and Objectives block above (both are dark-blue cards). */}
+            <div className="mt-10 md:mt-16">
+                <OurPrograms
+                    customPrograms={scopeCards}
+                    hideSearchFilter={true}
+                    customTitle="Scope of the Journal"
+                    customSubtitle="Areas of Research"
+                    customDescription="IJECMR welcomes original and unpublished scholarly contributions covering a broad range of subjects related to commerce, enterprise, management, and associated fields. The scope includes, but is not limited to, the following areas."
+                    programCardTitleClassName="!text-xl"
+                    backgroundColor="bg-gray-50"
+                    onExploreProgramClick={setSelectedArea}
+                />
+            </div>
 
             <ImageListItem
                 items={submissionItems}

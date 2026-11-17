@@ -1103,7 +1103,7 @@ const LawConferencePage = () => {
                     </div>
 
                     <a
-                        href="https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/law-conference/GLOBAL+LAW_CONFERENCE_2026-10_261027_110502.pdf"
+                        href="/brochure/global-law-conference-2026.pdf"
                         download
                         target="_blank"
                         rel="noreferrer"

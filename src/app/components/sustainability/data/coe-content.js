@@ -141,6 +141,10 @@ export const ANNUAL_REPORTS = [
         pdfUrl:
             "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2024-2025.pdf",
     },
+    {
+        label: "Annual Report 2025–26",
+        pdfUrl: "/annual-reports/annual-report-2025-26.pdf",
+    },
 ];
 
 export const MOUS = [

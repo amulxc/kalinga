@@ -1,6 +1,7 @@
 // Vertical bar chart for SDG report "barChart" blocks.
 // Single series: { caption, xLabel, yLabel, data: [{ label, value }] }
 // Grouped:       { caption, xLabel, yLabel, series: [{ name, color }], data: [{ label, values: [n, ...] }] }
+// hideValues: true drops the per-bar number labels (the axis scale is shown instead), matching source charts without data labels.
 const DEFAULT_COLORS = ["#4caf50", "#1f4e8c", "#f59e0b", "#e11d48"];
 
 export default function SdgBarChart({ block }) {
@@ -11,6 +12,7 @@ export default function SdgBarChart({ block }) {
     const top = Math.ceil(max / step) * step;
     const ticks = Array.from({ length: top / step + 1 }, (_, i) => top - i * step);
     const colorOf = (i) => series[i].color || DEFAULT_COLORS[i % DEFAULT_COLORS.length];
+    const showValues = !block.hideValues;
 
     // Long category names (e.g. research areas) don't fit under vertical bars, so draw them horizontally.
     if (rows.some(r => String(r.label).length > 12)) {
@@ -28,17 +30,27 @@ export default function SdgBarChart({ block }) {
                                         <div key={i} className="flex items-center gap-2">
                                             <div
                                                 className="h-5"
-                                                style={{ width: `${(n / top) * 85}%`, backgroundColor: colorOf(i) }}
+                                                style={{ width: `${(n / top) * (showValues ? 85 : 100)}%`, backgroundColor: colorOf(i) }}
                                                 role="img"
                                                 aria-label={`${r.label} – ${series[i].name}: ${n}`}
                                             />
-                                            <span className="text-xs font-semibold">{n}</span>
+                                            {showValues && <span className="text-xs font-semibold">{n}</span>}
                                         </div>
                                     );
                                 })}
                             </div>
                         </div>
                     ))}
+                    {!showValues && (
+                        <div className="grid grid-cols-1 md:grid-cols-[minmax(0,16rem)_1fr] md:gap-3" aria-hidden="true">
+                            <span className="hidden md:block" />
+                            <div className="relative h-4 border-t border-gray-300 text-[10px] text-gray-500 md:text-xs">
+                                {[...ticks].reverse().map(t => (
+                                    <span key={t} className="absolute top-1 -translate-x-1/2 first:translate-x-0 last:-translate-x-full" style={{ left: `${(t / top) * 100}%` }}>{t}</span>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
                 {block.yLabel && <p className="mt-4 text-center text-xs text-gray-600">{block.yLabel}</p>}
                 {series.length > 1 && (
@@ -79,7 +91,7 @@ export default function SdgBarChart({ block }) {
                                         const n = Number(v) || 0;
                                         return (
                                             <div key={i} className="flex h-full flex-1 max-w-14 flex-col justify-end items-center">
-                                                {n > 0 && <span className="mb-1 text-[10px] md:text-xs font-semibold">{n}</span>}
+                                                {showValues && n > 0 && <span className="mb-1 text-[10px] md:text-xs font-semibold">{n}</span>}
                                                 <div
                                                     className="w-full"
                                                     style={{ height: `${(n / top) * 100}%`, backgroundColor: colorOf(i) }}
