@@ -127,14 +127,8 @@ export const OFFICE_ORDERS = [
 
 export const ANNUAL_REPORTS = [
     {
-        label: "Annual Report 2022–23",
-        pdfUrl:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual+Report+2022-23+.pdf",
-    },
-    {
-        label: "Annual Report 2023–24",
-        pdfUrl:
-            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2023-2024.pdf",
+        label: "Annual Report 2025–26",
+        pdfUrl: "/annual-reports/annual-report-2025-26.pdf",
     },
     {
         label: "Annual Report 2024–25",
@@ -142,8 +136,14 @@ export const ANNUAL_REPORTS = [
             "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2024-2025.pdf",
     },
     {
-        label: "Annual Report 2025–26",
-        pdfUrl: "/annual-reports/annual-report-2025-26.pdf",
+        label: "Annual Report 2023–24",
+        pdfUrl:
+            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual_Report_2023-2024.pdf",
+    },
+    {
+        label: "Annual Report 2022–23",
+        pdfUrl:
+            "https://s3.ap-south-1.amazonaws.com/cdn.kalingauniversity.ac.in/annual-reports/Annual+Report+2022-23+.pdf",
     },
 ];
 
