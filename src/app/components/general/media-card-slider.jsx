@@ -67,6 +67,12 @@ export default function MediaCardSlider({
     return url.includes('youtube.com') || url.includes('youtu.be');
   };
 
+  // Google Drive file links (drive.google.com/file/d/<id>/...) play via Drive's embeddable preview player
+  const getGoogleDriveEmbedUrl = (url) => {
+    const match = url?.match(/drive\.google\.com\/file\/d\/([^/?#]+)/);
+    return match ? `https://drive.google.com/file/d/${match[1]}/preview` : "";
+  };
+
   // Convert YouTube URL to embed format
   const getYouTubeEmbedUrl = (url) => {
     if (!url) return "";
@@ -405,6 +411,15 @@ export default function MediaCardSlider({
                     />
                   );
                 })()
+              ) : getGoogleDriveEmbedUrl(currentVideo.url) ? (
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src={getGoogleDriveEmbedUrl(currentVideo.url)}
+                  title={currentVideo.name || "Video"}
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media; fullscreen"
+                  allowFullScreen
+                />
               ) : (
                 // ReactPlayer for other video platforms (Vimeo, etc.)
                 <div className="absolute top-0 left-0 w-full h-full">

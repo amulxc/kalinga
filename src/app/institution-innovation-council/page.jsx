@@ -12,6 +12,7 @@ import GlobalArrowButton from "../components/general/global-arrow_button";
 import FlipbookTrigger from "../components/general/FlipbookTrigger";
 import MasterClassTab from "../components/ctcd/master_class_tab";
 import Gallery from "@/app/components/general/gallery";
+import DiceProgramme from "@/app/components/iic/dice-programme";
 
 /* ---------------- Goals ---------------- */
 const objectives = [
@@ -300,6 +301,7 @@ export default function InstitutionInnovationCouncil() {
 
 
       <SportsFacilitiesTabs />
+      <DiceProgramme />
       <section className="py-16 bg-white">
         <div className="container mx-auto px-2">
 
@@ -529,6 +531,10 @@ Kalinga University hosted its first session of the Impact Lecture Series on 15th
 function SportsFacilitiesTabs() {
   const tabs = useMemo(
     () => [
+      { id: "y2026q4", label: "2025–26 (QUARTER 4)" },
+      { id: "y2026q3", label: "2025–26 (QUARTER 3)" },
+      { id: "y2026q2", label: "2025–26 (QUARTER 2)" },
+      { id: "y2026q1", label: "2025–26 (QUARTER 1)" },
       { id: "y2018", label: "2024–25 (QUATER 4)" },
       { id: "y2019", label: "2024–25 (QUATER 3)" },
       { id: "y2020", label: "2024–25 (QUATER 2)" },
@@ -542,13 +548,21 @@ function SportsFacilitiesTabs() {
     []
   );
 
-  const [activeTab, setActiveTab] = useState("y2024");
+  const [activeTab, setActiveTab] = useState("y2026q4");
 
   const toggleAccordion = (id) => {
     setActiveTab((prev) => (prev === id ? "" : id));
   };
 
   const renderTabContent = (tabId) => {
+    if (tabId === "y2026q4")
+      return <EventsTable title="Activities Performed During Quarter 4 of Calendar Year 2025-26 (1st June 2026 – 31st August 2026)" data={events2026Q4} />;
+    if (tabId === "y2026q3")
+      return <EventsTable title="Activities Performed During Quarter 3 of Calendar Year 2025-26 (1st March 2026 – 31st May 2026)" data={events2026Q3} />;
+    if (tabId === "y2026q2")
+      return <EventsTable title="Activities Performed During Quarter 2 of Calendar Year 2025-26 (1st December 2025 – 28th February 2026)" data={events2026Q2} />;
+    if (tabId === "y2026q1")
+      return <EventsTable title="Activities Performed During Quarter 1 of Calendar Year 2025-26 (1st September 2025 – 30th November 2025)" data={events2026Q1} />;
     if (tabId === "y2024")
       return <EventsTable title="Activities Performed During the Calendar Year 2022-23" data={events2024} />;
     if (tabId === "y2023")
@@ -692,6 +706,41 @@ function EventsTable({ title, data }) {
     </div>
   );
 }
+
+const events2026Q1 = [
+  { date: "29-10-2025", name: "Awareness Workshop: “Entrepreneurship & Innovation” as Career Opportunities" },
+  { date: "04-11-2025 to 05-11-2025", name: "Boot Camp on Problem Solving / Ideation" },
+  { date: "15-11-2025", name: "Workshop on AI and I4.0 Tools for Innovators and Entrepreneurs" },
+  { date: "19-11-2025", name: "IPR Basics for Innovators & Entrepreneurs" },
+  { date: "20-11-2025", name: "Session on Achieving Problem–Solution Fit" },
+];
+
+const events2026Q2 = [
+  { date: "27-01-2026 to 31-01-2026", name: "Workshop on Design Thinking, Critical Thinking & Innovation Design" },
+  { date: "07-02-2026", name: "Innovation & Entrepreneurship Outreach Program in Schools" },
+  { date: "10-02-2026", name: "Workshop: Effective Sales and Marketing Strategies for Start-ups" },
+  { date: "19-02-2026", name: "Expert Talk on Technology Readiness Level (TRL), MRL, IRL, IP Commercialization, Tech-Transfer" },
+  { date: "23-02-2026", name: "Field / Exposure Visit to Pre-incubation Units (e.g., AICTE Idea Lab, Fab Lab, MSME Clusters)" },
+  { date: "27-02-2026", name: "AI & Innovation Sprints: Rapid Prototyping for Digital Transformation (Code Competition)" },
+  { date: "27-02-2026 & 28-02-2026", name: "Innovation Showcase: Demo Day / Exhibition / Poster Presentation of Innovations / Prototypes (National Science Day)" },
+];
+
+const events2026Q3 = [
+  { date: "03-04-2026", name: "Organize Inter / Intra Institutional B-Plan Competition, Reward Best Innovations" },
+  { date: "03-04-2026", name: "AI-Powered Solution Expo: Demo Days for AI / I4.0 Prototypes" },
+  { date: "08-04-2026", name: "Field / Exposure Visit to Incubation Units / Patent Facilitation / Tech Transfer Centres" },
+  { date: "08-04-2026", name: "Workshop on Product-Market Fit; Prototype / Process Design and MVP Development" },
+  { date: "17-04-2026", name: "Workshop: Protecting IPR and IP Management for Start-ups" },
+];
+
+const events2026Q4 = [
+  { date: "31-08-2026", name: "Workshop: Using AI for Fundraising & Investor Pitch Preparation" },
+  { date: "20-08-2026", name: "Session on Accelerators / Incubation Opportunities" },
+  { date: "24-08-2026", name: "Session on Angel Investment / VC Funding Opportunities" },
+  { date: "31-08-2026", name: "Innovation & Entrepreneurship Outreach Program in Schools / Community" },
+  { date: "25-08-2026", name: "Organize Inter / Intra Institutional Start-up Competition & Reward Best Start-ups" },
+  { date: "25-08-2026", name: "Mentoring: Demo Day / Exhibition / Poster Presentation of Start-ups & Linkage with Mentors / Experts" },
+];
 
 const events2024 = [
   { date: "16-09-2022", name: "Building an Innovation Repository as Part of the YUKTI" },

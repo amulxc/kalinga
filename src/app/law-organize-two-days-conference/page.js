@@ -756,8 +756,8 @@ const LawConferencePage = () => {
                 ]}
                 initialVisibleParagraphs={1}
                 showKnowMore={true}
-                imageUrl="https://cdn.kalingauniversity.ac.in/law-conference/BA-LLB-AboutImage.webp"
-                imageAlt="International Conference on Law and AI"
+                imageUrl="/law-conference/sections/faculty-of-law.webp"
+                imageAlt="Faculty members of Kalinga University at the Global Conference"
             />
             <MainIntro
                 title="About The Two-Day Global Conference"
@@ -766,8 +766,8 @@ const LawConferencePage = () => {
                     "The Two-Day Global Conference on “Emerging Trends in Artificial Intelligence: Comparative Approaches of Legal Governance” aims to examine the evolving relationship between AI and legal systems globally. Due to the growing influence of AI across commercial laws, criminal justice systems, intellectual property regimes, judicial institutions, healthcare regulations, cyber law frameworks, and international legal mechanisms, it raises concerns regarding privacy, transparency, accountability, liability, bias, and protection of human rights",
                     "The conference will provide a global platform for legal professionals, judges, academicians, researchers, policymakers, and industry experts to discuss comparative legal and regulatory approaches to AI governance. Through keynote addresses, research paper presentations, case-study analysis, and panel discussions, participants will explore global regulatory practices, emerging challenges, and policy recommendations for ethical, accountable, and future-ready AI governance.",
                 ]}
-                imageUrl="https://cdn.kalingauniversity.ac.in/law-conference/FacultyOfLaw-AboutDept.webp"
-                imageAlt="International Conference on Law and AI"
+                imageUrl="/law-conference/sections/about-conference.webp"
+                imageAlt="Dignitaries on stage at the Two-Day Global Conference"
                 reverseLayout={true}
                 sectionClassName="md:py-16 bg-[var(--lite-sand)] py-16 !pb-20"
             />
@@ -969,7 +969,8 @@ const LawConferencePage = () => {
 
             <ImageListItem
                 items={abstractItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/course/law-2.webp"
+                imageSrc="/law-conference/sections/submission-guidelines.webp"
+                imageAlt="Participant addressing the Global Conference"
                 title="Submission Guidelines"
                 subtitle=""
                 description="Guidelines for Abstract:"
@@ -977,7 +978,8 @@ const LawConferencePage = () => {
 
             <ImageListItem
                 items={fullPaperItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/law-conference/BA-LLB-AboutImage.webp"
+                imageSrc="/law-conference/sections/full-paper.webp"
+                imageAlt="Speaker presenting at the Global Conference"
                 title="Full Paper Submission:"
                 subtitle=""
                 description="The following guidelines should be followed:"
@@ -989,7 +991,8 @@ const LawConferencePage = () => {
 
             <ImageListItem
                 items={publicationPolicyItems}
-                imageSrc="https://cdn.kalingauniversity.ac.in/course/law-2.webp"
+                imageSrc="/law-conference/sections/publication-policy.webp"
+                imageAlt="Delegates taking notes during the Global Conference"
                 title="Publication Policy"
                 subtitle=""
                 description=""

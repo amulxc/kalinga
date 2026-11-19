@@ -60,7 +60,7 @@ const faqContent = [
   {
     id: 3,
     question: "Is there a fee for document verification at Kalinga University?",
-    answer: "Yes, there is a nominal fee of INR 3,000/- associated with document verification services at Kalinga University. The fee structure may vary depending on the number and type of documents being verified.",
+    answer: "Yes, there is a nominal fee of INR 4,000/- associated with document verification services at Kalinga University. The fee structure may vary depending on the number and type of documents being verified.",
   },
   {
     id: 4,
