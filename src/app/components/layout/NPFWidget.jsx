@@ -2,6 +2,31 @@
 
 import Script from "next/script";
 
+const WIDGET_ID = "91df5911b269a8c3f63541c1f915d331";
+const BASE_URL = "widgets.nopaperforms.com";
+
+// Single widget instance per page load; creating a second one would append a duplicate popup.
+let widgetInstance = null;
+
+function initWidget() {
+    if (widgetInstance || typeof NpfWidgetsInit === "undefined") return;
+    widgetInstance = new NpfWidgetsInit({
+        widgetId: WIDGET_ID,
+        baseurl: BASE_URL,
+        formTitle: "Feedback Form",
+        titleColor: "#FF0033",
+        backgroundColor: "#ddd",
+        iframeHeight: "500px",
+        buttonbgColor: "#972B28",
+        buttonTextColor: "#FFF",
+    });
+}
+
+function openPopup() {
+    initWidget();
+    widgetInstance?.showPopup(WIDGET_ID, BASE_URL);
+}
+
 export default function NPFWidget() {
     return (
         <>
@@ -15,6 +40,8 @@ export default function NPFWidget() {
                     transform: rotate(-90deg) translate(50%, 0) !important;
                     transform-origin: bottom right !important;
                     background: #972B28 !important;
+                    color: #FFF !important;
+                    border: none !important;
                     padding: 8px 20px !important;
                     font-size: 16px !important;
                     font-weight: 500 !important;
@@ -48,9 +75,13 @@ export default function NPFWidget() {
                 `
             }} />
 
+            {/* The click is handled here rather than by the vendor script: npfwpopup.js binds
+                its listener to whatever button exists at init time, so if React re-creates this
+                node (e.g. after a hydration mismatch) that listener is lost and the button goes dead. */}
             <button
                 type="button"
-                className="npfWidgetButton npfWidget-91df5911b269a8c3f63541c1f915d331 npf-sticky-button"
+                className="npfWidgetButton npf-sticky-button"
+                onClick={openPopup}
             >
                 Enquire Now
             </button>
@@ -58,20 +89,7 @@ export default function NPFWidget() {
             <Script
                 src="https://cdn.npfs.co/js/widget/npfwpopup.js"
                 strategy="afterInteractive"
-                onLoad={() => {
-                    if (typeof NpfWidgetsInit !== 'undefined') {
-                        new NpfWidgetsInit({
-                            "widgetId": "91df5911b269a8c3f63541c1f915d331",
-                            "baseurl": "widgets.nopaperforms.com",
-                            "formTitle": "Feedback Form",
-                            "titleColor": "#FF0033",
-                            "backgroundColor": "#ddd",
-                            "iframeHeight": "500px",
-                            "buttonbgColor": "#972B28",
-                            "buttonTextColor": "#FFF",
-                        });
-                    }
-                }}
+                onReady={initWidget}
             />
         </>
     );
