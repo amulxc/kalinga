@@ -64,6 +64,22 @@ export default function NPFWidget() {
                     opacity: 1 !important;
                     z-index: 2147483647 !important;
                 }
+                /* Fit the popup to the viewport. The vendor gives the form iframe a fixed 500px
+                   height inside a fixed, non-scrolling overlay, so on shorter screens the Submit
+                   button falls below the fold with no way to reach it. Cap the iframe height so the
+                   whole card fits; the form then scrolls inside its own iframe. */
+                #popup-${WIDGET_ID} {
+                    overflow-y: auto !important;
+                }
+                #popup-in-${WIDGET_ID} {
+                    margin: 16px auto !important;
+                    max-width: min(500px, calc(100vw - 32px)) !important;
+                    padding: 16px 20px 20px !important;
+                }
+                #popup-message-${WIDGET_ID} iframe {
+                    height: min(500px, calc(100vh - 110px)) !important;
+                    height: min(500px, calc(100dvh - 110px)) !important;
+                }
                 /* Mobile adjustments */
                 @media (max-width: 1024px) {
                     .npf-sticky-button {
