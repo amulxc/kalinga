@@ -257,8 +257,9 @@ export default function InstitutionInnovationCouncil() {
       {/* IIC Functions */}
       <ImageListItem
         items={objectives}
-        imageSrc="/images/iic/iic-functions-group.webp"
-        imageAlt="Participants of the Data Empowerment for Local Innovation &amp; Entrepreneurship session at Kalinga University"
+        imageSrc="/images/iic/data-empowerment-local-innovation-entrepreneurship-2026.jpeg"
+        imageAlt="Participants at the Data Empowerment for Local Innovation and Entrepreneurship bootcamp at Kalinga University"
+        imageClassName="!object-contain"
         title="Functions of IIC at Kalinga University"
         subtitle=""
         description={false}

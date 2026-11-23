@@ -11,10 +11,10 @@ import SdgBarChart from "@/app/components/sustainability/SdgBarChart";
 
 // Content from the SDG 3 report (October 2026; images from the November 2026 revision).
 // The full report is also linked as a PDF.
-const REPORT_PDF = "/sdg-reports/sdg-03-good-health-and-well-being-report.pdf";
+const REPORT_PDF = "/sdg-reports/sdg-03-report-2025.pdf";
 
 const mainIntroContent = {
-    title: "SDG 3: Good Health and Well-Being Report",
+    title: "SDG 3: Good Health and Well-Being Report - Year 2025",
     description: [
         "Kalinga University, Naya Raipur, India is committed to advancing Sustainable Development Goal 3 (Good Health and Well-Being) through its multidisciplinary academic programs, research initiatives, innovation activities, and community engagement. The University’s Faculties of Arts & Humanities, Law, Science, Education, Pharmacy, Technology, Commerce & Management, and Computer Science & Information Technology actively contribute to promoting health, wellness, and quality of life through education, research, and societal outreach.",
         "The University places strong emphasis on research and development in key health-related domains, including public health, clinical and allied health sciences, biomedical research, mental health and well-being, physical rehabilitation, healthcare technologies, disease prevention, nutrition, and holistic wellness practices. Faculty members, research scholars, and students undertake interdisciplinary research projects, consultancy assignments, publications, and innovation-driven activities that address contemporary healthcare challenges and support evidence-based solutions for improving community health outcomes. Research findings are disseminated through journals, conferences, patents, workshops, and collaborative projects with academic, industrial, healthcare, and government organizations.",
