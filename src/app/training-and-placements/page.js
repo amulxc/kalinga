@@ -28,6 +28,12 @@ import APITable from "../components/general/api-table";
 import GlobalArrowButton from "../components/general/global-arrow_button";
 import FlipbookTrigger from "../components/general/FlipbookTrigger";
 import CustomGallery from '../components/general/gallery'
+import StudentActivities from "../components/department/student_activities";
+import { getLocalEventActivities } from "../lib/localNewsEvents";
+
+const placementEvents = getLocalEventActivities([
+  "training-session-on-group-discussion-and-personal-interview",
+]);
 import Testimonials from "../components/home/Testimonials";
 
 
@@ -1444,6 +1450,12 @@ export default function Research() {
       <CustomGallery
         images={galleryImages}
         title="Glimpses of Our Training and Placement Activities"
+      />
+      <StudentActivities
+        id="events-and-activities"
+        title="Events and Activities"
+        subtitle=""
+        activities={placementEvents}
       />
       <ContactSection
         title="Contact Our Placement Cell"

@@ -9,6 +9,8 @@
  */
 export const EVENT_DATE_OVERRIDES = {
     "ideathon-6-0": "23.11.2026 - 24.11.2026",
+    "icsdgf-2026": "31.03.2026 - 01.04.2026",
+    "workshop-on-practical-ai-tools-for-modern-educators": "23.03.2026 - 30.03.2026",
 };
 
 /**

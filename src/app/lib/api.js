@@ -1,5 +1,6 @@
 // API utility functions
 import { getApiUrl, API_CONFIG } from '../config/api';
+import { mergeLocalNewsEvents, getLocalNewsEvent, patchNewsEventDetail } from './localNewsEvents';
 
 /**
  * Fetches complete course details from the API
@@ -566,7 +567,8 @@ export async function fetchNewsEvents(params = {}) {
     }
 
     const data = await response.json();
-    return data;
+    // Events not yet in the CMS live in localNewsEvents.js
+    return mergeLocalNewsEvents(data, params);
   } catch (error) {
     console.error('Error fetching news and events:', error);
     throw error;
@@ -587,13 +589,15 @@ export async function fetchNewsEventDetails(slug) {
     });
 
     if (!response.ok) {
-      if (response.status === 404) return null;
+      if (response.status === 404) return getLocalNewsEvent(slug);
       throw new Error(`API error: ${response.status} ${response.statusText}`);
     }
 
     const data = await response.json();
-    return data;
+    return patchNewsEventDetail(data);
   } catch (error) {
+    const local = getLocalNewsEvent(slug);
+    if (local) return local;
     console.error(`Error fetching news event details for ${slug}:`, error);
     throw error;
   }

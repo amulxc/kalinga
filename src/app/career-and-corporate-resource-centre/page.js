@@ -12,6 +12,12 @@ import AdmissionCareer from "@/app/components/general/admission_cta";
 import MediaCardSlider from "@/app/components/general/media-card-slider";
 // Removing accidental process import
 import SectionHeading from "../components/general/SectionHeading";
+import StudentActivities from "@/app/components/department/student_activities";
+import { getLocalEventActivities } from "@/app/lib/localNewsEvents";
+
+const ccrcEvents = getLocalEventActivities([
+  "training-session-on-group-discussion-and-personal-interview",
+]);
 const cards = [
   {
     title: "Corporate Training and Consultancy Division (CTCD)",
@@ -421,6 +427,12 @@ export default function CCRCPage() {
       backgroundColor="bg-[var(--light-gray)]"
       backgroundColorcard="bg-white"
       href="/contact-us"
+    />
+    <StudentActivities
+      id="events-and-activities"
+      title="Events and Activities"
+      subtitle=""
+      activities={ccrcEvents}
     />
     <Gallery title="Glimpses" paddingClassName="py-16" />
 
