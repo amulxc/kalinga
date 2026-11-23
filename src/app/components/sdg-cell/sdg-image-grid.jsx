@@ -1,9 +1,7 @@
 "use client";
 
-// Goal number -> published SDG report. Add an entry here as each report is released.
-const SDG_REPORTS = {
-  2: "/sdg-reports/sdg-02-zero-hunger-report.pdf",
-};
+// Each goal's tile opens its published 2025 SDG report PDF.
+const sdgReportUrl = (num) => `/sdg-reports/SDG_${num}_Report_KU_2025.pdf`;
 
 const SdgImageGrid = () => {
   const images = Array.from({ length: 17 }, (_, i) => {
@@ -14,7 +12,7 @@ const SdgImageGrid = () => {
       id,
       src: `https://cdn.kalingauniversity.ac.in/sdg-cell/sdg-logo/E-WEB-Goal-${num}.png`,
       alt: `SDG Goal ${num}`,
-      reportUrl: SDG_REPORTS[id],
+      reportUrl: sdgReportUrl(num),
     };
   });
 

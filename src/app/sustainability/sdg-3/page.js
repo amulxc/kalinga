@@ -11,7 +11,7 @@ import SdgBarChart from "@/app/components/sustainability/SdgBarChart";
 
 // Content from the SDG 3 report (October 2026; images from the November 2026 revision).
 // The full report is also linked as a PDF.
-const REPORT_PDF = "/sdg-reports/sdg-03-report-2025.pdf";
+const REPORT_PDF = "/sdg-reports/SDG_03_Report_KU_2025.pdf";
 
 const mainIntroContent = {
     title: "SDG 3: Good Health and Well-Being Report - Year 2025",
