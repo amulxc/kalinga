@@ -19,7 +19,7 @@ const activities = [
   {
     id: "activity-1",
     label: "Activity 1 – Developing Entrepreneurial Skills: Learn & Lead",
-    date: "21–22 September 2026",
+    date: <>21<sup>st</sup>–22<sup>nd</sup> September, 2026</>,
     venue: "PM SHRI Kendriya Vidyalaya, Naya Raipur, Chhattisgarh",
     participants: "49 students and 8 faculty members",
     resourcePerson: "Dr. Vijayalaxmi Biradar, Director, IQAC, Kalinga University",
@@ -29,7 +29,7 @@ const activities = [
   {
     id: "activity-2",
     label: "Activity 2 – Field Visit and Idea Creation",
-    date: "28 September 2026",
+    date: <>28<sup>th</sup> September, 2026</>,
     venue: "Kalinga University, Naya Raipur, Chhattisgarh",
     participants: "57 students and 14 faculty members",
     resourcePerson:
@@ -40,7 +40,7 @@ const activities = [
   {
     id: "activity-3",
     label: "Activity 3 – Development of Proof of Concept/Prototype Business Model by Students",
-    date: "27 October 2026",
+    date: <>27<sup>th</sup> October, 2026</>,
     venue: "PM SHRI Kendriya Vidyalaya, Naya Raipur, Chhattisgarh",
     participants: "50 students and 4 faculty members",
     resourcePerson: "Dr. Vijayalaxmi, Director, IQAC, Kalinga University",
@@ -50,7 +50,7 @@ const activities = [
   {
     id: "activity-4",
     label: "Activity 4 – Session on Start-up Ecosystem and Intellectual Property Rights (IPR)",
-    date: "30 October 2026",
+    date: <>30<sup>th</sup> October, 2026</>,
     venue: "PM SHRI Kendriya Vidyalaya, Naya Raipur, Chhattisgarh",
     participants: "43 students and 4 faculty members",
     resourcePerson: "Mr. Soumyadeep Chakrabarti, Assistant Professor of Law, Kalinga University",
@@ -152,6 +152,8 @@ export default function DiceProgramme() {
           "Collaborating School: PM SHRI Kendriya Vidyalaya, Naya Raipur, Chhattisgarh.",
         ]}
         readmore={false}
+        imageClassName="md:col-span-5 col-span-6 w-full h-auto rounded-xl border-4 border-white shadow-lg"
+        contentClassName="md:col-span-7 text-start"
       />
 
       {/* Activity-wise summary */}

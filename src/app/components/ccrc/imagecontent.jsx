@@ -26,6 +26,8 @@ export default function ImageContent({
   additionalContent = null, // No default - each page should provide its own content
   titleClassName = "",
   postTitle = null,
+  imageClassName = "md:col-span-4 col-span-6 w-9/12 md:w-4/5", // override image sizing/styling per page
+  contentClassName = null, // override content column span (pairs with imageClassName)
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -36,7 +38,7 @@ export default function ImageContent({
   // grid-cols-6 if hasImage, grid-cols-12 if no image
   const gridColsClass = hasImage ? "grid-cols-6" : "grid-cols-6";
   // Main content col-span - 8 if image, 12 if no image, both centered horizontally
-  const mainContentColSpan = hasImage ? "md:col-span-8 text-start" : "md:col-span-12  items-center justify-center text-center";
+  const mainContentColSpan = hasImage ? (contentClassName || "md:col-span-8 text-start") :"md:col-span-12  items-center justify-center text-center";
 
   return (
     <section className={`container rounded-xl mx-auto bg-[var(--light-gray)] py-16  md:p-12 p-6 ${className}`}>
@@ -47,7 +49,7 @@ export default function ImageContent({
             alt={imageAlt || title}
             width={imageWidth}
             height={imageHeight}
-            className="md:col-span-4 col-span-6 w-9/12 md:w-4/5"
+            className={imageClassName}
           />
         )}
         <div
