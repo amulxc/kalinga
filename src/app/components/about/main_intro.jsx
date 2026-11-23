@@ -35,6 +35,7 @@ export default function MainIntro({
   showKnowMore = true,
   knowMoreLabel = "Read More",
   knowMoreHref = null,
+  openPdfDirectly = false,
   onKnowMore = null,
   extraLink = null,
   extraLinkLabel = "Explore Now",
@@ -264,7 +265,7 @@ export default function MainIntro({
                         </GlobalArrowButton>
                       );
 
-                      return isPdf ? (
+                      return isPdf && !openPdfDirectly ? (
                         <FlipbookTrigger pdfUrl={knowMoreHref} title={knowMoreLabel}>
                           <a
                             href={knowMoreHref}

@@ -61,6 +61,7 @@ export default function SdgReportPage({ report }) {
                 initialVisibleParagraphs={1}
                 knowMoreLabel="View Full Report"
                 knowMoreHref={report.sourceUrl}
+                openPdfDirectly
                 sectionClassName="bg-white"
             />
 

@@ -996,6 +996,7 @@ export default function Sdg3ReportPage() {
                 showKnowMore={true}
                 knowMoreLabel="View Full Report"
                 knowMoreHref={REPORT_PDF}
+                openPdfDirectly
                 sectionClassName="bg-white"
             />
 
