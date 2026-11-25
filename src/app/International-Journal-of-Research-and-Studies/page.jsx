@@ -2190,6 +2190,502 @@ const UnivistaJournalPage = () => {
             "level": "VOL 1",
             "slug": "/univista/vol-1-issue-2/254-Asna-Jabi-Pedagogy-of-Statelessness.pdf"
         },
+        {
+            id: 255,
+            shortName: "Comparative Phytochemical, Antioxidant And Anthelmintics Evaluation Of Various Solvent Extracts Of Annona Squamosa",
+            title: "Aditya Narayan Satapathy",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-31-Aditya-Narayan-Satapathy.pdf"
+        },
+        {
+            id: 256,
+            shortName: "Computational And Machine Learning Techniques To Predict ADMET Properties Of Novel Indazole Molecules",
+            title: "Mr. Arun Toppo",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-32-Mr-Arun-Toppo.pdf"
+        },
+        {
+            id: 257,
+            shortName: "A Review On Formulation And Characterization Of Chewable Tablets With Analytical Evaluation",
+            title: "Pratham Ajmera",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-33-Pratham-Ajmera.pdf"
+        },
+        {
+            id: 258,
+            shortName: "Advances In Salbutamol Formulations: Dosage Forms, Evaluation And Therapeutic Applications",
+            title: "Sameer Patel",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-34-Sameer-Patel.pdf"
+        },
+        {
+            id: 259,
+            shortName: "Comparative Study Of Quality Control Parameters On Marketed Levodopa Tablets",
+            title: "Shamsu Mainaira Abubakar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-35-Shamsu-Mainaira-Abubakar.pdf"
+        },
+        {
+            id: 260,
+            shortName: "Potential Use Of Bilayer Mucoadhesive Tablets For Peptic Ulcer",
+            title: "Raj Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-36-Raj-Singh.pdf"
+        },
+        {
+            id: 261,
+            shortName: "Floating In-Situ Gelling Gastro-Retentive Systems: A Promising Strategy For Localized Anti-Ulcer Therapy",
+            title: "Harsh Jain",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-37-Harsh-Jain.pdf"
+        },
+        {
+            id: 262,
+            shortName: "In Vitro Evaluation Of Antioxidant, Anti-Inflammatory And Anti-Microbial Activity Of Ipomoea Obscura Linn.",
+            title: "Chittaranjan Rout",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-38-Chittaranjan-Rout.pdf"
+        },
+        {
+            id: 263,
+            shortName: "A Review On Film Forming Spray For The Treatment Of Rheumatoid Arthritis",
+            title: "Ankit Pradhan",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-39-Ankit-Pradhan.pdf"
+        },
+        {
+            id: 264,
+            shortName: "Scientific Validation, Spectroscopics Chromatographic Method Development Of Herbal Vati",
+            title: "Pranut Mourya",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-40-Pranut-Mourya.pdf"
+        },
+        {
+            id: 265,
+            shortName: "Physiologically Based Biopharmaceutics Modeling Of Colonic Drug Absorption And Extended-Release Drug Delivery Systems",
+            title: "Ankaj Kumar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-41-Ankaj-Kumar.pdf"
+        },
+        {
+            id: 266,
+            shortName: "Review On Superporous Hydrogel For The Treatment Of Gastroenteritis",
+            title: "Ankit Bajpay",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-42-Ankit-Bajpay.pdf"
+        },
+        {
+            id: 267,
+            shortName: "Public Perception And Role Of Pharmacists During The Covid-19 Pandemic",
+            title: "Apurba Bhusan Das",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-43-Apurba-Bhusan-Das.pdf"
+        },
+        {
+            id: 268,
+            shortName: "Nanostructured Lipid Carriers: A Review",
+            title: "Ishan Nagwanshi",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-44-Ishan-Nagwanshi.pdf"
+        },
+        {
+            id: 269,
+            shortName: "Design And Development Of Novel Nanostructured Topical Formulations Of Retinoids",
+            title: "Sourav Patel",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-45-Sourav-Patel.pdf"
+        },
+        {
+            id: 270,
+            shortName: "Formulation Strategies For Solubility Enhancement Of BCS II Class Drug",
+            title: "Rustam Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-46-Rustam-Sahu.pdf"
+        },
+        {
+            id: 271,
+            shortName: "Evaluation Of Self-Medication Practices Among The General Population",
+            title: "Ashish Kumar Pandey",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-47-Ashish-Kumar-Pandey.pdf"
+        },
+        {
+            id: 272,
+            shortName: "Review On Advanced Hydrogel-Based Nasal Drug Delivery Systems For Effective Management Of Nasal Congestion",
+            title: "Hemlata Yadav",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-48-Hemlata-Yadav.pdf"
+        },
+        {
+            id: 273,
+            shortName: "Solubility Enhancement Of Poorly Soluble Drugs: BCS Class II Drugs",
+            title: "Mohammad Mohtashim",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-49-Mohammad-Mohtashim.pdf"
+        },
+        {
+            id: 274,
+            shortName: "Updated Studies On The Phytopharmacological Activity Of Eclipta Alba (L.)",
+            title: "Rajneesh Kumar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-50-Rajneesh-Kumar.pdf"
+        },
+        {
+            id: 275,
+            shortName: "Formulation, Development And Evaluation Of Sustained Release Transdermal Patches Of Scopolamine For The Management Of Motion Sickness",
+            title: "Aditya Kumar Yadav",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-51-Aditya-Kumar-Yadav.pdf"
+        },
+        {
+            id: 276,
+            shortName: "Comprehensive Physiochemical And In Vitro Pharmacological Assessment Of Spathodea Campanulate: Antioxidant, Antimicrobial, And Anti-Inflammatory Activities",
+            title: "Mr. Aditya Kumar Rai",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-52-Mr-Aditya-Kumar-Rai.pdf"
+        },
+        {
+            id: 277,
+            shortName: "Signalling Pathways For Cancer Treatment",
+            title: "Shruti Jain",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-53-Shruti-Jain.pdf"
+        },
+        {
+            id: 278,
+            shortName: "A Review On Parkinson’s Disease",
+            title: "Balwant Kumar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-54-Balwant-Kumar.pdf"
+        },
+        {
+            id: 279,
+            shortName: "Carbon Dots In Cancer Therapy: Synthesis, Physiochemical Properties, Mechanistic Insights And Translational Perspectives",
+            title: "Ashutosh Prajapati",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-55-Ashutosh-Prajapati.pdf"
+        },
+        {
+            id: 280,
+            shortName: "GC-MS Analysis Of Petroleum Ether Extract Of Grona Triflora",
+            title: "Jayprakash Banjare",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-56-Jayprakash-Banjare.pdf"
+        },
+        {
+            id: 281,
+            shortName: "Traditional Leafy Vegetables (Bhaji) Of Chhattisgarh, India: Nutritional Value And Therapeutic Potential",
+            title: "Md. Ismail Iqbal Batki",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-57-Md-Ismail-Iqbal-Batki.pdf"
+        },
+        {
+            id: 282,
+            shortName: "Emulgel A Novel Approach For Topical Drug Delivery, Formulation Evaluation, And Applications For The Treatment Of Anti-Inflammatory Diseases",
+            title: "Muhammad Yusuf Nahuche",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-58-Muhammad-Yusuf-Nahuche.pdf"
+        },
+        {
+            id: 283,
+            shortName: "Insulin Resistance In Women: Implications For Type 2 Diabetes And PCOS (A Comprehensive Review)",
+            title: "Khazi Lupiya",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-59-Khazi-Lupiya.pdf"
+        },
+        {
+            id: 284,
+            shortName: "Comparative Phytochemical Analysis Of Two Medicinal Plants (Cinchona Officinalis And Carica Papaya) With Antimalarial Potential",
+            title: "Khamisa Ayuel Deng Angok",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-60-Khamisa-Ayuel-Deng-Angok.pdf"
+        },
+        {
+            id: 285,
+            shortName: "In Vitro Bioactivity Profiling Of Nyctanthes Arbor-Tristis L.: Insights Into Its Antioxidant, Antimicrobial, And Anti-Inflammatory Properties",
+            title: "Akash Kumar Choudhury",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-61-Akash-Kumar-Choudhury.pdf"
+        },
+        {
+            id: 286,
+            shortName: "Gloriosa Superba Linn.: A Comprehensive Review On Phytoconstituents, In Vitro Pharmacological Activities, And In Silico Investigations",
+            title: "Ravi Kumar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-62-Ravi-Kumar.pdf"
+        },
+        {
+            id: 287,
+            shortName: "Design, Optimization, And Characterization Of Nanocrystal-Embedded Orodispersible Films For Anti-Motion Sickness Drug Delivery",
+            title: "Biswaranjan Nayak",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-64-Biswaranjan-Nayak.pdf"
+        },
+        {
+            id: 288,
+            shortName: "Hepatoprotective Herbs With Special Emphasis On AMPK Pathways",
+            title: "Bhiktor Mukharjee",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-65-Bhiktor-Mukharjee.pdf"
+        },
+        {
+            id: 289,
+            shortName: "Green Analytical Chemistry: Sustainable Approaches In Pharmaceutical Analysis",
+            title: "Matimba Muzeya",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-67-Matimba-Muzeya.pdf"
+        },
+        {
+            id: 290,
+            shortName: "A Review On Nanoparticles Galantamine For The Treatment Of Alzheimer’s Disease",
+            title: "Saad Bashir Musa",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-68-Saad-Bashir-Musa.pdf"
+        },
+        {
+            id: 291,
+            shortName: "Artificial Intelligence In Adverse Drug Reaction Reporting: Emerging Trends In Pharmacovigilance",
+            title: "Abdul Karim",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-70-Abdul-Karim.pdf"
+        },
+        {
+            id: 292,
+            shortName: "Formulation, Optimization, And Evaluation Of Feverfew (Tanacetum Parthenium) Extract Tablets For Enhanced Drug Release And Stability",
+            title: "Isha Narang",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-71-Isha-Narang.pdf"
+        },
+        {
+            id: 293,
+            shortName: "Theories And Mechanisms Of Nasal Muco-Adhesive Drug Delivery Systems",
+            title: "Adarsh Panjabi",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-72-Adarsh-Panjabi.pdf"
+        },
+        {
+            id: 294,
+            shortName: "Medicinal Relevance Of Starch Rice In Traditional Practices: An Ethnopharmacological Perspective Review",
+            title: "Suchita Sao",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-73-Suchita-Sao.pdf"
+        },
+        {
+            id: 295,
+            shortName: "GC-MS Analysis Of Chloroform Extract Of Thelypteris Interrupta",
+            title: "Traun Kumar Sinha",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-74-Traun-Kumar-Sinha.pdf"
+        },
+        {
+            id: 296,
+            shortName: "Plant-Derived Sunscreens: Phytochemistry, Formulation Science, Evaluation, And Emerging Therapeutic Applications",
+            title: "Adarsh Ranjan",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-75-Adarsh-Ranjan.pdf"
+        },
+        {
+            id: 297,
+            shortName: "In Silico Prediction Of Onion Peels Phytoconstituents Against Inflammation And Candida-Associated Targets",
+            title: "B. Meenal",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-76-B-Meenal.pdf"
+        },
+        {
+            id: 298,
+            shortName: "Phytochemical Screening And Antimicrobial Activity Of Selected Medicinal Aromatic Plants",
+            title: "Priyanka Netam",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-77-Priyanka-Netam.pdf"
+        },
+        {
+            id: 299,
+            shortName: "Phytochemical Investigation And Integrated In-Vitro, In-Silico Evaluation Of Anti-Diabetic Activity Of Alstonia Scholaris",
+            title: "Dharna Kanwar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-78-Dharna-Kanwar.pdf"
+        },
+        {
+            id: 300,
+            shortName: "Targeting DNA Damage Response (DDR) In Triple-Negative Breast Cancer",
+            title: "Chirag Kumar Kundey",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-79-Chirag-Kumar-Kundey.pdf"
+        },
+        {
+            id: 301,
+            shortName: "A Comprehensive Review On In Vivo And In Vitro Antimicrobial Activity Of Indian Medicinal Herbs",
+            title: "Laxmipati Balaji",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-80-Laxmipati-Balaji.pdf"
+        },
+        {
+            id: 302,
+            shortName: "Recent Advances In Ophthalmic Drug Delivery Systems: A Comprehensive Review",
+            title: "Mahima Singh",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-81-Mahima-Singh.pdf"
+        },
+        {
+            id: 303,
+            shortName: "Development Of An Effective Wound Healing System For Diabetic Wounds",
+            title: "Tilak Ram Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-82-Tilak-Ram-Sahu.pdf"
+        },
+        {
+            id: 304,
+            shortName: "Preparation And Assessment Of Anti Acne Gel Using Harbal Extract",
+            title: "Tushar Patel",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-83-Tushar-Patel.pdf"
+        },
+        {
+            id: 305,
+            shortName: "Emerging Trends In Transdermal Drug Delivery System For Hypertension Management",
+            title: "Sanskar Pandey",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-84-Sanskar-Pandey.pdf"
+        },
+        {
+            id: 306,
+            shortName: "Recent Advances In Process Validation For Tablet Manufacturing: A Comprehensive Review",
+            title: "Ranjit Basak",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-85-Ranjit-Basak.pdf"
+        },
+        {
+            id: 307,
+            shortName: "Polyherbal Strategies For Alopecia Management: Emerging Molecular Targets And Translational Advances",
+            title: "Shivam Bhoi",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-86-Shivam-Bhoi.pdf"
+        },
+        {
+            id: 308,
+            shortName: "Public Health And Drug Awareness",
+            title: "Mushimiyimana Fillette",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-87-Mushimiyimana-Fillette.pdf"
+        },
+        {
+            id: 309,
+            shortName: "Development And Evaluation Of Budesonide And Berberine Loaded Microcapsules For Colon-Targeted Drug Delivery System In Inflammatory Bowel Disease",
+            title: "Surjit Kumar Banjare",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-89-Surjit-Kumar-Banjare.pdf"
+        },
+        {
+            id: 310,
+            shortName: "An Overview Of Therapeutic Potential Of Moringa Oleifera In Alzheimer’s Disease",
+            title: "Shekhan Sonkar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-90-Shekhan-Sonkar.pdf"
+        },
+        {
+            id: 311,
+            shortName: "In-Vitro And In-Silico Evaluation Of Antithyroid Potential Of Ficus Racemosa Phytoconstituents",
+            title: "Raman Kumar",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-92-Raman-Kumar.pdf"
+        },
+        {
+            id: 312,
+            shortName: "Role Of Biosimilars In Modern Therapeutics",
+            title: "Salome Julius Taban Natana",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-93-Salome-Julius-Taban-Natana.pdf"
+        },
+        {
+            id: 313,
+            shortName: "Review Paper On Rheumatoid Arthritis",
+            title: "Vinayak Sarit",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-94-Vinayak-Sarit.pdf"
+        },
+        {
+            id: 314,
+            shortName: "Preparation And Evaluation Of Vitamin C Loaded PLGA Nanoparticles: A Review Conductivity In Different Land-Use Areas",
+            title: "Pallavi Banjare",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-96-Pallavi-Banjare.pdf"
+        },
+        {
+            id: 315,
+            shortName: "Drug Polymer Conjugation",
+            title: "Rupendra Sahu",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-98-Rupendra-Sahu.pdf"
+        },
+        {
+            id: 316,
+            shortName: "Stem Cell-Based Regenerative Medicine: Integrating iPSCs, Gene Editing, And Organoid Technologies",
+            title: "Vishal Kumar Khunte",
+            duration: "April - June 2026",
+            level: "VOL 1",
+            slug: "/univista/vol-1-issue-2/FOP-99-Vishal-Kumar-Khunte.pdf"
+        },
     ];
 
     // Derived values based on the selected archives tab

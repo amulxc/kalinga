@@ -81,6 +81,23 @@ python scripts/univista/verify_slugs.py   # every slug resolves to a real file
 python scripts/univista/check_ids.py      # no duplicate React keys
 ```
 
+Gotchas seen on later batches:
+
+- The public folder page (`/drive/folders/<ID>`) only lists the first 50 files.
+  For larger folders fetch `https://drive.google.com/embeddedfolderview?id=<FOLDER_ID>`
+  instead, which lists everything.
+- Faculty of Pharmacy batches number from 1 again and clash with the main
+  batch, so their files are prefixed `FOP-` (e.g. `FOP-31-Aditya-Narayan-Satapathy.pdf`).
+  Their Drive files are named `FOP_0031.pdf`, which `build_manifest.py` cannot
+  number-match, so map the numbers by hand.
+- Run Python with `-X utf8` when redirecting `gen_entries.py` output on Windows
+  (`-I` ignores `PYTHONIOENCODING`), otherwise curly apostrophes are written in
+  cp1252. `title_case` also capitalises the letter after `’` (`Parkinson’S`), so
+  check the output for that and for lowercased acronyms (`Admet`, `Plga`).
+- No Ghostscript on this machine: compress with PyMuPDF
+  (`rewrite_images(dpi_target=150, quality=75)` then
+  `save(garbage=4, deflate=True)`) and keep the original if it is smaller.
+
 The sheet is authoritative for the displayed title and author — Drive filenames
 have contained misspellings that the sheet gets right. `gen_entries.py` lifts
 lowercase connector words to Title Case so new rows match the existing house
